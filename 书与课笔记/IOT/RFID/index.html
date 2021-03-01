@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>RFID - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net 1. RFID 概述物联网，感知层、网络层、应用层。RFID 属于感知层 射频识别，Reader 读卡器，Transponder 卡片 免电池、免接触 读卡器发射电磁波传递能量与时序，卡片（RFID 标签）返回信息 频率划分  125K - 134K 低频。穿透能力强，波段没限制，衰减快、距离短，传输慢。畜牧业、门禁 13.56 M 高频。10 cm，支持防冲撞 8"><meta property="og:type" content="blog"><meta property="og:title" content="RFID"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net 1. RFID 概述物联网，感知层、网络层、应用层。RFID 属于感知层 射频识别，Reader 读卡器，Transponder 卡片 免电池、免接触 读卡器发射电磁波传递能量与时序，卡片（RFID 标签）返回信息 频率划分  125K - 134K 低频。穿透能力强，波段没限制，衰减快、距离短，传输慢。畜牧业、门禁 13.56 M 高频。10 cm，支持防冲撞 8"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/5.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/3.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/4.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/6.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/7.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/8.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/10.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/9.png"><meta property="article:published_time" content="2019-06-05T00:15:07.477Z"><meta property="article:modified_time" content="2021-03-01T07:59:37.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/5.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/"},"headline":"RFID","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/5.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/3.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/4.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/6.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/7.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/8.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/10.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/9.png"],"datePublished":"2019-06-05T00:15:07.477Z","dateModified":"2021-03-01T07:59:37.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net 1. RFID 概述物联网，感知层、网络层、应用层。RFID 属于感知层 射频识别，Reader 读卡器，Transponder 卡片 免电池、免接触 读卡器发射电磁波传递能量与时序，卡片（RFID 标签）返回信息 频率划分  125K - 134K 低频。穿透能力强，波段没限制，衰减快、距离短，传输慢。畜牧业、门禁 13.56 M 高频。10 cm，支持防冲撞 8"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.477Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:59:37.000Z" title="2021/3/1 下午3:59:37">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">RFID</h1><div class="content"><p><a href="RFID">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID">asset-net</a></p>
+<h1 id="1-RFID-概述"><a href="#1-RFID-概述" class="headerlink" title="1. RFID 概述"></a>1. RFID 概述</h1><p>物联网，感知层、网络层、应用层。RFID 属于感知层</p>
+<p>射频识别，Reader 读卡器，Transponder 卡片 免电池、免接触</p>
+<p>读卡器发射电磁波传递能量与时序，卡片（RFID 标签）返回信息</p>
+<p>频率划分</p>
+<ul>
+<li>125K - 134K 低频。穿透能力强，波段没限制，衰减快、距离短，传输慢。畜牧业、门禁</li>
+<li>13.56 M 高频。10 cm，支持防冲撞</li>
+<li>860M - 915M 超高频。1m</li>
+<li>2.4G - 5G 微波</li>
+</ul>
+<span id="more"></span>
+
+<p>RFID 标签组成：RFID 晶片、天线、电力来源（有源、无源） </p>
+<p>传数据方式，两种耦合。低频、高频使用电感耦合，超高频、微波使用电容耦合，而且通常是有源的</p>
+<p>RFID 标签的数据存储。key 密码、access 访问控制</p>
+<p>防冲突机制，多张卡片进入读写射频场时，如何选出 1 张</p>
+<ul>
+<li>面向比特。多张卡片比较序号大的胜出</li>
+<li>面向时隙。读卡器发序号，卡片来选，然后读卡器叫号，被叫的胜出</li>
+<li>面向比特、面向时隙混合</li>
+</ul>
+<h1 id="2-高频-RFID"><a href="#2-高频-RFID" class="headerlink" title="2. 高频 RFID"></a>2. 高频 RFID</h1><p>读写操作流程，1 - 3 参考 ISO14443-A 协议，由于协议没有规定读写细节，所以 4-5 参考 S50 手册、例子代码、读写命令字参考 PN532 手册中<code>How to use the PN532 as a Mifare reader</code> 部分。</p>
+<p>目标是弄懂这 5 个步骤中芯片发送的数据和卡片返回的数据格式，即协议。芯片使用 RC522</p>
+<ol>
+<li>REQA / WUPA 请求</li>
+<li>ANTICOLLISION 防冲突，获得卡片 ID</li>
+<li>SELECT 选卡</li>
+<li>认证</li>
+<li>读写、增减操作</li>
+</ol>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/5.png" alt="来自 S50 手册"></p>
+<h2 id="2-1-ISO14443-A-协议"><a href="#2-1-ISO14443-A-协议" class="headerlink" title="2.1 ISO14443-A 协议"></a>2.1 ISO14443-A 协议</h2><p>ISO14443-A 协议，看 4 本中的第 3 本 (part 3) 初始化与防冲突，14443 没有规定具体读写细节</p>
+<p>PICC 卡片，PCD 读卡器</p>
+<p>3 种帧格式</p>
+<ul>
+<li>short frame，数据 7 位（即没有 bit7），没有奇偶校验位，LSB 先传</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/1.png" alt="1"></p>
+<ul>
+<li>standard frame，n字节，每个字节结束有奇校验位，LSB 先传</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/2.png" alt="2"></p>
+<ul>
+<li>bit oriented anticollision frame，7字节被分成两部分按照  standard frame 传输，part 1 PCD to PICC，part 2 PICC to PCD </li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/3.png" alt="3"></p>
+<table>
+<thead>
+<tr>
+<th>命令与帧格式</th>
+<th>发送数据说明与返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>REQA<br />short frame</td>
+<td>0x26<br />返回卡类型 2B，S50 为 0x4 0x0。参见 Mifare 手册 ATQA 值</td>
+</tr>
+<tr>
+<td>WUPA<br />short frame</td>
+<td>0x52<br />WUPA 可以唤醒 HALT 状态的设备<br />返回卡类型 2B，S50 为 0x4 0x0。参见 Mifare 手册 ATQA 值</td>
+</tr>
+<tr>
+<td>ANTICOLLISION<br />bit oriented anticollision frame</td>
+<td>0x93 0x20<br />SEL 1B + NVB 1B<br />发送后卡片会返回 ID 4B + checksum(BCC) 1B<br />注意如存在冲突则这个步骤会多次循环，具体见下面冲突检测</td>
+</tr>
+<tr>
+<td>SELECT<br />standard frame</td>
+<td>0x93 0x70 ID1-ID4 checksum(BCC) CRC16<br />SEL 1B + NVB 1B + ID 4B + checksum(BCC) 1B + CRC 2B<br />发送后返回 SAK，S50 为 0x08。参见 Mifare 手册 SAK 值</td>
+</tr>
+<tr>
+<td>HLTA<br />standard frame</td>
+<td>0x50 0x00 CRC16</td>
+</tr>
+</tbody></table>
+<ul>
+<li>SEL 1B，0x93 0x95 0x97 对应 level 1、2、3，对应 uid 4B、7B、10B，我们的卡是 4B，所以 SEL 为 0x93</li>
+<li>NVB 1B，高 4 位字节数，低 4 位比特数，如 0x24 表示 2个字节加上4位。NVB 的值包含 SEL 与 NVB 本身，不包含 CRC</li>
+</ul>
+<p>PICC 状态</p>
+<ul>
+<li>POWER-OFF。没电</li>
+<li>IDLE。上电后，等 REQA 或 WAKE-UP</li>
+<li>READY。收到  REQA 或 WAKE-UP，进行防冲突</li>
+<li>ACTIVE。被读卡器选中</li>
+<li>HALT。可通过 WAKE-UP 转换为 READY</li>
+</ul>
+<p>完整的冲突检测步骤，更具体的查看手册上这个表后面的流程图，以及附录的 <code>Communication example Type A</code> 的<code>Figure A.1</code></p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/4.png" alt="1547785216325"></p>
+<h2 id="2-2-RC522"><a href="#2-2-RC522" class="headerlink" title="2.2 RC522"></a>2.2 RC522</h2><p>可以用 SPI、I2C、UART 与 CPU 通讯，我们用 SPI</p>
+<p>SPI参考 <a href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../SPI%E4%BB%8B%E7%BB%8D%E4%B8%8ESTM32%E5%BA%94%E7%94%A8.pdf">SPI介绍与STM32应用</a>，这里使用 GPIO 软件模拟 SPI，注意 RC522 的 SPI 地址特殊，会根据读还是写地址不同</p>
+<ol>
+<li><p>基本函数</p>
+<p>读写寄存器、复位、开关天线、挂机、空闲</p>
+</li>
+<li><p>传输数据，FIFO函数</p>
+<ul>
+<li>数据传给 522，完成 522 自身的操作</li>
+<li>数据传给 522，522 再传给卡片，调 <code>PcdComMF522</code> 进行 <code>PCD_TRANSCEIVE</code> 或 <code>PCD_AUTHENT</code> 操作</li>
+</ul>
+</li>
+</ol>
+<p>使用前要复位 <code>PcdReset</code>，具体查看代码和芯片手册</p>
+<h2 id="2-3-mifare-one-IC-S50"><a href="#2-3-mifare-one-IC-S50" class="headerlink" title="2.3 mifare one IC S50"></a>2.3 mifare one IC S50</h2><p>恩智浦 NXP</p>
+<ul>
+<li>大小 1K，分 16 个区（sector），每个区分 4 块（block），每块 16B</li>
+<li>每个 sector 的最后一个 block(block 3) 存放密码 keyA 、keyB、对 sector 进行读写的条件 access bit</li>
+<li>key A 永远不可读</li>
+<li>sector 0 block 0 存放 ID 和 厂家信息</li>
+<li>读写操作时用的地址从 sector 0 block 0 开始算 0，一直到最后的 sector 15 block 3 算为 63</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/6.png" alt="6"></p>
+<p>3 个控制位 C1 C2 C3 不同取值对应的权限查询 S50 手册的表格，最终取得的读写权限是 控制位 与认证时使用的是 keyA 还是 keyB 联合决定的。另外项目文件夹里有这 4个字节的计算工具。</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/7.png" alt="7"></p>
+<p>同一个 sector 的读写认证一次后可以连续对这个 sector 进行读写而不用再次认证</p>
+<p>修改了密码后，重新请求时就要新密码认证了</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/8.png" alt="8"></p>
+<p>下表参考 PN532 手册中<code>How to use the PN532 as a Mifare reader</code> 部分和手册 <code>MF1S50YYX_V1.pdf</code></p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>发送数据说明与返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>认证</td>
+<td>(0x60 keyA or 0x61 keyB) (block addr 0-63) (key 6B) (id 4B)<br />S50 要求的 3 步认证，RC522、PN532 都自己完成了，所以直接按照格式发送即可</td>
+</tr>
+<tr>
+<td>读</td>
+<td>(0x30) (block addr 0-63)(CRC16 2B)<br />返回 16B 的 block 数据</td>
+</tr>
+<tr>
+<td>写</td>
+<td>(0xa0)(block addr 0-63)(CRC16 2B)<br />(write data 16B)(CRC16 2B)<br />写操作分两部分发。测试发现返回数据为 0xa，对应 Mifare 手册中的 ACK</td>
+</tr>
+<tr>
+<td>增、减</td>
+<td>(0xC1 inc or 0xC0 dec) (block addr 0-63) (CRC16 2B)<br />(value 4B)(CRC16 2B)<br />增减操作分两部分发<br />操作前需要先将 block 初始化成下面的格式，增减操作将结果存在内部寄存器，结束后需调用 传送 transfer 将寄存器的值写入 block</td>
+</tr>
+<tr>
+<td>恢复</td>
+<td>(0xC2) (block addr 0-63)(CRC16 2B)<br />(value 4B)(CRC16 2B)<br />value 值是任意的。将 block 的值存到内部寄存器，个人理解是配合传送实现复制数据的作用</td>
+</tr>
+<tr>
+<td>传送</td>
+<td>(0xb0) (block addr 0-63)(CRC16 2B)<br />将内部寄存器的值写入 block，与 increment、decrement、transfer 配合</td>
+</tr>
+</tbody></table>
+<p>增、减操作前 block 需要被初始化成如下格式</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/10.png" alt="10"></p>
+<h1 id="3-NFC"><a href="#3-NFC" class="headerlink" title="3. NFC"></a>3. NFC</h1><p>3 种工作模式</p>
+<ul>
+<li>卡模式，当公交卡，与刷卡机配合</li>
+<li>读写器，读写卡片，与卡配合</li>
+<li>点对点，类似蓝牙，进行数据传输，与另一个 NFC 终端配合</li>
+</ul>
+<p>NFC 与 RFID 区别</p>
+<ul>
+<li>RFID 的卡与读写器是两个设备，NFC 可以进行信息交互</li>
+<li>NFC 只是高频段，RFID 多个频段</li>
+<li>NFC 针对消费的短距离通信，有源 RFID 可以长距离，比如 ETC</li>
+</ul>
+<p>NFC 与 蓝牙</p>
+<ul>
+<li>NFC 距离短，10 cm</li>
+<li>NFC 传输速度慢</li>
+<li>优点是 NFC 的连接建立时间短 0.1s</li>
+</ul>
+<p>可以先用 NFC 建立连接，再用蓝牙传输</p>
+<h2 id="3-1-PN532"><a href="#3-1-PN532" class="headerlink" title="3.1 PN532"></a>3.1 PN532</h2><p>NFC 芯片 PN532，8051 内核。6 种操作模式， 3 种读写器， 2 种卡模式，1 种点对点</p>
+<p>三种接口，I2C、SPI、USART(HSU)，我们用 USART</p>
+<p>这里用到的是作为 Mifare S50 读写器的模式，操作步骤与 RC522 类似，因为使用自己定义的帧格式做了进一步封装，所以 CPU 对卡片的读写操作相对 RC522 更简单些</p>
+<ol>
+<li>唤醒</li>
+<li>扫卡</li>
+<li>认证</li>
+<li>读写</li>
+</ol>
+<p>4 个步骤除了唤醒的帧格式特殊外，其它的发给 532 与 532 的应答帧都遵循下面的格式</p>
+<p>标准帧 standard frame 与对应的应答帧 ACK</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/../RFID/9.png" alt="1548042609508"></p>
+<p>帧格式中具体的填充数据与应答参考 PN532 手册 <code>Table 2 The PN532 as a Mifare reader</code> 中的两张卡示例和示例前面的命令字介绍，命令与 2.3 类似，但更简化。</p>
+<p>PN532 需要用到不定长数据的串口接收，两种方法</p>
+<ol>
+<li>使用串口中断接收，然后处理函数中延时一段时间后关中断</li>
+<li>利用串口的 IDLE 中断配合 DMA 来达到更高效率，参见 [STM32CubeMX 使⽤ DMA 实现不定⻓数据收发](STM32CubeMX 使⽤ DMA 实现不定⻓数据收发.pdf)</li>
+</ol>
+<p>这两种方法见代码文件夹 pn532、pn532_dma</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">socket</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/NB-IoT/"><span class="level-item">NB-IoT</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

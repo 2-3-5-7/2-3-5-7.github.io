@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>mpu6050使用总结 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net 参考寄存器手册 4.0，数据手册 3.3、3.2，其中寄存器手册很多寄存器不全 中断种类"><meta property="og:type" content="blog"><meta property="og:title" content="mpu6050使用总结"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net 参考寄存器手册 4.0，数据手册 3.3、3.2，其中寄存器手册很多寄存器不全 中断种类"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/2.png"><meta property="article:published_time" content="2019-06-05T00:15:07.463Z"><meta property="article:modified_time" content="2021-03-01T07:59:04.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/../mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"},"headline":"mpu6050使用总结","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/2.png"],"datePublished":"2019-06-05T00:15:07.463Z","dateModified":"2021-03-01T07:59:04.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net 参考寄存器手册 4.0，数据手册 3.3、3.2，其中寄存器手册很多寄存器不全 中断种类"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.463Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:59:04.000Z" title="2021/3/1 下午3:59:04">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">mpu6050使用总结</h1><div class="content"><p><a href="mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93">asset-net</a></p>
+<p>参考寄存器手册 4.0，数据手册 3.3、3.2，其中寄存器手册很多寄存器不全</p>
+<p>中断种类</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/../mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/1.png" alt="1"></p>
+<span id="more"></span>
+
+<h1 id="1-运动中断"><a href="#1-运动中断" class="headerlink" title="1. 运动中断"></a>1. 运动中断</h1><p>基本用法 [运动中断的用法](Motion Detection Interrupt.pdf)</p>
+<p>寄存器的说明参考数据手册 v3.2 另一段自由落体中断部分</p>
+<blockquote>
+<p>Free fall is detected by checking if the accelerometer measurements from all 3 axes have an absolute value<br>below a user-programmable threshold (acceleration threshold). For each sample where this condition is true<br>(a qualifying sample), a counter is incremented. For each sample where this condition is false (a non-<br>qualifying sample), the counter is decremented. Once the counter reaches a user-programmable threshold<br>(the counter threshold), the Free Fall interrupt is triggered and a flag is set. The flag is cleared once the<br>counter has decremented to zero. The counter does not increment above the counter threshold or decrement<br>below zero.</p>
+<p>The user is given several configuration parameters to fine tune Free Fall detection. Both, the acceleration<br>threshold and counter threshold are user configurable. The FF_THR register allows the user to set a<br>threshold in 1 mg increments. The FF_DUR register allows the user to set duration in 1 ms increments.</p>
+<p>The decrement rate for non-qualifying samples is also configurable. The MOT_DETECT_CTRL register<br>allows the user to specify whether a non-qualifying sample makes the counter reset to zero, or decrement in<br>steps of 1, 2, or 4.</p>
+</blockquote>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/../mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/2.png" alt="2"></p>
+<p>有些没有列出的寄存器可以参考 <a href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/../Motion_Detection%E7%9A%84%E4%BD%BF%E7%94%A8.pdf">这篇博客</a> 和 <a target="_blank" rel="noopener" href="https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050">网上的库</a> （包括 Arduino 和 STM32，库是基于寄存器手册 v2.0的）中的定义和注释。</p>
+<p>更复杂的低功耗运动中断初始化可以参考 数据手册 v3.3 8.1 节中的图，网上也有对应的实现代码</p>
+<p>其它 fifo、dmp 用法就参考库、 linux 内核中驱动、还有官方的SDK，没详细研究</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/NB-IoT/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">NB-IoT</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/"><span class="level-item">LoRa</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

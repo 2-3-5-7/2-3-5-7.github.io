@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>云平台 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="下一步实现属性的 get 方法，实现 APP 的控制 1. MQTT 通信搭建 win10 mqttfx 作为一个客户端，参照 emqtt 推荐 的 Eclipse Paho C 在虚拟机下 git clone 并编译作为另一个客户端，下载win10 稳定版 emqtt 服务器 ，注意解压缩的路径不要有空格 启动服务器第一次是需要 Ctrl+c 然后选择 n 才会启动。通过本机的 18083 端口"><meta property="og:type" content="blog"><meta property="og:title" content="云平台"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="下一步实现属性的 get 方法，实现 APP 的控制 1. MQTT 通信搭建 win10 mqttfx 作为一个客户端，参照 emqtt 推荐 的 Eclipse Paho C 在虚拟机下 git clone 并编译作为另一个客户端，下载win10 稳定版 emqtt 服务器 ，注意解压缩的路径不要有空格 启动服务器第一次是需要 Ctrl+c 然后选择 n 才会启动。通过本机的 18083 端口"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/3.png"><meta property="article:published_time" content="2019-06-05T00:15:07.530Z"><meta property="article:modified_time" content="2021-03-01T07:17:47.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/../%E4%BA%91%E5%B9%B3%E5%8F%B0/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/"},"headline":"云平台","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/3.png"],"datePublished":"2019-06-05T00:15:07.530Z","dateModified":"2021-03-01T07:17:47.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"下一步实现属性的 get 方法，实现 APP 的控制 1. MQTT 通信搭建 win10 mqttfx 作为一个客户端，参照 emqtt 推荐 的 Eclipse Paho C 在虚拟机下 git clone 并编译作为另一个客户端，下载win10 稳定版 emqtt 服务器 ，注意解压缩的路径不要有空格 启动服务器第一次是需要 Ctrl+c 然后选择 n 才会启动。通过本机的 18083 端口"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.530Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:17:47.000Z" title="2021/3/1 下午3:17:47">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">云平台</h1><div class="content"><p>下一步实现属性的 get 方法，实现 APP 的控制</p>
+<h1 id="1-MQTT-通信搭建"><a href="#1-MQTT-通信搭建" class="headerlink" title="1. MQTT 通信搭建"></a>1. MQTT 通信搭建</h1><ol>
+<li>win10 mqttfx 作为一个<strong>客户端</strong>，参照 <a target="_blank" rel="noopener" href="http://www.emqtt.com/clients">emqtt 推荐</a> 的 <a target="_blank" rel="noopener" href="https://www.eclipse.org/paho/clients/c/">Eclipse Paho C</a> 在虚拟机下 git clone 并编译作为<strong>另一个客户端</strong>，下载win10 稳定版 <a target="_blank" rel="noopener" href="http://www.emqtt.com/downloads">emqtt <strong>服务器</strong></a> ，注意解压缩的路径不要有空格</li>
+<li>启动服务器第一次是需要 Ctrl+c 然后选择 n 才会启动。通过本机的 18083 端口访问管理页面，用户名密码 admin、public。通过打印得知监听的 tcp 端口为 1883。配置客户端时使用</li>
+<li>启动用来订阅的 windows 客户端，添加 profile 并连接服务器，订阅 topic  “MQTT Examples”。修改 linux 下的 <code>paho.mqtt.c\src\samples\MQTTClient_publish.c</code> ADDRESS 为服务器地址，编译并运行，注意需要设置库路径 export LD_LIBRARY_PATH</li>
+<li>用 wireshark 抓端口 1883 包，由于 vmware 虚拟机（好像 virtual box 没问题）的缘故，双向都会抓到两份包。使用 wireshark 目录下的命令行工具 <code>editcap -d old.pcapng new.pcapng</code> 移除重复的包</li>
+</ol>
+<h1 id="2-阿里云物联网"><a href="#2-阿里云物联网" class="headerlink" title="2. 阿里云物联网"></a>2. 阿里云物联网</h1><p>总体开发流程</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/../%E4%BA%91%E5%B9%B3%E5%8F%B0/1.png"></p>
+<p>设备端开发流程</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/../%E4%BA%91%E5%B9%B3%E5%8F%B0/2.png"></p>
+<span id="more"></span>
+
+<p>物模型，简称TSL，即Thing Specification Language</p>
+<table>
+<thead>
+<tr>
+<th align="left">功能类型</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">属性（Property）</td>
+<td align="left">一般用于描述设备运行时的状态，如环境监测设备所读取的当前环境温度等。属性支持 GET 和 SET 请求方式。应用系统可发起对属性的读取和设置请求。</td>
+</tr>
+<tr>
+<td align="left">服务（Service）</td>
+<td align="left">设备可被外部调用的能力或方法，可设置输入参数和输出参数。相比于属性，服务可通过一条指令实现更复杂的业务逻辑，如执行某项特定的任务。</td>
+</tr>
+<tr>
+<td align="left">事件（Event）</td>
+<td align="left">设备运行时的事件。事件一般包含需要被外部感知和处理的通知信息，可包含多个输出参数。如，某项任务完成的信息，或者设备发生故障或告警时的温度等，事件可以被订阅和推送。</td>
+</tr>
+</tbody></table>
+<h2 id="2-1-SDK"><a href="#2-1-SDK" class="headerlink" title="2.1 SDK"></a>2.1 SDK</h2><p>参考 <a target="_blank" rel="noopener" href="https://help.aliyun.com/product/93051.html">SDK 文档</a></p>
+<h3 id="2-1-1-测试"><a href="#2-1-1-测试" class="headerlink" title="2.1.1 测试"></a>2.1.1 测试</h3><ol>
+<li>需要自己下载源码编译一个 32 位的 kconfig-mconf 放到 <code>tools\prebuilt\ubuntu\bin</code> 中，才能使用 make menuconfig 配置</li>
+<li>包含 MQTT 和 高级版，使用高级版物模型来测试，在云平台新建产品，导入 <code>model_for_examples.JSON</code> </li>
+<li>修改认证的四元组，编译并运行测试程序 <code>linkkit-example-solo</code></li>
+<li>使用云平台进行测试， 2.3 SDK 的例子代码测试更全面一些，3.0 SDK 更突出重点，可以结合理解</li>
+</ol>
+<h3 id="2-1-2-移植"><a href="#2-1-2-移植" class="headerlink" title="2.1.2 移植"></a>2.1.2 移植</h3><p>SDK 结构</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/../%E4%BA%91%E5%B9%B3%E5%8F%B0/3.png"></p>
+<p>乐鑫基于 8266 最新 SDK 已经进行了移植，没有验证过，以后可以参考 <a target="_blank" rel="noopener" href="https://github.com/espressif/esp-aliyun.git">乐鑫移植</a></p>
+<p>移植步骤</p>
+<ol>
+<li>SDK功能配置</li>
+<li>进行HAL函数的实现</li>
+<li>调用SDK提供的API进行产品功能实现</li>
+<li>对SDK进行编译</li>
+</ol>
+<p>移植方法综合 SDK 自带编译法 和 代码抽取法</p>
+<ol>
+<li>make menuconfig 选择功能，包括调试打印的级别，make reconfig 选择 8266 平台，生成 <code>libiot_sdk.a</code></li>
+<li>实现 <code>output/eng/wrappers/wrapper.c</code> HAL 函数，hal_printf 要使用 printf 才能打印到串口，vprintf 不好用。移植例子可以参考移植好的 linux 例子</li>
+<li>修改 8266 的 makefile 使  <code>libiot_sdk.a</code> 和 <code>wrapper.c</code> 编译到工程中，还有 include 的多个文件放入 8266 工程的 include 文件夹</li>
+<li>参照例子代码实现设备与云平台的通信</li>
+</ol>
+<h3 id="2-1-3-web-app"><a href="#2-1-3-web-app" class="headerlink" title="2.1.3 web app"></a>2.1.3 web app</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bnpm --registry=https://npm.aliplus.com/api</span><br><span class="line"><span class="comment"># 访问 https://bone.aliyun.com/profile 获得用户、密码</span></span><br><span class="line">bnpm login</span><br><span class="line"><span class="comment"># 本地命令行工具，用来完成项目创建、本地开发和项目打包等</span></span><br><span class="line">bnpm install -g @bone/bone-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建项目，启用服务，访问页面进行测试</span></span><br><span class="line">mkdir 项目名</span><br><span class="line"><span class="built_in">cd</span> 项目名</span><br><span class="line">bone init</span><br><span class="line">bone start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 SDK</span></span><br><span class="line">bnpm install --save @bone/linkdevelop-sdk</span><br><span class="line"><span class="comment"># 仪表盘插件依赖</span></span><br><span class="line">bnpm install --save viser-react</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>阿里云上 IoT Studio 上新建项目，查看项目，其它 Web 应用应用，前端应用</li>
+<li>参照 <a target="_blank" rel="noopener" href="https://viserjs.github.io/demo.html#/viser/gauge/text-gauge">仪表盘代码</a>，修改 js 和 css 实现仪表盘功能和布局</li>
+<li>调用阿里云 API 获取数据，填入认证数据</li>
+<li>bone-config.json 填入 appid，app.js 填入 appid</li>
+<li>bone pack，在阿里云平台上部署，使用生成的网址测试</li>
+</ol>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E5%AE%89%E9%98%B2%E7%9B%91%E6%8E%A7%E9%A1%B9%E7%9B%AE/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">安防监控项目</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/"><span class="level-item">Zigbee</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>WIFI - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net  WIFI 技术原理 WIFI 外设应用 FreeRTOS 操作系统 LwIP 网络协议栈 WebServer 开发  1. 硬件测试使用 AT 指令测试硬件，使用 ESP8266 AT Bin V1.6.2 ，1.7 的 user bin 文件只支持 2M，不支持 4M。下载的 flash map 参考 README.md 123456Flash size 32M"><meta property="og:type" content="blog"><meta property="og:title" content="WIFI"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net  WIFI 技术原理 WIFI 外设应用 FreeRTOS 操作系统 LwIP 网络协议栈 WebServer 开发  1. 硬件测试使用 AT 指令测试硬件，使用 ESP8266 AT Bin V1.6.2 ，1.7 的 user bin 文件只支持 2M，不支持 4M。下载的 flash map 参考 README.md 123456Flash size 32M"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/1.png"><meta property="article:published_time" content="2019-06-05T00:15:07.513Z"><meta property="article:modified_time" content="2021-03-01T08:00:47.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/../WIFI/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/"},"headline":"WIFI","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/1.png"],"datePublished":"2019-06-05T00:15:07.513Z","dateModified":"2021-03-01T08:00:47.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net  WIFI 技术原理 WIFI 外设应用 FreeRTOS 操作系统 LwIP 网络协议栈 WebServer 开发  1. 硬件测试使用 AT 指令测试硬件，使用 ESP8266 AT Bin V1.6.2 ，1.7 的 user bin 文件只支持 2M，不支持 4M。下载的 flash map 参考 README.md 123456Flash size 32M"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.513Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:00:47.000Z" title="2021/3/1 下午4:00:47">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">WIFI</h1><div class="content"><p><a href="WIFI">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI">asset-net</a></p>
+<ul>
+<li>WIFI 技术原理</li>
+<li>WIFI 外设应用</li>
+<li>FreeRTOS 操作系统</li>
+<li>LwIP 网络协议栈</li>
+<li>WebServer 开发</li>
+</ul>
+<h1 id="1-硬件测试"><a href="#1-硬件测试" class="headerlink" title="1. 硬件测试"></a>1. 硬件测试</h1><p>使用 AT 指令测试硬件，使用 <code>ESP8266 AT Bin V1.6.2</code> ，1.7 的 user bin 文件只支持 2M，不支持 4M。下载的 flash map 参考 README.md</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Flash size 32Mbit-C1: 1024KB+1024KB</span><br><span class="line"></span><br><span class="line">boot_v1.2+.bin              0x00000</span><br><span class="line">user1.2048.new.5.bin        0x01000</span><br><span class="line">esp_init_data_default.bin   0x3fc000</span><br><span class="line">blank.bin                   0xfe000 &amp; 0x3fe000</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>flash 软件配置，实现最快的下载速度</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/../WIFI/1.png" alt="1"></p>
+<p>下载波特率设置为最大，如果是 esptool 下载，实测设置为 2M 都没问题</p>
+<p>串口输出<strong>默认波特率 74880</strong> ，启动后转为 115200，所以前面的打印会有乱码</p>
+<p>AT 回车，回车要设置为发送 <code>\r\n</code> ，返回 OK 为正常</p>
+<p>另外下载软件能实现自动进入下载模式，原理见 [ESP8266 实现一键下载固件的深入分析](ESP8266 实现一键下载固件的深入分析.pdf)</p>
+<h1 id="2-示例程序"><a href="#2-示例程序" class="headerlink" title="2. 示例程序"></a>2. 示例程序</h1><h2 id="2-1-SDK-3-x-IDF-配置"><a href="#2-1-SDK-3-x-IDF-配置" class="headerlink" title="2.1 SDK 3.x - IDF 配置"></a>2.1 SDK 3.x - IDF 配置</h2><ol>
+<li><p>从 GitHub 上获取 ESP-IDF。包含 ESP8266 API 和用于操作 工具链 的脚本</p>
+</li>
+<li><p>设置工具链</p>
+<ol>
+<li>先安装 <code>sudo apt-get install gcc git wget make libncurses-dev flex bison gperf python python-serial</code></li>
+<li>下载 <code>https://dl.espressif.com/dl/xtensa-lx106-elf-linux32-1.22.0-88-gde0bdc1-4.8.5.tar.gz</code>，区分 32、64位</li>
+<li>设置到 PATH 中，例如 <code>export PATH=/home/zack/share/esp/xtensa-lx106-elf/bin:$PATH</code></li>
+<li>设置 IDF 为 SDK 路径提供给工具链，例如 <code>export IDF_PATH=/home/zack/share/esp/ESP8266_RTOS_SDK</code></li>
+</ol>
+</li>
+<li><p>编译帮助文档。需要 python 和 一些包，见 SDK requirements.txt</p>
+</li>
+<li><p>加组从而有 ttyUSB0 读写权限 <code>sudo usermod -a -G dialout $USER</code></p>
+</li>
+<li><p>拷贝模版 <code>cp -r $IDF_PATH/examples/get-started/project_template .</code></p>
+</li>
+<li><p>make menuconfig 设置串口，flash 波特率可以设置为最高 2M，分区表设置为 two ota，保存设置</p>
+</li>
+<li><p>make -j4 编译，分区表如下，在 <code>ESP8266_RTOS_SDK\components\partition_table\partitions_two_ota.csv</code></p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> ESP8266 two ota Partition Table</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Name,   Type, SubType, Offset,  Size, Flags</span></span><br><span class="line">nvs,      data, nvs,     0x9000,  0x4000   # Non-volatile storage library partition data</span><br><span class="line">otadata,  data, ota,     0xd000,  0x2000   # 决定执行哪个 ota 的 app</span><br><span class="line">phy_init, data, phy,     0xf000,  0x1000   # PHY init data</span><br><span class="line">ota_0,    0,    ota_0,   0x10000, 0xF0000  # 两个 app</span><br><span class="line">ota_1,    0,    ota_1,   0x110000,0xF0000  # 两个 app</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> ota 为空时执行 factory app，8266 默认无</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 分区表默认在 0x8000，offset 可改</span></span><br></pre></td></tr></table></figure></li>
+<li><p>修改分区表后，为了防止前面下载的 at 版本引起报错，需要清空 flash <code>make erase_flash</code>。然后 <code>make flash</code> 烧写</p>
+</li>
+<li><p>make monitor 查看串口输出</p>
+</li>
+</ol>
+<p>所有示例程序</p>
+<ul>
+<li><code>get-started</code> contains some very simple examples with minimal functionality.</li>
+<li><code>peripherals</code> contains examples showing driver functionality for the various onboard ESP32 peripherals.</li>
+<li><code>protocols</code> contains examples showing network protocol interactions.</li>
+<li><code>system</code> contains examples which demonstrate some internal chip features, or debugging &amp; development tools.</li>
+<li><code>wifi</code> contains examples of advanced Wi-Fi features. (For network protocol examples, see <code>protocols</code> instead.)</li>
+</ul>
+<h2 id="2-2-SDK-2-x-配置"><a href="#2-2-SDK-2-x-配置" class="headerlink" title="2.2 SDK 2.x 配置"></a>2.2 SDK 2.x 配置</h2><ol>
+<li><p>乐鑫官网获取 SDK tar 文件，<code>ESP8266_RTOS_SDK-2.0.0.tar.gz</code></p>
+</li>
+<li><p>网上获取别人编译好的工具链，<code>Compiler_Update_20150727.zip</code>，根据 readme 安装到 /opt，然后配置工具链到 PATH。在 .bashrc 上添加 alias 用于切换新旧 SDK 不同的 PATH 变量</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># old tool chain, new tool chain path</span></span><br><span class="line"><span class="built_in">export</span> NTC=/home/zack/share/esp/xtensa-lx106-elf/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> OTC=/opt/xtensa-lx106-elf/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="comment"># 默认用哪个工具链</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$OTC</span></span><br><span class="line"><span class="comment"># 设置工具链的命令</span></span><br><span class="line"><span class="built_in">alias</span> otc=<span class="string">&quot;export PATH=<span class="variable">$OTC</span>&quot;</span></span><br><span class="line"><span class="built_in">alias</span> ntc=<span class="string">&quot;export PATH=<span class="variable">$NTC</span>&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>配置编译时使用的 SDK 目录和生成后的 bin 存放目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> SDK_PATH=/home/zack/share/esp/SDK-2.0.0</span><br><span class="line"><span class="built_in">export</span> BIN_PATH=/home/zack/share/esp/SDK-2.0.0/bin</span><br></pre></td></tr></table></figure></li>
+<li><p><code>make BOOT=new APP=1 SPI_SIZE_MAP=6</code> 或者用 ./gen_misc.sh 编译，可以直接修改 SDK 目录下的 Makefile 修改默认参数。<strong>不要多核编译(-j4)，会导致改动不编到 bin 文件中</strong></p>
+</li>
+<li><p>不要用这个工具链里面的 esptool，用 SDK 3.x 中的来烧写</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">esptool.py --chip esp8266 --port /dev/ttyUSB0 --baud 2000000 --before default_reset --after hard_reset erase_flash </span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$BIN_PATH</span> &amp;&amp; \</span><br><span class="line">esptool.py --chip esp8266 --port /dev/ttyUSB0 --baud 2000000 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0000 boot_v1.7.bin 0x01000 upgrade/user1.4096.new.6.bin 0x3FB000 blank.bin 0x3FE000 blank.bin 0x3FC000 esp_init_data_default.bin &amp;&amp; \</span><br><span class="line"><span class="built_in">cd</span> -</span><br></pre></td></tr></table></figure>
+
+<p>下载地址参考自 2a-esp8266-sdk_getting_started_guide_en.pdf 的 Table 4-4 lists the download addresses for the OTA firmware 中的 4096KB flash 1024+1024 方式</p>
+</li>
+<li><p>使用 <code>miniterm.py /dev/ttyUSB0 74880</code> 来查看串口输出</p>
+</li>
+<li><p>步骤5 和 6 用 windows 工具，虚拟机下 ttyUSB0 不稳定，ch340 的问题？</p>
+</li>
+</ol>
+<h1 id="3-扩展"><a href="#3-扩展" class="headerlink" title="3. 扩展"></a>3. 扩展</h1><ol>
+<li>airkiss 原理见 WIFI 文件夹中的两个介绍</li>
+<li>LWIP 在 <code>WIFI\LWIP</code> 文件夹有 socket 的介绍，看官网 contrib 代码学习的指引</li>
+<li>RTOS 见 <code>WIFI\0-[野火]《FreeRTOS内核实现与应用开发实战指南》</code>，有做一半的工程 <code>FreeRTOS-软件仿真</code>，以及如何把例子代码移植到自己的低配开发板上，开发板资料。更多的书籍和视频见百度云 <code>技术\书\0-野火【F103开发板-指南者】光盘资料</code></li>
+<li>dht11、ws2812、ota 升级实现见虚拟机代码</li>
+</ol>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Zigbee</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/"><span class="level-item">STM32</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

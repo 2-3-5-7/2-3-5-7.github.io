@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>进程、线程、进程间通信 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="参考  《嵌入式应用程序设计综合教程》  1. 进程1.1 理论进程里面除了程序还有 系统数据段  进程控制块 pcb 即 task_struct，包含 pid、进程用户、文件描述符表、进程状态、优先级、进程返回值 cpu寄存器值。PC 堆栈  进程类型  交互进程，shell启动，前台运行，后台运行时无法读取终端输入，但可以输出 批处理进程，与终端无关，提交到作业队列中运行 守护进程，与终端无关"><meta property="og:type" content="blog"><meta property="og:title" content="进程、线程、进程间通信"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="参考  《嵌入式应用程序设计综合教程》  1. 进程1.1 理论进程里面除了程序还有 系统数据段  进程控制块 pcb 即 task_struct，包含 pid、进程用户、文件描述符表、进程状态、优先级、进程返回值 cpu寄存器值。PC 堆栈  进程类型  交互进程，shell启动，前台运行，后台运行时无法读取终端输入，但可以输出 批处理进程，与终端无关，提交到作业队列中运行 守护进程，与终端无关"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/2.png"><meta property="article:published_time" content="2019-06-05T00:15:07.568Z"><meta property="article:modified_time" content="2021-03-01T07:55:20.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/../%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"},"headline":"进程、线程、进程间通信","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/2.png"],"datePublished":"2019-06-05T00:15:07.568Z","dateModified":"2021-03-01T07:55:20.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"参考  《嵌入式应用程序设计综合教程》  1. 进程1.1 理论进程里面除了程序还有 系统数据段  进程控制块 pcb 即 task_struct，包含 pid、进程用户、文件描述符表、进程状态、优先级、进程返回值 cpu寄存器值。PC 堆栈  进程类型  交互进程，shell启动，前台运行，后台运行时无法读取终端输入，但可以输出 批处理进程，与终端无关，提交到作业队列中运行 守护进程，与终端无关"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.568Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:55:20.000Z" title="2021/3/1 下午3:55:20">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">进程、线程、进程间通信</h1><div class="content"><p>参考</p>
+<ul>
+<li>《嵌入式应用程序设计综合教程》</li>
+</ul>
+<h1 id="1-进程"><a href="#1-进程" class="headerlink" title="1. 进程"></a>1. 进程</h1><h2 id="1-1-理论"><a href="#1-1-理论" class="headerlink" title="1.1 理论"></a>1.1 理论</h2><p>进程里面除了程序还有 <code>系统数据段</code></p>
+<ul>
+<li>进程控制块 pcb 即 task_struct，包含 pid、进程用户、文件描述符表、进程状态、优先级、进程返回值</li>
+<li>cpu寄存器值。PC</li>
+<li>堆栈</li>
+</ul>
+<p>进程类型</p>
+<ul>
+<li>交互进程，shell启动，前台运行，后台运行时无法读取终端输入，但可以输出</li>
+<li>批处理进程，与终端无关，提交到作业队列中运行</li>
+<li>守护进程，与终端无关，直到系统结束才关闭，一直在后台</li>
+</ul>
+<p>进程状态</p>
+<table>
+<thead>
+<tr>
+<th>PROCESS STATE</th>
+<th>状态</th>
+<th>什么时候产生</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>R running or runnable</td>
+<td>运行态/就绪态</td>
+<td>不一定占用 cpu，可能没有时间片</td>
+</tr>
+<tr>
+<td>S interruptible sleep</td>
+<td>等待态，可否被信号打断，可中断</td>
+<td>等待事件或资源</td>
+</tr>
+<tr>
+<td>D uninterruptible sleep，Disk wait</td>
+<td>等待态，可否被信号打断，不可中断</td>
+<td>等待事件或资源。因为不响应信号，所以没办法被用户结束</td>
+</tr>
+<tr>
+<td>T stopped, traced</td>
+<td>停止态，运行被中止</td>
+<td>比如 gdb 调试时，或者 ctrl + Z</td>
+</tr>
+<tr>
+<td>Z zombie</td>
+<td>死亡态，僵尸态</td>
+<td>已经终止但 pcb 没有被释放，pcb 里面有返回值</td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/../%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/1.png" alt="1"></p>
+<h2 id="1-2-命令"><a href="#1-2-命令" class="headerlink" title="1.2 命令"></a>1.2 命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ps</td>
+<td>系统快照<br />-ef 显示进程<br />aux 显示进程 + 当前状态<br />-L 显示 LWP 线程号</td>
+</tr>
+<tr>
+<td>top</td>
+<td>动态</td>
+</tr>
+<tr>
+<td>/proc/pid/status</td>
+<td></td>
+</tr>
+<tr>
+<td>nice</td>
+<td>按用户指定的优先级运行进程。nice -20 – +19，-20 优先级最高，默认 0</td>
+</tr>
+<tr>
+<td>renice</td>
+<td>改变正在运行进程的优先级</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>job相关</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>命令后加 &amp;</td>
+<td>后台运行</td>
+</tr>
+<tr>
+<td>Ctrl + z，然后 bg</td>
+<td>先转到停止态，然后前台转后台</td>
+</tr>
+<tr>
+<td>jobs</td>
+<td>查看所有 job</td>
+</tr>
+<tr>
+<td>fg %job-number</td>
+<td>移入前台运行</td>
+</tr>
+<tr>
+<td>kill %job-number</td>
+<td>杀掉后台 job</td>
+</tr>
+</tbody></table>
+<h2 id="1-3-fork"><a href="#1-3-fork" class="headerlink" title="1.3 fork"></a>1.3 fork</h2><p>返回值</p>
+<ul>
+<li>对父进程返回子进程 pid，父进程没有其它办法获知子进程 pid</li>
+<li>对子进程返回 0</li>
+<li>出错返回 -1</li>
+</ul>
+<p>行为</p>
+<ul>
+<li>父子进程谁先执行，不一定，看操作系统调度</li>
+<li>子进程从 fork 的下一条语句开始执行，子进程继承了 PC</li>
+<li>父子不一定谁先结束<ul>
+<li>若父进程先结束则子进程成为孤儿，被 init 收养，子进程变成后台</li>
+<li>若子进程先结束，父进程如果没有及时回收，子进程变成僵尸进程</li>
+</ul>
+</li>
+<li>子进程复制了父的堆栈、全局变量所有内存，也继承了父进程打开的文件，具体看 man fork</li>
+</ul>
+<h2 id="1-4-exit"><a href="#1-4-exit" class="headerlink" title="1.4 exit"></a>1.4 exit</h2><ul>
+<li>exit 比 _exit 多两步，调用退出处理函数，清理标准 IO 缓冲</li>
+<li>返回值只有低 8 位有效</li>
+</ul>
+<h2 id="1-5-执行"><a href="#1-5-执行" class="headerlink" title="1.5 执行"></a>1.5 执行</h2><ul>
+<li>exec 原进程内容被替换掉，让父子执行不同程序。shell 就是这么工作的<ul>
+<li>以 NULL 结尾</li>
+<li>execlp 不包含路径，使用 PATH 环境变量</li>
+<li>execl，list。execv，array</li>
+<li>execvpe 是最终的系统调用，其它函数都是它的封装</li>
+</ul>
+</li>
+<li>system 自动创建子进程，父等待执行完成后才继续执行</li>
+</ul>
+<h2 id="1-6-进程回收"><a href="#1-6-进程回收" class="headerlink" title="1.6 进程回收"></a>1.6 进程回收</h2><p>子进程结束时由父进程回收</p>
+<ul>
+<li>pid_t wait(int *status) <ul>
+<li>成功返回子进程号</li>
+<li>子进程没结束则父进程阻塞</li>
+<li>哪个子进程先结束先被回收</li>
+<li>status，具体看 man wait 的 example<ul>
+<li>WIFEXITED、WIFSIGNALED  判断是信号结束还是正常结束</li>
+<li>WTERMSIG        获取是哪个信号导致结束</li>
+<li>WEXITSTATUS   获取正常结束的返回值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>pid_t waitpid(pid_t pid, int *status, int options)<ul>
+<li>通过 pid 指定回收的对象</li>
+<li>option 指定回收方式。可以选择不阻塞父进程的的方式</li>
+<li>waitpid(-1, &amp;status, 0) 与 wait 等价</li>
+</ul>
+</li>
+</ul>
+<p>除了常规的 wait，避免僵尸进程的几种办法</p>
+<ol>
+<li><p>两次 fork，第一次 fork 的子进程立刻退出，第二次 fork 的子进程退出时会被 init 收养。代码较麻烦，并且破坏了父子关系，不推荐</p>
+</li>
+<li><p>忽略 <code>SIGCHLD</code>，但无法获取返回值</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (signal(SIGCHLD, SIG_IGN) == SIG_ERR) &#123;</span><br><span class="line">    perror(<span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">exit</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>注册 <code>SIGCHLD</code> 信号处理函数，函数中调用 <code>waitpid</code> 获得返回值。<a target="_blank" rel="noopener" href="http://www.microhowto.info/howto/reap_zombie_processes_using_a_sigchld_handler.html">为什么这样写</a></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">handle_sigchld</span><span class="params">(<span class="keyword">int</span> sig)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> saved_errno = errno;</span><br><span class="line">    <span class="keyword">while</span> (waitpid((<span class="keyword">pid_t</span>)(<span class="number">-1</span>), <span class="number">0</span>, WNOHANG) &gt; <span class="number">0</span>) &#123;&#125;</span><br><span class="line">    errno = saved_errno;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sigaction</span> <span class="title">sa</span>;</span></span><br><span class="line">sa.sa_handler = &amp;handle_sigchld;</span><br><span class="line">sigemptyset(&amp;sa.sa_mask);</span><br><span class="line">sa.sa_flags = SA_RESTART | SA_NOCLDSTOP;</span><br><span class="line"><span class="keyword">if</span> (sigaction(SIGCHLD, &amp;sa, <span class="number">0</span>) == <span class="number">-1</span>) &#123;</span><br><span class="line">    perror(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">exit</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="1-7-创建守护进程详解"><a href="#1-7-创建守护进程详解" class="headerlink" title="1.7 创建守护进程详解"></a>1.7 创建守护进程详解</h2><p>参考 <a target="_blank" rel="noopener" href="http://www2.lawrence.edu/fast/GREGGJ/CMSC480/Daemons.html">Daemons</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.informit.com/articles/article.aspx?p=397655&seqNum=6">进程组和会话等概念解释</a></p>
+<p>举例子更容易理解 <a target="_blank" rel="noopener" href="https://www.usna.edu/Users/cs/aviv/classes/ic221/s16/lec/17/lec.html">Process Groups and Terminal Signaling</a></p>
+<p>To become a daemon, a program performs the following steps:</p>
+<ol>
+<li><p>Perform a fork(), after which the parent exits and the child continues. (As a consequence, the daemon becomes a child of the init process.) This step is done for two reasons:</p>
+</li>
+<li><ol>
+<li>Assuming the daemon was started from the command line, the parent’s termination is noticed by the shell, which then displays another shell prompt and leaves the child to continue in the background.</li>
+<li>The child process is guaranteed not to be a process group leader, since it inherited its process group ID from its parent and obtained its own unique process ID, which differs from the inher ited process group ID. This is required in order to be able to successfully perform the next step.</li>
+</ol>
+</li>
+<li><p>The child process calls setsid() to start a new session and free itself of any association with a controlling terminal.</p>
+</li>
+<li><p>If the daemon never opens any terminal devices thereafter, then we don’t need to worry about the daemon reacquiring a controlling terminal. If the daemon might later open a terminal device, then we must take steps to ensure that the device does not become the controlling terminal. We can do this in two ways:</p>
+</li>
+<li><ol>
+<li>Specify the O_NOCTTY flag on any open() that may apply to a terminal device.</li>
+<li>Alternatively, and more simply, perform a second fork() after the setsid() call, and again have the parent exit and the (grand)child continue. This ensures that the child is not the session leader, and thus, according to the System V conventions for the acquisition of a controlling terminal (which Linux follows), the process can never reacquire a controlling terminal.</li>
+</ol>
+</li>
+<li><p>Clear the process umask by calling umask() to ensure that when the daemon creates files and directories they have the requested permissions.</p>
+</li>
+<li><p>Change the process’s current working directory by calling chdir(), typically to the root directory (/). This is necessary because a daemon usually runs until system shutdown; if the daemon’s current working directory is on a file system other than the one containing /, then that file system can’t be unmounted. Alternatively, the daemon can change its working directory to a location where it does its job or a location defined in its configuration file, as long as we know that the file system containing this directory never needs to be unmounted. For example, cron places itself in /var/spool/cron.</p>
+</li>
+<li><p>Close all open file descriptors that the daemon has inherited from its parent. (A daemon may need to keep certain inherited file descriptors open, so this step is optional, or open to variation.) This is done for a variety of reasons. Since the daemon has lost its controlling terminal and is running in the background, it makes no sense for the daemon to keep file descriptors 0, 1, and 2 open if these refer to the terminal. Furthermore, we can’t unmount any file systems on which the long-lived daemon holds files open. And, as usual, we should close unused open file descriptors because file descriptors are a finite resource.</p>
+</li>
+<li><p>After having closed file descriptors 0, 1, and 2, a daemon normally opens /dev/null and uses dup2() (or similar) to make all those descriptors refer to this device. This is done for two reasons:</p>
+</li>
+<li><ol>
+<li>It ensures that if the daemon calls library functions that perform I/O on these descriptors, those functions won’t unexpectedly fail.</li>
+<li>It prevents the possibility that the daemon later opens a file using descriptor 1 or 2, which is then written to - and thus corrupted - by a library function that expects to treat these descriptors as standard output and standard error.</li>
+</ol>
+</li>
+</ol>
+<h1 id="2-线程"><a href="#2-线程" class="headerlink" title="2. 线程"></a>2. 线程</h1><ul>
+<li>LWP，编译时加 <code>–lpthread</code></li>
+<li>linux 为每个进程创建 task_struct，时间片用完，进程切换时 cache 和 TLB 刷新，开销大，<strong>同一进程的线程共享相同的地址空间，可以提高任务切换效率</strong></li>
+<li>linux 不区分进程、线程，如果访问同一块内存的有多个 task_struct ，那么每个就是一个线程</li>
+<li>gettid （用法见 man syscall example）返回的 pid_t 也就是 ps -L 中的 LWP，是系统唯一的。pthread_self 是用户态的，只是在进程中唯一</li>
+<li>创建 pthread_create，回收 pthread_join 会阻塞，结束 pthread_exit 返回值不能是栈上的内存</li>
+<li>主线程可以调用 pthread_exit，线程中调用 exit 或 主线程 return 导致进程结束</li>
+<li>可以用 <code>pthread_sigmask</code> 创建一个专门处理某个信号的线程，见 example。同样 <code>pthread_kill</code> 发信号</li>
+<li><a target="_blank" rel="noopener" href="http://users.cs.cf.ac.uk/Dave.Marshall/C/node32.html#SECTION0032100000000000000000">更多线程代码</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>共享的资源</th>
+<th>私有的资源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>指令与静态数据<br />打开的文件<br />工作目录<br />堆<br />用户ID，用户组ID</td>
+<td>线程ID<br />CPU寄存器，PC<br />栈<br />优先级<br />错误号，errno<br />执行状态和属性</td>
+</tr>
+</tbody></table>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/../%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/2.png" alt="2"></p>
+<h2 id="2-1-线程通信"><a href="#2-1-线程通信" class="headerlink" title="2.1 线程通信"></a>2.1 线程通信</h2><p>线程间通信全局变量即可，同步与互斥问题考虑信号量和锁。对于同步问题，考虑哪些操作是不能并行的，串行的话顺序是怎样的，来设计信号量。</p>
+<p>POSIX 信号量，有名用于 进程间，无名用于 线程间</p>
+<p>POSIX 无名信号量 sem_init、sem_wait、sem_post、sem_destroy</p>
+<p>临界资源：一次只允许一个任务(进程、线程)访问的共享资源</p>
+<p>临界资源用锁，也可以用信号量 pthread_mutex_init、pthread_mutex_lock、pthread_mutex_unlock、pthread_mutex_destroy</p>
+<h2 id="2-2-线程属性"><a href="#2-2-线程属性" class="headerlink" title="2.2 线程属性"></a>2.2 线程属性</h2><ol>
+<li>让线程自己清理，不用别人来 join ，则设置线程属性为 detached，默认创建的线程为 joinable。两种方法改变<ul>
+<li>线程调用 pthread_detach，但再也无法变回 joinable 了</li>
+<li>创建时指定属性 pthread_attr_init、pthread_attr_setdetachstate、pthread_attr_destroy</li>
+</ul>
+</li>
+<li>线程可以被其它线程被动结束，其它线程调用 pthread_cancel 来结束别人。pthread_setcancelstate 来设置自己是否可以被别人 cancel，默认是可以。pthread_setcanceltype 决定是同步还是异步结束，默认同步，则只有在调用某些称为 cancellation point 的函数（通过 man 7 pthreads 查询）时才会结束，异步结束则立刻结束。然后可以通过 pthread_join 的返回值（PTHREAD_CANCELED）来判断线程是否被 cancel ，前提是线程是  joinable 的。</li>
+</ol>
+<h1 id="3-进程间通信"><a href="#3-进程间通信" class="headerlink" title="3. 进程间通信"></a>3. 进程间通信</h1><p>易用性： 消息队列 &gt; UNIX域套接字 &gt; 管道 &gt; 共享内存</p>
+<p>效率：共享内存 &gt; UNIX域套接字 &gt; 管道 &gt; 消息队列</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E5%88%9D%E7%BA%A7/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">驱动初级</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D/"><span class="level-item">系统移植</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

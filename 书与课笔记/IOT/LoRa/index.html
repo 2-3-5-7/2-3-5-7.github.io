@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>LoRa - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net 1. LoRa 概述优点  远距离 低功耗 低成本 免牌照频段，不给运营商交钱  LoRa 三个参数影响了通信速率、耗电（电池寿命）、通信距离。详细计算可以通过 LoRa Modem Calculator Tool  带宽 BW，越大速率越高，但降低了接收灵敏度 扩频因子 SF，越大信号质量越强，速率下降 编码率 CR，提高数据可靠性"><meta property="og:type" content="blog"><meta property="og:title" content="LoRa"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net 1. LoRa 概述优点  远距离 低功耗 低成本 免牌照频段，不给运营商交钱  LoRa 三个参数影响了通信速率、耗电（电池寿命）、通信距离。详细计算可以通过 LoRa Modem Calculator Tool  带宽 BW，越大速率越高，但降低了接收灵敏度 扩频因子 SF，越大信号质量越强，速率下降 编码率 CR，提高数据可靠性"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/3.png"><meta property="article:published_time" content="2019-06-05T00:15:07.457Z"><meta property="article:modified_time" content="2021-03-01T07:58:12.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/../LoRa/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/"},"headline":"LoRa","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/3.png"],"datePublished":"2019-06-05T00:15:07.457Z","dateModified":"2021-03-01T07:58:12.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net 1. LoRa 概述优点  远距离 低功耗 低成本 免牌照频段，不给运营商交钱  LoRa 三个参数影响了通信速率、耗电（电池寿命）、通信距离。详细计算可以通过 LoRa Modem Calculator Tool  带宽 BW，越大速率越高，但降低了接收灵敏度 扩频因子 SF，越大信号质量越强，速率下降 编码率 CR，提高数据可靠性"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.457Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:58:12.000Z" title="2021/3/1 下午3:58:12">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">LoRa</h1><div class="content"><p><a href="LoRa">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa">asset-net</a></p>
+<h1 id="1-LoRa-概述"><a href="#1-LoRa-概述" class="headerlink" title="1. LoRa 概述"></a>1. LoRa 概述</h1><p>优点</p>
+<ul>
+<li>远距离</li>
+<li>低功耗</li>
+<li>低成本</li>
+<li>免牌照频段，不给运营商交钱</li>
+</ul>
+<p>LoRa 三个参数影响了通信速率、耗电（电池寿命）、通信距离。详细计算可以通过 LoRa Modem Calculator Tool</p>
+<ul>
+<li>带宽 BW，越大速率越高，但降低了接收灵敏度</li>
+<li>扩频因子 SF，越大信号质量越强，速率下降</li>
+<li>编码率 CR，提高数据可靠性</li>
+</ul>
+<span id="more"></span>
+
+<p>4 个概念参考 <a target="_blank" rel="noopener" href="https://electronics.stackexchange.com/questions/278192/understanding-the-relationship-between-lora-chips-chirps-symbols-and-bits">chips-chirps-symbols-and-bits</a>，详细的概念介绍 [LoRa 重要知识](LoRa 重要知识.pdf)，参考资料中的教学视频也很好</p>
+<ul>
+<li><p>注意符号 symbol 和码片 chip 与我们经常用到的 bit 不同。换算关系为 1 个 symbol 对应 2^SF 个 chip，SF 个 bit</p>
+</li>
+<li><p>发送一个符号 symbol 的时间 <img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/../LoRa/1.png"> </p>
+<p>比特率 <img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/../LoRa/2.png"> </p>
+<p>算上 CR 后 <img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/../LoRa/3.png"></p>
+</li>
+<li><p>芯片手册包含了根据报文大小计算传输时间的公式，但其实用前面的 LoRa Modem Calculator Tool 工具就可以算出</p>
+</li>
+</ul>
+<p>LoRaWan 终端分为三个 class，实时性越来越好，功耗越来越高。参考 lora 联盟发布的 <a href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/../what-is-lorawan.pdf">what-is-lorawan</a></p>
+<ul>
+<li>A 设备上报时间随机，下发的控制信息只能跟随上报时间后的两个固定时间窗口</li>
+<li>B 在 A 功能基础上，增加时间同步 beacon，告诉终端何时开启接收</li>
+<li>C 除了上报报文的时候，其它时间都开启接收</li>
+</ul>
+<h1 id="2-LoRa-固件移植"><a href="#2-LoRa-固件移植" class="headerlink" title="2. LoRa 固件移植"></a>2. LoRa 固件移植</h1><p>官方固件结构，推荐读 doc/README</p>
+<ul>
+<li>应用层 main.c</li>
+<li>无线驱动层 radio</li>
+<li>硬件抽象层 sx12xxEiger</li>
+</ul>
+<p>硬件连接MCU 与 LoRa，DIO0 -DIO5、SPI、RESET</p>
+<p>移植需要做的</p>
+<ul>
+<li>不支持 M0，改成包含 m0 的头文件</li>
+<li>固件库改成 HAL 库，注释掉 init 相关函数，修改 GPIO 相关和  GET_TICK_COUNT 宏为 HAL 接口，实现 SpiInOut 函数</li>
+<li>IO 口不同，LED IO定义，HAL IO 定义，没有 reset 和 rxtx 设置连接</li>
+</ul>
+<h1 id="3-PingPang-与-串口透传"><a href="#3-PingPang-与-串口透传" class="headerlink" title="3. PingPang 与 串口透传"></a>3. PingPang 与 串口透传</h1><p>修改 LoRaSettings 两个参数</p>
+<ul>
+<li>RFFrequency 改为 492000000，sx1278 频率范围137-525MHz</li>
+<li>RxSingleOn 改为 0，连续接收</li>
+</ul>
+<p>注意</p>
+<ul>
+<li>连续接收模式不会产生 TIMEOUT 返回值，收到包后也会保持在 <code>RFLR_STATE_RX_RUNNING</code> 状态，免去再次调用 <code>Radio-&gt;StartRx()</code>，所以需要自己判断。如果改成单次接收，那么会有大量报文接收不到，具体区别见函数 <code>SX1276LoRaProcess</code> 的状态切换和 <code>sx1276_77_78_79.pdf</code> 芯片手册的 LoRa  Receive Sequence 图以及使用场景说明</li>
+<li>开发板需要在 LCD 和 LoRa 芯片两个 SPI 间切换，所以每次读写 SPI 需要软件操作片选信号。同时 LCD 的 MISO 要改为 GPIO 输出，来表明输出是指令还是数据</li>
+</ul>
+<p>串口透传</p>
+<ul>
+<li>cubemx 打开串口中断，串口 DMA</li>
+<li>初始化使能串口空闲中断，开启串口 DMA 接收</li>
+<li>在串口中断中取得收到的串口数据长度，轮询串口数据长度变量，然后调用 lora 发送</li>
+</ul>
+<h1 id="4-LoRa-自组网"><a href="#4-LoRa-自组网" class="headerlink" title="4. LoRa 自组网"></a>4. LoRa 自组网</h1><p>目前自组网通信的设计类似 LoRaWan class A 和 class B，下发的控制数据只有在终端上报后，但终端上报时间却不是随机的，而是基于 slot 的固定周期</p>
+<p>实现文档见代码文件夹\net 中的 README.md</p>
+<p>也可以参考代码文件夹中的别人项目，<code>锐米开源二：LoRaTDMA系统</code></p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">mpu6050使用总结</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/epoll/"><span class="level-item">epoll</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

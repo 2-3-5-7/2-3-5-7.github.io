@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>socket - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="嵌入式应用程序设计综合教程，第 6 章 1. 分层 应用层。提供服务的应用协议、应用程序，跑在用户态。ftp、http、telnet 传输层。应用程序间的通信，决定送给哪个应用程序。tcp、udp 网络层。通过路由实现主机间通信。ip、icmp、igmp 网络接口层。外设的驱动所在的层，用于屏蔽硬件差异。ppp、arp、rarp  对于 7 层模型，应用层 对应 应用层、表示层、会话层。网络接口层"><meta property="og:type" content="blog"><meta property="og:title" content="socket"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="嵌入式应用程序设计综合教程，第 6 章 1. 分层 应用层。提供服务的应用协议、应用程序，跑在用户态。ftp、http、telnet 传输层。应用程序间的通信，决定送给哪个应用程序。tcp、udp 网络层。通过路由实现主机间通信。ip、icmp、igmp 网络接口层。外设的驱动所在的层，用于屏蔽硬件差异。ppp、arp、rarp  对于 7 层模型，应用层 对应 应用层、表示层、会话层。网络接口层"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/1.png"><meta property="article:published_time" content="2019-06-05T00:15:07.486Z"><meta property="article:modified_time" content="2021-03-01T07:59:53.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/../socket/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/"},"headline":"socket","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/1.png"],"datePublished":"2019-06-05T00:15:07.486Z","dateModified":"2021-03-01T07:59:53.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"嵌入式应用程序设计综合教程，第 6 章 1. 分层 应用层。提供服务的应用协议、应用程序，跑在用户态。ftp、http、telnet 传输层。应用程序间的通信，决定送给哪个应用程序。tcp、udp 网络层。通过路由实现主机间通信。ip、icmp、igmp 网络接口层。外设的驱动所在的层，用于屏蔽硬件差异。ppp、arp、rarp  对于 7 层模型，应用层 对应 应用层、表示层、会话层。网络接口层"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.486Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:59:53.000Z" title="2021/3/1 下午3:59:53">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">socket</h1><div class="content"><p>嵌入式应用程序设计综合教程，第 6 章</p>
+<h1 id="1-分层"><a href="#1-分层" class="headerlink" title="1. 分层"></a>1. 分层</h1><ul>
+<li>应用层。提供服务的应用协议、应用程序，跑在用户态。ftp、http、telnet</li>
+<li>传输层。应用程序间的通信，决定送给哪个应用程序。tcp、udp</li>
+<li>网络层。通过路由实现主机间通信。ip、icmp、igmp</li>
+<li>网络接口层。外设的驱动所在的层，用于屏蔽硬件差异。ppp、arp、rarp</li>
+</ul>
+<p>对于 7 层模型，应用层 对应 应用层、表示层、会话层。网络接口层 对应 数据链路层、物理层</p>
+<p>ubuntu 安装 wireshark</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认已经执行，可以省略</span></span><br><span class="line">sudo dpkg-reconfigure wireshark-common</span><br><span class="line"><span class="comment"># 当前用户添加到组</span></span><br><span class="line">sudo adduser <span class="variable">$USER</span> wireshark</span><br><span class="line"><span class="comment"># 注销用户重新登录</span></span><br></pre></td></tr></table></figure>
+
+<p>抓本地报文时选择 loopback 口</p>
+<span id="more"></span>
+
+<h2 id="1-1-tcp"><a href="#1-1-tcp" class="headerlink" title="1.1 tcp"></a>1.1 tcp</h2><p>参考 《计算机网络第五版》5.3-5.9</p>
+<ol>
+<li><p>tcp 头</p>
+<ul>
+<li>窗口值表明接收缓存还有多少，用来限定发送方的窗口</li>
+<li>URG 表示紧急数据，直接放入发送队列的最前面。紧急数据指针表示紧急数据的字节数，窗口为 0 时也可发送紧急数据</li>
+<li>PSH 表示不存入缓存直接发送或者交付给应用程序</li>
+<li>MSS 放在 SYN 或 SYN ACK 报文中，告知对方自己能接收的 tcp 数据最大长度，中间转发设备可以改小 MSS，来避免加封装后的分片。两个方向上可以有不同的值</li>
+</ul>
+</li>
+<li><p>可靠传输（数据无误、无丢失、无重复、无乱序）</p>
+<ul>
+<li>接收方在报文丢失或收到报文有误的情况下丢弃报文，同时不发确认报文，发送方超时没收到确认则重传   </li>
+<li>接收方收到重复报文则丢弃，同时再次发送确认，因为目前情况是发送方没收到确认才会重传   </li>
+<li>接收方对于不按序到达的报文可以丢弃，但缓存起来效率更高   </li>
+<li>确认报文可以在数据报文中捎带上</li>
+<li>超时时间是随网络状况动态变化的</li>
+<li>为了提高传输效率，发送方采用窗口的方式，窗口内报文不必等待确认，可以连续发送，窗口内报文暂时保留以应对重传，接收方累积确认，不必每个报文都确认，只对最后的报文确认，进而更新发送方窗口</li>
+<li>发送方的窗口也可通过接收方发送的tcp头中窗口值来调整，实现流量控制</li>
+</ul>
+</li>
+<li><p>连接<br>连接建立</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>FLAGS</th>
+<th>seq no, ack no</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C -&gt; S</td>
+<td>SYN</td>
+<td>J, 0</td>
+</tr>
+<tr>
+<td>S -&gt; C</td>
+<td>SYN,ACK</td>
+<td>K, J+1</td>
+</tr>
+<tr>
+<td>C -&gt; S</td>
+<td>ACK</td>
+<td>J+1, K+1</td>
+</tr>
+</tbody></table>
+<p>   C 从 J+1 继续， S 从 K+1 继续，不携带数据的 ACK 不消耗序号。连接建立后所有报文 ACK 必须置 1</p>
+<p>   连接释放</p>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>FLAGS</th>
+<th>seq no, ack no</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A -&gt; B</td>
+<td>FIN</td>
+<td>M, N</td>
+</tr>
+<tr>
+<td>B -&gt; A</td>
+<td>ACK</td>
+<td>N, M+1</td>
+</tr>
+<tr>
+<td>B -&gt; A</td>
+<td>FIN</td>
+<td>N, M+1</td>
+</tr>
+<tr>
+<td>A -&gt; B</td>
+<td>ACK</td>
+<td>M+1, N+1</td>
+</tr>
+</tbody></table>
+<p>   第2、3步可以合为一个报文。连接可以半关闭</p>
+<ol start="4">
+<li>面向字节流，即有发送和接收缓存，与 udp 不同</li>
+</ol>
+<h2 id="1-2-udp"><a href="#1-2-udp" class="headerlink" title="1.2 udp"></a>1.2 udp</h2><ul>
+<li>无连接，不可靠，资源消耗小，速度快</li>
+</ul>
+<h1 id="2-socket"><a href="#2-socket" class="headerlink" title="2. socket"></a>2. socket</h1><p>每个 socket 可用网路地址结构 {协议、本地地址、本地端口}来表示，整型 socket描述符<br>分类</p>
+<ul>
+<li>流式(sock_stream)，tcp</li>
+<li>数据包(sock_dgrm)，udp</li>
+<li>原始(sock_raw)套接字，ip和icmp，原始套接字可用于协议开发</li>
+</ul>
+<h2 id="2-1-ip地址"><a href="#2-1-ip地址" class="headerlink" title="2.1 ip地址"></a>2.1 ip地址</h2><p>ipv4 32b，4B。ipv6 128b，16B</p>
+<table>
+<thead>
+<tr>
+<th>ip地址转换，下面的函数调用后已经是大端</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>inet_addr</td>
+<td>ipv4 字符串转二进制，注意不能转 255.255.255.255</td>
+</tr>
+<tr>
+<td>inet_ntoa</td>
+<td>ipv4 二进制转字符串</td>
+</tr>
+<tr>
+<td>inet_pton</td>
+<td>支持ipv6，字符串转二进制，注意返回值 1 是成功</td>
+</tr>
+<tr>
+<td>inet_ntop</td>
+<td>支持ipv6，二进制转字符串，注意返回值 1 是成功</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>特殊地址</th>
+<th>范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>局域网，私网地址</td>
+<td>192.168，10.，172.16 – 172.31</td>
+</tr>
+<tr>
+<td>广播</td>
+<td>.255  全网广播 255.255.255.255</td>
+</tr>
+<tr>
+<td>组播</td>
+<td>224. – 239.</td>
+</tr>
+</tbody></table>
+<p>dns 解析，gethostbyname，man 文档表示其已经废弃，也就临时用用</p>
+<h2 id="2-2-端口"><a href="#2-2-端口" class="headerlink" title="2.2 端口"></a>2.2 端口</h2><p>tcp、udp 端口相互独立，是一种系统资源，最好用 5000以上，详细见下</p>
+<blockquote>
+<p>Both system and user ports are used by transport protocols (TCP, UDP, DCCP, SCTP) to indicate an application or service.<br>Ports 0–1023 – system or well-known ports.<br>Ports 1024–49151 – user or registered ports.<br>Ports &gt;49151 – dynamic / private ports.</p>
+</blockquote>
+<h2 id="2-3-字节序"><a href="#2-3-字节序" class="headerlink" title="2.3 字节序"></a>2.3 字节序</h2><p>CPU不同，多字节整型在内存中储存顺序不同</p>
+<ul>
+<li>小端：ARM/x86。值低位存低地址</li>
+<li>大端：power pc/mips/ARM 路由器。值低位存高地址</li>
+</ul>
+<h2 id="2-4-tcp、udp编程"><a href="#2-4-tcp、udp编程" class="headerlink" title="2.4 tcp、udp编程"></a>2.4 tcp、udp编程</h2><p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/socket/../socket/1.png" alt="tcp"></p>
+<ol>
+<li>socket<ul>
+<li>创建套接字</li>
+<li>domain ipv4、ipv6、本地通信</li>
+<li>type 套接字类型</li>
+<li>protocol 原始套接字使用，其它填 0</li>
+</ul>
+</li>
+<li>bind<ul>
+<li>主要用于服务器端，客户端可以不绑定</li>
+<li>sockaddr_in 转换成 sockaddr，见 man 7 ip。对于 IPv6 用 sockaddr_in6 转换成 struct sockaddr_storage，见 man 7 ipv6、man 7 socket</li>
+<li>服务器 bind 为 INADDY_ANY 表示本地任意ip的数据都能收到。客户端 connect 为 INADDY_ANY 表示连接到本地地址</li>
+</ul>
+</li>
+<li>listen<ul>
+<li>将主动套接字变为被动套接字</li>
+<li>backlog，一般写5，arm最大8。最多允许多少个正在建立的连接（3次握手中），最多允许 2 X backlog + 1</li>
+<li>内核维护两个链表，一个是正在建立连接的客户端，另一个是已经建立连接的客户端</li>
+</ul>
+</li>
+<li>accept<ul>
+<li>阻塞等待客户端连接，3次握手</li>
+<li>成功后返回新 fd 和 客户端地址、端口</li>
+<li>然后 read、write、close </li>
+</ul>
+</li>
+<li>客户端 connect 与 bind 类似</li>
+<li>send 与 write 区别，多了 flag，可以非阻塞，和 tcp带外数据</li>
+<li>recv 与 read 区别，多了 flag，可以非阻塞，和 tcp带外数据。PEEK 还可以只是读而不从 buffer 取走。</li>
+<li>关于 <code>SO_REUSEADDR</code>，<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/14388706/socket-options-so-reuseaddr-and-so-reuseport-how-do-they-differ-do-they-mean-t">详细解释</a><ul>
+<li>对 ANY 地址与指定地址的两个 socket bind 不认为是冲突，如 0.0.0.0:50001 与 192.168.2.1:50001 在设置 <code>SO_REUSEADDR</code> 时不认为是冲突</li>
+<li>TCP 连接关闭后进入 TIME_WAIT 状态，会固定等一段时间叫 Linger Time ，是为了等 buffer 中的数据发出。设置了 SO_REUSEADDR 的 socket 在 bind 时进行 socket 冲突检查时会忽略 TIME_WAIT 状态 socket，即不认为 TIME_WAIT 状态的 socket 与新 bind 的 socket 冲突</li>
+<li>对于 UDP ，SO_REUSEADDR 选项允许多个程序使用同一 socket(ip:port)，对于单播则报文不一定发给哪个程序，对于广播则所有程序都能收到报文，对于组播，至少有一个程序加入到组播组时，则所有程序都能收到报文，但加组的程序都退出后，则没加组的程序就不再收到报文</li>
+<li>如果要求 TCP 也允许多个程序绑定到相同的 socket，可以用 <code>SO_REUSEPORT</code>，甚至还有负载均衡功能，详细见上面链接</li>
+</ul>
+</li>
+<li>udp 没有 accpet 和 connect，直接用 sendto，recvfrom 指定地址和端口来传数据，具体见代码</li>
+</ol>
+<h2 id="2-5-并发服务器"><a href="#2-5-并发服务器" class="headerlink" title="2.5 并发服务器"></a>2.5 并发服务器</h2><p>使用多线程、多进程知识，具体见代码</p>
+<h2 id="2-6-多路复用"><a href="#2-6-多路复用" class="headerlink" title="2.6 多路复用"></a>2.6 多路复用</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="https://eklitzke.org/blocking-io-nonblocking-io-and-epoll">何时需要非阻塞IO</a></p>
+<ul>
+<li><p>默认 IO 是阻塞的，但对于需要并行处理时，有两种办法“非阻塞IO”和“IO复用”，经常一起使用</p>
+</li>
+<li><p>单独使用非阻塞IO效率低，单独使用IO复用时，即使是阻塞IO调用 read、write也不会阻塞</p>
+</li>
+<li><p>在接收数据时，selct、poll 中使用非阻塞IO是为了在数据多而缓冲区小的情况下，减少 selct、poll 系统调用次数，但弊端就是在缓冲区够用时会多一次 read</p>
+</li>
+<li><p>epoll 的 LT 模式每次调用 epoll_wait 时会检查 interest list 中的 fd 是否 ready，而 ET 模式不检查直接 sleep，交给开发者来 fully read or write，因此 ET 模式减少了  epoll_wait 的调用，且调用时效率更高。但 ET 模式一定要使用非阻塞 IO，且循环 read 和 write 直到返回 EWOULDBLOCK 或 EAGAIN</p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>select、poll、epoll 的使用</p>
+<p>参考相关 man 文档 <code>man 2 select_tut</code>、<code>man 7 epoll</code> 等</p>
+<p>我总结的 <strong>0009~~~epoll介绍.md</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.ulduzsoft.com/2014/01/select-poll-epoll-practical-difference-for-system-architects/">select、poll、epoll 对比与选择</a></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>缺点</th>
+<th>select</th>
+<th>poll</th>
+<th>LT epoll</th>
+<th>ET epoll</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>监控的事件每次要重新填充<br />要获得最大 fd 值<br />1024 个 fd 限制<br />对只监控连接是否断开，不关心数据的情况，仍要调 read</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>哪个事件发生需自己遍历判断<br />内核要扫描所有的监控 fd，而 epoll 使用与 fd 关联的回调机制，效率更高，O(1) 对比 O(n) <br />正在监控的事件不能被修改，对应的 fd 不能被关闭<br />只能通过发生的事件获得对应的 fd，不支持自定义数据结构</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>修改要监控的事件需要系统调用，有开销<br />只有 linux 系统支持 epoll</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>IO 可用会一直提醒，对不想立即处理的情况会有不必要的开销</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>代码实现更复杂（多线程、非阻塞IO），容易产生 bug</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>Y</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>程序不止用在 linux 平台</p>
+</li>
+<li><p>连接的存活时间短</p>
+</li>
+<li><p>连接数不超过 1000</p>
+<p>满足任意一条选 poll，否则 epoll</p>
+</li>
+</ul>
+<h2 id="2-7-超时"><a href="#2-7-超时" class="headerlink" title="2.7 超时"></a>2.7 超时</h2><ol>
+<li>socket 超时选项</li>
+<li>IO 复用接口参数</li>
+<li>处理 alarm 信号</li>
+<li>双方定时发送交互报文</li>
+<li>tcp keepalive 报文</li>
+</ol>
+<p>对于第 5 种方法</p>
+<ul>
+<li>只适用于 tcp，发送和回复都是无数据的 ACK 报文</li>
+<li>哪一端需要哪一端设置，不要求两端都设置</li>
+<li>链路空闲才会发送 keepalive 报文，因此检测端一直发包的情况是不会有 keepalive 报文的</li>
+<li>对于发包没有回复 ack 的检测可以用 TCP_USER_TIMEOUT，<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/37917947/when-is-a-tcp-connection-considered-idle">参考</a></li>
+<li>socket 参数设置，linux 系统也是类似 <a target="_blank" rel="noopener" href="http://www.tldp.org/HOWTO/html_single/TCP-Keepalive-HOWTO/">linux 系统的 keepalive 设置</a><ul>
+<li>TCP_KEEPIDLE  从链路无数据交换开始多少秒后发送 keepalive 报文</li>
+<li>TCP_KEEPINTVL 每次 keepalive 报文的发送间隔，单位：秒</li>
+<li>TCP_KEEPCNT 连续无应答多少次后认为对端挂了，此时通知应用层错误，read 错误返回</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-8-广播-amp-组播"><a href="#2-8-广播-amp-组播" class="headerlink" title="2.8 广播 &amp; 组播"></a>2.8 广播 &amp; 组播</h2><ul>
+<li><p>广播和组播只有 udp 支持</p>
+</li>
+<li><p>bind 相当于过滤的作用，因此测试广播和组播时，要么绑定到 ANY (0.0.0.0)，要么绑定到组播或广播地址，但这样就没法接收单播报文了</p>
+</li>
+<li><p>见 2.4 第 8 条关于 <code>SO_REUSEADDR </code> 中的 UDP 部分</p>
+</li>
+<li><p>广播设置，发送方设置 socket 选项允许发送广播（man 7 socket），目的 ip 为广播地址（255 结尾不一定就是广播地址）即可，接收方不需要设置 socket 选项就可以接收广播</p>
+</li>
+<li><p>组播设置，发送方目的 ip 为组播地址，接收方通过 socket 选项加入到组播组里（man 7 ip）</p>
+</li>
+<li><p>如果发送方也属于广播的范围，则广播报文也会回馈给自己一份，这个无法禁止。如果发送方也属于组播组，同样会收到回馈报文，可以通过 IP_MUTICAST_LOOP 选项关闭回馈</p>
+</li>
+</ul>
+<h2 id="2-9-UNIX-域套接字"><a href="#2-9-UNIX-域套接字" class="headerlink" title="2.9 UNIX 域套接字"></a>2.9 UNIX 域套接字</h2><p>用于本地进程间通信，man 7 unix</p>
+<p>bind 指定一个不存在的文件路径，进程间通过文件通信</p>
+<p>通过 access 判断文件存在，可读可写，配合 unlink 删除已存在的文件</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/sqlite/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">sqlite</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/"><span class="level-item">RFID</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

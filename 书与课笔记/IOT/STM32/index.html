@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>STM32 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net 1. 必要知识1.1 ARMARM 3 个含义  公司，不生产芯片 一类处理器 一种处理器架构  ARM 处理器家族  经典，ARM 7、9、11 Cortex-M，单片机，偏控制 Cortex-A，跑重量级操作系统，高性能，偏处理 Cortex-R，实时，汽车制动  ARM 处理器架构，包含指令集与编程模型（基本数据类型、工作模型、寄存器组），同种体系结构有多种处"><meta property="og:type" content="blog"><meta property="og:title" content="STM32"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net 1. 必要知识1.1 ARMARM 3 个含义  公司，不生产芯片 一类处理器 一种处理器架构  ARM 处理器家族  经典，ARM 7、9、11 Cortex-M，单片机，偏控制 Cortex-A，跑重量级操作系统，高性能，偏处理 Cortex-R，实时，汽车制动  ARM 处理器架构，包含指令集与编程模型（基本数据类型、工作模型、寄存器组），同种体系结构有多种处"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/3.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/4.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/5.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/6.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/7.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/8.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/9.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/10.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/11.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/13.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/12.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/14.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/15.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/16.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/17.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/18.png"><meta property="article:published_time" content="2019-06-05T00:15:07.501Z"><meta property="article:modified_time" content="2021-03-01T08:00:21.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/"},"headline":"STM32","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/3.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/4.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/5.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/6.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/7.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/8.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/9.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/10.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/11.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/13.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/12.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/14.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/15.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/16.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/17.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/18.png"],"datePublished":"2019-06-05T00:15:07.501Z","dateModified":"2021-03-01T08:00:21.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net 1. 必要知识1.1 ARMARM 3 个含义  公司，不生产芯片 一类处理器 一种处理器架构  ARM 处理器家族  经典，ARM 7、9、11 Cortex-M，单片机，偏控制 Cortex-A，跑重量级操作系统，高性能，偏处理 Cortex-R，实时，汽车制动  ARM 处理器架构，包含指令集与编程模型（基本数据类型、工作模型、寄存器组），同种体系结构有多种处"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.501Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:00:21.000Z" title="2021/3/1 下午4:00:21">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">STM32</h1><div class="content"><p><a href="STM32">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32">asset-net</a></p>
+<h1 id="1-必要知识"><a href="#1-必要知识" class="headerlink" title="1. 必要知识"></a>1. 必要知识</h1><h2 id="1-1-ARM"><a href="#1-1-ARM" class="headerlink" title="1.1 ARM"></a>1.1 ARM</h2><p>ARM 3 个含义</p>
+<ul>
+<li>公司，不生产芯片</li>
+<li>一类处理器</li>
+<li>一种处理器架构</li>
+</ul>
+<p>ARM 处理器家族</p>
+<ul>
+<li>经典，ARM 7、9、11</li>
+<li>Cortex-M，单片机，偏控制</li>
+<li>Cortex-A，跑重量级操作系统，高性能，偏处理</li>
+<li>Cortex-R，实时，汽车制动</li>
+</ul>
+<p>ARM 处理器架构，包含指令集与编程模型（基本数据类型、工作模型、寄存器组），同种体系结构有多种处理器</p>
+<ul>
+<li>V1 - V3 废弃，V4 - V6 经典处理器</li>
+<li>V7 ，支持 Thumb-2 32 位指令集。ARMv6-M v6 与 v7 结合产生的版本</li>
+<li>V8 兼容 V7，支持 64 位</li>
+</ul>
+<p>指令集</p>
+<ul>
+<li><p>CISC，指令长度不定，执行需要多个周期</p>
+</li>
+<li><p>RISC，长度通常固定，大多一个周期。ARM</p>
+</li>
+</ul>
+<p>SOC（片上系统），包含 CPU、存储器、外设</p>
+<span id="more"></span>
+
+<h2 id="1-2-Cortex-M0"><a href="#1-2-Cortex-M0" class="headerlink" title="1.2 Cortex-M0"></a>1.2 Cortex-M0</h2><p>低功耗和混合信号的处理，ARMv6-M 处理器架构</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/1.png" alt="1"></p>
+<p>两种模式，区别操作的寄存器不一样</p>
+<ul>
+<li><p>线程模式，芯片复位后的模式，执行用户程序</p>
+</li>
+<li><p>处理模式，发生异常或中断后的模式，处理后返回线程模式</p>
+</li>
+</ul>
+<p>两种状态</p>
+<ul>
+<li><p>Thumb状态 ，正常运行时</p>
+</li>
+<li><p>调试状态，调试时</p>
+</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/2.png" alt="2"></p>
+<p>寄存器</p>
+<ul>
+<li><p>R0 - R12，13个通用寄存器，R0-R7 16位或32位，R8-R12 32位</p>
+</li>
+<li><p>R13，SP，两个堆栈指针，MSP 主栈指针，PSP 进程栈指针。处理模式只能用 MSP，线程模式都可用，通过 CONTROL 配置，默认 MSP</p>
+</li>
+<li><p>R14，LR，返回地址</p>
+</li>
+<li><p>R15，PC，下一条指令</p>
+</li>
+</ul>
+<p>xPSR，程序状态寄存器，A 应用 I 中断 E 执行</p>
+<ul>
+<li><p>APSR，指令执行后的标志</p>
+</li>
+<li><p>IPSR，异常编号</p>
+</li>
+<li><p>EPSR，Thumb 状态位</p>
+</li>
+</ul>
+<p>PRIMASK 中断屏蔽</p>
+<p>CONTROL 选择线程模式使用的 SP，1 使用 PSP， 0 使用 MSP</p>
+<p>32 个外部中断 IRQ，1 个不可屏蔽中断 NMI</p>
+<p>内部的中断称为异常</p>
+<p>指令集，Cortex-M0只支持Thumb指令</p>
+<ul>
+<li><p>ARM 指令集，长度 32 位</p>
+</li>
+<li><p>Thumb 指令集，长度 16 位。Thumb-2 技术添加了一些 4 字节指令</p>
+</li>
+</ul>
+<h2 id="1-3-STM32F0"><a href="#1-3-STM32F0" class="headerlink" title="1.3 STM32F0"></a>1.3 STM32F0</h2><p>STM32F0 系统架构</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/3.png" alt="3"></p>
+<ul>
+<li><p>二个主模块</p>
+<ul>
+<li>Cortex-M0 内核及先进高性能总线 (AHB bus)</li>
+<li>通用 DMA ( GP-DMA – general-purpose DMA)</li>
+</ul>
+</li>
+<li><p>四个从模块</p>
+<ul>
+<li>内部 FLASH</li>
+<li>内部SRAM</li>
+<li>专门用于连接 GPIO 口的 AHB2</li>
+<li>AHB 到 APB 的桥 , 所有的外设都挂在 APB 总线上</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2. 环境搭建"></a>2. 环境搭建</h1><p>Keil MDK-ARM 主要低端、单片机领域，符合 CMSIS 库（ARM 公司的接口标准），高端仍用 GCC</p>
+<p>安装 MDK-523、破解、Keil.STM32F0xx_DFP.1.4.0.pack，通过设备管理器查找方式安装驱动，目录是 st-link_v2_usbdriver_for Windows 8</p>
+<p>STM32Cube MX，支持图形化配置</p>
+<p>安装 Java 环境、SetupSTM32CubeMX-4.22.0，解压 stm32cube_fw_f0_v180 到安装目录</p>
+<p>STM32F051K8 UFQFPN封装</p>
+<p>导出 project，IDE 选择 MDK-ARM V5，勾选 generate … a pair of ‘.c/.h’</p>
+<h1 id="3-存储器映射与启动"><a href="#3-存储器映射与启动" class="headerlink" title="3. 存储器映射与启动"></a>3. 存储器映射与启动</h1><p>Cortex-M0 存储器映射</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/4.png" alt="4"></p>
+<p>STM32F0 存储器映射</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/5.png" alt="5"></p>
+<p>访问寄存器的方式，两种</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 第一种 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GPIOA_ODR    （ *(unsigned int *) ( GPIOA_BASE  +  0x14 )）</span></span><br><span class="line"></span><br><span class="line">val  = GPIOA_ODR  ;    <span class="comment">//读</span></span><br><span class="line">GPIOA_ODR = val  ;     <span class="comment">//写</span></span><br><span class="line"><span class="comment">/* 第二种 */</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line"><span class="keyword">uint32_t</span>		MODER;      <span class="comment">/*Address offset: 0x00 */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		OTYPER; 	<span class="comment">/*Address offset: 0x04 */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		OSPEEDR; 	<span class="comment">/*Address offset: 0x08 */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		PUPDR;	 	<span class="comment">/*Address offset: 0x0C */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		IDR; 		<span class="comment">/*Address offset: 0x10 */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		ODR; 		<span class="comment">/*Address offset: 0x14 */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		BSRR; 		<span class="comment">/*Address offset: 0x18 */</span></span><br><span class="line"><span class="keyword">uint32_t</span>		LCKR; 		<span class="comment">/*Address offset: 0x1C */</span></span><br><span class="line">&#125; GPIO_TypeDef;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>     GPIOA_BASE        ( (unsigned int ) 0x48000000 )</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>     GPIOA	 ((GPIO_TypeDef *) GPIOA_BASE)</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>STM32F0 启动流程，从 0x0 读 MSP 地址初始化栈，从 0x4 读中断向量表 Reset 地址值，跳转</p>
+</li>
+<li><p>3 种启动模式 Flash、System Memmory（系统存储器，一般放bootloader）、内置SRAM</p>
+</li>
+<li><p>根据启动模式的不同，用户闪存、系统闪存和SRAM都可以映射到0x0的低端地址</p>
+</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/6.png" alt="6"></p>
+<p><code>startup_stm32f051x8.s</code> 流程，代码与注释见 assets 文件夹</p>
+<ul>
+<li>定义栈，记录栈顶。栈向低地址方向增长</li>
+<li>定义堆，记录堆起始、结束地址</li>
+<li>定义中断向量表</li>
+<li>编写 reset 处理，跳转到外部函数 SystemInit 初始化时钟，再跳转到 __main 初始化堆栈，最后执行 main</li>
+<li> __main 是 keil 的 MICROLIB 函数，如果没有勾选 MICROLIB，则导出堆栈初始化代码，由用户调用自行初始化</li>
+</ul>
+<h1 id="4-GPIO"><a href="#4-GPIO" class="headerlink" title="4. GPIO"></a>4. GPIO</h1><p>GPIO 口可配置输入、输出，也可复用为其它功能，AD、串口</p>
+<ul>
+<li>4 个配置寄存器。MODER、OTYPER、OSPEEDR、PUPDR</li>
+<li>数据寄存器。IDR、ODR</li>
+<li>置位、复位寄存器。BSRR</li>
+<li>复用功能配置寄存器。只是用 GPIO 功能不用配。AFRH、AFRL</li>
+</ul>
+<ul>
+<li><p>MODER 2位控制 1 个管脚，16 个管脚为 1 组。2 位表示，输入、输出、复用、模拟，模拟表示输入或输出模拟信号，用于 ADC、DAC。</p>
+</li>
+<li><p>OTYPER 输出类型，推挽、开漏输出。推挽 P、N MOS 都工作，P 输出高电平，N 输出低电平。开漏输出只有 N MOS 工作，只能输出低电平，要输出高电平需外接上拉电阻。</p>
+</li>
+<li><p>OSPEEDR 输出时可以高低电平切换，而这种方波的频率不能超过寄存器配置的频率。设置的频率高了后功耗也会增加。</p>
+</li>
+<li><p>PUPDR 内部有上拉和下拉电阻，不配置则不起作用，配置后相当于设置了管脚默认是输出高电平还是低电平。</p>
+</li>
+<li><p>IDR 工作为输入时的高低电平值</p>
+</li>
+<li><p>ODR 工作为输出时的高低电平值</p>
+</li>
+<li><p>BSRR 用来置位或复位（写0或1） ODR 某一位，好处是不影响 ODR 的其它位，因为可以节省一个读取操作</p>
+</li>
+<li><p>AFRH、AFRL 配置复用功能，4 位对应 1 个管脚</p>
+</li>
+</ul>
+<p>按键与LED实验</p>
+<p>操作 GPIO 前需要开启对应的时钟</p>
+<p>一定在注释间写代码，不然新代码会被 Cube MX 覆盖</p>
+<p>两种库，标准库 与 HAL 库（趋势）</p>
+<h1 id="5-串口"><a href="#5-串口" class="headerlink" title="5. 串口"></a>5. 串口</h1><p>同步通信，通信双方使用同一时钟，SPI、I2C</p>
+<p>异步通信，由于没有时钟信号，双方的时钟只能尽量保持一致，通信速率不能太快，UART</p>
+<p>串行通信，同一时刻只能 1 bit</p>
+<p>并行通信，多根数据线，速度快，占用引脚资源多</p>
+<p>单工：只能收或只能发；半双工：可以收发，但不能同时；全双工：可以同时收发</p>
+<p>一般来说一根数据线半双工，两根全双工，有时钟线同步，无异步</p>
+<ul>
+<li>UART 异步全双工</li>
+<li>SPI 同步全双工</li>
+<li>I2C 同步半双工</li>
+<li>单总线 异步半双工</li>
+</ul>
+<p>USART 比 UART 多了同步时钟线的支持，STM32F051K8 有两个串口</p>
+<p>串口通信协议（能背诵）</p>
+<ul>
+<li><p>起始位：拉低</p>
+</li>
+<li><p>数据位5-8：低位（bit0）先发，</p>
+</li>
+<li><p>奇偶校验位：加上校验位后 1 的个数为奇数个或偶数个</p>
+</li>
+<li><p>停止位1-2：高</p>
+</li>
+<li><p>波特率：每秒传送的 bit 位个数，bps，实际没有那么多，因为还要去除协议的位数</p>
+</li>
+</ul>
+<p>常见配置 8N1</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/7.png" alt="7"></p>
+<ul>
+<li>CR 控制寄存器：收发中断、数据位、奇偶校验、停止位。</li>
+<li>BRR：设置波特率</li>
+<li>ISR 中断和状态寄存器：指示接收完数据、发送完数据。正在发送或接收时，通过移位功能进行每个位的收或发，移位完成后产生对应中断或置状态位</li>
+<li>TDR、RDR：储存发送和接收的数据。串口收发可以通过 FIFO 也可以通过 TDR、RDR</li>
+</ul>
+<p>使用 printf 适用于 IAR 和 keil</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputc</span><span class="params">(<span class="keyword">int</span> ch, FILE *stream)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">while</span>(!(USART1-&gt;ISR &amp; UART_FLAG_TXE))</span><br><span class="line">    ;</span><br><span class="line">  USART1-&gt;TDR = ch;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> ch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h1 id="6-中断"><a href="#6-中断" class="headerlink" title="6. 中断"></a>6. 中断</h1><p>如果事件发生的频率不高，那么中断比轮询对 CPU 的利用率高</p>
+<p>内核部分的中断叫异常，中断的总管家 NVIC，每个外设还有自己的中断管理。比如 GPIO 自己的中断管理叫 EXTI</p>
+<p>中断处理的入口地址称为异常向量或中断向量</p>
+<p>数值越小优先级越高。3 个固定优先级，-3、-2、-1，不能配置，分别 Reset、NMI、Hard Fault。</p>
+<p>4 个可编程优先级，0-3。优先级高的可以抢占优先级低的，即中断嵌套。同级中断同时发生，中断向量编号小的先被处理。如有更高优先级的中断正在处理，新的外部中断会挂起，挂起的中断记录到寄存器。</p>
+<p>M0 支持32个外部中断，15个内部异常。而 F051 用了 28 个外部中断，6个内部异常。</p>
+<p>GPIO 口用了 16 个外部中断。6组（PA - PF），每组 16 个管脚，每组相同编号的连到同一个通道选择器上（PA0 PB0 … PF0 对应 EXTI0），也就是 6 个管脚只能选其中 1 个来触发中断。通过配置 SYSCFG 来选。</p>
+<p>中断与事件的区别？事件发生后会产生脉冲来唤醒 CPU，而中断发生后会执行中断处理函数</p>
+<p>中断与事件图，符号右侧没有凹陷的是与门，有凹陷的是或门</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/8.png" alt="8"></p>
+<p>中断编程步骤</p>
+<ol>
+<li>使能时钟</li>
+<li>配置 GPIO 为中断功能。配置 SYSCFG 选择</li>
+<li>设置中断优先级</li>
+<li>使能对应的中断</li>
+<li>实现中断服务程序</li>
+</ol>
+<p>按键中断与串口中断实验</p>
+<p>Cube MX 可以实现步骤 1-4，自己只需要实现 5 即可。Cube MX 给管脚设置中断后，开启 NVIC 中断开关，设置优先级，在 GPIO 处设置触发方式。</p>
+<p>向量表通过 <code>表 26. 向量表</code> 查询，在哪里编写中断程序可以从汇编代码的向量表中逐步找到，callback 结尾的函数。中断处理程序需要进一步判断是哪个外部中断或哪个串口，比如 EXT4 - 15 都共用同一个中断向量。</p>
+<p>串口发送使用 <code>HAL_UART_Transmit_IT</code> 与 <code>HAL_UART_TxCpltCallback</code>，接收使用 <code>HAL_UART_Receive_IT</code> 与 <code>HAL_UART_RxCpltCallback</code></p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/9.png" alt="9"></p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/10.png" alt="10"></p>
+<h1 id="7-时钟与定时器"><a href="#7-时钟与定时器" class="headerlink" title="7. 时钟与定时器"></a>7. 时钟与定时器</h1><p>时钟，脉搏，提供工作时的时间概念。时钟源，心脏，振荡器。</p>
+<ul>
+<li><p>RC 振荡器，成本低、不稳定。有些 SoC 内部集成充当晶振的备份</p>
+</li>
+<li><p>晶体振荡器，稳定，成本稍高</p>
+</li>
+</ul>
+<p>STM32 4个时钟源</p>
+<ul>
+<li>HSI 高速内部时钟，RC 振荡器，8M</li>
+<li>HSE 高速外部时钟，接晶振或外部时钟信号，4M-16M</li>
+<li>LSI 低速内部时钟，RC 振荡器，40K，提供给看门狗，也可用作 RTC</li>
+<li>LSE 低速外部时钟，接 32.768K 晶振，提供给 RTC。RTC 可以在系统掉电后也可使用电池进行计时。</li>
+</ul>
+<p>通过分频或倍频提供时钟给各个器件，具体参考 <code>图 10. 时钟树</code>，配置 RCC 寄存器来实现</p>
+<p>在 Cube MX 下启用 RCC 高速时钟，在时钟树上选择 HSE，PLL x6 = 48M</p>
+<p>汇编启动代码执行 <code>SystemInit</code> 进行默认 HSI 时钟初始化，main 函数执行 <code>SystemClock_Config</code> 进行时钟配置</p>
+<h2 id="7-1-SysTick-定时器"><a href="#7-1-SysTick-定时器" class="headerlink" title="7.1 SysTick 定时器"></a>7.1 SysTick 定时器</h2><p>SysTick 定时器，M0 内核部件，定时、计数功能，如果时钟是周期的，那么计数就是计时</p>
+<p>24 位，递减计数，减为 0 时触发中断。时钟源不分频时为 HCLK</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/11.png" alt="11"></p>
+<ul>
+<li><p>SysTick 控制寄存器，开启计数、中断</p>
+</li>
+<li><p>SysTick 重载寄存器，减为 0 重载的数值</p>
+</li>
+<li><p>SysTick 数值寄存器，当前数值</p>
+</li>
+<li><p>SysTick 校准寄存器</p>
+</li>
+</ul>
+<p>因为操作系统要使用，所以已经初始化好了， Cube MX 不用配置。在 <code>SystemClock_Config</code> 调 <code>HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000)</code> 设置重载数值，因此 SysTick 触发中断周期 = 1 / 时钟频率 X (时钟频率 / 1000) = 1 / 1000，1 ms</p>
+<p>在 <code>SysTick_Handler</code> 中断处理中增加系统 tick 值和调用户的回调函数</p>
+<p>注意对微秒级的需求应使用通用定时器，否则中断频率太高，SysTick 主要给系统使用</p>
+<p>HAL_Delay 依赖系统 tick 值，在高优先级中断中使用会导致死锁，且中断中应避免延时函数</p>
+<h2 id="7-2-通用定时器"><a href="#7-2-通用定时器" class="headerlink" title="7.2 通用定时器"></a>7.2 通用定时器</h2><p>6 个通用定时器，1 个基本定时器，1 个高级定时器</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/13.png" alt="13"></p>
+<p>通用定时器</p>
+<ul>
+<li>定时计数</li>
+<li>输入捕获，获得频率、脉宽</li>
+<li>输出比较，输出 PWM</li>
+</ul>
+<p>高级定时器，带死区控制和紧急刹车，用于 PWM 控制电机</p>
+<p>基本定时器，定时计数、驱动 DAC</p>
+<p>计数模式</p>
+<ul>
+<li>向上，从 0 递增达到某个值后产生中断</li>
+<li>向下，从某个值递减达到 0 后产生中断</li>
+<li>中央对齐，先向上，产生中断后再向下，如此往复</li>
+</ul>
+<h3 id="7-2-1-定时计数"><a href="#7-2-1-定时计数" class="headerlink" title="7.2.1 定时计数"></a>7.2.1 定时计数</h3><p>定时器使用内部时钟时，APB 没有分频的话等于 PCLK</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/12.png" alt="12"></p>
+<p>Cube MX 的 TIM2 启用内部时钟（其它部分不用设置），系统时钟使用外部晶振 X6，配置 TIM2 的 PSC 为 48 - 1，使用 48 分频（此时频率1M），计数值为 1000000 - 1，1M 触发一次中断来实现 1s 定时，最后开启对应 NVIC 中断。</p>
+<p>代码中从中断向量表往里找，最终调用 <code>HAL_TIM_PeriodElapsedCallback</code>，其它回调函数用于不同通道的输入捕获和输出比较功能。注意在回调函数中判断 <code>if(htim-&gt;Instance == TIM2)</code>。最后 main 中调 <code>HAL_TIM_Base_Start_IT</code> 启用定时器</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/14.png" alt="14"></p>
+<h3 id="7-2-2-输入捕获"><a href="#7-2-2-输入捕获" class="headerlink" title="7.2.2 输入捕获"></a>7.2.2 输入捕获</h3><p>输入捕获可以用来捕获外部事件，比如引脚的电平变化（上升沿，下降沿），并记录下变化的时间，通常可以用来测量外部信号的频率或者电平持续的时间</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/15.png" alt="14"></p>
+<h3 id="7-2-3-输出比较"><a href="#7-2-3-输出比较" class="headerlink" title="7.2.3 输出比较"></a>7.2.3 输出比较</h3><p>此项功能是用来控制一个输出波形，当计数器与捕获/比较寄存器的内容相同时，输出比较功能做出相应动作，比如电平的翻转。通常用于生产PWM波形</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/16.png" alt="16"></p>
+<h1 id="8-ADC"><a href="#8-ADC" class="headerlink" title="8. ADC"></a>8. ADC</h1><p>性能指标：量程、分辨率、转换时间</p>
+<p>精度高转换时间变长，耗时 = 采样时间 + 转换时间</p>
+<p>12 位精度耗时 1us（采样时间 1.5T，精度 12bits 转换时间 12.5T，总耗时 14T，最高工作频率 14M）</p>
+<ul>
+<li>精度：6、8、10、12 位</li>
+<li>转换电压范围：0-3.6</li>
+<li>供电范围：2.4-3.6</li>
+<li>19个转换通道：16个外部通道、3个内部通道（温度、外部电池、参考电压）</li>
+<li>采样时间可配置</li>
+</ul>
+<p>时钟源</p>
+<ul>
+<li>PCLK 的 2/4 分频，耗时固定，但受系统频率影响</li>
+<li>片上 HSI 时钟，保证工作在最高频率（14M），但触发事件与开始转换之间的延迟不确定</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/17.png" alt="17"></p>
+<p>转换模式</p>
+<ul>
+<li>单通道/多通道，单次/多次转换，前扫描/后扫描（从通道 0 到通道 18 还是相反）。间隔转换，外部事件信号开启转换</li>
+<li>左对齐/右对齐，转换后的数据储存在 16位 寄存器的高位部分还是低位部分</li>
+</ul>
+<p>触发方式，开始方式</p>
+<ul>
+<li>软件设置 ADC_CR 的 ADSTART = 1</li>
+<li>外部事件，定时器 TRGO、输入引脚，上升沿、下降沿触发</li>
+</ul>
+<p>中断产生方式，对于单通道转换没有区别</p>
+<ul>
+<li>在多通道转换时，一个序列转换结束产生中断。ISR 寄存器 EOS 标志</li>
+<li>在多通道转换时，一个通道转换结束产生中断。ISR 寄存器 EOC 标志</li>
+</ul>
+<p>模拟看门狗</p>
+<ul>
+<li>外部电压值超过设定的范围，就会产生中断，进行报警</li>
+</ul>
+<p>在 14M 工作频率下，转换时间表</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/STM32/../STM32/18.png" alt="18"></p>
+<p>单通道、多通道、五向按键识别实验</p>
+<ul>
+<li><p>cube mx 仍然是管脚配置为 ADC，配置 ADC 时钟源内部还是外部，转换模式、触发方式</p>
+</li>
+<li><p>注意如果是连续/多次转换同时还开启了中断，那么中断会非常多，影响系统运行。</p>
+</li>
+<li><p>代码中编写中断处理函数即可，开启带中断的ADC转换要使用 IT 结尾的函数 <code>HAL_ADC_Start_IT</code></p>
+</li>
+<li><p>也可以用读 ISR 寄存器 EOC 标志的方式死等</p>
+</li>
+<li><p>多通道方式要及时用 <code>HAL_ADC_GetValue</code> 把 DR 寄存器的值取走，避免下一个通道转换的值覆盖</p>
+</li>
+</ul>
+<h1 id="9-DMA"><a href="#9-DMA" class="headerlink" title="9. DMA"></a>9. DMA</h1><ul>
+<li><p>设备发送 DMA 请求，DMA 搬运数据到存储器</p>
+</li>
+<li><p>5 个 DMA，可配置优先级，优先级高的获得总线，相同优先级的通道编号小的优先级高</p>
+</li>
+<li><p>DMA 需要源、目的、长度。源与目的可以是存储器或外设，因此会组成 4 种搬移情况。长度包含数据的宽度（8bit、16bit…)和数据的数量，源与目的的数据宽度通常保持相同</p>
+</li>
+<li><p>DMA 增量模式，如将内存配为增量模式，那么从同一个寄存器读每次会存储到下一个内存单元</p>
+</li>
+<li><p>DMA 循环模式，如设置DMA从寄存器到内存搬移 4 次，内存增量模式，开启循环模式后，到达 4 次后 DMA 会继续搬移到内存的起始位置，也就是实现了循环缓冲区。ADC 连续采集与 DMA 循环模式需要相互配合，ADC 不断采集然后发起 DMA 请求，而 DMA 不断的搬运数据。</p>
+</li>
+<li><p>中断：传输一半、传输完成、传输出错</p>
+</li>
+</ul>
+<p>ADC 多路采集 DMA 实验</p>
+<ul>
+<li><p>ADC 上添加 DMA，DMA 中断默认启用，DMA 如果配置了循环模式则 ADC 也选择连续模式。注意避免中断太频繁</p>
+</li>
+<li><p>开启ADC DMA 使用 <code>HAL_ADC_Start_DMA</code> 第 3 个参数为 DMA 传输的数据数量，第 2 个参数可以强转为 <code>uint32_t *</code></p>
+</li>
+<li><p>DMA 完成的回调函数在调用 <code>HAL_ADC_Start_DMA</code> 时注册，最终我们需要实现回调 <code>HAL_ADC_ConvCpltCallback</code></p>
+</li>
+</ul>
+<h1 id="10-I2C"><a href="#10-I2C" class="headerlink" title="10. I2C"></a>10. I2C</h1><p>I2C，详细请参考 12.md  I2C 子系统部分</p>
+<ul>
+<li><p>同步半双工串行，线与，上拉电阻，默认高电平</p>
+</li>
+<li><p>SCL 高电平时，SDA 变化，拉低表起始，拉高表结束</p>
+</li>
+<li><p>7 位地址（也有 10 位地址），加上 0 写 / 1 读。接收方拉低进行 ACK （应答）</p>
+</li>
+<li><p>数据传输时 SCL 高电平时 SDA 不变，SCL 低电平时 SDA 变化。每个字节从高位开始发</p>
+</li>
+<li><p>对于 读，主设备不想读时发 NACK（维持高电平不拉低）。而且通常读是需要先写地址（要读的地址）然后进行第 2 次开始才是读</p>
+</li>
+</ul>
+<p>MPU6050 实验</p>
+<ul>
+<li>I2C 可以用 GPIO 模拟或者硬件 I2C</li>
+<li>Cube MX 开启 I2C，将 SCL、SDA 管脚改对后没有其它需要配置的了</li>
+<li>代码里使用 <code>HAL_I2C_Mem_Write</code> 和 <code>HAL_I2C_Mem_Read</code> 来读写寄存器，其中第 4 个参数指定地址长度，只支持 1B 和 2B 寄存器地址，写入或读取的数据长度以字节为单位</li>
+</ul>
+<p>物联网网关。不同的网络协议转换。WIFI、ipv6、BLE、zigbee</p>
+<p>智能小车，WIFI 图像采集、超声波避障、红外巡线、SG90舵机、直流电机驱动</p>
+<p>四轴飞行器</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">WIFI</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/sqlite/"><span class="level-item">sqlite</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

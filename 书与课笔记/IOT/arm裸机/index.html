@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>arm裸机 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="看电路图、芯片手册，会用 C 语言控制硬件 Cortex A 应用 高端，M MCU 低端，R realtime 实时 待完善，arm 指令详细介绍，C、汇编混合编程，连接脚本 以 Win7 兼容模式安装 arm-2011.09-70-arm-none-linux-gnueabi.exe， 安装 MDK454.exe keil 指定编译器路径只能是 C 盘，用 mklink &amp;#x2F;d &amp;quot;C:"><meta property="og:type" content="blog"><meta property="og:title" content="arm裸机"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/arm%E8%A3%B8%E6%9C%BA/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="看电路图、芯片手册，会用 C 语言控制硬件 Cortex A 应用 高端，M MCU 低端，R realtime 实时 待完善，arm 指令详细介绍，C、汇编混合编程，连接脚本 以 Win7 兼容模式安装 arm-2011.09-70-arm-none-linux-gnueabi.exe， 安装 MDK454.exe keil 指定编译器路径只能是 C 盘，用 mklink &amp;#x2F;d &amp;quot;C:"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-06-05T00:15:07.428Z"><meta property="article:modified_time" content="2021-03-01T07:56:37.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/arm%E8%A3%B8%E6%9C%BA/"},"headline":"arm裸机","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-06-05T00:15:07.428Z","dateModified":"2021-03-01T07:56:37.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"看电路图、芯片手册，会用 C 语言控制硬件 Cortex A 应用 高端，M MCU 低端，R realtime 实时 待完善，arm 指令详细介绍，C、汇编混合编程，连接脚本 以 Win7 兼容模式安装 arm-2011.09-70-arm-none-linux-gnueabi.exe， 安装 MDK454.exe keil 指定编译器路径只能是 C 盘，用 mklink &#x2F;d &quot;C:"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/arm%E8%A3%B8%E6%9C%BA/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.428Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:56:37.000Z" title="2021/3/1 下午3:56:37">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">arm裸机</h1><div class="content"><p>看电路图、芯片手册，会用 C 语言控制硬件</p>
+<p>Cortex A 应用 高端，M MCU 低端，R realtime 实时</p>
+<p>待完善，arm 指令详细介绍，C、汇编混合编程，连接脚本</p>
+<p>以 Win7 兼容模式安装 <code>arm-2011.09-70-arm-none-linux-gnueabi.exe</code>， 安装 <code>MDK454.exe</code></p>
+<p>keil 指定编译器路径只能是 C 盘，用 <code>mklink /d &quot;C:\Program Files\Google&quot; &quot;D:\program file\chrome\Google&quot;</code> 解决</p>
+<p>新建工程，写<code>start.s</code>，指定工程的链接脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">loadb 40001000</span><br><span class="line">go 40001000</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>7个工作模式</p>
+<ul>
+<li>user，非特权</li>
+<li>IRQ，中断</li>
+<li>supervisor，超级</li>
+<li>FIQ，高优先级中断</li>
+<li>abort，异常</li>
+<li>undef，未定义指令，浮点运算</li>
+<li>system，user 模式的特权模式</li>
+</ul>
+<p>37个寄存器</p>
+<ul>
+<li>PC、CPSR（当前工作模式 current program status register）、5个 SPSR（保存的 saved program status register）</li>
+<li>30个通用寄存器，r13 SP，r14 LR，r15 PC</li>
+<li>ARM 状态指令 4B，thumb 状态指令 2B</li>
+<li>r13 - r14 每个模式独立的</li>
+<li>r8 - r12 对于 FIQ 也是独立的</li>
+<li>CPSR（32位） 0-4 模式，28-31 进位、为0等标记位，还有中断禁止位。读CPSR mrs，写 CPSR msr，swi 触发软中断</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/10261300/invalid-constant-after-fixup">mov指令中的立即数限制</a>，ARMv5 指令中只有12位可以储存立即数，其中8位储存数（范围0-255），另外4位表示循环右移的位数，位数只能是0-30之间的偶数</p>
+<p>两种方法解决， <code>ldr r7,=#370</code> 从内存中读数据，或者用两条指令运算得出想要的数。ARMv7 可以用 movw 载入16位的数</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mov</td>
+<td></td>
+</tr>
+<tr>
+<td>and/orr</td>
+<td>与、或</td>
+</tr>
+<tr>
+<td>bic</td>
+<td>清0几位</td>
+</tr>
+<tr>
+<td>tst</td>
+<td>某位测试</td>
+</tr>
+<tr>
+<td>cmp</td>
+<td></td>
+</tr>
+<tr>
+<td>add/sub/mul</td>
+<td>源操作数可以先移位在进行运算</td>
+</tr>
+<tr>
+<td>b /bl func/bleq</td>
+<td>跳转。bl 会将 pc 保存到 lr，函数执行完后用 lr 恢复到 pc</td>
+</tr>
+<tr>
+<td>ldr / str</td>
+<td>内存到寄存器，寄存器到内存。内存间不能直接赋值<br />后缀b 1个字节，h 2个字节<br />[r1, #8] 实现数组的功能<br />前索引、后索引，类似 i++、++i 区别<br />! 实现自动更新寄存器<br />ldr pc, irq       //pc = *(irq)</td>
+</tr>
+<tr>
+<td>ldmia / stmia</td>
+<td>批量拷贝</td>
+</tr>
+<tr>
+<td>stmfd / ldmfd</td>
+<td>批量入栈出栈，^ 用 SPSR 恢复 CPSR</td>
+</tr>
+</tbody></table>
+<p>异常种类</p>
+<ul>
+<li>硬中断，IRQ、FIQ</li>
+<li>软中断，系统调用，进入内核</li>
+<li>复位，比如手机死机</li>
+<li>未定义指令</li>
+<li>数据异常，数据越界</li>
+</ul>
+<p>多个中断源接中断控制器。中断处理完后要清除中断源。0 - 0x1c 为异常向量表</p>
+<ul>
+<li><p>复位与软中断，对应 SVC 模式</p>
+</li>
+<li><p>prefetch、data abort，对应 abort 模式</p>
+</li>
+<li><p>user 与 system 模式不是异常触发切换的，是程序员修改 CPSR 切换的</p>
+</li>
+</ul>
+<p>中断处理实现</p>
+<ul>
+<li><p>定义异常向量表</p>
+</li>
+<li><p>定义栈，保护与恢复现场</p>
+</li>
+<li><p>获取软中断号</p>
+</li>
+</ul>
+<p>串行通信</p>
+<ul>
+<li>uart，双线，全双工、异步。加校验位有奇数个 1 就是奇校验，偶数个 1 就是偶校验</li>
+<li>i2c，双线，半双工、同步。有时钟线减少出错</li>
+<li>spi，三线，全双工、同步。速度最快</li>
+</ul>
+<p>并行通信，比如内存</p>
+<p>接口设置为 串口 模式</p>
+<p>设置接口</p>
+<p>设置功能模块</p>
+<p>uart：开始位拉低，发送 8 bit 数据，发送停止位拉高</p>
+<p>I2C：一个主多个从，可以主从切换，主发送，从接收</p>
+<p>开始位拉低，7位从地址，rw位（1表示读），应答。传数据1B，应答。停止位</p>
+<p>接收应答时，主设备从输出切换到输入，电平恢复高，从设备负责拉低进行应答</p>
+<p>约定先传高位或低位，上升沿保持，下降沿改变，或者反过来</p>
+<p>中断控制器，3种中断，Shared Peripheral Interrupt (SPI)， port no，id</p>
+<p>pwm，电机控制。设定两个值，比如 159 和 100，则 159 递减到 100 时高低电平翻转，继续递减到 0 时再次翻转，然后重新从 159 开始计数。</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">BLE</span></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

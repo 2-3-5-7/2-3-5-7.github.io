@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>物联网项目 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="物联网网关 网关是不同的网络协议间的转换器 每个模块通过串口连接到 CPU  通过队列逐层解析收到的数据，为什么要使用队列逐层解析目前不清楚  整体软件流程"><meta property="og:type" content="blog"><meta property="og:title" content="物联网项目"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="物联网网关 网关是不同的网络协议间的转换器 每个模块通过串口连接到 CPU  通过队列逐层解析收到的数据，为什么要使用队列逐层解析目前不清楚  整体软件流程"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/3.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/4.png"><meta property="article:published_time" content="2019-06-05T00:15:07.551Z"><meta property="article:modified_time" content="2021-03-01T07:18:35.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/../%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/"},"headline":"物联网项目","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/3.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/4.png"],"datePublished":"2019-06-05T00:15:07.551Z","dateModified":"2021-03-01T07:18:35.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"物联网网关 网关是不同的网络协议间的转换器 每个模块通过串口连接到 CPU  通过队列逐层解析收到的数据，为什么要使用队列逐层解析目前不清楚  整体软件流程"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.551Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:18:35.000Z" title="2021/3/1 下午3:18:35">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">物联网项目</h1><div class="content"><ol>
+<li><p>物联网网关</p>
+<p>网关是不同的网络协议间的转换器</p>
+<p>每个模块通过串口连接到 CPU</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/../%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/1.png" alt="1"></p>
+<p>通过队列逐层解析收到的数据，<em>为什么要使用队列逐层解析目前不清楚</em></p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/../%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/2.png" alt="2"></p>
+<p>整体软件流程</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/../%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/3.png" alt="3"></p>
+<span id="more"></span></li>
+<li><p>智能小车</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/../%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/4.png" alt="4"></p>
+<p>通过两路 PWM、四路普通 GPIO 口接入 L298，完成两路四个直流电机的驱动，实现电机的调速及正 反转，完成前后左右的可调速运动；再加上五路工业级红外传感器，实现循迹功能；另外还有超声波测距， 实时上传障碍信息；外加电池电量的 AD 转换测值、RGB 的 PWM 调色 LED 灯、有源蜂鸣器；还有一块 I2C 的双色 OLED 显示屏，实现智能小车的下位机控制检测系统。</p>
+<p>使用高度模块化、高度自动化的嵌入式 Linux 系统 OpenWRT，利用其强大的网络组件和扩展性，外加 ser2net、mjpg_streamer 应用，使用其 WiFi 及串口功能实现控制指令的无线传输及图像的实时监控。</p>
+<p>Android 应用主要执行的功能就是向下位机发送指令，将摄像头的输出的视频流用画布画在手机屏幕 上，可以通过学习本实验来掌握 android 中 wifi 类的使用，socket 类的使用以及其他一些 android 开发实 战中常用到的技巧和方法。</p>
+</li>
+<li><p>四轴飞行器</p>
+<ol>
+<li><p>飞控系统是无人机的“驾驶员”-更精确、更清晰</p>
+<p>飞控子系统是无人机完成起飞、空中飞行、执行任务和返场回收等整个飞行过程的核心系统，飞控对于无人机相当于驾驶员对于有人机的作用，我们认为是无人机最核心的技术之一。飞控一般包括传感器、机载计算机和伺服作动设备三大部分，实现的功能主要有无人机姿态稳定和控制、无人机任务设备管理和应急控制三大类。（飞控的控制器，跑实时系统，另外的图像处理等外加其它）</p>
+</li>
+<li><p>导航系统是无人机的“眼睛”，多技术结合是未来方向<br>导航系统向无人机提供参考坐标系的位置、速度、飞行姿态，引导无人机按照指定航线飞行，相当于有人机系统中的领航员。无人机载导航系统主要分非自主（GPS等）和自主（惯性制导）两种，但分别有易受干扰和误差积累增大的缺点，而未来无人机的发展要求障碍回避、物资或武器投放、自动进场着陆等功能，需要高精度、高可靠性、高抗干扰性能，因此多种导航技术结合的“惯性+多传感器+GPS+光电导航系统”将是未来发展的方向。</p>
+</li>
+<li><p>动力系统- 涡轮有望逐步取代活塞，新能源发动机提升续航能力<br>往前看，我们认为随着涡轮发动机推重比、寿命不断提高、油耗降低，涡轮将取代活塞成为无人机的主力动力机型，太阳能、氢能等新能源电动机也有望为小型无人机提供更持久的生存力。</p>
+</li>
+</ol>
+<p>多旋翼</p>
+<ul>
+<li><p>在操控（区别控制）性方面，多旋翼的操控是最简单的。</p>
+</li>
+<li><p>在可靠性方面，多旋翼也是表现最出色的。</p>
+</li>
+<li><p>在勤务性方面，多旋翼的勤务性是最高的。</p>
+<p>因其结构简单，若电机、电子调速器、电池、桨和机架损坏，很容易替换。而固定翼和直升机零件比较多，安装也需要技巧，相对比较麻烦。</p>
+</li>
+<li><p>在续航性能方面，多旋翼的表现明显弱于其他两款，其能量转换效率低下。</p>
+</li>
+<li><p>在承载性能方面，多旋翼也是三者中最差的。</p>
+</li>
+</ul>
+</li>
+</ol>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">系统移植</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E5%AE%89%E9%98%B2%E7%9B%91%E6%8E%A7%E9%A1%B9%E7%9B%AE/"><span class="level-item">安防监控项目</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>linux软件 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="经验 安装前备份虚拟机快照 修改的配置进行备份，方便出错恢复 官方安装指南是重点，安装时的提示与安装后的帮助也注意。其它的方法 .&amp;#x2F;configure –help，README and INSTALL 文档 优先英文查找，分解成多个有时限的小目标，涉及太广会将战线拉长 版本不求新，stable 和 LTS 优先 版本太老可以考虑万能的源码安装，方便可以选择 apt 安装。ppa 也可以考虑  源码"><meta property="og:type" content="blog"><meta property="og:title" content="linux软件"><meta property="og:url" content="https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="经验 安装前备份虚拟机快照 修改的配置进行备份，方便出错恢复 官方安装指南是重点，安装时的提示与安装后的帮助也注意。其它的方法 .&amp;#x2F;configure –help，README and INSTALL 文档 优先英文查找，分解成多个有时限的小目标，涉及太广会将战线拉长 版本不求新，stable 和 LTS 优先 版本太老可以考虑万能的源码安装，方便可以选择 apt 安装。ppa 也可以考虑  源码"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-06-05T00:15:08.374Z"><meta property="article:modified_time" content="2021-03-01T08:26:45.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6/"},"headline":"linux软件","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-06-05T00:15:08.374Z","dateModified":"2021-03-01T08:26:45.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"经验 安装前备份虚拟机快照 修改的配置进行备份，方便出错恢复 官方安装指南是重点，安装时的提示与安装后的帮助也注意。其它的方法 .&#x2F;configure –help，README and INSTALL 文档 优先英文查找，分解成多个有时限的小目标，涉及太广会将战线拉长 版本不求新，stable 和 LTS 优先 版本太老可以考虑万能的源码安装，方便可以选择 apt 安装。ppa 也可以考虑  源码"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.374Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:26:45.000Z" title="2021/3/1 下午4:26:45">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile">linux软件</h1><div class="content"><h1 id="经验"><a href="#经验" class="headerlink" title="经验"></a>经验</h1><ul>
+<li>安装前备份虚拟机快照</li>
+<li>修改的配置进行备份，方便出错恢复</li>
+<li>官方安装指南是重点，安装时的提示与安装后的帮助也注意。其它的方法 ./configure –help，README and INSTALL 文档</li>
+<li>优先英文查找，分解成多个有时限的小目标，涉及太广会将战线拉长</li>
+<li>版本不求新，stable 和 LTS 优先</li>
+<li>版本太老可以考虑万能的源码安装，方便可以选择 apt 安装。ppa 也可以考虑</li>
+</ul>
+<p>源码安装典型步骤</p>
+<blockquote>
+<p>The autogen.sh script generates the configure script (from configure.ac, using autoconf) and any files it needs (like creating Makefile.in from Makefile.am using automake). This requires autotools to be installed on your system, and it must be run when checking out the project from source control (if configure isn’t checked in). People who download source tarballs can usually skip this step, because output of this step is included in source tarballs.</p>
+<p>The configure script generates Makefile and other files needed to build. Typically Makefile.in is used as a template to generate Makefile (and config.h.in to generate config.h). This process happens using only standard tools installed on your system, like sed and awk, and doesn’t require autotools to be installed.</p>
+<p>The make command builds the software.</p>
+<p>The make install command installs it.</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 通过查找名称和描述找到包，i 表示已安装，也可用 apt</span></span><br><span class="line">apt search &lt;package&gt;</span><br><span class="line">aptitude search &lt;package&gt;</span><br><span class="line"><span class="comment"># 查看包详细信息</span></span><br><span class="line">apt show &lt;package&gt;</span><br><span class="line">apt-cache show &lt;package&gt;</span><br><span class="line"><span class="comment"># 查询已安装和要升级某个软件的版本</span></span><br><span class="line">apt policy fdisk</span><br><span class="line">aptitude versions fdisk</span><br><span class="line"><span class="comment"># 模拟安装和模拟升级</span></span><br><span class="line">apt-get -s install &lt;package&gt;</span><br><span class="line">aptitude -V -s install &lt;package&gt;</span><br><span class="line">apt-get -V -s upgrade</span><br><span class="line"><span class="comment"># 指定版本安装</span></span><br><span class="line">sudo apt-get install &lt;package&gt;=&lt;version&gt;</span><br><span class="line"><span class="comment"># 已安装的软件列表</span></span><br><span class="line">apt list --installed</span><br><span class="line"><span class="comment"># 已安装包的文件列表</span></span><br><span class="line">dpkg -L &lt;package&gt;</span><br><span class="line"><span class="comment"># 下载包的源码</span></span><br><span class="line">apt-get <span class="built_in">source</span> &lt;package&gt;</span><br><span class="line">apt-get <span class="built_in">source</span> &lt;package&gt;=&lt;version&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为什么安装和为什么没装，从下往上看</span></span><br><span class="line">aptitude why &lt;package&gt;</span><br><span class="line">aptitude why-not &lt;package&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="交叉编译"><a href="#交叉编译" class="headerlink" title="交叉编译"></a>交叉编译</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gcc 包含文件查询路径</span></span><br><span class="line"><span class="built_in">echo</span> | gcc -E -Wp,-v -</span><br><span class="line"><span class="comment"># 加 -Wl,--verbose 来看使用库的路径信息</span></span><br><span class="line">gcc -o <span class="built_in">test</span> main.o -ltest -L. -Wl,--verbose</span><br><span class="line"><span class="comment"># 查看 so 名字</span></span><br><span class="line">readelf -a -W elffile | grep SONAME</span><br><span class="line"><span class="comment"># 查看可执行文件需要的 so</span></span><br><span class="line">readelf -a -W elffile | grep NEEDED</span><br><span class="line"><span class="comment"># 查看符号 https://stackoverflow.com/questions/34732/how-do-i-list-the-symbols-in-a-so-file</span></span><br><span class="line">objdump -t Lib1.o</span><br><span class="line">nm -g yourLib.so</span><br><span class="line"><span class="comment"># 查看 man 文档</span></span><br><span class="line">man -l tcpdump.1</span><br></pre></td></tr></table></figure>
+
+<p>对于 rpath 和 sysroot 可参考</p>
+<p><a target="_blank" rel="noopener" href="http://www.fabriziodini.eu/posts/cross_compile_tutorial/">Building and cross-compile tutorial</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xieyajie/p/4699724.html">Ubuntu实现树莓派交叉编译（也解释了 build host target）</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/LEON1741/article/details/81537529">交叉编译器的命名规则</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/51839902/using-a-shared-library-in-another-shared-library">using-a-shared-library-in-another-shared-library</a></p>
+<p>编译时指定 soname <code>-soname=name</code>，也可用工具<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/18467163/is-there-any-way-to-change-the-soname-of-a-binary-directly">修改 so 名字</a></p>
+<p><a target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/forum/topicview?mod=viewthread&tid=41600287">理清gcc、libc、libstdc++的关系</a></p>
+<p><a target="_blank" rel="noopener" href="https://developer.huawei.com/consumer/cn/forum/topicview?fid=26&tid=41600244">一张图看懂C/C++核心库</a></p>
+<h1 id="Windows-编译"><a href="#Windows-编译" class="headerlink" title="Windows 编译"></a>Windows 编译</h1><p><a target="_blank" rel="noopener" href="https://cygwin.com/install.html">安装 cygwin</a>，保留安装程序用于后续添加/删除 package</p>
+<p><a target="_blank" rel="noopener" href="https://superuser.com/questions/996332/what-is-the-difference-between-the-different-gcc-on-cygwin-and-which-one-to-ins">gcc 编译器安装包的选择</a></p>
+<ul>
+<li>cygwin32-gcc-g++ is a compiler for 32 bit cygwin</li>
+<li>gcc-g++ is the basic 64 bit compiler (you probably must install this one).</li>
+<li>mingw-gcc-g++ is a 32 bit compiler for native 32 bit Windows</li>
+<li>mingw64-x86_64-gcc-g++ is a 64 bit compiler for native 64 bit Windows</li>
+<li>mingw64-i686-gcc-g++ is a 64 bit compiler for native 32 bit Windows</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/27344540/what-do-the-c-compilers-on-cygwin-generate">gcc 编译器名称区别</a>，注意  /usr/bin 下的 gcc 使用的是硬连接，可以用 <code>ls -il /usr/bin/*gcc*</code> 确认</p>
+<ol>
+<li><code>gcc</code> is just a hard link to <code>x86_64-pc-cygwin-gcc</code></li>
+<li><code>x86_64-pc-cygwin-gcc</code> and <code>i686-pc-cygwin-gcc</code> are as you have said the Cygwin compilers, that is to say the compilers that create programs that rely on <code>cygwin1.dll</code></li>
+<li><code>x86_64-w64-mingw32-gcc</code> and <code>i686-w64-mingw32-gcc</code> are compilers provided by the <a target="_blank" rel="noopener" href="http://mingw-w64.org/">Mingw-w64 project</a></li>
+<li><code>i686-pc-mingw32-gcc</code> is a compiler provided by the <a target="_blank" rel="noopener" href="http://mingw.org/">MinGW project</a></li>
+</ol>
+<p>编译和运行</p>
+<ul>
+<li>依赖 cygwin 的程序要将 <code>/bin/cygwin1.dll</code> (c:\cygwin\bin\cygwin1.dll) 添加到 windows 的 path 中，使用 ming 编译的不需要</li>
+<li>切换到 d 盘，<code>cd /cygdrive/d</code></li>
+</ul>
+<p>必要时使用编程解决，下载 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/">mingw-w64</a> 的 x86_64-win32-seh，<a target="_blank" rel="noopener" href="https://www.eclipse.org/4diac/documentation/html/installation/minGW.html">安装参考</a></p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">makefile</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux/"><span class="level-item">linux</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

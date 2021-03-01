@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="7C8-833"><meta property="og:type" content="blog"><meta property="og:title" content="Life is short"><meta property="og:url" content="https://2-3-5-7.github.io/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="7C8-833"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io"},"headline":"Life is short","image":["https://2-3-5-7.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Jian-Feng Du"},"description":"7C8-833"}</script><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.477Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:59:37.000Z" title="2021/3/1 下午3:59:37">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/">RFID</a></h1><div class="content"><p><a href="RFID">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID">asset-net</a></p>
+<h1 id="1-RFID-概述"><a href="#1-RFID-概述" class="headerlink" title="1. RFID 概述"></a>1. RFID 概述</h1><p>物联网，感知层、网络层、应用层。RFID 属于感知层</p>
+<p>射频识别，Reader 读卡器，Transponder 卡片 免电池、免接触</p>
+<p>读卡器发射电磁波传递能量与时序，卡片（RFID 标签）返回信息</p>
+<p>频率划分</p>
+<ul>
+<li>125K - 134K 低频。穿透能力强，波段没限制，衰减快、距离短，传输慢。畜牧业、门禁</li>
+<li>13.56 M 高频。10 cm，支持防冲撞</li>
+<li>860M - 915M 超高频。1m</li>
+<li>2.4G - 5G 微波</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/RFID/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.471Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:59:16.000Z" title="2021/3/1 下午3:59:16">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/NB-IoT/">NB-IoT</a></h1><div class="content"><h1 id="1-透传-AT-指令"><a href="#1-透传-AT-指令" class="headerlink" title="1. 透传 AT 指令"></a>1. 透传 AT 指令</h1><p>cubemx 开启两个串口中断。初始化时使能接收中断。在中断处理中，等待发送完成后，进行寄存器赋值</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 开启接收中断 */</span></span><br><span class="line">__HAL_UART_ENABLE_IT(&amp;huart1, UART_IT_RXNE);</span><br><span class="line"><span class="comment">/* 放在串口中断处理中 */</span></span><br><span class="line"><span class="keyword">if</span>(huart1.Instance-&gt;ISR &amp; USART_ISR_RXNE)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(!(huart2.Instance-&gt;ISR &amp; UART_FLAG_TXE))</span><br><span class="line">        ;</span><br><span class="line">    huart2.Instance-&gt;TDR = huart1.Instance-&gt;RDR;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* huart2 的写法类似，这里省略 */</span></span><br></pre></td></tr></table></figure>
+
+<p>利尔达 Lierda NB05-01</p>
+<p>只需要上行用 PSM，需要下行用 DRX</p></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/NB-IoT/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.463Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:59:04.000Z" title="2021/3/1 下午3:59:04">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">mpu6050使用总结</a></h1><div class="content"><p><a href="mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93">asset-net</a></p>
+<p>参考寄存器手册 4.0，数据手册 3.3、3.2，其中寄存器手册很多寄存器不全</p>
+<p>中断种类</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/../mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/1.png" alt="1"></p></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/mpu6050%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.457Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:58:12.000Z" title="2021/3/1 下午3:58:12">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/">LoRa</a></h1><div class="content"><p><a href="LoRa">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa">asset-net</a></p>
+<h1 id="1-LoRa-概述"><a href="#1-LoRa-概述" class="headerlink" title="1. LoRa 概述"></a>1. LoRa 概述</h1><p>优点</p>
+<ul>
+<li>远距离</li>
+<li>低功耗</li>
+<li>低成本</li>
+<li>免牌照频段，不给运营商交钱</li>
+</ul>
+<p>LoRa 三个参数影响了通信速率、耗电（电池寿命）、通信距离。详细计算可以通过 LoRa Modem Calculator Tool</p>
+<ul>
+<li>带宽 BW，越大速率越高，但降低了接收灵敏度</li>
+<li>扩频因子 SF，越大信号质量越强，速率下降</li>
+<li>编码率 CR，提高数据可靠性</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/LoRa/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.450Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:15:00.000Z" title="2021/3/1 下午3:15:00">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/epoll/">epoll</a></h1><div class="content"><p>有时间继续看 <a target="_blank" rel="noopener" href="https://idea.popcount.org/2017-02-20-epoll-is-fundamentally-broken-12/">https://idea.popcount.org/2017-02-20-epoll-is-fundamentally-broken-12/</a></p>
+<p>以下翻译自 <a target="_blank" rel="noopener" href="https://medium.com/@copyconstruct/the-method-to-epolls-madness-d9d2d6378642">epoll介绍</a></p>
+<ul>
+<li>epoll 实例是一个内核数据结构，epfd 与这个实例相关联。</li>
+<li>当所有使用 epfd 的进程 close 或 退出后，内核就会销毁 epoll 实例。</li>
+<li>通过 epoll_ctl 添加需要监控的 fd，这个 fd 集合叫做 <strong>epoll set</strong> 或 <strong>interest list</strong> 。当有 fd 可以IO时，这些 fd 所在的集合叫做 <strong>ready list</strong> ，显然 ready list 是 interest list 的子集</li>
+<li>一个 fd 可以被添加到多个 epoll 实例，close 这个 fd会将其从所有的 epoll interest list 中移除</li>
+<li>对于 select 和 poll 来说需要遍历所有的 fd，对于 epoll 如果 file description ready 就会移到 ready list 中，当调用 epoll_wait 时只需返回 ready list，因此对于 epoll 是 O(number of events that have occurred) ，对于 select 和 poll 是 O(number of descriptors being monitored)</li>
+<li>file description 和 inode 的概念见下面分割线中内容。epoll interest list 储存的是 file description，因此会出现共享相同 file description 的进程调用 epoll_wait 时也收到通知的情况，这是个不好的设计，所以在 close 前一定要调用 epoll_ctl 来删除 fd 的订阅。详细解释和举例参考 <a target="_blank" rel="noopener" href="https://idea.popcount.org/2017-03-20-epoll-is-fundamentally-broken-22/">epoll 缺陷</a></li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/epoll/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.439Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:57:13.000Z" title="2021/3/1 下午3:57:13">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/">BLE</a></h1><div class="content"><p><a href="BLE">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE">asset-net</a></p>
+<p>参考 CC2540 Software Developer’s Reference Guide 和 蓝牙4.0 BLE开发完全手册 - 物联网开发技术实战</p>
+<p>待看 <a target="_blank" rel="noopener" href="http://software-dl.ti.com/lprf/simplelink_academy/modules/ble_01_custom_profile/ble_01_custom_profile.html#prerequisites">TI 的教学</a></p>
+<h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h1><p>蓝牙 4.0 分为两种</p>
+<ul>
+<li>Basic Rate (BR, often referred to as BR/EDR for Basic Rate/Enhanced Data Rate)</li>
+<li>Bluetooth low energy (BLE)</li>
+</ul>
+<p>同时支持两种的设备为 Bluetooth Smart Ready，比如手机、笔记本。只支持 BLE 的为 Bluetooth Smart，比如使用电池的设备</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/11.png" alt="11"></p>
+<p><a target="_blank" rel="noopener" href="http://www.wowotech.net/bluetooth/bt_overview.html">蓝牙基本概念</a> </p>
+<p>BLE 0-39 个信道，每个2Mhz，37、38、39 广播信道，广播信道用来建立连接，其它数据信道进行数据发送</p></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.428Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:56:37.000Z" title="2021/3/1 下午3:56:37">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/arm%E8%A3%B8%E6%9C%BA/">arm裸机</a></h1><div class="content"><p>看电路图、芯片手册，会用 C 语言控制硬件</p>
+<p>Cortex A 应用 高端，M MCU 低端，R realtime 实时</p>
+<p>待完善，arm 指令详细介绍，C、汇编混合编程，连接脚本</p>
+<p>以 Win7 兼容模式安装 <code>arm-2011.09-70-arm-none-linux-gnueabi.exe</code>， 安装 <code>MDK454.exe</code></p>
+<p>keil 指定编译器路径只能是 C 盘，用 <code>mklink /d &quot;C:\Program Files\Google&quot; &quot;D:\program file\chrome\Google&quot;</code> 解决</p>
+<p>新建工程，写<code>start.s</code>，指定工程的链接脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">loadb 40001000</span><br><span class="line">go 40001000</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/arm%E8%A3%B8%E6%9C%BA/#more">阅读更多</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/5/">上一页</a></div><div class="pagination-next is-invisible is-hidden-mobile"><a href="/page/7/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/5/">5</a></li><li><a class="pagination-link is-current" href="/page/6/">6</a></li></ul></nav></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

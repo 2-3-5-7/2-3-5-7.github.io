@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>系统移植 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="uboot 设置 1234567setenv serverip 192.168.1.36setenv ipaddr 192.168.9.9setenv gatewayip  192.168.9.1setenv bootcmd tftp 41000000 uImage\;tftp 42000000 exynos4412-fs4412.dtb\;bootm 41000000 - 42000000set"><meta property="og:type" content="blog"><meta property="og:title" content="系统移植"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="uboot 设置 1234567setenv serverip 192.168.1.36setenv ipaddr 192.168.9.9setenv gatewayip  192.168.9.1setenv bootcmd tftp 41000000 uImage\;tftp 42000000 exynos4412-fs4412.dtb\;bootm 41000000 - 42000000set"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-06-05T00:15:07.559Z"><meta property="article:modified_time" content="2021-03-01T07:18:05.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D/"},"headline":"系统移植","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-06-05T00:15:07.559Z","dateModified":"2021-03-01T07:18:05.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"uboot 设置 1234567setenv serverip 192.168.1.36setenv ipaddr 192.168.9.9setenv gatewayip  192.168.9.1setenv bootcmd tftp 41000000 uImage\\;tftp 42000000 exynos4412-fs4412.dtb\\;bootm 41000000 - 42000000set"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%B3%BB%E7%BB%9F%E7%A7%BB%E6%A4%8D/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.559Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:18:05.000Z" title="2021/3/1 下午3:18:05">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">系统移植</h1><div class="content"><p>uboot 设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setenv serverip 192.168.1.36</span><br><span class="line">setenv ipaddr 192.168.9.9</span><br><span class="line">setenv gatewayip  192.168.9.1</span><br><span class="line"></span><br><span class="line">setenv bootcmd tftp 41000000 uImage\;tftp 42000000 exynos4412-fs4412.dtb\;bootm 41000000 - 42000000</span><br><span class="line">setenv bootargs root&#x3D;&#x2F;dev&#x2F;nfs nfsroot&#x3D;192.168.1.36:&#x2F;nfs&#x2F;rootfs rw console&#x3D;ttySAC2,115200 clk_ignore_unused init&#x3D;&#x2F;linuxrc ip&#x3D;192.168.1.29</span><br><span class="line">savenenv</span><br></pre></td></tr></table></figure>
+
+<p>编译</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># uboot</span></span><br><span class="line">./build.sh</span><br><span class="line"><span class="comment"># 内核</span></span><br><span class="line">make uImage</span><br><span class="line"><span class="comment"># 设备树</span></span><br><span class="line">make dtbs</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h1 id="1-bootloader"><a href="#1-bootloader" class="headerlink" title="1. bootloader"></a>1. bootloader</h1><p>功能硬件初始化，加载内核</p>
+<p>uboot 是 bootloader 一种，免费 省钱，开源 可以深度定制成有竞争力的产品，支持多 开发时间少</p>
+<p>saveenv 存到 flash 中，<strong>nor flssh 按照字节访问，nand flash 按照块访问</strong></p>
+<p>nor flash 需要取消写保护，先擦除再写。默认是 1，1变0可以，0变1唯一方法就是擦除</p>
+<p>movi 专门操作 emmc（flash的一种）</p>
+<p>启动阶段打印信息</p>
+<p>bootloader -&gt; 内核 -&gt; 文件系统</p>
+<p>start kernel ….</p>
+<p>IP-Config Complete</p>
+<p>VFS: Mounted root</p>
+<p>uboot 启动流程</p>
+<p>汇编阶段</p>
+<ul>
+<li><p>越简单的越稳定。设置 SVC 模式，关看门狗、中断、mmu、cache</p>
+</li>
+<li><p>基本硬件初始化，时钟、串口、flash、内存</p>
+</li>
+<li><p>自搬移 uboot 到内存</p>
+</li>
+<li><p>准备栈</p>
+</li>
+</ul>
+<p>C 阶段</p>
+<ul>
+<li><p>大部分硬件初始化，GPIO、串口、网口</p>
+</li>
+<li><p>搬移内核到内存，运行内核</p>
+</li>
+</ul>
+<h1 id="2-内核"><a href="#2-内核" class="headerlink" title="2. 内核"></a>2. 内核</h1><p>linux 内核不是linux操作系统</p>
+<ul>
+<li>免费开源</li>
+<li>可以移植，支持的硬件广泛</li>
+<li>可裁剪。功能强</li>
+<li>不是实时系统。Vxwork</li>
+</ul>
+<p>linux 内核子系统</p>
+<ul>
+<li>进程管理</li>
+<li>内存管理</li>
+<li>文件系统</li>
+<li>网络协议</li>
+<li>设备管理</li>
+</ul>
+<p>设备树是 cpu 与 外设的连接方式，这样驱动可以与硬件无关</p>
+<p>看链接脚本获得第一句话的位置</p>
+<p>公司代码与官方代码用对比软件，快速融入团队。参考类似配置再改</p>
+<p>先实现串口输出方便调试</p>
+<p>启动流程</p>
+<ol>
+<li>自解压内核  decompess     (arch/arm/boot/compressed/head.S)</li>
+<li>运行内核汇编部分 head.S 入口stext  (arch/arm/kernel/head.S)<br> ​    检测合法性(CPU 类型,机器类型)</li>
+<li>运行内核C部分  start_kernel  (init/main.c)<br> ​    CPU,机器参数的安装   setup_arch<br> ​    中断，定时，终端，内存等最基本的初始化<br> ​    创建核心进程 kernel_init 运行,启动多任务调度</li>
+<li>挂载 rootfs</li>
+<li>运行第一个应用程序init  (一般是 linuxrc）</li>
+</ol>
+<p>调试方法</p>
+<ol>
+<li><p>点灯</p>
+</li>
+<li><p>打印<br> puts   (内核解压前)<br> printascii  (console初始化前)<br> printk (内核解压后,信息输出显示是在 console 初始化之后)</p>
+</li>
+</ol>
+<p>  通过proc在运行时查看和修改日志级别，数字越小优先级越高，改第一个数<br>  cat /proc/sys/kernel/printk            显示   4 4 1 7<br>  echo “7 4 1 7” &gt; /proc/sys/kernel/printk  后<br>  cat /proc/sys/kernel/printk            显示   7 4 1 7</p>
+<ol start="3">
+<li><p>对于 OOP 异常</p>
+<p>根据函数推测，或者 <code>arm-none-linux-gnueabi-addr2line &lt;PC&gt; -e vmlinux -f  </code></p>
+</li>
+</ol>
+<p>系统移植</p>
+<p>选 cpu 和 类似的 board</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">srom-cs1@5000000 &#123;</span><br><span class="line">	compatible &#x3D; &quot;simple-bus&quot;;</span><br><span class="line">	#address-cells &#x3D; &lt;1&gt;;</span><br><span class="line">	#size-cells &#x3D; &lt;1&gt;;</span><br><span class="line">	reg &#x3D; &lt;0x5000000 0x1000000&gt;;  &#x2F;&#x2F;参考 cpu 手册中 srom 和 memory map 部分</span><br><span class="line">	ranges;</span><br><span class="line">	ethernet@5000000 &#123;</span><br><span class="line">		compatible &#x3D; &quot;davicom,dm9000&quot;;  &#x2F;&#x2F;名字与内核中驱动对应</span><br><span class="line">		reg &#x3D; &lt;0x5000000 0x2 0x5000004 0x2&gt;;  &#x2F;&#x2F;看帮助文档中的例子</span><br><span class="line">		interrupt-parent &#x3D; &lt;&amp;gpx0&gt;;   &#x2F;&#x2F;看电路图的中断管脚</span><br><span class="line">		interrupts &#x3D; &lt;6 4&gt;;</span><br><span class="line">		davicom,no-eeprom;</span><br><span class="line">		mac-address &#x3D; [00 0a 2d a6 55 a2];</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>4.19 系统移植</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 4.19 内核编译</span></span><br><span class="line">apt-get install bison</span><br><span class="line">apt-get install flex</span><br><span class="line">apt-get install libssl-dev</span><br><span class="line"></span><br><span class="line">make ARCH=arm exynos_defconfig</span><br><span class="line"><span class="comment"># 选择 dm9000 驱动</span></span><br><span class="line">make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- menuconfig</span><br><span class="line">make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- -j 4</span><br><span class="line"></span><br><span class="line">mkimage -A arm -O linux -T kernel -C none -a 0x41000000 -e 0x41000040 -n <span class="string">&quot;aaa&quot;</span> -d zImage uImage</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设备树修改</span></span><br><span class="line">srom-cs1@5000000 &#123;</span><br><span class="line">		compatible = <span class="string">&quot;simple-bus&quot;</span>;</span><br><span class="line">		<span class="comment">#address-cells = &lt;1&gt;;</span></span><br><span class="line">		<span class="comment">#size-cells = &lt;1&gt;;</span></span><br><span class="line">		reg = &lt;0x5000000 0x1000000&gt;;</span><br><span class="line">		ranges;</span><br><span class="line">		ethernet@5000000 &#123;</span><br><span class="line">			compatible = <span class="string">&quot;davicom,dm9000&quot;</span>;</span><br><span class="line">			reg = &lt;0x5000000 0x2 0x5000004 0x2&gt;;</span><br><span class="line">			interrupt-parent = &lt;&amp;gpx0&gt;;</span><br><span class="line">			interrupts = &lt;6 4&gt;;</span><br><span class="line">			davicom,no-eeprom;</span><br><span class="line">			local-mac-address = [00 00 de ad be ef];</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>添加驱动</p>
+<ol>
+<li>选择驱动存放目录 (或任意目录）</li>
+<li>改 Makefile，<code>obj-$(CONFIG_LED)</code></li>
+<li>改 Kconfig（界面可配置），<code>config LED</code></li>
+<li>insmod</li>
+<li>创建设备节点（应用访问驱动的入口），<code>mknod /dev/&lt;device&gt; [c|b] &lt;major&gt; &lt;minor&gt; </code></li>
+<li>运行测试驱动的应用程序</li>
+</ol>
+<p>字符设备、平台设备，平台设备就是把寄存器地址存在设备树文件中，方便维护</p>
+<h1 id="3-根文件系统"><a href="#3-根文件系统" class="headerlink" title="3. 根文件系统"></a>3. 根文件系统</h1><p>分 4 步，具体操作见引用</p>
+<ol>
+<li>busybox 的配置和编译</li>
+<li>拷贝库和裁剪库</li>
+<li>拷贝 etc 配置文件</li>
+<li>创建 console 设备节点</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">$ tar  xvf  busybox-1.22.1.tar.bz2</span><br><span class="line">$ cd  busybox-1.22.1</span><br><span class="line">$ make menuconfig</span><br><span class="line">    Busybox Settings ---&gt; </span><br><span class="line">	Build Options ---&gt;</span><br><span class="line">		[*] Build BusyBox as a static binary (no shared libs)</span><br><span class="line">		(arm-none-linux-gnueabi-) Cross Compiler prefix   注意 一定要指定交叉编译工具</span><br><span class="line">$ make</span><br><span class="line">$ file busybox   确认编译生成的是 ARM 平台的（显示为ELF 32-bit LSB executable, ARM）</span><br><span class="line">$ make  install   安装（默认安装路径为_install）</span><br><span class="line">$ cd _install</span><br><span class="line">$  ls</span><br><span class="line">      bin  linuxrc  sbin  usr</span><br><span class="line">$ mkdir  dev  etc  mnt  proc  var  tmp  sys  root       创建需要的目录</span><br><span class="line">$ cp  ~&#x2F;store&#x2F;gcc-4.6.4&#x2F;arm-arm1176jzfssf-linux-gnueabi&#x2F;lib&#x2F;  .  -a      注意是lib&#x2F; </span><br><span class="line">$ du -mh lib     查看lib库的大小</span><br><span class="line">$ rm  lib&#x2F;*.a     裁剪，删除掉静态库文件  </span><br><span class="line">$ 只要小于后面制作 ramdisk 的8M大小即可，这一步可以省略。arm-none-linux-gnueabi-strip  lib   裁剪掉调试信息   not recognized  有些库是不能strip的 忽略掉</span><br><span class="line">$ sudo rm  lib&#x2F;libstdc++*   删除不需要的库，确保所有库大小不超过4M  </span><br><span class="line">$ du -mh lib    查看lib库的大小  可能 显示3.4M lib   (这里确保小于 8M) 	</span><br><span class="line">$ cp &#x2F;nfs&#x2F;rootfs&#x2F;etc   -rf   .      拷入成熟的参考配置 </span><br><span class="line">$ sudo mknod   dev&#x2F;console  c  5  1      必须要有  console设备节点</span><br><span class="line">$ cp  _install&#x2F;*   rootfs   –a                        </span><br><span class="line">$ chmod 777 &#x2F;nfs&#x2F;rootfs&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>常见的文件系统</p>
+<ul>
+<li>NFS ROOTFS  常用于开发调试，和测试文件系统内容    </li>
+<li>CRAMFS      只读。常用于安全性要求高，需要数据不被改写情况。（常为了安全性，把基本rootfs做为CRAMFS. 再挂载别的文件系统如jffs2等实现可写入数据）</li>
+<li>JFFS2        因nand nor flash都支持，嵌入式产品中常用。 </li>
+<li>YAFFS2        专门用Nand Flash。 一般手机开发都用它</li>
+<li>EXT2/EXT3    常用于电脑硬盘       </li>
+<li>RamDisk        把内存抽象为文件系统。  适用于内存较大，而flash较小情况</li>
+</ul>
+<p>制作 RamDisk</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dd <span class="keyword">if</span>=/dev/zero of=ramdisk bs=1k count=8192</span><br><span class="line">mkfs ext2 -F ramdisk</span><br><span class="line">sudo mkdir /mnt/rf</span><br><span class="line">sudo mount -t ext2 ramdisk /mnt/rf</span><br><span class="line">sudo cp ~/share/mycode/l10/busybox-1.22.1/_install/* /mnt/rf -a</span><br><span class="line">sudo umount /mnt/rf</span><br><span class="line">gzip --best -c ramdisk &gt;ramdisk.gz</span><br><span class="line">mkimage -n <span class="string">&quot;ramdisk&quot;</span> -A arm -O linux -T ramdisk -C gzip -d ramdisk.gz ramdisk.img</span><br></pre></td></tr></table></figure>
+
+
+
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">进程、线程、进程间通信</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E7%89%A9%E8%81%94%E7%BD%91%E9%A1%B9%E7%9B%AE/"><span class="level-item">物联网项目</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

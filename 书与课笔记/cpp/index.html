@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>cpp - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="习题答案 参考1 参考2 Accelerated C++Getting StartedA namespace is a collection of related names. The first scope that we used is a namespace the two &amp;lt;&amp;lt; symbols are operators, and std::cout, “Hello, worl"><meta property="og:type" content="blog"><meta property="og:title" content="cpp"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/cpp/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="习题答案 参考1 参考2 Accelerated C++Getting StartedA namespace is a collection of related names. The first scope that we used is a namespace the two &amp;lt;&amp;lt; symbols are operators, and std::cout, “Hello, worl"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-08-01T23:42:08.041Z"><meta property="article:modified_time" content="2021-03-01T11:41:50.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/cpp/"},"headline":"cpp","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-08-01T23:42:08.041Z","dateModified":"2021-03-01T11:41:50.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"习题答案 参考1 参考2 Accelerated C++Getting StartedA namespace is a collection of related names. The first scope that we used is a namespace the two &lt;&lt; symbols are operators, and std::cout, “Hello, worl"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/cpp/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-08-01T23:42:08.041Z" title="2019/8/2 上午7:42:08">2019-08-02</time>发表</span><span class="level-item"><time dateTime="2021-03-01T11:41:50.000Z" title="2021/3/1 下午7:41:50">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a></span></div></div><h1 class="title is-3 is-size-4-mobile">cpp</h1><div class="content"><p>习题答案 <a target="_blank" rel="noopener" href="https://github.com/GeertArien/c-accelerated">参考1</a> <a target="_blank" rel="noopener" href="https://github.com/bitsai/book-exercises/tree/master/Accelerated%20C%2B%2B">参考2</a></p>
+<h1 id="Accelerated-C"><a href="#Accelerated-C" class="headerlink" title="Accelerated C++"></a>Accelerated C++</h1><h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><p>A namespace is a collection of related names. The first scope that we used is a namespace</p>
+<p>the two &lt;&lt; symbols are operators, and std::cout, “Hello, world! “and std::endl are operands, std::endl , which is a manipulator</p>
+<p>The effect of an operator depends on the types of its operands</p>
+<p>&lt;&lt; is <strong>left-associative</strong>, which, loosely speaking, means that when &lt;&lt; appears twice or more in the same expression, each &lt;&lt; willuse as much of the expression as it can for its left operand, and as little of it as it can for its right operand</p>
+<h2 id="Working-with-strings"><a href="#Working-with-strings" class="headerlink" title="Working with strings"></a>Working with strings</h2><p>A variable is an object that has a name</p>
+<p>the value that we use to initialize the const variable need not itself be a constant.</p>
+<p>One property of an operator that never changes is its associativity</p>
+<span id="more"></span>
+
+<h2 id="Working-with-batches-of-data"><a href="#Working-with-batches-of-data" class="headerlink" title="Working with batches of data"></a>Working with batches of data</h2><p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/49961587/why-floating-points-numbers-significant-numbers-is-7-or-6">Why floating-points number’s significant numbers is 7 or 6</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2010/06/ieee_floating-point_representation.html">浮点数的二进制表示</a></p>
+<p>the istream class provides a conversion that can be used to convert cin into a value that can be used in a condition</p>
+<p>once we have failed to read from a stream, all further attempts to read from that stream will fail until we reset the stream</p>
+<p>vector is a container that holds a collection of values. The vector type is defined using a language feature called template classes</p>
+<p>expressions such as homework.size() -100 yield unsigned results, which means that they, too, cannot be less than zero—even if homework.size() &lt; 100</p>
+<h2 id="Organizing-programs-and-data"><a href="#Organizing-programs-and-data" class="headerlink" title="Organizing programs and data"></a>Organizing programs and data</h2><p>the exception that we throw is domain_error , which is a type that the standard library defines in header <stdexcept> for use in reporting that a function’s argument is outside the set of values that the function can accept</p>
+<p>the vector that we use as an argument will be copied into vec </p>
+<p>const vector<double>&amp;, This type is often called “reference to vector of const double .” </p>
+<p>Arguments that correspond to non const reference parameters must be lvalues. a variable is an lvalue, as is a reference, or the result of calling a function that returns a reference. </p>
+<p>avoid more than one side effect in a single statement</p>
+<p>system headers need not be implemented as files</p>
+<p>the compiler needs to be able to see the function definition, so inlines are usually defined in header files, rather than in source files.</p>
+<h2 id="Using-sequential-containers-and-analyzing-strings"><a href="#Using-sequential-containers-and-analyzing-strings" class="headerlink" title="Using sequential containers and analyzing strings"></a>Using sequential containers and analyzing strings</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">container-type::const_iterator</span><br><span class="line">container-type::iterator</span><br></pre></td></tr></table></figure>
+
+<p>Using push_back to append an element to a vector invalidates all iterators referring to that vector .Inappropriately saving the value of students.end() is a particularly rich source of bugs.</p>
+<p>the list class provides its own sort member function, which uses an algorithm that is optimized for sorting data stored in a list</p>
+<h2 id="Using-library-algorithms"><a href="#Using-library-algorithms" class="headerlink" title="Using library algorithms"></a>Using library algorithms</h2><ul>
+<li>查找 url</li>
+<li>对是否全部交作业中使用三种计算方法对比</li>
+<li>成绩是否及格的库函数算法，两种</li>
+</ul>
+<p>copy(bottom.begin(), bottom.end(), back_inserter(ret));</p>
+<p>copy is an example of a generic algorithm, and back_inserter is an example of an iterator adaptor</p>
+<p>iter j = find_if(i, str.end(), space);</p>
+<p>If find_if fails to find a value that satisfies the predicate, it returns its second argument, which, in this case, is str.end() </p>
+<p>the library algorithms are written to handle gracefully calls that pass an empty range</p>
+<p>equal(s.begin(), s.end(), s.rbegin())</p>
+<p>i = search(i, e, sep.begin(), sep.end())</p>
+<p>对比完成所有作业和未完成所有的两组学生，使用 3 种计算成绩方法（未上交取 0 计算中位数，平均值，未上交不计算中位数）后，中位数的差异。</p>
+<p>transform(students.begin(), students.end(), back_inserter(grades), grade);</p>
+<p>accumulate(v.begin(), v.end(), 0.0) / v.size();</p>
+<p>remove_copy(s.homework.begin(), s.homework.end(), back_inserter(nonzero), 0);</p>
+<p>获得 pass 的学生，students.erase(remove_if(students.begin(), students.end(), fgrade), students.end());</p>
+<p>iter = stable_partition(students.begin(), students.end(), pgrade);</p>
+<p>算法只作用于成员，不会修改容器属性（比如大小），但容器的成员函数会修改容器属性</p>
+<p>Reverse Iterators 是正向的减 1，反向 ++，会朝着反方向移动。对于两个 Reverse Iterators 做差也是 end 的值最大。</p>
+<p>make_reverse_iterator 会把正向的减 1，该函数的作用是为了确定边界。.base() 会把反向的转换回正向，即向前移动一个。 </p>
+<h2 id="Using-associative-containers"><a href="#Using-associative-containers" class="headerlink" title="Using associative containers"></a>Using associative containers</h2><p>if we dereference a map&lt;string, int&gt;<br>iterator, we get a pair&lt;const string, int&gt;</p>
+<p>Because using [] to access a map might create a new element, [] is not<br>allowed on a const map </p>
+<h2 id="Writing-generic-functions"><a href="#Writing-generic-functions" class="headerlink" title="Writing generic functions"></a>Writing generic functions</h2><p>The notion of an iterator is not part of the C++ language proper. However, it is a fundamental part of the standard library’s organization</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Template functions that return simple types have the form</span><br><span class="line">template&lt;class type-parameter [, class type-parameter]... &gt;</span><br><span class="line">ret-type function-name (parameter-list)</span><br></pre></td></tr></table></figure>
+
+<p><strong>typename</strong> T::size_type name;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input iterator: Sequential access in one direction, input only</span><br><span class="line">Output iterator: Sequential access in one direction, output only</span><br><span class="line">Forward iterator: Sequential access in one direction, input and output</span><br><span class="line">Bidirectional iterator: Sequential access in both directions, input and output</span><br><span class="line">Random-access iterator: Efficient access to any element, input and output</span><br></pre></td></tr></table></figure>
+
+<h2 id="Defining-new-types"><a href="#Defining-new-types" class="headerlink" title="Defining new types"></a>Defining new types</h2><p>Member functions that are const may not change the internal state of the object on<br>which they are executing</p>
+<p>If the function changes the state of an object,<br>then it ought to be a member of that object</p>
+<p>When we pass a non const<br>object to a function that takes a const reference, then the function treats that object as if it<br>were const , and the compiler will permit it to call only const members of such objects.</p>
+<h2 id="Managing-memory-and-low-level-data-structures"><a href="#Managing-memory-and-low-level-data-structures" class="headerlink" title="Managing memory and low-level data structures"></a>Managing memory and low-level data structures</h2><p>pointers are iterators</p>
+<p>C++ programs can use either cerr or clog . These output<br>streams are both attached to the same destination. The difference between them is how they<br>handle buffering</p>
+<p>it is possible to use an ifstream wherever the library expects an istream<br>and an ofstream wherever the library expects an ostream</p>
+<p>new: When used to allocate an array of<br>type T , it needs the default constructor for T . </p>
+<p>释放数组 delete[] p </p>
+<h2 id="Defining-abstract-data-types"><a href="#Defining-abstract-data-types" class="headerlink" title="Defining abstract data types"></a>Defining abstract data types</h2><p>Assignment differs from the copy constructor in that assignment always involves obliterating an existing value (the left-hand<br>side) and replacing it with a new value (the right- hand side). When we make a copy, we are creating a new object for the<br>first time, so there is no preexisting object to deallocate. </p>
+<p>The <strong>this</strong> keyword is valid only inside a member<br>function, where it denotes a pointer to the object on which the member function is operating.</p>
+<p>It is crucially important that assignment operators correctly handle self-assignment</p>
+<p>Initialization happens</p>
+<ul>
+<li>In variable declarations</li>
+<li>For function parameters on entry to a function</li>
+<li>For the return value of a function on return from the function</li>
+<li>In constructor initializers</li>
+</ul>
+<p>Assignment happens only when using the = operator in an expression. </p>
+<p>string url_ch = “~;/?:@=&amp;$-_.+!*’(),” // initialization</p>
+<p>the compiler will call the string constructor that takes a const char* . That constructor can construct url_ch directly from the<br>string literal, or it can construct an unnamed temporary variable from the string literal, and then call the copy constructor to<br>construct url_ch as a copy of that temporary variable.</p>
+<p>Assigning a class type return value from a function is a two-step process: First, the copy constructor is run to copy the return value into a temporary at the call site. Then the assignment operator is run to assign the value of that temporary to the left-hand operand. </p>
+<p>rule of three: copy constructor, destructor, and assignment operator</p>
+<p>为什么不用 new 和 delete 管理内存见 11.5 开头解释</p>
+<h2 id="Making-class-objects-act-like-values"><a href="#Making-class-objects-act-like-values" class="headerlink" title="Making class objects act like values"></a>Making class objects act like values</h2><p>关于 value-initialized 和 default-initialized 见 9.5 constructor。区别只体现在内部类型对于 value-initialized 初始化为 0，对于 class 类型没区别，都是调 constructor。对于没有 default constructor 的 class 中的成员初始化就要看是内部类型还是 class 类型</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// default initialization</span></span><br><span class="line">A x;</span><br><span class="line">A * p = <span class="keyword">new</span> A;</span><br><span class="line"><span class="comment">// value initialization</span></span><br><span class="line">A * p = <span class="keyword">new</span> A();</span><br></pre></td></tr></table></figure>
+
+<p>If an operator is a member of a class, then that operator’s left operand cannot be the result of an automatic conversion. </p>
+<p>是否改变成员值 N-&gt; 非成员函数 / Y-&gt; 二元运算两侧操作数不对称（不可交换）,左操作数一定是自己，且不需要左操作数自动转换 Y -&gt; 成员函数 / N -&gt; friend 函数</p>
+<h2 id="Using-inheritance-and-dynamic-binding"><a href="#Using-inheritance-and-dynamic-binding" class="headerlink" title="Using inheritance and dynamic binding"></a>Using inheritance and dynamic binding</h2><p>every member of Core is also a member of Grad —except for the constructors, the assignment operator, and destructor. It can redefine members from the base class, as we do with the grade and read functions.However, a derived class cannot delete any of the base class’ members.</p>
+<p>This run-time selection of the virtual function to execute is relevant only when the function is called through a reference or a pointer. If we call a virtual function on behalf of an object (as opposed to through a reference or pointer), then we know the exact type of the object at compile time. The Grad object will be <strong>cut down</strong> to its Core part</p>
+<p>We do not need to nominate Student_info as a friend of Grad , even though friendship is not inherited, because our Student_info class never refers to Grad::clone directly</p>
+<p>派生类 redefine 函数时，参数必须相同，返回值可以不同，可以是派生类的指针或引用。如果参数不同（那么一定不是 virtual 函数），能调用的函数取决于指针或引用类型。派生类指针正常无法调用参数不同但同名的那个基类函数，除非明确指定，r.Core::regrade(100)。virtual 不一定非要 redefine（可以不定义，直接继承），redefine 的前提是参数相同，详见 13.6。</p>
+<h2 id="Managing-memory-almost-automatically"><a href="#Managing-memory-almost-automatically" class="headerlink" title="Managing memory (almost) automatically"></a>Managing memory (almost) automatically</h2><p>拷贝既要考虑效率，很多对象指向同一内存，又要考虑自己的修改不会影响到其它引用了同一内存的对象。也就是当成员函数不是 const 时，调 make_unique 来不影响到别人</p>
+<p>The use of template&lt;&gt; at the beginning of this function indicates that the function is a template specialization. </p>
+<h2 id="Revisiting-character-pictures"><a href="#Revisiting-character-pictures" class="headerlink" title="Revisiting character pictures"></a>Revisiting character pictures</h2><p>Our problem is a perfect match for inheritance: We have various kinds of data structures that are similar to one another, but that differ in ways that we sometimes want to take into account. </p>
+<p>A member of a derived class (such as Frame_Pic ) can access the protected members of the base-class parts of objects of its own class (such as Frame_Pic ), or of other classes derived from it, but it cannot access the protected members of base-class objects that stand alone</p>
+<p>it is important to realize that abstract classes may define data members, and (ordinary) member functions, as well as static ones. These functions will access the base-class objects that are part of derived objects.</p>
+<h2 id="Where-do-we-go-from-here"><a href="#Where-do-we-go-from-here" class="headerlink" title="Where do we go from here?"></a>Where do we go from here?</h2><p>practice</p>
+<h1 id="C-Primer"><a href="#C-Primer" class="headerlink" title="C++ Primer"></a>C++ Primer</h1><p><a target="_blank" rel="noopener" href="https://github.com/jaege/Cpp-Primer-5th-Exercises">练习参考</a></p>
+<h2 id="c-基础"><a href="#c-基础" class="headerlink" title="c++ 基础"></a>c++ 基础</h2><h3 id="指针与引用"><a href="#指针与引用" class="headerlink" title="指针与引用"></a>指针与引用</h3><p>引用并非对象，只是为对象起的另一个名字</p>
+<p>指针是一个对象，允许赋值</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">42</span>;</span><br><span class="line"><span class="keyword">int</span> *p;      <span class="comment">// p is a pointer to int</span></span><br><span class="line"><span class="keyword">int</span> *&amp;r = p; <span class="comment">// r is a reference to the pointer p</span></span><br><span class="line">r = &amp;i;      <span class="comment">// r refers to a pointer; assigning &amp;i to r makes p point to i</span></span><br><span class="line">*r = <span class="number">0</span>;      <span class="comment">// dereferencing r yields i, the object to which p points; changes i to 0</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><p>默认情况下，const 对象被设定为仅在文件内有效。如果想在多个文件之间共享 const 对象，必须在变量的定义之前添加 extern 关键字。<br>const int sz = get_size (); //它的具体值直到运行时才能获取到，所以也不是常量表达式</p>
+<p>在此种情况下，对象的定义和使用根本就是两回事儿。C++11新标准规定，允许将变量声明为 constexpr 类型以便由编译器来验证变量的值是否是一个常量表达式。</p>
+<p>一个 constexpr 指针的初始值必须是 nullptr 或者0,或者是存储于某个固定地址中的对象。</p>
+<p>顶层与底层 const，const 表示对象本身时为顶层 const，而对于指针和引用来说才有底层 const，对于指针底层 const 只取地址后的对象为 const，对于引用则 const 始终表示底层，因为引用的对象是无法改变的，所以也就没有顶层 const 引用</p>
+<h3 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h3><p>using SI = Sales_item; // SI 是 Sales_item 的同义词</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> *pstring;</span><br><span class="line"><span class="keyword">const</span> pstring cstr = <span class="number">0</span>; <span class="comment">// cstr 是指向 char 的常量指针</span></span><br><span class="line"><span class="keyword">const</span> pstring *ps; <span class="comment">// ps 是一个指针，它的对象是指向 char 的常量指针</span></span><br></pre></td></tr></table></figure>
+
+<p>auto 让编译器通过初始值来推算变量的类型 </p>
+<p>decltype 与 auto 的不同，保留顶层 const 和 引用，如果表达式的求值结果是左值，decltype 作用于该表达式（不是变量）得到一个引用类型，多层括号的变量会始终返回引用</p>
+<h3 id="string-vector-array"><a href="#string-vector-array" class="headerlink" title="string vector array"></a>string vector array</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">s</span><span class="params">(<span class="string">&quot;Hello World!!!&quot;</span>)</span></span>;</span><br><span class="line"><span class="comment">// punct_cnt has the same type that s.size returns; see § 2.5.3 (p. 70)</span></span><br><span class="line"><span class="keyword">decltype</span>(s.size()) punct_cnt = <span class="number">0</span>;</span><br><span class="line"><span class="comment">// count the number of punctuation characters in s</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> c : s) <span class="comment">// for every char in s</span></span><br><span class="line">	<span class="keyword">if</span> (<span class="built_in">ispunct</span>(c)) <span class="comment">// if the character is punctuation</span></span><br><span class="line">		++punct_cnt; <span class="comment">// increment the punctuation counter</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; punct_cnt</span><br><span class="line">	&lt;&lt; <span class="string">&quot; punctuation characters in &quot;</span> &lt;&lt; s &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+
+<p>范围 for 语句体内不应改变其所遍历序列的大小 ，如 vector.push_back</p>
+<p>C++ 语言内置的下标运算符所用的索引值不是无符号类型，这一点与 vector 和 string 不一样</p>
+<p>如果执行完 c_str () 函数后程序想一直都能使用其返回的数组，最好将该数组重新拷贝一份</p>
+<p><code>&quot;what&quot; == &quot;What&quot;</code> 比较的是指针的值</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">size_t</span> cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> &amp;row : ia) <span class="comment">// for every element in the outer array</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> &amp;col : row) &#123; <span class="comment">// for every element in the inner array</span></span><br><span class="line">		col = cnt;  <span class="comment">// give this element the next value</span></span><br><span class="line">		++cnt; 		<span class="comment">// increment cnt</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 要使用范围 for 语句处理多维数组，除了最内层的循环外，其他所有循环的控制变量都应该是引用类型。否则会得到指针类型而非内层数组对象</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;row : ia) <span class="comment">// for every element in the outer array</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> col : row)   <span class="comment">// for every element in the inner array</span></span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; col &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h3><p>当一个对象被用作右值的时候，用的是对象的值（内容）；当对象被用作左值的时候，用的是对象的身份（在内存中的位置）。在需要右值的地方可以用左值来代替，但是不能把右值当成左值（也就是位置 ）使用。</p>
+<p>优先级 (precedence)、结合律 (associativity) 以及运算对象的求值顺序 (order of evaluation)，运算对象的求值顺序与优先级和结合律无关。如果优先级相同，则其组合规则由结合律确定。左结合律将按照从左向右的顺序组合运算对象。只有 4 种运算符明确了求值顺序，<code>|| &amp;&amp; ?: ,</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; i &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; ++i &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// undefined，依赖求值顺序导致的未定义行为</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>定义在 while 条件部分或者 while 循环体内的变量每次迭代都经历从创建到销毁的过程<br>范围 for 语句拥有能返回迭代器的 begin 和 end 成员</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>函数重载，一个拥有顶层 const 的形参无法和另一个没有顶层 const 的形参区分开来，但是底层 const 可以。如果实参是非常量，编译器会优先选用非常量版本的函数<br>在不同的作用域中无法重载函数<br>constexpr 函数不一定返回常量表达式，一个 constexpr 函数被隐式地声明成内联函数</p>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p>定义在类内部的函数是隐式的 inline 函数</p>
+<p>只有当类没有声明任何构造函数时，编译器才会自动地生成默认构造函数</p>
+<p>没有出现在构造函数初始值列表中的成员将通过相应的类内初始值（如果存在的话）初始化，或者执行默认初始化</p>
+<p>和我们在头文件中定义 inline 函数的原因一样，inline 成员函数也应该与相应的类定义在同一个头文件中 </p>
+<p>我们希望能修改类的某个数据成员，即使是在一个 const 成员函数内。可以通过在变量的声明中加入 mutable 关键字做到这一点</p>
+<p>对于一个类来说，在我们创建它的对象之前该类必须被定义过，而不能仅仅被声明</p>
+<p>友元函数能定义在类的内部，这样的函数是隐式内联的</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Member Function 作为 friend */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Screen</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Win</span> &#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        Win();</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">(<span class="keyword">unsigned</span> i)</span></span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;Screen&gt; ws;	<span class="comment">//这时无法使用类内初始化</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Screen</span> &#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">Win::clear</span><span class="params">(<span class="keyword">unsigned</span> i)</span></span>;</span><br><span class="line">        <span class="keyword">using</span> pos = <span class="built_in">std</span>::<span class="built_in">string</span>::size_type;</span><br><span class="line">        Screen() = <span class="keyword">default</span>;</span><br><span class="line">        Screen(pos height, pos width, <span class="keyword">char</span> c = <span class="string">&#x27; &#x27;</span>): wid(width), hei(height), cont(<span class="built_in">std</span>::<span class="built_in">string</span>(wid * hei, c)) &#123;&#125;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        pos wid = <span class="number">0</span>, hei = <span class="number">0</span>;</span><br><span class="line">        pos cur = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">string</span> cont;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Win::Win(): ws&#123;Screen(<span class="number">10</span>, <span class="number">10</span>)&#125; &#123; <span class="comment">//在这里用花括号初始化</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Win::clear</span><span class="params">(<span class="keyword">unsigned</span> i)</span> </span>&#123;</span><br><span class="line">    Screen&amp; s = ws[i];</span><br><span class="line">    s.cont = <span class="built_in">std</span>::<span class="built_in">string</span>(s.wid * s.hei, <span class="string">&#x27; &#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>类型名的定义通常出现在类的开始处，否则要么找不到类型，要么用了类外的同名类型</p>
+<p>最好令构造函数初始值的顺序与成员声明的顺序保持一致。而且如果可能的话，尽量避免使用某些成员初始化其他成员</p>
+<h2 id="c-标准库"><a href="#c-标准库" class="headerlink" title="c++ 标准库"></a>c++ 标准库</h2><h3 id="io-库"><a href="#io-库" class="headerlink" title="io 库"></a>io 库</h3><p>一个流一旦发生错误，其上后续的 IO 操作都会失败</p>
+<h3 id="顺序容器"><a href="#顺序容器" class="headerlink" title="顺序容器"></a>顺序容器</h3><p>在一个 vector 或 string 的尾部之外的任何位置，或是一个 deque 的首尾之外的任何位置添加元素，都需要移动元素</p>
+<p>对于 vector 或 string 插入可能导致所有迭代器失效，删除导致后续迭代器失效。对于 deque 插入、删除首尾之外的位置导致迭代器失效，首尾删除则不会，首尾插入使迭代器失效，但元素引用仍有效，<a target="_blank" rel="noopener" href="http://www.martinbroadhurst.com/iterator-invalidation-rules-for-c-containers.html">原因</a>。失效后要利用 insert 和 erase 返回值重新定位迭代器，同时不要保存 end</p>
+<p>只有在执行 insert 操作时 size 与 capacity 相等，或者调用 resize 或 reserve 时给定的大小超过当前 capacity，vector 才可能重新分配内存空间</p>
+<h3 id="泛型算法"><a href="#泛型算法" class="headerlink" title="泛型算法"></a>泛型算法</h3><p>泛型算法运行于迭代器之上，永远不会改变底层容器的大小</p>
+<p>lambda</p>
+<ul>
+<li>lambda 将其理解为一个未命名的内联函数，可定义在函数内部，不能使用默认参数</li>
+<li>lambda 的函数体包含任何单一 return 语句之外的内容，且未指定返回类型，则返回 void </li>
+<li>lambda 可以使用所在函数作用域中的变量，捕获列表只用于局部非 static 变量</li>
+<li>在 lambda 创建时拷贝捕获变量。可以采用引用方式捕获变量，但要注意 lambda 执行时引用指向的局部变量消失的问题</li>
+<li>对于值拷贝的捕获变量，添加 mutable，令其可修改。引用拷贝的直接改就行 </li>
+</ul>
+<p>将 bind 函数看作一个通用的函数适配器，定义在头文件 functional 中</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>::placeholders;</span><br><span class="line"><span class="keyword">auto</span> wc = find_if(w.begin(), w.end(), bind(check_size, _1, sz)); <span class="comment">// _1 表示 bind 生成的新对象的第 1 个参数，用了几个 _x 就表示新函数的参数个数</span></span><br></pre></td></tr></table></figure>
+
+<p>在 bind 中使用引用要用标准库 ref 函数</p>
+<p>front_inserter 生成的迭代器会将插入的元素序列的顺序颠倒过来，而 inserter 和 back_inserter 则不会</p>
+<table>
+<thead>
+<tr>
+<th>迭代器类型</th>
+<th>功能</th>
+<th>代表</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>输入迭代器</td>
+<td>只读，不写：单遍扫描，只能递增</td>
+<td>istream_iterator</td>
+</tr>
+<tr>
+<td>输出迭代器</td>
+<td>只写，不读：单遍扫描，只能递增</td>
+<td>ostream_iterator</td>
+</tr>
+<tr>
+<td>前向迭代器</td>
+<td>可读写；多遍扫描，只能递增</td>
+<td>forward_list</td>
+</tr>
+<tr>
+<td>双向迭代器</td>
+<td>可读写；多遍扫描，可递增递减</td>
+<td>list</td>
+</tr>
+<tr>
+<td>随机访问迭代器</td>
+<td>可读写，多遍扫描，支持全部迭代器运算</td>
+<td>array、string、deque、vector、数组</td>
+</tr>
+</tbody></table>
+<p>list 和 forward_list 定义独有的 sort、merge、remove、reverse、unique，优先使用成员函数版本算法，而非通用算法</p>
+<h3 id="关联容器"><a href="#关联容器" class="headerlink" title="关联容器"></a>关联容器</h3><p>每项两种选择，8 种组合</p>
+<ul>
+<li>multi 关键字可以重复出现</li>
+<li>unordered 无序储存，hash 函数</li>
+<li>set or map</li>
+</ul>
+<p>对于关联容器，优先使用专用 find 算法，不使用通用算法。对于 copy 可以用通用的</p>
+<p>有序容器需要 key 支持 &lt; 运算或给出一个比较函数</p>
+<p>对于不在容器中的 key 使用下标会添加一个该 key 的元素</p>
+<p>如果不需要顺序，那么无序容器通常性能更好</p>
+<p>无序容器需要 key 支持 == 运算或给出函数，还要计算 key 的 hash 函数，对于内置类型和一些标准库类型，比如 string 已提供 hash 函数</p>
+<p>无论是有序容器还是无序容器，相同 key 的元素相邻存储</p>
+<h3 id="动态内存"><a href="#动态内存" class="headerlink" title="动态内存"></a>动态内存</h3><p>内存类型</p>
+<ul>
+<li>static，生存期整个程序运行时</li>
+<li>stack，生存期在块运行时</li>
+<li>heap，生存期由程序控制</li>
+</ul>
+<p>使用动态内存的 3 种原因</p>
+<ul>
+<li>程序不知道自己需耍使用多少对象 -&gt; 用容器</li>
+<li>程序不知道所需对象的准确类型 -&gt; 见 15 章</li>
+<li>程序需要在多个对象间共享数据 -&gt; 用 shared_ptr</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化列表</span></span><br><span class="line"><span class="built_in">shared_ptr</span>&lt;<span class="built_in">string</span>&gt; p = make_shared&lt;<span class="built_in">string</span>&gt;(<span class="number">10</span>, <span class="string">&#x27;a&#x27;</span>);</span><br><span class="line"><span class="comment">// auto 更简洁</span></span><br><span class="line"><span class="keyword">auto</span> p = make_shared&lt;<span class="built_in">string</span>&gt;(<span class="number">10</span>, <span class="string">&#x27;a&#x27;</span>);</span><br><span class="line"><span class="function"><span class="built_in">shared_ptr</span>&lt;<span class="keyword">int</span>&gt; <span class="title">p1</span><span class="params">(<span class="keyword">new</span> <span class="keyword">int</span>(<span class="number">1024</span>))</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>避免 shared_ptr  浪费内存：将 shared_ptr 存放于容器中，而后不再使用某些元素，此时要用 erase 删除不需要的元素</p>
+<p>使用 new 和 delete 导致的 3 种错误，1. 忘记释放，或存放地址的变量被覆盖，或发生异常 2. 多次释放 3. 使用已经释放的内存，比如多个变量指向相同的内存</p>
+<p>在 new 之后，delete 前发生异常则内存无法被释放，考虑智能指针</p>
+<p>不要使用普通指针继续管理交给智能指针的内存，因为不知道内存何时会被释放，也不要用智能指针的 get 继续让其它智能指针一同管理。具体见 P417 智能指针陷阱</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//让自己是唯一用户，再改变对象值</span></span><br><span class="line"><span class="keyword">if</span> (!p.unique())</span><br><span class="line">	p.reset(<span class="keyword">new</span> <span class="built_in">string</span>(*p));</span><br><span class="line">*p += newVal;</span><br></pre></td></tr></table></figure>
+
+<p>可以利用智能指针管理资源，包括发生异常时也可以正确处理，这时传递给智能指针我们自定义的 deleter 来释放资源，见  P416</p>
+<p>unique_ptr 不支持拷贝和赋值，例外是从函数可以返回 unique_ptr。管辖权可以转移 </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">unique_ptr</span>&lt;<span class="built_in">string</span>&gt; <span class="title">p</span><span class="params">(<span class="keyword">new</span> <span class="built_in">string</span>(<span class="string">&quot;tree&quot;</span>))</span></span>;</span><br><span class="line"><span class="function"><span class="built_in">unique_ptr</span>&lt;<span class="built_in">string</span>&gt; <span class="title">p2</span><span class="params">(p.release())</span></span>;</span><br><span class="line">p3.reset(p2.release());</span><br></pre></td></tr></table></figure>
+
+<p>weak_ptr 绑定到 shared_ptr，不递增 shared_ptr 计数，只能使用 lock 获取 shared_ptr（不能使用解引用 *），如果释放返回空的 shared_ptr</p>
+<p><code>char *cp = new char[0]</code> 类似尾后指针，不能解引用</p>
+<p><code>delete [] pa</code> 元素被逆序销毁</p>
+<p>unique_ptr 和 shared_ptr 也可以管理数组，<a target="_blank" rel="noopener" href="https://rufflewind.com/2016-03-05/unique-ptr">unique_ptr 的介绍</a></p>
+<h2 id="类设计者的工具"><a href="#类设计者的工具" class="headerlink" title="类设计者的工具"></a>类设计者的工具</h2><h3 id="拷贝控制"><a href="#拷贝控制" class="headerlink" title="拷贝控制"></a>拷贝控制</h3><p>拷贝初始化发生的情况。拷贝构造函数的参数是引用，且不是 explicit。如果参数不是引用就陷入了无限循环，拷贝构造函数自己就需要拷贝构造函数才能执行</p>
+<ul>
+<li>= 初始化时，也就是拷贝初始化。但拷贝初始化也可能用移动构造函数</li>
+<li>非引用类型的函数参数或返回值。容器的 insert 是拷贝初始化，emplace 是直接初始化</li>
+<li>{ } 初始化时</li>
+</ul>
+<p>成员按照在类中出现的顺序进行初始化。析构函数体执行完后， 成员按初始化顺序的逆序销毁，调用成员的析构函数。</p>
+<p>类在拷贝时的行为</p>
+<ol>
+<li>像值，容器、string</li>
+<li>像指针，共享，shared_ptr、StrBlob</li>
+<li>不允许拷贝，IO 类、unque_ptr</li>
+</ol>
+<p>赋值运算</p>
+<ul>
+<li>考虑给自身赋值的情况</li>
+<li>一般是既有析构函数又有拷贝函数的工作</li>
+<li>通常先将右侧放入临时变量，再销毁。这是为了处理自身赋值，还为了考虑 new 发生异常时，左侧不会被销毁</li>
+</ul>
+<p>不加 std 限定的 swap 写法的好处在于利用了，如果存在类型特定的 swap 版本，其匹配程度会优于 std 中定义的版本</p>
+<p>賦值通常执行拷贝构造和析构中也要做的工作，这种情况下，公共的工作应该放在 private 的工具函数中完成</p>
+<h3 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h3><p>std::move 后的源对象只能赋值或销毁，不能使用</p>
+<p>IO 类或 unique_ptr 不能拷贝但可以移动</p>
+<ul>
+<li>右值引用或 const 左值引用绑定到字面量，临时对象（返回非引用的函数、算术、关系、位、后置递增递减）</li>
+<li>左值引用绑定到变量、返回引用的函数</li>
+</ul>
+<p>右值引用为了方便窃取资源，确定没人在用、以后也不会用的资源</p>
+<p>不抛出异常的移动构造函数和移动赋值运算符必须标记为 noexcept，noexcept 在初始化列表的冒号前<br>比如 vector 在重新分配内存的时候，用 noexcept 的移动来提高性能</p>
+<p>移后源对象必须可析构，移后源对象的值不可用。有个例子是 <code>message</code>，在移动 set 后为防止析构时使用 set，调用 set::clear 清空移后源</p>
+<ul>
+<li>有拷贝函数，则不合成移动</li>
+<li>无拷贝函数，每个成员可移动，则合成移动</li>
+<li>有移动函数，则合成删除的拷贝</li>
+</ul>
+<p>拷贝初始化时</p>
+<ul>
+<li>没有移动构造，则右值初始化时使用拷贝构造</li>
+<li>有移动构造，则右值初始化时使用移动构造，左值使用拷贝构造</li>
+</ul>
+<h3 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h3><ul>
+<li>:: . .* ?: 不能重载，&amp;&amp; || , &amp; 不应重载</li>
+<li>= [] () -&gt; 必须是成员</li>
+<li>改变对象状态通常是成员</li>
+<li>对称性运算符通常非成员</li>
+</ul>
+<p>输入运算符需要考虑失败的情况，读到文件尾、要读入数字而实际不是、其它情况<br>即使错误发生，输入也要清空原对象，使对象保持正确的状态</p>
+<p>&lt; &gt; 的运算符定义应与 == 的定义逻辑上保持一致，既不大于也不小于应等价于相等<br>定义 ++ 和 – 同时定义前置和后置版本，后置版本可以通过前置版本实现<br>-&gt; 重载可以通过 return &amp;this-&gt;operator*(); 实现</p>
+<p>p-&gt;mem 的执行过程</p>
+<ol>
+<li>p 为指针 (*p).mem</li>
+<li>p 为类类型（需重载 -&gt; 运算符） p.operator-&gt;()-&gt;mem<ul>
+<li>operator-&gt; 返回指针转到 1.</li>
+<li>operator-&gt; 返回类类型转到 2.</li>
+</ul>
+</li>
+</ol>
+<p>非数组指针的比较产生未定义行为，应使用 less&lt;string *&gt;()</p>
+<p>function<T> 类型可以将不同类型，但具有相同调用形式，的可调用对象（函数、函数指针、lambda、bind、重载了调用的类、标准库函数对象），统一起来，方便查表调用函数<br>将重载函数存入 function 对象时，为了解决二义性</p>
+<ol>
+<li>定义函数指针指向函数</li>
+<li>使用 lambda 在函数外面包一层</li>
+</ol>
+<h1 id="面向对象程序设计"><a href="#面向对象程序设计" class="headerlink" title="面向对象程序设计"></a>面向对象程序设计</h1><p>继承和动态绑定</p>
+<ul>
+<li>容易定义相似的类</li>
+<li>使用时又可以忽略区别</li>
+</ul>
+<p>OOP 的核心是数据抽象、继承、动态绑定</p>
+<p>基本原则：每个类负责各自成员的访问权限<br>基类两种函数</p>
+<ul>
+<li>直接继承</li>
+<li>需要覆盖的</li>
+</ul>
+<p>基类通常都应该定义一个虚析构函数，以确保 delete 基类指针时执行正确的析构函数版木</p>
+<ul>
+<li>派生类可以访问基类的公有成员和受保护成员</li>
+<li>派生类的作用域嵌套在基类的作用域之内</li>
+<li>在类名后添加 final 防止被作为基类</li>
+<li>如果虚函数使用默认实参，则基类和派生类中定义的默认实参最好一致</li>
+<li>派生类调用基类函数时，如果不使用作用域来回避虚函数机制，则会调用自身导致无限循环</li>
+<li>含有纯虚函数的类是抽象基类</li>
+</ul>
+<h1 id="模版与泛型编程"><a href="#模版与泛型编程" class="headerlink" title="模版与泛型编程"></a>模版与泛型编程</h1><p>编译时能确定类型</p>
+<ul>
+<li>模板类型参数，关键字 class、typename。用在返回值、参数、函数体内</li>
+<li>非类型参数，表示常量值</li>
+</ul>
+<p>类模版，编译器不能推断类型。提供默认实参时，用空的尖括号</p>
+<p>类中模版的成员函数不能是虚函数</p>
+<p>使用 extern 声明在其它文件实例化的模版，可以避免同一类型被实例化多个。要放在其它使用实例化的代码前。</p>
+<h1 id="内存泄漏检测"><a href="#内存泄漏检测" class="headerlink" title="内存泄漏检测"></a>内存泄漏检测</h1><p><code>valgrind --tool=memcheck &lt;your_app&gt; &lt;your_apps_params&gt;</code></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5360491/how-i-can-detect-memory-leaks-of-c-application-in-linux-ubuntu-os">detect-memory-leaks-of-c-application-in-linux</a></p>
+<h1 id="内核-OO"><a href="#内核-OO" class="headerlink" title="内核 OO"></a>内核 OO</h1><p>翻译一下，第二部分还有习题</p>
+<p><a target="_blank" rel="noopener" href="https://lwn.net/Articles/444910/">https://lwn.net/Articles/444910/</a></p>
+<p><a target="_blank" rel="noopener" href="https://lwn.net/Articles/446317/">https://lwn.net/Articles/446317/</a></p>
+<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><p><a target="_blank" rel="noopener" href="https://www.alfonsobeato.net/arm/how-to-access-safely-unaligned-data/">How to Access Safely Unaligned Data</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/46790550/c-undefined-behavior-strict-aliasing-rule-or-incorrect-alignment">C undefined behavior. Strict aliasing rule, or incorrect alignment?</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule">What is the strict aliasing rule?</a></p>
+<p>man gcc 搜索 strict-aliasing</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Mirai/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Mirai</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/pwn/"><span class="level-item">PWN</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

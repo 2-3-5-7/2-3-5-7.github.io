@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>OOC - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Object-oriented design patterns in the kernel 1，多态部分 Object-oriented design patterns in the kernel 2，继承部分 回顾时先看最后 summary 然后再去找代码例子"><meta property="og:type" content="blog"><meta property="og:title" content="OOC"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/OOC/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="Object-oriented design patterns in the kernel 1，多态部分 Object-oriented design patterns in the kernel 2，继承部分 回顾时先看最后 summary 然后再去找代码例子"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2020-06-13T13:44:40.549Z"><meta property="article:modified_time" content="2021-03-01T00:54:35.848Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/OOC/"},"headline":"OOC","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2020-06-13T13:44:40.549Z","dateModified":"2021-03-01T00:54:35.848Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"Object-oriented design patterns in the kernel 1，多态部分 Object-oriented design patterns in the kernel 2，继承部分 回顾时先看最后 summary 然后再去找代码例子"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/OOC/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-06-13T13:44:40.549Z" title="2020/6/13 下午9:44:40">2020-06-13</time>发表</span><span class="level-item"><time dateTime="2021-03-01T00:54:35.848Z" title="2021/3/1 上午8:54:35">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a></span></div></div><h1 class="title is-3 is-size-4-mobile">OOC</h1><div class="content"><p><a target="_blank" rel="noopener" href="https://lwn.net/Articles/444910/">Object-oriented design patterns in the kernel 1，多态部分</a></p>
+<p><a target="_blank" rel="noopener" href="https://lwn.net/Articles/446317/">Object-oriented design patterns in the kernel 2，继承部分</a></p>
+<p><strong>回顾时先看最后 summary 然后再去找代码例子</strong></p>
+<span id="more"></span>
+
+<p>多态部分</p>
+<p>将方法放入 vtable，减少内存占用<br>通常添加一个 _operations/_ops 后缀的结构体指针<br>ops 中指针会出现 NULL，因为某些情况下操作无意义，此时采取默认行为。但建议定义默认函数或测试 flag 的 bit（因为 flag 很可能在 cache 里）来取代 NULL 判断，因为 NULL 也可能是因为异常导致</p>
+<ul>
+<li>除了函数指针，还包含其它字段的情况</li>
+<li>函数指针第一个参数不是自身的情况，使用 mixin 或 interface，类似多重继承</li>
+<li>函数指针第一个参数是父类型</li>
+<li>直接嵌入指针到结构体的情况</li>
+</ul>
+<p>继承部分</p>
+<ul>
+<li>基类包含派生类，派生成员联合体实现。浪费内存</li>
+<li>派生类包含基类，使用 container of （作者推荐，多数情况下适用，只有下面那种切换类型时用其它两种方式是必要的）</li>
+<li>基类包含派生类，void * private。需要两次内存分配，需要间接取址，派生类找基类也需要指针（个人理解，所以 void *可能指向派生类成员，也可能用来指回基类）</li>
+</ul>
+<p>结构体嵌套，也可用来实现 ADT 抽象数据类型，比如链表，相当于 mixin （接口）方式继承，与类方式继承区别于两点</p>
+<ul>
+<li>类继承通常在基类中维护控制对象生命周期的引用计数，而 mixin 方式的继承没有</li>
+<li>一个结构体可以嵌套多个、多种链表。而引用计数只会有一个，类继承不会有嵌套多个的情况，所以也就没有多重继承</li>
+</ul>
+<p>对于需要切换派生类的类型时，使用联合体或 void * 就是必要的，作者以 struct page 举例 （因为两段内存是分离的，所以切换 private 指针的指向或联合体内容就行）</p>
+<p>联合体或 void * 与嵌入结构体的 3 个区别</p>
+<ul>
+<li>嵌入方式，最内层包含引用计数，更需要提前考虑好继承关系，以及是否是 mixin 方式继承</li>
+<li>内存分配，联合体或 void * 是中间层分配公共内存，调底层分配派生类内存。嵌入结构体是直接调底层分配全部内存</li>
+<li>初始化，联合体或 void * 同样分成中间层初始化和底层初始化。嵌入结构体是底层初始化后，调基类的初始化（个人理解为构造函数）</li>
+</ul>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E8%8B%B1%E8%AF%AD%E9%AD%94%E6%B3%95%E5%B8%88/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">英语魔法师</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/%E9%94%AE%E7%9B%98%E9%BC%A0%E6%A0%87%E6%A8%A1%E6%8B%9F/"><span class="level-item">键盘鼠标模拟</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

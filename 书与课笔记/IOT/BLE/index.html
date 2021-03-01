@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>BLE - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net 参考 CC2540 Software Developer’s Reference Guide 和 蓝牙4.0 BLE开发完全手册 - 物联网开发技术实战 待看 TI 的教学 1. 基本概念蓝牙 4.0 分为两种  Basic Rate (BR, often referred to as BR&amp;#x2F;EDR for Basic Rate&amp;#x2F;Enhanced Data Rate"><meta property="og:type" content="blog"><meta property="og:title" content="BLE"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net 参考 CC2540 Software Developer’s Reference Guide 和 蓝牙4.0 BLE开发完全手册 - 物联网开发技术实战 待看 TI 的教学 1. 基本概念蓝牙 4.0 分为两种  Basic Rate (BR, often referred to as BR&amp;#x2F;EDR for Basic Rate&amp;#x2F;Enhanced Data Rate"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/11.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/10.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/4.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/3.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/12.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/1.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/5.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/6.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/13.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/14.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/15.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/16.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/7.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/9.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/8.png"><meta property="article:published_time" content="2019-06-05T00:15:07.439Z"><meta property="article:modified_time" content="2021-03-01T07:57:13.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/11.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/"},"headline":"BLE","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/11.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/10.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/4.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/3.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/12.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/1.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/5.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/6.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/13.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/14.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/15.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/16.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/7.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/9.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/8.png"],"datePublished":"2019-06-05T00:15:07.439Z","dateModified":"2021-03-01T07:57:13.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net 参考 CC2540 Software Developer’s Reference Guide 和 蓝牙4.0 BLE开发完全手册 - 物联网开发技术实战 待看 TI 的教学 1. 基本概念蓝牙 4.0 分为两种  Basic Rate (BR, often referred to as BR&#x2F;EDR for Basic Rate&#x2F;Enhanced Data Rate"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.439Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:57:13.000Z" title="2021/3/1 下午3:57:13">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">BLE</h1><div class="content"><p><a href="BLE">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE">asset-net</a></p>
+<p>参考 CC2540 Software Developer’s Reference Guide 和 蓝牙4.0 BLE开发完全手册 - 物联网开发技术实战</p>
+<p>待看 <a target="_blank" rel="noopener" href="http://software-dl.ti.com/lprf/simplelink_academy/modules/ble_01_custom_profile/ble_01_custom_profile.html#prerequisites">TI 的教学</a></p>
+<h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h1><p>蓝牙 4.0 分为两种</p>
+<ul>
+<li>Basic Rate (BR, often referred to as BR/EDR for Basic Rate/Enhanced Data Rate)</li>
+<li>Bluetooth low energy (BLE)</li>
+</ul>
+<p>同时支持两种的设备为 Bluetooth Smart Ready，比如手机、笔记本。只支持 BLE 的为 Bluetooth Smart，比如使用电池的设备</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/11.png" alt="11"></p>
+<p><a target="_blank" rel="noopener" href="http://www.wowotech.net/bluetooth/bt_overview.html">蓝牙基本概念</a> </p>
+<p>BLE 0-39 个信道，每个2Mhz，37、38、39 广播信道，广播信道用来建立连接，其它数据信道进行数据发送</p>
+<span id="more"></span>
+
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/2.png" alt="2"></p>
+<p><a target="_blank" rel="noopener" href="https://www.leiphone.com/news/201507/m6n5F5USgELvC3B7.html">小米 2015 年对于 WiFi、ZigBee、BLE 的选择</a></p>
+<ol>
+<li>插电的设备，用WiFi。路由器的覆盖范围更大。WiFi可以做到随时随地的连接人和设备、云和设备或者是设备和设备，甚至不同平台之间的对接都很方便，所以也最普适。</li>
+<li>需要和手机交互的，用BLE。低功耗，和手机的互通方便。</li>
+<li>传感器用ZigBee。只有ZigBee联盟有传感器的标准协议，蓝牙联盟还没有。</li>
+</ol>
+<p>48 位 IEEE 地址 6B，NAP、UAP IEEE 分配的制造商标识，LAP 制造商分配</p>
+<ul>
+<li>NAP 无效地址 2B</li>
+<li>UAP 高位地址 1B</li>
+<li>LAP 低位地址 3B</li>
+</ul>
+<h2 id="1-1-连接与组网"><a href="#1-1-连接与组网" class="headerlink" title="1.1 连接与组网"></a>1.1 连接与组网</h2><p>星型结构。主、从 (Central、 Peripheral)</p>
+<ol>
+<li>设备发现。当从节点发出广告信号（包括设备地址和设备名称之类的附加信息）；主节点收到此广告信号后，向从节点发出扫描请求；当从节点回应扫描时，就完成了设备发现过程。</li>
+<li>连接建立。接着主节点向从节点发出连接请求（包括连接时隙、从节点待机次数、连接超时值），从节点回应连接，就完成了建立连接。</li>
+<li>配对。为了安全起见，一些数据的访问需要认证，它的完成是这样的：一方（可以是主节点，也可以是从节点）向另一方索要 6 位数字的密码，之后，两个节点彼此交换安全密钥用于加密和认证，此过程称为配对。</li>
+<li>绑定。认证的过程比较繁琐，BLE 协议支持两节点保存认证的安全密钥（一般是非易失性存储器中），以便于两节点下次连接后快速认证，这就是绑定技术。</li>
+</ol>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/10.png" alt="10"></p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/4.png" alt="4"></p>
+<p>广播结构，单向无连接的</p>
+<ol>
+<li>Broadcaster 发送广播</li>
+<li>Observer 接收广播</li>
+</ol>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/3.png" alt="3"></p>
+<p>连接参数</p>
+<ul>
+<li>Connection Interval，连接间隔，链路层维护连接的间隔，7.5ms - 4s</li>
+<li>Slave Latency，从节点待机次数，最大值使有效连接间隔 (Effective Connection Interval) 不超过 16s</li>
+<li>Supervision Time-out，连接超时值，100ms - 32s。需大于有效连接间隔</li>
+<li>Effective Connection Interval = (Connection Interval) × (1 + [Slave Latency])</li>
+<li>连接参数设置，关于耗电和报文响应的平衡讨论见 CC2540 Software Developer’s Reference Guide</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/12.png" alt="12"></p>
+<h2 id="1-2-分层"><a href="#1-2-分层" class="headerlink" title="1.2 分层"></a>1.2 分层</h2><p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/1.png" alt="1"></p>
+<ul>
+<li>GAP 设备访问模式和进程，包括设备发现、建立连接、终止连接、初始化安全特性、设备配置</li>
+<li>GAP 层总在 4 种角色之一。Central,  Peripheral,  Broadcaster, Observer.</li>
+<li>GAP 从机可以发送连接参数（连接间隔、从机延迟、超时）更新请求给主机，主机接受或拒绝</li>
+<li>GATT 已连接蓝牙设备间的数据通信。规定了 profile 结构</li>
+<li>GATT 层中展示 Characteristic 的设备称为服务器，获取 Characteristic 的是客户端</li>
+<li>GATT 中的客户端、服务器角色与 GAP 角色相互独立，而且两个设备可以同时既是客户端又是服务器，详见 [A view on Bluetooth Low Energy stack roles](A view on Bluetooth Low Energy stack roles.pdf) 和 <a href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../ble_roles.xlsx">ble_roles 表格</a></li>
+<li>下图为 GATT 中的三个要素 Profile、Service、Characteristic 以及他们的层级关系，值得注意的是，Profile 其实是 SIG 蓝牙技术联盟给一些同范畴内的 Service 打包后的集合，比如电池、心率、血压等。Service 和 Characteristic 是比较重要的，Service 可以理解为 PHP 中的“类”，功能对象的集合。Characteristic 可以理解为 PHP 的“函数”，是 GATT 中具体的功能对象，每个 Service 都可以包含一个或多个 Characteristic。</li>
+<li>GATT Service 包含 Mandatory GAP Service、Mandatory GATT Service、Device Information Service、用户自定义的 simpleGATTProfile Service。详见 CC2540 Software Developer’s Reference Guide 5.4.2</li>
+<li>GATT Characteristic 包含了 4 个 attributes。Characteristic Declaration、Characteristic Value、Client Characteristic Configuration、Characteristic User Description，分别是声明（读写、通知属性，Characteristic 的 handle 和 UUID），值，通知开关，字符串描述<ul>
+<li>每个 attribute 包含 3 个 properties。handle 属性表的索引，type UUID，Permissions GATT client 对这个 attribute  的访问权限</li>
+</ul>
+</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/5.png" alt="5"></p>
+<ul>
+<li>分层详细参见 <a href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../%E4%BD%8E%E5%8A%9F%E8%80%97%E8%93%9D%E7%89%99(BLE)%E5%8D%8F%E8%AE%AE%E6%A0%88%E7%AE%80%E4%BB%8B.pdf">低功耗蓝牙(BLE)协议栈简介</a></li>
+<li>通知与指示的区别在于是否发送确认</li>
+</ul>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/6.png" alt="6"></p>
+<h2 id="1-3-TI-协议栈"><a href="#1-3-TI-协议栈" class="headerlink" title="1.3 TI 协议栈"></a>1.3 TI 协议栈</h2><p>5 个 components</p>
+<ul>
+<li>OSAL 类似操作系统</li>
+<li>HAL  类似硬件驱动</li>
+<li>The BLE Protocol Stack  无源码，提供库</li>
+<li>Profiles，下面 3 个 GAP profile 以及用户自定义的 profile<ul>
+<li>GAP Bond Manager （过去是 GAP Peripheral Bond Manager）</li>
+<li>Peripheral role</li>
+<li>Central role</li>
+<li>其它自定义 GATT profiles (Generic Attribute Profile)</li>
+</ul>
+</li>
+<li>Application</li>
+</ul>
+<p>GAP Role 分为 Central 和 Peripheral，通过 GAP Role API 来控制 GAP，但有少部分需要直接调 GAP API</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/13.png" alt="13"></p>
+<p>GATT Client 直接调 GATT API</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/14.png" alt="14"></p>
+<p>GATT Server，应用层通过 profile 调用 GATTServApp module 的 API 与 GATT 进行交互的</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/15.png" alt="15"></p>
+<p>Add service 中通过 GATTServApp module 来初始化属性表</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/16.png" alt="16"></p>
+<h1 id="2-串口收发"><a href="#2-串口收发" class="headerlink" title="2. 串口收发"></a>2. 串口收发</h1><p>LED D7 D8 D9 对应 LED1-3</p>
+<p>CC2540 支持串口，参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/feilusia/article/details/47431659">CC2541之串口收发</a></p>
+<p>修改部分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">修改 SimpleBLEPeripheral\CC2540DB 工程，预处理器部分开串口、关低功耗</span><br><span class="line"></span><br><span class="line">HAL_UART&#x3D;TRUE</span><br><span class="line">HAL_LCD&#x3D;FALSE	&#x2F;&#x2F;将 LCD 相关打印的宏，改为串口打印</span><br><span class="line">xPOWER_SAVING</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;关流控</span><br><span class="line">#define NPI_UART_FC                    FALSE &#x2F;&#x2F;TRUE</span><br></pre></td></tr></table></figure>
+
+<p>添加部分</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;npi.h&quot;</span> </span></span><br><span class="line"><span class="comment">// 初始化串口</span></span><br><span class="line">NPI_InitTransport(NpiSerialCallback);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 支持 printf, 记得 #include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="function">__near_func <span class="keyword">int</span> <span class="title">putchar</span><span class="params">(<span class="keyword">int</span> c)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    UTX0IF = <span class="number">0</span>;</span><br><span class="line">    U0DBUF = (<span class="keyword">char</span>)c;</span><br><span class="line">    <span class="keyword">while</span>(UTX0IF == <span class="number">0</span>)</span><br><span class="line">		;</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 接收回调函数</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">NpiSerialCallback</span><span class="params">( uint8 port, uint8 events )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    (<span class="keyword">void</span>)port;<span class="comment">//加个 (void)，是未了避免编译告警，明确告诉缓冲区不用理会这个变量</span></span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> (events &amp; (HAL_UART_RX_TIMEOUT | HAL_UART_RX_FULL))   <span class="comment">//串口有数据</span></span><br><span class="line">    &#123;</span><br><span class="line">        uint8 numBytes = <span class="number">0</span>;</span><br><span class="line"> </span><br><span class="line">        numBytes = NPI_RxBufLen();           <span class="comment">//读出串口缓冲区有多少字节 </span></span><br><span class="line">        <span class="keyword">if</span>(numBytes == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//申请缓冲区buffer</span></span><br><span class="line">            uint8 *buffer = osal_mem_alloc(numBytes);</span><br><span class="line">            <span class="keyword">if</span>(buffer)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">//读取读取串口缓冲区数据，释放串口数据   </span></span><br><span class="line">                NPI_ReadTransport(buffer,numBytes);   </span><br><span class="line">                <span class="comment">//把收到的数据发送到串口-实现回环 </span></span><br><span class="line">                NPI_WriteTransport(buffer, numBytes);  </span><br><span class="line">                <span class="comment">//释放申请的缓冲区</span></span><br><span class="line">                osal_mem_free(buffer);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-Peripheral-和-Central-代码分析"><a href="#3-Peripheral-和-Central-代码分析" class="headerlink" title="3. Peripheral 和 Central 代码分析"></a>3. Peripheral 和 Central 代码分析</h1><p>Peripheral 发送广告的两种模式，受限模式只保持 30s 可发现状态，不受限模式则没有收到 Central 连接请求时一直发送广告，保持可发现状态。通过修改 DEFAULT_DISCOVERABLE_MODE 来选。</p>
+<p>Peripheral 流程</p>
+<ol>
+<li>SimpleBLEPeripheral_Init<ul>
+<li>Setup the GAP、GAP Peripheral Role Profile、GAP Characteristics，Set advertising interval，Setup the GAP Bond Manager</li>
+<li>Initialize GATT attributes，注册 Service</li>
+<li>Setup the SimpleProfile Characteristic Values</li>
+<li>Register callback with SimpleGATTprofile</li>
+<li>Setup a delayed profile startup，osal_set_event SBP_START_DEVICE_EVT</li>
+</ul>
+</li>
+<li>simpleBLEPeripheral_HandleKeys<ul>
+<li>按键回调，通过发送 KEY_CHANGE 消息</li>
+<li>gapProfileState 不是 GAPROLE_CONNECTED 则反转广告状态</li>
+<li>更新按键的 Characteristic，同时开启通知后会通知 Central</li>
+</ul>
+</li>
+<li>peripheralStateNotificationCB<ul>
+<li>状态变更回调，调用关系 gapRole_ProcessGAPMsg -&gt; peripheralStateNotificationCB (pGapRoles_AppCGs-&gt;pfnStateChange)</li>
+<li>打印状态。GAPROLE_STARTED 设置 DEVINFO_SYSTEM_ID</li>
+<li>修改 gapProfileState</li>
+</ul>
+</li>
+<li>performPeriodicTask<ul>
+<li>周期性的通过 SimpleProfile_SetParameter 和 SimpleProfile_GetParameter 将第 3 个 Characteristic 赋给第 4 个 Characteristic</li>
+</ul>
+</li>
+<li>simpleProfileChangeCB<ul>
+<li>Characteristic 改变时回调。SimpleProfile_AddService 中注册，调用关系 simpleProfile_WriteAttrCB -&gt; simpleProfileChangeCB</li>
+<li>打印新的 Characteristic 值</li>
+</ul>
+</li>
+</ol>
+<p>Central 流程较复杂，先总结如下</p>
+<ol>
+<li>通过按键开启扫描，选择扫描到的设备建立连接，获得 <code>simpleBLEConnHandle</code></li>
+<li>进行 GATT 服务发现，获得 Characteristic 句柄</li>
+<li>通过 <code>simpleBLEConnHandle</code> 和 Characteristic 句柄进行 Characteristic 读写操作，同时处理读写回应</li>
+</ol>
+<p>Central 详细流程</p>
+<ol>
+<li><p>SimpleBLECentral_Init</p>
+<ul>
+<li>Setup GAP、Central Profile、Setup the GAP Bond Manager</li>
+<li>Initialize GATT Client</li>
+<li>Register to receive incoming ATT Indications/Notifications</li>
+<li>Initialize GATT attributes</li>
+<li>Setup a delayed profile startup，osal_set_event SBP_START_DEVICE_EVT</li>
+</ul>
+</li>
+<li><p>SimpleBLECentral_ProcessEvent</p>
+<ol>
+<li><p>SYS_EVENT_MSG</p>
+<ol>
+<li>KEY_CHANGE 处理按键 simpleBLECentral_HandleKeys<ul>
+<li>上：如果没连接则反转扫描开关</li>
+<li>上：如果已连接则执行读写操作</li>
+<li>左：选择要连接的设备</li>
+<li>中：连接或断开设备</li>
+<li>右：更新连接间隔、从机延迟、超时</li>
+</ul>
+</li>
+<li>GATT_MSG_EVENT 处理 GATT 消息 simpleBLECentralProcessGATTMsg。详见下面第 7 条</li>
+</ol>
+</li>
+<li><p>START_DEVICE_EVT</p>
+<p>注册 GAP 回调函数。注册绑定管理回调函数。详见下面第 3-6 条</p>
+</li>
+<li><p>START_DISCOVERY_EVT</p>
+<p>通过 SIMPLEPROFILE_SERV_UUID 来发现 Peripheral 设备，simpleBLECentralStartDiscovery。客户端通过 UUID 获得 GATT 数据服务，<code>simpleBLESvcStartHdl = simpleBLESvcEndHdl = simpleBLECharHdl = 0</code> 句柄为属性表中的地址。详见下面第 7 条</p>
+</li>
+</ol>
+</li>
+<li><p>GAP 状态变化回调 simpleBLECentralEventCB</p>
+<ul>
+<li>当一个设备被发现时产生 GAP_DEVICE_INFO_EVENT，通过 UUID 过滤设备后，将设备添加到发现列表</li>
+<li>当设备扫描完成时产生 GAP_DEVICE_DISCOVERY_EVENT，显示扫描到的外设个数，提示用户选择</li>
+<li>连接建立 GAP_LINK_ESTABLISHED_EVENT，更新状态，启用 START_DISCOVERY_EVT GATT 服务发现</li>
+<li>GAP_LINK_TERMINATED_EVENT、GAP_LINK_PARAM_UPDATE_EVENT 猜测为按键的操作的回应处理</li>
+</ul>
+</li>
+<li><p>RSSI 回调 simpleBLECentralRssiCB，Received Signal Strength Indication 接收信号强度指示，将强度值打印出来</p>
+</li>
+<li><p>GAP 绑定状态回调 simpleBLECentralPairStateCB，把新的绑定状态打印出来</p>
+</li>
+<li><p>GAP 密钥回调 simpleBLECentralPasscodeCB，生成和显示密钥</p>
+</li>
+<li><p>在 3. 连接建立后启用定时发送 GATT 服务发现 simpleBLECentralStartDiscovery 见 2.3 ，回应处理对应 2.1.2 simpleBLECentralProcessGATTMsg</p>
+<ul>
+<li>simpleBLECentralProcessGATTMsg 中进行 Characteristic 读写的回应处理和 GATT 发现的回应 simpleBLEGATTDiscoveryEvent</li>
+<li>simpleBLEGATTDiscoveryEvent 的回应处理分为 <code>Service discovery</code> 和 <code>Characteristic discovery</code></li>
+<li>先处理  <code>Service discovery</code> 的回应，保存 <code>simpleBLESvcStartHdl</code> 和 <code>simpleBLESvcEndHdl</code> 句柄，再发起 <code>Characteristic discovery</code></li>
+<li>处理 <code>Characteristic discovery</code> 回应，保存 <code>simpleBLECharHdl</code> 句柄，打印 “Simple Svc Found”</li>
+</ul>
+</li>
+</ol>
+<h1 id="4-Peripheral-和-Central-通信过程"><a href="#4-Peripheral-和-Central-通信过程" class="headerlink" title="4. Peripheral 和 Central 通信过程"></a>4. Peripheral 和 Central 通信过程</h1><p>连接建立流程</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/7.png" alt="7"></p>
+<p>传输的数据格式</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/9.png" alt="9"></p>
+<p>从设备广告数据</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// GAP - Advertisement data (max size = 31 bytes, though this is</span></span><br><span class="line"><span class="comment">// best kept short to conserve power while advertisting)</span></span><br><span class="line"><span class="keyword">static</span> uint8 advertData[] =</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// Flags; this sets the device to use limited discoverable</span></span><br><span class="line">  <span class="comment">// mode (advertises for 30 seconds at a time) instead of general</span></span><br><span class="line">  <span class="comment">// discoverable mode (advertises indefinitely)</span></span><br><span class="line">  <span class="number">0x02</span>,   <span class="comment">// length of this data</span></span><br><span class="line">  GAP_ADTYPE_FLAGS,</span><br><span class="line">  DEFAULT_DISCOVERABLE_MODE | GAP_ADTYPE_FLAGS_BREDR_NOT_SUPPORTED,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// service UUID, to notify central devices what services are included</span></span><br><span class="line">  <span class="comment">// in this peripheral</span></span><br><span class="line">  <span class="number">0x03</span>,   <span class="comment">// length of this data</span></span><br><span class="line">  GAP_ADTYPE_16BIT_MORE,      <span class="comment">// some of the UUID&#x27;s, but not all</span></span><br><span class="line">  LO_UINT16( SIMPLEPROFILE_SERV_UUID ),</span><br><span class="line">  HI_UINT16( SIMPLEPROFILE_SERV_UUID ),</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>从设备回应数据</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// GAP - SCAN RSP data (max size = 31 bytes)</span></span><br><span class="line"><span class="keyword">static</span> uint8 scanRspData[] =</span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">// complete name</span></span><br><span class="line">  <span class="number">0x14</span>,   <span class="comment">// length of this data</span></span><br><span class="line">  GAP_ADTYPE_LOCAL_NAME_COMPLETE, <span class="string">&#x27;S&#x27;</span>, <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;m&#x27;</span>, <span class="string">&#x27;p&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;E&#x27;</span>, <span class="string">&#x27;P&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;p&#x27;</span>, <span class="string">&#x27;h&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, </span><br><span class="line"></span><br><span class="line">  <span class="comment">// connection interval range</span></span><br><span class="line">  <span class="number">0x05</span>,   <span class="comment">// length of this data</span></span><br><span class="line">  GAP_ADTYPE_SLAVE_CONN_INTERVAL_RANGE,</span><br><span class="line">  LO_UINT16( DEFAULT_DESIRED_MIN_CONN_INTERVAL ),   <span class="comment">// 100ms</span></span><br><span class="line">  HI_UINT16( DEFAULT_DESIRED_MIN_CONN_INTERVAL ),</span><br><span class="line">  LO_UINT16( DEFAULT_DESIRED_MAX_CONN_INTERVAL ),   <span class="comment">// 1s</span></span><br><span class="line">  HI_UINT16( DEFAULT_DESIRED_MAX_CONN_INTERVAL ),</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Tx power level</span></span><br><span class="line">  <span class="number">0x02</span>,   <span class="comment">// length of this data</span></span><br><span class="line">  GAP_ADTYPE_POWER_LEVEL,</span><br><span class="line">  <span class="number">0</span>       <span class="comment">// 0dBm</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>数据传输流程</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../BLE/8.png" alt="8"></p>
+<p>更详细的报文格式介绍见 《蓝牙4.0 BLE开发完全手册  物联网开发技术实战》第 8 章末尾</p>
+<h1 id="5-Peripheral-添加新-Characteristic"><a href="#5-Peripheral-添加新-Characteristic" class="headerlink" title="5. Peripheral 添加新 Characteristic"></a>5. Peripheral 添加新 Characteristic</h1><p>使用 lightblue 进行测试 peripheral 工程（参照《蓝牙4.0 BLE开发完全手册  物联网开发技术实战》第 7 章 BToll），串口发送 d（对应按键右）开启广告，进行连接。</p>
+<p>因为会周期的将第 3 个赋给第 4 个 Characteristic，第 3 个可写不可读，第 4 个可通知，第 3 个被修改后可通过订阅第 4 个的通知来验证是否修改成功，即使没修改也会每 5 秒收到通知</p>
+<ul>
+<li><p>添加新的 Characteristic，相关宏定义</p>
+</li>
+<li><p>修改函数 SimpleProfile_SetParameter、SimpleProfile_GetParameter、simpleProfile_ReadAttrCB、simpleProfile_WriteAttrCB</p>
+</li>
+<li><p>实现控制灯的开关</p>
+</li>
+<li><p>注意需要全部重新编译工程</p>
+</li>
+</ul>
+<h1 id="6-串口透传"><a href="#6-串口透传" class="headerlink" title="6. 串口透传"></a>6. 串口透传</h1><table>
+<thead>
+<tr>
+<th></th>
+<th>主，client</th>
+<th>从，server</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>串口收蓝牙发</td>
+<td>发送写 Characteristic 的请求</td>
+<td>修改 Profile 中 SetParameter 函数为发送 Notification</td>
+</tr>
+<tr>
+<td>蓝牙收串口发</td>
+<td>接收 Notification 类型的 Gatt msg</td>
+<td>修改 Profile 中 WriteAttrCB 函数为回调相应处理函数</td>
+</tr>
+</tbody></table>
+<ul>
+<li>关于 Characteristic 的最大长度，按照 attWriteReq_t 中 value 最大为 ATT_MTU_SIZE-3，而 MTU 为 23，所以设置为 20。但长度大于 19 调 <code>GATT_ReadUsingCharUUID</code> 会返回错误，因为 attReadByTypeRsp_t 的 dataList 大小减去 2B handle 后为 19，20B 的返回数据装不下。</li>
+<li>server 发送 Notification，可以用 <code>GATTServApp_ProcessCharCfg</code>，但这样需要 client 开启 Notification 而且只能发送固定长度的数据。因此使用 <code>GATT_Notification</code> 发送，只不过需要获得 handle。</li>
+<li>server 不论收发都可以不真正写入 Characteristic，而是写到最终要使用的内存中。</li>
+</ul>
+<h1 id="7-配对与绑定"><a href="#7-配对与绑定" class="headerlink" title="7. 配对与绑定"></a>7. 配对与绑定</h1><p>参考 CC2540 Software Developer’s Reference Guide 中 5.3 Gap Bond Manager</p>
+<table>
+<thead>
+<tr>
+<th><strong>Term</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pairing</td>
+<td>The process of exchanging keys</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>Data is encrypted after pairing, or re-encryption (a subsequent connection where keys are looked up from nonvolatile memory).</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>The pairing process complete with MITM (Man in the Middle) protection.</td>
+</tr>
+<tr>
+<td>Bonding</td>
+<td>Storing the keys in nonvolatile memory to use for the next encryption sequence.</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>An additional application level key exchange in addition to authentication</td>
+</tr>
+<tr>
+<td>OOB</td>
+<td>Out of Band. Keys are not exchanged over the air, but rather over some other source such as serial port or NFC. This also provides MITM protection.</td>
+</tr>
+<tr>
+<td>MITM</td>
+<td>Man in the Middle protection. This prevents an attacker from listening to the keys transferred over the air to break the encryption.</td>
+</tr>
+<tr>
+<td>Just Works</td>
+<td>Pairing method where keys are transferred over the air without MITM</td>
+</tr>
+</tbody></table>
+<p>分 4 步。绑定是可选的</p>
+<ol>
+<li>Pair the keys (exchanging keys through the following methods).<ul>
+<li>Just Works (to send the keys wirelessly)</li>
+<li>MITM (to use a passcode to create a key)</li>
+</ul>
+</li>
+<li>Encrypt the link with keys from step 1.</li>
+<li>Bond the keys (store keys in secure flash [SNV]).</li>
+<li>When reconnected, use the keys stored in SNV to encrypt the link.</li>
+</ol>
+<p>更详细的信息可以看 TI 网站文档，注意最新协议栈可能有些区别 <a target="_blank" rel="noopener" href="http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gapbondmngr.html">GAP Bond Manager and LE Secure Connections</a></p>
+<p>实现两个函数</p>
+<ul>
+<li>配对时的密码生成、显示、输入函数</li>
+<li>配对和绑定状态回调函数</li>
+</ul>
+<p>注意</p>
+<ul>
+<li><p>初始化时要一个发起 <code>GAPBOND_PAIRING_MODE_INITIATE</code> ，用来显示密码。另一个等待 <code>GAPBOND_PAIRING_MODE_WAIT_FOR_REQ</code>，用来使用键盘输入。</p>
+</li>
+<li><p>ioCap 要初始化成带键盘和显示屏，这样就既可以输入密码又可以显示密码，通过串口间接实现</p>
+</li>
+<li><p>输入密码不要在回调函数中处理，因为死等串口输入，会因为底层没有协议交互而导致连接超时。在串口接收中发送密码。</p>
+<p>参照 7.6.2 Ensure that the application processes less than the following: (connection/advertising interval) – 2 ms</p>
+</li>
+<li><p>清除储存的绑定 <code>GAPBondMgr_SetParameter( GAPBOND_ERASE_ALLBONDS,0, NULL );</code>，方便调试</p>
+</li>
+<li><p>如上面表格配对后就是 Encryption，使用 MITM 配对后就是 Authentication，在 Authentication 基础上在进一步验证就是 Authorization。实现方法就是在 profile 的 add service 注册 callback 的结构体 <code>gattServiceCBs_t</code> 第 3 个成员就是 Authorization callback。理论上区别是 Authorization 要求设备在 device database 被标记为 trust，而 Authentication 只是识别出设备是谁，见 <a href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/BLE/../bluetooth.pdf">Encryption-Authentication-Authorization </a></p>
+</li>
+</ul>
+<h1 id="8-主从一体、一主多从"><a href="#8-主从一体、一主多从" class="headerlink" title="8. 主从一体、一主多从"></a>8. 主从一体、一主多从</h1><p>主从一体 见资料 <code>CC254xEK-release-1410\18、BLE实战：BLE主从一体-蓝牙主机从机一体一键切换意义重大 </code> 和 阿莫的实现</p>
+<p>一主多从参考资料  <code>CC254xEK-release-1410\23、BLE实战：1主3从 </code> 。自己写的代码在 <code>SimpleBLECentral_一主多从</code> 中</p>
+<ul>
+<li><p>建立一个 connhandle 数组来储存，同时执行每个命令时选择要操作的连接。CC2540 最多支持 3 个同时连接</p>
+</li>
+<li><p>可以获取设备名称，这样不论是选择连接时还是连接管理都更直观</p>
+<ul>
+<li><p>对于已连接的设备可以读取 DEVICE_NAME_UUID 2A00</p>
+</li>
+<li><p>未连接的设备，在 <code>simpleBLECentralEventCB</code> 的 <code>GAP_DEVICE_INFO_EVENT</code> 里面有从设备的广告和扫描回应，通过 <code>pEvent-&gt;deviceInfo.eventType == GAP_ADTYPE_SCAN_RSP_IND</code> 来区分出扫描回应数据，然后参考 <code>simpleBLEFindSvcUuid</code> 的方法提取设备名称，数据格式都按照 “数据长度+数据类型+数据” 来组织。SimpleBLEPeripheral 的广告和扫描回应数据见 <code>4. Peripheral 和 Central 通信过程</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="9-蓝牙手环项目"><a href="#9-蓝牙手环项目" class="headerlink" title="9. 蓝牙手环项目"></a>9. 蓝牙手环项目</h1><p>手环，服务器</p>
+<ul>
+<li>手环复位</li>
+<li>电量不足</li>
+<li>当前电量</li>
+<li>当前时间</li>
+<li>来电和短信</li>
+<li>记步和距离</li>
+<li>自动休眠，省电</li>
+</ul>
+<p>APP，客户端</p>
+<ul>
+<li>设备扫描、绑定</li>
+<li>记步数、目标步数</li>
+<li>距离、卡路里</li>
+<li>手环电量</li>
+</ul>
+<p>OLED，单色被动，反应慢但省电。I2C，PAGE、SEG 控制点亮，也就是行、列。</p>
+<p>ST 三轴加速度计 LIS3DH，I2C。根据前向加速度，垂直加速度规律完成记步。</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/epoll/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">epoll</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/arm%E8%A3%B8%E6%9C%BA/"><span class="level-item">arm裸机</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

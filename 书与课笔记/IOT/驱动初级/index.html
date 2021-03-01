@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>驱动初级 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1. 字符设备 字符设备。读取快、数据量小 块设备。读取慢、数据量多 网络设备  module 模版 12345678910111213141516171819202122232425262728#include &amp;lt;linux&amp;#x2F;module.h&amp;gt;#include &amp;lt;linux&amp;#x2F;init.h&amp;gt;static int a, b;static char *name &amp;#x3D; &amp;quot;"><meta property="og:type" content="blog"><meta property="og:title" content="驱动初级"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E5%88%9D%E7%BA%A7/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="1. 字符设备 字符设备。读取快、数据量小 块设备。读取慢、数据量多 网络设备  module 模版 12345678910111213141516171819202122232425262728#include &amp;lt;linux&amp;#x2F;module.h&amp;gt;#include &amp;lt;linux&amp;#x2F;init.h&amp;gt;static int a, b;static char *name &amp;#x3D; &amp;quot;"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-06-05T00:15:07.576Z"><meta property="article:modified_time" content="2021-03-01T07:19:36.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E5%88%9D%E7%BA%A7/"},"headline":"驱动初级","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-06-05T00:15:07.576Z","dateModified":"2021-03-01T07:19:36.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"1. 字符设备 字符设备。读取快、数据量小 块设备。读取慢、数据量多 网络设备  module 模版 12345678910111213141516171819202122232425262728#include &lt;linux&#x2F;module.h&gt;#include &lt;linux&#x2F;init.h&gt;static int a, b;static char *name &#x3D; &quot;"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E5%88%9D%E7%BA%A7/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.576Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:19:36.000Z" title="2021/3/1 下午3:19:36">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">驱动初级</h1><div class="content"><h1 id="1-字符设备"><a href="#1-字符设备" class="headerlink" title="1. 字符设备"></a>1. 字符设备</h1><ul>
+<li>字符设备。读取快、数据量小</li>
+<li>块设备。读取慢、数据量多</li>
+<li>网络设备</li>
+</ul>
+<p>module 模版</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;linux/module.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;linux/init.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> a, b;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">char</span> *name = <span class="string">&quot;init&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">simple_add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> __init <span class="title">hello</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	printk(<span class="string">&quot;hello init\n&quot;</span>);</span><br><span class="line">	printk(<span class="string">&quot;simple_add %d + %d = %d\n&quot;</span>, a, b, simple_add(a,b));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> __exit <span class="title">hello_exit</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	printk(<span class="string">&quot;hello module exit, name = %s\n&quot;</span>, name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module_init(hello);</span><br><span class="line">module_exit(hello_exit);</span><br><span class="line">module_param(a, <span class="keyword">int</span>, <span class="number">0</span>);</span><br><span class="line">module_param(b, <span class="keyword">int</span>, <span class="number">0</span>);</span><br><span class="line">module_param(name, charp, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">MODULE_LICENSE(<span class="string">&quot;GPL&quot;</span>);</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ifeq</span> (<span class="variable">$(KERNELRELEASE)</span>, )</span><br><span class="line"></span><br><span class="line">KDIR = /home/zack/share/linux-3.14</span><br><span class="line">CDIR = <span class="variable">$(<span class="built_in">shell</span> pwd)</span></span><br><span class="line"></span><br><span class="line"><span class="section">all:</span></span><br><span class="line">	make -C <span class="variable">$(KDIR)</span> M=<span class="variable">$(CDIR)</span> modules</span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">	make -C <span class="variable">$(KDIR)</span> M=<span class="variable">$(CDIR)</span> clean</span><br><span class="line">	</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">	obj-m += hello.o</span><br><span class="line">	obj-m += hello2.o</span><br><span class="line">	</span><br><span class="line"><span class="keyword">endif</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-中断"><a href="#2-中断" class="headerlink" title="2. 中断"></a>2. 中断</h1><ol>
+<li>参考设备树文件在设备树中添加按键中断的描述</li>
+<li>代码中获取 irq 号</li>
+<li>request_irq 注册中断</li>
+</ol>
+<p>阻塞的实现</p>
+<ol>
+<li>init_waitqueue_head</li>
+<li>wait_event_interruptible。将当前进程加入等待队列，条件为假则睡眠<ol>
+<li>add_wait_queue</li>
+<li>set_current_state(TASK_INTERRUPTIBLE)</li>
+<li>schedule</li>
+</ol>
+</li>
+<li>wake_up_interruptible</li>
+</ol>
+<p>非阻塞的判断，<code>if(filep-&gt;f_flags &amp; O_NONBLOCK) return -EAGAIN;</code></p>
+<p>驱动实现 poll</p>
+<ol>
+<li>poll_wait。将当前进程加入等待队列，但不会睡眠</li>
+<li>没有数据时返回 0，有时返回对应操作（如 POLLIN）的 mask</li>
+</ol>
+<p>异步通知，信号</p>
+<ol>
+<li><p>驱动</p>
+<ul>
+<li>实现 fasync ，里面 <code>return fasync_helper(fd, filep, on, &amp;keyd-&gt;fap);</code></li>
+<li>发信号 <code>kill_fasync(&amp;keyd-&gt;fap, SIGIO, POLL_IN);</code></li>
+<li>release 中调实现的 <code>fasync </code> 将要接收信号的进程从链表中删除</li>
+</ul>
+</li>
+<li><p>应用</p>
+<ul>
+<li>signal 或 sigaction 安装 SIGIO 信号处理函数</li>
+<li>设置 F_SETOWN</li>
+<li>设置 FASYNC，会调用驱动的  <code>fasync </code> ，相当于使能</li>
+</ul>
+</li>
+</ol>
+<p>下半部的实现方法</p>
+<ul>
+<li><p>softirq：处理快，要改内核</p>
+</li>
+<li><p>tasklet：实际调用了 softirq。softirqd 遍历所有注册的链表，中断上下文，不可以休眠</p>
+<ul>
+<li>tasklet_init</li>
+<li>tasklet_schedule</li>
+<li>tasklet_kill</li>
+</ul>
+</li>
+<li><p>waitqueue：工作队列。keventd 遍历队列</p>
+<ul>
+<li>INIT_WORK</li>
+<li>schedule_work</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-平台总线"><a href="#3-平台总线" class="headerlink" title="3. 平台总线"></a>3. 平台总线</h1><p>设备驱动模型，为了重用代码</p>
+<ul>
+<li>device。不同设备的地址、中断信息，小部分差异化的静态信息</li>
+<li>driver。大量通用的操作</li>
+<li>bus。通过 device 和 driver 的名字进行匹配</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">bus_type</span> &#123;</span></span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>		*name;</span><br><span class="line">	<span class="keyword">int</span> (*match)(struct device *dev, struct device_driver *drv);</span><br><span class="line">&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">bus_register</span><span class="params">(struct bus_type *bus)</span></span></span><br><span class="line"><span class="function">	<span class="keyword">void</span> <span class="title">bus_unregister</span><span class="params">(struct bus_type *bus)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">struct device </span>&#123;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">kobject</span> <span class="title">kobj</span>;</span>　　<span class="comment">//所有对象的父类</span></span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>		*init_name; </span><br><span class="line">	<span class="comment">// 在总线中会有一个名字，用于做匹配，在/sys/bus/mybus/devices/名字</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">bus_type</span>	*<span class="title">bus</span>;</span> <span class="comment">//指向该device对象依附于总线的对象</span></span><br><span class="line">	<span class="keyword">void</span>		*platform_data; <span class="comment">// 自定义的数据,指向任何类型数据</span></span><br><span class="line">    <span class="keyword">void</span>	(*release)(struct device *dev);  <span class="comment">//不写会有警告</span></span><br><span class="line">｝</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">device_register</span><span class="params">(struct device *dev)</span></span></span><br><span class="line"><span class="function">	<span class="keyword">void</span> <span class="title">device_unregister</span><span class="params">(struct device *dev)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">struct device_driver </span>&#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>		*name;</span><br><span class="line">	<span class="comment">// 在总线中会有一个名字，用于做匹配，在/sys/bus/mybus/drivers/名字</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">bus_type</span>		*<span class="title">bus</span>;</span>   <span class="comment">//指向该driver对象依附于总线的对象</span></span><br><span class="line">	<span class="keyword">int</span> (*probe) (struct device *dev); <span class="comment">// 如果device和driver匹配之后，driver要做的事情</span></span><br><span class="line">	<span class="keyword">int</span> (*remove) (struct device *dev); <span class="comment">// 如果device和driver从总线移除之后，driver要做的事情</span></span><br><span class="line">&#125;</span><br><span class="line">	<span class="function"><span class="keyword">int</span> <span class="title">driver_register</span><span class="params">(struct device_driver *drv)</span></span></span><br><span class="line"><span class="function">	<span class="keyword">void</span> <span class="title">driver_unregister</span><span class="params">(struct device_driver *drv)</span></span></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>保证 driver 和 device 名字一致</li>
+<li>实现 bus 的 match 方法，成功返回 1，失败返回 0</li>
+<li>然后会自动调用 driver 的 probe 方法，里面可以获取 device 的 platform_data</li>
+</ul>
+<p>不论 device 和 driver 两个 module 的加载和卸载顺序如何，driver probe 永远在 device 初始化后调用 register 时，driver remove 永远在 device release 前</p>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E9%AB%98%E7%BA%A7/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">驱动高级</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"><span class="level-item">进程、线程、进程间通信</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

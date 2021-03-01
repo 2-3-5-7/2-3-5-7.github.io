@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Zigbee - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1. Zigbee 介绍无线通信技术。zigbee、蓝牙、wifi、红外。 zigbee  短距离。功率大几公里也可以 低复杂度，容易开发 低功耗、低成本 传输数据速率低  三种协议对比，ZigBee 主要用在短距离、少量传输、电池供电系统 zigbee 体系结构  应用层。APL、ZDO 应用支持子层。APS 网络层。NWK 介质访问层。MAC 物理层。PHY"><meta property="og:type" content="blog"><meta property="og:title" content="Zigbee"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="1. Zigbee 介绍无线通信技术。zigbee、蓝牙、wifi、红外。 zigbee  短距离。功率大几公里也可以 低复杂度，容易开发 低功耗、低成本 传输数据速率低  三种协议对比，ZigBee 主要用在短距离、少量传输、电池供电系统 zigbee 体系结构  应用层。APL、ZDO 应用支持子层。APS 网络层。NWK 介质访问层。MAC 物理层。PHY"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/2.png"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/1.png"><meta property="article:published_time" content="2019-06-05T00:15:07.521Z"><meta property="article:modified_time" content="2021-03-01T08:00:59.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/../Zigbee/2.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/"},"headline":"Zigbee","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/2.png","https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/1.png"],"datePublished":"2019-06-05T00:15:07.521Z","dateModified":"2021-03-01T08:00:59.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"1. Zigbee 介绍无线通信技术。zigbee、蓝牙、wifi、红外。 zigbee  短距离。功率大几公里也可以 低复杂度，容易开发 低功耗、低成本 传输数据速率低  三种协议对比，ZigBee 主要用在短距离、少量传输、电池供电系统 zigbee 体系结构  应用层。APL、ZDO 应用支持子层。APS 网络层。NWK 介质访问层。MAC 物理层。PHY"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.521Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:00:59.000Z" title="2021/3/1 下午4:00:59">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile">Zigbee</h1><div class="content"><h1 id="1-Zigbee-介绍"><a href="#1-Zigbee-介绍" class="headerlink" title="1. Zigbee 介绍"></a>1. Zigbee 介绍</h1><p>无线通信技术。zigbee、蓝牙、wifi、红外。</p>
+<p>zigbee</p>
+<ol>
+<li>短距离。功率大几公里也可以</li>
+<li>低复杂度，容易开发</li>
+<li>低功耗、低成本</li>
+<li>传输数据速率低</li>
+</ol>
+<p>三种协议对比，ZigBee 主要用在短距离、少量传输、电池供电系统</p>
+<p>zigbee 体系结构</p>
+<ol>
+<li>应用层。APL、ZDO</li>
+<li>应用支持子层。APS</li>
+<li>网络层。NWK</li>
+<li>介质访问层。MAC</li>
+<li>物理层。PHY</li>
+</ol>
+<span id="more"></span>
+
+<p>1-3 zigbee 标准，4-5 IEEE 802.15.4 规范</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/../Zigbee/2.png" alt="协议分层"></p>
+<p>协调器 ZC</p>
+<ul>
+<li>为整个网络选择 PAN ID。相当于班级号</li>
+<li>为每个设备分配网络地址。相当于学号</li>
+<li>初始化、终止、转发网络消息</li>
+</ul>
+<p>路由器 ZR</p>
+<ul>
+<li>允许设备加入网络</li>
+<li>扩展网络覆盖范围</li>
+<li>数据包的路由</li>
+</ul>
+<p>终端设备 ZED</p>
+<ul>
+<li>网络数据的采集</li>
+</ul>
+<h1 id="2-协议栈与基本概念"><a href="#2-协议栈与基本概念" class="headerlink" title="2. 协议栈与基本概念"></a>2. 协议栈与基本概念</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="class"><span class="keyword">union</span></span></span><br><span class="line"><span class="class">  &#123;</span></span><br><span class="line">    uint16      shortAddr;	<span class="comment">//加入网络时分配</span></span><br><span class="line">    ZLongAddr_t extAddr;	<span class="comment">//64位地址</span></span><br><span class="line">  &#125; addr;</span><br><span class="line">  afAddrMode_t addrMode;	<span class="comment">//下面的枚举</span></span><br><span class="line">  byte endPoint;	<span class="comment">//端口号，1-240</span></span><br><span class="line">  uint16 panId;  <span class="comment">// used for the INTER_PAN feature.网络号</span></span><br><span class="line">&#125; afAddrType_t;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  afAddrNotPresent = AddrNotPresent,	<span class="comment">//当前地址不存在</span></span><br><span class="line">  afAddr16Bit      = Addr16Bit,	<span class="comment">//单播</span></span><br><span class="line">  afAddr64Bit      = Addr64Bit,	<span class="comment">//单播</span></span><br><span class="line">  afAddrGroup      = AddrGroup,	<span class="comment">//组播</span></span><br><span class="line">  afAddrBroadcast  = AddrBroadcast 	<span class="comment">//广播</span></span><br><span class="line">&#125; afAddrMode_t;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  byte endPoint;	<span class="comment">//端口号，1-239</span></span><br><span class="line">  byte *task_id;    <span class="comment">//Pointer to location of the Application task ID.哪个任务使用这个端口号</span></span><br><span class="line">  SimpleDescriptionFormat_t *simpleDesc;	<span class="comment">//简单描述符，下面介绍</span></span><br><span class="line">  afNetworkLatencyReq_t latencyReq;	<span class="comment">//延迟请求。维持默认</span></span><br><span class="line">&#125; endPointDesc_t;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  byte          EndPoint;	<span class="comment">//端口号</span></span><br><span class="line">  uint16        AppProfId;	<span class="comment">//规范号，一个规范定义了一个应用领域，如智能家居，工业厂房。下面介绍</span></span><br><span class="line">  uint16        AppDeviceId;	<span class="comment">//设备类型 ID</span></span><br><span class="line">  byte          AppDevVer:<span class="number">4</span>;	<span class="comment">//应用设备版本号</span></span><br><span class="line">  byte          Reserved:<span class="number">4</span>;             <span class="comment">// AF_V1_SUPPORT uses for AppFlags:4.</span></span><br><span class="line">  byte          AppNumInClusters;	<span class="comment">//输入簇的个数</span></span><br><span class="line">  cId_t         *pAppInClusterList;	<span class="comment">//输入簇的列表</span></span><br><span class="line">  byte          AppNumOutClusters;	<span class="comment">//输出簇的个数</span></span><br><span class="line">  cId_t         *pAppOutClusterList;	<span class="comment">//输出簇的列表</span></span><br><span class="line">&#125; SimpleDescriptionFormat_t;</span><br></pre></td></tr></table></figure>
+
+<p>以下概念参见视频 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ghx8f0uUuYI">ZigBee Application Profiles, Clusters and Endpoints</a></p>
+<p>视频中 PPT 的 client 、server 中的 in、out 写反了。profile 包含了多个 device type，应该都是标准所定义的设备类型，注意区分视频中提到的 device 是指的 device type 还是物理设备也就是 node。</p>
+<p>下面的概念概括起来就是，一个 node 包含了多个 endpoint，每个 endpoint 实现了某个 profile 中的某个 device type，一个 endpoint 包含了多个 cluster，而且 cluster 还分 in/server、out/client。但是 cluster 作为命令与属性集合不只是被 device type 包含的关系，也可能同时存在于多个 profile、device type 当中，如下图。</p>
+<p>profile 规范</p>
+<ul>
+<li>一个应用领域，如智能家居。16 bit profile ID，由 zigbee 联盟分配</li>
+<li>profile 包含了不同的 device type，通过 16 bit device ID 区分。device type 又包含了多个 cluster</li>
+<li>如果公共 profile 没有适合的，需要自定义一个 profile ，然后向 zigbee 联盟申请 profile ID</li>
+</ul>
+<p>cluster 簇</p>
+<ul>
+<li>与某个功能相关的消息类型集合。16 bit ID，在 zigbee cluster library(ZCL) 定义</li>
+<li>多个 profile 之间的会有相同的功能，所以一个 cluster 可以存在于多个 profile 中</li>
+<li>每个 cluster 包含了属性集合和命令集合</li>
+<li>cluster 被编组成 funtion domains</li>
+<li>cluster 还被分成 client 和 server，client 发消息给 server，server 包含了属性。比如一个开关作为 client 发送开灯命令给作为 server 的灯，server  维护着属性，灯的状态</li>
+</ul>
+<p>下图左侧属于同一 funtion domain 的 cluster 被标成相同颜色，所有的 domain 构成了 ZCL。右侧每个 profile 中包含了多个 cluster，同一 cluster 可以出现在多个 profile 中</p>
+<p><img src="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/Zigbee/../Zigbee/1.png" alt="1"></p>
+<p>endpoint 端口</p>
+<ul>
+<li>每个 endpoint 实现了某个 profile 中的某个 device type。是 node 所有支持的功能的一个子集。有人比喻成操作系统（node）中的一个服务（endpoint）或者一个进程所使用的端口号（endpoint）</li>
+<li>每个 node 最多 255 个 endpoint。0 给 ZigBee Device Profile：ZDO 设备，用于网络配置和管理，获取设备信息。240-255 预留，255 用于广播</li>
+<li>其它的 endpoint 没有标准定义，所以需要通过一些服务发现手段来查询获取</li>
+</ul>
+<p>当一个 node 加入网络中后，需要查询其它 node 都有哪些 endpoint，每个 endpoint 提供了什么服务。当查询一个 endpoint 时，会返回如下信息</p>
+<ul>
+<li>一个 descriptor 和 一个 cluster list</li>
+<li>cluster list 包含了支持的 in/server clusters、out/client clusters</li>
+<li>descriptor 包含了实现的 profile 和 profile 中的 device type</li>
+<li>client 的输出簇要与 server 的输入簇对应（来自创客学院视频）</li>
+</ul>
+<h1 id="3-组播、串口、地址的分配、获取"><a href="#3-组播、串口、地址的分配、获取" class="headerlink" title="3. 组播、串口、地址的分配、获取"></a>3. 组播、串口、地址的分配、获取</h1><p>组播通信</p>
+<ul>
+<li>组播发送时填写的地址与加组时的 group id 是一个概念，要自己定义一个值</li>
+<li>Tools 下 <code>f8wConfig.cfg</code> 中的 <code>-DRFD_RCVC_ALWAYS_ON</code> 改为 TRUE 后终端节点才会接收组播报文</li>
+<li>注意 <code>RFD_RCVC_ALWAYS_ON</code> 开启后，广播也属于组播的一种，终端节点发出的报文自己也会收到一份。发送组播时目的 EP 不起识别作用，因此解决这个问题只能通过每个设备一个 clust id 来屏蔽终端节点收到的自己发出的消息，不过估计 ZED 发组播的情况不多。</li>
+<li>测试发现不加组也能给那个组发报文，只是收不到组内报文</li>
+</ul>
+<p>串口透传</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 发送 */</span></span><br><span class="line"><span class="comment">/* MT_UartInit 中设置波特率，无流控 */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;MT_UART.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">MT_UartInit();</span><br><span class="line"><span class="comment">/* 接收 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;MT.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">MT_UartRegisterTaskID(task_id);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 处理 CMD_SERIAL_MSG 事件，((mtOSALSerialData_t *)MSGpkt)-&gt;msg，第一个字节为长度，后面是消息 */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 重写协议栈 MT_UartProcessZToolData 函数 */</span></span><br></pre></td></tr></table></figure>
+
+<p>获取网络地址函数</p>
+<p><code>NLME_GetShortAdd</code> 和 <code>NLME_GetExtAddr</code> 见 zstack Documents，Z-Stack Developer’s Guide - 3.4 Important Device Addresses</p>
+<p>zigbee 地址分配计算</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Lm:网络的最大深度</span><br><span class="line">Cm:每个父设备拥有的子设备数</span><br><span class="line">Rm:每个父设备拥有的路由子设备数</span><br><span class="line">d:父设备所处的网络深度</span><br><span class="line"></span><br><span class="line">Cskip(d)&#x3D;</span><br><span class="line">当Rm!&#x3D;1, (1+Cm-Rm-Cm*Rm^(Lm-d-1))&#x2F;(1-Rm)</span><br><span class="line">当Rm&#x3D;1,  1+Cm*(Lm-d-1)</span><br><span class="line"></span><br><span class="line">父设备给路由器分配的网络地址</span><br><span class="line">Achild &#x3D; Aparent + (n-1)*Cskip(d) + 1</span><br><span class="line">父设备给终端分配的网络地址</span><br><span class="line">Achild &#x3D; Aparent + Rm*Cskip(d) + n</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-机智云物联网"><a href="#4-机智云物联网" class="headerlink" title="4. 机智云物联网"></a>4. 机智云物联网</h1><p>ESP 8266</p>
+<ul>
+<li>SAT 模式，作为无线终端通过路由器连接互联网</li>
+<li>AP 模式，相当于路由器</li>
+<li>SAT + AP 共存模式</li>
+</ul>
+<p>机智云代码 STM32F103 移植到 STM32F051</p>
+<table>
+<thead>
+<tr>
+<th>机智云 STM32F103 配置</th>
+<th>移植到 STM32F051</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>时钟使用外部时钟</td>
+<td>机智云 8 X 9 = 72M，8 X 6 = 48M</td>
+</tr>
+<tr>
+<td>两个按键 GPIO 配置成输入模式</td>
+<td>一个五向按键配置成输入，命名为 KEY1</td>
+</tr>
+<tr>
+<td>UART1 115200，UART2 9600，UART2 启用中断，与 ESP8266 通信</td>
+<td>在该配置基础上增加 UART1 的中断和 RX DMA 方便接收串口的调试数据</td>
+</tr>
+<tr>
+<td>TIM2 分频 7200-1，计数 10-1，开中断，中断优先级为 1。作为毫秒时钟和按键检测与防抖</td>
+<td>在该配置基础上分频值改为 4800-1</td>
+</tr>
+<tr>
+<td></td>
+<td>增加五向按键的 ADC 转换并开启 DMA 和 DMA 中断</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Hal、Utils、Gizwits 文件夹内容添加到工程</li>
+<li>工程中 C/C++ include path 添加 ;..\Gizwits;..\Hal;..\Utils</li>
+<li>照着原版改 main.c，修改 key num 和 keyInit 注册为 1个</li>
+<li>#include &lt;stm32f1xx.h&gt; 改为 #include &lt;stm32f0xx.h&gt;</li>
+<li>mcuRestart 中  <code>__set_FAULTMASK(1)</code> 改成  <code>__set_PRIMASK(1)</code>，因为 M0 没有 FAULTMASK 寄存器，用 PRIMASK 替代，区别是 PRIMASK 无法屏蔽 hard fault 中断</li>
+<li>按键处理函数 <code>getKey</code> 判断时改为高电平表示按下，函数 <code>readKeyValue</code> 检测到 KEY_DOWN 时调 <code>convert_key_dir</code> 开启五向按键 ADC 转换</li>
+</ul>
+<p>五向按键判断代码，检测到按键进行回调时通过 <code>get_key_dir</code> 根据方向实现不同的功能</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	KEY1_LEFT,</span><br><span class="line">	KEY1_UP,</span><br><span class="line">	KEY1_RIGHT,</span><br><span class="line">	KEY1_MID,</span><br><span class="line">	KEY1_DOWN,</span><br><span class="line">	KEY1_MAX,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">char</span> *key_str[KEY1_MAX] = &#123;<span class="string">&quot;left&quot;</span>, <span class="string">&quot;up&quot;</span>, <span class="string">&quot;right&quot;</span>, <span class="string">&quot;mid&quot;</span>, <span class="string">&quot;down&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">uint16_t</span> adc_key;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">convert_key_dir</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	HAL_ADC_Start_DMA(&amp;hadc, (<span class="keyword">uint32_t</span> *)&amp;adc_key, <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">get_key_dir</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">/* 左上右中下取平均值 420,1470,2100,2500,2930，再将相邻两值取中间值得大小为 4 的按键判定范围数组 */</span></span><br><span class="line">	<span class="keyword">uint32_t</span> a[<span class="number">4</span>] = &#123;<span class="number">945</span>, <span class="number">1785</span>, <span class="number">2300</span>, <span class="number">2715</span>&#125;;</span><br><span class="line">	<span class="keyword">int</span> l = <span class="number">0</span>, r = <span class="number">3</span>, m;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(l &lt;= r)</span><br><span class="line">	&#123;</span><br><span class="line">		m = (l + r) / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span>(adc_key &lt; a[m])</span><br><span class="line">			r = m - <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			l = m + <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HAL_ADC_ConvCpltCallback</span><span class="params">(ADC_HandleTypeDef* hadc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	HAL_ADC_Stop_DMA(hadc);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>移植后测试请参考 <a target="_blank" rel="noopener" href="http://docs.gizwits.com/zh-cn/quickstart/UseMCU.html#">独立MCU方案接入机智云</a></p>
+<p>新建产品包含 4 个数据节点，温度、湿度、风扇状态、风扇开关</p>
+<p>修改数据点后的移植</p>
+<ul>
+<li>Gizwits 文件夹下 4 个文件覆盖源工程</li>
+<li>gizwits_product.c 中 mcuRestart   <code>__set_FAULTMASK(1)</code> 改成  <code>__set_PRIMASK(1)</code>，因为 M0 没有 FAULTMASK 寄存器，用 PRIMASK 替代，区别是 PRIMASK 无法屏蔽 hard fault 中断</li>
+<li>gizwits_product.h 中 #include &lt;stm32f1xx.h&gt; 改为 #include &lt;stm32f0xx.h&gt;</li>
+<li>修改 gizwits_product.c 中的 gizwitsEventProcess、userHandle、userInit 实现相应功能</li>
+</ul>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E4%BA%91%E5%B9%B3%E5%8F%B0/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">云平台</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/WIFI/"><span class="level-item">WIFI</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

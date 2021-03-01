@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="7C8-833"><meta property="og:type" content="blog"><meta property="og:title" content="Life is short"><meta property="og:url" content="https://2-3-5-7.github.io/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="7C8-833"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io"},"headline":"Life is short","image":["https://2-3-5-7.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Jian-Feng Du"},"description":"7C8-833"}</script><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.397Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:19:52.000Z" title="2021/3/1 下午4:19:52">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows/">windows</a></h1><div class="content"><p><a href="windows">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows">asset-net</a></p>
+<h1 id="清理旧文件"><a href="#清理旧文件" class="headerlink" title="清理旧文件"></a>清理旧文件</h1><p>删除没有权限的文件夹</p>
+<ol>
+<li>文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 更改所有者 -&gt; 输入自己的用户名 -&gt; 选择下面应用到子文件夹的勾 -&gt; 确定所有对话框</li>
+<li>文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 权限添加 -&gt; 主体为自己的用户名 -&gt; 勾选下面的继承权限</li>
+</ol>
+<h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><ol>
+<li><p>安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容</p>
+</li>
+<li><p>PE 环境下加载 ISO 镜像，运行 source 下的 setup</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://03k.org/kms.html">激活</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 管理员权限运行，运行后会提示服务计算机修改</span></span><br><span class="line">slmgr /skms kms.03k.org</span><br><span class="line"><span class="comment"># 运行后提示激活成功</span></span><br><span class="line">slmgr /ato</span><br></pre></td></tr></table></figure></li>
+<li><p>系统配置</p>
+<ul>
+<li>网络设置为私有网络，共享中心中开启发现和文件共享。右键文件夹授予访问权限，选择当前用户。两个 PC 是同样的用户密码，不知道不相同时能否实现共享</li>
+<li>手动休眠。电源选项中关闭睡眠和硬盘的超时，管理员 cmd <code>powercfg.exe /hibernate off</code> 关闭休眠。新建快捷方式 <code>rundll32.exe powrprof.dll,SetSuspendState 0,1,0</code>，并设置快捷键 <code>ctrl-alt-s</code>，拷入开始菜单。<a target="_blank" rel="noopener" href="https://defkey.com/what-means/ctrl-alt-s">快捷键占用参考</a></li>
+<li>修改文档、音乐、视频、桌面等系统文件夹位置</li>
+<li>导入注册表相关设置，见 <code>reg</code> 文件夹</li>
+<li>上传账户头像，设置自动登录，Windows+R 运行 <code>control userpasswords2</code></li>
+<li>安装 sans、serif、mono、Consolas-with-Yahei Nerd Font 字体和主题，见 <code>必装/字体&amp;主题</code> 文件夹</li>
+<li>建立绿色软件的文件类型关联，将快捷方式添加到开始菜单</li>
+</ul>
+</li>
+</ol></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.383Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:18:53.000Z" title="2021/3/1 下午4:18:53">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/">makefile</a></h1><div class="content"><p><a href="makefile">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile">asset-net</a></p>
+<ul>
+<li><p><a href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/../Makefile.pdf">跟我一起写Makefile</a> </p>
+</li>
+<li><p>《嵌入式 Linux C 语言程序设计》，make</p>
+</li>
+</ul>
+<p>456、89待增加</p>
+<h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><ul>
+<li>编译、链接、库 等原理</li>
+<li>三要素，目标、依赖、命令，依赖比目标或目标不存在新就执行命令。找到关系树的末端再从末端进行判断，末端比根旧则什么都不做，新则执行命令。</li>
+<li>不要用环境变量 MAKEFILES</li>
+<li>Makefile 的组成<ul>
+<li>显示规则，我们写的</li>
+<li>隐含规则，.o 自动生成 .c 依赖的关系 和 编译命令</li>
+<li>变量定义</li>
+<li>文件指示<ul>
+<li>include <filename></li>
+<li>#if</li>
+<li>多行命令</li>
+</ul>
+</li>
+<li>注释，# 转义</li>
+</ul>
+</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.374Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:26:45.000Z" title="2021/3/1 下午4:26:45">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6/">linux软件</a></h1><div class="content"><h1 id="经验"><a href="#经验" class="headerlink" title="经验"></a>经验</h1><ul>
+<li>安装前备份虚拟机快照</li>
+<li>修改的配置进行备份，方便出错恢复</li>
+<li>官方安装指南是重点，安装时的提示与安装后的帮助也注意。其它的方法 ./configure –help，README and INSTALL 文档</li>
+<li>优先英文查找，分解成多个有时限的小目标，涉及太广会将战线拉长</li>
+<li>版本不求新，stable 和 LTS 优先</li>
+<li>版本太老可以考虑万能的源码安装，方便可以选择 apt 安装。ppa 也可以考虑</li>
+</ul>
+<p>源码安装典型步骤</p>
+<blockquote>
+<p>The autogen.sh script generates the configure script (from configure.ac, using autoconf) and any files it needs (like creating Makefile.in from Makefile.am using automake). This requires autotools to be installed on your system, and it must be run when checking out the project from source control (if configure isn’t checked in). People who download source tarballs can usually skip this step, because output of this step is included in source tarballs.</p>
+<p>The configure script generates Makefile and other files needed to build. Typically Makefile.in is used as a template to generate Makefile (and config.h.in to generate config.h). This process happens using only standard tools installed on your system, like sed and awk, and doesn’t require autotools to be installed.</p>
+<p>The make command builds the software.</p>
+<p>The make install command installs it.</p>
+</blockquote></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.354Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:17:39.000Z" title="2021/3/1 下午4:17:39">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux/">linux</a></h1><div class="content"><p><a href="linux">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux">asset-net</a></p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><ul>
+<li>必装 ssh proxychains4 git meld p4merge vim gtags ctags，github 导入公钥</li>
+<li>关闭该死的系统更新，非要更新前一定创建快照</li>
+</ul>
+<h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><p><code>apt-get install openssh-server openssh-client</code></p>
+<p>secureCRT 配置</p>
+<ol>
+<li>关闭不用的菜单栏、状态栏等，去掉 use dockable session manager 选项，记住连接管理的快捷键即可</li>
+<li>编码与字体<br> 在Options -&gt; Session Options -&gt; Appearance 选项中将 Character encoding 设成”UTF-8”即可，字体 Consolas-with-Yahei，三号。没办法用没有 CJK 字符的字体</li>
+<li>启用颜色<br> 官方的介绍 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=SZLbBsp3914">https://www.youtube.com/watch?v=SZLbBsp3914</a><br> 在 default session 中选 solarized dark，emulation 中启用 xterm-256color<br> 在全局配置中外观 - 高级，选中 solarized dark 新建一个颜色模式<br> 将 normal 和 bold 中前景色调亮，同时下拉列表选择 solarized dark，在 default session 中应用<br> 前景色 RGB 颜色 166,177,179<br> 详细参考视频 <a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=SZLbBsp3914">www.youtube.com/watch?v=SZLbBsp3914</a></li>
+<li>调整系统提示声音，将 默认响声 设置为 windows信息栏.wav</li>
+<li>安装 Xming，对于 ubuntu 的 session 中勾选 X11 forwarding 两个选项，默认配置即可</li>
+<li><ul>
+<li>Options–&gt;Session Options–&gt;Terminal 启用选择发送滚轮事件到远程。取消 Scroll to bottom on output</li>
+<li>Options–&gt;Session Options–&gt;Terminal–&gt;Emulation–&gt;Mapped Keys，选中 Backspace sends delete<br>默认会话中终端</li>
+<li>Options–&gt;Session Options–&gt;Terminal–&gt;Emulation–&gt;Mode，取消 Enable keypad mode switching 小键盘映射</li>
+<li>Options–&gt;Session Options–&gt;Terminal–&gt;Emulation–&gt;Advanced，忽略窗口标题更改请求</li>
+<li>Options–&gt;Edit Default Session 设置常用的按键映射，运行脚本 a-r、取消脚本 a-s、清屏 a-l (clear)、滚动到底部 a-b</li>
+</ul>
+</li>
+</ol></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.344Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:25:25.000Z" title="2021/3/1 下午4:25:25">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/kindle/">kindle</a></h1><div class="content"><p><a href="kindle">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/kindle">asset-net</a></p>
+<h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>字体和词典在 kindle 环境文件夹</p>
+<ul>
+<li>把电子书过滤设置选为“全部内容”，然后把电子书排序设置选为“收藏夹” 。<a target="_blank" rel="noopener" href="https://bookfere.com/post/140.html">用收藏夹分类电子书</a></li>
+<li>字体放在 fonts 文件夹，自带英文字体可以用 <code>Baskerville </code>，中文字体思源黑体还好，思源宋体（Source Han Serif）太浅不要用，<a target="_blank" rel="noopener" href="https://sspai.com/post/38705">思源宋体，如何评价，以及如何正确使用</a></li>
+<li>词典放在 documents\dictionaries 文件夹</li>
+<li>一本英汉：与 PC 词典相同的简明英汉（160万），一本英英：Merriam-Webster’s Advanced Learner’s Dictionary，<a target="_blank" rel="noopener" href="https://blog.ohiyox.in/read/85.html">选择依据</a>。其它为 kindle 自带，现代英汉、汉英、汉语，Oxford</li>
+<li>kindle 不适合阅读长篇英英解释，如需彻底理解单词，用 kindlemate 导出生词本到欧路词典背，见 词典软件。或者在平板上用 kindle App 同步过来，使用欧路词典</li>
+<li>文章订阅，kindle4rss。发送频率 3 天，否则要经常删除云端文档，不需要同步可以关闭云端存档。不再使用的两个订阅 <a target="_blank" rel="noopener" href="https://feed43.com/5507628278627385.xml">田间小站-双语阅读</a>、<a target="_blank" rel="noopener" href="https://feed43.com/6180220188002736.xml">经济学人双语版</a></li>
+<li>kindle 正版书也可以切换到其它国家购买，同时可以装 google play 版本和中国版，实现双开。由于 kindle for pc 复制后会插入空格和一行来源，需要编程<a target="_blank" rel="noopener" href="https://aasukaa.blogspot.com/2016/11/pc-kindle.html">实现自动去除</a>，对于需要做笔记的书暂不考虑购买正版，且calibre 去 drm 插件对 kfx 格式支持也不够好</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/kindle/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.337Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:16:16.000Z" title="2021/3/1 下午4:16:16">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/git/">git</a></h1><div class="content"><p><a href="git">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/git">asset-net</a></p>
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">初级教程</a>、 <a href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/git/../atlassian-git-cheatsheet.pdf">命令总结文档</a>、<a href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/git/../progit.pdf">Pro Git 2nd</a>、<a target="_blank" rel="noopener" href="https://git-scm.com/book/en/v2">Pro Git 2nd</a>（网页版）</p>
+<ol>
+<li><p>git 特点分布式，不必联网。建议文本 <code>UTF-8</code> 编码</p>
+</li>
+<li><p>安装 linux上 apt-get 或者 源码， <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">windows版本</a></p>
+</li>
+<li><p>设置全局的用户名和邮箱，设置代理，初始化</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span></span><br><span class="line"><span class="comment"># 不设置 email</span></span><br><span class="line">git config --global user.email <span class="string">&#x27;&lt;&gt;&#x27;</span></span><br><span class="line"><span class="comment"># 代理相关</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:17890</span><br><span class="line"><span class="comment"># 取消代理</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line"><span class="comment"># 支持中文路径和文件名</span></span><br><span class="line">git config --global core.quotepath <span class="literal">false</span></span><br><span class="line"><span class="comment"># 编辑器设为 vi</span></span><br><span class="line">git config --global core.editor <span class="string">&quot;vi&quot;</span> </span><br><span class="line"><span class="comment"># 查看设置</span></span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure></li>
+<li><p>git pull 默认取所有分支，–all 取所有 remote。git push 默认当前分支，–all 所有分支</p>
+</li>
+</ol></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.328Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T11:23:38.000Z" title="2021/3/1 下午7:23:38">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/blog/">blog</a></h1><div class="content"><h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><ol>
+<li><p>安装 git、node.js，参考 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo 官网</a>，windows、linux 有区别。git 设置 sock5 代理，见 <a href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/blog/../git">git</a></p>
+</li>
+<li><p>github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥</p>
+</li>
+<li><p>安装 hexo 并部署</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm 更换源并验证</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">npm config get registry</span><br><span class="line"><span class="comment"># 要还原到默认</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org/</span><br><span class="line"><span class="comment"># 也可以设置代理</span></span><br><span class="line">npm config <span class="built_in">set</span> proxy http://127.0.0.1:17890</span><br><span class="line">npm config <span class="built_in">set</span> https-proxy http://127.0.0.1:17890</span><br><span class="line"><span class="comment"># 安装 hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="comment"># 创建本地博客文件</span></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装部署用工具</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="comment"># 生成并预览，显示调试信息</span></span><br><span class="line">hexo s -g --debug</span><br><span class="line"><span class="comment"># 生成并部署</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/blog/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.310Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T11:42:09.000Z" title="2021/3/1 下午7:42:09">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/linux%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/">linux设备驱动开发读书笔记</a></h1><div class="content"><h1 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h1><p>通过实践领悟代码背后的原理，做技术拼的是傻劲，需要不断重构自己的知识体系，耐心的学习与思考问题。学会思考的方法更重要，打好根基才能游刃有余，<strong>需要读者自己举一反三的实践</strong>，终生学习，克服一个又一个挑战，<strong>培养极强的学习能力，学得越多学得越快</strong>，</p>
+<h1 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h1><p>驱动是软件与硬件的桥梁，如有操作系统则驱动变成操作 系统与硬件之间的桥梁，操作系统通过给驱动制造麻烦从而让对用户的接口统一</p>
+<ul>
+<li>字符设备。串行顺序访问</li>
+<li>块设备。随机访问，以块为单位</li>
+<li>网络设备。用 socket</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/linux%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.586Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:55:48.000Z" title="2021/3/1 下午3:55:48">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E9%AB%98%E7%BA%A7/">驱动高级</a></h1><div class="content"><p><a href="%E9%A9%B1%E5%8A%A8%E9%AB%98%E7%BA%A7">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E9%AB%98%E7%BA%A7">asset-net</a></p>
+<p>分层与面向对象的思想</p>
+<ol>
+<li>调用层（控制硬件）。使用核心层的硬件对象，调用对象中的方法</li>
+<li>核心层。维护硬件对象，常用链表</li>
+<li>硬件对象层。初始化一个结构体作为一个硬件对象，注册到核心层</li>
+</ol>
+<h1 id="1-输入子系统"><a href="#1-输入子系统" class="headerlink" title="1. 输入子系统"></a>1. 输入子系统</h1><ol>
+<li>input handler。d. 创建设备文件，e. 实现 fop</li>
+<li>input core。a. 申请设备号，创建类。b. 创建类。搭桥，维护一个 handler 和一个 device 链表</li>
+<li>input device。c. 硬件初始化，读数据</li>
+</ol>
+<p>1、2 层内核已经实现，只要 make menuconfig 选择即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">make menuconfig</span><br><span class="line">	Device Drivers  ---&gt;</span><br><span class="line">		Input device support  ---&gt; </span><br><span class="line">			-- Generic input layer (needed for keyboard, mouse, ...)  &#x2F;&#x2F; input.c</span><br><span class="line">			&lt;&gt;   Event interface   &#x2F;&#x2F;input handler层--evdev.c</span><br></pre></td></tr></table></figure>
+
+
+
+<p>提供给用户名字相关的信息，例如通过 <code> /sys/class/input/event0/device/name</code> 查看</p>
+<p>调用 <code>input_event</code> 的 code 储存在 <code>include/dt-bindings/input/input.h</code>  中</p>
+<p>在初始化时设置可以支持的类型，根据 EV_ 确定</p>
+<ul>
+<li>键盘，产生键值</li>
+<li>触摸屏，产生绝对坐标</li>
+<li>鼠标，产生相对坐标</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E9%AB%98%E7%BA%A7/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:07.576Z" title="2019/6/5 上午8:15:07">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T07:19:36.000Z" title="2021/3/1 下午3:19:36">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a><span> / </span><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IoT/">IoT</a></span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E5%88%9D%E7%BA%A7/">驱动初级</a></h1><div class="content"><h1 id="1-字符设备"><a href="#1-字符设备" class="headerlink" title="1. 字符设备"></a>1. 字符设备</h1><ul>
+<li>字符设备。读取快、数据量小</li>
+<li>块设备。读取慢、数据量多</li>
+<li>网络设备</li>
+</ul>
+<p>module 模版</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;linux/module.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;linux/init.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> a, b;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">char</span> *name = <span class="string">&quot;init&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">simple_add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> __init <span class="title">hello</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	printk(<span class="string">&quot;hello init\n&quot;</span>);</span><br><span class="line">	printk(<span class="string">&quot;simple_add %d + %d = %d\n&quot;</span>, a, b, simple_add(a,b));</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> __exit <span class="title">hello_exit</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	printk(<span class="string">&quot;hello module exit, name = %s\n&quot;</span>, name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module_init(hello);</span><br><span class="line">module_exit(hello_exit);</span><br><span class="line">module_param(a, <span class="keyword">int</span>, <span class="number">0</span>);</span><br><span class="line">module_param(b, <span class="keyword">int</span>, <span class="number">0</span>);</span><br><span class="line">module_param(name, charp, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">MODULE_LICENSE(<span class="string">&quot;GPL&quot;</span>);</span><br></pre></td></tr></table></figure></div><a class="article-more button is-small is-size-7" href="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/IOT/%E9%A9%B1%E5%8A%A8%E5%88%9D%E7%BA%A7/#more">阅读更多</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/3/">上一页</a></div><div class="pagination-next"><a href="/page/5/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link" href="/page/3/">3</a></li><li><a class="pagination-link is-current" href="/page/4/">4</a></li><li><a class="pagination-link" href="/page/5/">5</a></li><li><a class="pagination-link" href="/page/6/">6</a></li></ul></nav></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

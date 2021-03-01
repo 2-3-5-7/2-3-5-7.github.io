@@ -1,0 +1,29 @@
+# Let NetworkManager manage all devices on this system
+# sudo netplan --debug apply
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses:
+        - 192.168.7.29/24
+      gateway4: 192.168.7.1
+      nameservers:
+          addresses: [8.8.8.8, 192.168.7.1]
+    # windows loopback NIC
+    ens38:
+      dhcp4: no
+      addresses:
+        - 192.168.36.1/24
+    # USB NIC
+    ens39:
+      dhcp4: no
+      addresses:
+        - 192.168.17.2/24
+    # vmware host-only NIC
+    ens40:
+      dhcp4: no
+      addresses:
+        - 1.1.33.2/24
+

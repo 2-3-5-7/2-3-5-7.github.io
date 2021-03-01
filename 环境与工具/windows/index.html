@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>windows - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net 清理旧文件删除没有权限的文件夹  文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 更改所有者 -&amp;gt; 输入自己的用户名 -&amp;gt; 选择下面应用到子文件夹的勾 -&amp;gt; 确定所有对话框 文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 权限添加 -&amp;gt; 主体为自己的用户名 -&amp;gt; 勾选下面的继承权限  搭建 安装 PE 环境到 U"><meta property="og:type" content="blog"><meta property="og:title" content="windows"><meta property="og:url" content="https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net 清理旧文件删除没有权限的文件夹  文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 更改所有者 -&amp;gt; 输入自己的用户名 -&amp;gt; 选择下面应用到子文件夹的勾 -&amp;gt; 确定所有对话框 文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 权限添加 -&amp;gt; 主体为自己的用户名 -&amp;gt; 勾选下面的继承权限  搭建 安装 PE 环境到 U"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-06-05T00:15:08.397Z"><meta property="article:modified_time" content="2021-03-01T08:19:52.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows/"},"headline":"windows","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-06-05T00:15:08.397Z","dateModified":"2021-03-01T08:19:52.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net 清理旧文件删除没有权限的文件夹  文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 更改所有者 -&gt; 输入自己的用户名 -&gt; 选择下面应用到子文件夹的勾 -&gt; 确定所有对话框 文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 权限添加 -&gt; 主体为自己的用户名 -&gt; 勾选下面的继承权限  搭建 安装 PE 环境到 U"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.397Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:19:52.000Z" title="2021/3/1 下午4:19:52">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile">windows</h1><div class="content"><p><a href="windows">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows">asset-net</a></p>
+<h1 id="清理旧文件"><a href="#清理旧文件" class="headerlink" title="清理旧文件"></a>清理旧文件</h1><p>删除没有权限的文件夹</p>
+<ol>
+<li>文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 更改所有者 -&gt; 输入自己的用户名 -&gt; 选择下面应用到子文件夹的勾 -&gt; 确定所有对话框</li>
+<li>文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 权限添加 -&gt; 主体为自己的用户名 -&gt; 勾选下面的继承权限</li>
+</ol>
+<h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><ol>
+<li><p>安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容</p>
+</li>
+<li><p>PE 环境下加载 ISO 镜像，运行 source 下的 setup</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://03k.org/kms.html">激活</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 管理员权限运行，运行后会提示服务计算机修改</span></span><br><span class="line">slmgr /skms kms.03k.org</span><br><span class="line"><span class="comment"># 运行后提示激活成功</span></span><br><span class="line">slmgr /ato</span><br></pre></td></tr></table></figure></li>
+<li><p>系统配置</p>
+<ul>
+<li>网络设置为私有网络，共享中心中开启发现和文件共享。右键文件夹授予访问权限，选择当前用户。两个 PC 是同样的用户密码，不知道不相同时能否实现共享</li>
+<li>手动休眠。电源选项中关闭睡眠和硬盘的超时，管理员 cmd <code>powercfg.exe /hibernate off</code> 关闭休眠。新建快捷方式 <code>rundll32.exe powrprof.dll,SetSuspendState 0,1,0</code>，并设置快捷键 <code>ctrl-alt-s</code>，拷入开始菜单。<a target="_blank" rel="noopener" href="https://defkey.com/what-means/ctrl-alt-s">快捷键占用参考</a></li>
+<li>修改文档、音乐、视频、桌面等系统文件夹位置</li>
+<li>导入注册表相关设置，见 <code>reg</code> 文件夹</li>
+<li>上传账户头像，设置自动登录，Windows+R 运行 <code>control userpasswords2</code></li>
+<li>安装 sans、serif、mono、Consolas-with-Yahei Nerd Font 字体和主题，见 <code>必装/字体&amp;主题</code> 文件夹</li>
+<li>建立绿色软件的文件类型关联，将快捷方式添加到开始菜单</li>
+</ul>
+</li>
+</ol>
+<span id="more"></span>
+
+<ol start="5">
+<li><p>软件</p>
+<p>表中的软件更新后请插入 U 盘，使用 U盘中的 SyncFolders 将软件同步到 U 盘，保证 U 盘中软件最新</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>必装软件</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>驱动</td>
+<td>使用联想驱动工具安装。驱动文件、主机编号、保修时间，见目录显卡驱动-IntelVideo、电源 ACPI-n2hku54w_x64、主板 intelchip-r0pch04w，两个蓝牙驱动<br />显示设置中缩放与布局设置为 125%，但偶尔会出现任务栏显示位置不正常的问题，通过设置分辨率为 1366*768 来放大显示</td>
+</tr>
+<tr>
+<td>手心输入法</td>
+<td>- zsc模糊音<br />- 修改皮肤<br />- 初始状态设为英文<br />- 字体设为 YaHei Consolas Hybrid，调整候选字体大小和颜色</td>
+</tr>
+<tr>
+<td>Clash</td>
+<td>- 设置不同策略使用的节点<br/>- 设置开机启动<br/>- 修改配置文件改端口<br/>- 修改 profile 的更新间隔<br /><a target="_blank" rel="noopener" href="https://merlinblog.xyz/wikipageguide.html">所有平台客户端汇总</a></td>
+</tr>
+<tr>
+<td>netch</td>
+<td>可基于进程设置 SSR 代理，替代 SSTap</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>- 参考 <a target="_blank" rel="noopener" href="https://helgeklein.com/blog/2009/08/moving-the-firefox-cache-directory-and-profile-separately/">这个方法</a> 改变 profile 位置，cache 位置就不用改了。还原 profile，还原 profile 时扩展需要关闭一下重开，账户可能要重新绑定<br />- 临时使用 AHK 脚本支持欧路双击取词<br />- 定期备份 profile，使用 Windows\必装\firefox\backup_ff.bat<br />- 如果需要隐藏顶部标签栏、标题栏、侧栏标题，<a target="_blank" rel="noopener" href="https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b">参照这个</a>，但不要添加 windows 按钮那个 CSS<br />- about:config 设置 browser.urlbar.openintab 为 true，搜索结果新 tab 打开</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>- 设置好系统代理来登录 google 账号，同步书签和扩展<br />- 导入 stylus 配置、uBlock 静态规则、ViolentMonkey 脚本、BlockSite 列表、Omega 设置，见<code>chrome</code> 文件夹<br />- StayFocusd 使用 nuclear 模式屏蔽 extension://eiimnmioipafcokbfikbljfdeojpcgbh/ 扩展选项 23.9 小时<br />- 设置浏览器字体，sans、serif、mono</td>
+</tr>
+<tr>
+<td>Bandzip</td>
+<td>- 设置文件类型关联<br />- 设置解压和压缩右键菜单<br />- 设置解压后自动关闭窗口，打开解压文件夹<br />- 不要更新，新版有广告<br />不支持添加文件到 7z，可以用 7zip</td>
+</tr>
+<tr>
+<td>PotPlayer</td>
+<td>- 设置文件类型关联<br />- 设置打开新文件时在当前进程，不新建进程</td>
+</tr>
+<tr>
+<td>Dropbox</td>
+<td>- 离线安装<br />- 设置代理后关联账户<br />- 选择性同步<br />- 双开<br /> 离线完整安装 <a target="_blank" rel="noopener" href="https://www.dropbox.com/download?full=1&amp;plat=win">https://www.dropbox.com/download?full=1&amp;plat=win</a></td>
+</tr>
+<tr>
+<td>Cryptomator</td>
+<td>插件装不上可以不装</td>
+</tr>
+<tr>
+<td>typora</td>
+<td>- 打开主题文件夹放置 <code>base.user.css</code>  字体和界面宽度设置文件 ，见 <code>typora</code> 文件夹<br />- 其它偏好设置</td>
+</tr>
+<tr>
+<td>pandoc</td>
+<td>配合 typora 导入、导出各种格式文档</td>
+</tr>
+<tr>
+<td>欧路词典</td>
+<td>参考 环境-&gt; 词典软件 设置。词典在“Dictionary在用”</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>—下面开始是免安装软件—</strong></td>
+</tr>
+<tr>
+<td>SumatraPDF</td>
+<td>关联 PDF 格式</td>
+</tr>
+<tr>
+<td>KeePass</td>
+<td></td>
+</tr>
+<tr>
+<td>npp</td>
+<td>修改字体和字体大小</td>
+</tr>
+<tr>
+<td>WUB</td>
+<td>Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网<br />如果要使用系统更新，可以开启 SSR 全局代理，加快下载</td>
+</tr>
+<tr>
+<td>clover</td>
+<td>使用 nocmd 的去广告版</td>
+</tr>
+<tr>
+<td>DnsJumper</td>
+<td>根据测速切换 DNS</td>
+</tr>
+<tr>
+<td>RightMenuMgr</td>
+<td>右键菜单清理</td>
+</tr>
+<tr>
+<td>Turn Off Monitor</td>
+<td>关闭屏幕。创建快捷方式到开始菜单，设置快捷键 <code>ctrl-alt-t</code></td>
+</tr>
+<tr>
+<td>Dictionary</td>
+<td>GoldenDict 和 欧路词典共用的词典</td>
+</tr>
+<tr>
+<td>AutoHotkey</td>
+<td>GoldenDict 双击取词脚本添加到启动项，C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>建议安装软件</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>阿里旺旺</td>
+<td>使用老殁绿色版<br />- 去掉自启动相关<br />- 关联 chrome 自动打开</td>
+</tr>
+<tr>
+<td>网易云音乐</td>
+<td>皮肤、自启动。UWP版经常卡，不要用</td>
+</tr>
+<tr>
+<td>tim</td>
+<td>QQ UWP 版替代</td>
+</tr>
+<tr>
+<td>微信</td>
+<td>PC 版</td>
+</tr>
+<tr>
+<td>NetLimiter</td>
+<td>破解<br />设置最小化和关闭到托盘，关闭更新</td>
+</tr>
+<tr>
+<td>建行网银</td>
+<td>不要禁用两个建行启动项，和用来实时监控网银的 watchdata 启动项</td>
+</tr>
+<tr>
+<td>Sandboxie</td>
+<td>去掉开机启动和右键菜单选项</td>
+</tr>
+<tr>
+<td>VMware</td>
+<td>进行破解</td>
+</tr>
+<tr>
+<td>sourceinsight</td>
+<td>需要破解</td>
+</tr>
+<tr>
+<td>SecureCRT 安装版</td>
+<td>需要破解</td>
+</tr>
+<tr>
+<td>vcxsrv</td>
+<td>替代 xming（有 bug、新版本收费），新建快捷方式 “D:\MySoftware\VcXsrv\vcxsrv.exe :0 -clipboard -multiwindow -dpi 108”<br />添加到 windows 启动中，C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp<br /> <a target="_blank" rel="noopener" href="https://aufather.wordpress.com/2010/11/21/increasing-font-size-in-xming-server/">指定 dpi</a> <code>-dpi 108</code> 来增加文字大小</td>
+</tr>
+<tr>
+<td>office 2016/2019</td>
+<td>参照 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3d1fffd0bdb2">安装和激活Office 2019</a><br />1. 先卸载旧的 office，再用 OTP 工具清除，重启<br/>2. 先备份注册表，修改注册表 program 3 个路径，参照 <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/76a7e409efeb4ffc3b6e15c6.html">安装office2016软件时如何自定义路径</a><br/>3. 选择在线安装，还可以同时装 viso。上一次用 OTP 离线安装 2019 没成功，可能路径没选对，路径要选择加载镜像后的盘符。<br />    但参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiaguliuxiang/p/10078146.html">从本地源部署 Office 2016 专业增强版</a> 中的配置离线安装 office 2016 成功了，本质上 OTP 和 <a target="_blank" rel="noopener" href="https://config.office.com/">微软官方</a> 都是生成 XML 配置文件来配置要安装的产品<br />4. 恢复注册表，导入时报错是正常的，然后重启，修改快捷方式路径<br />5. 使用 OTP 安装证书、设置密钥、kms 服务器来激活，<a target="_blank" rel="noopener" href="https://www.fczbl.vip/1117.html">密钥参考</a>，kms 服务器可以用 kms.03k.org</td>
+</tr>
+<tr>
+<td>Office Tool Plus (OTP)</td>
+<td>下载、配置安装、激活 office 工具</td>
+</tr>
+<tr>
+<td>git</td>
+<td></td>
+</tr>
+<tr>
+<td>nodejs</td>
+<td>博客搭建使用</td>
+</tr>
+<tr>
+<td>向日葵远程</td>
+<td></td>
+</tr>
+<tr>
+<td>get_iplayer</td>
+<td>BBC 下载，无 DRM，自动转 mp4、srt 字幕<br /><code>C:\Users\user_name\.get_iplayer\options</code> 中添加，只下载有字幕的视频，设置默认保存路径<br />output D:\Videos\BBC<br/>subtitles 1<br/>subsrequired 1</td>
+</tr>
+<tr>
+<td>All Netflix Categories</td>
+<td>netflix 隐藏类别 chrome 插件，解压缩后安装</td>
+</tr>
+<tr>
+<td>7-zip</td>
+<td>备用的解压缩软件，负责备份 firefox 时的命令行工具</td>
+</tr>
+<tr>
+<td>Arm Keil MDK v5.30</td>
+<td>包含 STM32F1 pack</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>—下面开始是免安装软件—</strong></td>
+</tr>
+<tr>
+<td>SSR</td>
+<td>- 可能要安装 .net 环境，安装文件在 <code>必装</code> 文件夹下<br />- 配置 SSR 服务器订阅<br />- 配置端口 10800，避免端口冲突<br />- 开机启动<br />目前用 4.9，没用 4.5</td>
+</tr>
+<tr>
+<td>SSCap</td>
+<td>写脚本每次启动将 <code>gui-config.json</code> 拷贝到  SSCap 文件夹实现测速</td>
+</tr>
+<tr>
+<td>PanDownload</td>
+<td></td>
+</tr>
+<tr>
+<td>速盘极速版</td>
+<td>SpeedPanX</td>
+</tr>
+<tr>
+<td>Revo Uninstaller Pro</td>
+<td>使用 nocmd 破解版。<br />- 右键菜单不好用，不要勾选，开启软件进行安装跟踪<br />- 简单卸载一些 win App<br />- 修改记录的路径为 D:\soft\Revo Uninstaller Pro\Logs<br />- 主题改为默认</td>
+</tr>
+<tr>
+<td>Atom</td>
+<td>安装 markdown-mindmap，file-watcher 开启所有选项来监控网络驱动器，markdown-preview-plus、markdown-table-editor、Simplified Chinese Menu，用来同步显示 markdown 思维导图</td>
+</tr>
+<tr>
+<td>SyncFolders</td>
+<td>U 盘与电脑同步软件。同步方式选择 PC 到 U 盘的 备份方式</td>
+</tr>
+<tr>
+<td>Beyond Compare</td>
+<td>windows 防火墙高级设置，添加出站规则，禁止 BC 主程序联网防止过期</td>
+</tr>
+<tr>
+<td>calibre</td>
+<td>kindle 数据格式转换与管理</td>
+</tr>
+<tr>
+<td>sdr-Cleaner</td>
+<td>kindle sdr 文件夹清理</td>
+</tr>
+<tr>
+<td>KindleMate</td>
+<td>kindle 单词与笔记管理</td>
+</tr>
+<tr>
+<td>FastStone Capture</td>
+<td>屏幕截图与录像</td>
+</tr>
+<tr>
+<td>串口调试助手</td>
+<td></td>
+</tr>
+<tr>
+<td>NetAssist</td>
+<td>与串口调试助手类似，只不过用网络</td>
+</tr>
+<tr>
+<td>ADB</td>
+<td>adb 工具和 usb 驱动</td>
+</tr>
+<tr>
+<td>idea、jdk11</td>
+<td>Java IDE、JDK、JDK Docs</td>
+</tr>
+<tr>
+<td>vscode、gtags</td>
+<td>参照 IDE 文档配置</td>
+</tr>
+<tr>
+<td>PDF处理工具</td>
+<td><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/news/25259">模糊pdf变清晰</a> 先提取一张图片，尝试调整参数，然后再批量处理<br /><a target="_blank" rel="noopener" href="https://blog.csdn.net/Reven_L/article/details/103408143">制作书签</a>  <a target="_blank" rel="noopener" href="https://www.cnblogs.com/stronghorse/">软件作者博客</a>  先提取书签，然后编辑 FreePic2Pdf.itf 和 FreePic2Pdf_bkmk.txt，最后挂书签<br />FreePic2Pdf.itf 设置 BasePage 目录页码基准（一般与 TextPage 相同），ContentsPage 目录绝对页码，TextPage 正文绝对页码，见 FreePic2Pdf 帮助文档中的接口文件格式说明<br />FreePic2Pdf_bkmk.txt 为书签，tab 控制目录层级，标题与页码间 tab 分隔，页码基准前的页面用负数表示<br />notepad++ 常用正则，添加二级标题缩进  ^(\d+.\d+) 替换为 \t\1。添加标题与页码的 tab，\s+(\d+)$ 替换为 \t\1</td>
+</tr>
+<tr>
+<td>everything</td>
+<td>空格表示与，| 表示或，”” 中是真的空格。限定搜索范围，支持简单正则<br />简单的 FTP、HTTP 服务器</td>
+</tr>
+<tr>
+<td>Archivarius.3000</td>
+<td><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ApyutqrsRN8dP65aKzq3mQ">软件介绍</a>，全文检索</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>不常用软件</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bluestacks android模拟器（节省空间，没存储安装文件）</td>
+<td>其它模拟器会出现小程序无法进入的问题<br />为了使用微信小程序。剪贴板已与 PC 共享，鼠标长按即可<br />调整字体大小，自定义分辨率 1280 X 988，dpi 400。内存设为最低 1024，cpu 增加到 4</td>
+</tr>
+<tr>
+<td>EnounceMySpeed</td>
+<td>flash 视频播放加速，仅用于 IE</td>
+</tr>
+<tr>
+<td>易数一键还原</td>
+<td></td>
+</tr>
+<tr>
+<td>VirtualBox</td>
+<td></td>
+</tr>
+<tr>
+<td>PDF Password Remover</td>
+<td>需要破解</td>
+</tr>
+<tr>
+<td>PDF XChange Editor</td>
+<td>pdf 编辑。大眼仔网站上有许多类似软件，在线编辑网站也有</td>
+</tr>
+<tr>
+<td>WIFI-FC-5</td>
+<td>Blink USB 无线网卡驱动</td>
+</tr>
+<tr>
+<td>Touchpad</td>
+<td>联想触控板驱动</td>
+</tr>
+<tr>
+<td>BTSync</td>
+<td>分布式同步软件，下载书籍</td>
+</tr>
+<tr>
+<td>Virtual Serial Port Driver</td>
+<td>破解有14天时间限制，尝试 windows 虚拟机快照<br />串口桥接、虚拟串口、多虚一、一虚多<br />使用 Complex 模式，IN 和 OUT 各创建一个虚口用来监控和发送流量<br />最后 IN 和 OUT 各两个口。也可用 redirect 模式，然后用串口监听软件</td>
+</tr>
+<tr>
+<td>device monitoring studio</td>
+<td>串口通信数据监控</td>
+</tr>
+<tr>
+<td>wireshark</td>
+<td>抓包。更新到 3.2.3 安装 usbpcap 后可以识别 USB 网卡</td>
+</tr>
+<tr>
+<td>KMSpico Install10.1.9</td>
+<td>有 kms 服务器似乎用不到了</td>
+</tr>
+<tr>
+<td>VeraCrypt</td>
+<td>由于手机端 EDS 工作有问题，改用 Cryptomator<br />加密算法可以在机器上测试速度，使用两三种组合，同时加上文件</td>
+</tr>
+<tr>
+<td>QTTabBar</td>
+<td>clover 备选方案<br />- 先装安装文件再装 update<br />- 语言文件需要用 Proxifier PE 开代理下载，也可以直接用压缩包自带的<br />- 设置标签不显示关闭按钮，显示标号，窗口关闭按钮则关闭窗口<br />- 设置切换到第几个标签的快捷键，打开 ctrl+tab 切换预览<br />- 可能还要把鼠标双击的识别速度调慢</td>
+</tr>
+<tr>
+<td>为知笔记</td>
+<td></td>
+</tr>
+<tr>
+<td>绿联蓝牙驱动</td>
+<td>需要 .net 3.5</td>
+</tr>
+<tr>
+<td>.net 3.5</td>
+<td>绿联蓝牙驱动</td>
+</tr>
+<tr>
+<td>PL2303 串口驱动</td>
+<td>win 10 可用</td>
+</tr>
+<tr>
+<td>ch340 串口驱动</td>
+<td>win 10 可用</td>
+</tr>
+<tr>
+<td>CP2102 六合一驱动</td>
+<td>win 10 可用</td>
+</tr>
+<tr>
+<td>百度云管家</td>
+<td>仅上传文件使用。自启动、消息，用 CC 禁用右键菜单</td>
+</tr>
+<tr>
+<td>vc++ 2010 库</td>
+<td>SecureFX keygen 需要</td>
+</tr>
+<tr>
+<td>TeamViewer</td>
+<td>国内有时登陆不上账号</td>
+</tr>
+<tr>
+<td>DualMonitor</td>
+<td>多显示器设置不同壁纸</td>
+</tr>
+<tr>
+<td>福昕高级PDF-FoxitPhantomPDF</td>
+<td>用于 OCR PDF，需破解</td>
+</tr>
+<tr>
+<td>IDM 安装版</td>
+<td>需破解</td>
+</tr>
+<tr>
+<td>doxygen graphviz htmlhelp</td>
+<td>生成项目文档，生成函数调用图 call graph</td>
+</tr>
+<tr>
+<td>MouseWithoutBordersSetup</td>
+<td>鼠标、键盘局域网共享，不要启用剪贴板共享<br />如果改了 dns，可能需要设置 ip mapping</td>
+</tr>
+<tr>
+<td>NitronicRush_setup_20121221.2</td>
+<td>游戏</td>
+</tr>
+<tr>
+<td>SSTap</td>
+<td>添加订阅，实现全局代理和测速</td>
+</tr>
+<tr>
+<td>All DRM Removal</td>
+<td>移除 KFX DRM</td>
+</tr>
+<tr>
+<td>KindleForPC-installer-1.24</td>
+<td>配合移除 DRM 的旧版本</td>
+</tr>
+<tr>
+<td>vs_Community</td>
+<td><a target="_blank" rel="noopener" href="https://blog.lindexi.com/post/VisualStudio-2019-%E5%A6%82%E4%BD%95%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD.html">VisualStudio 2019 如何离线下载</a><br />下载<br/>vs_Community.exe –layout d:\vslayout  ^<br/>–add Microsoft.VisualStudio.Workload.ManagedDesktop  ^<br/>–add Microsoft.VisualStudio.Workload.NativeCrossPlat  ^<br/>–add Microsoft.VisualStudio.Workload.NativeDesktop  ^<br/>–add Microsoft.VisualStudio.Workload.VisualStudioExtension –includeOptional ^<br/>–add Component.GitHub.VisualStudio ^<br/>–lang zh-CN –addProductLang en-US<br />下载命令添加 –fix 用于断点续传，有个 arm 包速度很慢挂代理<br/>安装，进入前面指定的 layout 文件夹，输入前面的下载命令去掉 –layout 和 –lang 的部分。取消再选择可以节省空间，可以不全部选择。但要保留下载缓存文件夹，否则以后无法修改功能</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>—下面开始是免安装软件—</strong></td>
+</tr>
+<tr>
+<td>cover 字幕遮挡软件</td>
+<td></td>
+</tr>
+<tr>
+<td>硬盘文件夹下软件</td>
+<td>用于坏道检查和分区</td>
+</tr>
+<tr>
+<td>cpu-z</td>
+<td></td>
+</tr>
+<tr>
+<td>Shadowsocks</td>
+<td></td>
+</tr>
+<tr>
+<td>Sublime Text</td>
+<td>需要使用 patch 破解</td>
+</tr>
+<tr>
+<td>tftpd</td>
+<td></td>
+</tr>
+<tr>
+<td>rufus</td>
+<td>将系统镜像烧录到U盘</td>
+</tr>
+<tr>
+<td>TextEditor</td>
+<td></td>
+</tr>
+<tr>
+<td>Bulk Rename Utility</td>
+<td></td>
+</tr>
+<tr>
+<td>星号查看</td>
+<td></td>
+</tr>
+<tr>
+<td>AIDA64</td>
+<td>软硬件检测，可以定时生成日志</td>
+</tr>
+<tr>
+<td>SerialPortMonitor</td>
+<td>串口通信数据监控</td>
+</tr>
+<tr>
+<td>hash</td>
+<td></td>
+</tr>
+<tr>
+<td>MD5_and_SHA_Checksum_Utility</td>
+<td></td>
+</tr>
+<tr>
+<td>iHasher-v0.2</td>
+<td></td>
+</tr>
+<tr>
+<td>Win7计算器</td>
+<td></td>
+</tr>
+<tr>
+<td>ComHub</td>
+<td>通过启用 telnet 共享本地 com 口</td>
+</tr>
+<tr>
+<td>FileZilla</td>
+<td>ftp 客户端</td>
+</tr>
+<tr>
+<td>PacketSender</td>
+<td>发包软件，偏上层，不关心构造包</td>
+</tr>
+<tr>
+<td>xcap</td>
+<td>发包软件，手动构造包</td>
+</tr>
+<tr>
+<td>ostinato</td>
+<td>发包软件，开源，支持协议多，linux 和 windows 都可用</td>
+</tr>
+<tr>
+<td>冰点文库下载器</td>
+<td>用于免积分下文档，但百度文库付费文档只能下载试读部分</td>
+</tr>
+<tr>
+<td>PDFBinder</td>
+<td>PDF合并工具。合并网页打印的多篇文章</td>
+</tr>
+<tr>
+<td>GoldenDict-1.5.0-RC2-311-g15062f7_(QT_595)(64bit)</td>
+<td>参考 环境-&gt; 词典软件设置</td>
+</tr>
+<tr>
+<td>GoldenDict</td>
+<td>已设置好的版本</td>
+</tr>
+<tr>
+<td>ditto</td>
+<td>剪贴板管理和共享，使用介绍 <a target="_blank" rel="noopener" href="https://www.playpcesor.com/2011/02/ditto.html">https://www.playpcesor.com/2011/02/ditto.html</a><br />如果要局域网共享，去掉禁止接收选项，双方填入对方的计算机名和相同的网络密码，接收密码没有填，远程文件选择主机名方式，下面的发送列表添加对方主机名并选择发送全部</td>
+</tr>
+<tr>
+<td>privoxy</td>
+<td>sock 代理转 http 代理。新建快捷方式，设置为最小化启动可以不显示窗口</td>
+</tr>
+<tr>
+<td>PenguinSubtitlePlayer</td>
+<td>透明播放字幕</td>
+</tr>
+<tr>
+<td>blend</td>
+<td>窗口透明化</td>
+</tr>
+<tr>
+<td>WinHEX</td>
+<td>十六进制编辑器，正常已注册，user.txt 为注册信息</td>
+</tr>
+<tr>
+<td>鼠大侠鼠标连点器</td>
+<td></td>
+</tr>
+<tr>
+<td>EV录屏</td>
+<td>可以录制系统声音</td>
+</tr>
+<tr>
+<td>mkvtoolnix / gMKVExtractGUI</td>
+<td><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/266085808/answer/768016788">怎样将视频中的音频提取出来？</a></td>
+</tr>
+<tr>
+<td>Bandicam</td>
+<td>另一个录屏软件</td>
+</tr>
+</tbody></table>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><h3 id="windows-store"><a href="#windows-store" class="headerlink" title="windows store"></a>windows store</h3><p>对于 windows store 设置代理，先设置 ie 代理，然后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source&#x3D;ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></table></figure>
+
+<p>对于 windows store 无法联网，错误代码 0x80072F7D。打开IE浏览器工具（注意不是Edge）—— 点击”Internet选项“ —— 选择“高级”选项卡 —— 在“使用TLS1.2”前面打上勾</p>
+<h3 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># http 代理。只对当前 cmd 生效</span><br><span class="line">set http_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:8118</span><br><span class="line">set https_proxy&#x3D;http:&#x2F;&#x2F;127.0.0.1:8118</span><br><span class="line"># socks 代理。使用 setx 可以添加到 高级系统设置 - 环境变量当中，删除变量只能通过图形界面删除</span><br><span class="line">setx http_proxy socks5:&#x2F;&#x2F;127.0.0.1:10800</span><br><span class="line">setx https_proxy socks5:&#x2F;&#x2F;127.0.0.1:10800</span><br></pre></td></tr></table></figure>
+
+<h1 id="备份与还原"><a href="#备份与还原" class="headerlink" title="备份与还原"></a>备份与还原</h1><p><strong>安装大型软件前一定备份</strong></p>
+<ol>
+<li><p>DG 备份</p>
+<p>支持增量备份，占用空间小，备份容易管理</p>
+</li>
+<li><p>Windows 自带备份</p>
+<p>占用空间大，但可靠，正常只保留一两个最新备份，作为 DG 还原失败的第二手段</p>
+<p>如果有启动项或服务在其它分区，那么其它分区也一起备份，这个太局限了。</p>
+<p>备份管理不方便，只能全删或者保留最近的一个</p>
+<p>注意还原时不选择从还原点还原，选择从备份驱动器还原</p>
+</li>
+<li><p>dism++ 不要用，备份太慢了</p>
+</li>
+<li><p>ghost 不能用</p>
+</li>
+<li><p>Acronis True Image 听说速度和大小都不错，对于 PE 也有精简版，略麻烦没尝试过</p>
+</li>
+</ol>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">手机_电视_平板</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/"><span class="level-item">makefile</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

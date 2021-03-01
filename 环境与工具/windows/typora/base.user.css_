@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto','Noto Sans CJK SC Regular';
+}
+
+/* 编辑界面最大宽度设置为自适应 */
+#write{
+    max-width: 90%;   
+}
+
+/* 源码界面最大宽度设置为自适应 */
+#typora-source .CodeMirror-lines {
+   max-width: 90%;
+}

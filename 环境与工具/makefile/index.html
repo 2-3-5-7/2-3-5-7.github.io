@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>makefile - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="asset、asset-net  跟我一起写Makefile   《嵌入式 Linux C 语言程序设计》，make   456、89待增加 1. 介绍 编译、链接、库 等原理 三要素，目标、依赖、命令，依赖比目标或目标不存在新就执行命令。找到关系树的末端再从末端进行判断，末端比根旧则什么都不做，新则执行命令。 不要用环境变量 MAKEFILES Makefile 的组成 显示规则，我们写的 隐含"><meta property="og:type" content="blog"><meta property="og:title" content="makefile"><meta property="og:url" content="https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="asset、asset-net  跟我一起写Makefile   《嵌入式 Linux C 语言程序设计》，make   456、89待增加 1. 介绍 编译、链接、库 等原理 三要素，目标、依赖、命令，依赖比目标或目标不存在新就执行命令。找到关系树的末端再从末端进行判断，末端比根旧则什么都不做，新则执行命令。 不要用环境变量 MAKEFILES Makefile 的组成 显示规则，我们写的 隐含"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="2019-06-05T00:15:08.383Z"><meta property="article:modified_time" content="2021-03-01T08:18:53.000Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/"},"headline":"makefile","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"2019-06-05T00:15:08.383Z","dateModified":"2021-03-01T08:18:53.000Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"asset、asset-net  跟我一起写Makefile   《嵌入式 Linux C 语言程序设计》，make   456、89待增加 1. 介绍 编译、链接、库 等原理 三要素，目标、依赖、命令，依赖比目标或目标不存在新就执行命令。找到关系树的末端再从末端进行判断，末端比根旧则什么都不做，新则执行命令。 不要用环境变量 MAKEFILES Makefile 的组成 显示规则，我们写的 隐含"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-05T00:15:08.383Z" title="2019/6/5 上午8:15:08">2019-06-05</time>发表</span><span class="level-item"><time dateTime="2021-03-01T08:18:53.000Z" title="2021/3/1 下午4:18:53">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/">环境与工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile">makefile</h1><div class="content"><p><a href="makefile">asset</a>、<a target="_blank" rel="noopener" href="https://github.com/2-3-5-7/2-3-5-7.github.io/blob/main/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile">asset-net</a></p>
+<ul>
+<li><p><a href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/makefile/../Makefile.pdf">跟我一起写Makefile</a> </p>
+</li>
+<li><p>《嵌入式 Linux C 语言程序设计》，make</p>
+</li>
+</ul>
+<p>456、89待增加</p>
+<h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><ul>
+<li>编译、链接、库 等原理</li>
+<li>三要素，目标、依赖、命令，依赖比目标或目标不存在新就执行命令。找到关系树的末端再从末端进行判断，末端比根旧则什么都不做，新则执行命令。</li>
+<li>不要用环境变量 MAKEFILES</li>
+<li>Makefile 的组成<ul>
+<li>显示规则，我们写的</li>
+<li>隐含规则，.o 自动生成 .c 依赖的关系 和 编译命令</li>
+<li>变量定义</li>
+<li>文件指示<ul>
+<li>include <filename></li>
+<li>#if</li>
+<li>多行命令</li>
+</ul>
+</li>
+<li>注释，# 转义</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="2-规则"><a href="#2-规则" class="headerlink" title="2. 规则"></a>2. 规则</h1><ul>
+<li>规则中可以用通配符</li>
+<li>变量中的通配符不会展开，除非</li>
+</ul>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件夹下所有的 .c</span></span><br><span class="line">objects := <span class="variable">$(<span class="built_in">wildcard</span> *.c)</span></span><br><span class="line"><span class="comment"># 文件夹下所有的 .o</span></span><br><span class="line">objects := <span class="variable">$(<span class="built_in">patsubst</span> %.c,%.o,$(<span class="built_in">wildcard</span> *.c)</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>用 vpath 指定多个搜索目录</li>
+<li>伪目标两个作用 1. clean 2. 一次生成多个目标</li>
+<li>静态模式与多目标 %，具体看参考</li>
+<li>依赖的头文件自动生成的方法，具体看参考</li>
+</ul>
+<h1 id="3-命令"><a href="#3-命令" class="headerlink" title="3. 命令"></a>3. 命令</h1><ul>
+<li>@ 可以不显示这条命令</li>
+<li>语句前加 - 可以忽略错误继续执行</li>
+<li>嵌套执行 makefile<ul>
+<li>$(MAKE) -C subdir</li>
+<li>export variable = value  或者 unexport 或者 export 导出所有变量到下级</li>
+<li>MAKEFLAGS 和 SHELL 永远被传递给下级，除非见参考文档</li>
+</ul>
+</li>
+<li>常用命令可以定义成命令包</li>
+</ul>
+<h1 id="4-变量"><a href="#4-变量" class="headerlink" title="4. 变量"></a>4. 变量</h1><p>建议小写作为变量名，大写作为控制隐含规则和用户重载命令选项时使用</p>
+<ul>
+<li><p>递归展开，无法追加 VAR=var</p>
+</li>
+<li><p>简单展开 VAR:=var</p>
+</li>
+<li><p>?= 被定义过什么都不做，没定义则赋值</p>
+</li>
+</ul>
+<p>变量使用 $(VAR)</p>
+<ul>
+<li>预定义变量，比如 CC、RM、CFLAGS</li>
+<li>自动变量，比如 $@、$&lt;、$^</li>
+<li>make 启动时自动创建与系统相同数值的环境变量</li>
+</ul>
+<h1 id="7-make"><a href="#7-make" class="headerlink" title="7. make"></a>7. make</h1><p>有一些 GNU 约定好的目标表示名称，可以作为写 makefile 的参考，比如 <code>install</code></p>
+<p>用来调试 makefile</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n</td>
+<td>dry run</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>只更新(touch)目标的时间，假装编译</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>看看某个目标在 makefile 中存在吗</td>
+</tr>
+<tr>
+<td>–debug</td>
+<td>打印调试</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>打印目录，用来调试嵌套 make 调用</td>
+</tr>
+</tbody></table>
+<p>其它参数见 man 或者 上面的参考文档</p>
+<h1 id="8-隐含规则"><a href="#8-隐含规则" class="headerlink" title="8. 隐含规则"></a>8. 隐含规则</h1><ul>
+<li> C程序隐含规则，$(CC) –c $(CPPFLAGS) $(CFLAGS)，其它程序规则见参考文档</li>
+<li> 隐含规则使用的变量，如 CC、CFLAGS 具体见文档</li>
+<li> 模式规则 %，与自动化变量。if 判断中不能使用自动化变量</li>
+</ul>
+</div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/windows/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">windows</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6/"><span class="level-item">linux软件</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
