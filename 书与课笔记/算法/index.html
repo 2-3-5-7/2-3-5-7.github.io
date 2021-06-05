@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>算法 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="参考 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，我的算法学习之路、程序员该如何学习算法 主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营） JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 termi"><meta property="og:type" content="blog"><meta property="og:title" content="算法"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="参考 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，我的算法学习之路、程序员该如何学习算法 主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营） JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 termi"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.png"><meta property="article:published_time" content="2020-05-24T06:59:53.463Z"><meta property="article:modified_time" content="2021-03-01T00:43:14.716Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/../%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/"},"headline":"算法","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.png"],"datePublished":"2020-05-24T06:59:53.463Z","dateModified":"2021-03-01T00:43:14.716Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"参考 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，我的算法学习之路、程序员该如何学习算法 主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营） JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 termi"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
-</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-05-24T06:59:53.463Z" title="2020/5/24 下午2:59:53">2020-05-24</time>发表</span><span class="level-item"><time dateTime="2021-03-01T00:43:14.716Z" title="2021/3/1 上午8:43:14">2021-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a></span></div></div><h1 class="title is-3 is-size-4-mobile">算法</h1><div class="content"><p><a target="_blank" rel="noopener" href="https://www.learncpp.com/cpp-tutorial/appendix-c-the-end/">参考</a> 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，<a target="_blank" rel="noopener" href="http://lucida.me/blog/on-learning-algorithms/">我的算法学习之路</a>、<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19981544">程序员该如何学习算法</a></p>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>算法 - Life is short</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Life is short"><meta name="msapplication-TileImage" content="/img/Coding.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Life is short"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="参考 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，我的算法学习之路、程序员该如何学习算法 主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营） JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 termi"><meta property="og:type" content="blog"><meta property="og:title" content="算法"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/"><meta property="og:site_name" content="Life is short"><meta property="og:description" content="参考 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，我的算法学习之路、程序员该如何学习算法 主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营） JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 termi"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.png"><meta property="article:published_time" content="2020-05-24T06:59:53.463Z"><meta property="article:modified_time" content="2021-06-05T02:41:47.930Z"><meta property="article:author" content="Jian-Feng Du"><meta property="article:tag" content="IoT security"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/../%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/"},"headline":"算法","image":["https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.png"],"datePublished":"2020-05-24T06:59:53.463Z","dateModified":"2021-06-05T02:41:47.930Z","author":{"@type":"Person","name":"Jian-Feng Du"},"description":"参考 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，我的算法学习之路、程序员该如何学习算法 主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营） JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 termi"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95/"><link rel="icon" href="/img/Coding.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Life is short" type="application/atom+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" target="_blank" rel="noopener" href="https://github.com/2-3-5-7"><img src="/img/circle-avatar.png" alt="Life is short" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-05-24T06:59:53.463Z" title="2020/5/24 下午2:59:53">2020-05-24</time>发表</span><span class="level-item"><time dateTime="2021-06-05T02:41:47.930Z" title="2021/6/5 上午10:41:47">2021-06-05</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B9%A6%E4%B8%8E%E8%AF%BE%E7%AC%94%E8%AE%B0/">书与课笔记</a></span></div></div><h1 class="title is-3 is-size-4-mobile">算法</h1><div class="content"><p><a target="_blank" rel="noopener" href="https://www.learncpp.com/cpp-tutorial/appendix-c-the-end/">参考</a> 提出了几个方向，算法和数据结构，图形程序和网络程序（其中会用到多线程技术）。尽管写出图形程序会比较有趣，但算法是长期有益的内容，我不该回避。算法学习的两个参考，<a target="_blank" rel="noopener" href="http://lucida.me/blog/on-learning-algorithms/">我的算法学习之路</a>、<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19981544">程序员该如何学习算法</a></p>
 <p>主线是两本算法书（算法和邓俊辉的书），其次是网上的教程，最后再考虑视频（学堂x 的数据结构和算法训练营）</p>
-<p>JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 terminal 中 PATH 是错的 <a target="_blank" rel="noopener" href="https://my.oschina.net/u/4504994/blog/4257356">Java 环境搭建</a> <a target="_blank" rel="noopener" href="https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html#">Java Hello World</a> <a target="_blank" rel="noopener" href="http://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/">C++ 快速转 Java</a></p>
+<p>JAVA_HOME 可能要添加到用户变量（而非系统变量），否则 idea 的 terminal 中 PATH 是错的 <a target="_blank" rel="noopener" href="https://www.oracle.com/in/java/technologies/javase-downloads.html">JDK 下载地址</a> <a target="_blank" rel="noopener" href="https://my.oschina.net/u/4504994/blog/4257356">Java 环境搭建</a> <a target="_blank" rel="noopener" href="https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html#">Java Hello World</a> <a target="_blank" rel="noopener" href="http://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/">C++ 快速转 Java</a></p>
 <span id="more"></span>
 
 <p>生成 java doc</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压到当前文件夹，所以先切换到要解压的文件夹</span></span><br><span class="line">jar -xvf ..\algs4.jar</span><br><span class="line"><span class="comment"># 指定编码、要生成的目录、package name，jdk 11 生成的文档有问题，使用 jdk 14</span></span><br><span class="line">D:\soft\jdk-14.0.1\bin\javadoc -d D:\soft\java_lib\doc -encoding UTF-8 -charset UTF-8 edu.princeton.cs.algs4</span><br></pre></td></tr></table></figure>
 
-
-
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2066307/how-do-you-input-command-line-arguments-in-intellij-idea">修改命令行参数 Alt + Shift + F10</a>、<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project">添加 jar</a></p>
 <p>递归</p>
 <ul>
 <li>递归总有一个最简单的情况。个人注：就是程序归的时候</li>
@@ -33,6 +32,115 @@
 <p><a target="_blank" rel="noopener" href="https://www.cs.odu.edu/~zeil/cs361/latest/Public/recursionConversion/index.html">Converting Recursion to Iteration</a> 注意可简化的那几点</p>
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/12792738/quicksort-which-sub-part-should-be-sorted-first">Quicksort - which sub-part should be sorted first?</a> 对于循环的处理也是一样，在纸上画一画</p>
 <p><a target="_blank" rel="noopener" href="https://alienryderflex.com/quicksort/">Optimized QuickSort — C Implementation (Non-Recursive)</a> 这个还没看</p>
+<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><p>键与值，两种基本实现，三种重要数据类型：二叉查找树、红黑树、散列表</p>
+<p>需求与问题，大量的查找与插入操作，查找多于插入</p>
+<p>链表的无序实现，数组的有序实现，有改进，但当插入和查找是混合的，且表很大时，性能不够</p>
+<p>BST，好实现，性能关键取决于 key 的随机性，顺序和逆序插入性能最差。左侧子树小，右侧子树大，能保持顺序</p>
+<p>先实现 deleteMin 然后实现 delete 任意节点，关键是对于两个 child 的节点如何处理</p>
+<h2 id="平衡查找树"><a href="#平衡查找树" class="headerlink" title="平衡查找树"></a>平衡查找树</h2><p>3 links and 2 keys, 2-3 search trees, we continue up the tree, splitting 4-nodes and inserting their middle keys in their parents until reaching a 2-node, which we replace with a 3-node that does not need to be further split, or until reaching a 3-node at the root</p>
+<p>为了好实现 2-3 tree 使用 red-black BST，使用 2 个 2-node 表示 3-node，看实现代码来复习</p>
+<h2 id="Hash-tables"><a href="#Hash-tables" class="headerlink" title="Hash tables"></a>Hash tables</h2><ul>
+<li>正整数 modular hash 选取质数才能利用上 key 的所有 bit</li>
+<li>浮点，用二进制表示的所有位来 hash 而非乘以一个整数</li>
+<li>字符串，当作整数取模</li>
+<li>复合 key，像字符串一样拼接计算</li>
+</ul>
+<p>注意，要有数据实际测试 hash 函数的值是否均匀分布</p>
+<ul>
+<li>不支持顺序操作</li>
+<li>hash 函数的选择，在计算 hash 值时所有 bit 都被利用上，否则会导致性能问题</li>
+<li>时间与空间的平衡</li>
+<li>hash 值缓存到变量中避免重复计算</li>
+</ul>
+<p>数组实现的 hash 表要求小于 1/2 ，否则影响性能 </p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p>对比表格，一般用 Hash，但对于字符串 key、需要顺序操作等情况用红黑 BST</p>
+<p>对于稀疏矩阵点乘，hash 表更节省时间、空间</p>
+<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p>介绍</p>
+<ul>
+<li>4 种图，是否有向，是否有权重</li>
+<li>特别情况：平行边和自环</li>
+<li>在 P519 一些术语定义</li>
+<li>bipartite graph 是两组顶点，图中始终是一组中的顶点连接另一组</li>
+</ul>
+<p>输入方式，V E 整数对表示的边</p>
+<p>表示方式</p>
+<ul>
+<li>邻接矩阵，V x V 矩阵，占用空间大，无法表示平行边</li>
+<li>边数组，计算顶点的 adj 时耗时长</li>
+<li>顶点为索引的数组，每个元素为邻接的顶点链表，整章使用这种，空间占用与 V + E 成比例</li>
+<li>顶点链表也可用集合表示，性能对比和选择见 P527</li>
+</ul>
+<p>无向无权重</p>
+<ul>
+<li>算法实现与图的表示分离，即两个 class</li>
+<li>DFS<ul>
+<li>确定是否存在到某一顶点的路径，已经找到它</li>
+<li>查找有几个 Connected components，与 union-find 比，union-find 可以边添加边查询</li>
+</ul>
+</li>
+<li>BFS 确定是否存在到某一顶点的最短路径</li>
+<li>V 与 E 不明确给出，V 是字符串</li>
+</ul>
+<p>有向无权重</p>
+<ul>
+<li>可达性、环不易看出，DAG directed acyclic graph 无环图</li>
+<li>拓扑排序，所有的边向下指<ul>
+<li>preorder，调用前</li>
+<li>postorder，调用后存到队列</li>
+<li>reverse postorder，调用后存到栈。证明这种就是拓扑序，对于任意 v-&gt; w，w 肯定先入栈。执行 dfs(v) 时，要么 w 被标记了，无环时（有环时有 w-&gt;v 的情况），肯定已经返回入栈了，要么没被标记，dfs(w) 先返回先入栈</li>
+</ul>
+</li>
+<li>Strong components，关键是有环连接所有顶点。算法，以 GR 的 reverse postorder 用 dfs 遍历 G，每次 DFS 是一个 Strong component</li>
+<li>Kosaraju 算法证明，先证明连通的顶点通过 dfs 都能遍历到，通过假设 s-&gt;v 遍历不到来反证</li>
+<li>然后证明 dfs 遍历到的顶点都是连通的，对于 s-&gt;v，v 为任意顶点，还要证明在 G 中有 v-&gt;s 即 s-&gt;v 在 GR 中。因为在 reverse postorder GR 的结果中 s 先于 v （如 v 先于 s，则不会有 s-&gt;v，那样 v 就先被 mark 了），说明在 dfs GR 时 dfs(v) 先于 dfs(s) 结束，会有两种情况：dfs(v)-&gt;dfs(v) 结束 -&gt;dfs(s) -&gt; dfs(s) 结束，或 dfs(s) -&gt; dfs(v) -&gt; dfs(v) 结束 -&gt; dfs(s) 结束。因为在 GR 中有 v-&gt;s （因为 G 中有 s-&gt;v），则不可能是第一种情况，只剩第二种，第二种情况表明在 GR 中存在 s-&gt;v</li>
+<li>transitive closure 是将 v-&gt;w 的路径用边直连构成的图，因为边密集一般用矩阵表示。查询任意 v-&gt;w 的算法待完善，目前就是将 V 个顶点 dfs 的结果保存到数组</li>
+</ul>
+<p>无向有权重</p>
+<ul>
+<li>Minimum spanning tree MST，包含所有顶点的最小权重无环图，权重可以为 0 或负数</li>
+<li>一个 cut 将顶点分成两部分，crossing edge 就是其中一个顶点在这部分，另一个在另一部分</li>
+<li>最小权重的 crossing edge 一定在 MST 上，反证法假设不在 MST 上</li>
+<li>利用上面特性，每次将已在 MST 上的划为一组，V - 1 次后就有 MST 了</li>
+<li>数据表示中新增 Edge 类，基于此构建 EdgeWeightedGraph</li>
+<li>Lazy 算法，维护 crossing edge 队列，每次出队最小权重的，检查这个边的两个顶点是否已经在 MST 上，不符合则加到 MST，并添加邻边到队列，添加邻边时同样检查是否已经在 MST 上了</li>
+<li>eager 算法，维护每个 V 到 MST 的最短边和对应权重，每次 visit 标记顶点，即将其加入 MST，这时就要更新受到影响的边，如果边的顶点都在 MST 则跳过，否则更新后加入队列，每次出队最小权重的顶点来 visit。个人认为，这个算法的正确性仍然是基于分割的，队列中永远是 crossing edge，出队的就是最小的那个，MST 中的顶点不会被加进去，将要成为 MST 的也会先出队。这里用 marked 来表示在 MST 上的顶点，edgeTo、distTo 记录 crossing edge 和 MST</li>
+<li>Kruskal 算法，从最小的边开始，只要不与其它树构成环，就是 MST 上的边，从森林转变成树的算法</li>
+</ul>
+<p>有向有权重</p>
+<ul>
+<li>查找最短路径，Shortest-paths tree SPT</li>
+<li>放松 v-&gt;w，distTo[w] &gt; distTo[v] + e.weight (v-&gt;w weight)，更新 edgeTo[w] = e, distTo[w] = distTo[v] + e.weight。算法中用到的都是放松某个顶点，即放松所有 G.adj(v) 的边</li>
+<li><code>shortest-paths optimality conditions</code>，必要性证明：最短路径 distTo[w] 必须满足 distTo[w] &lt;= distTo[v] + e.weight()<br>反证法，假设有 distTo[w] &gt; distTo[v] + e.weight()，则 distTo[w] 就不是最短的了<br>充分性证明：满足 distTo[w] &lt;= distTo[v] + e.weight()，distTo[w] 就是最短路径了<br>不等式消除证明，具体见 P650，注意这里 distTo[w] 指的是某条路径的距离，e.weight 指的是最短路径中的那条边的权重</li>
+<li>relax 所有边直到没有边可以 relex，因此顺序很重要</li>
+<li>Dijkstra 算法每次取出最小的 distTo[v] 来 relax，因此 distTo[v] 不会被 relex 为更小，一直不变，而 distTo[w] 只会被 relex 为更小，所以 distTo[w] &lt;= distTo[v] + e.weight() 一直成立。另一种看法是，distTo 按照由小到大的顺序依次被求出</li>
+<li>对于无向图的最短路径，可转换成两条反方向同权重的有向边来求得</li>
+<li>对于求 s-&gt;t 的最短路径，可在 Dijkstra 求到 t 后停止继续求值</li>
+<li>无环图按拓扑排序来 relex，distTo[w] &lt;= distTo[v] + e.weight() 一直成立，因为 distTo[v] 在被 relex 后，不会再变，因为不会再有边指向 v，distTo[w] 只会递减<ul>
+<li>线性的耗时，比 Dijkstra 快</li>
+<li>支持负权重边</li>
+<li>求最长边，可把权重加负号</li>
+</ul>
+</li>
+<li>并行工作安排的时间取决于最长边，定义 s 和 t ，求 s 到 t 的最长路径。对于要求 v 必须在 w 开始后 d 之前开始的，转换为 v-&gt;w 的 -d 边。个人没完全理解，但是根据 P666，w 最多早于 v d 个时间单位，“早”用负边表示</li>
+<li>有环有负边的情况，s-&gt;v 的路径上有负权重的环，则不会有最短路径。这里实现负环检测，和无负环下的最短路径（有负环下存在简单路径，但该问题太难不学）。Bellman-Ford 算法证明，“算法导论”证明，假设存在最短路径 v1-&gt;v2-&gt;v3，则每次循环一定会按顺序 relax 一条边，这次循环 relax v1-&gt;v2 下次 v2-&gt;v3，虽然 v1-&gt;v2 也可能多 relax 其它边，但无法保证顺序，不考虑</li>
+<li>优化，根据 relax，只有上一轮 distTo 变了的顶点，它的射出边顶点 distTo 可能在这一轮改变，因此用队列记录这些顶点，而不用内层循环遍历所有边</li>
+<li>套汇问题，利用对数取负，转换为求最小的负环</li>
+</ul>
+<p>好的学习方法是两点，抓住主干，快速迭代，即获得快速高质量的反馈。遇到困难两种处理方法，要么逐步分解到简单步骤，要么绕过先解决其它问题</p>
+<h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><ul>
+<li>应用与编译器、信息检索、通信、基因序列</li>
+</ul>
+<p>对 R 敏感，R 太大会消耗很多时间和空间<br>必须要对小数组换其它排序，否则许多大小为 1 的小数组也会初始化 R 大小的数组和循环计算 indices<br>有很多 key 有相同的前缀时，会降低性能<br>小数组的处理大小 M 应该与 R 的平方根成比例，见 P718<br>这些 Proposition 得再看看，第二遍看的时候，简单理解记一下</p>
+<p>MSD and 3-way three-way string quicksort 的关系与 trie and TST 的关系对应</p>
+<p>子串搜索<br>pattern BAAAAA ，text BAAAAB</p>
+<h1 id="The-Algorithm-Design-Manual"><a href="#The-Algorithm-Design-Manual" class="headerlink" title="The Algorithm Design Manual"></a>The Algorithm Design Manual</h1><ul>
+<li>书分两部分，一部分讲解设计与分析算法，另一部分提供参考资料、实现、文献</li>
+<li>不强调理论证明，彩图帮助解释概念</li>
+<li>The Hitchhiker’s Guide to Algorithms，实践中常见的 75 个问题</li>
+<li>War stories，现实世界中的解决问题的故事</li>
+<li>网站上有视频、课件、wiki</li>
+<li>Stop and think，讲述思考过程和试错的 ？</li>
+</ul>
 </div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/%E9%94%AE%E7%9B%98%E9%BC%A0%E6%A0%87%E6%A8%A1%E6%8B%9F/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">键盘鼠标模拟</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B7%A5%E5%85%B7/%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/%E7%BA%AA%E5%BD%95%E7%89%87%E7%9B%AE%E5%BD%95/"><span class="level-item">纪录片目录</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
