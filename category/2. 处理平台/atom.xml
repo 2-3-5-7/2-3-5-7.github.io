@@ -5,42 +5,6 @@
     <link href="https://synrst.de" />
     <updated>1970-01-01T00:00:00.000Z</updated>
     <entry>
-        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</id>
-        <title>docker</title>
-        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/"/>
-        <content type="html">&lt;h1 id=&#34;1-安装&#34;&gt;&lt;a href=&#34;#1-安装&#34; class=&#34;headerlink&#34; title=&#34;1 安装&#34;&gt;&lt;/a&gt;1 安装&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04&#34;&gt;ubuntu 20.04 安装&lt;/a&gt;、&lt;a href=&#34;https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;避免每次输入 sudo  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo groupadd docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo usermod -aG docker &lt;span class=&#34;variable&#34;&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 激活新修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;newgrp docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提示没权限的话重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull cdrx/pyinstaller-linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/arm64 alpine:latest&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;保存和加载镜像&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker save -o &amp;lt;path &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; generated tar file&amp;gt; &amp;lt;image name&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker load -i &amp;lt;path to image tar file&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-容器&#34;&gt;&lt;a href=&#34;#3-容器&#34; class=&#34;headerlink&#34; title=&#34;3 容器&#34;&gt;&lt;/a&gt;3 容器&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;生成容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 指定容器名字方便操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v 是绑定，docker run 见 https://docs.docker.com/engine/reference/commandline/run/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -it --name table_bot -v /home/zack/code/table_bot:/src/ cdrx/pyinstaller-linux /bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 改成豆瓣源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; global.index-url https://pypi.tuna.tsinghua.edu.cn/simple&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;列出容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -s 占用大小，-a 所有，包括停止的容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;运行命令  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d: Detached mode: run command in the background&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -d table_bot bash -c &lt;span class=&#34;string&#34;&gt;&amp;#x27;/root/.pyenv/shims/pyinstaller -F bot.py &amp;amp;&amp;amp; cp dist/b .&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;进入 docker  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container&#34;&gt;修改端口映射&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4-API&#34;&gt;&lt;a href=&#34;#4-API&#34; class=&#34;headerlink&#34; title=&#34;4 API&#34;&gt;&lt;/a&gt;4 API&lt;/h1&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用 curl 和 jq 测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用法参考 https://stackoverflow.com/questions/41960751/docker-remote-api-filters-filter-out-network-by-name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/28054203/docker-remote-api-filter-exited&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -gG -XGET -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock &lt;span class=&#34;string&#34;&gt;&amp;#x27;http://localhost/v1.41/containers/json?limit=10&amp;#x27;&lt;/span&gt; --data-urlencode &lt;span class=&#34;string&#34;&gt;&amp;#x27;filters=&amp;#123;&amp;quot;status&amp;quot;: [&amp;quot;running&amp;quot;]&amp;#125;&amp;#x27;&lt;/span&gt; | jq &lt;span class=&#34;string&#34;&gt;&amp;#x27;.[] | &amp;#123;Id, Names&amp;#125;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h1 id=&#34;5-制作镜像&#34;&gt;&lt;a href=&#34;#5-制作镜像&#34; class=&#34;headerlink&#34; title=&#34;5 制作镜像&#34;&gt;&lt;/a&gt;5 制作镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如何编出更小的镜像 &lt;a href=&#34;https://jpetazzo.github.io/2020/02/01/quest-minimal-docker-images-part-1/&#34;&gt;系列文章&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;制作镜像&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t iebs .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要是网络不通可以试试 --network=host&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker build --network=host -t iebs .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可以用 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/#%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5-libc&#34;&gt;静态链接 libc&lt;/a&gt; 的方式编出单文件程序，Dockerfile 参考&lt;/p&gt;
-  &lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; scratch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;COPY&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; iiot_sdk /&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CMD&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; [&lt;span class=&#34;string&#34;&gt;&amp;quot;./iiot_sdk&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/</id>
         <title>kindle</title>
         <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/"/>
@@ -492,185 +456,6 @@
 &lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/index.php/Rsync#Full_system_backup&#34;&gt;Rsync full system backup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/</id>
-        <title>手机_电视_平板</title>
-        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/"/>
-        <content type="html">&lt;h1 id=&#34;1-ADB-卸载系统-App&#34;&gt;&lt;a href=&#34;#1-ADB-卸载系统-App&#34; class=&#34;headerlink&#34; title=&#34;1 ADB 卸载系统 App&#34;&gt;&lt;/a&gt;1 ADB 卸载系统 App&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;开发者选项，开启 USB 调试&lt;/li&gt;
-&lt;li&gt;安装 USB driver&lt;/li&gt;
-&lt;li&gt;下载 ADB 工具&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;2、3 放入 windows 建议安装 - ADB 中&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;获取包名，打开 App，输入 &lt;code&gt;adb shell dumpsys window | findstr mCurrentFocus&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;列出包，&lt;code&gt;adb shell pm list packages&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;恢复方法 &lt;code&gt;adb shell cmd package install-existing com.huawei.appmarket&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Andrioid 11无线调试&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;打开 usb 调试和无线调试&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;adb pair HOST[:PORT] [PAIRING CODE]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;adb connect 192.168.1.xxx:xxx  &amp;#x2F;&amp;#x2F; 注意端口和上门的配对端口不一样，无线调试的IP地址及端口&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;华为&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.mediacenter  音乐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.himovie  视频&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.wallet  钱包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.search  搜索&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hwread.al 阅读&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.browser 浏览器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.vassistant	语音助手。不建议删，开启可支持 AI 字幕&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.scanner	智慧视觉&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.intelligent	智能助手&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.android.pushagent  推送服务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.tips	智能提醒&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.baidu.input_huawei	百度输入法华为版&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hitouch 智慧识屏&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hiaction  智能识屏中控模块&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hiai 智慧引擎&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.recsys (HwHiAIDSEngine)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.pengine 智能建议&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.phoneservice 我的华为&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.contacts 联系人&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.huawei.android.hwouc 关闭系统更新，先清除数据，进入更新消除红点。disable-user 换成 enble 启用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.huawei.hwid  (HMS Core)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;小米，&lt;a href=&#34;https://fengooge.blogspot.com/2019/03/taking-ADB-to-uninstall-system-applications-in-MIUI-without-root.html&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.systemAdSolution  （小米系统广告解决方案，必删）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.analytics  （小米广告分析，必删）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.player  （小米音乐）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.video  （小米视频）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.videoplayer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.thememanager  （个性主题管理）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.translation.youdao  （有道翻译）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.translation.kingsoft  （金山翻译）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.quicksearchbox （搜索）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.browser  （浏览器）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.voiceassist  （小爱同学）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.miservice  （服务与反馈）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;健康只能 disable&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pm disable-user --user 0 com.mi.health&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pm enable com.mi.health&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;oppo a57t&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.usercenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.email&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.music&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespace&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespacelib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.gamecenter&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h1 id=&#34;2-备份与还原&#34;&gt;&lt;a href=&#34;#2-备份与还原&#34; class=&#34;headerlink&#34; title=&#34;2 备份与还原&#34;&gt;&lt;/a&gt;2 备份与还原&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;备份时，进行本地备份与云备份。本地备份后拷出到 PC，路径见下&lt;/li&gt;
-&lt;li&gt;还原时，先不登录云账号，进行本地备份的恢复。然后登录云端，进行云备份的还原。还原文件存放位置 &lt;code&gt;内部存储设备\MIUI\backup\AllBackup\日期开头的备份文件夹&lt;/code&gt;，没有则新建&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-Google-play&#34;&gt;&lt;a href=&#34;#3-Google-play&#34; class=&#34;headerlink&#34; title=&#34;3 Google play&#34;&gt;&lt;/a&gt;3 Google play&lt;/h1&gt;&lt;p&gt;目前小米和华为对 google 的支持都比较麻烦，谨慎升级系统，或者换到国际版系统&lt;/p&gt;
-&lt;h2 id=&#34;3-1-小米&#34;&gt;&lt;a href=&#34;#3-1-小米&#34; class=&#34;headerlink&#34; title=&#34;3.1 小米&#34;&gt;&lt;/a&gt;3.1 小米&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;准备&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.zhihu.com/question/50231539/answer/530627637&#34;&gt;怎么刷MIUI国际版Rom？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;按电源键 + 音量上键进入 recovery，长按电源键 + 音量下键进入 fastboot&lt;/li&gt;
-&lt;li&gt;备份微信聊天记录，进行桌面和其它内容的云同步&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.miui.com/unlock/&#34;&gt;解锁手机&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;刷入 recovery&lt;ul&gt;
-&lt;li&gt;下载 &lt;a href=&#34;https://developer.android.google.cn/studio/releases/platform-tools&#34;&gt;adb&lt;/a&gt;，安装 &lt;a href=&#34;https://web.vip.miui.com/page/info/mio/mio/detail?postId=18464849&amp;app_version=dev.20051&#34;&gt;小米手机驱动&lt;/a&gt; 或 &lt;a href=&#34;http://bigota.d.miui.com/tools/xiaomi_usb_driver.rar&#34;&gt;直接下载地址&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;开发者模式，开启 USB 调试&lt;/li&gt;
-&lt;li&gt;进 fastboot，&lt;code&gt;adb reboot bootloader&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;刷入 &lt;a href=&#34;https://twrp.me/xiaomi/xiaomimi9se.html&#34;&gt;twrp&lt;/a&gt;，&lt;code&gt;fastboot.exe flash recovery twrp-3.6.0_9-0-grus.img&lt;/code&gt;、&lt;code&gt;fastboot.exe reboot&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;装小米驱动后 fastboot 仍可能找不到设备，参考&lt;a href=&#34;https://blog.csdn.net/qz2014728/article/details/101760398&#34;&gt;这个&lt;/a&gt;。在设备管理器中，驱动更新选择 “从计算机的设备驱动列表中选择” – Android Phone – Android bootloader interface，忽略安装警告&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TWRP-3.3.0-0421-XIAOMI9SE-CN-wzsx150-fastboot.7z&lt;/code&gt;  是旧版备份&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;三清(Dalvik&amp;#x2F;Cache&amp;#x2F;Data)后，recovery 刷入 &lt;a href=&#34;https://xiaomi.eu/community/&#34;&gt;eu 版&lt;/a&gt; ，刷入后清除 data 分区，否则进不了系统。&lt;a href=&#34;https://cloud.tencent.com/developer/news/473261&#34;&gt;刷机双清、三清、四清&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;对于 &lt;code&gt;E30004: This package is for &amp;quot;grus&amp;quot; devices; this is a &amp;quot;&amp;quot;&lt;/code&gt; ，输入命令 setprop ro.product.device grus 和 setprop ro.build.product grus，&lt;a href=&#34;https://www.reddit.com/r/Xiaomi/comments/nphvzv/twrp_e30004_this_package_is_for_grus_devices_this/&#34;&gt;见&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;联网后用小米账户解锁，设置 WIFI 局域网代理从而可以登录 Google 账号，&lt;a href=&#34;https://blog.minamigo.moe/archives/287&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在 recovery 刷入 &lt;a href=&#34;https://magiskapp.com/zip/&#34;&gt;magisk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;App&lt;ul&gt;
-&lt;li&gt;安装 &lt;code&gt;除Win外软件\手机\mi9se&lt;/code&gt; 里面的小米应用商店、MX 播放器、系统应用删除&lt;/li&gt;
-&lt;li&gt;删除系统应用，视频、音乐、搜索、服务与反馈、浏览器&lt;/li&gt;
-&lt;li&gt;使用云同步恢复应用，Google Play 恢复应用&lt;/li&gt;
-&lt;li&gt;设置 magisk hide 等金融 App，同时选择隐藏 Magisk 包名&lt;/li&gt;
-&lt;li&gt;字体修改，默认 nato sans 在同一个作者中的找到 milan pro 安装并应用&lt;/li&gt;
-&lt;li&gt;不要用自带应用商店更新天气，会导致天气打不开&lt;/li&gt;
-&lt;li&gt;为了让 JuiceSSH 输入中文，用手心输入法，并禁止联网，apk 已备份&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;缺陷：没有公交卡、短信通知类不归类、电话没有来电识别，可以通过 &lt;a href=&#34;https://blog.minamigo.moe/archives/184&#34;&gt;Magisk 模块&lt;/a&gt; 解决，但该模块目前会导致无法双开应用。目前公交卡通过小米手环实现，暂时不折腾&lt;/li&gt;
-&lt;li&gt;Xposed&lt;ul&gt;
-&lt;li&gt;Magisk 安装 Riru-core&lt;/li&gt;
-&lt;li&gt;Github &lt;a href=&#34;https://github.com/LSPosed/LSPosed/releases&#34;&gt;下载&lt;/a&gt;，Magisk 本地安装最新 LSPosed&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;Magisk 模块安装最新 Riru - EdXposed v0.5.2.2_4683 （配合旧版 Riru-core 25.4.4.r426），安装 &lt;a href=&#34;https://github.com/ElderDrivers/EdXposed&#34;&gt;EdXposed Manager&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;安装需要的 xposed 模块，如 &lt;a href=&#34;https://github.com/nining377/dolby_beta&#34;&gt;杜比大喇叭&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;重启后生效&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;微信&lt;ul&gt;
-&lt;li&gt;用 wechat play 版体积更小&lt;/li&gt;
-&lt;li&gt;搜索 rec 打开深度清理，然后进入通用里面清理缓存&lt;/li&gt;
-&lt;li&gt;最终方法是备份聊天记录后还原&lt;/li&gt;
-&lt;li&gt;开启青少年模式、关怀模式去除公众号广告&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-2-华为&#34;&gt;&lt;a href=&#34;#3-2-华为&#34; class=&#34;headerlink&#34; title=&#34;3.2 华为&#34;&gt;&lt;/a&gt;3.2 华为&lt;/h2&gt;&lt;p&gt;安装 google play 见 &lt;code&gt;除Win外软件\华为M6&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=WwuDKmMuFX0&#34;&gt;这个视频&lt;/a&gt;，卸载当前版本”备份“，安装旧版本”备份“，恢复”谷歌服务助手“，激活后重启&lt;/li&gt;
-&lt;li&gt;时间改到 19 年（ 是否可以不改？），&lt;a href=&#34;https://www.youtube.com/watch?v=EnDl10mYijA&#34;&gt;顺序安装&lt;/a&gt; 1-5，关键的帐户管理器，使用&lt;a href=&#34;https://www.youtube.com/watch?v=xbcODqjP4Xo&amp;t=79s&#34;&gt;另一个视频&lt;/a&gt;中的，登录不上去重启一下。安装时所有 App 的权限都勾上&lt;/li&gt;
-&lt;li&gt;安装服务框架&lt;/li&gt;
-&lt;li&gt;关注视频账号的最新更新，没事不升级华为该死的系统&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;现在将应用商店地区切换到 中国香港，安装 Gspace，然后在里面就可以登陆 Google 账号，安装 Google play 应用了，&lt;a href=&#34;https://www.youtube.com/watch?v=__7U73TQaZE&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-3-应用购买&#34;&gt;&lt;a href=&#34;#3-3-应用购买&#34; class=&#34;headerlink&#34; title=&#34;3.3 应用购买&#34;&gt;&lt;/a&gt;3.3 应用购买&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;中国区不能购买应用，使用 &lt;code&gt;US Fake Address Generator&lt;/code&gt; 添加生成的美国地址（目前在用的见 prsnl），信用卡使用 VISA&lt;/li&gt;
-&lt;li&gt;挂美国代理，在页面中切换为美国区。删除旧的中国地址&lt;/li&gt;
-&lt;li&gt;信用卡会扣 1 美元测试，一段时间后自动退款&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;4-电视&#34;&gt;&lt;a href=&#34;#4-电视&#34; class=&#34;headerlink&#34; title=&#34;4 电视&#34;&gt;&lt;/a&gt;4 电视&lt;/h1&gt;&lt;h2 id=&#34;4-1-极米Z4X&#34;&gt;&lt;a href=&#34;#4-1-极米Z4X&#34; class=&#34;headerlink&#34; title=&#34;4.1 极米Z4X&#34;&gt;&lt;/a&gt;4.1 极米Z4X&lt;/h2&gt;&lt;p&gt;花 50 买的这个固件 &lt;code&gt;[小林固件]极米Z4X第三方官改，极致精简、去广告、ROOT，当贝桌面版&lt;/code&gt;，无法切换信号源。因为只有极米桌面才有信号源功能。联系卖家 QQ 群后，给了我新的固件，使用极米原版的 Launcher，且没 root。以后再也不买这种垃圾，还不如自己 root 后删系统应用呢。好像不 root 能用 ADB 也可以。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;刷入上面提到的小林固件，&lt;code&gt;jimi-z4-root-dangbei.zip&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;安装 &lt;code&gt;3C All-in-One Toolbox-Pro-v2.2.2c_build_200111-Mod-armeabi-v7a.apk&lt;/code&gt; 和极米桌面&lt;/li&gt;
-&lt;li&gt;用 3C 删掉当贝的那堆垃圾，其它系统应用也可以删，可以只留系统设置和无线投屏&lt;/li&gt;
-&lt;li&gt;配置极米桌面，删掉不用的栏目&lt;/li&gt;
-&lt;li&gt;用 3C ，应用管理 - 极米桌面 - 打开 - Open external Directory，删掉 cache 文件夹里面的内容，同时去掉 cache 的写入权限，这样极米桌面就没有下载的图片了&lt;/li&gt;
-&lt;li&gt;不要用这个。用 3C ，应用管理 - 极米桌面 - 打开 - 打开数据目录，databases 中的 okgo_server.db 如果被去掉所有权限，就能做到桌面上什么都没有，信号源功能还可用。原本打算这样然后再装一个 TV Launcher，但尝试后发现，在 Top_TV_Launcher 中无法看到极米桌面（其它 Launcher 也看不到），而不启动极米桌面就无法使用信号源，╮（╯＿╰）╭ 。而且使用其它 Launcher 再启动极米桌面会有一段延迟。看来只能是有裁剪的极米桌面才能达到我想要的效果&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/1V9H7uOOiIoplY78SBeruDg&#34;&gt;固件和 Apk 的共享链接&lt;/a&gt;&lt;br&gt;提取码：echo&lt;/p&gt;
-&lt;p&gt;技巧&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;更新到旧版本前，在现有版本中，忘记无线网络，避免联网后自动更新和下载广告&lt;/li&gt;
-&lt;li&gt;在官方版本中，将g 后缀文件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
-&lt;li&gt;常用媒体 ap、nyt、wsj、Economist、wired&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-1-华为-M6&#34;&gt;&lt;a href=&#34;#5-1-华为-M6&#34; class=&#34;headerlink&#34; title=&#34;5.1 华为 M6&#34;&gt;&lt;/a&gt;5.1 华为 M6&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://club.huawei.com/thread-21738309-1-1.html&#34;&gt;华为M6锁定后台&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;任务切换视图，下滑锁定（下滑时间长一点）&lt;/li&gt;
-&lt;li&gt;应用启动管理，改为手动，允许后台活动&lt;/li&gt;
-&lt;li&gt;电池优化，不允许优化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;清理生成的 hwbk 文件，&lt;a href=&#34;https://www.keccak.top/memo/delete-hwbk.html&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;先 &lt;code&gt;adb pm uninstall --user 0 com.huawei.systemserver&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;再用 MiXplorer 重命名所有要删除的文件&lt;/li&gt;
-&lt;li&gt;最后用 MiXplorer 删除改名后的文件和所在文件夹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-2-kindle-fire&#34;&gt;&lt;a href=&#34;#5-2-kindle-fire&#34; class=&#34;headerlink&#34; title=&#34;5.2 kindle fire&#34;&gt;&lt;/a&gt;5.2 kindle fire&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;使用美国亚马逊账户登陆，否则没有应用商店，如果已经用中国账户登陆可以重置，并在账户中删除设备。安装完 netflix 后，可以切换到中国区账户，方便接收文档&lt;/li&gt;
-&lt;li&gt;实际测试，只要注销中国区并用美国账户登录，应用商店即可转区，不需要重置设备&lt;/li&gt;
-&lt;li&gt;开启 usb 调试，使用 Fire Toolbox V12.0 去广告、换 launcher、装 Google Play、隐藏底部导航条、去除自带应用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1. 清除 download failed 提示&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell dumpsys notification，获得通知 app 的名称为 com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm enable com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2. disable search 应用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.android.quicksearchbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;5-3-文石-BOOX-Poke2&#34;&gt;&lt;a href=&#34;#5-3-文石-BOOX-Poke2&#34; class=&#34;headerlink&#34; title=&#34;5.3 文石 BOOX Poke2&#34;&gt;&lt;/a&gt;5.3 文石 BOOX Poke2&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;在应用设置中选择安装 谷歌套件&lt;/li&gt;
-&lt;li&gt;需要有 GSF ID 认证的步骤，否则会提示未获得保护机制认证，操作见 &lt;a href=&#34;https://www.bilibili.com/video/BV1E64y147kz&#34;&gt;boox应用技巧：googleplay的设置和绑定&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;添加词典，在 dicts 中新建词典名称文件夹，拷入词典，拔出数据线，&lt;a href=&#34;https://www.bilibili.com/video/BV1RX4y1A7y3&#34;&gt;操作见&lt;/a&gt;，词典文件与欧路共用简明英汉&lt;/li&gt;
-&lt;li&gt;V2 引擎关闭会导致有的图书看不到目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;6-WSA&#34;&gt;&lt;a href=&#34;#6-WSA&#34; class=&#34;headerlink&#34; title=&#34;6 WSA&#34;&gt;&lt;/a&gt;6 WSA&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;解决 WSA 占用 C 盘空间过大，移动到其它盘，&lt;a href=&#34;https://www.windows11tips.com/how-to-customize-windows-subsystem-for-android-file-path-in-windows-11/&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;C:\Users\用户名\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache&amp;quot; &amp;quot;D:\LocalCache&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;7-App&#34;&gt;&lt;a href=&#34;#7-App&#34; class=&#34;headerlink&#34; title=&#34;7 App&#34;&gt;&lt;/a&gt;7 App&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;名称&lt;/th&gt;
-&lt;th&gt;用处&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;FolderSync Pro&lt;/td&gt;
-&lt;td&gt;用于 Google Drive 同步文件，也支持其它网盘服务&lt;br /&gt;选择同步到本地，同步选项开启同步删除操作&lt;br /&gt;poke2 要安装 chrome 浏览器才能弹出授权&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-</content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -1567,6 +1352,221 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;装系统软件使用 WTG(win to go) 辅助工具，默认选项增加分区配置即可，方法参考 &lt;a href=&#34;https://post.smzdm.com/p/a5dx4507/&#34;&gt;教大家制作 “随身携带” 的 Windows 11 系统&lt;/a&gt; 和 &lt;a href=&#34;https://bbs.luobotou.org/forum-88-1.html&#34;&gt;萝卜头IT论坛&lt;/a&gt;。傲梅也有 WinToGo 工具，可以试试 &lt;a href=&#34;https://www.disktool.cn/wintogo.html&#34;&gt;口袋系统WinToGo&lt;/a&gt;。另外按照这个&lt;a href=&#34;https://www.bilibili.com/read/cv15813796/&#34;&gt;教程&lt;/a&gt;，Rufus 也可以&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/</id>
+        <title>手机_电视_平板</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/"/>
+        <content type="html">&lt;h1 id=&#34;1-ADB-卸载系统-App&#34;&gt;&lt;a href=&#34;#1-ADB-卸载系统-App&#34; class=&#34;headerlink&#34; title=&#34;1 ADB 卸载系统 App&#34;&gt;&lt;/a&gt;1 ADB 卸载系统 App&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;开发者选项，开启 USB 调试&lt;/li&gt;
+&lt;li&gt;安装 USB driver&lt;/li&gt;
+&lt;li&gt;下载 ADB 工具&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2、3 放入 windows 建议安装 - ADB 中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;获取包名，打开 App，输入 &lt;code&gt;adb shell dumpsys window | findstr mCurrentFocus&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;列出包，&lt;code&gt;adb shell pm list packages&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;恢复方法 &lt;code&gt;adb shell cmd package install-existing com.huawei.appmarket&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Andrioid 11无线调试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开 usb 调试和无线调试&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb pair HOST[:PORT] [PAIRING CODE]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;adb connect 192.168.1.xxx:xxx  &amp;#x2F;&amp;#x2F; 注意端口和上门的配对端口不一样，无线调试的IP地址及端口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;华为&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.mediacenter  音乐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.himovie  视频&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.wallet  钱包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.search  搜索&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hwread.al 阅读&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.browser 浏览器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.vassistant	语音助手。不建议删，开启可支持 AI 字幕&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.scanner	智慧视觉&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.intelligent	智能助手&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.android.pushagent  推送服务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.tips	智能提醒&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.baidu.input_huawei	百度输入法华为版&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hitouch 智慧识屏&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hiaction  智能识屏中控模块&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hiai 智慧引擎&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.recsys (HwHiAIDSEngine)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.pengine 智能建议&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.phoneservice 我的华为&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.contacts 联系人&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.huawei.android.hwouc 关闭系统更新，先清除数据，进入更新消除红点。disable-user 换成 enble 启用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.huawei.hwid  (HMS Core)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;小米，&lt;a href=&#34;https://fengooge.blogspot.com/2019/03/taking-ADB-to-uninstall-system-applications-in-MIUI-without-root.html&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.systemAdSolution  （小米系统广告解决方案，必删）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.analytics  （小米广告分析，必删）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.player  （小米音乐）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.video  （小米视频）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.videoplayer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.thememanager  （个性主题管理）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.translation.youdao  （有道翻译）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.translation.kingsoft  （金山翻译）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.quicksearchbox （搜索）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.browser  （浏览器）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.voiceassist  （小爱同学）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.miservice  （服务与反馈）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;健康只能 disable&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pm disable-user --user 0 com.mi.health&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pm enable com.mi.health&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;oppo a57t&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.usercenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.email&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.music&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespace&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespacelib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.gamecenter&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h1 id=&#34;2-备份与还原&#34;&gt;&lt;a href=&#34;#2-备份与还原&#34; class=&#34;headerlink&#34; title=&#34;2 备份与还原&#34;&gt;&lt;/a&gt;2 备份与还原&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;备份时，进行本地备份与云备份。本地备份后拷出到 PC，路径见下&lt;/li&gt;
+&lt;li&gt;还原时，先不登录云账号，进行本地备份的恢复。然后登录云端，进行云备份的还原。还原文件存放位置 &lt;code&gt;内部存储设备\MIUI\backup\AllBackup\日期开头的备份文件夹&lt;/code&gt;，没有则新建&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-Google-play&#34;&gt;&lt;a href=&#34;#3-Google-play&#34; class=&#34;headerlink&#34; title=&#34;3 Google play&#34;&gt;&lt;/a&gt;3 Google play&lt;/h1&gt;&lt;p&gt;目前小米和华为对 google 的支持都比较麻烦，谨慎升级系统，或者换到国际版系统&lt;/p&gt;
+&lt;h2 id=&#34;3-1-小米&#34;&gt;&lt;a href=&#34;#3-1-小米&#34; class=&#34;headerlink&#34; title=&#34;3.1 小米&#34;&gt;&lt;/a&gt;3.1 小米&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;准备&lt;ul&gt;
+&lt;li&gt;参考 &lt;a href=&#34;https://www.zhihu.com/question/50231539/answer/530627637&#34;&gt;怎么刷MIUI国际版Rom？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;按电源键 + 音量上键进入 recovery，长按电源键 + 音量下键进入 fastboot&lt;/li&gt;
+&lt;li&gt;备份微信聊天记录，进行桌面和其它内容的云同步&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.miui.com/unlock/&#34;&gt;解锁手机&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;刷入 recovery&lt;ul&gt;
+&lt;li&gt;下载 &lt;a href=&#34;https://developer.android.google.cn/studio/releases/platform-tools&#34;&gt;adb&lt;/a&gt;，安装 &lt;a href=&#34;https://web.vip.miui.com/page/info/mio/mio/detail?postId=18464849&amp;app_version=dev.20051&#34;&gt;小米手机驱动&lt;/a&gt; 或 &lt;a href=&#34;http://bigota.d.miui.com/tools/xiaomi_usb_driver.rar&#34;&gt;直接下载地址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;开发者模式，开启 USB 调试&lt;/li&gt;
+&lt;li&gt;进 fastboot，&lt;code&gt;adb reboot bootloader&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;刷入 &lt;a href=&#34;https://twrp.me/xiaomi/xiaomimi9se.html&#34;&gt;twrp&lt;/a&gt;，&lt;code&gt;fastboot.exe flash recovery twrp-3.6.0_9-0-grus.img&lt;/code&gt;、&lt;code&gt;fastboot.exe reboot&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;装小米驱动后 fastboot 仍可能找不到设备，参考&lt;a href=&#34;https://blog.csdn.net/qz2014728/article/details/101760398&#34;&gt;这个&lt;/a&gt;。在设备管理器中，驱动更新选择 “从计算机的设备驱动列表中选择” – Android Phone – Android bootloader interface，忽略安装警告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TWRP-3.3.0-0421-XIAOMI9SE-CN-wzsx150-fastboot.7z&lt;/code&gt;  是旧版备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;三清(Dalvik&amp;#x2F;Cache&amp;#x2F;Data)后，recovery 刷入 &lt;a href=&#34;https://xiaomi.eu/community/&#34;&gt;eu 版&lt;/a&gt; ，刷入后清除 data 分区，否则进不了系统。&lt;a href=&#34;https://cloud.tencent.com/developer/news/473261&#34;&gt;刷机双清、三清、四清&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;对于 &lt;code&gt;E30004: This package is for &amp;quot;grus&amp;quot; devices; this is a &amp;quot;&amp;quot;&lt;/code&gt; ，输入命令 setprop ro.product.device grus 和 setprop ro.build.product grus，&lt;a href=&#34;https://www.reddit.com/r/Xiaomi/comments/nphvzv/twrp_e30004_this_package_is_for_grus_devices_this/&#34;&gt;见&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;联网后用小米账户解锁，设置 WIFI 局域网代理从而可以登录 Google 账号，&lt;a href=&#34;https://blog.minamigo.moe/archives/287&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 recovery 刷入 &lt;a href=&#34;https://magiskapp.com/zip/&#34;&gt;magisk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;App&lt;ul&gt;
+&lt;li&gt;安装 &lt;code&gt;除Win外软件\手机\mi9se&lt;/code&gt; 里面的小米应用商店、MX 播放器、系统应用删除&lt;/li&gt;
+&lt;li&gt;删除系统应用，视频、音乐、搜索、服务与反馈、浏览器&lt;/li&gt;
+&lt;li&gt;使用云同步恢复应用，Google Play 恢复应用&lt;/li&gt;
+&lt;li&gt;设置 magisk hide 等金融 App，同时选择隐藏 Magisk 包名&lt;/li&gt;
+&lt;li&gt;字体修改，默认 nato sans 在同一个作者中的找到 milan pro 安装并应用&lt;/li&gt;
+&lt;li&gt;不要用自带应用商店更新天气，会导致天气打不开&lt;/li&gt;
+&lt;li&gt;为了让 JuiceSSH 输入中文，用手心输入法，并禁止联网，apk 已备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺陷：没有公交卡、短信通知类不归类、电话没有来电识别，可以通过 &lt;a href=&#34;https://blog.minamigo.moe/archives/184&#34;&gt;Magisk 模块&lt;/a&gt; 解决，但该模块目前会导致无法双开应用。目前公交卡通过小米手环实现，暂时不折腾&lt;/li&gt;
+&lt;li&gt;Xposed&lt;ul&gt;
+&lt;li&gt;Magisk 安装 Riru-core&lt;/li&gt;
+&lt;li&gt;Github &lt;a href=&#34;https://github.com/LSPosed/LSPosed/releases&#34;&gt;下载&lt;/a&gt;，Magisk 本地安装最新 LSPosed&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Magisk 模块安装最新 Riru - EdXposed v0.5.2.2_4683 （配合旧版 Riru-core 25.4.4.r426），安装 &lt;a href=&#34;https://github.com/ElderDrivers/EdXposed&#34;&gt;EdXposed Manager&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安装需要的 xposed 模块，如 &lt;a href=&#34;https://github.com/nining377/dolby_beta&#34;&gt;杜比大喇叭&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;重启后生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;微信&lt;ul&gt;
+&lt;li&gt;用 wechat play 版体积更小&lt;/li&gt;
+&lt;li&gt;搜索 rec 打开深度清理，然后进入通用里面清理缓存&lt;/li&gt;
+&lt;li&gt;最终方法是备份聊天记录后还原&lt;/li&gt;
+&lt;li&gt;开启青少年模式、关怀模式去除公众号广告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-2-华为&#34;&gt;&lt;a href=&#34;#3-2-华为&#34; class=&#34;headerlink&#34; title=&#34;3.2 华为&#34;&gt;&lt;/a&gt;3.2 华为&lt;/h2&gt;&lt;p&gt;安装 google play 见 &lt;code&gt;除Win外软件\华为M6&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=WwuDKmMuFX0&#34;&gt;这个视频&lt;/a&gt;，卸载当前版本”备份“，安装旧版本”备份“，恢复”谷歌服务助手“，激活后重启&lt;/li&gt;
+&lt;li&gt;时间改到 19 年（ 是否可以不改？），&lt;a href=&#34;https://www.youtube.com/watch?v=EnDl10mYijA&#34;&gt;顺序安装&lt;/a&gt; 1-5，关键的帐户管理器，使用&lt;a href=&#34;https://www.youtube.com/watch?v=xbcODqjP4Xo&amp;t=79s&#34;&gt;另一个视频&lt;/a&gt;中的，登录不上去重启一下。安装时所有 App 的权限都勾上&lt;/li&gt;
+&lt;li&gt;安装服务框架&lt;/li&gt;
+&lt;li&gt;关注视频账号的最新更新，没事不升级华为该死的系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;现在将应用商店地区切换到 中国香港，安装 Gspace，然后在里面就可以登陆 Google 账号，安装 Google play 应用了，&lt;a href=&#34;https://www.youtube.com/watch?v=__7U73TQaZE&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-3-应用购买&#34;&gt;&lt;a href=&#34;#3-3-应用购买&#34; class=&#34;headerlink&#34; title=&#34;3.3 应用购买&#34;&gt;&lt;/a&gt;3.3 应用购买&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;中国区不能购买应用，使用 &lt;code&gt;US Fake Address Generator&lt;/code&gt; 添加生成的美国地址（目前在用的见 prsnl），信用卡使用 VISA&lt;/li&gt;
+&lt;li&gt;挂美国代理，在页面中切换为美国区。删除旧的中国地址&lt;/li&gt;
+&lt;li&gt;信用卡会扣 1 美元测试，一段时间后自动退款&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;4-电视&#34;&gt;&lt;a href=&#34;#4-电视&#34; class=&#34;headerlink&#34; title=&#34;4 电视&#34;&gt;&lt;/a&gt;4 电视&lt;/h1&gt;&lt;h2 id=&#34;4-1-极米Z4X&#34;&gt;&lt;a href=&#34;#4-1-极米Z4X&#34; class=&#34;headerlink&#34; title=&#34;4.1 极米Z4X&#34;&gt;&lt;/a&gt;4.1 极米Z4X&lt;/h2&gt;&lt;p&gt;花 50 买的这个固件 &lt;code&gt;[小林固件]极米Z4X第三方官改，极致精简、去广告、ROOT，当贝桌面版&lt;/code&gt;，无法切换信号源。因为只有极米桌面才有信号源功能。联系卖家 QQ 群后，给了我新的固件，使用极米原版的 Launcher，且没 root。以后再也不买这种垃圾，还不如自己 root 后删系统应用呢。好像不 root 能用 ADB 也可以。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;刷入上面提到的小林固件，&lt;code&gt;jimi-z4-root-dangbei.zip&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;安装 &lt;code&gt;3C All-in-One Toolbox-Pro-v2.2.2c_build_200111-Mod-armeabi-v7a.apk&lt;/code&gt; 和极米桌面&lt;/li&gt;
+&lt;li&gt;用 3C 删掉当贝的那堆垃圾，其它系统应用也可以删，可以只留系统设置和无线投屏&lt;/li&gt;
+&lt;li&gt;配置极米桌面，删掉不用的栏目&lt;/li&gt;
+&lt;li&gt;用 3C ，应用管理 - 极米桌面 - 打开 - Open external Directory，删掉 cache 文件夹里面的内容，同时去掉 cache 的写入权限，这样极米桌面就没有下载的图片了&lt;/li&gt;
+&lt;li&gt;不要用这个。用 3C ，应用管理 - 极米桌面 - 打开 - 打开数据目录，databases 中的 okgo_server.db 如果被去掉所有权限，就能做到桌面上什么都没有，信号源功能还可用。原本打算这样然后再装一个 TV Launcher，但尝试后发现，在 Top_TV_Launcher 中无法看到极米桌面（其它 Launcher 也看不到），而不启动极米桌面就无法使用信号源，╮（╯＿╰）╭ 。而且使用其它 Launcher 再启动极米桌面会有一段延迟。看来只能是有裁剪的极米桌面才能达到我想要的效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/1V9H7uOOiIoplY78SBeruDg&#34;&gt;固件和 Apk 的共享链接&lt;/a&gt;&lt;br&gt;提取码：echo&lt;/p&gt;
+&lt;p&gt;技巧&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更新到旧版本前，在现有版本中，忘记无线网络，避免联网后自动更新和下载广告&lt;/li&gt;
+&lt;li&gt;在官方版本中，将g 后缀文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
+&lt;li&gt;常用媒体 ap、nyt、wsj、Economist、wired&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-1-华为-M6&#34;&gt;&lt;a href=&#34;#5-1-华为-M6&#34; class=&#34;headerlink&#34; title=&#34;5.1 华为 M6&#34;&gt;&lt;/a&gt;5.1 华为 M6&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://club.huawei.com/thread-21738309-1-1.html&#34;&gt;华为M6锁定后台&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;任务切换视图，下滑锁定（下滑时间长一点）&lt;/li&gt;
+&lt;li&gt;应用启动管理，改为手动，允许后台活动&lt;/li&gt;
+&lt;li&gt;电池优化，不允许优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;清理生成的 hwbk 文件，&lt;a href=&#34;https://www.keccak.top/memo/delete-hwbk.html&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;先 &lt;code&gt;adb pm uninstall --user 0 com.huawei.systemserver&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;再用 MiXplorer 重命名所有要删除的文件&lt;/li&gt;
+&lt;li&gt;最后用 MiXplorer 删除改名后的文件和所在文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-2-kindle-fire&#34;&gt;&lt;a href=&#34;#5-2-kindle-fire&#34; class=&#34;headerlink&#34; title=&#34;5.2 kindle fire&#34;&gt;&lt;/a&gt;5.2 kindle fire&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用美国亚马逊账户登陆，否则没有应用商店，如果已经用中国账户登陆可以重置，并在账户中删除设备。安装完 netflix 后，可以切换到中国区账户，方便接收文档&lt;/li&gt;
+&lt;li&gt;实际测试，只要注销中国区并用美国账户登录，应用商店即可转区，不需要重置设备&lt;/li&gt;
+&lt;li&gt;开启 usb 调试，使用 Fire Toolbox V12.0 去广告、换 launcher、装 Google Play、隐藏底部导航条、去除自带应用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1. 清除 download failed 提示&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell dumpsys notification，获得通知 app 的名称为 com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm enable com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2. disable search 应用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.android.quicksearchbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;5-3-文石-BOOX-Poke2&#34;&gt;&lt;a href=&#34;#5-3-文石-BOOX-Poke2&#34; class=&#34;headerlink&#34; title=&#34;5.3 文石 BOOX Poke2&#34;&gt;&lt;/a&gt;5.3 文石 BOOX Poke2&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在应用设置中选择安装 谷歌套件&lt;/li&gt;
+&lt;li&gt;需要有 GSF ID 认证的步骤，否则会提示未获得保护机制认证，操作见 &lt;a href=&#34;https://www.bilibili.com/video/BV1E64y147kz&#34;&gt;boox应用技巧：googleplay的设置和绑定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;添加词典，在 dicts 中新建词典名称文件夹，拷入词典，拔出数据线，&lt;a href=&#34;https://www.bilibili.com/video/BV1RX4y1A7y3&#34;&gt;操作见&lt;/a&gt;，词典文件与欧路共用简明英汉&lt;/li&gt;
+&lt;li&gt;V2 引擎关闭会导致有的图书看不到目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-WSA&#34;&gt;&lt;a href=&#34;#6-WSA&#34; class=&#34;headerlink&#34; title=&#34;6 WSA&#34;&gt;&lt;/a&gt;6 WSA&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;解决 WSA 占用 C 盘空间过大，移动到其它盘，&lt;a href=&#34;https://www.windows11tips.com/how-to-customize-windows-subsystem-for-android-file-path-in-windows-11/&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;C:\Users\用户名\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache&amp;quot; &amp;quot;D:\LocalCache&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-App&#34;&gt;&lt;a href=&#34;#7-App&#34; class=&#34;headerlink&#34; title=&#34;7 App&#34;&gt;&lt;/a&gt;7 App&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名称&lt;/th&gt;
+&lt;th&gt;用处&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;FolderSync Pro&lt;/td&gt;
+&lt;td&gt;用于 Google Drive 同步文件，也支持其它网盘服务&lt;br /&gt;选择同步到本地，同步选项开启同步删除操作&lt;br /&gt;poke2 要安装 chrome 浏览器才能弹出授权&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</id>
+        <title>docker</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/"/>
+        <content type="html">&lt;h1 id=&#34;1-安装&#34;&gt;&lt;a href=&#34;#1-安装&#34; class=&#34;headerlink&#34; title=&#34;1 安装&#34;&gt;&lt;/a&gt;1 安装&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04&#34;&gt;ubuntu 20.04 安装&lt;/a&gt;、&lt;a href=&#34;https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;避免每次输入 sudo  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo groupadd docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo usermod -aG docker &lt;span class=&#34;variable&#34;&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 激活新修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;newgrp docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提示没权限的话重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull cdrx/pyinstaller-linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/arm64 alpine:latest&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;保存和加载镜像&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker save -o &amp;lt;path &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; generated tar file&amp;gt; &amp;lt;image name&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker load -i &amp;lt;path to image tar file&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-容器&#34;&gt;&lt;a href=&#34;#3-容器&#34; class=&#34;headerlink&#34; title=&#34;3 容器&#34;&gt;&lt;/a&gt;3 容器&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;生成容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 指定容器名字方便操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v 是绑定，docker run 见 https://docs.docker.com/engine/reference/commandline/run/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -it --name table_bot -v /home/zack/code/table_bot:/src/ cdrx/pyinstaller-linux /bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 改成豆瓣源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; global.index-url https://pypi.tuna.tsinghua.edu.cn/simple&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;列出容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -s 占用大小，-a 所有，包括停止的容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;运行命令  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d: Detached mode: run command in the background&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -d table_bot bash -c &lt;span class=&#34;string&#34;&gt;&amp;#x27;/root/.pyenv/shims/pyinstaller -F bot.py &amp;amp;&amp;amp; cp dist/b .&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;进入 docker  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container&#34;&gt;修改端口映射&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-API&#34;&gt;&lt;a href=&#34;#4-API&#34; class=&#34;headerlink&#34; title=&#34;4 API&#34;&gt;&lt;/a&gt;4 API&lt;/h1&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用 curl 和 jq 测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用法参考 https://stackoverflow.com/questions/41960751/docker-remote-api-filters-filter-out-network-by-name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/28054203/docker-remote-api-filter-exited&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -gG -XGET -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock &lt;span class=&#34;string&#34;&gt;&amp;#x27;http://localhost/v1.41/containers/json?limit=10&amp;#x27;&lt;/span&gt; --data-urlencode &lt;span class=&#34;string&#34;&gt;&amp;#x27;filters=&amp;#123;&amp;quot;status&amp;quot;: [&amp;quot;running&amp;quot;]&amp;#125;&amp;#x27;&lt;/span&gt; | jq &lt;span class=&#34;string&#34;&gt;&amp;#x27;.[] | &amp;#123;Id, Names&amp;#125;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h1 id=&#34;5-制作镜像&#34;&gt;&lt;a href=&#34;#5-制作镜像&#34; class=&#34;headerlink&#34; title=&#34;5 制作镜像&#34;&gt;&lt;/a&gt;5 制作镜像&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如何编出更小的镜像 &lt;a href=&#34;https://jpetazzo.github.io/2020/02/01/quest-minimal-docker-images-part-1/&#34;&gt;系列文章&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;制作镜像&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t iebs .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要是网络不通可以试试 --network=host&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker build --network=host -t iebs .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可以用 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/#%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5-libc&#34;&gt;静态链接 libc&lt;/a&gt; 的方式编出单文件程序，Dockerfile 参考&lt;/p&gt;
+  &lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; scratch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;COPY&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; iiot_sdk /&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CMD&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; [&lt;span class=&#34;string&#34;&gt;&amp;quot;./iiot_sdk&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
