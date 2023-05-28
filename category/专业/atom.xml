@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://2-3-5-7.github.io</id>
+    <id>https://synrst.de</id>
     <title>自强不息 厚德载物 • Posts by &#34;专业&#34; category</title>
-    <link href="https://2-3-5-7.github.io" />
+    <link href="https://synrst.de" />
     <updated>1970-01-01T00:00:00.000Z</updated>
     <entry>
-        <id>https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/</id>
+        <id>https://synrst.de/%E4%B8%93%E4%B8%9A/OOC/</id>
         <title>OOC</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/"/>
+        <link rel="alternate" href="https://synrst.de/%E4%B8%93%E4%B8%9A/OOC/"/>
         <content type="html">&lt;p&gt;&lt;a href=&#34;https://lwn.net/Articles/444910/&#34;&gt;Object-oriented design patterns in the kernel 1，多态部分&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://lwn.net/Articles/446317/&#34;&gt;Object-oriented design patterns in the kernel 2，继承部分&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;下载保存&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring21/cos217/&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring21/cos217/&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/&lt;/a&gt;&lt;/p&gt;

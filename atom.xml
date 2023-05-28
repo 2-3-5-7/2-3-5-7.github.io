@@ -1,13 +1,20 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://2-3-5-7.github.io</id>
+    <id>https://synrst.de</id>
     <title>自强不息 厚德载物</title>
-    <link href="https://2-3-5-7.github.io" />
+    <link href="https://synrst.de" />
     <updated>1970-01-01T00:00:00.000Z</updated>
     <entry>
-        <id>https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/</id>
+        <title>体检</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/"/>
+        <content type="html"></content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E4%B8%93%E4%B8%9A/OOC/</id>
         <title>OOC</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/"/>
+        <link rel="alternate" href="https://synrst.de/%E4%B8%93%E4%B8%9A/OOC/"/>
         <content type="html">&lt;p&gt;&lt;a href=&#34;https://lwn.net/Articles/444910/&#34;&gt;Object-oriented design patterns in the kernel 1，多态部分&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://lwn.net/Articles/446317/&#34;&gt;Object-oriented design patterns in the kernel 2，继承部分&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;下载保存&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring21/cos217/&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring21/cos217/&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/&lt;/a&gt;&lt;/p&gt;
@@ -110,23 +117,171 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/</id>
-        <title>体检</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/"/>
-        <content type="html"></content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/</id>
         <title>保险</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/"/>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/"/>
         <content type="html"></content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/</id>
+        <title>应急物品清单</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/"/>
+        <content type="html">&lt;h1 id=&#34;1-急救&#34;&gt;&lt;a href=&#34;#1-急救&#34; class=&#34;headerlink&#34; title=&#34;1 急救&#34;&gt;&lt;/a&gt;1 急救&lt;/h1&gt;&lt;p&gt;注意购买接触伤口的物品时是否为&lt;strong&gt;无菌&lt;/strong&gt;，选择京东正规店铺，清单按照 1 人使用准备&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;清单&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 个人防护 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10X 丁腈手套（乳胶手套可能引起部分人过敏）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10X 医用外科口罩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 护目镜&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 人工呼吸面罩&amp;#x2F;面膜&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 清洁与消毒 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3X 酒精消毒片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3X 碘伏消毒片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;40X 碘伏棉签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 止血 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10X 医用纱布（10 * 10cm）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3X 医用纱布（20 * 30cm）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;CELOX 止血粉 15g&lt;/del&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 急救止血绷带&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 压缩曲线纱布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 旋压式止血带&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 包扎与固定 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 三角巾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 可塑夹板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 医用胶布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 急救用具 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 镊子&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 冰袋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 保温毯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;剪刀&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;体温计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;药品&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;保鲜膜 （包裹烧烫伤部位）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;肾上腺素注射笔 EpiPen&lt;/del&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;2-防火&#34;&gt;&lt;a href=&#34;#2-防火&#34; class=&#34;headerlink&#34; title=&#34;2 防火&#34;&gt;&lt;/a&gt;2 防火&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;清单&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;灭火毯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;灭火器。避免底部受潮，检查压力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;过滤式呼吸器。不要挪动，避免失效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;烟雾报警器。定期测试&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;缓降器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;3-防灾&#34;&gt;&lt;a href=&#34;#3-防灾&#34; class=&#34;headerlink&#34; title=&#34;3 防灾&#34;&gt;&lt;/a&gt;3 防灾&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;清单&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;强光手电&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;逃生哨&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;破窗器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;手摇收音机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;打火石&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;净水片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;4-其它&#34;&gt;&lt;a href=&#34;#4-其它&#34; class=&#34;headerlink&#34; title=&#34;4 其它&#34;&gt;&lt;/a&gt;4 其它&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;事先约定好几个汇合的避难地点，参考 &lt;a href=&#34;http://yjj.shenyang.gov.cn/html/YJGLJ/156012750115842/155981218836498/158883594889849/5011584241706584.html&#34;&gt;沈阳市应急管理局-应急避难场所&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;每次多购买些食物用作备用食物，并随着日常消耗和补充&lt;/li&gt;
+&lt;li&gt;应急卡片，疾病、过敏信息、紧急联系人、特殊血型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-参考清单&#34;&gt;&lt;a href=&#34;#5-参考清单&#34; class=&#34;headerlink&#34; title=&#34;5 参考清单&#34;&gt;&lt;/a&gt;5 参考清单&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/%E5%AE%B6%E5%BA%AD%E5%8C%BB%E7%96%97%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%8C%87%E5%AF%BC%E7%9B%AE%E5%BD%95-%E5%8C%97%E4%BA%AC%E6%80%A5%E6%95%91%E4%B8%AD%E5%BF%83.png&#34;&gt;&lt;br&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/%E5%AE%B6%E5%BA%AD%E5%BA%94%E6%80%A5%E7%89%A9%E8%B4%A8%E5%82%A8%E5%A4%87%E5%BB%BA%E8%AE%AE%E6%B8%85%E5%8D%95-%E5%9B%BD%E5%AE%B6%E5%BA%94%E6%80%A5%E5%B9%BF%E6%92%AD.jpg&#34;&gt;&lt;/p&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/</id>
         <title>急救</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/"/>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/"/>
         <content type="html">&lt;h1 id=&#34;1-内容结构&#34;&gt;&lt;a href=&#34;#1-内容结构&#34; class=&#34;headerlink&#34; title=&#34;1 内容结构&#34;&gt;&lt;/a&gt;1 内容结构&lt;/h1&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph TD
  急救 --&gt; 基础 &amp; 短时致命 &amp; 内科 &amp; 外科 &amp; 其它 &amp; 平时准备
     基础 --&gt; 为什么学 &amp; 学习渠道 &amp; 法律问题 &amp; 施救流程 &amp; 环境安全和个人防护 &amp; 无反应有呼吸 &amp; 打120 &amp; 取急救箱和AED
@@ -661,173 +816,9 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/</id>
-        <title>朋友</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/"/>
-        <content type="html">&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/../%E6%9C%8B%E5%8F%8B/%E6%88%91%E5%92%8C%E6%9C%8B%E5%8F%8B.png&#34; alt=&#34;我和朋友&#34;&gt;&lt;/p&gt;
-&lt;p&gt;对应的思维导图在 asset 中&lt;/p&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/</id>
-        <title>应急物品清单</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/"/>
-        <content type="html">&lt;h1 id=&#34;1-急救&#34;&gt;&lt;a href=&#34;#1-急救&#34; class=&#34;headerlink&#34; title=&#34;1 急救&#34;&gt;&lt;/a&gt;1 急救&lt;/h1&gt;&lt;p&gt;注意购买接触伤口的物品时是否为&lt;strong&gt;无菌&lt;/strong&gt;，选择京东正规店铺，清单按照 1 人使用准备&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;清单&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;—– 个人防护 —–&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10X 丁腈手套（乳胶手套可能引起部分人过敏）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10X 医用外科口罩&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 护目镜&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2X 人工呼吸面罩&amp;#x2F;面膜&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;—– 清洁与消毒 —–&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3X 酒精消毒片&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3X 碘伏消毒片&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;40X 碘伏棉签&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;—– 止血 —–&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10X 医用纱布（10 * 10cm）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3X 医用纱布（20 * 30cm）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;del&gt;CELOX 止血粉 15g&lt;/del&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 急救止血绷带&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 压缩曲线纱布&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 旋压式止血带&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;—– 包扎与固定 —–&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2X 三角巾&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 可塑夹板&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2X 医用胶布&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;—– 急救用具 —–&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 镊子&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2X 冰袋&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1X 保温毯&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;剪刀&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;体温计&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;药品&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;保鲜膜 （包裹烧烫伤部位）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;del&gt;肾上腺素注射笔 EpiPen&lt;/del&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;2-防火&#34;&gt;&lt;a href=&#34;#2-防火&#34; class=&#34;headerlink&#34; title=&#34;2 防火&#34;&gt;&lt;/a&gt;2 防火&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;清单&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;灭火毯&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;灭火器。避免底部受潮，检查压力&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;过滤式呼吸器。不要挪动，避免失效&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;烟雾报警器。定期测试&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;缓降器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;3-防灾&#34;&gt;&lt;a href=&#34;#3-防灾&#34; class=&#34;headerlink&#34; title=&#34;3 防灾&#34;&gt;&lt;/a&gt;3 防灾&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;清单&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;强光手电&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;逃生哨&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;破窗器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;手摇收音机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;打火石&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;净水片&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;4-其它&#34;&gt;&lt;a href=&#34;#4-其它&#34; class=&#34;headerlink&#34; title=&#34;4 其它&#34;&gt;&lt;/a&gt;4 其它&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;事先约定好几个汇合的避难地点，参考 &lt;a href=&#34;http://yjj.shenyang.gov.cn/html/YJGLJ/156012750115842/155981218836498/158883594889849/5011584241706584.html&#34;&gt;沈阳市应急管理局-应急避难场所&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;每次多购买些食物用作备用食物，并随着日常消耗和补充&lt;/li&gt;
-&lt;li&gt;应急卡片，疾病、过敏信息、紧急联系人、特殊血型&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;5-参考清单&#34;&gt;&lt;a href=&#34;#5-参考清单&#34; class=&#34;headerlink&#34; title=&#34;5 参考清单&#34;&gt;&lt;/a&gt;5 参考清单&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/%E5%AE%B6%E5%BA%AD%E5%8C%BB%E7%96%97%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%8C%87%E5%AF%BC%E7%9B%AE%E5%BD%95-%E5%8C%97%E4%BA%AC%E6%80%A5%E6%95%91%E4%B8%AD%E5%BF%83.png&#34;&gt;&lt;br&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/%E5%AE%B6%E5%BA%AD%E5%BA%94%E6%80%A5%E7%89%A9%E8%B4%A8%E5%82%A8%E5%A4%87%E5%BB%BA%E8%AE%AE%E6%B8%85%E5%8D%95-%E5%9B%BD%E5%AE%B6%E5%BA%94%E6%80%A5%E5%B9%BF%E6%92%AD.jpg&#34;&gt;&lt;/p&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%86%A5%E6%83%B3/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%86%A5%E6%83%B3/</id>
         <title>冥想</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%86%A5%E6%83%B3/"/>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%86%A5%E6%83%B3/"/>
         <content type="html">&lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/a05080lthpa.html&#34;&gt;卡巴金的正念解释&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.iqiyi.com/w_19rs7ysyh1.html&#34;&gt;正念让我们更幸福&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/a0500cz18en.html&#34;&gt;不如意的事就是会发生&lt;/a&gt;&lt;/p&gt;
@@ -950,9 +941,18 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E5%93%81%E9%80%89%E8%B4%AD/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/</id>
+        <title>朋友</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/../%E6%9C%8B%E5%8F%8B/%E6%88%91%E5%92%8C%E6%9C%8B%E5%8F%8B.png&#34; alt=&#34;我和朋友&#34;&gt;&lt;/p&gt;
+&lt;p&gt;对应的思维导图在 asset 中&lt;/p&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E5%93%81%E9%80%89%E8%B4%AD/</id>
         <title>物品选购</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E5%93%81%E9%80%89%E8%B4%AD/"/>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E5%93%81%E9%80%89%E8%B4%AD/"/>
         <content type="html">&lt;p&gt;更多选购要查以前的为知笔记了&lt;/p&gt;
 &lt;h1 id=&#34;1-手机&#34;&gt;&lt;a href=&#34;#1-手机&#34; class=&#34;headerlink&#34; title=&#34;1 手机&#34;&gt;&lt;/a&gt;1 手机&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;爱电子产品推荐，安兔兔性价比排行，什么值得买测评&lt;/li&gt;
@@ -1109,9 +1109,35 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/</id>
+        <title>物理环境框架</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/"/>
+        <content type="html">&lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
+物理环境 --&gt; 人 &amp; 周围环境
+    人 --&gt; 身体健康 &amp; 心理健康
+        身体健康 --&gt; 意外 &amp; 疾病
+            意外 --&gt; 防火 &amp; 急救 &amp; 防灾 &amp; 保险 &amp; 应急物品清单
+                防火 &amp; 急救 &amp; 防灾 --&gt; 疾病
+            疾病 --&gt; 锻炼 &amp; 食物 &amp; 体检 &amp; 保险
+        心理健康 --&gt; 冥想 &amp; 朋友
+    周围环境 --&gt; 理财 &amp; 朋友
+        理财 --&gt; 物品选购&lt;/pre&gt;
+
+
+&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/</id>
+        <title>锻炼</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/"/>
+        <content type="html"></content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/</id>
         <title>防火</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/"/>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/"/>
         <content type="html">&lt;h1 id=&#34;1-背景&#34;&gt;&lt;a href=&#34;#1-背景&#34; class=&#34;headerlink&#34; title=&#34;1 背景&#34;&gt;&lt;/a&gt;1 背景&lt;/h1&gt;&lt;h2 id=&#34;1-1-火灾数据统计&#34;&gt;&lt;a href=&#34;#1-1-火灾数据统计&#34; class=&#34;headerlink&#34; title=&#34;1.1 火灾数据统计&#34;&gt;&lt;/a&gt;1.1 火灾数据统计&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1349,85 +1375,27 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/</id>
-        <title>锻炼</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/"/>
-        <content type="html"></content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/</id>
-        <title>物理环境框架</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/"/>
-        <content type="html">&lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
-物理环境 --&gt; 人 &amp; 周围环境
-    人 --&gt; 身体健康 &amp; 心理健康
-        身体健康 --&gt; 意外 &amp; 疾病
-            意外 --&gt; 防火 &amp; 急救 &amp; 防灾 &amp; 保险 &amp; 应急物品清单
-                防火 &amp; 急救 &amp; 防灾 --&gt; 疾病
-            疾病 --&gt; 锻炼 &amp; 食物 &amp; 体检 &amp; 保险
-        心理健康 --&gt; 冥想 &amp; 朋友
-    周围环境 --&gt; 理财 &amp; 朋友
-        理财 --&gt; 物品选购&lt;/pre&gt;
-
-
-&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/</id>
-        <title>kindle</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/"/>
-        <content type="html">&lt;h1 id=&#34;1-设置&#34;&gt;&lt;a href=&#34;#1-设置&#34; class=&#34;headerlink&#34; title=&#34;1 设置&#34;&gt;&lt;/a&gt;1 设置&lt;/h1&gt;&lt;p&gt;字体和词典在 kindle 环境文件夹&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把电子书过滤设置选为“全部内容”，然后把电子书排序设置选为“收藏夹” 。&lt;a href=&#34;https://bookfere.com/post/140.html&#34;&gt;用收藏夹分类电子书&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;字体放在 fonts 文件夹，自带英文字体可以用 &lt;code&gt;Baskerville &lt;/code&gt;，中文字体思源黑体还好，思源宋体（Source Han Serif）太浅不要用，&lt;a href=&#34;https://sspai.com/post/38705&#34;&gt;思源宋体，如何评价，以及如何正确使用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;词典放在 documents\dictionaries 文件夹&lt;/li&gt;
-&lt;li&gt;一本英汉：与 PC 词典相同的简明英汉（160万），一本英英：Merriam-Webster’s Advanced Learner’s Dictionary，&lt;a href=&#34;https://blog.ohiyox.in/read/85.html&#34;&gt;选择依据&lt;/a&gt;。其它为 kindle 自带，现代英汉、汉英、汉语，Oxford&lt;/li&gt;
-&lt;li&gt;kindle 不适合阅读长篇英英解释，如需彻底理解单词，用 kindlemate 导出生词本到欧路词典背，见 词典软件。或者在平板上用 kindle App 同步过来，使用欧路词典&lt;/li&gt;
-&lt;li&gt;文章订阅，kindle4rss。发送频率 3 天，否则要经常删除云端文档，不需要同步可以关闭云端存档。不再使用的两个订阅 &lt;a href=&#34;https://feed43.com/5507628278627385.xml&#34;&gt;田间小站-双语阅读&lt;/a&gt;、&lt;a href=&#34;https://feed43.com/6180220188002736.xml&#34;&gt;经济学人双语版&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;kindle 正版书也可以切换到其它国家购买，同时可以装 google play 版本和中国版，实现双开。由于 kindle for pc 复制后会插入空格和一行来源，需要编程&lt;a href=&#34;https://aasukaa.blogspot.com/2016/11/pc-kindle.html&#34;&gt;实现自动去除&lt;/a&gt;，对于需要做笔记的书暂不考虑购买正版，且calibre 去 drm 插件对 kfx 格式支持也不够好&lt;/li&gt;
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</id>
+        <title>下载</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/"/>
+        <content type="html">&lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
+&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
+&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2-书籍来源&#34;&gt;&lt;a href=&#34;#2-书籍来源&#34; class=&#34;headerlink&#34; title=&#34;2 书籍来源&#34;&gt;&lt;/a&gt;2 书籍来源&lt;/h1&gt;&lt;h1 id=&#34;3-书籍处理&#34;&gt;&lt;a href=&#34;#3-书籍处理&#34; class=&#34;headerlink&#34; title=&#34;3 书籍处理&#34;&gt;&lt;/a&gt;3 书籍处理&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/../../3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/&#34;&gt;电子书处理&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4-字体处理&#34;&gt;&lt;a href=&#34;#4-字体处理&#34; class=&#34;headerlink&#34; title=&#34;4 字体处理&#34;&gt;&lt;/a&gt;4 字体处理&lt;/h1&gt;&lt;p&gt;字体正常是 4 个文件放入 kindle，比如 NotoSans-Bold、NotoSans-BoldItalic、NotoSans-Italic、NotoSans-Regular&lt;/p&gt;
-&lt;p&gt;有时缺少斜体 Italic，可用 ttx 工具将想要加入的斜体的 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; 中 &lt;code&gt;nameID=1&lt;/code&gt; 改为与 regular 相同的 FontFamily，可能不止一处&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# ubuntu 下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 解开 regular 看一下 name 表中的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ttx -o r.ttx Play-Regular.ttf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 解开 Italic 将 name 表中的值改为和 regular 中的一样，可能有多个&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ttx -o i.ttx Play-Italic.ttf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重新打包回 ttf&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ttx -o i.ttf i.ttx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;参见 &lt;a href=&#34;https://mine260309.me/archives/1148&#34;&gt;Kindle Paperwhite 添加中文字体&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;5-App-端&#34;&gt;&lt;a href=&#34;#5-App-端&#34; class=&#34;headerlink&#34; title=&#34;5 App 端&#34;&gt;&lt;/a&gt;5 App 端&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;android 可以替换中文字体，相同文件名覆盖即可，路径 &lt;code&gt;内部存储\Android\data\com.amazon.kindlefc\files\fonts&lt;/code&gt;。但无法替换英文字体，只能 root 后把系统字体换掉 &lt;a href=&#34;https://lifehacker.com/how-to-change-kindle-app-fonts-on-android-5873409&#34;&gt;How to Change Kindle App Fonts on Android&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;android 可以替换自带词典，相同文件名覆盖即可，路径 &amp;#96;&amp;#96;内部存储\Android\data\com.amazon.kindlefc\files\B007Z8VKSQ\B007Z8VKSQ_EBOK.prc&amp;#96; ，文件名其实是词典的 ASIN，这本是默认的英汉词典，也可以替换 B00AZOHEGE  现代汉英词典，作为备用词典&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;6-辅助软件&#34;&gt;&lt;a href=&#34;#6-辅助软件&#34; class=&#34;headerlink&#34; title=&#34;6 辅助软件&#34;&gt;&lt;/a&gt;6 辅助软件&lt;/h1&gt;&lt;p&gt;软件在 windows 环境文件夹&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;sdr-Cleaner 清理无用sdr&lt;/li&gt;
-&lt;li&gt;Kindle Mate 笔记与生词管理&lt;/li&gt;
-&lt;li&gt;calibre 电子书管理与格式转换&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;7-生词本&#34;&gt;&lt;a href=&#34;#7-生词本&#34; class=&#34;headerlink&#34; title=&#34;7 生词本&#34;&gt;&lt;/a&gt;7 生词本&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bookfere.com/post/465.html&#34;&gt;Kindle 阅读器“生词本”功能详细使用说明&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;配合 kindlemate 背生词 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/85959508&#34;&gt;欧路词典应用指南&lt;/a&gt;&lt;/li&gt;
+&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
+&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/</id>
-        <title>食物</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/"/>
-        <content type="html">&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://nh.ckcest.cn/default/page/loadPageIndex?pageId=40a8e21962e945a9b8b94e9729b32aee&#34;&gt;各国居民膳食营养素参考摄入量查询&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;asset 中 “美国居民膳食指南（2020-2025）”的中英文 pdf&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/</id>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/</id>
         <title>防灾</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/"/>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/"/>
         <content type="html">&lt;h1 id=&#34;1-地震&#34;&gt;&lt;a href=&#34;#1-地震&#34; class=&#34;headerlink&#34; title=&#34;1 地震&#34;&gt;&lt;/a&gt;1 地震&lt;/h1&gt;&lt;p&gt;&lt;a id=&#34;xn06&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;发生前&lt;ul&gt;
@@ -1523,224 +1491,20 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/</id>
-        <title>手机_电视_平板</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/"/>
-        <content type="html">&lt;h1 id=&#34;1-ADB-卸载系统-App&#34;&gt;&lt;a href=&#34;#1-ADB-卸载系统-App&#34; class=&#34;headerlink&#34; title=&#34;1 ADB 卸载系统 App&#34;&gt;&lt;/a&gt;1 ADB 卸载系统 App&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;开发者选项，开启 USB 调试&lt;/li&gt;
-&lt;li&gt;安装 USB driver&lt;/li&gt;
-&lt;li&gt;下载 ADB 工具&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;2、3 放入 windows 建议安装 - ADB 中&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;获取包名，打开 App，输入 &lt;code&gt;adb shell dumpsys window | findstr mCurrentFocus&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;列出包，&lt;code&gt;adb shell pm list packages&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;恢复方法 &lt;code&gt;adb shell cmd package install-existing com.huawei.appmarket&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Andrioid 11无线调试&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;打开 usb 调试和无线调试&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;adb pair HOST[:PORT] [PAIRING CODE]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;adb connect 192.168.1.xxx:xxx  &amp;#x2F;&amp;#x2F; 注意端口和上门的配对端口不一样，无线调试的IP地址及端口&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;华为&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.mediacenter  音乐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.himovie  视频&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.wallet  钱包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.search  搜索&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hwread.al 阅读&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.browser 浏览器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.vassistant	语音助手。不建议删，开启可支持 AI 字幕&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.scanner	智慧视觉&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.intelligent	智能助手&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.android.pushagent  推送服务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.tips	智能提醒&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.baidu.input_huawei	百度输入法华为版&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hitouch 智慧识屏&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hiaction  智能识屏中控模块&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.hiai 智慧引擎&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.recsys (HwHiAIDSEngine)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.pengine 智能建议&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.huawei.phoneservice 我的华为&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.contacts 联系人&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.huawei.android.hwouc 关闭系统更新，先清除数据，进入更新消除红点。disable-user 换成 enble 启用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.huawei.hwid  (HMS Core)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;小米，&lt;a href=&#34;https://fengooge.blogspot.com/2019/03/taking-ADB-to-uninstall-system-applications-in-MIUI-without-root.html&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.systemAdSolution  （小米系统广告解决方案，必删）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.analytics  （小米广告分析，必删）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.player  （小米音乐）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.video  （小米视频）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.videoplayer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.thememanager  （个性主题管理）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.translation.youdao  （有道翻译）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.translation.kingsoft  （金山翻译）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.quicksearchbox （搜索）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.browser  （浏览器）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.voiceassist  （小爱同学）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.miui.miservice  （服务与反馈）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;健康只能 disable&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pm disable-user --user 0 com.mi.health&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pm enable com.mi.health&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;oppo a57t&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.usercenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.email&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.music&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespace&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespacelib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.gamecenter&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h1 id=&#34;2-备份与还原&#34;&gt;&lt;a href=&#34;#2-备份与还原&#34; class=&#34;headerlink&#34; title=&#34;2 备份与还原&#34;&gt;&lt;/a&gt;2 备份与还原&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;备份时，进行本地备份与云备份。本地备份后拷出到 PC，路径见下&lt;/li&gt;
-&lt;li&gt;还原时，先不登录云账号，进行本地备份的恢复。然后登录云端，进行云备份的还原。还原文件存放位置 &lt;code&gt;内部存储设备\MIUI\backup\AllBackup\日期开头的备份文件夹&lt;/code&gt;，没有则新建&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-Google-play&#34;&gt;&lt;a href=&#34;#3-Google-play&#34; class=&#34;headerlink&#34; title=&#34;3 Google play&#34;&gt;&lt;/a&gt;3 Google play&lt;/h1&gt;&lt;p&gt;目前小米和华为对 google 的支持都比较麻烦，谨慎升级系统，或者换到国际版系统&lt;/p&gt;
-&lt;h2 id=&#34;3-1-小米&#34;&gt;&lt;a href=&#34;#3-1-小米&#34; class=&#34;headerlink&#34; title=&#34;3.1 小米&#34;&gt;&lt;/a&gt;3.1 小米&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;准备&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.zhihu.com/question/50231539/answer/530627637&#34;&gt;怎么刷MIUI国际版Rom？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;按电源键 + 音量上键进入 recovery，长按电源键 + 音量下键进入 fastboot&lt;/li&gt;
-&lt;li&gt;备份微信聊天记录，进行桌面和其它内容的云同步&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.miui.com/unlock/&#34;&gt;解锁手机&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;刷入 recovery&lt;ul&gt;
-&lt;li&gt;下载 &lt;a href=&#34;https://developer.android.google.cn/studio/releases/platform-tools&#34;&gt;adb&lt;/a&gt;，安装 &lt;a href=&#34;https://web.vip.miui.com/page/info/mio/mio/detail?postId=18464849&amp;app_version=dev.20051&#34;&gt;小米手机驱动&lt;/a&gt; 或 &lt;a href=&#34;http://bigota.d.miui.com/tools/xiaomi_usb_driver.rar&#34;&gt;直接下载地址&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;开发者模式，开启 USB 调试&lt;/li&gt;
-&lt;li&gt;进 fastboot，&lt;code&gt;adb reboot bootloader&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;刷入 &lt;a href=&#34;https://twrp.me/xiaomi/xiaomimi9se.html&#34;&gt;twrp&lt;/a&gt;，&lt;code&gt;fastboot.exe flash recovery twrp-3.6.0_9-0-grus.img&lt;/code&gt;、&lt;code&gt;fastboot.exe reboot&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;装小米驱动后 fastboot 仍可能找不到设备，参考&lt;a href=&#34;https://blog.csdn.net/qz2014728/article/details/101760398&#34;&gt;这个&lt;/a&gt;。在设备管理器中，驱动更新选择 “从计算机的设备驱动列表中选择” – Android Phone – Android bootloader interface，忽略安装警告&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TWRP-3.3.0-0421-XIAOMI9SE-CN-wzsx150-fastboot.7z&lt;/code&gt;  是旧版备份&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;三清(Dalvik&amp;#x2F;Cache&amp;#x2F;Data)后，recovery 刷入 &lt;a href=&#34;https://xiaomi.eu/community/&#34;&gt;eu 版&lt;/a&gt; ，刷入后清除 data 分区，否则进不了系统。&lt;a href=&#34;https://cloud.tencent.com/developer/news/473261&#34;&gt;刷机双清、三清、四清&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;对于 &lt;code&gt;E30004: This package is for &amp;quot;grus&amp;quot; devices; this is a &amp;quot;&amp;quot;&lt;/code&gt; ，输入命令 setprop ro.product.device grus 和 setprop ro.build.product grus，&lt;a href=&#34;https://www.reddit.com/r/Xiaomi/comments/nphvzv/twrp_e30004_this_package_is_for_grus_devices_this/&#34;&gt;见&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;联网后用小米账户解锁，设置 WIFI 局域网代理从而可以登录 Google 账号，&lt;a href=&#34;https://blog.minamigo.moe/archives/287&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在 recovery 刷入 &lt;a href=&#34;https://magiskapp.com/zip/&#34;&gt;magisk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;App&lt;ul&gt;
-&lt;li&gt;安装 &lt;code&gt;除Win外软件\手机\mi9se&lt;/code&gt; 里面的小米应用商店、MX 播放器、系统应用删除&lt;/li&gt;
-&lt;li&gt;删除系统应用，视频、音乐、搜索、服务与反馈、浏览器&lt;/li&gt;
-&lt;li&gt;使用云同步恢复应用，Google Play 恢复应用&lt;/li&gt;
-&lt;li&gt;设置 magisk hide 等金融 App，同时选择隐藏 Magisk 包名&lt;/li&gt;
-&lt;li&gt;字体修改，默认 nato sans 在同一个作者中的找到 milan pro 安装并应用&lt;/li&gt;
-&lt;li&gt;不要用自带应用商店更新天气，会导致天气打不开&lt;/li&gt;
-&lt;li&gt;为了让 JuiceSSH 输入中文，用手心输入法，并禁止联网，apk 已备份&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;缺陷：没有公交卡、短信通知类不归类、电话没有来电识别，可以通过 &lt;a href=&#34;https://blog.minamigo.moe/archives/184&#34;&gt;Magisk 模块&lt;/a&gt; 解决，但该模块目前会导致无法双开应用。目前公交卡通过小米手环实现，暂时不折腾&lt;/li&gt;
-&lt;li&gt;Xposed&lt;ul&gt;
-&lt;li&gt;Magisk 安装 Riru-core&lt;/li&gt;
-&lt;li&gt;Github &lt;a href=&#34;https://github.com/LSPosed/LSPosed/releases&#34;&gt;下载&lt;/a&gt;，Magisk 本地安装最新 LSPosed&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;Magisk 模块安装最新 Riru - EdXposed v0.5.2.2_4683 （配合旧版 Riru-core 25.4.4.r426），安装 &lt;a href=&#34;https://github.com/ElderDrivers/EdXposed&#34;&gt;EdXposed Manager&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;安装需要的 xposed 模块，如 &lt;a href=&#34;https://github.com/nining377/dolby_beta&#34;&gt;杜比大喇叭&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;重启后生效&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;微信&lt;ul&gt;
-&lt;li&gt;用 wechat play 版体积更小&lt;/li&gt;
-&lt;li&gt;搜索 rec 打开深度清理，然后进入通用里面清理缓存&lt;/li&gt;
-&lt;li&gt;最终方法是备份聊天记录后还原&lt;/li&gt;
-&lt;li&gt;开启青少年模式、关怀模式去除公众号广告&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-2-华为&#34;&gt;&lt;a href=&#34;#3-2-华为&#34; class=&#34;headerlink&#34; title=&#34;3.2 华为&#34;&gt;&lt;/a&gt;3.2 华为&lt;/h2&gt;&lt;p&gt;安装 google play 见 &lt;code&gt;除Win外软件\华为M6&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=WwuDKmMuFX0&#34;&gt;这个视频&lt;/a&gt;，卸载当前版本”备份“，安装旧版本”备份“，恢复”谷歌服务助手“，激活后重启&lt;/li&gt;
-&lt;li&gt;时间改到 19 年（ 是否可以不改？），&lt;a href=&#34;https://www.youtube.com/watch?v=EnDl10mYijA&#34;&gt;顺序安装&lt;/a&gt; 1-5，关键的帐户管理器，使用&lt;a href=&#34;https://www.youtube.com/watch?v=xbcODqjP4Xo&amp;t=79s&#34;&gt;另一个视频&lt;/a&gt;中的，登录不上去重启一下。安装时所有 App 的权限都勾上&lt;/li&gt;
-&lt;li&gt;安装服务框架&lt;/li&gt;
-&lt;li&gt;关注视频账号的最新更新，没事不升级华为该死的系统&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;现在将应用商店地区切换到 中国香港，安装 Gspace，然后在里面就可以登陆 Google 账号，安装 Google play 应用了，&lt;a href=&#34;https://www.youtube.com/watch?v=__7U73TQaZE&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-3-应用购买&#34;&gt;&lt;a href=&#34;#3-3-应用购买&#34; class=&#34;headerlink&#34; title=&#34;3.3 应用购买&#34;&gt;&lt;/a&gt;3.3 应用购买&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;中国区不能购买应用，使用 &lt;code&gt;US Fake Address Generator&lt;/code&gt; 添加生成的美国地址（目前在用的见 prsnl），信用卡使用 VISA&lt;/li&gt;
-&lt;li&gt;挂美国代理，在页面中切换为美国区。删除旧的中国地址&lt;/li&gt;
-&lt;li&gt;信用卡会扣 1 美元测试，一段时间后自动退款&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;4-电视&#34;&gt;&lt;a href=&#34;#4-电视&#34; class=&#34;headerlink&#34; title=&#34;4 电视&#34;&gt;&lt;/a&gt;4 电视&lt;/h1&gt;&lt;h2 id=&#34;4-1-极米Z4X&#34;&gt;&lt;a href=&#34;#4-1-极米Z4X&#34; class=&#34;headerlink&#34; title=&#34;4.1 极米Z4X&#34;&gt;&lt;/a&gt;4.1 极米Z4X&lt;/h2&gt;&lt;p&gt;花 50 买的这个固件 &lt;code&gt;[小林固件]极米Z4X第三方官改，极致精简、去广告、ROOT，当贝桌面版&lt;/code&gt;，无法切换信号源。因为只有极米桌面才有信号源功能。联系卖家 QQ 群后，给了我新的固件，使用极米原版的 Launcher，且没 root。以后再也不买这种垃圾，还不如自己 root 后删系统应用呢。好像不 root 能用 ADB 也可以。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;刷入上面提到的小林固件，&lt;code&gt;jimi-z4-root-dangbei.zip&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;安装 &lt;code&gt;3C All-in-One Toolbox-Pro-v2.2.2c_build_200111-Mod-armeabi-v7a.apk&lt;/code&gt; 和极米桌面&lt;/li&gt;
-&lt;li&gt;用 3C 删掉当贝的那堆垃圾，其它系统应用也可以删，可以只留系统设置和无线投屏&lt;/li&gt;
-&lt;li&gt;配置极米桌面，删掉不用的栏目&lt;/li&gt;
-&lt;li&gt;用 3C ，应用管理 - 极米桌面 - 打开 - Open external Directory，删掉 cache 文件夹里面的内容，同时去掉 cache 的写入权限，这样极米桌面就没有下载的图片了&lt;/li&gt;
-&lt;li&gt;不要用这个。用 3C ，应用管理 - 极米桌面 - 打开 - 打开数据目录，databases 中的 okgo_server.db 如果被去掉所有权限，就能做到桌面上什么都没有，信号源功能还可用。原本打算这样然后再装一个 TV Launcher，但尝试后发现，在 Top_TV_Launcher 中无法看到极米桌面（其它 Launcher 也看不到），而不启动极米桌面就无法使用信号源，╮（╯＿╰）╭ 。而且使用其它 Launcher 再启动极米桌面会有一段延迟。看来只能是有裁剪的极米桌面才能达到我想要的效果&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/1V9H7uOOiIoplY78SBeruDg&#34;&gt;固件和 Apk 的共享链接&lt;/a&gt;&lt;br&gt;提取码：echo&lt;/p&gt;
-&lt;p&gt;技巧&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;更新到旧版本前，在现有版本中，忘记无线网络，避免联网后自动更新和下载广告&lt;/li&gt;
-&lt;li&gt;在官方版本中，将g 后缀文件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
-&lt;li&gt;常用媒体 ap、nyt、wsj、Economist、wired&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-1-华为-M6&#34;&gt;&lt;a href=&#34;#5-1-华为-M6&#34; class=&#34;headerlink&#34; title=&#34;5.1 华为 M6&#34;&gt;&lt;/a&gt;5.1 华为 M6&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://club.huawei.com/thread-21738309-1-1.html&#34;&gt;华为M6锁定后台&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;任务切换视图，下滑锁定（下滑时间长一点）&lt;/li&gt;
-&lt;li&gt;应用启动管理，改为手动，允许后台活动&lt;/li&gt;
-&lt;li&gt;电池优化，不允许优化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;清理生成的 hwbk 文件，&lt;a href=&#34;https://www.keccak.top/memo/delete-hwbk.html&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;先 &lt;code&gt;adb pm uninstall --user 0 com.huawei.systemserver&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;再用 MiXplorer 重命名所有要删除的文件&lt;/li&gt;
-&lt;li&gt;最后用 MiXplorer 删除改名后的文件和所在文件夹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-2-kindle-fire&#34;&gt;&lt;a href=&#34;#5-2-kindle-fire&#34; class=&#34;headerlink&#34; title=&#34;5.2 kindle fire&#34;&gt;&lt;/a&gt;5.2 kindle fire&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;使用美国亚马逊账户登陆，否则没有应用商店，如果已经用中国账户登陆可以重置，并在账户中删除设备。安装完 netflix 后，可以切换到中国区账户，方便接收文档&lt;/li&gt;
-&lt;li&gt;实际测试，只要注销中国区并用美国账户登录，应用商店即可转区，不需要重置设备&lt;/li&gt;
-&lt;li&gt;开启 usb 调试，使用 Fire Toolbox V12.0 去广告、换 launcher、装 Google Play、隐藏底部导航条、去除自带应用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1. 清除 download failed 提示&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell dumpsys notification，获得通知 app 的名称为 com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm enable com.android.providers.downloads&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2. disable search 应用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm disable-user com.android.quicksearchbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;5-3-文石-BOOX-Poke2&#34;&gt;&lt;a href=&#34;#5-3-文石-BOOX-Poke2&#34; class=&#34;headerlink&#34; title=&#34;5.3 文石 BOOX Poke2&#34;&gt;&lt;/a&gt;5.3 文石 BOOX Poke2&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;在应用设置中选择安装 谷歌套件&lt;/li&gt;
-&lt;li&gt;需要有 GSF ID 认证的步骤，否则会提示未获得保护机制认证，操作见 &lt;a href=&#34;https://www.bilibili.com/video/BV1E64y147kz&#34;&gt;boox应用技巧：googleplay的设置和绑定&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;添加词典，在 dicts 中新建词典名称文件夹，拷入词典，拔出数据线，&lt;a href=&#34;https://www.bilibili.com/video/BV1RX4y1A7y3&#34;&gt;操作见&lt;/a&gt;，词典文件与欧路共用简明英汉&lt;/li&gt;
-&lt;li&gt;V2 引擎关闭会导致有的图书看不到目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;6-WSA&#34;&gt;&lt;a href=&#34;#6-WSA&#34; class=&#34;headerlink&#34; title=&#34;6 WSA&#34;&gt;&lt;/a&gt;6 WSA&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;解决 WSA 占用 C 盘空间过大，移动到其它盘，&lt;a href=&#34;https://www.windows11tips.com/how-to-customize-windows-subsystem-for-android-file-path-in-windows-11/&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;C:\Users\用户名\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache&amp;quot; &amp;quot;D:\LocalCache&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;7-App&#34;&gt;&lt;a href=&#34;#7-App&#34; class=&#34;headerlink&#34; title=&#34;7 App&#34;&gt;&lt;/a&gt;7 App&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;名称&lt;/th&gt;
-&lt;th&gt;用处&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;FolderSync Pro&lt;/td&gt;
-&lt;td&gt;用于 Google Drive 同步文件，也支持其它网盘服务&lt;br /&gt;选择同步到本地，同步选项开启同步删除操作&lt;br /&gt;poke2 要安装 chrome 浏览器才能弹出授权&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</id>
-        <title>docker</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/"/>
-        <content type="html">&lt;h1 id=&#34;1-安装&#34;&gt;&lt;a href=&#34;#1-安装&#34; class=&#34;headerlink&#34; title=&#34;1 安装&#34;&gt;&lt;/a&gt;1 安装&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04&#34;&gt;ubuntu 20.04 安装&lt;/a&gt;、&lt;a href=&#34;https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;避免每次输入 sudo  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo groupadd docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo usermod -aG docker &lt;span class=&#34;variable&#34;&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 激活新修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;newgrp docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提示没权限的话重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull cdrx/pyinstaller-linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/arm64 alpine:latest&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;保存和加载镜像&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker save -o &amp;lt;path &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; generated tar file&amp;gt; &amp;lt;image name&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker load -i &amp;lt;path to image tar file&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-容器&#34;&gt;&lt;a href=&#34;#3-容器&#34; class=&#34;headerlink&#34; title=&#34;3 容器&#34;&gt;&lt;/a&gt;3 容器&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;生成容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 指定容器名字方便操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v 是绑定，docker run 见 https://docs.docker.com/engine/reference/commandline/run/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -it --name table_bot -v /home/zack/code/table_bot:/src/ cdrx/pyinstaller-linux /bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 改成豆瓣源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; global.index-url https://pypi.tuna.tsinghua.edu.cn/simple&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;列出容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -s 占用大小，-a 所有，包括停止的容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;运行命令  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d: Detached mode: run command in the background&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -d table_bot bash -c &lt;span class=&#34;string&#34;&gt;&amp;#x27;/root/.pyenv/shims/pyinstaller -F bot.py &amp;amp;&amp;amp; cp dist/b .&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;进入 docker  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container&#34;&gt;修改端口映射&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4-API&#34;&gt;&lt;a href=&#34;#4-API&#34; class=&#34;headerlink&#34; title=&#34;4 API&#34;&gt;&lt;/a&gt;4 API&lt;/h1&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用 curl 和 jq 测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用法参考 https://stackoverflow.com/questions/41960751/docker-remote-api-filters-filter-out-network-by-name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/28054203/docker-remote-api-filter-exited&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -gG -XGET -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock &lt;span class=&#34;string&#34;&gt;&amp;#x27;http://localhost/v1.41/containers/json?limit=10&amp;#x27;&lt;/span&gt; --data-urlencode &lt;span class=&#34;string&#34;&gt;&amp;#x27;filters=&amp;#123;&amp;quot;status&amp;quot;: [&amp;quot;running&amp;quot;]&amp;#125;&amp;#x27;&lt;/span&gt; | jq &lt;span class=&#34;string&#34;&gt;&amp;#x27;.[] | &amp;#123;Id, Names&amp;#125;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h1 id=&#34;5-制作镜像&#34;&gt;&lt;a href=&#34;#5-制作镜像&#34; class=&#34;headerlink&#34; title=&#34;5 制作镜像&#34;&gt;&lt;/a&gt;5 制作镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如何编出更小的镜像 &lt;a href=&#34;https://jpetazzo.github.io/2020/02/01/quest-minimal-docker-images-part-1/&#34;&gt;系列文章&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;制作镜像&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t iebs .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要是网络不通可以试试 --network=host&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker build --network=host -t iebs .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可以用 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/#%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5-libc&#34;&gt;静态链接 libc&lt;/a&gt; 的方式编出单文件程序，Dockerfile 参考&lt;/p&gt;
-  &lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; scratch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;COPY&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; iiot_sdk /&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CMD&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; [&lt;span class=&#34;string&#34;&gt;&amp;quot;./iiot_sdk&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/</id>
+        <title>食物</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nh.ckcest.cn/default/page/loadPageIndex?pageId=40a8e21962e945a9b8b94e9729b32aee&#34;&gt;各国居民膳食营养素参考摄入量查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;asset 中 “美国居民膳食指南（2020-2025）”的中英文 pdf&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</id>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</id>
         <title>新闻来源</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/"/>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/"/>
         <content type="html">&lt;h1 id=&#34;1-新闻&#34;&gt;&lt;a href=&#34;#1-新闻&#34; class=&#34;headerlink&#34; title=&#34;1 新闻&#34;&gt;&lt;/a&gt;1 新闻&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;为了平衡东西方的价值观冲突和中美利益冲突，选择两派中最中立的媒体作为新闻来源&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://mediabiasfactcheck.com/center/&#34;&gt;Least Biased&lt;/a&gt; 且 Factual Reporting 为 High 以上作为初筛，以新疆、香港额外考察对中国的报道&lt;/li&gt;
@@ -1824,1004 +1588,133 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</id>
-        <title>windows</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/"/>
-        <content type="html">&lt;h1 id=&#34;1-清理旧文件&#34;&gt;&lt;a href=&#34;#1-清理旧文件&#34; class=&#34;headerlink&#34; title=&#34;1 清理旧文件&#34;&gt;&lt;/a&gt;1 清理旧文件&lt;/h1&gt;&lt;p&gt;删除没有权限的文件夹&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 更改所有者 -&amp;gt; 输入自己的用户名 -&amp;gt; 选择下面应用到子文件夹的勾 -&amp;gt; 确定所有对话框&lt;/li&gt;
-&lt;li&gt;文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 权限添加 -&amp;gt; 主体为自己的用户名 -&amp;gt; 勾选下面的继承权限&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;2-搭建&#34;&gt;&lt;a href=&#34;#2-搭建&#34; class=&#34;headerlink&#34; title=&#34;2 搭建&#34;&gt;&lt;/a&gt;2 搭建&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容&lt;ul&gt;
-&lt;li&gt;用 Edgeless PE，&lt;a href=&#34;https://wiki.edgeless.top/v2/guide/burn.html&#34;&gt;写入&lt;/a&gt; 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;PE 环境下加载 ISO 镜像（镜像选择专业版），运行 source 下的 setup&lt;ul&gt;
-&lt;li&gt;对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;更新系统、自动装驱动&lt;/li&gt;
-&lt;li&gt;关闭更新&lt;/li&gt;
-&lt;li&gt;修改桌面、文档等路径&lt;/li&gt;
-&lt;li&gt;激活系统，HEU_KMS_Activator 激活 Office 和 Windows&lt;/li&gt;
-&lt;li&gt;安装字体，设置 npp、typora、obsidian、系统字体&lt;/li&gt;
-&lt;li&gt;Win11&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p72srXZgOmk&#34;&gt;让系统时钟显示秒数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;蓝牙丢失的情况，关机、断电源后，等一分钟，启动可恢复&lt;/li&gt;
-&lt;li&gt;蓝牙音量无法调节，regedit 的 &lt;code&gt;计算机\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Bluetooth\Audio\AVRCP\CT&lt;/code&gt; 中 DisableAbsoluteVolume 改为 1，&lt;a href=&#34;https://answers.microsoft.com/zh-hans/windows/forum/all/windows10%E6%9B%B4%E6%96%B01803/7fc4f1ca-46be-4b13-8133-0eb56ad9e44d&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;修复引导后，在 msconfig 引导中删除旧引导&lt;/li&gt;
-&lt;li&gt;导入 reg 目录下其它配置，如用图片查看器打开图片&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/&#34;&gt;使用传统右键菜单命令&lt;/a&gt; &lt;code&gt;reg add &amp;quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&amp;quot; /f /ve&lt;/code&gt;，恢复 &lt;code&gt;reg delete &amp;quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}&amp;quot; /f&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;2-1-虚拟机安装精简版-Win10&#34;&gt;&lt;a href=&#34;#2-1-虚拟机安装精简版-Win10&#34; class=&#34;headerlink&#34; title=&#34;2.1 虚拟机安装精简版 Win10&#34;&gt;&lt;/a&gt;2.1 虚拟机安装精简版 Win10&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;VMware 创建一个虚拟机，分配空白的硬盘&lt;/li&gt;
-&lt;li&gt;插入 PE U 盘，启动，将 U 盘连接到虚拟机，重启后会从 U 盘启动&lt;ul&gt;
-&lt;li&gt;更改 vmvare BIOS 启动顺序，重启后直接按 ESC 选择 USB（连接到虚拟机），如不行再试下面的&lt;/li&gt;
-&lt;li&gt;编辑虚拟机名称的 vmx 文件，添加 &lt;code&gt;bios.bootdelay=&amp;quot;5000&amp;quot;&lt;/code&gt;，然后重启按 ESC&lt;/li&gt;
-&lt;li&gt;ESC: 调整启动顺序，F2: 进入BIOS Setup&lt;/li&gt;
-&lt;li&gt;要还原回去添加 &lt;code&gt;bios.forceSetupOnce = &amp;quot;FALSE&amp;quot;&lt;/code&gt; 再重启一次，&lt;a href=&#34;https://blog.51cto.com/u_15338523/3592954&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;从 uupdump.net 选择最新的 x64 Feature Update，&lt;a href=&#34;https://github.com/uup-dump-dev/website-public/blob/master/FAQ.md&#34;&gt;参考&lt;/a&gt;、&lt;a href=&#34;https://docs.atlasos.net/getting-started/installation/&#34;&gt;参考2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;下载 &lt;a href=&#34;https://ameliorated.io/&#34;&gt;AME Wizard&lt;/a&gt; 和 ReviOS Playbook，运行&lt;/li&gt;
-&lt;li&gt;也可用 VMwareHorizonOSOptimizationTool，&lt;a href=&#34;https://www.youtube.com/watch?v=T-SuNdocch0&#34;&gt;相关介绍&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-软件安装&#34;&gt;&lt;a href=&#34;#3-软件安装&#34; class=&#34;headerlink&#34; title=&#34;3 软件安装&#34;&gt;&lt;/a&gt;3 软件安装&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;没必要储存的大安装文件，一律以 0 字节的 &lt;code&gt;name.2big&lt;/code&gt; 占位&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- DB start --&gt;
-
-&lt;h2 id=&#34;3-1-试用中&#34;&gt;&lt;a href=&#34;#3-1-试用中&#34; class=&#34;headerlink&#34; title=&#34;3.1 试用中&#34;&gt;&lt;/a&gt;3.1 试用中&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;试用中&lt;/th&gt;
-&lt;th&gt;配置&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;BurpSuite&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fiddler&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;nodesCatch&lt;/td&gt;
-&lt;td&gt;节点测延迟和测速，双内核，用来选机场节点和过滤免费节点。必要时改测速下载文件，因为机场可能封锁某些常用下载文件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;incontrol&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-2-必装&#34;&gt;&lt;a href=&#34;#3-2-必装&#34; class=&#34;headerlink&#34; title=&#34;3.2 必装&#34;&gt;&lt;/a&gt;3.2 必装&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;必装&lt;/th&gt;
-&lt;th&gt;配置&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;驱动&lt;/td&gt;
-&lt;td&gt;使用联想驱动工具安装。驱动文件、主机编号、保修时间，见目录显卡驱动-IntelVideo、电源 ACPI-n2hku54w_x64、主板 intelchip-r0pch04w，两个蓝牙驱动&lt;br /&gt;显示设置中缩放与布局设置为 125%，但偶尔会出现任务栏显示位置不正常的问题，通过设置分辨率为 1366X768 来放大显示&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;字体与主题&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Clash.for.Windows&lt;/td&gt;
-&lt;td&gt;- 设置开机启动，节点切换自动断开&lt;br/&gt;- 手动调用 command.bat 里面的命令安装 service，及手动删除 service 解决“红色地球”问题，&lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/3412&#34;&gt;参见&lt;/a&gt;&lt;br /&gt;- 可能对 clash 订阅的规则不满意，因此见下面 clash 自定义部分&lt;br /&gt;&lt;a href=&#34;https://merlinblog.xyz/wikipageguide.html&#34;&gt;所有平台客户端汇总&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Firefox&lt;/td&gt;
-&lt;td&gt;- 参考 &lt;a href=&#34;https://helgeklein.com/blog/2009/08/moving-the-firefox-cache-directory-and-profile-separately/&#34;&gt;这个方法&lt;/a&gt; 改变 default-release 那个 profile 位置，cache 位置就不用改了。还原 profile，还原 profile 时扩展需要关闭一下重开，账户可能要重新绑定&lt;br /&gt;- 临时使用 AHK 脚本支持欧路双击取词&lt;br /&gt;- 如果需要隐藏顶部标签栏、标题栏、侧栏标题，&lt;a href=&#34;https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b&#34;&gt;参照这个&lt;/a&gt;，但不要添加 windows 按钮那个 CSS&lt;br /&gt;- about:config 设置 browser.urlbar.openintab 为 true，搜索结果新 tab 打开&lt;br /&gt;- favicons 不更新，手动删除 &lt;a href=&#34;https://superuser.com/questions/1259660/wrong-favicons-in-firefox&#34;&gt;favicons.sqlite&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;BANDIZIP&lt;/td&gt;
-&lt;td&gt;- 设置文件类型关联&lt;br /&gt;- 设置解压和压缩右键菜单&lt;br /&gt;- 设置解压后自动关闭窗口，打开解压文件夹&lt;br /&gt;- 不要更新，新版有广告&lt;br /&gt;不支持添加文件到 7z，可以用 7zip&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PotPlayer&lt;/td&gt;
-&lt;td&gt;- 设置文件类型关联&lt;br /&gt;- 设置打开新文件时在当前进程，不新建进程&lt;br /&gt;- 字幕缓冲量设为 0 避免弹幕抖动（仅新版需要）&lt;br /&gt;- 最新版会有广告，关闭更新&lt;br /&gt;- 下载的 ass 弹幕避免占满整个屏幕，可修改 PlayResY，如 1080 分辨率高度占 0.8 高度为 1080&amp;#x2F;0.8&amp;#x3D;1350&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;GoogleDrive&lt;/td&gt;
-&lt;td&gt;土区年付 100G，替换 Dropbox&lt;br /&gt;两种用法&lt;br/&gt;- 与 Dropbox 相同的用法。一般用云端硬盘，切换到“镜像文件”方式同步（非在线方式），点击“文件夹”，选择要同步的文件夹&lt;br/&gt;- 与百度云相同的用法。即只想备份到云，不想与其它设备同步使用“我的计算机”同步&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Cryptomator&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Obsidian&lt;/td&gt;
-&lt;td&gt;笔记管理软件，typora 作为它的外部编辑器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;typora&lt;/td&gt;
-&lt;td&gt;- 打开主题文件夹放置 &lt;code&gt;base.user.css&lt;/code&gt;  字体和界面宽度设置文件 ，见 &lt;code&gt;typora&lt;/code&gt; 文件夹&lt;br /&gt;- 其它偏好设置&lt;br /&gt;- 目前两个 Bug，会在列表间加空行变成 lose list；被该用 tab 缩进，变成两个空格&lt;br /&gt;  第一个用 lint 插件解决，第二个用搜索替换 “(^\t*)  “ 替换为 “$1	“&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;HEU_KMS_Activator&lt;/td&gt;
-&lt;td&gt;office 和 windows 激活工具&lt;br /&gt;激活时关闭实时扫描，排除 System32\kms-renewal.exe 和 SECOPatcher.dll&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Chrome&lt;/td&gt;
-&lt;td&gt;第二浏览器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;火绒&lt;/td&gt;
-&lt;td&gt;替换系统杀毒&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;傲梅轻松备份&lt;/td&gt;
-&lt;td&gt;一份安装版、一份 PE 版，尽量不升级&lt;br /&gt;关机时备份需关闭 “快速启动”&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;—下面开始是免安装软件—&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;wiztree&lt;/td&gt;
-&lt;td&gt;显示磁盘空间占用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SumatraPDF&lt;/td&gt;
-&lt;td&gt;关联 PDF 格式&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;KeePass&lt;/td&gt;
-&lt;td&gt;为了安全设定自动锁定时间&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;npp&lt;/td&gt;
-&lt;td&gt;修改字体和字体大小&lt;br /&gt;点 ？以管理员启动设置更新代理服务器，在插件中安装 compare&lt;br /&gt;修改设置中的备份，简单备份改为冗余备份，设置自定义文件夹。每次保存都会在这里记录一份旧的&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;OneCommander&lt;/td&gt;
-&lt;td&gt;clover 的替代品，防火墙禁止联网防止总提示更新&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ContextMenuManager&lt;/td&gt;
-&lt;td&gt;右键菜单，&lt;a href=&#34;https://github.com/BluePointLilac/ContextMenuManager/releases&#34;&gt;官方下载&lt;/a&gt;。清理显卡，添加 MSYS2 到 目录和目录背景，其中命令为 &lt;code&gt;D:\soft\msys64\msys2_shell.cmd -msys -where %v&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Everything&lt;/td&gt;
-&lt;td&gt;空格表示与，| 表示或，”” 中是真的空格。限定搜索范围，支持简单正则&lt;br /&gt;简单的 FTP、HTTP 服务器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;calibre&lt;/td&gt;
-&lt;td&gt;epub 等格式的电子阅读器&lt;br /&gt;kindle 数据格式转换与管理。新版运行有问题，可能是多显示器的原因，总之维持旧版&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;KopiaUI&lt;/td&gt;
-&lt;td&gt;增量备份。额外添加 VSS 脚本和 kopiaignore 模板&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;alist&lt;/td&gt;
-&lt;td&gt;国内网盘转 webdav&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rclone&lt;/td&gt;
-&lt;td&gt;webdav&amp;#x2F;国外网盘 挂载、同步，给 KopiaUI 提供支持&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-3-虚拟机安装&#34;&gt;&lt;a href=&#34;#3-3-虚拟机安装&#34; class=&#34;headerlink&#34; title=&#34;3.3 虚拟机安装&#34;&gt;&lt;/a&gt;3.3 虚拟机安装&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;虚拟机安装&lt;/th&gt;
-&lt;th&gt;配置&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;TIM&lt;/td&gt;
-&lt;td&gt;查考&lt;a href=&#34;https://www.zhihu.com/question/265963430/answer/2492603110&#34;&gt;这个&lt;/a&gt;删除 QQProtect&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WeChat&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;百度网盘&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;阿里云盘&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PikPak_By_Shimily&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;BitComet_v1.87_Stable_Mod&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-4-建议安装&#34;&gt;&lt;a href=&#34;#3-4-建议安装&#34; class=&#34;headerlink&#34; title=&#34;3.4 建议安装&#34;&gt;&lt;/a&gt;3.4 建议安装&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;建议安装&lt;/th&gt;
-&lt;th&gt;配置&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;欧路词典与配置&lt;/td&gt;
-&lt;td&gt;GoldenDict 和 欧路词典共用的词典&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;欧路词典&lt;/td&gt;
-&lt;td&gt;- 参考 环境-&amp;gt; 词典软件 设置。词典在“Dictionary在用”&lt;br /&gt;- 用 AutoHotkey 脚本，设置划词快捷键 Ctrl + F10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SecureCRT&lt;/td&gt;
-&lt;td&gt;见 linux 文档 SecureCRT 配置问题。配置备份在 VanDyke_Config.zip ，可直接覆盖&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;vcxsrv&lt;/td&gt;
-&lt;td&gt;替代 xming（有 bug、新版本收费），新建快捷方式 “D:\soft\VcXsrv\vcxsrv.exe :0 -clipboard -multiwindow -dpi 108”&lt;br /&gt;添加到 windows 启动中，C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp&lt;br /&gt; &lt;a href=&#34;https://aufather.wordpress.com/2010/11/21/increasing-font-size-in-xming-server/&#34;&gt;指定 dpi&lt;/a&gt; &lt;code&gt;-dpi 108&lt;/code&gt; 来增加文字大小&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VMware-workstation&lt;/td&gt;
-&lt;td&gt;ZF3R0-FHED2-M80TY-8QYGC-NPKYF &lt;a href=&#34;https://www.ghxi.com/vmware15.html&#34;&gt;参考&lt;/a&gt;&lt;br /&gt;- 安装时勾选自动安装 WHP（基于 Hyper-V）。解释见 &lt;a href=&#34;https://www.jianshu.com/p/c02f776a65cd&#34;&gt;Hyper-V 和 VMWare 终于可以无缝共存&lt;/a&gt;、&lt;a href=&#34;https://zhuanlan.zhihu.com/p/381969738&#34;&gt;Windows 下各种虚拟化名词解释&lt;/a&gt;&lt;br /&gt;- 创建虚拟机，不要勾选虚拟化引擎 Intel VT-x 这些，因为 Hyper-V 底层已经用到这些技术了&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;office 2021（专业增强零售版）&lt;/td&gt;
-&lt;td&gt;1. 先卸载旧的 office，再用 OTP 工具的激活选项卡清除旧的激活信息，重启&lt;br/&gt;2. 用 OTP &lt;a href=&#34;https://help.coolhub.top/zh-cn/deploy/#%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85&#34;&gt;离线安装&lt;/a&gt; 专业增强零售版，安装选 word、excel、powerpoint 三个&lt;br /&gt;3. 使用 HEU_KMS_Activator 转为 VL 版同时激活，使用 HEU_KMS_Activator 时要安全中心关闭实时扫描&lt;br /&gt;要是win11 一直激活失败 0x80080005，改用在线 KMS 激活&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Office Tool Plus&lt;/td&gt;
-&lt;td&gt;用来选择安装哪些组件和激活管理&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;pandoc&lt;/td&gt;
-&lt;td&gt;配合 typora 导入、导出各种格式文档&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;telegram&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;xmind&lt;/td&gt;
-&lt;td&gt;比起 mindmaster 没有节点数限制，xmind 8 绿色版，免费导出 svg，适合画调用关系图&lt;br /&gt;xmind 2020 适合画大纲，导出 markdown，图不大时截图配在文章中&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;msys2&lt;/td&gt;
-&lt;td&gt;建议这个代替 git&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Meld&lt;/td&gt;
-&lt;td&gt;windows 版&lt;a href=&#34;http://meldmerge.org/&#34;&gt;下载&lt;/a&gt;，用于 git 或其它比较&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;python&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;node&lt;/td&gt;
-&lt;td&gt;博客搭建使用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CLion&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;pycharm&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ja-netfilter-all&lt;/td&gt;
-&lt;td&gt;参考 &lt;a href=&#34;https://www.jiweichengzhu.com/article/4bcb140d5035426f9da3dea46f564e4d&#34;&gt;这篇文章&lt;/a&gt; 运行脚本激活，从这里 &lt;a href=&#34;https://jetbra.in/s&#34;&gt;zhile 下载和激活码&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7z&lt;/td&gt;
-&lt;td&gt;备用的解压缩软件，负责备份 firefox 时的命令行工具，提供 hash 右键菜单&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Wireshark&lt;/td&gt;
-&lt;td&gt;抓包。更新到 3.2.3 安装 usbpcap 后可以识别 USB 网卡&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;spacedesk&lt;/td&gt;
-&lt;td&gt;平板做显示器，支持多台，无线连接&lt;br /&gt;不要改安装路径，否则触摸屏不好用，&lt;br /&gt;防火墙要放开 C:\Windows\System32\spacedeskService.exe&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DeskPins&lt;/td&gt;
-&lt;td&gt;窗口置顶软件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;逍遥模拟器&lt;/td&gt;
-&lt;td&gt;下载国际版，广告少一些&lt;br /&gt;支持微信平板登陆，分辨率修改为 1600X900，dpi 修改为 240&lt;br /&gt;雷电模拟器出现开启 AMD VT 后无法启动&lt;br /&gt;&lt;a href=&#34;https://www.cnblogs.com/jsubaron/p/16230491.html&#34;&gt;虚拟机里跑模拟器&lt;/a&gt;，可以试试&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;喵喵机&lt;/td&gt;
-&lt;td&gt;喵喵机 PC 打印程序&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;IDM&lt;/td&gt;
-&lt;td&gt;破解版，用于下载 Youtube 视频&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CP2102六合一&lt;/td&gt;
-&lt;td&gt;win 10 可用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MouseWithoutBorders&lt;/td&gt;
-&lt;td&gt;取消一些快捷键，避免冲突&lt;br /&gt;如果改了 dns，可能需要设置 ip mapping&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Microsoft.WindowsTerminal&lt;/td&gt;
-&lt;td&gt;可启用透明效果的 github 版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;wireguard&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;—下面开始是免安装软件—&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WinSCP&lt;/td&gt;
-&lt;td&gt;FTP、SFTP 等，在 session 的 高级设置中 UTF-8 encoding for filename 用来支持中文名&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;调试助手&lt;/td&gt;
-&lt;td&gt;串口调试助手&amp;#x2F;网络调试助手&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ADB&lt;/td&gt;
-&lt;td&gt;adb 工具和 usb 驱动&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;IntelliJ IDEA&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;jdk&lt;/td&gt;
-&lt;td&gt;JDK、JDK Docs&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VSCode&lt;/td&gt;
-&lt;td&gt;创建 data 文件夹，开启 &lt;a href=&#34;https://code.visualstudio.com/docs/editor/portable&#34;&gt;portable mode&lt;/a&gt;&lt;br /&gt;其它参照 IDE 文档配置&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gtags&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PDF处理工具&lt;/td&gt;
-&lt;td&gt;操作见“电子书处理”文档&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DeDRM_tools&lt;/td&gt;
-&lt;td&gt;DRM 移除插件，租借书籍 &lt;a href=&#34;https://www.reddit.com/r/Piracy/comments/ezenaa/how_to_remove_drm_from_an_amazon_kindle_rented/&#34;&gt;注释掉 rented 两行代码&lt;/a&gt; 后可以用，已经加入改后版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;cmake&lt;/td&gt;
-&lt;td&gt;只使用 gui 程序，命令行用 msys2 的&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;AutoHotkey&lt;/td&gt;
-&lt;td&gt;用于，推 gal 翻页笔映射脚本，欧路词典取词脚本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bulk Rename Utility&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;哔哩下载姬&lt;/td&gt;
-&lt;td&gt;B 站视频、弹幕下载&lt;br /&gt;ass 弹幕的 PlayResY 乘以 2 实现半屏弹幕播放&lt;br /&gt;同时搭配 MPC-HC，避免 potplayer 引起的闪屏&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Dism++&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/Chuyu-Team/Dism-Multi-language&#34;&gt;下载&lt;/a&gt;，清理系统空间、引导修复&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Hourglass&lt;/td&gt;
-&lt;td&gt;倒计时软件，&lt;a href=&#34;https://chris.dziemborowicz.com/apps/hourglass/&#34;&gt;官网帮助文档&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;硬盘&lt;/td&gt;
-&lt;td&gt;坏道检查、分区、&lt;a href=&#34;https://www.bilibili.com/video/BV1ev4y1v7wY&#34;&gt;硬盘信息查看&lt;/a&gt;，CrystalDiskInfo 原始值十进制显示&lt;br /&gt;DiskGenius &lt;a href=&#34;https://www.diskgenius.cn/bbs/forum.php?mod=forumdisplay&amp;fid=5&#34;&gt;官方论坛&lt;/a&gt; 有 PE 版，即单文件版&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;galgame&lt;/td&gt;
-&lt;td&gt;翻译器、全屏 Magpie、提取文字 MisakaHookFinder&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Image-Anti-OCR-main&lt;/td&gt;
-&lt;td&gt;图片加干扰对抗百度贴吧 OCR&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;bilinovel2epub&lt;/td&gt;
-&lt;td&gt;哔哩轻小说转 epub&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-5-不常安装&#34;&gt;&lt;a href=&#34;#3-5-不常安装&#34; class=&#34;headerlink&#34; title=&#34;3.5 不常安装&#34;&gt;&lt;/a&gt;3.5 不常安装&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;不常安装&lt;/th&gt;
-&lt;th&gt;配置&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;Arm Keil MDK&lt;/td&gt;
-&lt;td&gt;包含 STM32F1 pack&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Git&lt;/td&gt;
-&lt;td&gt;可用 msys2 里的 git 替代&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;kindle-for-pc&lt;/td&gt;
-&lt;td&gt;DeDRM 推荐的版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sshfs&lt;/td&gt;
-&lt;td&gt;先装 winfsp (Cryptomator 也装了 winfsp)，然后装 &lt;a href=&#34;https://github.com/billziss-gh/sshfs-win&#34;&gt;sshfs&lt;/a&gt; 64位&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Beyond Compare&lt;/td&gt;
-&lt;td&gt;windows 防火墙高级设置，添加出站规则，禁止 BC 主程序联网防止过期&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;KindleMate&lt;/td&gt;
-&lt;td&gt;kindle 单词与笔记管理&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Proxifier&lt;/td&gt;
-&lt;td&gt;代替 netch，给 GoogleDrive 用&lt;br /&gt;不要用 Portable 即 PE 版，功能不全，会导致 chrome 挂掉&lt;br /&gt;5EZ8G-C3WL5-B56YG-SCXM9-6QZAP&lt;br /&gt;先创建 Proxy Servers，然后创建 rule 匹配规则&lt;br /&gt;为了保险，name resolution 中通过代理解析&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VirtualBox&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WIFI-FC-5&lt;/td&gt;
-&lt;td&gt;Blink USB 无线网卡驱动&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;BTSync&lt;/td&gt;
-&lt;td&gt;分布式同步软件，下载书籍&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;串口工具&lt;/td&gt;
-&lt;td&gt;SerialPortMonitor 串口通信数据监控 &lt;br /&gt;Virtual Serial Port Driver，串口转发工具&lt;br /&gt;破解有14天时间限制，尝试 windows 虚拟机快照&lt;br /&gt;串口桥接、虚拟串口、多虚一、一虚多&lt;br /&gt;使用 Complex 模式，IN 和 OUT 各创建一个虚口用来监控和发送流量&lt;br /&gt;最后 IN 和 OUT 各两个口。也可用 redirect 模式，然后用串口监听软件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;device-monitoring-studio&lt;/td&gt;
-&lt;td&gt;串口通信数据监控&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PL23XX_Prolific_DriverInstaller&lt;/td&gt;
-&lt;td&gt;PL2303 串口驱动&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CH341SER&lt;/td&gt;
-&lt;td&gt;ch340 串口驱动&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DualMonitorTools&lt;/td&gt;
-&lt;td&gt;多显示器设置不同壁纸&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;函数调用生成&lt;/td&gt;
-&lt;td&gt;doxygen graphviz htmlhelp，生成项目文档，生成函数调用图 call graph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;vs_Community&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://blog.lindexi.com/post/VisualStudio-2019-%E5%A6%82%E4%BD%95%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD.html&#34;&gt;VisualStudio 2019 如何离线下载&lt;/a&gt;&lt;br /&gt;下载&lt;br/&gt;vs_Community.exe –layout d:\vslayout  ^&lt;br/&gt;–add Microsoft.VisualStudio.Workload.ManagedDesktop  ^&lt;br/&gt;–add Microsoft.VisualStudio.Workload.NativeCrossPlat  ^&lt;br/&gt;–add Microsoft.VisualStudio.Workload.NativeDesktop  ^&lt;br/&gt;–add Microsoft.VisualStudio.Workload.VisualStudioExtension –includeOptional ^&lt;br/&gt;–add Component.GitHub.VisualStudio ^&lt;br/&gt;–lang zh-CN –addProductLang en-US&lt;br /&gt;下载命令添加 –fix 用于断点续传，有个 arm 包速度很慢挂代理&lt;br/&gt;安装，进入前面指定的 layout 文件夹，输入前面的下载命令去掉 –layout 和 –lang 的部分。取消再选择可以节省空间，可以不全部选择。但要保留下载缓存文件夹，否则以后无法修改功能&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;get_iplayer&lt;/td&gt;
-&lt;td&gt;BBC 下载，无 DRM，自动转 mp4、srt 字幕&lt;br /&gt;&lt;code&gt;C:\Users\user_name\.get_iplayer\options&lt;/code&gt; 中添加，只下载有字幕的视频，设置默认保存路径&lt;br /&gt;output D:\Videos\BBC&lt;br/&gt;subtitles 1&lt;br/&gt;subsrequired 1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;All Netflix Categories&lt;/td&gt;
-&lt;td&gt;netflix 隐藏类别 chrome 插件，解压缩后安装&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Thunderbird&lt;/td&gt;
-&lt;td&gt;用来替代 foxmail 的邮件客户端&lt;br /&gt;备份与恢复与 firefox 一样，配置文件是 &lt;code&gt;%userprofile%\appdata\roaming\thunderbird\profiles.ini&lt;/code&gt;&lt;br /&gt;配置储存在 &lt;code&gt;%userprofile%\appdata\roaming\thunderbird\profiles\XXXXXX.default-release&lt;/code&gt;&lt;br /&gt;删除旧的用新的覆盖即可&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TortoiseSVN&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;EaseUS BitWiper&lt;/td&gt;
-&lt;td&gt;擦除磁盘数据，500G 需 1h&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;K-Lite_Codec_Pack&lt;/td&gt;
-&lt;td&gt;MPC-HC 播放 B 站视频弹幕不闪屏（不像 potplayer）&lt;br /&gt;不要装 mediainfo 会有右键菜单，也可装后再次运行安装文件卸载掉&lt;br /&gt;用来显示视频文件缩略图，可只勾选 Explorer Shell Extensions 里面的两个&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;字幕查找-生成-处理工具&lt;/td&gt;
-&lt;td&gt;查找在线字幕，繁简转换&lt;br /&gt;autosub（包括讯飞的配置文件）、aegisub、剪映&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;—下面开始是免安装软件—&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;cover 字幕遮挡软件&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;tftpd&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rufus&lt;/td&gt;
-&lt;td&gt;将系统镜像烧录到U盘&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TextEditor&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;星号查看&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;硬件检测&lt;/td&gt;
-&lt;td&gt;cpu-z&lt;br /&gt;thphn 内存颗粒检测&lt;br /&gt;AIDA64，软硬件检测，可以定时生成日志&lt;br /&gt;内存超频后的测试&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ComHub&lt;/td&gt;
-&lt;td&gt;通过启用 telnet 共享本地 com 口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PacketSender&lt;/td&gt;
-&lt;td&gt;发包软件，偏上层，不关心构造包&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;xcap&lt;/td&gt;
-&lt;td&gt;发包软件，手动构造包&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ostinato&lt;/td&gt;
-&lt;td&gt;发包软件，开源，支持协议多，linux 和 windows 都可用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;GoldenDict&lt;/td&gt;
-&lt;td&gt;参考 环境-&amp;gt; 词典软件设置&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Ditto&lt;/td&gt;
-&lt;td&gt;剪贴板管理和共享，使用介绍 &lt;a href=&#34;https://www.playpcesor.com/2011/02/ditto.html&#34;&gt;https://www.playpcesor.com/2011/02/ditto.html&lt;/a&gt;&lt;br /&gt;如果要局域网共享，去掉禁止接收选项，双方填入对方的计算机名和相同的网络密码，接收密码没有填，远程文件选择主机名方式，下面的发送列表添加对方主机名并选择发送全部&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;bLend&lt;/td&gt;
-&lt;td&gt;窗口透明化&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Glass2k&lt;/td&gt;
-&lt;td&gt;窗口置顶与透明&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WinHex&lt;/td&gt;
-&lt;td&gt;十六进制编辑器，正常已注册，user.txt 为注册信息&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;鼠大侠鼠标连点器&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;EV录屏&lt;/td&gt;
-&lt;td&gt;可以录制系统声音&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bandicam&lt;/td&gt;
-&lt;td&gt;另一个录屏软件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;FastStone Capture&lt;/td&gt;
-&lt;td&gt;屏幕截图与录像&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;音频提取&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.zhihu.com/question/266085808/answer/768016788&#34;&gt;怎样将视频中的音频提取出来？&lt;/a&gt;&lt;br /&gt;mkvtoolnix &amp;#x2F; gMKVExtractGUI&lt;br /&gt;Pazera_Free_Audio_Extractor 比 mkvtoolnix 支持的多一些&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SQLiteSpy&lt;/td&gt;
-&lt;td&gt;sqlite 查看工具&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Folder2Iso&lt;/td&gt;
-&lt;td&gt;将文件夹制作成 ISO&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PSTools&lt;/td&gt;
-&lt;td&gt;PsExec，用来以 SYSTEM 用户执行命令&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WinCryptHashers&lt;/td&gt;
-&lt;td&gt;给 7z 添加 hash 算法。解压到 7zip 目录，新建 Codecs 文件夹&lt;br /&gt;用法，右键 CRC SHA 选择 * 或添加到压缩文件，选 hash 算法，&lt;a href=&#34;https://www.tc4shell.com/en/7zip/wincrypthashers/&#34;&gt;参考&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VeraCrypt&lt;/td&gt;
-&lt;td&gt;用在 U 盘上&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;foobar2000&lt;/td&gt;
-&lt;td&gt;音乐转换，如 wav + cue 转 flac 分轨&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sdr-Cleaner_win&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Quick_Any2Ico&lt;/td&gt;
-&lt;td&gt;提取程序图标 ICO、png&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;QtScrcpy&lt;/td&gt;
-&lt;td&gt;手机控制&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-6-淘汰备份&#34;&gt;&lt;a href=&#34;#3-6-淘汰备份&#34; class=&#34;headerlink&#34; title=&#34;3.6 淘汰备份&#34;&gt;&lt;/a&gt;3.6 淘汰备份&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;淘汰备份&lt;/th&gt;
-&lt;th&gt;淘汰原因&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;迅雷 X&lt;/td&gt;
-&lt;td&gt;来源 &lt;a href=&#34;https://axutongxue.com/&#34;&gt;阿虚储物间&lt;/a&gt;，用 IDM&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;迅雷 5.8&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;HEVC 视频扩展(windows store)&lt;/td&gt;
-&lt;td&gt;目前这样设置后会卡，先不用&lt;br /&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/516579045&#34;&gt;看 Netflix 4k&lt;/a&gt;&lt;br /&gt;显示设置，3840×2160，60HZ&lt;br /&gt;edge:&amp;#x2F;&amp;#x2F;gpu 搜索 HEVC，以下为 true&lt;br /&gt;HEVC installed&amp;#x2F;HEVC activable&amp;#x2F;HDCP 2.2 support&amp;#x2F;HEVC - 4K support&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SyncFolders&lt;/td&gt;
-&lt;td&gt;U 盘与电脑同步软件。同步方式选择 PC 到 U 盘的 备份方式&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;AllDRMRemoval&lt;/td&gt;
-&lt;td&gt;移除 DRM，不支持租借书籍&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;NetLimiter&lt;/td&gt;
-&lt;td&gt;破解&lt;br /&gt;设置最小化和关闭到托盘，关闭更新&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;手心输入法&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Shadowsocks&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ShadowsocksR&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sourceinsight&lt;/td&gt;
-&lt;td&gt;需要破解&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Sublime Text&lt;/td&gt;
-&lt;td&gt;需要使用 patch 破解&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Wub&lt;/td&gt;
-&lt;td&gt;Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网&lt;br /&gt;如果要使用系统更新，可以开启 SSR 全局代理，加快下载&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;!-- DB end --&gt;
-
-&lt;h1 id=&#34;4-网络&#34;&gt;&lt;a href=&#34;#4-网络&#34; class=&#34;headerlink&#34; title=&#34;4 网络&#34;&gt;&lt;/a&gt;4 网络&lt;/h1&gt;&lt;h2 id=&#34;4-1-windows-store&#34;&gt;&lt;a href=&#34;#4-1-windows-store&#34; class=&#34;headerlink&#34; title=&#34;4.1 windows store&#34;&gt;&lt;/a&gt;4.1 windows store&lt;/h2&gt;&lt;p&gt;对于 windows store 设置代理，先设置 ie 代理，然后&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# 导入 ie 代理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netsh winhttp import proxy source=ie&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 取消代理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netsh winhttp reset proxy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;对于 windows store 无法联网，错误代码 0x80072F7D。打开IE浏览器工具（注意不是Edge）—— 点击”Internet选项“ —— 选择“高级”选项卡 —— 在“使用TLS1.2”前面打上勾&lt;/p&gt;
-&lt;h2 id=&#34;4-2-命令行&#34;&gt;&lt;a href=&#34;#4-2-命令行&#34; class=&#34;headerlink&#34; title=&#34;4.2 命令行&#34;&gt;&lt;/a&gt;4.2 命令行&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# http 代理。只对当前 cmd 生效&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;set http_proxy=http://127.0.0.1:8118&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;set https_proxy=http://127.0.0.1:8118&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# socks 代理。使用 setx 可以添加到 高级系统设置 - 环境变量当中，删除变量只能通过图形界面删除&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setx http_proxy socks5://127.0.0.1:10800&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setx https_proxy socks5://127.0.0.1:10800&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;4-3-添加环回网卡&#34;&gt;&lt;a href=&#34;#4-3-添加环回网卡&#34; class=&#34;headerlink&#34; title=&#34;4.3 添加环回网卡&#34;&gt;&lt;/a&gt;4.3 添加环回网卡&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;运行 &lt;code&gt;hdwwiz.exe&lt;/code&gt; 手动选择硬件 网络适配器 – Microsoft – Microsoft KM-TEST环回适配器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-4-Clash-自定义&#34;&gt;&lt;a href=&#34;#4-4-Clash-自定义&#34; class=&#34;headerlink&#34; title=&#34;4.4 Clash 自定义&#34;&gt;&lt;/a&gt;4.4 Clash 自定义&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Clash 修改 profile 路径为其它盘&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Clash 的 &lt;a href=&#34;https://www.codein.icu/clashtutorial/&#34;&gt;基本介绍&lt;/a&gt;、&lt;a href=&#34;https://github.com/Dreamacro/clash/wiki/configuration#proxy-providers&#34;&gt;官方配置参考&lt;/a&gt;、&lt;a href=&#34;https://docs.cfw.lbyczf.com/&#34;&gt;参考一&lt;/a&gt;、&lt;a href=&#34;https://lancellc.gitbook.io/clash/&#34;&gt;参考二&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;关于 Clash for Windows 的 DNS，关于 DNS 见 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/wiki/DNS%E6%B1%A1%E6%9F%93%E5%AF%B9Clash%EF%BC%88for-Windows%EF%BC%89%E7%9A%84%E5%BD%B1%E5%93%8D&#34;&gt;一&lt;/a&gt;、&lt;a href=&#34;https://blog.rssins.net/archives/1379&#34;&gt;二&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;为防止 DNS 泄露&lt;/p&gt;
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Flourish/</id>
+        <title>Flourish</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Flourish/"/>
+        <content type="html">&lt;h1 id=&#34;1-A-NEW-POSITIVE-PSYCHOLOGY&#34;&gt;&lt;a href=&#34;#1-A-NEW-POSITIVE-PSYCHOLOGY&#34; class=&#34;headerlink&#34; title=&#34;1 A NEW POSITIVE PSYCHOLOGY&#34;&gt;&lt;/a&gt;1 A NEW POSITIVE PSYCHOLOGY&lt;/h1&gt;&lt;p&gt;幸福 (well-being 不是 happiness) 包含 5 部分&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;组策略，禁用 智能多宿主名称解析&lt;/li&gt;
-&lt;li&gt;firefox 设置 socks5 代理，并开启 socks5 DNS 解析&lt;/li&gt;
-&lt;li&gt;clash 不添加匹配 IP 的规则，牺牲一些性能&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;积极情绪&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Break When Proxy Change 改成 &lt;a href=&#34;https://docs.cfw.lbyczf.com/contents/breakconn.html&#34;&gt;chain&lt;/a&gt;，来切代理时自动断连接&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;用 proxy-provider + rule-provider 的方法，参考 &lt;a href=&#34;https://www.youtube.com/watch?v=IVlnvBQXEgE&#34;&gt;视频&lt;/a&gt;、&lt;a href=&#34;https://www.920.im/clash-rule-providers-configuration/&#34;&gt;这个&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;投入&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;最终采用白名单模式，将直连域名、IP 排除，其它一律走代理，配置文件备份到 asset 文件夹&lt;/li&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://yattazen.com/tutorial/clash-custom-config.html&#34;&gt;分流原则&lt;/a&gt;，重要直连分流规则 &amp;gt; 去广告规则 &amp;gt; 小分流 &amp;gt; 国内外大分流 &amp;gt; 补充规则&lt;/li&gt;
-&lt;li&gt;用到的在线 &lt;a href=&#34;https://github.com/Loyalsoldier/clash-rules&#34;&gt;规则一&lt;/a&gt;（用于决定国内 IP）、&lt;a href=&#34;https://github.com/ACL4SSR/ACL4SSR/tree/master&#34;&gt;规则二&lt;/a&gt;（用于细化应用流量）&lt;/li&gt;
-&lt;li&gt;以后有新要求可以添加在线或自定义规则&lt;/li&gt;
+&lt;li&gt;与情绪的区别，心流状态当时没感觉，回忆觉得好&lt;/li&gt;
+&lt;li&gt;情绪是当时就觉得好，比如自慰&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;另一种方法是，在 profiles 的 parsers 中可加入自定义内容修改原订阅&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;意义&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;成就&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;可参考 &lt;a href=&#34;https://chenjuefei.com:444/117.html&#34;&gt;这个&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/Dreamacro/clash/wiki/configuration&#34;&gt;官方配置文件写法&lt;/a&gt;，更全的 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/2193&#34;&gt;这个&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/2729&#34;&gt;这个&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;有的人是捐赠类型，前半生挣钱，后半生做慈善&lt;/li&gt;
+&lt;li&gt;有的人是一直激励，认为钱越多越好，服务社会仅仅是追求道路上的副作用&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;题外话，clash 正则 &lt;a href=&#34;https://stackoverflow.com/questions/38933898/error-parsing-regexp-invalid-or-unsupported-perl-syntax&#34;&gt;不支持 lookarounds&lt;/a&gt;，但如果支持，正常用正则排除掉一组词，应该这样写 &lt;code&gt;^(?!.*(dollar|euro|pound)).*&lt;/code&gt;，匹配不包含 (dollar|euro|pound) 的词，&lt;a href=&#34;https://regexland.com/regex-match-all-except/&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;开启 TUN，用 script 模式，默认程序走 DIRECT 直连&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;积极的关系&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;选中的程序进行流量规则匹配，但对于手动跳过某条匹配规则的情况，如 chrome 浏览器需要临时转给流量分析程序，暂时用接入 clash 的方式区分&lt;/li&gt;
-&lt;li&gt;HTTP&amp;#x2F;Socks5 进行流量匹配，TUN 则手动选择代理，见 asset 中 clash_rule.yml&lt;/li&gt;
-&lt;li&gt;此时配合 SwitchyOmega 开启快速切换，在 HTTP 和 直连（即 TUN 接入）间切换&lt;/li&gt;
+&lt;li&gt;虽然关系总是和其它部分一起出现，但关系导致的合作有进化意义&lt;/li&gt;
+&lt;li&gt;有一个可以随时倾诉的对象，可以活得更久&lt;br&gt;每部分都需要&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果需要开启多个监听端口可用 clash core&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;对幸福有用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;追求其本身就是原因，而非追求其是为了其它内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;定义和测量都独立于其它部分，即排他&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;这些部分并非表示要求或建议这样做而是描述事实&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当帮助或感激他人时，自己会感觉更好&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;在终端中启动 &lt;code&gt;clash-win64.exe -f 配置文件路径 &lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;配置文件设置控制端口，如 9090，然后 &lt;code&gt;https://clash.razord.top/#/proxies?host=127.0.0.1&amp;amp;port=9090&amp;amp;secret=&lt;/code&gt; 来控制和切换&lt;/p&gt;
-  &lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;mixed-port:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;17891&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;mode:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;global&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;log-level:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;debug&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;external-controller:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;127.0&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;.0&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;.1&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;:9090&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;proxies:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 代理服务器节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;原谅敌人（在课程清单中）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;clash 的 api 也可实现一些自定义功能，如 &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/2605&#34;&gt;这个&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选机场&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;写下今天的 3 件好事&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;测速，自己用 stairspeed 注册临时账号买便宜套餐晚高峰测&lt;/li&gt;
-&lt;li&gt;经历，经营时间、过去评价、目前跑路风险&lt;/li&gt;
-&lt;li&gt;审计，哪些端口被封，或只允许哪些端口，哪些网站被封&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-5-VPN-转-代理&#34;&gt;&lt;a href=&#34;#4-5-VPN-转-代理&#34; class=&#34;headerlink&#34; title=&#34;4.5 VPN 转 代理&#34;&gt;&lt;/a&gt;4.5 VPN 转 代理&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;VPN 为全局，在某些场景下不够灵活，因此需要转成代理 Socks5&amp;#x2F;HTTP&lt;/li&gt;
-&lt;li&gt;例子：Google one vpn，连接前先进行地区校验，然后才开始连接，每隔一段时间还要再次校验，&lt;a href=&#34;https://bbs.yummy.best/t/topic/467&#34;&gt;详情参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;所以要&lt;ul&gt;
-&lt;li&gt;将校验流量走代理&lt;/li&gt;
-&lt;li&gt;由于 VPN 是全局的，不方便使用，要将其转换为 socks&amp;#x2F;http 代理，集成到 clash 分流管理中&lt;/li&gt;
-&lt;li&gt;只有安卓使用了没有被封 UDP 2153 端口，而其它平台用了被封的 443，因此只有安卓可以不套代理直连，其它平台还要再套一层转发 UDP 比较快的代理（这样做仅是为了获得纯净的落地 IP，要消耗机场流量）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;方法&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.techkoala.top/google_one_vpn/&#34;&gt;方法1&lt;/a&gt;：将 android 手机设置代理走 Windows clash，代理校验流量，再将手机 VPN 共享出来。以后试试 光速 虚拟机&lt;/li&gt;
-&lt;li&gt;方法2：不借助手机、软路由，只用 Windows 作为主设备的使用方式&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=GjhetHGIKLg&#34;&gt;局域网共享网络视频&lt;/a&gt;，能代理 VPN 底层流量，只能是网关共享或路由共享（配置系统 socks&amp;#x2F;http 代理取决于 VPN 软件是否遵守，有可能可以），由于 Windows Clash &lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/1865&#34;&gt;不支持网关共享&lt;/a&gt;，因此只能路由共享&lt;/li&gt;
-&lt;li&gt;由于只用一台设备，那么运行 VPN 客户端的要是虚拟的 android&amp;#x2F;windows 设备，虚拟 android（像下面一样桥接到环回网卡）类似方法 1，下面考虑虚拟 windows&lt;/li&gt;
-&lt;li&gt;新建环回网卡，将 windows 虚拟机桥接到该网卡，宿主机共享 clash 网卡流量给环回网卡，网卡右键 – 属性 – Internet 连接共享（好像每次系统重启要重新配置一下共享），而且可能要设置虚拟机中网卡的 DNS 1.1.1.1、8.8.8.8&lt;/li&gt;
-&lt;li&gt;宿主机 clash 配置分流策略，代理校验流量，还要代理 UDP 2153 流量&lt;/li&gt;
-&lt;li&gt;虚拟机连接 VPN，同时装 clash 开启局域网共享，不开 TUN，策略 DIRECT，仅将 clash 作为 socks&amp;#x2F;http 服务器把网络共享出去，给宿主机 clash 或局域网设备使用&lt;/li&gt;
+&lt;li&gt;因为进化导致人们会关注不好的事&lt;/li&gt;
+&lt;li&gt;每件事问 3 个问题&lt;ul&gt;
+&lt;li&gt;为何这件好事发生了？&lt;/li&gt;
+&lt;li&gt;这件事对我意味着什么？&lt;/li&gt;
+&lt;li&gt;如何让更多这种事发生？&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;题外话：多个网卡都配置网关，根据跃点数，选择路由，可以这样改&lt;ul&gt;
-&lt;li&gt;网卡 IPv4 属性 – 高级 – 取消自动跃点，要是固定 IP 有两处配置，一处网关，一处接口，最终跃点看起来是两者相加，跃点越低优先级越高，通过 route print 查看&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-6-多重代理&#34;&gt;&lt;a href=&#34;#4-6-多重代理&#34; class=&#34;headerlink&#34; title=&#34;4.6 多重代理&#34;&gt;&lt;/a&gt;4.6 多重代理&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;链式代理：通过不断添加前置代理，如报文按 A –&amp;gt; B –&amp;gt; C 转发，C 配前置代理为 B，B 配前置代理为 A，报文封装与转发顺序相反，为 CBA。以下几种前置代理方法，按灵活性递减列出&lt;ul&gt;
-&lt;li&gt;软件内设置，或设置系统代理&amp;#x2F;环境变量（并被软件使用），如 Tor、浏览器&lt;/li&gt;
-&lt;li&gt;代理软件内，设置命中转发规则后使用链式代理，如 clash relay、v2ray proxySettings、Proxifier&amp;#x2F;ProxyChains 中的链式代理&lt;/li&gt;
-&lt;li&gt;TUN 模式&amp;#x2F;VPN，成为上层软件的前置代理。用于不支持设置代理或不使用系统代理的软件&lt;/li&gt;
-&lt;li&gt;宿主机，作为虚拟机的前置代理，网关共享&amp;#x2F;路由共享&amp;#x2F;设置系统代理三种模式。好处是网关共享&amp;#x2F;路由共享时，不会漏掉没代理的流量&lt;/li&gt;
-&lt;li&gt;路由器作网关，成为局域网设备的前置代理。万能但笨重，可以一直叠加上级路由器作为前置代理&lt;/li&gt;
-&lt;li&gt;限制：clash 不支持 UDP relay（可用 meta core 的 UoT），代理节点不允许国外 IP 入站，不允许不常用端口出站&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;5-命令行&#34;&gt;&lt;a href=&#34;#5-命令行&#34; class=&#34;headerlink&#34; title=&#34;5 命令行&#34;&gt;&lt;/a&gt;5 命令行&lt;/h1&gt;&lt;h2 id=&#34;5-1-msys2&#34;&gt;&lt;a href=&#34;#5-1-msys2&#34; class=&#34;headerlink&#34; title=&#34;5.1 msys2&#34;&gt;&lt;/a&gt;5.1 msys2&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;为了使用最新的 gcc，安装一套编译工具。&lt;strong&gt;安装时卡在 66% “Updating trust database” ，一定用任务管理器杀掉进程，重新再运行一遍安装&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;打开 MSYS 命令行&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 更新软件数据库和已安装软件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Syu&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装 mingw-w64 GCC&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 前一条命令会装 python，这里装 pip，似乎只装 mingw 的 pip 就行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -S python3-pip&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -S mingw-w64-x86_64-python-pip&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -S vim git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用 windows 下的 meld 安装包，不用下面的，太大了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# windows 下的 meld 只能在 MSYS2 下启动，不能在 mingw64，不清楚原因&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# pacman -S mingw-w64-x86_64-meld3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;编辑 bash.bashrc&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 参考 ANSI Escape Sequences https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;PS1=&lt;span class=&#34;string&#34;&gt;&amp;#x27;\[\033]0;\W\007\]&amp;#x27;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# set window title&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;PS1=&lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$PS1&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;\[\033[32m\]&amp;#x27;&lt;/span&gt;       &lt;span class=&#34;comment&#34;&gt;# change to green&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;PS1=&lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$PS1&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;[\! \A \w] &amp;#x27;&lt;/span&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;PS1=&lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$PS1&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;\[\033[0m\]&amp;#x27;&lt;/span&gt;        &lt;span class=&#34;comment&#34;&gt;# change color&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 为了使用 Python 包&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PYTHONPATH=&lt;span class=&#34;string&#34;&gt;&amp;quot;D:\soft\msys64\usr\lib\python3.9\site-packages&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 右键启动时使用默认配色，SecureCRT 使用 dircolors.256dark&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; [ &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$TERM_PROGRAM&lt;/span&gt;&amp;quot;&lt;/span&gt; != &lt;span class=&#34;string&#34;&gt;&amp;quot;mintty&amp;quot;&lt;/span&gt; ]; &lt;span class=&#34;keyword&#34;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;built_in&#34;&gt;eval&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;$(dircolors -b /etc/dircolors.256dark)&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;#x27;ls --color=auto&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;alias&lt;/span&gt; ll=&lt;span class=&#34;string&#34;&gt;&amp;#x27;ls --color=auto -alF&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;alias&lt;/span&gt; vi=vim&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;alias&lt;/span&gt; grep=&lt;span class=&#34;string&#34;&gt;&amp;quot;/bin/grep --color&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;设置&lt;a href=&#34;https://github.com/njzhangyifei/msys2-mingw-shortcut-menus&#34;&gt;右键菜单&lt;/a&gt;，reg 已放到资源目录 &lt;code&gt;右键菜单Bash.reg&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;cmake-gui 要装 Qt5，太大了，直接用官网的包中的 cmake-gui 替换掉 D:\soft\msys64\mingw64\bin 中的&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;以下几条针对 SecureCRT，添加到 login 执行中&lt;/p&gt;
-  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;export MSYS2_PATH_TYPE=inherit&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export MSYSTEM=MINGW64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;source /etc/profile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;设置为 True Color&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;允许输入中文，&lt;code&gt;\msys64\home\username\.inputrc&lt;/code&gt; 中 &lt;code&gt;Allow 8-bit input/output&lt;/code&gt; 下面 4 行去掉注释，即 set meta-flag on 到 set output-meta on&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pacman -S package_name  #安装软件包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -R package_name  #删除软件包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Rs package_name #顺便删除软件包相关依赖&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Syu             #升级系统中的所有包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Ss package      #查询软件包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Qs package      #查询已安装的包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Qi package      #显示查找的包的信息&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Ql package      #显示你要找的包的文件都安装的位置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Sw package      #下载但不安装包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -U  /path/package.pkg.tar.gz #安装本地包&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Scc             #清理包缓存，下载的包会在/var/cache 这个目录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pacman -Sf pacman       #重新安装包&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+&lt;li&gt;&lt;p&gt;找到自己擅长 (signature strength) 的事，并去做，网站 &lt;a href=&#34;http://www.authentichappiness.org/&#34;&gt;www.authentichappiness.org&lt;/a&gt; ，测试结果在 asset 中&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/../IDE/#Clion&#34;&gt;Clion&lt;/a&gt; 中指定环境目录为  &lt;code&gt;D:\soft\msys64\mingw64\&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;参考 1 &lt;a href=&#34;https://www.chenshaowen.com/blog/correct-way-to-use-vim-on-windows.html&#34;&gt;Windows 下正确使用 Vim 的方式&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;参考 2 &lt;a href=&#34;https://creaink.github.io/post/Computer/Windows/win-msys2.html&#34;&gt;MSYS2 和 mintty 打造 Windows 下 Linux 工具体验&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;只为赚钱的是 job，为了升职的是 career，不给钱、不升职也做的是 calling 召唤&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;5-2-git-bash&#34;&gt;&lt;a href=&#34;#5-2-git-bash&#34; class=&#34;headerlink&#34; title=&#34;5.2 git bash&#34;&gt;&lt;/a&gt;5.2 git bash&lt;/h2&gt;&lt;p&gt;openssh 方式不论用 cmd 还是 powershell 都没法正确显示长命令，两个办法，git bash (mintty) 或 SecureCRT 的 local shell。不考虑 windows 商店中的 terminal&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;对于伴侣分享的喜悦给予真诚的回应（不是敷衍的）&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;字体、透明度、主题 dracula&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;修改 PS1，&lt;code&gt;D:\MySoftware\Git\etc\profile.d\git-prompt.sh&lt;/code&gt;，与 msys2 的配置相同&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;查找之前输出 Alt + F3，Shift + Enter &amp;#x2F; Enter 上一个和下一个匹配&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Python 代码中设置标准输出编码，否则为 GBK&lt;/p&gt;
-  &lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; sys&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sys.stdout.reconfigure(encoding=&lt;span class=&#34;string&#34;&gt;&amp;#x27;utf-8&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;python -u 运行脚本，以便立刻输出到命令行。进入 python -i ，退出 exit()&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对于 SecureCRT 集成 git bash，选择 &lt;code&gt;D:\soft\Git\bin\bash.exe&lt;/code&gt; 而非 &lt;code&gt;\user\bin\bash.exe&lt;/code&gt;。进入后 &lt;code&gt;source /etc/profile&lt;/code&gt; 来设置 locale 的中文和 TERM 变量&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如有 SecureCRT，修改 PS1 同上，字体可指定 Jetbrains 的，颜色为 24 位&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如有 SecureCRT，配置文件夹颜色，来自 &lt;a href=&#34;https://github.com/seebi/dircolors-solarized&#34;&gt;dircolors-solarized&lt;/a&gt; 中的 dircolors.256dark，改  &lt;code&gt;/etc/bash.bashrc&lt;/code&gt; 靠近文档最后的地方为 &lt;code&gt;eval &amp;quot;$(dircolors -b /etc/dircolors.256dark)&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;提到婚姻咨询中的建议都是教如何更好处理矛盾的，但没有告诉如何应对分享的喜悦&lt;/li&gt;
+&lt;li&gt;使用积极的词汇，positive &amp;#x2F; negative 词汇的比例用来衡量关系&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;5-3-shell&#34;&gt;&lt;a href=&#34;#5-3-shell&#34; class=&#34;headerlink&#34; title=&#34;5.3 shell&#34;&gt;&lt;/a&gt;5.3 shell&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;使用 powershell，输入 &lt;code&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/code&gt; 允许执行脚本&lt;/li&gt;
-&lt;li&gt;在 &lt;code&gt;F:\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1&lt;/code&gt; 中添加，自定义颜色&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://superuser.com/questions/1259900/how-to-colorize-the-powershell-prompt&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;prompt&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;span class=&#34;variable&#34;&gt;$ESC&lt;/span&gt; = [&lt;span class=&#34;built_in&#34;&gt;char&lt;/span&gt;]&lt;span class=&#34;number&#34;&gt;27&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$ESC&lt;/span&gt;[35m&lt;span class=&#34;variable&#34;&gt;$&lt;/span&gt;(Get-Date -Format &amp;quot;&lt;/span&gt;HH:mm&lt;span class=&#34;string&#34;&gt;&amp;quot;) &lt;span class=&#34;variable&#34;&gt;$&lt;/span&gt;(&lt;span class=&#34;variable&#34;&gt;$executionContext&lt;/span&gt;.SessionState.Path.CurrentLocation)&lt;span class=&#34;variable&#34;&gt;$&lt;/span&gt;(&amp;#x27;&amp;gt;&amp;#x27; * (&lt;span class=&#34;variable&#34;&gt;$nestedPromptLevel&lt;/span&gt; + 1))&lt;span class=&#34;variable&#34;&gt;$ESC&lt;/span&gt;[0m &amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ABC model，不是灾难，而是持有的信念、对其的解读导致相应的感受&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;对于 cmd，添加系统变量 PROMPT 值为 &lt;code&gt;$T$H$H$H$H$H$H$S$P$G$S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;通过理性思考问题，最好、最坏、最可能的情况，消除不好的念头&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;5-4-openssh&#34;&gt;&lt;a href=&#34;#5-4-openssh&#34; class=&#34;headerlink&#34; title=&#34;5.4 openssh&#34;&gt;&lt;/a&gt;5.4 openssh&lt;/h2&gt;&lt;p&gt;参照 &lt;a href=&#34;https://winscp.net/eng/docs/guide_windows_openssh_server&#34;&gt;Installing SFTP&amp;#x2F;SSH Server on Windows using OpenSSH&lt;/a&gt;，1803 之后用系统直接安装，之前版本步骤如下&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;下载 &lt;a href=&#34;https://github.com/PowerShell/Win32-OpenSSH/releases&#34;&gt;OpenSSH for Windows binaries&lt;/a&gt; OpenSSH-Win64.zip 解压到 C:\Program Files\OpenSSH&lt;/li&gt;
-&lt;li&gt;管理员权限 powershell &lt;code&gt;powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;开启防火墙，管理员权限 powershell &lt;code&gt;New-NetFirewallRule -Name sshd -DisplayName &amp;#39;OpenSSH SSH Server&amp;#39; -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22 -Program &amp;quot;C:\Program Files\OpenSSH\sshd.exe&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;services.msc 开启 OpenSSH SSH Server 服务&lt;/li&gt;
-&lt;li&gt;对于 &lt;code&gt;Administrators&lt;/code&gt; 用户组用户，将生成的公钥存到 &lt;code&gt;C:\ProgramData\ssh\administrators_authorized_keys&lt;/code&gt; 中（原理是 SSH 客户端保存私钥，服务器端放公钥）&lt;br&gt; - 文章中用的 PuTTYgen 来生成公私密钥对，这里用的 &lt;a href=&#34;https://www.vandyke.com/support/tips/publickeyauth.html&#34;&gt;SecureCRT 方式&lt;/a&gt; 生成，生成格式选的 OpenSSH Key format (new)，将 Identity.pub 的内容放入 administrators_authorized_keys&lt;br&gt;  - 这种方式的 Key 用到 WinSCP 上也可以，但会提示转换，新生成 Identity.ppk 进行 SFTP 连接&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;作者指出自己的方法是可以自我维持的，而药物和谈话在停止后，效果就逐渐没有了&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;对于 ssh 客户端，把 key 放到 &lt;code&gt;C:\Users\用户名\.ssh&lt;/code&gt; 下，即可连接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;6-其它&#34;&gt;&lt;a href=&#34;#6-其它&#34; class=&#34;headerlink&#34; title=&#34;6 其它&#34;&gt;&lt;/a&gt;6 其它&lt;/h1&gt;&lt;h2 id=&#34;6-1-mbr-转-gpt&#34;&gt;&lt;a href=&#34;#6-1-mbr-转-gpt&#34; class=&#34;headerlink&#34; title=&#34;6.1 mbr 转 gpt&#34;&gt;&lt;/a&gt;6.1 mbr 转 gpt&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;用 diskgenius 转换分区表&lt;/li&gt;
-&lt;li&gt;在系统盘前面分出 500MB 空余空间，用 diskgenius 建立 ESP 和 MBR 分区&lt;/li&gt;
-&lt;li&gt;使用 PE 工具修复引导&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;6-2-Google&#34;&gt;&lt;a href=&#34;#6-2-Google&#34; class=&#34;headerlink&#34; title=&#34;6.2 Google&#34;&gt;&lt;/a&gt;6.2 Google&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Google 搜索可在设置中指定地区，避免结果随 IP 而变化；也可通过 &lt;a href=&#34;https://10wontips.blogspot.com/2018/07/always-search-google-in-english-by.html&#34;&gt;在 URL 指定的方式&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;如 US，&lt;code&gt;https://www.google.com/search?q=%s&amp;amp;pws=0&amp;amp;gl=us&amp;amp;gws_rd=cr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;药物除了对最严重抑郁的病人有用，中度和轻度抑郁效果几乎没有&lt;/li&gt;
+&lt;li&gt;药物分为治疗和掩饰两种，精神类药物都是掩饰类型的&lt;/li&gt;
+&lt;li&gt;作者建议心理治疗不应只是药物或谈话缓解，而是让患者学会如何与负面情绪相处，更进一步是找到幸福与意义，即前面提到的 5 部分&lt;/li&gt;
+&lt;li&gt;作者谈到自己的经历，早期误入了脱离实际只研究理论的歧途，后期作为 APA 主席时，里面的人又不重视科学证明&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;7-备份与还原&#34;&gt;&lt;a href=&#34;#7-备份与还原&#34; class=&#34;headerlink&#34; title=&#34;7 备份与还原&#34;&gt;&lt;/a&gt;7 备份与还原&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;见备份策略文档&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;8-U-盘系统&#34;&gt;&lt;a href=&#34;#8-U-盘系统&#34; class=&#34;headerlink&#34; title=&#34;8 U 盘系统&#34;&gt;&lt;/a&gt;8 U 盘系统&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;使用移动硬盘盒 + 固态硬盘的方案，而非固态 U 盘，因为&lt;ul&gt;
-&lt;li&gt;固态硬盘以后可以给 PC 用&lt;/li&gt;
-&lt;li&gt;移动硬盘盒 USB type A 和 type C 只要换线就可支持不同接口，作为 U 盘或随身系统&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;装系统软件使用 WTG(win to go) 辅助工具，默认选项增加分区配置即可，方法参考 &lt;a href=&#34;https://post.smzdm.com/p/a5dx4507/&#34;&gt;教大家制作 “随身携带” 的 Windows 11 系统&lt;/a&gt; 和 &lt;a href=&#34;https://bbs.luobotou.org/forum-88-1.html&#34;&gt;萝卜头IT论坛&lt;/a&gt;。傲梅也有 WinToGo 工具，可以试试 &lt;a href=&#34;https://www.disktool.cn/wintogo.html&#34;&gt;口袋系统WinToGo&lt;/a&gt;。另外按照这个&lt;a href=&#34;https://www.bilibili.com/read/cv15813796/&#34;&gt;教程&lt;/a&gt;，Rufus 也可以&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/</id>
-        <title>Kopia</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/"/>
-        <content type="html">&lt;h1 id=&#34;1-Kopia&#34;&gt;&lt;a href=&#34;#1-Kopia&#34; class=&#34;headerlink&#34; title=&#34;1 Kopia&#34;&gt;&lt;/a&gt;1 Kopia&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;KopiaUI 程序所在目录新建 &lt;code&gt;repositories&lt;/code&gt;，实现 &lt;a href=&#34;https://github.com/kopia/kopia/pull/398&#34;&gt;portable&lt;/a&gt;、&lt;a href=&#34;https://github.com/kopia/kopia/issues/2282&#34;&gt;更详细的描述&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;VSS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;先在 &lt;code&gt;repository.config&lt;/code&gt; 中 &lt;code&gt;enableActions&lt;/code&gt; 改为 true，然后用命令配置全局 profile（因为 gui 目前有 bug）&lt;/p&gt;
-  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 命令的前部分从 GUI 里面复制&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--before-snapshot-root-action&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\before.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\after.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要清空配置传空字符串 &amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;管理员 powershell，&lt;code&gt;Set-ExecutionPolicy Unrestricted&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;修改 ps1 关联，用 powershell 运行&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;before 脚本里有调试信息，放开后可用来确认脚本执行和备份路径&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.ubackup.com/windows-10/shadow-copy-windows-10-4348.html&#34;&gt;查看和删除 vss&lt;/a&gt;，防止 after 脚本没执行，&lt;code&gt;vssadmin list shadows&lt;/code&gt;，&lt;code&gt;vssadmin delete shadows&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kopia.io/docs/reference/command-line/&#34;&gt;常用命令&lt;/a&gt;（软件的路径&lt;u&gt;&lt;em&gt;区分大小写&lt;/em&gt;&lt;/u&gt;，尽管 Windows 不区分）&lt;/p&gt;
-  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;repository status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy &lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show D:\&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;GUI 设置全局 policy，备份 10 个，其它为 0，忽略相同备份，zstd 压缩&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;.kopiaignore&lt;/code&gt; 文件，路径用 &lt;code&gt;/&lt;/code&gt; 分隔，且相对路径以 &lt;code&gt;/&lt;/code&gt; 起始，如 &lt;code&gt;/pagefile.sys&lt;/code&gt;、&lt;code&gt;/Windows/Temp/&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;系统盘排除内容可参考 dism++ 配置&lt;/li&gt;
-&lt;li&gt;ignore 内容少，直接保存到 global 中配置 Ignore Files 列表，不用 &lt;code&gt;.kopiaignore&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;snapshot estimate D:\&lt;/code&gt; 确认 ignore 生效&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;创建 &lt;code&gt;snapshot create D:\&lt;/code&gt;，由于只备份一个路径（D:\），所以用 global profile 即可&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;确认备份过程是否存在错误，&lt;code&gt;snapshot ls&lt;/code&gt; 和 &lt;code&gt;show 前一个命令的 ID&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/tracking-down-backup-errors/126/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;以后，定期确认备份文件是否正确，&lt;code&gt;snap verify --verify-files-percent 1&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/best-method-to-ensure-valid-snapshots-snapshot-verify-vs-snapshot-fix-invalid-files/1217/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;删除的 snapshot 对应的文件会 &lt;a href=&#34;https://kopia.discourse.group/t/clearing-the-repository-after-deleting-a-snapshot/575&#34;&gt;延迟 24h 左右删除&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;diff OLDID NEWID&lt;/code&gt; 显示 snap 区别&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可手动 snap 然后 pin，pin 的 snap 不计入 &lt;code&gt;Latest Snapshots&lt;/code&gt; 的设置中&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sync-to 可以暂停后恢复，而直接推送到云端，即 snap create 则不能&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;推送到云端，&lt;code&gt; repository sync-to rclone --remote-path=alist_local:/阿里云盘/d_backup --rclone-exe=D:\soft\KopiaUI\rclone-alist\rclone.exe --delete --dry-run&lt;/code&gt;，实际用去掉 &lt;code&gt;--dry-run&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/configure-multiple-repositories/1194&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;对阿里云盘，初始版本用官方客户端上传更快，sync-to 速度要慢一倍&lt;/li&gt;
-&lt;li&gt;对 Onedrive，rclone + alist 的上传速度要好于只用 rclone。同样初始版本选择官方客户端，同步盘手动上传技巧&lt;ul&gt;
-&lt;li&gt;设置 onedrive 同步路径为 NOBACK 文件夹里&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;F:\FNOBACK\OneDrive - MSFT\g_backup&amp;quot; &amp;quot;F:\g_backup&amp;quot;&lt;/code&gt; 开启上传&lt;/li&gt;
-&lt;li&gt;上传后，客户端退出 Onedrive 账户，删除 OneDrive 文件夹&lt;/li&gt;
+&lt;h1 id=&#34;2-THE-WAYS-TO-FLOURISH&#34;&gt;&lt;a href=&#34;#2-THE-WAYS-TO-FLOURISH&#34; class=&#34;headerlink&#34; title=&#34;2 THE WAYS TO FLOURISH&#34;&gt;&lt;/a&gt;2 THE WAYS TO FLOURISH&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;目前社会将学习的过错归因于&lt;strong&gt;过去&lt;/strong&gt;的成长&lt;strong&gt;环境&lt;/strong&gt;，而积极心理学则着眼于未来，计划、目标、改变个人&lt;strong&gt;性格&lt;/strong&gt;而改变&lt;strong&gt;未来&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;智力是 achievement &amp;#x3D; skill X effort&lt;ul&gt;
+&lt;li&gt;skill&lt;ul&gt;
+&lt;li&gt;执行速度：更快完成任务，别人需要思考的事，用自动化的直觉就能完成，从而省下时间&lt;/li&gt;
+&lt;li&gt;慢：（个人认为是快思慢想中的慢思考），确定方向、集中精力、自我管理，创造、做计划、检查错误、抑制冲动&lt;/li&gt;
+&lt;li&gt;学习速度&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;开机同步、关机备份脚本，同步可以并行，备份不能，会出错。此外备份如果添加到组策略中，会要求输入密码&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为了将关机的快捷方式固定到任务栏，需要加 &lt;code&gt;cmd /c&lt;/code&gt;，如 &lt;code&gt;C:\Windows\System32\cmd.exe /C D:\shutdown_backup.bat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;effort：自律、坚韧不拔 GRIT 比 IQ 更能预测成绩，建议学校培养自律的性格（这也解释了女生 IQ 比男生低，但成绩好的原因），同时也会积累更多的技能&lt;/li&gt;
+&lt;li&gt;领域内做到杰出的只有少数几个人，他们与普通人的成就并不是正态分布的平缓曲线，而是陡峭的对数曲线，符合二八定律&lt;ul&gt;
+&lt;li&gt;财富也一样，少数人掌握比普通人多很多的财富&lt;/li&gt;
+&lt;li&gt;这是因为成就是多个因素的乘积关系（而非累加），杰出的人各个因素比普通人多一点，结果就差好几倍&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;其它&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kopia 类似工具不适合备份系统，因为即使用了 VSS，甚至用 SYSTEM 用户权限执行，也会出现某些文件没权限读取，比如某些文件只能当前用户可读&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.winhelponline.com/blog/run-program-as-system-localsystem-account-windows/&#34;&gt;SYSTEM 用户执行 &lt;/a&gt;使用 PSTools，管理员 powershell，执行 &lt;code&gt;.\PsExec.exe -sid powershell&lt;/code&gt;，获得 SYSTEM 的 shell&lt;ul&gt;
-&lt;li&gt;可在任务管理器，详细信息中确认进程的用户&lt;/li&gt;
+&lt;li&gt;因此建议&lt;ul&gt;
+&lt;li&gt;多刻意练习&lt;/li&gt;
+&lt;li&gt;培养慢思考的功能&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;如要用 Kopia 备份 linux，我认为可尝试 restic 相关&lt;a href=&#34;https://forum.restic.net/t/lack-of-documentation-on-how-to-do-a-full-system-back-up/659/5&#34;&gt;问答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;人类的合作，利他是物种的优势&lt;/li&gt;
+&lt;li&gt;多数人听过 PTSD，但却不知道创伤后很多人是可以恢复的，存在负面情绪就自认为得了 PTSD 反而没病变得患病 (self-fulfilling)&lt;ul&gt;
+&lt;li&gt;经受过磨难的人心理更强大&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-1-Alist-Rclone&#34;&gt;&lt;a href=&#34;#1-1-Alist-Rclone&#34; class=&#34;headerlink&#34; title=&#34;1.1 Alist  Rclone&#34;&gt;&lt;/a&gt;1.1 Alist  Rclone&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;kopia 支持 webdav 但效果不好，所以再套一层 rclone 来上传备份&lt;/li&gt;
-&lt;li&gt;alist&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;alist start&lt;/code&gt; 启动，注意关闭命令窗口会自动退出&lt;/li&gt;
-&lt;li&gt;配置文件 &lt;code&gt;data\config.json&lt;/code&gt; 要改成高位端口，否则起不来，闪退&lt;/li&gt;
-&lt;li&gt;防火墙要放行，应该自动弹出确认&lt;/li&gt;
-&lt;li&gt;alist 也可装到 OpenWrt 上，需要添加新的源，ipk 安装，&lt;a href=&#34;https://www.bilibili.com/video/BV1qM411U7o7&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;alist 添加 onedrive &lt;a href=&#34;https://alist.nn.ci/zh/guide/drivers/onedrive_app.html&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;用白鼠做实验，植入 50% 致死率的肿瘤，分 3 组&lt;ul&gt;
+&lt;li&gt;分别是可以控制电击停止组、无法控制电击停止组、对照组&lt;/li&gt;
+&lt;li&gt;可控组存活率比对照组高，不可控组比对照组低，说明无助会削弱身体、可控会增强身体&lt;/li&gt;
+&lt;li&gt;但作者也说白鼠的结论不能直接放到人上，因为有 external validity 的问题&lt;/li&gt;
+&lt;li&gt;不可控组中会产生习得性无助，但有 1&amp;#x2F;3 的人或动物永远不会产生习得性无助&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;rclone&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;rclone.conf&lt;/code&gt; 放在同一文件夹，rclone 会 &lt;a href=&#34;https://rclone.org/docs/#config-config-file&#34;&gt;自动使用&lt;/a&gt;，也可手动指定 &lt;code&gt;·--config=CONFIG_FILE&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rclone config&lt;/code&gt; 进行配置向导&lt;/li&gt;
-&lt;li&gt;使用 remote path 来指定操作对象，remote 是 config 中配置的，path 是里面的路径&lt;ul&gt;
-&lt;li&gt;如对于 alist 的阿里云盘备份路径为 &lt;code&gt;alist_local:/阿里云盘/d_backup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;列出目录&lt;code&gt;rclone ls remote:path # lists a remote&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;挂载 &lt;code&gt;rclone.exe --cache-dir=rc_cache --temp-dir=rc_temp mount alist_local: Y: --vfs-cache-mode full&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;这里把 cache 和 temp 指向当前目录，用 &lt;code&gt;rclone.exe config paths&lt;/code&gt; 确认当前设置的路径&lt;/li&gt;
-&lt;li&gt;其它命令见 &lt;a href=&#34;https://rclone.org/docs/&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;乐观、积极情绪更少患病、更容易痊愈，因为&lt;ul&gt;
+&lt;li&gt;健康的生活方式，自律、饮食、锻炼身体&lt;/li&gt;
+&lt;li&gt;有朋友&lt;/li&gt;
+&lt;li&gt;好的心态，免疫系统强&lt;/li&gt;
+&lt;li&gt;关于锻炼，建议每天一万步，保证五千步&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;财富和幸福 well-being 不能划等号&lt;ul&gt;
+&lt;li&gt;只有在事后评价时财富才是幸福的一个要素，财富无法影响某一瞬间的心情&lt;/li&gt;
+&lt;li&gt;社会越富有财富越难影响幸福&lt;/li&gt;
+&lt;li&gt;作者建议从以 GDP 评价改为以 well-being 来评价国家&lt;/li&gt;
+&lt;li&gt;作者认为金融危机的原因不是某些人缺少道德感，而是他们 value 的事情太狭窄了。金融行业只关心赚钱、军人只关心服务国家，而没考虑更广泛的 well-being&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;OneDrive E5&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=4NmPlEf4FTk&#34;&gt;科技lion&lt;/a&gt; 申请&lt;/li&gt;
-&lt;li&gt;用 &lt;a href=&#34;https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X&#34;&gt;docker&lt;/a&gt; 刷新&lt;/li&gt;
-&lt;li&gt;docker 开放的是不安全的 http，因此只监听在本地，用 ssh 做中转，类似 ssh -L 功能，&lt;a href=&#34;https://superuser.com/questions/125043/web-browsing-over-ssh&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;作者认为存在两种现实，一种是乐观也无法改变的客观现实，另一种是可被情绪改变的现实&lt;ul&gt;
+&lt;li&gt;作者提倡的对后者的乐观，对前者认清现实&lt;/li&gt;
+&lt;li&gt;可被情绪改变的现实包括，婚姻状况、健康状况，这里婚姻状况作者举例的是，促进婚姻的良性幻觉（更善良、好看、有趣）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -2829,21 +1722,637 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</id>
-        <title>下载</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/"/>
-        <content type="html">&lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
-&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
-&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/How%20To%20Become%20A%20Hacker/</id>
+        <title>How To Become A Hacker</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/How%20To%20Become%20A%20Hacker/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;来源 &lt;a href=&#34;http://www.catb.org/~esr/faqs/hacker-howto.html&#34;&gt;How To Become A Hacker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For true hackers, the boundaries between “play”, “work”, “science” and “art” all tend to disappear, or to merge into a high-level creative playfulness&lt;/li&gt;
+&lt;li&gt;hackers build things, crackers break them&lt;ul&gt;
+&lt;li&gt;这里只谈软件上的黑客，其中 hackers 和 crackers 的区别&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
-&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;Hackers solve problems and build things, and they believe in freedom and voluntary mutual help&lt;/li&gt;
+&lt;li&gt;to be a hacker you have to get a basic thrill from solving problems, sharpening your skills, and exercising your intelligence&lt;ul&gt;
+&lt;li&gt;Otherwise you’ll find your hacking energy is sapped by distractions like sex, money, and social approval&lt;/li&gt;
+&lt;li&gt;if you tackle just a piece of it and learn from that, you’ll learn enough to solve the next piece — and so on, until you’re done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you’re attracted to hacking because you don’t have a life, that’s OK too — at least you won’t have trouble concentrating. Maybe you’ll get a life later on.&lt;/li&gt;
+&lt;li&gt;If you lack the intelligence, there is little hope for you as a hacker; if you lack the discipline, you’d better grow it.&lt;/li&gt;
+&lt;li&gt;You can learn language features — bits of knowledge — from books, but the mind-set that makes that knowledge into living skill can be learned only by practice and apprenticeship. &lt;ul&gt;
+&lt;li&gt;What will do it is (a) reading code and (b) writing code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How long will it take me to learn to hack?&lt;ul&gt;
+&lt;li&gt;That depends on how talented you are and how hard you work at it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从解决问题中获得快感，从而不被其它事情分心&lt;/li&gt;
+&lt;li&gt;喜欢提高自己的能力并乐在其中，self-motivated&lt;/li&gt;
+&lt;li&gt;远离社交确实可以让自己更专注，但这不是必须&lt;/li&gt;
+&lt;li&gt;崇尚效率&lt;ul&gt;
+&lt;li&gt;不浪费他人时间&lt;/li&gt;
+&lt;li&gt;不解决重复的问题，如闭源软件阻止了重复利用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;推荐 Python、Go、C&amp;#x2F;C++、LISP&lt;ul&gt;
+&lt;li&gt;如果一个编程语言做得太多，那么它适合生产，但不适合学习&lt;/li&gt;
+&lt;li&gt;LISP 是个独特的体验&lt;/li&gt;
+&lt;li&gt;因为现在机器性能已经足够优秀，在性能不关键时减少直接用 C 编程，节省自己的时间&lt;/li&gt;
+&lt;li&gt;只有练习才能提高，读代码、写代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;弄个网站&lt;/li&gt;
+&lt;li&gt;学好英语&lt;/li&gt;
+&lt;li&gt;gift culture，通过给与获得声望，得到别人承认&lt;/li&gt;
+&lt;li&gt;求助时，体现出自己的思考，谨慎提问&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/</id>
+        <title>Design for How People Learn</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/"/>
+        <content type="html">&lt;h1 id=&#34;1-Where-Do-We-Start&#34;&gt;&lt;a href=&#34;#1-Where-Do-We-Start&#34; class=&#34;headerlink&#34; title=&#34;1 Where Do We Start?&#34;&gt;&lt;/a&gt;1 Where Do We Start?&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;学习包含很多方面，不同情景有所不同&lt;ul&gt;
+&lt;li&gt;最简单的是只提供信息&lt;/li&gt;
+&lt;li&gt;技能，提供练习的机会&lt;/li&gt;
+&lt;li&gt;动力，无法直接提供，但可以通过设计流程让学习者更有动力&lt;/li&gt;
+&lt;li&gt;改变旧习惯&lt;/li&gt;
+&lt;li&gt;环境和沟通问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;因此关键是正确识别出问题，即学习需要提供上面哪些内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-Who-are-your-Leaners&#34;&gt;&lt;a href=&#34;#2-Who-are-your-Leaners&#34; class=&#34;headerlink&#34; title=&#34;2 Who are your Leaners?&#34;&gt;&lt;/a&gt;2 Who are your Leaners?&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;明确学习者&lt;ul&gt;
+&lt;li&gt;当前技能水平&lt;/li&gt;
+&lt;li&gt;动机是什么，动机来着外部的要尽量转化为内部，激发其兴趣（个：让其主动），如通过&lt;ul&gt;
+&lt;li&gt;与其感兴趣的内容联系&lt;/li&gt;
+&lt;li&gt;联系实际问题&lt;/li&gt;
+&lt;li&gt;适当难度的挑战&lt;/li&gt;
+&lt;li&gt;让学得好的帮助其&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如条件允许，为不同水平的人提供不同的指导（个：因材施教）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;帮助学习者建立知识架构、路线图、核心内容最重要，这样他们好知道把新知识放在哪里&lt;ul&gt;
+&lt;li&gt;以问题导向讲解知识&lt;/li&gt;
+&lt;li&gt;让学习者讲给别人，从而练习组织自己的知识架构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最好用互动教学方式，及时从学习者收到反馈，而非单向传输&lt;ul&gt;
+&lt;li&gt;用各种手段了解学习者，交流、体验其环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-What’s-the-Goal&#34;&gt;&lt;a href=&#34;#3-What’s-the-Goal&#34; class=&#34;headerlink&#34; title=&#34;3 What’s the Goal&#34;&gt;&lt;/a&gt;3 What’s the Goal&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;比设定目标更重要的是识别出当前的问题，从而找到最优的方式解决问题，而非只关注达成目标&lt;/li&gt;
+&lt;li&gt;对于目标&lt;ul&gt;
+&lt;li&gt;分解量化，避免模糊&lt;/li&gt;
+&lt;li&gt;确定实际中用的上&lt;/li&gt;
+&lt;li&gt;确定能判断出目标是否达成&lt;/li&gt;
+&lt;li&gt;确定要掌握的程度，有的能力短期可掌握，有的需要长时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-How-Do-We-Remember&#34;&gt;&lt;a href=&#34;#4-How-Do-We-Remember&#34; class=&#34;headerlink&#34; title=&#34;4 How Do We Remember?&#34;&gt;&lt;/a&gt;4 How Do We Remember?&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;将知识增加更多的联系，编成故事记得牢，因为&lt;ul&gt;
+&lt;li&gt;故事更吸引人&lt;/li&gt;
+&lt;li&gt;已包含了组织结构、逻辑关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;放到实际环境中学习效果更好（如飞行模拟器），因为记忆和环境相关&lt;ul&gt;
+&lt;li&gt;学习与人处理时，附带情景中的情绪也模拟出来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;区分要记忆的程度，如果只是能够识别，那么选择题测验是可以的，但如果要能回忆起完整步骤，需要空白的简答题&lt;/li&gt;
+&lt;li&gt;通过不断重复，记忆得到加深，但简单重复会有枯燥的问题，同时与情景的联系单一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-How-do-you-Get-their-Attention&#34;&gt;&lt;a href=&#34;#5-How-do-you-Get-their-Attention&#34; class=&#34;headerlink&#34; title=&#34;5 How do you Get their Attention&#34;&gt;&lt;/a&gt;5 How do you Get their Attention&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;象与骑手的比喻，人们往往高估自己的控制能力.&lt;/li&gt;
+&lt;li&gt;为了吸引注意力，需要&lt;ul&gt;
+&lt;li&gt;用故事阐明，并留有悬念&lt;/li&gt;
+&lt;li&gt;视频、图片解释概念、比喻、统计数字、应用场景&lt;/li&gt;
+&lt;li&gt;为何学、怎么学&lt;/li&gt;
+&lt;li&gt;挑战&lt;ul&gt;
+&lt;li&gt;难度适中的问题&lt;/li&gt;
+&lt;li&gt;时间限制&lt;/li&gt;
+&lt;li&gt;应用学到的知识&lt;/li&gt;
+&lt;li&gt;好的快速的反馈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一起学，竞争与合作&lt;/li&gt;
+&lt;li&gt;谨慎使用外部奖赏，因为会将内部激励转为外部，从而背离真正的目标&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-Design-for-Knowledge&#34;&gt;&lt;a href=&#34;#6-Design-for-Knowledge&#34; class=&#34;headerlink&#34; title=&#34;6 Design for Knowledge&#34;&gt;&lt;/a&gt;6 Design for Knowledge&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;利用学习者已有的知识框架&lt;/li&gt;
+&lt;li&gt;问题驱动教学，让学生感到困惑，从而主动学习自己未知的内容，记得更牢&lt;/li&gt;
+&lt;li&gt;阐明观点时，给出反例比正确的例子更能说明问题&lt;ul&gt;
+&lt;li&gt;然后可以让学生自己从反例中总结经验，而非直接给结论&lt;/li&gt;
+&lt;li&gt;做到既给出具体应用，又讲述理论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-Design-for-Skills&#34;&gt;&lt;a href=&#34;#7-Design-for-Skills&#34; class=&#34;headerlink&#34; title=&#34;7 Design for Skills&#34;&gt;&lt;/a&gt;7 Design for Skills&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;掌握技能的两个条件：练习和反馈&lt;/li&gt;
+&lt;li&gt;练习：分散到长的时间范围内记得更好，小的目标组成大的目标，对应短期、长期目标&lt;ul&gt;
+&lt;li&gt;难易穿插，给学习者消化的时间，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;反馈：快速、频繁、多样&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;8-Design-for-Motivation&#34;&gt;&lt;a href=&#34;#8-Design-for-Motivation&#34; class=&#34;headerlink&#34; title=&#34;8 Design for Motivation&#34;&gt;&lt;/a&gt;8 Design for Motivation&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;让学习者认可的人宣传这个学习有用、好学&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;9-Design-for-Habits&#34;&gt;&lt;a href=&#34;#9-Design-for-Habits&#34; class=&#34;headerlink&#34; title=&#34;9 Design for Habits&#34;&gt;&lt;/a&gt;9 Design for Habits&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;无反馈或反馈延迟会阻碍习惯的养成&lt;/li&gt;
+&lt;li&gt;具体化目标，设计不同场景如何应对&lt;/li&gt;
+&lt;li&gt;让目标容易达成&lt;/li&gt;
+&lt;li&gt;改进环境，让其适合习惯养成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;10-Design-Evaluation&#34;&gt;&lt;a href=&#34;#10-Design-Evaluation&#34; class=&#34;headerlink&#34; title=&#34;10 Design Evaluation&#34;&gt;&lt;/a&gt;10 Design Evaluation&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;要测试课程水平，要请人试学，而非自己，因为对于已经会的人是看不出问题的&lt;/li&gt;
+&lt;li&gt;问答题比选择题对知识掌握的要求更高，作者建议这种评估方式&lt;ul&gt;
+&lt;li&gt;但这样提供反馈与选择题相比更复杂，当无法找到专家时，可使用&lt;ul&gt;
+&lt;li&gt;同伴或相对学得好的&lt;/li&gt;
+&lt;li&gt;自评&lt;ul&gt;
+&lt;li&gt;先自己写问答题&lt;/li&gt;
+&lt;li&gt;再依据一套评价标准（好几项的达标情况）自评&lt;/li&gt;
+&lt;li&gt;给出几套专家的解答&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;有经验的课程设计者会先设计评价标准，然后设计课程（个：类似测试驱动开发）&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Socical%20Psychology/</id>
+        <title>Socical Psychology</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Socical%20Psychology/"/>
+        <content type="html">&lt;h1 id=&#34;Introducing-Social-Psychology&#34;&gt;&lt;a href=&#34;#Introducing-Social-Psychology&#34; class=&#34;headerlink&#34; title=&#34;Introducing Social Psychology&#34;&gt;&lt;/a&gt;Introducing Social Psychology&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;人所处环境如何影响自身&lt;/li&gt;
+&lt;li&gt;我们看到的现实都是经过自身的解读的&lt;/li&gt;
+&lt;li&gt;提到了快思慢想，行为多数是自动化的&lt;/li&gt;
+&lt;li&gt;通过后见之明解释社会心理学的结论其实并不是显而易见的常识&lt;/li&gt;
+&lt;li&gt;两种研究方法&lt;ul&gt;
+&lt;li&gt;相关性研究&lt;ul&gt;
+&lt;li&gt;优点是来源于现实&lt;/li&gt;
+&lt;li&gt;缺点是不能得出因果，X、Y 相关有 3 种可能，X-&amp;gt;Y, Y-&amp;gt;X, Z-&amp;gt;X&amp;#x2F;Y，即因果反向和第 3 个变量导致了 X、Y&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;实验研究&lt;ul&gt;
+&lt;li&gt;优点是能得出因果结论&lt;/li&gt;
+&lt;li&gt;缺点是有些情况无法做实验，如道德问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;The-Self-in-a-Social-World&#34;&gt;&lt;a href=&#34;#The-Self-in-a-Social-World&#34; class=&#34;headerlink&#34; title=&#34;The Self in a Social World&#34;&gt;&lt;/a&gt;The Self in a Social World&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;我们会夸大人们对自己的关注程度&lt;/li&gt;
+&lt;li&gt;通过和别人比较以及别人的评价来形成自己的身份 identity&lt;/li&gt;
+&lt;li&gt;集体主义文化下，自我是随着相处的人而不同的，个人主义则将自我看作独立不变的个体&lt;/li&gt;
+&lt;li&gt;高自尊未必有好处，作者认为自控力更重要。自恋则是高自尊同时不关心他人，负面的性格&lt;/li&gt;
+&lt;li&gt;人习惯将好的结果归于自己，将不好的结果归于别人。因此预测别人比预测自己更客观&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Social-Beliefs-and-Judgments&#34;&gt;&lt;a href=&#34;#Social-Beliefs-and-Judgments&#34; class=&#34;headerlink&#34; title=&#34;Social Beliefs and Judgments&#34;&gt;&lt;/a&gt;Social Beliefs and Judgments&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;思考分成自动化和控制的，自动化的部分人是无法意识到的&lt;/li&gt;
+&lt;li&gt;将随机当因果的错误，如快思慢想中的均值回归&lt;/li&gt;
+&lt;li&gt;在归因时会夸大个人的影响而忽略环境影响&lt;/li&gt;
+&lt;li&gt;当观察他人时，他人在中心，所以会归因于个人，当观察自己时，环境在中心&lt;/li&gt;
+&lt;li&gt;人持有的信念会作用于现实，变成 self- fulfilling 自我实现。比如爱情中的幻想，会让感情更好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Behavior-and-Attitudes&#34;&gt;&lt;a href=&#34;#Behavior-and-Attitudes&#34; class=&#34;headerlink&#34; title=&#34;Behavior and Attitudes&#34;&gt;&lt;/a&gt;Behavior and Attitudes&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;系统 2 对应口头阐述，系统 1 对应直觉判断，两者结合能准确预测人的行为&lt;/li&gt;
+&lt;li&gt;何时能说到做到&lt;ul&gt;
+&lt;li&gt;环境影响少&lt;/li&gt;
+&lt;li&gt;阐述具体（目标具体）&lt;/li&gt;
+&lt;li&gt;形成习惯&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;当我们处于某个环境，扮演某个角色时，会反过来影响我们自身的态度（假戏真做？）&lt;ul&gt;
+&lt;li&gt;当破例一次，突破道德底线一次，就会越来越多&lt;/li&gt;
+&lt;li&gt;适当的限制，同时给个人保留选择能力，会将其归因于自我选择&lt;ul&gt;
+&lt;li&gt;外部激励，如金钱，反而降低了内在动力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;两种解释&lt;ul&gt;
+&lt;li&gt;当态度与行为冲突时，人会改变态度&lt;/li&gt;
+&lt;li&gt;当态度较弱时，人会作为第三方观察者，来通过行为推断出态度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最后作者建议，当没有思路时，不妨先做一下，用行为促进思考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Genes-Culture-and-Gender&#34;&gt;&lt;a href=&#34;#Genes-Culture-and-Gender&#34; class=&#34;headerlink&#34; title=&#34;Genes, Culture, and Gender&#34;&gt;&lt;/a&gt;Genes, Culture, and Gender&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;从生物进化角度&lt;ul&gt;
+&lt;li&gt;寻找配偶时，男人考虑繁殖力相关的身体特点，女人考虑资源。共同点是都会考虑善良、爱、互相吸引&lt;/li&gt;
+&lt;li&gt;同伴对青少年比家庭影响大很多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;男女大部分是相同的，差异部分与社会普遍印象类似&lt;ul&gt;
+&lt;li&gt;男人对性更随意，因此通常是男性付钱给女性换取性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;基因与环境共同决定表现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Conformity-and-Obedience&#34;&gt;&lt;a href=&#34;#Conformity-and-Obedience&#34; class=&#34;headerlink&#34; title=&#34;Conformity and Obedience&#34;&gt;&lt;/a&gt;Conformity and Obedience&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;服从分为自愿和强迫两种&lt;/li&gt;
+&lt;li&gt;Milgram 电击实验，造成服从的原因&lt;ul&gt;
+&lt;li&gt;从小的错误逐渐扩大&lt;/li&gt;
+&lt;li&gt;做法符合社会规范&lt;/li&gt;
+&lt;li&gt;可不为结果负责&lt;/li&gt;
+&lt;li&gt;时间有限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;何种情况下会容易服从&lt;ul&gt;
+&lt;li&gt;与受害者距离远，受害者被去人性化&lt;/li&gt;
+&lt;li&gt;权威人物在场&lt;ul&gt;
+&lt;li&gt;但如果有人挑战权威，则可能会引起其他人跟随&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;权威机构&lt;/li&gt;
+&lt;li&gt;小的错误逐渐积累，作者举例，比如写论文时，每一次分心最终累积成大的错误&lt;/li&gt;
+&lt;li&gt;服从的人数多时&lt;/li&gt;
+&lt;li&gt;做出过公开承诺&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;为何会服从&lt;ul&gt;
+&lt;li&gt;normative influence. 为了被人喜欢&lt;/li&gt;
+&lt;li&gt;informational influence. 为了选择正确，自己不确定，参考其他人的意见&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;用自己的话阐述反对者的观点，来帮助自己换位思考&lt;/li&gt;
+&lt;li&gt;聪明的家长不会命令孩子，而是给出有限的选择&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Persuasion&#34;&gt;&lt;a href=&#34;#Persuasion&#34; class=&#34;headerlink&#34; title=&#34;Persuasion&#34;&gt;&lt;/a&gt;Persuasion&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;说服分两种，一种是经过思考的，另一种是通过暗示触发自动模式&lt;ul&gt;
+&lt;li&gt;经过思考的说服，持续时间更久&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;说服的构成要素&lt;ul&gt;
+&lt;li&gt;谁说了什么，通过何种方式，说给谁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;怎样更容易说服别人&lt;ul&gt;
+&lt;li&gt;人的选择&lt;ul&gt;
+&lt;li&gt;用被说服者信赖、喜欢、与其相似的人&lt;/li&gt;
+&lt;li&gt;隐藏说服的目的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;内容的选择&lt;ul&gt;
+&lt;li&gt;诉诸情感还是说理，取决于被说服对象喜欢哪种&lt;/li&gt;
+&lt;li&gt;利用对后果的恐惧，如吸烟的后果图片&lt;/li&gt;
+&lt;li&gt;循序渐进，从小要求开始&lt;/li&gt;
+&lt;li&gt;先要求高，然后再提出低要求容易被接受&lt;/li&gt;
+&lt;li&gt;提供两面观点从而让论点更可信&lt;/li&gt;
+&lt;li&gt;第一个说还是最后一个说&lt;ul&gt;
+&lt;li&gt;如果消息是连续的，那么第一个呈现效果好&lt;/li&gt;
+&lt;li&gt;如果消息间隔时间长，那么前面的都忘得差不多了，最后一个效果好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;呈现方式&lt;ul&gt;
+&lt;li&gt;有互动的比被动的号&lt;/li&gt;
+&lt;li&gt;媒体通过间接方式影响公众，媒体到专家、意见领袖再到公众&lt;/li&gt;
+&lt;li&gt;视频生动的方式更容易被接受，但不适合表达复杂内容，且受众无法像文字一样控制速度和进度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通过不断的挑战已有观点来强化它&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Group-Influence&#34;&gt;&lt;a href=&#34;#Group-Influence&#34; class=&#34;headerlink&#34; title=&#34;Group Influence&#34;&gt;&lt;/a&gt;Group Influence&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;他人在场时，简单任务会做得更好，复杂任务更差，因为唤醒 aroused&lt;/li&gt;
+&lt;li&gt;为何会唤醒&lt;ul&gt;
+&lt;li&gt;在意他人的评价&lt;/li&gt;
+&lt;li&gt;在意评价引起分心&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如个体的表现无法在集体中体现，那么反而不如单独做表现好，如拔河（个人认为是吃大锅饭的意思，free riders）&lt;/li&gt;
+&lt;li&gt;加入群体会更多加剧群体已有的倾向，失去自我&lt;/li&gt;
+&lt;li&gt;成员多样的群体更有创造力，尽管不同观点会造成成员的不适&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Prejudice&#34;&gt;&lt;a href=&#34;#Prejudice&#34; class=&#34;headerlink&#34; title=&#34;Prejudice&#34;&gt;&lt;/a&gt;Prejudice&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;偏见分为显式和隐式的，隐式是系统 1 的&lt;/li&gt;
+&lt;li&gt;能力和可爱&amp;#x2F;温暖不能共存，不同情况下，人们会展现不同的一面&lt;/li&gt;
+&lt;li&gt;当周围人没有偏见时，也会影响自己&lt;/li&gt;
+&lt;li&gt;为何会有偏见（动机角度）&lt;ul&gt;
+&lt;li&gt;发泄其它原因的不满&lt;/li&gt;
+&lt;li&gt;获得归属感&lt;/li&gt;
+&lt;li&gt;感到威胁时会增加对另一群体的偏见，而感到安全时偏见减少&lt;/li&gt;
+&lt;li&gt;偏见可以是潜意识的，但只要愿意可以消除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;为何会有偏见（认知角度）&lt;ul&gt;
+&lt;li&gt;为了快速判断，对自己熟悉的群体，会看到多样的个体，而不熟悉的则使用 stereotype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Aggression&#34;&gt;&lt;a href=&#34;#Aggression&#34; class=&#34;headerlink&#34; title=&#34;Aggression&#34;&gt;&lt;/a&gt;Aggression&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;侵犯分为物理的和社会的（感受、地位），目的分为表达情感或达成某个目的&lt;/li&gt;
+&lt;li&gt;侵犯来自于受挫、环境、身体状况&lt;ul&gt;
+&lt;li&gt;受挫尤其是看到别人有而自己得不到的情况，网络和电视加大了这种影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;arousal 唤起后，不同的解读会有不同反应，解读成药物作用则实验对象不会有反应&lt;/li&gt;
+&lt;li&gt;枪支、暴力视频、暴力游戏、包含强奸的色情会增加青少年、成年的攻击性&lt;ul&gt;
+&lt;li&gt;游戏既可培养协作、用于教育，也可增加暴力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在游戏或现实中发泄愤怒，只会让自己更愤怒&lt;/li&gt;
+&lt;li&gt;作者认为多数犯罪为冲动杀人，因此死刑不会带来犯罪减少，而提前预防可以&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Attraction-and-Intimacy&#34;&gt;&lt;a href=&#34;#Attraction-and-Intimacy&#34; class=&#34;headerlink&#34; title=&#34;Attraction and Intimacy&#34;&gt;&lt;/a&gt;Attraction and Intimacy&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;to belong, to feel autonomy and competence. Happiness is feeling connected, free and capable&lt;/li&gt;
+&lt;li&gt;熟悉创造喜欢，外貌影响第一印象&lt;/li&gt;
+&lt;li&gt;漂亮的人在社交上更自信，但其它性格上没有差异&lt;/li&gt;
+&lt;li&gt;进化角度，女人需要资源，男人需要年轻、代表生育能力的女性。男女都喜欢善良、智慧&lt;/li&gt;
+&lt;li&gt;相似创造喜欢，不是差异&lt;/li&gt;
+&lt;li&gt;负面信息比好消息影响更大&lt;/li&gt;
+&lt;li&gt;喜欢是相互的，喜欢喜欢自己的人&lt;/li&gt;
+&lt;li&gt;爱情 3 要素&lt;ul&gt;
+&lt;li&gt;intimacy 亲密感&lt;/li&gt;
+&lt;li&gt;passion 毒品上瘾&lt;/li&gt;
+&lt;li&gt;commitment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;arousal + label &amp;#x3D; emotion，不同解读、归因导致不同的情感&lt;/li&gt;
+&lt;li&gt;长期的关系，从激情消退到朋友式的陪伴&lt;/li&gt;
+&lt;li&gt;积极互动与消极互动至少 5 比 1 婚姻才能长期维持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Helping&#34;&gt;&lt;a href=&#34;#Helping&#34; class=&#34;headerlink&#34; title=&#34;Helping&#34;&gt;&lt;/a&gt;Helping&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;为何帮助别人&lt;ul&gt;
+&lt;li&gt;为了去掉坏心情，拥有好心情&lt;/li&gt;
+&lt;li&gt;互相帮助&lt;/li&gt;
+&lt;li&gt;社会责任&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从生物角度解释助人现象，会被指责后见之明，只有预测了未来，变成可证伪，才有意义&lt;/li&gt;
+&lt;li&gt;旁人越多，导致帮助他人更少。因为&lt;ul&gt;
+&lt;li&gt;难发现有人要帮助&lt;/li&gt;
+&lt;li&gt;不容易被认为需要帮助&lt;/li&gt;
+&lt;li&gt;不容易认为是自己的责任，等其他人帮忙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;何时更容易帮忙&lt;ul&gt;
+&lt;li&gt;其他人帮忙时&lt;/li&gt;
+&lt;li&gt;与自己相似时&lt;/li&gt;
+&lt;li&gt;有空闲时间时&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;个人自身特点也影响是否愿意帮忙&lt;ul&gt;
+&lt;li&gt;远离群众的富人确实更可能冷漠&lt;/li&gt;
+&lt;li&gt;信宗教的人更愿意帮忙&lt;/li&gt;
+&lt;li&gt;把他人当作 ingroup 是自己团体的成员，如相信都是上帝的子民&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Conflict-and-Peacemaking&#34;&gt;&lt;a href=&#34;#Conflict-and-Peacemaking&#34; class=&#34;headerlink&#34; title=&#34;Conflict and Peacemaking&#34;&gt;&lt;/a&gt;Conflict and Peacemaking&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;每个人追求自身利益，让整体更差，如囚徒困境，让整体更好，如自由市场经济&lt;/li&gt;
+&lt;li&gt;归因错误：提到自己时，认为是受外部环境影响，提到别人时，认为是他们自身性格等内部影响&lt;/li&gt;
+&lt;li&gt;为了解决这种困境&lt;ul&gt;
+&lt;li&gt;监管。改变激励，让合作有利可图&lt;/li&gt;
+&lt;li&gt;让团体规模小，沟通更顺畅&lt;/li&gt;
+&lt;li&gt;宣传利他道德标准&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决冲突的方式，4 个 C，contact, cooperation, communication, conciliation&lt;/li&gt;
+&lt;li&gt;跨种族不愿交流是害怕被拒绝&lt;/li&gt;
+&lt;li&gt;威胁、共同的目标加强了内部的团结&lt;ul&gt;
+&lt;li&gt;共同的目标失败了反而互相指责，破坏团结&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;作者提倡的是多样化的群体同时有共同的内核，在个人和集体主义中取得平衡&lt;/li&gt;
+&lt;li&gt;有第三方调停，可以让双方有面子的让步，将 win-lose 化解为 win-win 局面&lt;ul&gt;
+&lt;li&gt;让双方只陈述事实和自己的感受，使用我开头，而不用你&lt;/li&gt;
+&lt;li&gt;让另一方用自己的话复述对方的观点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;降低对峙，通过双方逐步降低敌意开始，但保留反击能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Social-Psychology-in-the-Clinic&#34;&gt;&lt;a href=&#34;#Social-Psychology-in-the-Clinic&#34; class=&#34;headerlink&#34; title=&#34;Social Psychology in the Clinic&#34;&gt;&lt;/a&gt;Social Psychology in the Clinic&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;对方比自己更容易发现自己思考中的错误&lt;ul&gt;
+&lt;li&gt;反驳自己，思考论点的反面，来避免错误&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;统计数据比临床医生的判断更准确&lt;/li&gt;
+&lt;li&gt;看事情比现实情况乐观似乎有利于心理健康，但轻度抑郁更能停下来思考，不自大&lt;/li&gt;
+&lt;li&gt;当害羞的人将紧张感归因于其它方面时，开始变得健谈&lt;/li&gt;
+&lt;li&gt;如果不能直接使用意志力改变感受，那么可以通过改变行为来影响&lt;ul&gt;
+&lt;li&gt;不强迫，让人有选择，这样人们会将行为归因为自己做成了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通过向朋友倾诉，甚至书写的方式向自己倾诉，都可以治愈内心&lt;/li&gt;
+&lt;li&gt;贫穷，同时与周围相比的贫穷，社会财富分配不均，更影响健康&lt;/li&gt;
+&lt;li&gt;财富不能保证幸福，利用好时间，行动积极会带来心态的变化，帮助别人可以让自己更幸福&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Social-Psychology-in-Court&#34;&gt;&lt;a href=&#34;#Social-Psychology-in-Court&#34; class=&#34;headerlink&#34; title=&#34;Social Psychology in Court&#34;&gt;&lt;/a&gt;Social Psychology in Court&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;证人会受到审问方式的影响&lt;/li&gt;
+&lt;li&gt;指认证人时，相比较的人要相似，而且应当一个一个比较，而非并列比较&lt;/li&gt;
+&lt;li&gt;被告的外貌、种族等会影响法官和陪审员&lt;/li&gt;
+&lt;li&gt;陪审员讨论时，相似想法的人会产生极化，但如既有主张定罪又有主张无罪的，则变得温和&lt;/li&gt;
+&lt;li&gt;科学研究并非没有价值取向，不受偏见影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Social-Psychology-and-the-Sustainable-Future&#34;&gt;&lt;a href=&#34;#Social-Psychology-and-the-Sustainable-Future&#34; class=&#34;headerlink&#34; title=&#34;Social Psychology and the Sustainable Future&#34;&gt;&lt;/a&gt;Social Psychology and the Sustainable Future&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;全球变暖会加剧人们直接的冲突，有对人的直接影响，也有粮食产量下降、可居住地变少等间接影响&lt;/li&gt;
+&lt;li&gt;人们不相信气候变暖，因为&lt;ul&gt;
+&lt;li&gt;认为科学没定论&lt;/li&gt;
+&lt;li&gt;不想承担责任、改变现状&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对个人来说金钱与幸福成边际递减关系，对国家来说，经济发展带来的物质变化并没有增加人民的幸福感&lt;/li&gt;
+&lt;li&gt;关注内部的感受，有意义的工作、亲密关系、给予他人帮助，比关注外部更幸福&lt;ul&gt;
+&lt;li&gt;人们会适应外部的新体验，adaptation-level 习以为然&lt;/li&gt;
+&lt;li&gt;与更优秀的人对比，social comparison&lt;/li&gt;
+&lt;li&gt;为应对上面这两点，除了关注内部感受外，还可以&lt;ul&gt;
+&lt;li&gt;让社会收入更平均，缩小贫富差距&lt;/li&gt;
+&lt;li&gt;与更不幸的人比较，珍惜拥有的&lt;/li&gt;
+&lt;li&gt;缩减物质欲望&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%90%86%E8%B4%A2/</id>
+        <title>理财</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%90%86%E8%B4%A2/"/>
+        <content type="html">&lt;h1 id=&#34;1-入场准备&#34;&gt;&lt;a href=&#34;#1-入场准备&#34; class=&#34;headerlink&#34; title=&#34;1 入场准备&#34;&gt;&lt;/a&gt;1 入场准备&lt;/h1&gt;&lt;p&gt;回答下面 3 个问题，并给出 &lt;u&gt;&lt;strong&gt;数据证明&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;搞懂底层逻辑，投进去的钱用来干嘛了？为啥能赚钱？&lt;/li&gt;
+&lt;li&gt;最多损失多少？&lt;/li&gt;
+&lt;li&gt;我能否承受这些损失？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;只要&lt;strong&gt;收益超过 10&lt;/strong&gt;，至少要读几本书回答前 3 个问题后，再开始少量配置&lt;/li&gt;
+&lt;li&gt;跑路征兆&lt;ul&gt;
+&lt;li&gt;鼓励购买 1. 提高收益 2. 产品要下架威胁&lt;/li&gt;
+&lt;li&gt;管理层变动&lt;/li&gt;
+&lt;li&gt;负面新闻增多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;跑路后期&lt;ul&gt;
+&lt;li&gt;客服响应慢&lt;/li&gt;
+&lt;li&gt;提现困难&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-如何财务自由&#34;&gt;&lt;a href=&#34;#2-如何财务自由&#34; class=&#34;headerlink&#34; title=&#34;2 如何财务自由&#34;&gt;&lt;/a&gt;2 如何财务自由&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;不乱花钱，记账，理性消费，拿来购买资产，比如：裁剪或降级可选消费，必需品囤积一个季度&lt;/li&gt;
+&lt;li&gt;不浪费时间，投入到有前途的事业中，比如：住的离公司近些&lt;/li&gt;
+&lt;li&gt;心理转变，勤奋、耐心，贫富差距是思维、心理上的不耐、懒惰&lt;/li&gt;
+&lt;li&gt;最终有大量钱生钱的资产，就可以有时间和钱做想做的事，即财务自由&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;3-指数基金&#34;&gt;&lt;a href=&#34;#3-指数基金&#34; class=&#34;headerlink&#34; title=&#34;3 指数基金&#34;&gt;&lt;/a&gt;3 指数基金&lt;/h1&gt;&lt;p&gt;巴菲特遗产 90% 购买指数基金，主动基金是辅助，以指数基金为主，&lt;strong&gt;最大 30% 的亏损&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-1-宽基指数&#34;&gt;&lt;a href=&#34;#3-1-宽基指数&#34; class=&#34;headerlink&#34; title=&#34;3.1 宽基指数&#34;&gt;&lt;/a&gt;3.1 宽基指数&lt;/h2&gt;&lt;p&gt;市值加权&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;上证50、沪深300，大盘&lt;/li&gt;
+&lt;li&gt;中证500，中盘&lt;/li&gt;
+&lt;li&gt;创业板&lt;/li&gt;
+&lt;li&gt;恒生，香港大盘&lt;/li&gt;
+&lt;li&gt;H股，香港上市的内地公司&lt;/li&gt;
+&lt;li&gt;香港中小指数&lt;/li&gt;
+&lt;li&gt;纳斯达克 100&lt;/li&gt;
+&lt;li&gt;标普 500&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-2-策略加权&#34;&gt;&lt;a href=&#34;#3-2-策略加权&#34; class=&#34;headerlink&#34; title=&#34;3.2 策略加权&#34;&gt;&lt;/a&gt;3.2 策略加权&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;红利，股息率，4 种红利指数&lt;/li&gt;
+&lt;li&gt;基本面，营业收入、现金流、净资产、分红&lt;/li&gt;
+&lt;li&gt;价值，市盈率、市净率、市现率、股息率&lt;/li&gt;
+&lt;li&gt;低波动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-3-行业指数&#34;&gt;&lt;a href=&#34;#3-3-行业指数&#34; class=&#34;headerlink&#34; title=&#34;3.3 行业指数&#34;&gt;&lt;/a&gt;3.3 行业指数&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;风险高，辅助投资&lt;/li&gt;
+&lt;li&gt;10 个一级行业 (GICS)，投资两类，天生容易赚钱，强周期性行业&lt;/li&gt;
+&lt;li&gt;容易赚钱：必须消费、医药行业、可选消费等，市场需求高、利润高（有护城河）、再投入需求小&lt;/li&gt;
+&lt;li&gt;周期行业：金融、地产、能源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-估值&#34;&gt;&lt;a href=&#34;#4-估值&#34; class=&#34;headerlink&#34; title=&#34;4 估值&#34;&gt;&lt;/a&gt;4 估值&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;估值指标&lt;/th&gt;
+&lt;th&gt;计算&lt;/th&gt;
+&lt;th&gt;适用&lt;/th&gt;
+&lt;th&gt;应用公式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;净利润&lt;/td&gt;
+&lt;td&gt;静态&amp;#x2F;滚动&amp;#x2F;中位数市盈率 PE &amp;#x3D; P &amp;#x2F; E&lt;br /&gt;盈利收益率为 E &amp;#x2F; P&lt;/td&gt;
+&lt;td&gt;盈利稳定增长大于 10%&lt;/td&gt;
+&lt;td&gt;PEG 1-2，同时 PE 历史低位为低估&lt;br /&gt;PEG &amp;gt; 2 且 PE 历史高位为高估&lt;br /&gt;美联储 FED: 盈利收益率&amp;#x2F;十年期国债利率&lt;br /&gt;年复合收益率 &amp;#x3D; 初始股息率 + PE 变化率 + 盈利增长率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;净资产（资产-负债）&lt;/td&gt;
+&lt;td&gt;市净率 PB &amp;#x3D; P &amp;#x2F; B&lt;/td&gt;
+&lt;td&gt;无形资产不适用&lt;br /&gt;用于盈利周期性行业，经济危机&lt;/td&gt;
+&lt;td&gt;年复合收益率 &amp;#x3D; PB 变化率 + 净资产变化率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;净资产收益率，ROE (Return on Equity) &amp;#x3D; E &amp;#x2F; B &amp;#x3D; PB &amp;#x2F; PE&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;分红&lt;/td&gt;
+&lt;td&gt;股息率 &amp;#x3D; D &amp;#x2F; P，分红率 &amp;#x3D; D &amp;#x2F; E&lt;br /&gt;DP &amp;#x3D; DE * EP，分红率往往不变，因此 DP 和 EP 正相关&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;盈利保持不变，与债券相同评估方法，现金流收益率&lt;br /&gt;盈利大起大落、盈利衰退的不评估&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;5-交易&#34;&gt;&lt;a href=&#34;#5-交易&#34; class=&#34;headerlink&#34; title=&#34;5 交易&#34;&gt;&lt;/a&gt;5 交易&lt;/h1&gt;&lt;h2 id=&#34;5-1-资金分配&#34;&gt;&lt;a href=&#34;#5-1-资金分配&#34; class=&#34;headerlink&#34; title=&#34;5.1 资金分配&#34;&gt;&lt;/a&gt;5.1 资金分配&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;股票基金（指数为主、极少量主动） &amp;#x3D; 工资 - 保险预留 - 备用金预留（债券基金、银行理财） - 生活消费（短期理财 &amp;#x3D; 信用卡账单 + 余量）&lt;/li&gt;
+&lt;li&gt;3 年内不用的钱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-2-选择基金&#34;&gt;&lt;a href=&#34;#5-2-选择基金&#34; class=&#34;headerlink&#34; title=&#34;5.2 选择基金&#34;&gt;&lt;/a&gt;5.2 选择基金&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;宽基、策略指数为主，优秀行业为辅，排除衰退行业&lt;/li&gt;
+&lt;li&gt;国内为主，海外为辅，海外通过经济增速判断&lt;/li&gt;
+&lt;li&gt;优先选择场内，注意套利差价，没有再选择场外&lt;/li&gt;
+&lt;li&gt;选择，规模大、追踪误差小、费用低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-3-买入&#34;&gt;&lt;a href=&#34;#5-3-买入&#34; class=&#34;headerlink&#34; title=&#34;5.3 买入&#34;&gt;&lt;/a&gt;5.3 买入&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参考估值表，低估买入&lt;/li&gt;
+&lt;li&gt;已持有的低估指数，越下跌买的越多&lt;/li&gt;
+&lt;li&gt;避免指数过于相关，即避免投资重合&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;待完善&lt;/strong&gt;，首先，长期收益率越高买入比例越多（国家 GDP），其次越低估买入比例越多(PE 在历史的比例)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-4-卖出&#34;&gt;&lt;a href=&#34;#5-4-卖出&#34; class=&#34;headerlink&#34; title=&#34;5.4 卖出&#34;&gt;&lt;/a&gt;5.4 卖出&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;基本面恶化，国家经济不好&lt;/li&gt;
+&lt;li&gt;梯度止盈，越高估卖出越多，10% ×（24&amp;#x2F;20）^2&amp;#x3D;14.4%&lt;/li&gt;
+&lt;li&gt;类似的基金更便宜（低估）&lt;/li&gt;
+&lt;li&gt;股息率大于 4% 可以长期持有不卖出，享受分红&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-执行与心理&#34;&gt;&lt;a href=&#34;#6-执行与心理&#34; class=&#34;headerlink&#34; title=&#34;6 执行与心理&#34;&gt;&lt;/a&gt;6 执行与心理&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;少量投资指数基金，可以作为保本理财&lt;/li&gt;
+&lt;li&gt;计划落实到文档，并不断优化&lt;/li&gt;
+&lt;li&gt;掌握的三个等级，学习、实践、传授&lt;/li&gt;
+&lt;li&gt;不遵守计划，人性的贪婪和恐惧将让自己吃亏&lt;/li&gt;
+&lt;li&gt;涨跌对心理的考验，即使低估值也会短期下跌，因为受到供求关系影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-短期理财&#34;&gt;&lt;a href=&#34;#7-短期理财&#34; class=&#34;headerlink&#34; title=&#34;7 短期理财&#34;&gt;&lt;/a&gt;7 短期理财&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;货币基金与互联网银行理财对比，选择收益高的&lt;/li&gt;
+&lt;li&gt;注意服务费，B 类货币基金没有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;8-中期固收理财&#34;&gt;&lt;a href=&#34;#8-中期固收理财&#34; class=&#34;headerlink&#34; title=&#34;8 中期固收理财&#34;&gt;&lt;/a&gt;8 中期固收理财&lt;/h1&gt;&lt;h2 id=&#34;8-1-债券基金&#34;&gt;&lt;a href=&#34;#8-1-债券基金&#34; class=&#34;headerlink&#34; title=&#34;8.1 债券基金&#34;&gt;&lt;/a&gt;8.1 债券基金&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;利率上升，债券价格下降，收益变差&lt;/li&gt;
+&lt;li&gt;中短期（1~3年）资金，买银行理财、债券基金&lt;/li&gt;
+&lt;li&gt;牛市中后期，没有低估指数基金可投，投资债券&lt;/li&gt;
+&lt;li&gt;长期看，国内所有的货币基金平均收益率在 2%&lt;del&gt;3%，债券基金在 6%&lt;/del&gt;7%，股票基金在 14% 左右&lt;/li&gt;
+&lt;li&gt;十年期国债利率的中位数 3%~3.5%，小于 3 利率低位选短期债券，大于 3.5 利率高位选长期债券&lt;/li&gt;
+&lt;li&gt;随时可以投资，出现浮亏可以加仓拉低成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-2-银行理财&#34;&gt;&lt;a href=&#34;#8-2-银行理财&#34; class=&#34;headerlink&#34; title=&#34;8.2 银行理财&#34;&gt;&lt;/a&gt;8.2 银行理财&lt;/h2&gt;&lt;h1 id=&#34;9-人物&#34;&gt;&lt;a href=&#34;#9-人物&#34; class=&#34;headerlink&#34; title=&#34;9 人物&#34;&gt;&lt;/a&gt;9 人物&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;巴菲特&lt;/li&gt;
+&lt;li&gt;彼得·林奇&lt;/li&gt;
+&lt;li&gt;约翰·博格的博格公式法&lt;/li&gt;
+&lt;li&gt;格雷厄姆的价值投资理念，盈利收益率法&lt;/li&gt;
+&lt;li&gt;西格尔教授的著作《股市长线法宝》、《投资者的未来》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;10-参考书&#34;&gt;&lt;a href=&#34;#10-参考书&#34; class=&#34;headerlink&#34; title=&#34;10 参考书&#34;&gt;&lt;/a&gt;10 参考书&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;指数基金投资指南&lt;/li&gt;
+&lt;li&gt;定投十年财务自由&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;11-工具&#34;&gt;&lt;a href=&#34;#11-工具&#34; class=&#34;headerlink&#34; title=&#34;11 工具&#34;&gt;&lt;/a&gt;11 工具&lt;/h1&gt;&lt;h2 id=&#34;11-1-估值表&#34;&gt;&lt;a href=&#34;#11-1-估值表&#34; class=&#34;headerlink&#34; title=&#34;11.1 估值表&#34;&gt;&lt;/a&gt;11.1 估值表&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;螺丝钉&lt;/li&gt;
+&lt;li&gt;且慢&lt;/li&gt;
+&lt;li&gt;蛋卷基金&lt;/li&gt;
+&lt;li&gt;天天基金&lt;/li&gt;
+&lt;li&gt;支付宝&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-2-定投计算器&#34;&gt;&lt;a href=&#34;#11-2-定投计算器&#34; class=&#34;headerlink&#34; title=&#34;11.2 定投计算器&#34;&gt;&lt;/a&gt;11.2 定投计算器&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://danjuanapp.com/calculator/zero?channel=2500000025&#34;&gt;蛋卷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://data.eastmoney.com/money/calc/FundCalcDTSY.html&#34;&gt;东方财富网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-3-种计算收益的方式&#34;&gt;&lt;a href=&#34;#11-3-种计算收益的方式&#34; class=&#34;headerlink&#34; title=&#34;11.3 种计算收益的方式&#34;&gt;&lt;/a&gt;11.3 种计算收益的方式&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/28494603/answer/1031012920&#34;&gt;如何计算年化收益率？&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;11-4-评估风险&#34;&gt;&lt;a href=&#34;#11-4-评估风险&#34; class=&#34;headerlink&#34; title=&#34;11.4 评估风险&#34;&gt;&lt;/a&gt;11.4 评估风险&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;负相关，且慢计算相关系数&lt;/li&gt;
+&lt;li&gt;波动即风险，夏普比率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-5-基金投资数据回测&#34;&gt;&lt;a href=&#34;#11-5-基金投资数据回测&#34; class=&#34;headerlink&#34; title=&#34;11.5 基金投资数据回测&#34;&gt;&lt;/a&gt;11.5 基金投资数据回测&lt;/h2&gt;&lt;h2 id=&#34;11-6-应避免的回测误区&#34;&gt;&lt;a href=&#34;#11-6-应避免的回测误区&#34; class=&#34;headerlink&#34; title=&#34;11.6 应避免的回测误区&#34;&gt;&lt;/a&gt;11.6 应避免的回测误区&lt;/h2&gt;</content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
 </feed>

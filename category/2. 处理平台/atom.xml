@@ -1,13 +1,49 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://2-3-5-7.github.io</id>
+    <id>https://synrst.de</id>
     <title>自强不息 厚德载物 • Posts by &#34;2. 处理平台&#34; category</title>
-    <link href="https://2-3-5-7.github.io" />
+    <link href="https://synrst.de" />
     <updated>1970-01-01T00:00:00.000Z</updated>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/</id>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</id>
+        <title>docker</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/"/>
+        <content type="html">&lt;h1 id=&#34;1-安装&#34;&gt;&lt;a href=&#34;#1-安装&#34; class=&#34;headerlink&#34; title=&#34;1 安装&#34;&gt;&lt;/a&gt;1 安装&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04&#34;&gt;ubuntu 20.04 安装&lt;/a&gt;、&lt;a href=&#34;https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;避免每次输入 sudo  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo groupadd docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo usermod -aG docker &lt;span class=&#34;variable&#34;&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 激活新修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;newgrp docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提示没权限的话重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull cdrx/pyinstaller-linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/arm64 alpine:latest&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;保存和加载镜像&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker save -o &amp;lt;path &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; generated tar file&amp;gt; &amp;lt;image name&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker load -i &amp;lt;path to image tar file&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-容器&#34;&gt;&lt;a href=&#34;#3-容器&#34; class=&#34;headerlink&#34; title=&#34;3 容器&#34;&gt;&lt;/a&gt;3 容器&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;生成容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 指定容器名字方便操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v 是绑定，docker run 见 https://docs.docker.com/engine/reference/commandline/run/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -it --name table_bot -v /home/zack/code/table_bot:/src/ cdrx/pyinstaller-linux /bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 改成豆瓣源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; global.index-url https://pypi.tuna.tsinghua.edu.cn/simple&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;列出容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -s 占用大小，-a 所有，包括停止的容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;运行命令  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d: Detached mode: run command in the background&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -d table_bot bash -c &lt;span class=&#34;string&#34;&gt;&amp;#x27;/root/.pyenv/shims/pyinstaller -F bot.py &amp;amp;&amp;amp; cp dist/b .&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;进入 docker  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container&#34;&gt;修改端口映射&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-API&#34;&gt;&lt;a href=&#34;#4-API&#34; class=&#34;headerlink&#34; title=&#34;4 API&#34;&gt;&lt;/a&gt;4 API&lt;/h1&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用 curl 和 jq 测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用法参考 https://stackoverflow.com/questions/41960751/docker-remote-api-filters-filter-out-network-by-name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/28054203/docker-remote-api-filter-exited&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -gG -XGET -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock &lt;span class=&#34;string&#34;&gt;&amp;#x27;http://localhost/v1.41/containers/json?limit=10&amp;#x27;&lt;/span&gt; --data-urlencode &lt;span class=&#34;string&#34;&gt;&amp;#x27;filters=&amp;#123;&amp;quot;status&amp;quot;: [&amp;quot;running&amp;quot;]&amp;#125;&amp;#x27;&lt;/span&gt; | jq &lt;span class=&#34;string&#34;&gt;&amp;#x27;.[] | &amp;#123;Id, Names&amp;#125;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h1 id=&#34;5-制作镜像&#34;&gt;&lt;a href=&#34;#5-制作镜像&#34; class=&#34;headerlink&#34; title=&#34;5 制作镜像&#34;&gt;&lt;/a&gt;5 制作镜像&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如何编出更小的镜像 &lt;a href=&#34;https://jpetazzo.github.io/2020/02/01/quest-minimal-docker-images-part-1/&#34;&gt;系列文章&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;制作镜像&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t iebs .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要是网络不通可以试试 --network=host&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker build --network=host -t iebs .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可以用 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/#%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5-libc&#34;&gt;静态链接 libc&lt;/a&gt; 的方式编出单文件程序，Dockerfile 参考&lt;/p&gt;
+  &lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; scratch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;COPY&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; iiot_sdk /&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CMD&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; [&lt;span class=&#34;string&#34;&gt;&amp;quot;./iiot_sdk&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/</id>
         <title>kindle</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/"/>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/"/>
         <content type="html">&lt;h1 id=&#34;1-设置&#34;&gt;&lt;a href=&#34;#1-设置&#34; class=&#34;headerlink&#34; title=&#34;1 设置&#34;&gt;&lt;/a&gt;1 设置&lt;/h1&gt;&lt;p&gt;字体和词典在 kindle 环境文件夹&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;把电子书过滤设置选为“全部内容”，然后把电子书排序设置选为“收藏夹” 。&lt;a href=&#34;https://bookfere.com/post/140.html&#34;&gt;用收藏夹分类电子书&lt;/a&gt;&lt;/li&gt;
@@ -44,9 +80,424 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/</id>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/</id>
+        <title>linux</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/"/>
+        <content type="html">&lt;h1 id=&#34;1-配置&#34;&gt;&lt;a href=&#34;#1-配置&#34; class=&#34;headerlink&#34; title=&#34;1 配置&#34;&gt;&lt;/a&gt;1 配置&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;必装 ssh proxychains4 git meld p4merge vim gtags ctags，github 导入公钥&lt;/li&gt;
+&lt;li&gt;关闭该死的系统更新，非要更新前一定创建快照&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-1-SSH&#34;&gt;&lt;a href=&#34;#1-1-SSH&#34; class=&#34;headerlink&#34; title=&#34;1.1 SSH&#34;&gt;&lt;/a&gt;1.1 SSH&lt;/h2&gt;&lt;p&gt;&lt;code&gt;apt-get install openssh-server openssh-client&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如配置 VPS 修改 SSH 端口，则要在系统 iptables 和 vps 页面两处同时放行新端口，并用 nc -l 测试没问题后，再重启 sshd 服务。此时先别断开旧连接，防止出现新端口连不上的情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-1-1-解决-20-04-broken-package-问题&#34;&gt;&lt;a href=&#34;#1-1-1-解决-20-04-broken-package-问题&#34; class=&#34;headerlink&#34; title=&#34;1.1.1 解决 20.04 broken package 问题&#34;&gt;&lt;/a&gt;1.1.1 解决 20.04 broken package 问题&lt;/h3&gt;&lt;p&gt;参考 &lt;a href=&#34;https://ubuntuforums.org/showthread.php?t=2412211&#34;&gt;Problems with installing of the openssh-server&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 通过 aptitude 尝试解决&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install aptitude&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo aptitude install PACKAGENAME&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;根据  aptitude 安装前的提示，发现是预安装的 openssh-client 版本高，apt purge openssl-client 卸载后安装 openssh-server 没问题。&lt;br&gt;也可以降级已安装的包，&lt;code&gt;sudo apt install &amp;lt;package-name&amp;gt;=&amp;lt;package-version-number&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-1-2-secureCRT-配置问题&#34;&gt;&lt;a href=&#34;#1-1-2-secureCRT-配置问题&#34; class=&#34;headerlink&#34; title=&#34;1.1.2 secureCRT 配置问题&#34;&gt;&lt;/a&gt;1.1.2 secureCRT 配置问题&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;关闭不用的菜单栏、状态栏等，去掉 use dockable session manager 选项，记住连接管理的快捷键即可&lt;/li&gt;
+&lt;li&gt;编码与字体&lt;br&gt; 在Options -&amp;gt; Session Options -&amp;gt; Appearance 选项中将 Character encoding 设成”UTF-8”即可，字体 Consolas-with-Yahei，三号。没办法用没有 CJK 字符的字体&lt;/li&gt;
+&lt;li&gt;启用颜色&lt;br&gt; 官方的介绍 &lt;a href=&#34;https://www.youtube.com/watch?v=SZLbBsp3914&#34;&gt;https://www.youtube.com/watch?v=SZLbBsp3914&lt;/a&gt;&lt;br&gt; 在 default session 中选 solarized dark，emulation 中启用 xterm-256color&lt;br&gt; 在全局配置中外观 - 高级，选中 solarized dark 新建一个颜色模式&lt;br&gt; 将 normal 和 bold 中前景色调亮，同时下拉列表选择 solarized dark，在 default session 中应用&lt;br&gt; 前景色 RGB 颜色 166,177,179&lt;br&gt; 详细参考视频 &lt;a href=&#34;http://www.youtube.com/watch?v=SZLbBsp3914&#34;&gt;www.youtube.com/watch?v=SZLbBsp3914&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;调整系统提示声音，将 默认响声 设置为 windows信息栏.wav&lt;/li&gt;
+&lt;li&gt;安装 Xming，对于 ubuntu 的 session 中勾选 X11 forwarding 两个选项，默认配置即可&lt;/li&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal 启用选择发送滚轮事件到远程。取消 Scroll to bottom on output&lt;ul&gt;
+&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal–&amp;gt;Emulation–&amp;gt;Mapped Keys，选中 Backspace sends delete&lt;br&gt;  默认会话中终端&lt;/li&gt;
+&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal–&amp;gt;Emulation–&amp;gt;Mode，取消 Enable keypad mode switching 小键盘映射&lt;/li&gt;
+&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal–&amp;gt;Emulation–&amp;gt;Advanced，忽略窗口标题更改请求&lt;/li&gt;
+&lt;li&gt;Options–&amp;gt;Edit Default Session 设置常用的按键映射，运行脚本 a-r、取消脚本 a-s、清屏 a-l (clear)、滚动到底部 a-b&lt;/li&gt;
+&lt;li&gt;（可选）&lt;a href=&#34;https://forums.vandyke.com/showthread.php?p=42242&#34;&gt;添加键盘映射&lt;/a&gt;，HOME&amp;#x2F;END 为 &lt;code&gt;\033[H&lt;/code&gt; 和 &lt;code&gt;\033[F&lt;/code&gt;，原理见下 Terminal input sequences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-1-3-隧道-端口转发&#34;&gt;&lt;a href=&#34;#1-1-3-隧道-端口转发&#34; class=&#34;headerlink&#34; title=&#34;1.1.3 隧道/端口转发&#34;&gt;&lt;/a&gt;1.1.3 隧道/端口转发&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;代理就是通过隧道帮助用户要访问某个受限资源&lt;/li&gt;
+&lt;li&gt;隧道由本地和远端组成，本地作为 SSH 客户端连接远端 SSH 服务器端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+    subgraph 代理
+    用户 -- 隧道 --&gt; 受限资源
+    end
+    subgraph 隧道
+    L(&#34;本地 local，客户端&#34;) --&gt; R(&#34;远端 remote，服务器&#34;)
+    end&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;按情况分为用户在隧道的本地和远端两种，常见三种 &lt;a href=&#34;https://wangdoc.com/ssh/port-forwarding.html&#34;&gt;转发方式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;所谓用户就是要连接监听端口的设备&lt;ul&gt;
+&lt;li&gt;所以对用户在本地 local 的，使用 -D 或 -L 打开本地端口，转发给 remote 侧的某资源。如资源为固定的 ip port 用 -L，动态的多个资源用 -D&lt;ul&gt;
+&lt;li&gt;这种场景如科学上网，-D 打开本地的 sock5 监听端口，加密连到 vps，动态访问各个网站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对用户在远端 remote 的，用 -R 打开远端端口。同样可固定可动态，填 ip port 是固定，不填为动态&lt;ul&gt;
+&lt;li&gt;这种场景如内网穿透，内网必须作为客户端主动连公网服务器端&lt;ul&gt;
+&lt;li&gt;为了防止连接中断可 &lt;a href=&#34;https://cloud.tencent.com/developer/article/1722055&#34;&gt;写个脚本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;但在公网服务器开端口暴露内网资源可能不安全（有的内网资源没有密码等），真要这样用还需配置 &lt;code&gt;GatewayPorts yes&lt;/code&gt;，否则只会在环回口监听&lt;/li&gt;
+&lt;li&gt;所以为了安全，即 1. 要有授权的客户端才能连服务端口 2. 保证用户到服务端口之间数据的安全性（socks 协议不加密）。在先用 -R 开启环回口（动态方式）后，再在用户侧用 -L 练到公网服务器，见 &lt;a href=&#34;https://o-u-u.com/?p=3234#%E9%93%BE%E5%BC%8F%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91&#34;&gt;链式端口转发&lt;/a&gt; (文中为固定转发给 3000 端口，可改为动态)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;图中的 4 个角色（资源、用户、local、remote）可重合，即特殊情况&lt;ul&gt;
+&lt;li&gt;local 和 remote 为同一台设备，如将这台设备用作 socks 代理服务器 &lt;code&gt;ssh -D port localhost&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用户与 local &amp;#x2F; remote 为同一设备，资源与 local &amp;#x2F; remote 为同一设备的情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如要只将 ssh 用作隧道，限制用户登陆，可以 &lt;a href=&#34;https://unix.stackexchange.com/questions/14312/how-to-restrict-an-ssh-user-to-only-allow-ssh-tunneling&#34;&gt;修改用户的 shell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;对 windows 可用配置好连接信息的绿色版 putty 来当作 vpn 客户端的功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+    subgraph 用户在本地一侧 -L/-D
+    s1(用户) --&gt; s2(local) --&gt; s3(remote) --&gt; s4(受限资源)
+    end
+    subgraph 用户在远端一侧 -R
+    s5(受限资源) --&gt; s6(local) --&gt; s7(remote) --&gt; s8(用户)
+    end
+    subgraph 特殊情况
+    s9(&#34;local 与 remote 重合，ssh -D port localhost&#34;)
+    s10(&#34;用户/受限资源 与 local/remote 重合&#34;)
+    end
+    subgraph 内网穿透
+    s11(受限资源) --&gt; s12(local) -- -R动态方式 --&gt; s13(remote) -- -L连接到-R的动态端口 --&gt; s14(用户)
+    end&lt;/pre&gt;
+
+&lt;h3 id=&#34;1-1-4-DNS-介绍&#34;&gt;&lt;a href=&#34;#1-1-4-DNS-介绍&#34; class=&#34;headerlink&#34; title=&#34;1.1.4 DNS 介绍&#34;&gt;&lt;/a&gt;1.1.4 DNS 介绍&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lantian.pub/article/modify-website/selfhost-dns-root-server.lantian/&#34;&gt;DNS 原理和自建 DNS 根服务器&lt;/a&gt;、&lt;a href=&#34;https://juejin.cn/post/6844903497494855687&#34;&gt;另一个参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-2-系统&#34;&gt;&lt;a href=&#34;#1-2-系统&#34; class=&#34;headerlink&#34; title=&#34;1.2 系统&#34;&gt;&lt;/a&gt;1.2 系统&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;设置 PS1 &lt;code&gt;export PS1=&amp;quot;\[\e[35;22m\][\! \A \w] \[\e[0m\]&amp;quot;&lt;/code&gt;，如要改变标题则继续加一句，&lt;code&gt;PS1=&amp;quot;\[\e]0;20.04: \W\a\]$PS1&amp;quot;&lt;/code&gt; ，把 20.04 改成想要的名字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ls 颜色 &lt;a href=&#34;https://github.com/seebi/dircolors-solarized&#34;&gt;https://github.com/seebi/dircolors-solarized&lt;/a&gt;&lt;br&gt;  .bashrc 中添加 eval &lt;code&gt;dircolors ~/dircolors-solarized/dircolors.256dark&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;给 man 命令启用颜色，~&amp;#x2F;.bashrc 添加如下&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;man&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_mb=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;31m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_md=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;31m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_me=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[0m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_se=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[0m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_so=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;44;33m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_ue=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[0m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_us=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;32m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; man &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改时区&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;unlink&lt;/span&gt; /etc/localtime&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;ln&lt;/span&gt; -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-2-1-Kali&#34;&gt;&lt;a href=&#34;#1-2-1-Kali&#34; class=&#34;headerlink&#34; title=&#34;1.2.1 Kali&#34;&gt;&lt;/a&gt;1.2.1 Kali&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=a6z-ixNAo-s&#34;&gt;How to move taskbar from top to bottom in kali linux&lt;/a&gt;  Settings Editor -&amp;gt; xfce4-panel -&amp;gt; panels&amp;#x2F;panel-1&amp;#x2F;position 的 6 改成 4，下面的 size 可扩大，以让图标更大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-3-网络&#34;&gt;&lt;a href=&#34;#1-3-网络&#34; class=&#34;headerlink&#34; title=&#34;1.3 网络&#34;&gt;&lt;/a&gt;1.3 网络&lt;/h2&gt;&lt;p&gt;思路是用无线网卡使 PC、虚拟机、无线路由器处于同一网络中，可以上网。用有线网卡使 PC、虚拟机、开发板处于另一网络中。&lt;/p&gt;
+&lt;p&gt;要点，配置网关的网卡将作为上网网卡，旧网卡（无线网卡）用来上网，所以只有旧网卡有网关&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-18-04/&#34;&gt;18.04_20.04 用 netplan&lt;/a&gt;，配置文件示例见 asset，命令 &lt;code&gt;sudo netplan --debug apply&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;interfaces 和 NetworkManger 即配置文件与图形界面两种方法不能同时使用，对于 &lt;code&gt;/etc/network/interfaces&lt;/code&gt; 配置文件如下&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;auto eth0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;iface eth0 inet static&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;address 192.168.2.36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netmask 255.255.255.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gateway 192.168.2.1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;auto eth1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;iface eth1 inet static&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;address 192.168.1.36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netmask 255.255.255.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# dhcp方式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# auto eth0  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# iface eth0 inet dhcp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code&gt;/etc/resolvconf/resolv.conf.d/base&lt;/code&gt; 配置 dns，没有则新建。&lt;code&gt;sudo resolvconf -u 立即生效&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nameserver 114.114.114.114&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nameserver 8.8.8.8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-4-内部局域网&#34;&gt;&lt;a href=&#34;#1-4-内部局域网&#34; class=&#34;headerlink&#34; title=&#34;1.4 内部局域网&#34;&gt;&lt;/a&gt;1.4 内部局域网&lt;/h2&gt;&lt;p&gt;为了搭建封闭的局域网，可以在 windows 中 &lt;a href=&#34;https://blog.csdn.net/EDDJH_31/article/details/82694205&#34;&gt;添加 KM-TEST 虚拟网卡&lt;/a&gt;，所有虚拟机桥接到该网卡，实现虚拟机间和主机与虚拟机的通信&lt;/p&gt;
+&lt;h3 id=&#34;1-4-1-代理&#34;&gt;&lt;a href=&#34;#1-4-1-代理&#34; class=&#34;headerlink&#34; title=&#34;1.4.1 代理&#34;&gt;&lt;/a&gt;1.4.1 代理&lt;/h3&gt;&lt;p&gt; proxychains4，适用于所有包管理系统和 git&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SSR 选择允许局域网&lt;/li&gt;
+&lt;li&gt;apt 安装 proxychains4&lt;/li&gt;
+&lt;li&gt;配置&lt;ul&gt;
+&lt;li&gt;配置文件在 &lt;code&gt;/etc/proxychains.conf&lt;/code&gt; 或 &lt;code&gt;proxychains4.conf&lt;/code&gt;，改成 &lt;code&gt;socks5  192.168.7.36 17890&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;设置 DNS 文件在 &lt;code&gt;/usr/lib/proxychains3/proxyresolv&lt;/code&gt;，修改 &lt;code&gt;DNS_SERVER=8.8.8.8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注意配置文件代理地址设置成 host 的 IP 192.168.2.29，不是 127.0.0.1&lt;/li&gt;
+&lt;li&gt;tsocks 不那么好用，先不考虑&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-4-2-软件源&#34;&gt;&lt;a href=&#34;#1-4-2-软件源&#34; class=&#34;headerlink&#34; title=&#34;1.4.2 软件源&#34;&gt;&lt;/a&gt;1.4.2 软件源&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/xiangxianghehe/article/details/80112149&#34;&gt;中科大&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-5-sshfs-win&#34;&gt;&lt;a href=&#34;#1-5-sshfs-win&#34; class=&#34;headerlink&#34; title=&#34;1.5 sshfs-win&#34;&gt;&lt;/a&gt;1.5 sshfs-win&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;先装 winfsp (Cryptomator 也装了 winfsp)，然后装 &lt;a href=&#34;https://github.com/billziss-gh/sshfs-win&#34;&gt;sshfs&lt;/a&gt; 64位&lt;/li&gt;
+&lt;li&gt;计算机上右键 &lt;code&gt;映射网络驱动器&lt;/code&gt;，不要选 &lt;code&gt;添加网络位置&lt;/code&gt;，勾选 &lt;code&gt;登陆重连&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;mount home 的情况，&lt;code&gt;\\sshfs\compilers@192.168.36.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;mount 其它目录的情况，&lt;code&gt;\\sshfs.r\compilers@192.168.36.3\usr\class\cs143\cool&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用 key 和代理的情况&lt;ul&gt;
+&lt;li&gt;配置文件 C:\Users\用户.ssh\config&lt;/li&gt;
+&lt;li&gt;IdentityFile 指定私钥路径&lt;/li&gt;
+&lt;li&gt;ProxyCommand 指定代理，这里用 &lt;a href=&#34;https://nmap.org/download.html&#34;&gt;nmap 附带的 ncat&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ProxyCommand D:/soft/Nmap/ncat.exe --proxy 127.0.0.1:17890 --proxy-type socks5 %h %p&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://superuser.com/questions/714845/tunneling-ssh-via-a-socks5-proxy-on-windows&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;打开 cmd （非管理员权限），&lt;code&gt;sshfs-win.exe svc \sshfs.k\ubuntu@主机!端口 v: -d -o LogLevel=DEBUG3&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;映射为 v:&lt;/li&gt;
+&lt;li&gt;调试信息 -d -o LogLevel&amp;#x3D;DEBUG3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;但因为 ProxyCommand 依赖 sh，参考 &lt;a href=&#34;https://github.com/winfsp/sshfs-win/issues/152&#34;&gt;这里&lt;/a&gt; 的方法，下载 busybox 并改名为 sh.exe，可避免装 Cygwin。同时 ProxyCommand 也要改成能识别的斜杠 &amp;#x2F;&lt;/li&gt;
+&lt;li&gt;如直接映射驱动器 \sshfs.k\ubuntu@IP!端口（而非 sshfs-win.exe 命令），则不会使用 config 文件，此时 key 只能放在 C:\Users\用户.ssh 下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-6-samba、tftp、nfs&#34;&gt;&lt;a href=&#34;#1-6-samba、tftp、nfs&#34; class=&#34;headerlink&#34; title=&#34;1.6 samba、tftp、nfs&#34;&gt;&lt;/a&gt;1.6 samba、tftp、nfs&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;linux samba 3.6.0 开始支持 SMB2，之前的版本需要在 Windows 控制面板启用 SMB1.0 客户端，用命令 &lt;code&gt;sudo smbstatus&lt;/code&gt; 查看软件和协议版本&lt;ul&gt;
+&lt;li&gt;即可以在控制面板启用，也可以 powershell 管理员运行 &lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName &amp;quot;SMB1Protocol-Client&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;samba 可能不稳定，重启 Windows 后会无法连接。要重新敲上面的 enable 命令后再重启宿主机和虚拟机才能连上，可把上面命令保存成脚本并 &lt;a href=&#34;https://superuser.com/questions/108207/how-to-run-a-powershell-script-as-administrator&#34;&gt;管理员运行&lt;/a&gt;方便后续使用&lt;/li&gt;
+&lt;li&gt;对于 virtualbox 虚拟机导出给 vmvare 使用时，遇到 virtualbox 服务找不到无法启动图形界面时，进命令行卸载 virtualbox 服务，&lt;code&gt;cd /etc/init.d&lt;/code&gt; 、&lt;code&gt;sudo ./vboxadd cleanup&lt;/code&gt;、&lt;code&gt;sudo ./vboxadd-x11 cleanup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;samba 不稳定也可考虑用 ssh 映射替代，见 [sshfs-win](## 1.5 sshfs-win)&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 20.04 同样出现 broken package 问题，先卸载高版本的依赖 sudo apt purge libwbclient0 samba-libs，再安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;apt-get install samba samba-common&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 备份配置文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; /etc/samba/smb.conf /etc/samba/smb.conf.bak&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改smb.conf。添加一个共享定义，share 表示windows连接到的文件夹名为 \\ip\share&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# create mask = 0644 避免添加执行权限&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[share]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		comment = samba home share&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		path = /home/zack&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		browseable = &lt;span class=&#34;built_in&#34;&gt;yes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;span class=&#34;built_in&#34;&gt;read&lt;/span&gt; only = no&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		create mask = 0644&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		directory mask = 0777&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 添加用户&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo smbpasswd -a zack&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo service smbd restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;apt-get install tftp-hpa tftpd-hpa xinetd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#设置目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vi /etc/default/tftpd-hpa&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#启动服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service tftpd-hpa restart&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tftp 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tftp&amp;gt; get hello&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tftp&amp;gt; quit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查nfs服务是否安装。没有则 sudo apt-get install nfs-kernel-server&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service nfs-kernel-server&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar xvf  rootfs.tar.xz &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;chmod&lt;/span&gt; 777 rootfs	  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启nfs服务(使得前面修改生效)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo /etc/init.d/nfs-kernel-server restart&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 测试nfs服务是否安装成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo mount -t nfs localhost:/nfs/rootfs/  /mnt/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 如果其中的内容和/nfs/rootfs中一致。 表示有挂载成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt; /mnt/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo umount /mnt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-7-ftp&#34;&gt;&lt;a href=&#34;#1-7-ftp&#34; class=&#34;headerlink&#34; title=&#34;1.7 ftp&#34;&gt;&lt;/a&gt;1.7 ftp&lt;/h2&gt;&lt;p&gt;更多安全相关的配置见 &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-16-04&#34;&gt;vsftp 配置&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; /etc/vsftpd.conf /etc/vsftpd.conf.orig&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Allow anonymous FTP? (Disabled by default).&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anonymous_enable=NO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Uncomment this to allow local users to log in.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;local_enable=YES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可上传&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;write_enable=YES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用户列表&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;userlist_enable=YES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;userlist_file=/etc/vsftpd.userlist&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;userlist_deny=NO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 在这里添加可登录的用户，系统的用户名和密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/etc/vsftpd.userlist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-8-编译工具&#34;&gt;&lt;a href=&#34;#1-8-编译工具&#34; class=&#34;headerlink&#34; title=&#34;1.8 编译工具&#34;&gt;&lt;/a&gt;1.8 编译工具&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 20.04 同样有 broken package 问题，要降级安装 libc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install build-essential python3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装最新 cmake，参考 https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2&amp;gt;/dev/null | gpg --dearmor - | sudo &lt;span class=&#34;built_in&#34;&gt;tee&lt;/span&gt; /etc/apt/trusted.gpg.d/kitware.gpg &amp;gt;/dev/null&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-add-repository &lt;span class=&#34;string&#34;&gt;&amp;#x27;deb https://apt.kitware.com/ubuntu/ focal main&amp;#x27;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install cmake&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-9-chrome&#34;&gt;&lt;a href=&#34;#1-9-chrome&#34; class=&#34;headerlink&#34; title=&#34;1.9 chrome&#34;&gt;&lt;/a&gt;1.9 chrome&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 装 chrome&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum localinstall google-chrome-stable_current_x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# chromedriver，下载 linux64 版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;https://chromedriver.chromium.org/downloadsba&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-10-vps&#34;&gt;&lt;a href=&#34;#1-10-vps&#34; class=&#34;headerlink&#34; title=&#34;1.10 vps&#34;&gt;&lt;/a&gt;1.10 vps&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;改端口号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sudo passwd 设置密码，为了以后 VNC 抢救时可以登陆设备&lt;/li&gt;
+&lt;li&gt;备份防火墙 &lt;code&gt;sudo iptables-save &amp;gt;fire.backup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;添加 ssh 端口号，&lt;code&gt;iptables -I INPUT 1 -p tcp --dport xxxx -j ACCEPT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;nc 测试新端口能被连接&lt;/li&gt;
+&lt;li&gt;修改 &lt;code&gt;sudo vi /etc/ssh/sshd_config&lt;/code&gt; 的 Port&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo systemctl restart sshd&lt;/code&gt;，先不关闭旧连接，测试新端口是否生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;改防火墙&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;事先备份  &lt;code&gt;sudo iptables-save &amp;gt;fire.backup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;删除无用项，或还原改后配置 &lt;code&gt;sudo iptables-restore fire.now&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;永久保存，避免重启后失效，&lt;code&gt;sudo netfilter-persistent save&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启测试 &lt;code&gt;sudo reboot&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改 PS1 和时区&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;备份还原&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对 X86，可创建 5 个备份，需要还原时，先删机，等完全终止后，利用之前的引导卷新建机器&lt;/li&gt;
+&lt;li&gt;对 ARM，因通常很难创建，使用 dd 备份还原&lt;ol&gt;
+&lt;li&gt;停止实例，分离引导卷&lt;/li&gt;
+&lt;li&gt;附加到另一实例的块存储卷，并用命令（iSCSI 命令和信息）连接&lt;/li&gt;
+&lt;li&gt;sudo fdisk -l 查看为 &amp;#x2F;sdb 硬盘，备份或还原&lt;ul&gt;
+&lt;li&gt;备份 &lt;code&gt;sudo nohup bash -c &amp;quot;dd if=/dev/sdb conv=sync,noerror bs=64M status=progress | gzip -c &amp;gt;backup.gz&amp;quot; &amp;amp;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;还原 &lt;code&gt;sudo nohup bash -c &amp;quot;gunzip -c backup.gz | dd of=/dev/sdb bs=64M status=progress&amp;quot; &amp;amp;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看进度 &lt;code&gt;sudo tail -f nohup.out&lt;/code&gt;，ubuntu 20.04 原始备份时间 35min 大小 650M，还原时间相同，dd 的 bs 越大越好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;附加引导卷，启动实例&lt;/li&gt;
+&lt;li&gt;用命令（iSCSI 命令和信息）断开连接，并分离&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;为优化资源占用，多使用 &lt;a href=&#34;https://www.howtogeek.com/668986/how-to-use-the-linux-top-command-and-understand-its-output/&#34;&gt;top 命令&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://apttutorials.com/how-to-fix-snapd-process-consuming-lot-of-data-and-cpu/&#34;&gt;卸载 snap&lt;/a&gt;，防止 CPU 占用高，&lt;code&gt;sudo systemctl stop snapd&lt;/code&gt;,  &lt;code&gt;sudo apt purge snapd&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关闭甲骨文日志 &lt;code&gt;systemctl stop unified-monitoring-agent&lt;/code&gt;，&lt;code&gt;systemctl disable unified-monitoring-agent&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关闭 fwupd &lt;code&gt;sudo systemctl stop fwupd&lt;/code&gt;， &lt;code&gt;sudo systemctl disable fwupd&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://askubuntu.com/questions/1233025/how-to-remove-gnome-shell-from-ubuntu-20-04-lts-to-install-other-desktop-environ&#34;&gt;卸载 gnome&lt;/a&gt;，然后重启&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt purge adwaita-icon-theme gedit-common gir1.2-gdm-1.0 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gir1.2-gnomebluetooth-1.0 gir1.2-gnomedesktop-3.0 gir1.2-goa-1.0 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-accessibility-themes gnome-bluetooth gnome-calculator gnome-calendar \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-characters gnome-control-center gnome-control-center-data \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-control-center-faces gnome-desktop3-data \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-font-viewer \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-initial-setup gnome-keyring gnome-keyring-pkcs11 gnome-logs \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-mahjongg gnome-menus gnome-mines gnome-online-accounts \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-power-manager gnome-screenshot gnome-session-bin gnome-session-canberra \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-session-common gnome-settings-daemon gnome-settings-daemon-common \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-shell gnome-shell-common gnome-shell-extension-appindicator \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-shell-extension-desktop-icons gnome-shell-extension-ubuntu-dock \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-startup-applications gnome-sudoku gnome-system-monitor gnome-terminal \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-terminal-data gnome-themes-extra gnome-themes-extra-data gnome-todo \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-todo-common gnome-user-docs gnome-user-docs-ru gnome-video-effects \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language-pack-gnome-en language-pack-gnome-en-base language-pack-gnome-ru \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language-pack-gnome-ru-base language-selector-gnome libgail18 libgail18 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgail-common libgail-common libgnome-autoar-0-0 libgnome-bluetooth13 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgnome-desktop-3-19 libgnome-games-support-1-3 libgnome-games-support-common \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgnomekbd8 libgnomekbd-common libgnome-menu-3-0 libgnome-todo libgoa-1.0-0b \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgoa-1.0-common libpam-gnome-keyring libsoup-gnome2.4-1 libsoup-gnome2.4-1 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nautilus-extension-gnome-terminal pinentry-gnome3 yaru-theme-gnome-shell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt purge gnome-getting-started-docs gnome-getting-started-docs-ru&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;acme.sh 申请证书&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google domain，&lt;a href=&#34;https://www.reddit.com/r/sysadmin/comments/13dibxb/googleissued_https_certificates_with_acme_dns_api/&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Google Ca&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;acme.sh --set-default-ca --server google&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;页面获得 eab-kid eab-hmac-key&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;acme.sh --register-account&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;letsencrypt CA，&lt;code&gt;acme.sh --set-default-ca --server letsencrypt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;页面获得 API-Token，export GOOGLEDOMAINS_ACCESS_TOKEN&amp;#x3D;”获得的 token”&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;acme.sh --issue --dns dns_googledomains -d synrst.de -d *.synrst.de -k ec-384&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;安装 &lt;code&gt;acme.sh --install-cert -d synrst.de -d *.synrst.de --ecc --key-file /etc/XXX/server.key --fullchain-file /etc/XXX/server.crt --reloadcmd &amp;quot;systemctl force-reload nginx&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;其它命令，&lt;a href=&#34;https://github.com/acmesh-official/acme.sh&#34;&gt;官方文档&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;删除证书 &lt;code&gt;acme.sh --remove -d synrst.de -d *.synrst.de&lt;/code&gt;，之后按提示删除文件夹（正常还应该 revoke）&lt;/li&gt;
+&lt;li&gt;强制 renew &lt;code&gt;acme.sh --renew -d synrst.de -d *.synrst.de --force --ecc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看证书 &lt;code&gt;openssl x509 -text -noout -in xxx.cer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看 &lt;code&gt;acme.sh --list&lt;/code&gt;，&lt;code&gt;crontab -l&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;科学上网加速&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BBR Plus 加速，&lt;a href=&#34;https://www.youtube.com/watch?v=90xDssO7qIE&#34;&gt;区别对比&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CDN 加速&lt;ul&gt;
+&lt;li&gt;v2ray 域名 -&amp;gt; cdn -&amp;gt; vps ip&lt;ul&gt;
+&lt;li&gt;在域名上配置&lt;ul&gt;
+&lt;li&gt;NS 接入：nameserver 配置成 cloudfare&lt;/li&gt;
+&lt;li&gt;CNAME&amp;#x2F;IP 接入：v2ray 域名 -&amp;gt; cdn ip&amp;#x2F;域名，域名则添加 CNAME，IP 则添加 A 记录。这是为了配合 DNSPod 不同城市线路用不同的 CDN IP，&lt;a href=&#34;https://www.moeelf.com/archives/10.html&#34;&gt;例子&lt;/a&gt;，感觉是给机场接入用的，个人 NS 接入即可，&lt;a href=&#34;https://www.youtube.com/watch?v=80rBGZWYlxw&#34;&gt;例子&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在 CDN 配置 ：v2ray 域名 -&amp;gt; vps ip（回源地址）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-11-screen&#34;&gt;&lt;a href=&#34;#1-11-screen&#34; class=&#34;headerlink&#34; title=&#34;1.11 screen&#34;&gt;&lt;/a&gt;1.11 screen&lt;/h2&gt;&lt;p&gt;&lt;a id=&#34;xa7o&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.screenrc 文件，参考 &lt;a href=&#34;https://linuxize.com/post/how-to-use-linux-screen/&#34;&gt;How To Use Linux Screen&lt;/a&gt; 和 &lt;a href=&#34;https://www.gnu.org/software/screen/manual/screen.html&#34;&gt;Screen User’s Manual&lt;/a&gt;  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;startup_message off&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# Disable visual bell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# vbell off&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# Set scrollback buffer to 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;defscrollback 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# https://superuser.com/questions/506080/screen-divider-border-width-and-color&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;caption string &amp;quot;%&amp;#123;= dd&amp;#125; &amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;rendition so &amp;quot;=&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# https://stackoverflow.com/questions/359109/using-the-scrollwheel-in-gnu-screen&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;termcapinfo xterm* ti@:te@&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 内存部分参考 https://stackoverflow.com/questions/18439129/system-loads-in-gnu-screens-hardstatus-line&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hardstatus alwayslastline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# backtick 1 1 1 /bin/bash -c &amp;#x27;free | grep Mem | awk &amp;#x27;\&amp;#x27;&amp;#x27;&amp;#123;printf(&amp;quot;%.1f%%&amp;quot;, $3/$2 * 100.0)&amp;#125;&amp;#x27;\&amp;#x27;&amp;#x27; &amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;backtick 1 1 1 /bin/bash -c &amp;#x27;free | grep Mem | awk &amp;#x27;\&amp;#x27;&amp;#x27;&amp;#123;printf(&amp;quot;%.1f%%&amp;quot;, 100 - $7/$2 * 100.0)&amp;#125;&amp;#x27;\&amp;#x27;&amp;#x27; &amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hardstatus string &amp;quot;%&amp;#123;= KG&amp;#125; %-Lw%&amp;#123;= bW&amp;#125;%n%f %t%&amp;#123;-&amp;#125;%+Lw %=%&amp;#123;= Kg&amp;#125;| %c %&amp;#123;-&amp;#125;%l %1`&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 给 Windows terminal 用的浅色主题 AtomOneLight https://windowsterminalthemes.dev/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# hardstatus string &amp;quot;%&amp;#123;= wG&amp;#125; %-Lw%&amp;#123;= bW&amp;#125;%n%f %t%&amp;#123;-&amp;#125;%+Lw %=%&amp;#123;= wg&amp;#125;| %c %&amp;#123;-&amp;#125;%l %1`&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# focus ctrl+a tab，other ctrl+a ctrl+a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 推荐在左侧标签按键，这样右侧标签分到屏幕右侧，按键焦点留在左侧&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;bind v eval &amp;quot;split -v&amp;quot; focus other focus&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 这个配置焦点在右侧&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# bind v eval &amp;quot;split -v&amp;quot; focus other&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;bind x remove&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;screen 状态栏显示正在执行的命令或当前路径，&lt;a href=&#34;https://unix.stackexchange.com/questions/28430/screen-status-bar-to-display-current-directory-for-zsh-bash-shell&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;bash&lt;ul&gt;
+&lt;li&gt;.screenrc 文件  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# shelltitle | 前面的 ] 表示提示符结尾&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;shelltitle &amp;#x27;]|bash&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;.bashrc 文件  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; [[ &lt;span class=&#34;variable&#34;&gt;$TERM&lt;/span&gt; == screen* ]]; &lt;span class=&#34;keyword&#34;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	PROMPT_COMMAND=&lt;span class=&#34;string&#34;&gt;&amp;#x27;echo -ne &amp;quot;\033k\033\0134\033k[`basename $&amp;#123;PWD&amp;#125;`]\033\0134&amp;quot;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;zsh，&lt;a href=&#34;https://unix.stackexchange.com/questions/28430/screen-status-bar-to-display-current-directory-for-zsh-bash-shell&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://stackoverflow.com/questions/45288905/zsh-mystery-variable-expansion&#34;&gt;参考2&lt;/a&gt;  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setopt extendedglob&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;if [[ $TERM == screen* ]]; then&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	precmd () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        local dir=$(print -Pn &amp;quot;%c&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        print -Pn &amp;quot;\ek$dir\e\\&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	preexec () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        local dir=$(print -Pn &amp;quot;%c&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        # 截短是为了留空间显示 CMD&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        dir=$dir[1,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        local CMD=$&amp;#123;1[(wr)^(sudo|*=*|-*)]&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        print -Pn &amp;quot;\ek$dir] $&amp;#123;CMD&amp;#125;\e\\&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fi&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;相关手册&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion&#34;&gt;%c&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zsh.sourceforge.io/Doc/Release/Expansion.html#Filename-Generation&#34;&gt; ^(&lt;em&gt;&amp;#x3D;&lt;/em&gt;|sudo|-*)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zsh.sourceforge.io/Doc/Release/Parameters.html&#34;&gt;[wr] 的含义 Subscript Flags&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;常用按键&amp;#x2F;命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;常用按键&amp;#x2F;命令&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;screen&lt;/td&gt;
+&lt;td&gt;创建&lt;br /&gt;启动后 SecureCRT 要调整一下窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;screen -ls&lt;/td&gt;
+&lt;td&gt;查看&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a d&lt;/td&gt;
+&lt;td&gt;detach&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;screen -x&lt;/td&gt;
+&lt;td&gt;Attach to a session which is already attached&lt;br /&gt;与 -r 相比推荐这种，可加到 .bashrc 实现登录就在 screen 中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;screen -r&lt;/td&gt;
+&lt;td&gt;attach&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a c&lt;/td&gt;
+&lt;td&gt;create 窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a k&lt;/td&gt;
+&lt;td&gt;kill 窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a 数字&lt;/td&gt;
+&lt;td&gt;切换到该窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a ctrl + a&lt;/td&gt;
+&lt;td&gt;切换到刚刚的窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a p&amp;#x2F;n&lt;/td&gt;
+&lt;td&gt;切换到前一个、后一个窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a :number 数字&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://serverfault.com/questions/244294/how-to-re-order-windows-change-the-scroll-shortcut-and-modify-the-status-bar-c&#34;&gt;重命名窗口&lt;/a&gt;以调整窗口在下方的显示顺序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;上面的自定义按键&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a v&lt;/td&gt;
+&lt;td&gt;分 region&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a x&lt;/td&gt;
+&lt;td&gt;关 region&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl + a tab&lt;/td&gt;
+&lt;td&gt;切 region&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;2-使用&#34;&gt;&lt;a href=&#34;#2-使用&#34; class=&#34;headerlink&#34; title=&#34;2 使用&#34;&gt;&lt;/a&gt;2 使用&lt;/h1&gt;&lt;p&gt;软件问题见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/&#34;&gt;linux软件编译、安装、运行&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-1-基础&#34;&gt;&lt;a href=&#34;#2-1-基础&#34; class=&#34;headerlink&#34; title=&#34;2.1 基础&#34;&gt;&lt;/a&gt;2.1 基础&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://linuxtools-rst.readthedocs.io/zh_CN/latest/&#34;&gt;Linux工具快速教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-1-1-修改-linux-用户名&#34;&gt;&lt;a href=&#34;#2-1-1-修改-linux-用户名&#34; class=&#34;headerlink&#34; title=&#34;2.1.1 修改 linux 用户名&#34;&gt;&lt;/a&gt;2.1.1 修改 linux 用户名&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 退出所有登录（包括 SSH）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Ctrl+Alt+F2 以 root 登录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改用户名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;usermod -c “Full name real” -l new_name old_name&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改 home&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;usermod -d /home/newHomeDir -m newUsername&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;2-1-2-bash&#34;&gt;&lt;a href=&#34;#2-1-2-bash&#34; class=&#34;headerlink&#34; title=&#34;2.1.2 bash&#34;&gt;&lt;/a&gt;2.1.2 bash&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/&#34;&gt;快捷键&lt;/a&gt;&lt;/p&gt;
+  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + r – search the history backwards&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + g – escape from history searching mode&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CTRL + A = the beginning of the line&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CTRL + E = the end of the line&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALT  + B = move backward one word &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALT  + F = move forward one word&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/* 所有的 ALT 可换成 ESC */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + U = Delete left of the cursor&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + K = Delete right of the cursor&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + W = Delete word on the left&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALT  + D = Delete word on the right&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + Y = Paste&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/ANSI_escape_code&#34;&gt;Terminal input sequences&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-1-3-zsh&#34;&gt;&lt;a href=&#34;#2-1-3-zsh&#34; class=&#34;headerlink&#34; title=&#34;2.1.3 zsh&#34;&gt;&lt;/a&gt;2.1.3 zsh&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;粘贴 kali .zshrc&lt;/li&gt;
+&lt;li&gt;命令提示 &lt;code&gt;sudo apt install zsh-autosuggestions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;参考配置 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/#xa7o&#34;&gt;screen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-1-4-脚本&#34;&gt;&lt;a href=&#34;#2-1-4-脚本&#34; class=&#34;headerlink&#34; title=&#34;2.1.4 脚本&#34;&gt;&lt;/a&gt;2.1.4 脚本&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;shell 脚本调试&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-------- bash ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; SHELLOPTS&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还可配合 FUNCNAME 实现调用栈打印&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS4=&lt;span class=&#34;string&#34;&gt;&amp;#x27;[$&amp;#123;BASH_SOURCE[0]&amp;#125;-$LINENO] &amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可考虑去掉 eu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; -eux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 确认&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; -o&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还原&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; +eux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-------- zsh ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/56137084/zsh-inherit-xtrace-option&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 利用 $ZDOTDIR/.zshenv&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/9901210/bash-source0-equivalent-in-zsh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-- 注意：下面的所有方法在应对 &lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt;（即 .） 引入脚本时，不会更新文件名，此时从感兴趣的位置向上找到最近 &lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt; 的几个脚本，一般就是那里 --&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 定义 MyShellOpts 开启调试，可考虑去掉 eu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; MyShellOpts=-eux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-------- ash ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#!/bin/busybox sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 这个脚本保存为 sh 替换 /bin/sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 替换方法，确保 /bin/sh 为指向 /bin/dash 的软链接&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# sudo chmod --reference=/bin/sh sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# sudo chown --reference=/bin/sh sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# sudo cp --remove-destination sh /bin/sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS4=&lt;span class=&#34;string&#34;&gt;&amp;#x27;[$0-$LINENO] &amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/bin/busybox sh &lt;span class=&#34;variable&#34;&gt;$MyShellOpts&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-------- dash或其它类似 shell ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#!/bin/dash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 与上面一样，这个脚本保存为 sh 替换 /bin/sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# $LINENO 存在也可加到 PS4 里，不存在则参考 Workaround for shells without LINENO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/17804007/how-to-show-line-number-when-executing-bash-script&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还原，cd /bin &amp;amp;&amp;amp; sudo ln -f -s dash sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS4=&lt;span class=&#34;string&#34;&gt;&amp;#x27;[$0] &amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可考虑去掉 eu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/bin/dash &lt;span class=&#34;variable&#34;&gt;$MyShellOpts&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;不论在那个路径下运行都得到脚本的路径&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 不论在那个路径下运行都得到脚本的路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 获取当前脚本路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SCRIPT_DIR=&lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;$( cd &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;$( dirname &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$&amp;#123;BASH_SOURCE[0]&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt; )&lt;/span&gt;&amp;quot;&lt;/span&gt; &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; pwd )&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-1-5-nc&#34;&gt;&lt;a href=&#34;#2-1-5-nc&#34; class=&#34;headerlink&#34; title=&#34;2.1.5 nc&#34;&gt;&lt;/a&gt;2.1.5 nc&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;推荐安装 nc openbsd 版本，&lt;code&gt;apt install netcat-openbsd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-1-6-curl&#34;&gt;&lt;a href=&#34;#2-1-6-curl&#34; class=&#34;headerlink&#34; title=&#34;2.1.6 curl&#34;&gt;&lt;/a&gt;2.1.6 curl&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# FTP 下载&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl ftp://user:pass@192.168.7.29/code/pdt-toolchains/src/tin -o /mnt/internal_storage/tin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# FTP 上传&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl -T /etc/profile ftp://user:pass@192.168.7.29/code/profile&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 与 docker 通信&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock http://localhost/v1.41/containers/json?all=&lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; | jq .[0]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;2-1-7-查找文件&#34;&gt;&lt;a href=&#34;#2-1-7-查找文件&#34; class=&#34;headerlink&#34; title=&#34;2.1.7 查找文件&#34;&gt;&lt;/a&gt;2.1.7 查找文件&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;find /media/d/ -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f -size +50M ! \( -name &lt;span class=&#34;string&#34;&gt;&amp;quot;*deb&amp;quot;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;quot;*vmdk&amp;quot;&lt;/span&gt; \)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 删除前去掉 delete 进行确认&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f ! \( -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.cpp&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.h&amp;#x27;&lt;/span&gt; \) -delete&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 跳过隐藏文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . -not -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/\.*&amp;#x27;&lt;/span&gt; -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f ! \( -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.cpp&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.h&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.txt&amp;#x27;&lt;/span&gt; \)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 先创建与源码相同的目录结构再拷贝文件，拷贝文件时忽略某些文件夹下的文件和源码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . \( -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; d -&lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;mkdir&lt;/span&gt; -p &lt;span class=&#34;string&#34;&gt;&amp;#x27;../gatebox_work/&amp;#123;&amp;#125;&amp;#x27;&lt;/span&gt; \;   -o -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f ! \( -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;./.git/*&amp;#x27;&lt;/span&gt; -o -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/GmSSL/*&amp;#x27;&lt;/span&gt; -o -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/.idea/*&amp;#x27;&lt;/span&gt; -o -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/.vscode/*&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.c&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.h&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.o&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.log&amp;#x27;&lt;/span&gt; -o -iname makefile \) -&lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;&amp;#125;&amp;#x27;&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;../gatebox_work/&amp;#123;&amp;#125;&amp;#x27;&lt;/span&gt; \; \)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;2-1-8-磁盘占用统计&#34;&gt;&lt;a href=&#34;#2-1-8-磁盘占用统计&#34; class=&#34;headerlink&#34; title=&#34;2.1.8 磁盘占用统计&#34;&gt;&lt;/a&gt;2.1.8 磁盘占用统计&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install qdirstat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;2-1-9-cron&#34;&gt;&lt;a href=&#34;#2-1-9-cron&#34; class=&#34;headerlink&#34; title=&#34;2.1.9 cron&#34;&gt;&lt;/a&gt;2.1.9 cron&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;常见 cron &lt;a href=&#34;https://www.warp.dev/terminus/how-to-run-cron-every-hour&#34;&gt;写法&lt;/a&gt;，&lt;a href=&#34;https://crontab.guru/&#34;&gt;计算 cron 下次执行时间&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;crontab -e&lt;/code&gt; 编辑，cron 会检测 crontab 的更新，自动用最新配置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;select-editor&lt;/code&gt; 改变默认编辑器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-2-网络&#34;&gt;&lt;a href=&#34;#2-2-网络&#34; class=&#34;headerlink&#34; title=&#34;2.2 网络&#34;&gt;&lt;/a&gt;2.2 网络&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;wireguard&lt;ul&gt;
+&lt;li&gt;看介绍&lt;a href=&#34;https://www.wireguard.com/quickstart/&#34;&gt;视频&lt;/a&gt;，详细的&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04&#34;&gt;配置方法&lt;/a&gt;，注意区分 server 和 peer client&lt;/li&gt;
+&lt;li&gt;对已经有配置文件的，&lt;code&gt;sudo apt install wireguard resolvconf&lt;/code&gt;，将配置保存到 &lt;code&gt;/etc/wireguard/wg0.conf&lt;/code&gt;，然后 &lt;code&gt;sudo wg-quick up wg0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;clash_for_windows linux 版，手动安装服务&lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/3464&#34;&gt;方法&lt;/a&gt;，网关模式&lt;/li&gt;
+&lt;li&gt;网速占用统计 apt 安装 nethogs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-备份与还原&#34;&gt;&lt;a href=&#34;#3-备份与还原&#34; class=&#34;headerlink&#34; title=&#34;3 备份与还原&#34;&gt;&lt;/a&gt;3 备份与还原&lt;/h1&gt;&lt;p&gt;考虑到经常环境经常变动，所以有必要学习linux的备份和还原技术。&lt;/p&gt;
+&lt;h2 id=&#34;3-1-系统备份&#34;&gt;&lt;a href=&#34;#3-1-系统备份&#34; class=&#34;headerlink&#34; title=&#34;3.1 系统备份&#34;&gt;&lt;/a&gt;3.1 系统备份&lt;/h2&gt;&lt;p&gt;备份脚本  &lt;a href=&#34;https://github.com/pedroetb/rsync-incremental-backup&#34;&gt;rsync-incremental-backup&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注意 rsync 的 exclude 将 源路径 视为 根，因此 exclude 指定的路径都是相对 源路径 来说的，具体可以建立几个测试文件，用 &lt;code&gt;dry-run&lt;/code&gt; 的方式验证。恢复的脚本要自己写了，如果进不了系统就用 ubuntu 的安装 U 盘恢复。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下一步&lt;/strong&gt;可以配合 cron 实现自动定期备份，配合 ssh 实现远端备份&lt;/p&gt;
+&lt;h2 id=&#34;3-2-启动备份&#34;&gt;&lt;a href=&#34;#3-2-启动备份&#34; class=&#34;headerlink&#34; title=&#34;3.2 启动备份&#34;&gt;&lt;/a&gt;3.2 启动备份&lt;/h2&gt;&lt;p&gt;多系统的启动管理。每个硬盘一个 MBR，每个系统分区都有个 boot sector，两个位置都会安装 bootloader&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/../linux/mbr_boot_sector.gif&#34; alt=&#34;mbr_boot_sector&#34;&gt;&lt;/p&gt;
+&lt;p&gt;多系统启动方式如下，MBR 的 bootloader 可以转交给其它分区的 bootloader，即 chainload&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/../linux/loader_menu.gif&#34; alt=&#34;loader_menu&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下一步&lt;/strong&gt;可以查看 grub2 的帮助文档，以及用 dd 备份 bootloader 的方法。还原的方法则使用 ubuntu 的 安装U 盘即可。另为 ubuntu 提供了 &lt;a href=&#34;https://help.ubuntu.com/community/Boot-Repair&#34;&gt;Boot-Repair&lt;/a&gt; 工具。&lt;/p&gt;
+&lt;p&gt;参考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://cn.linux.vbird.org/linux_basic/0580backup_1.php&#34;&gt;鸟哥备份&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cn.linux.vbird.org/linux_server/0310telnetssh.php#rsync&#34;&gt;鸟哥 rsync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.admin-magazine.com/Articles/Using-rsync-for-Backups&#34;&gt;Incremental Backups on Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/index.php/Rsync#Full_system_backup&#34;&gt;Rsync full system backup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/</id>
         <title>手机_电视_平板</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/"/>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/"/>
         <content type="html">&lt;h1 id=&#34;1-ADB-卸载系统-App&#34;&gt;&lt;a href=&#34;#1-ADB-卸载系统-App&#34; class=&#34;headerlink&#34; title=&#34;1 ADB 卸载系统 App&#34;&gt;&lt;/a&gt;1 ADB 卸载系统 App&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;开发者选项，开启 USB 调试&lt;/li&gt;
 &lt;li&gt;安装 USB driver&lt;/li&gt;
@@ -223,45 +674,9 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</id>
-        <title>docker</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/"/>
-        <content type="html">&lt;h1 id=&#34;1-安装&#34;&gt;&lt;a href=&#34;#1-安装&#34; class=&#34;headerlink&#34; title=&#34;1 安装&#34;&gt;&lt;/a&gt;1 安装&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04&#34;&gt;ubuntu 20.04 安装&lt;/a&gt;、&lt;a href=&#34;https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;避免每次输入 sudo  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo groupadd docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo usermod -aG docker &lt;span class=&#34;variable&#34;&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 激活新修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;newgrp docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提示没权限的话重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull cdrx/pyinstaller-linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/arm64 alpine:latest&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;保存和加载镜像&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker save -o &amp;lt;path &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; generated tar file&amp;gt; &amp;lt;image name&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker load -i &amp;lt;path to image tar file&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-容器&#34;&gt;&lt;a href=&#34;#3-容器&#34; class=&#34;headerlink&#34; title=&#34;3 容器&#34;&gt;&lt;/a&gt;3 容器&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;生成容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 指定容器名字方便操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v 是绑定，docker run 见 https://docs.docker.com/engine/reference/commandline/run/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -it --name table_bot -v /home/zack/code/table_bot:/src/ cdrx/pyinstaller-linux /bin/bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 改成豆瓣源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; global.index-url https://pypi.tuna.tsinghua.edu.cn/simple&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;列出容器  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -s 占用大小，-a 所有，包括停止的容器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;运行命令  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d: Detached mode: run command in the background&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -d table_bot bash -c &lt;span class=&#34;string&#34;&gt;&amp;#x27;/root/.pyenv/shims/pyinstaller -F bot.py &amp;amp;&amp;amp; cp dist/b .&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;进入 docker  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker start table_bot -i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container&#34;&gt;修改端口映射&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4-API&#34;&gt;&lt;a href=&#34;#4-API&#34; class=&#34;headerlink&#34; title=&#34;4 API&#34;&gt;&lt;/a&gt;4 API&lt;/h1&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用 curl 和 jq 测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用法参考 https://stackoverflow.com/questions/41960751/docker-remote-api-filters-filter-out-network-by-name&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/28054203/docker-remote-api-filter-exited&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -gG -XGET -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock &lt;span class=&#34;string&#34;&gt;&amp;#x27;http://localhost/v1.41/containers/json?limit=10&amp;#x27;&lt;/span&gt; --data-urlencode &lt;span class=&#34;string&#34;&gt;&amp;#x27;filters=&amp;#123;&amp;quot;status&amp;quot;: [&amp;quot;running&amp;quot;]&amp;#125;&amp;#x27;&lt;/span&gt; | jq &lt;span class=&#34;string&#34;&gt;&amp;#x27;.[] | &amp;#123;Id, Names&amp;#125;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h1 id=&#34;5-制作镜像&#34;&gt;&lt;a href=&#34;#5-制作镜像&#34; class=&#34;headerlink&#34; title=&#34;5 制作镜像&#34;&gt;&lt;/a&gt;5 制作镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如何编出更小的镜像 &lt;a href=&#34;https://jpetazzo.github.io/2020/02/01/quest-minimal-docker-images-part-1/&#34;&gt;系列文章&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;制作镜像&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t iebs .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要是网络不通可以试试 --network=host&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker build --network=host -t iebs .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可以用 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/#%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5-libc&#34;&gt;静态链接 libc&lt;/a&gt; 的方式编出单文件程序，Dockerfile 参考&lt;/p&gt;
-  &lt;figure class=&#34;highlight dockerfile&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;FROM&lt;/span&gt; scratch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;COPY&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; iiot_sdk /&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CMD&lt;/span&gt;&lt;span class=&#34;language-bash&#34;&gt; [&lt;span class=&#34;string&#34;&gt;&amp;quot;./iiot_sdk&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</id>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</id>
         <title>windows</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/"/>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/"/>
         <content type="html">&lt;h1 id=&#34;1-清理旧文件&#34;&gt;&lt;a href=&#34;#1-清理旧文件&#34; class=&#34;headerlink&#34; title=&#34;1 清理旧文件&#34;&gt;&lt;/a&gt;1 清理旧文件&lt;/h1&gt;&lt;p&gt;删除没有权限的文件夹&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 更改所有者 -&amp;gt; 输入自己的用户名 -&amp;gt; 选择下面应用到子文件夹的勾 -&amp;gt; 确定所有对话框&lt;/li&gt;
@@ -1157,9 +1572,9 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
         <title>路由器</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
         <content type="html">&lt;h1 id=&#34;1-刷机&#34;&gt;&lt;a href=&#34;#1-刷机&#34; class=&#34;headerlink&#34; title=&#34;1 刷机&#34;&gt;&lt;/a&gt;1 刷机&lt;/h1&gt;&lt;h2 id=&#34;1-1-斐讯K2&#34;&gt;&lt;a href=&#34;#1-1-斐讯K2&#34; class=&#34;headerlink&#34; title=&#34;1.1 斐讯K2&#34;&gt;&lt;/a&gt;1.1 斐讯K2&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;确定硬件版本，斐讯K2 PSG1218 硬件A2&lt;/li&gt;
 &lt;li&gt;更新到官方某个版本，来实现开 telnet、ssh&lt;/li&gt;
@@ -1342,421 +1757,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/</id>
-        <title>linux</title>
-        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/"/>
-        <content type="html">&lt;h1 id=&#34;1-配置&#34;&gt;&lt;a href=&#34;#1-配置&#34; class=&#34;headerlink&#34; title=&#34;1 配置&#34;&gt;&lt;/a&gt;1 配置&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;必装 ssh proxychains4 git meld p4merge vim gtags ctags，github 导入公钥&lt;/li&gt;
-&lt;li&gt;关闭该死的系统更新，非要更新前一定创建快照&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-1-SSH&#34;&gt;&lt;a href=&#34;#1-1-SSH&#34; class=&#34;headerlink&#34; title=&#34;1.1 SSH&#34;&gt;&lt;/a&gt;1.1 SSH&lt;/h2&gt;&lt;p&gt;&lt;code&gt;apt-get install openssh-server openssh-client&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如配置 VPS 修改 SSH 端口，则要在系统 iptables 和 vps 页面两处同时放行新端口，并用 nc -l 测试没问题后，再重启 sshd 服务。此时先别断开旧连接，防止出现新端口连不上的情况&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;1-1-1-解决-20-04-broken-package-问题&#34;&gt;&lt;a href=&#34;#1-1-1-解决-20-04-broken-package-问题&#34; class=&#34;headerlink&#34; title=&#34;1.1.1 解决 20.04 broken package 问题&#34;&gt;&lt;/a&gt;1.1.1 解决 20.04 broken package 问题&lt;/h3&gt;&lt;p&gt;参考 &lt;a href=&#34;https://ubuntuforums.org/showthread.php?t=2412211&#34;&gt;Problems with installing of the openssh-server&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 通过 aptitude 尝试解决&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install aptitude&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo aptitude install PACKAGENAME&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;根据  aptitude 安装前的提示，发现是预安装的 openssh-client 版本高，apt purge openssl-client 卸载后安装 openssh-server 没问题。&lt;br&gt;也可以降级已安装的包，&lt;code&gt;sudo apt install &amp;lt;package-name&amp;gt;=&amp;lt;package-version-number&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;1-1-2-secureCRT-配置问题&#34;&gt;&lt;a href=&#34;#1-1-2-secureCRT-配置问题&#34; class=&#34;headerlink&#34; title=&#34;1.1.2 secureCRT 配置问题&#34;&gt;&lt;/a&gt;1.1.2 secureCRT 配置问题&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;关闭不用的菜单栏、状态栏等，去掉 use dockable session manager 选项，记住连接管理的快捷键即可&lt;/li&gt;
-&lt;li&gt;编码与字体&lt;br&gt; 在Options -&amp;gt; Session Options -&amp;gt; Appearance 选项中将 Character encoding 设成”UTF-8”即可，字体 Consolas-with-Yahei，三号。没办法用没有 CJK 字符的字体&lt;/li&gt;
-&lt;li&gt;启用颜色&lt;br&gt; 官方的介绍 &lt;a href=&#34;https://www.youtube.com/watch?v=SZLbBsp3914&#34;&gt;https://www.youtube.com/watch?v=SZLbBsp3914&lt;/a&gt;&lt;br&gt; 在 default session 中选 solarized dark，emulation 中启用 xterm-256color&lt;br&gt; 在全局配置中外观 - 高级，选中 solarized dark 新建一个颜色模式&lt;br&gt; 将 normal 和 bold 中前景色调亮，同时下拉列表选择 solarized dark，在 default session 中应用&lt;br&gt; 前景色 RGB 颜色 166,177,179&lt;br&gt; 详细参考视频 &lt;a href=&#34;http://www.youtube.com/watch?v=SZLbBsp3914&#34;&gt;www.youtube.com/watch?v=SZLbBsp3914&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;调整系统提示声音，将 默认响声 设置为 windows信息栏.wav&lt;/li&gt;
-&lt;li&gt;安装 Xming，对于 ubuntu 的 session 中勾选 X11 forwarding 两个选项，默认配置即可&lt;/li&gt;
-&lt;li&gt;&lt;ul&gt;
-&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal 启用选择发送滚轮事件到远程。取消 Scroll to bottom on output&lt;ul&gt;
-&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal–&amp;gt;Emulation–&amp;gt;Mapped Keys，选中 Backspace sends delete&lt;br&gt;  默认会话中终端&lt;/li&gt;
-&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal–&amp;gt;Emulation–&amp;gt;Mode，取消 Enable keypad mode switching 小键盘映射&lt;/li&gt;
-&lt;li&gt;Options–&amp;gt;Session Options–&amp;gt;Terminal–&amp;gt;Emulation–&amp;gt;Advanced，忽略窗口标题更改请求&lt;/li&gt;
-&lt;li&gt;Options–&amp;gt;Edit Default Session 设置常用的按键映射，运行脚本 a-r、取消脚本 a-s、清屏 a-l (clear)、滚动到底部 a-b&lt;/li&gt;
-&lt;li&gt;（可选）&lt;a href=&#34;https://forums.vandyke.com/showthread.php?p=42242&#34;&gt;添加键盘映射&lt;/a&gt;，HOME&amp;#x2F;END 为 &lt;code&gt;\033[H&lt;/code&gt; 和 &lt;code&gt;\033[F&lt;/code&gt;，原理见下 Terminal input sequences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;1-1-3-隧道-端口转发&#34;&gt;&lt;a href=&#34;#1-1-3-隧道-端口转发&#34; class=&#34;headerlink&#34; title=&#34;1.1.3 隧道/端口转发&#34;&gt;&lt;/a&gt;1.1.3 隧道/端口转发&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;代理就是通过隧道帮助用户要访问某个受限资源&lt;/li&gt;
-&lt;li&gt;隧道由本地和远端组成，本地作为 SSH 客户端连接远端 SSH 服务器端&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-    subgraph 代理
-    用户 -- 隧道 --&gt; 受限资源
-    end
-    subgraph 隧道
-    L(&#34;本地 local，客户端&#34;) --&gt; R(&#34;远端 remote，服务器&#34;)
-    end&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;按情况分为用户在隧道的本地和远端两种，常见三种 &lt;a href=&#34;https://wangdoc.com/ssh/port-forwarding.html&#34;&gt;转发方式&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;所谓用户就是要连接监听端口的设备&lt;ul&gt;
-&lt;li&gt;所以对用户在本地 local 的，使用 -D 或 -L 打开本地端口，转发给 remote 侧的某资源。如资源为固定的 ip port 用 -L，动态的多个资源用 -D&lt;ul&gt;
-&lt;li&gt;这种场景如科学上网，-D 打开本地的 sock5 监听端口，加密连到 vps，动态访问各个网站&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;对用户在远端 remote 的，用 -R 打开远端端口。同样可固定可动态，填 ip port 是固定，不填为动态&lt;ul&gt;
-&lt;li&gt;这种场景如内网穿透，内网必须作为客户端主动连公网服务器端&lt;ul&gt;
-&lt;li&gt;为了防止连接中断可 &lt;a href=&#34;https://cloud.tencent.com/developer/article/1722055&#34;&gt;写个脚本&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;但在公网服务器开端口暴露内网资源可能不安全（有的内网资源没有密码等），真要这样用还需配置 &lt;code&gt;GatewayPorts yes&lt;/code&gt;，否则只会在环回口监听&lt;/li&gt;
-&lt;li&gt;所以为了安全，即 1. 要有授权的客户端才能连服务端口 2. 保证用户到服务端口之间数据的安全性（socks 协议不加密）。在先用 -R 开启环回口（动态方式）后，再在用户侧用 -L 练到公网服务器，见 &lt;a href=&#34;https://o-u-u.com/?p=3234#%E9%93%BE%E5%BC%8F%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91&#34;&gt;链式端口转发&lt;/a&gt; (文中为固定转发给 3000 端口，可改为动态)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;图中的 4 个角色（资源、用户、local、remote）可重合，即特殊情况&lt;ul&gt;
-&lt;li&gt;local 和 remote 为同一台设备，如将这台设备用作 socks 代理服务器 &lt;code&gt;ssh -D port localhost&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;用户与 local &amp;#x2F; remote 为同一设备，资源与 local &amp;#x2F; remote 为同一设备的情况&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;如要只将 ssh 用作隧道，限制用户登陆，可以 &lt;a href=&#34;https://unix.stackexchange.com/questions/14312/how-to-restrict-an-ssh-user-to-only-allow-ssh-tunneling&#34;&gt;修改用户的 shell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;对 windows 可用配置好连接信息的绿色版 putty 来当作 vpn 客户端的功能&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-    subgraph 用户在本地一侧 -L/-D
-    s1(用户) --&gt; s2(local) --&gt; s3(remote) --&gt; s4(受限资源)
-    end
-    subgraph 用户在远端一侧 -R
-    s5(受限资源) --&gt; s6(local) --&gt; s7(remote) --&gt; s8(用户)
-    end
-    subgraph 特殊情况
-    s9(&#34;local 与 remote 重合，ssh -D port localhost&#34;)
-    s10(&#34;用户/受限资源 与 local/remote 重合&#34;)
-    end
-    subgraph 内网穿透
-    s11(受限资源) --&gt; s12(local) -- -R动态方式 --&gt; s13(remote) -- -L连接到-R的动态端口 --&gt; s14(用户)
-    end&lt;/pre&gt;
-
-&lt;h3 id=&#34;1-1-4-DNS-介绍&#34;&gt;&lt;a href=&#34;#1-1-4-DNS-介绍&#34; class=&#34;headerlink&#34; title=&#34;1.1.4 DNS 介绍&#34;&gt;&lt;/a&gt;1.1.4 DNS 介绍&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://lantian.pub/article/modify-website/selfhost-dns-root-server.lantian/&#34;&gt;DNS 原理和自建 DNS 根服务器&lt;/a&gt;、&lt;a href=&#34;https://juejin.cn/post/6844903497494855687&#34;&gt;另一个参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-2-系统&#34;&gt;&lt;a href=&#34;#1-2-系统&#34; class=&#34;headerlink&#34; title=&#34;1.2 系统&#34;&gt;&lt;/a&gt;1.2 系统&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;设置 PS1 &lt;code&gt;export PS1=&amp;quot;\[\e[35;22m\][\! \A \w] \[\e[0m\]&amp;quot;&lt;/code&gt;，如要改变标题则继续加一句，&lt;code&gt;PS1=&amp;quot;\[\e]0;20.04: \W\a\]$PS1&amp;quot;&lt;/code&gt; ，把 20.04 改成想要的名字&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ls 颜色 &lt;a href=&#34;https://github.com/seebi/dircolors-solarized&#34;&gt;https://github.com/seebi/dircolors-solarized&lt;/a&gt;&lt;br&gt;  .bashrc 中添加 eval &lt;code&gt;dircolors ~/dircolors-solarized/dircolors.256dark&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;给 man 命令启用颜色，~&amp;#x2F;.bashrc 添加如下&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;man&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_mb=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;31m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_md=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;31m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_me=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[0m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_se=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[0m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_so=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;44;33m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_ue=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[0m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; LESS_TERMCAP_us=$(&lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;\e[1;32m&amp;quot;&lt;/span&gt;) \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; man &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;修改时区&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;unlink&lt;/span&gt; /etc/localtime&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;ln&lt;/span&gt; -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;1-2-1-Kali&#34;&gt;&lt;a href=&#34;#1-2-1-Kali&#34; class=&#34;headerlink&#34; title=&#34;1.2.1 Kali&#34;&gt;&lt;/a&gt;1.2.1 Kali&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=a6z-ixNAo-s&#34;&gt;How to move taskbar from top to bottom in kali linux&lt;/a&gt;  Settings Editor -&amp;gt; xfce4-panel -&amp;gt; panels&amp;#x2F;panel-1&amp;#x2F;position 的 6 改成 4，下面的 size 可扩大，以让图标更大&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-3-网络&#34;&gt;&lt;a href=&#34;#1-3-网络&#34; class=&#34;headerlink&#34; title=&#34;1.3 网络&#34;&gt;&lt;/a&gt;1.3 网络&lt;/h2&gt;&lt;p&gt;思路是用无线网卡使 PC、虚拟机、无线路由器处于同一网络中，可以上网。用有线网卡使 PC、虚拟机、开发板处于另一网络中。&lt;/p&gt;
-&lt;p&gt;要点，配置网关的网卡将作为上网网卡，旧网卡（无线网卡）用来上网，所以只有旧网卡有网关&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-18-04/&#34;&gt;18.04_20.04 用 netplan&lt;/a&gt;，配置文件示例见 asset，命令 &lt;code&gt;sudo netplan --debug apply&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;interfaces 和 NetworkManger 即配置文件与图形界面两种方法不能同时使用，对于 &lt;code&gt;/etc/network/interfaces&lt;/code&gt; 配置文件如下&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;auto eth0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;iface eth0 inet static&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;address 192.168.2.36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netmask 255.255.255.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gateway 192.168.2.1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;auto eth1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;iface eth1 inet static&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;address 192.168.1.36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netmask 255.255.255.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# dhcp方式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# auto eth0  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# iface eth0 inet dhcp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code&gt;/etc/resolvconf/resolv.conf.d/base&lt;/code&gt; 配置 dns，没有则新建。&lt;code&gt;sudo resolvconf -u 立即生效&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nameserver 114.114.114.114&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nameserver 8.8.8.8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;1-4-内部局域网&#34;&gt;&lt;a href=&#34;#1-4-内部局域网&#34; class=&#34;headerlink&#34; title=&#34;1.4 内部局域网&#34;&gt;&lt;/a&gt;1.4 内部局域网&lt;/h2&gt;&lt;p&gt;为了搭建封闭的局域网，可以在 windows 中 &lt;a href=&#34;https://blog.csdn.net/EDDJH_31/article/details/82694205&#34;&gt;添加 KM-TEST 虚拟网卡&lt;/a&gt;，所有虚拟机桥接到该网卡，实现虚拟机间和主机与虚拟机的通信&lt;/p&gt;
-&lt;h3 id=&#34;1-4-1-代理&#34;&gt;&lt;a href=&#34;#1-4-1-代理&#34; class=&#34;headerlink&#34; title=&#34;1.4.1 代理&#34;&gt;&lt;/a&gt;1.4.1 代理&lt;/h3&gt;&lt;p&gt; proxychains4，适用于所有包管理系统和 git&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;SSR 选择允许局域网&lt;/li&gt;
-&lt;li&gt;apt 安装 proxychains4&lt;/li&gt;
-&lt;li&gt;配置&lt;ul&gt;
-&lt;li&gt;配置文件在 &lt;code&gt;/etc/proxychains.conf&lt;/code&gt; 或 &lt;code&gt;proxychains4.conf&lt;/code&gt;，改成 &lt;code&gt;socks5  192.168.7.36 17890&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;设置 DNS 文件在 &lt;code&gt;/usr/lib/proxychains3/proxyresolv&lt;/code&gt;，修改 &lt;code&gt;DNS_SERVER=8.8.8.8&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;注意配置文件代理地址设置成 host 的 IP 192.168.2.29，不是 127.0.0.1&lt;/li&gt;
-&lt;li&gt;tsocks 不那么好用，先不考虑&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;1-4-2-软件源&#34;&gt;&lt;a href=&#34;#1-4-2-软件源&#34; class=&#34;headerlink&#34; title=&#34;1.4.2 软件源&#34;&gt;&lt;/a&gt;1.4.2 软件源&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/xiangxianghehe/article/details/80112149&#34;&gt;中科大&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;1-5-sshfs-win&#34;&gt;&lt;a href=&#34;#1-5-sshfs-win&#34; class=&#34;headerlink&#34; title=&#34;1.5 sshfs-win&#34;&gt;&lt;/a&gt;1.5 sshfs-win&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;先装 winfsp (Cryptomator 也装了 winfsp)，然后装 &lt;a href=&#34;https://github.com/billziss-gh/sshfs-win&#34;&gt;sshfs&lt;/a&gt; 64位&lt;/li&gt;
-&lt;li&gt;计算机上右键 &lt;code&gt;映射网络驱动器&lt;/code&gt;，不要选 &lt;code&gt;添加网络位置&lt;/code&gt;，勾选 &lt;code&gt;登陆重连&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;mount home 的情况，&lt;code&gt;\\sshfs\compilers@192.168.36.3&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;mount 其它目录的情况，&lt;code&gt;\\sshfs.r\compilers@192.168.36.3\usr\class\cs143\cool&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;使用 key 和代理的情况&lt;ul&gt;
-&lt;li&gt;配置文件 C:\Users\用户.ssh\config&lt;/li&gt;
-&lt;li&gt;IdentityFile 指定私钥路径&lt;/li&gt;
-&lt;li&gt;ProxyCommand 指定代理，这里用 &lt;a href=&#34;https://nmap.org/download.html&#34;&gt;nmap 附带的 ncat&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ProxyCommand D:/soft/Nmap/ncat.exe --proxy 127.0.0.1:17890 --proxy-type socks5 %h %p&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://superuser.com/questions/714845/tunneling-ssh-via-a-socks5-proxy-on-windows&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;打开 cmd （非管理员权限），&lt;code&gt;sshfs-win.exe svc \sshfs.k\ubuntu@主机!端口 v: -d -o LogLevel=DEBUG3&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;映射为 v:&lt;/li&gt;
-&lt;li&gt;调试信息 -d -o LogLevel&amp;#x3D;DEBUG3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;但因为 ProxyCommand 依赖 sh，参考 &lt;a href=&#34;https://github.com/winfsp/sshfs-win/issues/152&#34;&gt;这里&lt;/a&gt; 的方法，下载 busybox 并改名为 sh.exe，可避免装 Cygwin。同时 ProxyCommand 也要改成能识别的斜杠 &amp;#x2F;&lt;/li&gt;
-&lt;li&gt;如直接映射驱动器 \sshfs.k\ubuntu@IP!端口（而非 sshfs-win.exe 命令），则不会使用 config 文件，此时 key 只能放在 C:\Users\用户.ssh 下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-6-samba、tftp、nfs&#34;&gt;&lt;a href=&#34;#1-6-samba、tftp、nfs&#34; class=&#34;headerlink&#34; title=&#34;1.6 samba、tftp、nfs&#34;&gt;&lt;/a&gt;1.6 samba、tftp、nfs&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;linux samba 3.6.0 开始支持 SMB2，之前的版本需要在 Windows 控制面板启用 SMB1.0 客户端，用命令 &lt;code&gt;sudo smbstatus&lt;/code&gt; 查看软件和协议版本&lt;ul&gt;
-&lt;li&gt;即可以在控制面板启用，也可以 powershell 管理员运行 &lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName &amp;quot;SMB1Protocol-Client&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;samba 可能不稳定，重启 Windows 后会无法连接。要重新敲上面的 enable 命令后再重启宿主机和虚拟机才能连上，可把上面命令保存成脚本并 &lt;a href=&#34;https://superuser.com/questions/108207/how-to-run-a-powershell-script-as-administrator&#34;&gt;管理员运行&lt;/a&gt;方便后续使用&lt;/li&gt;
-&lt;li&gt;对于 virtualbox 虚拟机导出给 vmvare 使用时，遇到 virtualbox 服务找不到无法启动图形界面时，进命令行卸载 virtualbox 服务，&lt;code&gt;cd /etc/init.d&lt;/code&gt; 、&lt;code&gt;sudo ./vboxadd cleanup&lt;/code&gt;、&lt;code&gt;sudo ./vboxadd-x11 cleanup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;samba 不稳定也可考虑用 ssh 映射替代，见 [sshfs-win](## 1.5 sshfs-win)&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 20.04 同样出现 broken package 问题，先卸载高版本的依赖 sudo apt purge libwbclient0 samba-libs，再安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;apt-get install samba samba-common&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 备份配置文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; /etc/samba/smb.conf /etc/samba/smb.conf.bak&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改smb.conf。添加一个共享定义，share 表示windows连接到的文件夹名为 \\ip\share&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# create mask = 0644 避免添加执行权限&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[share]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		comment = samba home share&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		path = /home/zack&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		browseable = &lt;span class=&#34;built_in&#34;&gt;yes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;span class=&#34;built_in&#34;&gt;read&lt;/span&gt; only = no&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		create mask = 0644&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		directory mask = 0777&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 添加用户&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo smbpasswd -a zack&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo service smbd restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;apt-get install tftp-hpa tftpd-hpa xinetd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#设置目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vi /etc/default/tftpd-hpa&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#启动服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service tftpd-hpa restart&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#测试&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tftp 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tftp&amp;gt; get hello&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tftp&amp;gt; quit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查nfs服务是否安装。没有则 sudo apt-get install nfs-kernel-server&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service nfs-kernel-server&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar xvf  rootfs.tar.xz &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;chmod&lt;/span&gt; 777 rootfs	  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启nfs服务(使得前面修改生效)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo /etc/init.d/nfs-kernel-server restart&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 测试nfs服务是否安装成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo mount -t nfs localhost:/nfs/rootfs/  /mnt/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 如果其中的内容和/nfs/rootfs中一致。 表示有挂载成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt; /mnt/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo umount /mnt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;1-7-ftp&#34;&gt;&lt;a href=&#34;#1-7-ftp&#34; class=&#34;headerlink&#34; title=&#34;1.7 ftp&#34;&gt;&lt;/a&gt;1.7 ftp&lt;/h2&gt;&lt;p&gt;更多安全相关的配置见 &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-16-04&#34;&gt;vsftp 配置&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; /etc/vsftpd.conf /etc/vsftpd.conf.orig&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Allow anonymous FTP? (Disabled by default).&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anonymous_enable=NO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Uncomment this to allow local users to log in.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;local_enable=YES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可上传&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;write_enable=YES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 用户列表&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;userlist_enable=YES&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;userlist_file=/etc/vsftpd.userlist&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;userlist_deny=NO&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 在这里添加可登录的用户，系统的用户名和密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/etc/vsftpd.userlist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;1-8-编译工具&#34;&gt;&lt;a href=&#34;#1-8-编译工具&#34; class=&#34;headerlink&#34; title=&#34;1.8 编译工具&#34;&gt;&lt;/a&gt;1.8 编译工具&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 20.04 同样有 broken package 问题，要降级安装 libc&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install build-essential python3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装最新 cmake，参考 https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2&amp;gt;/dev/null | gpg --dearmor - | sudo &lt;span class=&#34;built_in&#34;&gt;tee&lt;/span&gt; /etc/apt/trusted.gpg.d/kitware.gpg &amp;gt;/dev/null&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-add-repository &lt;span class=&#34;string&#34;&gt;&amp;#x27;deb https://apt.kitware.com/ubuntu/ focal main&amp;#x27;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install cmake&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;1-9-chrome&#34;&gt;&lt;a href=&#34;#1-9-chrome&#34; class=&#34;headerlink&#34; title=&#34;1.9 chrome&#34;&gt;&lt;/a&gt;1.9 chrome&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 装 chrome&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum localinstall google-chrome-stable_current_x86_64.rpm&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# chromedriver，下载 linux64 版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;https://chromedriver.chromium.org/downloadsba&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;1-10-vps&#34;&gt;&lt;a href=&#34;#1-10-vps&#34; class=&#34;headerlink&#34; title=&#34;1.10 vps&#34;&gt;&lt;/a&gt;1.10 vps&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;改端口号&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;sudo passwd 设置密码，为了以后 VNC 抢救时可以登陆设备&lt;/li&gt;
-&lt;li&gt;备份防火墙 &lt;code&gt;sudo iptables-save &amp;gt;fire.backup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;添加 ssh 端口号，&lt;code&gt;iptables -I INPUT 1 -p tcp --dport xxxx -j ACCEPT&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;nc 测试新端口能被连接&lt;/li&gt;
-&lt;li&gt;修改 &lt;code&gt;sudo vi /etc/ssh/sshd_config&lt;/code&gt; 的 Port&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo systemctl restart sshd&lt;/code&gt;，先不关闭旧连接，测试新端口是否生效&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;改防火墙&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;事先备份  &lt;code&gt;sudo iptables-save &amp;gt;fire.backup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;删除无用项，或还原改后配置 &lt;code&gt;sudo iptables-restore fire.now&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;永久保存，避免重启后失效，&lt;code&gt;sudo netfilter-persistent save&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;重启测试 &lt;code&gt;sudo reboot&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;修改 PS1 和时区&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;备份还原&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;对 X86，可创建 5 个备份，需要还原时，先删机，等完全终止后，利用之前的引导卷新建机器&lt;/li&gt;
-&lt;li&gt;对 ARM，因通常很难创建，使用 dd 备份还原&lt;ol&gt;
-&lt;li&gt;停止实例，分离引导卷&lt;/li&gt;
-&lt;li&gt;附加到另一实例的块存储卷，并用命令（iSCSI 命令和信息）连接&lt;/li&gt;
-&lt;li&gt;sudo fdisk -l 查看为 &amp;#x2F;sdb 硬盘，备份或还原&lt;ul&gt;
-&lt;li&gt;备份 &lt;code&gt;sudo nohup bash -c &amp;quot;dd if=/dev/sdb conv=sync,noerror bs=64M status=progress | gzip -c &amp;gt;backup.gz&amp;quot; &amp;amp;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;还原 &lt;code&gt;sudo nohup bash -c &amp;quot;gunzip -c backup.gz | dd of=/dev/sdb bs=64M status=progress&amp;quot; &amp;amp;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;查看进度 &lt;code&gt;sudo tail -f nohup.out&lt;/code&gt;，ubuntu 20.04 原始备份时间 35min 大小 650M，还原时间相同，dd 的 bs 越大越好&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;附加引导卷，启动实例&lt;/li&gt;
-&lt;li&gt;用命令（iSCSI 命令和信息）断开连接，并分离&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;为优化资源占用，多使用 &lt;a href=&#34;https://www.howtogeek.com/668986/how-to-use-the-linux-top-command-and-understand-its-output/&#34;&gt;top 命令&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://apttutorials.com/how-to-fix-snapd-process-consuming-lot-of-data-and-cpu/&#34;&gt;卸载 snap&lt;/a&gt;，防止 CPU 占用高，&lt;code&gt;sudo systemctl stop snapd&lt;/code&gt;,  &lt;code&gt;sudo apt purge snapd&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;关闭甲骨文日志 &lt;code&gt;systemctl stop unified-monitoring-agent&lt;/code&gt;，&lt;code&gt;systemctl disable unified-monitoring-agent&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;关闭 fwupd &lt;code&gt;sudo systemctl stop fwupd&lt;/code&gt;， &lt;code&gt;sudo systemctl disable fwupd&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://askubuntu.com/questions/1233025/how-to-remove-gnome-shell-from-ubuntu-20-04-lts-to-install-other-desktop-environ&#34;&gt;卸载 gnome&lt;/a&gt;，然后重启&lt;/p&gt;
-  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt purge adwaita-icon-theme gedit-common gir1.2-gdm-1.0 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gir1.2-gnomebluetooth-1.0 gir1.2-gnomedesktop-3.0 gir1.2-goa-1.0 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-accessibility-themes gnome-bluetooth gnome-calculator gnome-calendar \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-characters gnome-control-center gnome-control-center-data \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-control-center-faces gnome-desktop3-data \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-font-viewer \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-initial-setup gnome-keyring gnome-keyring-pkcs11 gnome-logs \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-mahjongg gnome-menus gnome-mines gnome-online-accounts \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-power-manager gnome-screenshot gnome-session-bin gnome-session-canberra \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-session-common gnome-settings-daemon gnome-settings-daemon-common \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-shell gnome-shell-common gnome-shell-extension-appindicator \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-shell-extension-desktop-icons gnome-shell-extension-ubuntu-dock \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-startup-applications gnome-sudoku gnome-system-monitor gnome-terminal \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-terminal-data gnome-themes-extra gnome-themes-extra-data gnome-todo \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;gnome-todo-common gnome-user-docs gnome-user-docs-ru gnome-video-effects \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language-pack-gnome-en language-pack-gnome-en-base language-pack-gnome-ru \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language-pack-gnome-ru-base language-selector-gnome libgail18 libgail18 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgail-common libgail-common libgnome-autoar-0-0 libgnome-bluetooth13 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgnome-desktop-3-19 libgnome-games-support-1-3 libgnome-games-support-common \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgnomekbd8 libgnomekbd-common libgnome-menu-3-0 libgnome-todo libgoa-1.0-0b \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libgoa-1.0-common libpam-gnome-keyring libsoup-gnome2.4-1 libsoup-gnome2.4-1 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nautilus-extension-gnome-terminal pinentry-gnome3 yaru-theme-gnome-shell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt purge gnome-getting-started-docs gnome-getting-started-docs-ru&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;acme.sh 申请证书&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Google domain，&lt;a href=&#34;https://www.reddit.com/r/sysadmin/comments/13dibxb/googleissued_https_certificates_with_acme_dns_api/&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;Google Ca&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;acme.sh --set-default-ca --server google&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;页面获得 eab-kid eab-hmac-key&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;acme.sh --register-account&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;letsencrypt CA，&lt;code&gt;acme.sh --set-default-ca --server letsencrypt&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;页面获得 API-Token，export GOOGLEDOMAINS_ACCESS_TOKEN&amp;#x3D;”获得的 token”&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;acme.sh --issue --dns dns_googledomains -d synrst.de -d *.synrst.de -k ec-384&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;安装 &lt;code&gt;acme.sh --install-cert -d synrst.de -d *.synrst.de --ecc --key-file /etc/XXX/server.key --fullchain-file /etc/XXX/server.crt --reloadcmd &amp;quot;systemctl force-reload nginx&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;其它命令，&lt;a href=&#34;https://github.com/acmesh-official/acme.sh&#34;&gt;官方文档&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;删除证书 &lt;code&gt;acme.sh --remove -d synrst.de -d *.synrst.de&lt;/code&gt;，之后按提示删除文件夹（正常还应该 revoke）&lt;/li&gt;
-&lt;li&gt;强制 renew &lt;code&gt;acme.sh --renew -d synrst.de -d *.synrst.de --force --ecc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;查看证书 &lt;code&gt;openssl x509 -text -noout -in xxx.cer&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;查看 &lt;code&gt;acme.sh --list&lt;/code&gt;，&lt;code&gt;crontab -l&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;科学上网加速&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BBR Plus 加速，&lt;a href=&#34;https://www.youtube.com/watch?v=90xDssO7qIE&#34;&gt;区别对比&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;CDN 加速&lt;ul&gt;
-&lt;li&gt;v2ray 域名 -&amp;gt; cdn -&amp;gt; vps ip&lt;ul&gt;
-&lt;li&gt;在域名上配置&lt;ul&gt;
-&lt;li&gt;NS 接入：nameserver 配置成 cloudfare&lt;/li&gt;
-&lt;li&gt;CNAME&amp;#x2F;IP 接入：v2ray 域名 -&amp;gt; cdn ip&amp;#x2F;域名，域名则添加 CNAME，IP 则添加 A 记录。这是为了配合 DNSPod 不同城市线路用不同的 CDN IP，&lt;a href=&#34;https://www.moeelf.com/archives/10.html&#34;&gt;例子&lt;/a&gt;，感觉是给机场接入用的，个人 NS 接入即可，&lt;a href=&#34;https://www.youtube.com/watch?v=80rBGZWYlxw&#34;&gt;例子&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;在 CDN 配置 ：v2ray 域名 -&amp;gt; vps ip（回源地址）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-11-screen&#34;&gt;&lt;a href=&#34;#1-11-screen&#34; class=&#34;headerlink&#34; title=&#34;1.11 screen&#34;&gt;&lt;/a&gt;1.11 screen&lt;/h2&gt;&lt;p&gt;&lt;a id=&#34;xa7o&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;.screenrc 文件，参考 &lt;a href=&#34;https://linuxize.com/post/how-to-use-linux-screen/&#34;&gt;How To Use Linux Screen&lt;/a&gt; 和 &lt;a href=&#34;https://www.gnu.org/software/screen/manual/screen.html&#34;&gt;Screen User’s Manual&lt;/a&gt;  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;startup_message off&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# Disable visual bell&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# vbell off&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# Set scrollback buffer to 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;defscrollback 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# https://superuser.com/questions/506080/screen-divider-border-width-and-color&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;caption string &amp;quot;%&amp;#123;= dd&amp;#125; &amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;rendition so &amp;quot;=&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# https://stackoverflow.com/questions/359109/using-the-scrollwheel-in-gnu-screen&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;termcapinfo xterm* ti@:te@&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 内存部分参考 https://stackoverflow.com/questions/18439129/system-loads-in-gnu-screens-hardstatus-line&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hardstatus alwayslastline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# backtick 1 1 1 /bin/bash -c &amp;#x27;free | grep Mem | awk &amp;#x27;\&amp;#x27;&amp;#x27;&amp;#123;printf(&amp;quot;%.1f%%&amp;quot;, $3/$2 * 100.0)&amp;#125;&amp;#x27;\&amp;#x27;&amp;#x27; &amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;backtick 1 1 1 /bin/bash -c &amp;#x27;free | grep Mem | awk &amp;#x27;\&amp;#x27;&amp;#x27;&amp;#123;printf(&amp;quot;%.1f%%&amp;quot;, 100 - $7/$2 * 100.0)&amp;#125;&amp;#x27;\&amp;#x27;&amp;#x27; &amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hardstatus string &amp;quot;%&amp;#123;= KG&amp;#125; %-Lw%&amp;#123;= bW&amp;#125;%n%f %t%&amp;#123;-&amp;#125;%+Lw %=%&amp;#123;= Kg&amp;#125;| %c %&amp;#123;-&amp;#125;%l %1`&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 给 Windows terminal 用的浅色主题 AtomOneLight https://windowsterminalthemes.dev/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# hardstatus string &amp;quot;%&amp;#123;= wG&amp;#125; %-Lw%&amp;#123;= bW&amp;#125;%n%f %t%&amp;#123;-&amp;#125;%+Lw %=%&amp;#123;= wg&amp;#125;| %c %&amp;#123;-&amp;#125;%l %1`&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# focus ctrl+a tab，other ctrl+a ctrl+a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 推荐在左侧标签按键，这样右侧标签分到屏幕右侧，按键焦点留在左侧&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;bind v eval &amp;quot;split -v&amp;quot; focus other focus&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 这个配置焦点在右侧&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# bind v eval &amp;quot;split -v&amp;quot; focus other&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;bind x remove&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;screen 状态栏显示正在执行的命令或当前路径，&lt;a href=&#34;https://unix.stackexchange.com/questions/28430/screen-status-bar-to-display-current-directory-for-zsh-bash-shell&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;bash&lt;ul&gt;
-&lt;li&gt;.screenrc 文件  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# shelltitle | 前面的 ] 表示提示符结尾&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;shelltitle &amp;#x27;]|bash&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;.bashrc 文件  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; [[ &lt;span class=&#34;variable&#34;&gt;$TERM&lt;/span&gt; == screen* ]]; &lt;span class=&#34;keyword&#34;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	PROMPT_COMMAND=&lt;span class=&#34;string&#34;&gt;&amp;#x27;echo -ne &amp;quot;\033k\033\0134\033k[`basename $&amp;#123;PWD&amp;#125;`]\033\0134&amp;quot;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;zsh，&lt;a href=&#34;https://unix.stackexchange.com/questions/28430/screen-status-bar-to-display-current-directory-for-zsh-bash-shell&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://stackoverflow.com/questions/45288905/zsh-mystery-variable-expansion&#34;&gt;参考2&lt;/a&gt;  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setopt extendedglob&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;if [[ $TERM == screen* ]]; then&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	precmd () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        local dir=$(print -Pn &amp;quot;%c&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        print -Pn &amp;quot;\ek$dir\e\\&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	preexec () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        local dir=$(print -Pn &amp;quot;%c&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        # 截短是为了留空间显示 CMD&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        dir=$dir[1,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        local CMD=$&amp;#123;1[(wr)^(sudo|*=*|-*)]&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	        print -Pn &amp;quot;\ek$dir] $&amp;#123;CMD&amp;#125;\e\\&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fi&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;相关手册&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion&#34;&gt;%c&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zsh.sourceforge.io/Doc/Release/Expansion.html#Filename-Generation&#34;&gt; ^(&lt;em&gt;&amp;#x3D;&lt;/em&gt;|sudo|-*)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zsh.sourceforge.io/Doc/Release/Parameters.html&#34;&gt;[wr] 的含义 Subscript Flags&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;常用按键&amp;#x2F;命令&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;常用按键&amp;#x2F;命令&lt;/th&gt;
-&lt;th&gt;含义&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;screen&lt;/td&gt;
-&lt;td&gt;创建&lt;br /&gt;启动后 SecureCRT 要调整一下窗口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;screen -ls&lt;/td&gt;
-&lt;td&gt;查看&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a d&lt;/td&gt;
-&lt;td&gt;detach&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;screen -x&lt;/td&gt;
-&lt;td&gt;Attach to a session which is already attached&lt;br /&gt;与 -r 相比推荐这种，可加到 .bashrc 实现登录就在 screen 中&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;screen -r&lt;/td&gt;
-&lt;td&gt;attach&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a c&lt;/td&gt;
-&lt;td&gt;create 窗口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a k&lt;/td&gt;
-&lt;td&gt;kill 窗口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a 数字&lt;/td&gt;
-&lt;td&gt;切换到该窗口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a ctrl + a&lt;/td&gt;
-&lt;td&gt;切换到刚刚的窗口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a p&amp;#x2F;n&lt;/td&gt;
-&lt;td&gt;切换到前一个、后一个窗口&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a :number 数字&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://serverfault.com/questions/244294/how-to-re-order-windows-change-the-scroll-shortcut-and-modify-the-status-bar-c&#34;&gt;重命名窗口&lt;/a&gt;以调整窗口在下方的显示顺序&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;上面的自定义按键&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a v&lt;/td&gt;
-&lt;td&gt;分 region&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a x&lt;/td&gt;
-&lt;td&gt;关 region&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ctrl + a tab&lt;/td&gt;
-&lt;td&gt;切 region&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;2-使用&#34;&gt;&lt;a href=&#34;#2-使用&#34; class=&#34;headerlink&#34; title=&#34;2 使用&#34;&gt;&lt;/a&gt;2 使用&lt;/h1&gt;&lt;p&gt;软件问题见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/../linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/&#34;&gt;linux软件编译、安装、运行&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2-1-基础&#34;&gt;&lt;a href=&#34;#2-1-基础&#34; class=&#34;headerlink&#34; title=&#34;2.1 基础&#34;&gt;&lt;/a&gt;2.1 基础&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://linuxtools-rst.readthedocs.io/zh_CN/latest/&#34;&gt;Linux工具快速教程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-1-1-修改-linux-用户名&#34;&gt;&lt;a href=&#34;#2-1-1-修改-linux-用户名&#34; class=&#34;headerlink&#34; title=&#34;2.1.1 修改 linux 用户名&#34;&gt;&lt;/a&gt;2.1.1 修改 linux 用户名&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 退出所有登录（包括 SSH）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Ctrl+Alt+F2 以 root 登录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改用户名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;usermod -c “Full name real” -l new_name old_name&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 修改 home&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;usermod -d /home/newHomeDir -m newUsername&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;2-1-2-bash&#34;&gt;&lt;a href=&#34;#2-1-2-bash&#34; class=&#34;headerlink&#34; title=&#34;2.1.2 bash&#34;&gt;&lt;/a&gt;2.1.2 bash&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/&#34;&gt;快捷键&lt;/a&gt;&lt;/p&gt;
-  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + r – search the history backwards&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + g – escape from history searching mode&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CTRL + A = the beginning of the line&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CTRL + E = the end of the line&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALT  + B = move backward one word &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALT  + F = move forward one word&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/* 所有的 ALT 可换成 ESC */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + U = Delete left of the cursor&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + K = Delete right of the cursor&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + W = Delete word on the left&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ALT  + D = Delete word on the right&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Ctrl + Y = Paste&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/ANSI_escape_code&#34;&gt;Terminal input sequences&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-1-3-zsh&#34;&gt;&lt;a href=&#34;#2-1-3-zsh&#34; class=&#34;headerlink&#34; title=&#34;2.1.3 zsh&#34;&gt;&lt;/a&gt;2.1.3 zsh&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;粘贴 kali .zshrc&lt;/li&gt;
-&lt;li&gt;命令提示 &lt;code&gt;sudo apt install zsh-autosuggestions&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;参考配置 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/#xa7o&#34;&gt;screen&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-1-4-脚本&#34;&gt;&lt;a href=&#34;#2-1-4-脚本&#34; class=&#34;headerlink&#34; title=&#34;2.1.4 脚本&#34;&gt;&lt;/a&gt;2.1.4 脚本&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;shell 脚本调试&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-------- bash ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; SHELLOPTS&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还可配合 FUNCNAME 实现调用栈打印&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS4=&lt;span class=&#34;string&#34;&gt;&amp;#x27;[$&amp;#123;BASH_SOURCE[0]&amp;#125;-$LINENO] &amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可考虑去掉 eu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; -eux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 确认&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; -o&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还原&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; +eux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-------- zsh ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/56137084/zsh-inherit-xtrace-option&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 利用 $ZDOTDIR/.zshenv&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/9901210/bash-source0-equivalent-in-zsh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-- 注意：下面的所有方法在应对 &lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt;（即 .） 引入脚本时，不会更新文件名，此时从感兴趣的位置向上找到最近 &lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt; 的几个脚本，一般就是那里 --&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 定义 MyShellOpts 开启调试，可考虑去掉 eu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; MyShellOpts=-eux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-------- ash ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#!/bin/busybox sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 这个脚本保存为 sh 替换 /bin/sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 替换方法，确保 /bin/sh 为指向 /bin/dash 的软链接&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# sudo chmod --reference=/bin/sh sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# sudo chown --reference=/bin/sh sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# sudo cp --remove-destination sh /bin/sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS4=&lt;span class=&#34;string&#34;&gt;&amp;#x27;[$0-$LINENO] &amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/bin/busybox sh &lt;span class=&#34;variable&#34;&gt;$MyShellOpts&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-------- dash或其它类似 shell ---------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#!/bin/dash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 与上面一样，这个脚本保存为 sh 替换 /bin/sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# $LINENO 存在也可加到 PS4 里，不存在则参考 Workaround for shells without LINENO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/17804007/how-to-show-line-number-when-executing-bash-script&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还原，cd /bin &amp;amp;&amp;amp; sudo ln -f -s dash sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PS4=&lt;span class=&#34;string&#34;&gt;&amp;#x27;[$0] &amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可考虑去掉 eu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/bin/dash &lt;span class=&#34;variable&#34;&gt;$MyShellOpts&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$@&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;不论在那个路径下运行都得到脚本的路径&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 不论在那个路径下运行都得到脚本的路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 获取当前脚本路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SCRIPT_DIR=&lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;$( cd &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;$( dirname &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$&amp;#123;BASH_SOURCE[0]&amp;#125;&lt;/span&gt;&amp;quot;&lt;/span&gt; )&lt;/span&gt;&amp;quot;&lt;/span&gt; &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; pwd )&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-1-5-nc&#34;&gt;&lt;a href=&#34;#2-1-5-nc&#34; class=&#34;headerlink&#34; title=&#34;2.1.5 nc&#34;&gt;&lt;/a&gt;2.1.5 nc&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;推荐安装 nc openbsd 版本，&lt;code&gt;apt install netcat-openbsd&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-1-6-curl&#34;&gt;&lt;a href=&#34;#2-1-6-curl&#34; class=&#34;headerlink&#34; title=&#34;2.1.6 curl&#34;&gt;&lt;/a&gt;2.1.6 curl&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# FTP 下载&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl ftp://user:pass@192.168.7.29/code/pdt-toolchains/src/tin -o /mnt/internal_storage/tin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# FTP 上传&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl -T /etc/profile ftp://user:pass@192.168.7.29/code/profile&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 与 docker 通信&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo curl -v -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;User-Agent:&amp;#x27;&lt;/span&gt; -H &lt;span class=&#34;string&#34;&gt;&amp;#x27;Accept:&amp;#x27;&lt;/span&gt; -s --unix-socket /var/run/docker.sock http://localhost/v1.41/containers/json?all=&lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; | jq .[0]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;2-1-7-查找文件&#34;&gt;&lt;a href=&#34;#2-1-7-查找文件&#34; class=&#34;headerlink&#34; title=&#34;2.1.7 查找文件&#34;&gt;&lt;/a&gt;2.1.7 查找文件&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;find /media/d/ -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f -size +50M ! \( -name &lt;span class=&#34;string&#34;&gt;&amp;quot;*deb&amp;quot;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;quot;*vmdk&amp;quot;&lt;/span&gt; \)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 删除前去掉 delete 进行确认&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f ! \( -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.cpp&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.h&amp;#x27;&lt;/span&gt; \) -delete&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 跳过隐藏文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . -not -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/\.*&amp;#x27;&lt;/span&gt; -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f ! \( -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.cpp&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.h&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.txt&amp;#x27;&lt;/span&gt; \)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 先创建与源码相同的目录结构再拷贝文件，拷贝文件时忽略某些文件夹下的文件和源码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;find . \( -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; d -&lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;mkdir&lt;/span&gt; -p &lt;span class=&#34;string&#34;&gt;&amp;#x27;../gatebox_work/&amp;#123;&amp;#125;&amp;#x27;&lt;/span&gt; \;   -o -&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt; f ! \( -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;./.git/*&amp;#x27;&lt;/span&gt; -o -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/GmSSL/*&amp;#x27;&lt;/span&gt; -o -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/.idea/*&amp;#x27;&lt;/span&gt; -o -path &lt;span class=&#34;string&#34;&gt;&amp;#x27;*/.vscode/*&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.c&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.h&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.o&amp;#x27;&lt;/span&gt; -o -name &lt;span class=&#34;string&#34;&gt;&amp;#x27;*.log&amp;#x27;&lt;/span&gt; -o -iname makefile \) -&lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;&amp;#125;&amp;#x27;&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;../gatebox_work/&amp;#123;&amp;#125;&amp;#x27;&lt;/span&gt; \; \)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;2-1-8-磁盘占用统计&#34;&gt;&lt;a href=&#34;#2-1-8-磁盘占用统计&#34; class=&#34;headerlink&#34; title=&#34;2.1.8 磁盘占用统计&#34;&gt;&lt;/a&gt;2.1.8 磁盘占用统计&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install qdirstat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;2-1-9-cron&#34;&gt;&lt;a href=&#34;#2-1-9-cron&#34; class=&#34;headerlink&#34; title=&#34;2.1.9 cron&#34;&gt;&lt;/a&gt;2.1.9 cron&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;常见 cron &lt;a href=&#34;https://www.warp.dev/terminus/how-to-run-cron-every-hour&#34;&gt;写法&lt;/a&gt;，&lt;a href=&#34;https://crontab.guru/&#34;&gt;计算 cron 下次执行时间&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;crontab -e&lt;/code&gt; 编辑，cron 会检测 crontab 的更新，自动用最新配置&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;select-editor&lt;/code&gt; 改变默认编辑器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-2-网络&#34;&gt;&lt;a href=&#34;#2-2-网络&#34; class=&#34;headerlink&#34; title=&#34;2.2 网络&#34;&gt;&lt;/a&gt;2.2 网络&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;wireguard&lt;ul&gt;
-&lt;li&gt;看介绍&lt;a href=&#34;https://www.wireguard.com/quickstart/&#34;&gt;视频&lt;/a&gt;，详细的&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04&#34;&gt;配置方法&lt;/a&gt;，注意区分 server 和 peer client&lt;/li&gt;
-&lt;li&gt;对已经有配置文件的，&lt;code&gt;sudo apt install wireguard resolvconf&lt;/code&gt;，将配置保存到 &lt;code&gt;/etc/wireguard/wg0.conf&lt;/code&gt;，然后 &lt;code&gt;sudo wg-quick up wg0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;clash_for_windows linux 版，手动安装服务&lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/3464&#34;&gt;方法&lt;/a&gt;，网关模式&lt;/li&gt;
-&lt;li&gt;网速占用统计 apt 安装 nethogs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-备份与还原&#34;&gt;&lt;a href=&#34;#3-备份与还原&#34; class=&#34;headerlink&#34; title=&#34;3 备份与还原&#34;&gt;&lt;/a&gt;3 备份与还原&lt;/h1&gt;&lt;p&gt;考虑到经常环境经常变动，所以有必要学习linux的备份和还原技术。&lt;/p&gt;
-&lt;h2 id=&#34;3-1-系统备份&#34;&gt;&lt;a href=&#34;#3-1-系统备份&#34; class=&#34;headerlink&#34; title=&#34;3.1 系统备份&#34;&gt;&lt;/a&gt;3.1 系统备份&lt;/h2&gt;&lt;p&gt;备份脚本  &lt;a href=&#34;https://github.com/pedroetb/rsync-incremental-backup&#34;&gt;rsync-incremental-backup&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;注意 rsync 的 exclude 将 源路径 视为 根，因此 exclude 指定的路径都是相对 源路径 来说的，具体可以建立几个测试文件，用 &lt;code&gt;dry-run&lt;/code&gt; 的方式验证。恢复的脚本要自己写了，如果进不了系统就用 ubuntu 的安装 U 盘恢复。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;下一步&lt;/strong&gt;可以配合 cron 实现自动定期备份，配合 ssh 实现远端备份&lt;/p&gt;
-&lt;h2 id=&#34;3-2-启动备份&#34;&gt;&lt;a href=&#34;#3-2-启动备份&#34; class=&#34;headerlink&#34; title=&#34;3.2 启动备份&#34;&gt;&lt;/a&gt;3.2 启动备份&lt;/h2&gt;&lt;p&gt;多系统的启动管理。每个硬盘一个 MBR，每个系统分区都有个 boot sector，两个位置都会安装 bootloader&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/../linux/mbr_boot_sector.gif&#34; alt=&#34;mbr_boot_sector&#34;&gt;&lt;/p&gt;
-&lt;p&gt;多系统启动方式如下，MBR 的 bootloader 可以转交给其它分区的 bootloader，即 chainload&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/../linux/loader_menu.gif&#34; alt=&#34;loader_menu&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;下一步&lt;/strong&gt;可以查看 grub2 的帮助文档，以及用 dd 备份 bootloader 的方法。还原的方法则使用 ubuntu 的 安装U 盘即可。另为 ubuntu 提供了 &lt;a href=&#34;https://help.ubuntu.com/community/Boot-Repair&#34;&gt;Boot-Repair&lt;/a&gt; 工具。&lt;/p&gt;
-&lt;p&gt;参考&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://cn.linux.vbird.org/linux_basic/0580backup_1.php&#34;&gt;鸟哥备份&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cn.linux.vbird.org/linux_server/0310telnetssh.php#rsync&#34;&gt;鸟哥 rsync&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.admin-magazine.com/Articles/Using-rsync-for-Backups&#34;&gt;Incremental Backups on Linux&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/index.php/Rsync#Full_system_backup&#34;&gt;Rsync full system backup&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
 </feed>
