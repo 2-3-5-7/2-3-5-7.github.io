@@ -1,0 +1,1550 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>自强不息 厚德载物 • Posts by &#34;物理环境&#34; category</title>
+        <link>https://2-3-5-7.github.io</link>
+        <description>分享各种内容，方便自己与他人查阅，欢迎评论</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 01 Jan 1970 08:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/</guid>
+            <title>体检</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/</guid>
+            <title>保险</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/</guid>
+            <title>急救</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-内容结构&#34;&gt;&lt;a href=&#34;#1-内容结构&#34; class=&#34;headerlink&#34; title=&#34;1 内容结构&#34;&gt;&lt;/a&gt;1 内容结构&lt;/h1&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph TD
+ 急救 --&gt; 基础 &amp; 短时致命 &amp; 内科 &amp; 外科 &amp; 其它 &amp; 平时准备
+    基础 --&gt; 为什么学 &amp; 学习渠道 &amp; 法律问题 &amp; 施救流程 &amp; 环境安全和个人防护 &amp; 无反应有呼吸 &amp; 打120 &amp; 取急救箱和AED
+    短时致命 --&gt; 心脏骤停 &amp; 气道梗阻 &amp; 大出血
+    内科 --&gt; 心脏病发作 &amp; 脑中风 &amp; 过敏 &amp; 癫痫 &amp; 中暑
+    外科 --&gt; 扭伤/骨折 &amp; 烧烫伤 &amp; 动物伤
+    其它 --&gt; 1[&#34;哮喘&lt;br /&gt; 糖尿病和低血糖&lt;br /&gt; 口腔出血&lt;br /&gt; 眼外伤&lt;br /&gt; 电击伤&lt;br /&gt; 冻伤&lt;br /&gt; （食物）中毒&lt;br /&gt;煤气中毒&lt;br /&gt;溺水&lt;br /&gt;……&#34;]
+    平时准备 --&gt; 急救物品 &amp; 理论测试 &amp; 经常练习 &amp; 预防&lt;/pre&gt;
+
+&lt;h1 id=&#34;2-基础&#34;&gt;&lt;a href=&#34;#2-基础&#34; class=&#34;headerlink&#34; title=&#34;2 基础&#34;&gt;&lt;/a&gt;2 基础&lt;/h1&gt;&lt;h2 id=&#34;2-1-为什么学&#34;&gt;&lt;a href=&#34;#2-1-为什么学&#34; class=&#34;headerlink&#34; title=&#34;2.1 为什么学&#34;&gt;&lt;/a&gt;2.1 为什么学&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;心脏骤停、大出血、过敏、气道梗阻、溺水等，只有几分钟的抢救时间，无法等急救车，学会后给自己和身边的人用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-2-学习渠道&#34;&gt;&lt;a href=&#34;#2-2-学习渠道&#34; class=&#34;headerlink&#34; title=&#34;2.2 学习渠道&#34;&gt;&lt;/a&gt;2.2 学习渠道&lt;/h2&gt;&lt;h3 id=&#34;2-2-1-线下&#34;&gt;&lt;a href=&#34;#2-2-1-线下&#34; class=&#34;headerlink&#34; title=&#34;2.2.1 线下&#34;&gt;&lt;/a&gt;2.2.1 线下&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;http://www.crcntc.org.cn/&#34;&gt;中国红十字总会训练中心&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;http://www.redcrossbase.org.cn/&#34;&gt;北京市红十字会应急救护培训基地&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.beijing120.com/&#34;&gt;北京急救中心&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;AHA 培训机构&lt;br /&gt;急救中心、第一反应、急诊夜鹰&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;课程&lt;/td&gt;
+&lt;td&gt;急救员&lt;/td&gt;
+&lt;td&gt;和总会内容一样&lt;/td&gt;
+&lt;td&gt;初级急救&lt;/td&gt;
+&lt;td&gt;导师学员比1：6，器材学员比1：3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;开课周期&lt;/td&gt;
+&lt;td&gt;暂不对个人开课，1 - 3 个月&lt;/td&gt;
+&lt;td&gt;每个月都有&lt;/td&gt;
+&lt;td&gt;每个季度，公众号&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;费用&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;td&gt;425 16学时&lt;/td&gt;
+&lt;td&gt;heartsaver &lt;br /&gt;1200 8学时，设备按照 1:3 配备，24人&lt;br /&gt;560 16学时，设备按照 1:6 配备，90 人&lt;/td&gt;
+&lt;td&gt;600-1200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;报名方式&lt;/td&gt;
+&lt;td&gt;网站&lt;/td&gt;
+&lt;td&gt;公众号&lt;/td&gt;
+&lt;td&gt;电话：66098042，66098044&lt;br /&gt;微博：&lt;a href=&#34;https://weibo.com/u/2324620757&#34;&gt;北京急救医疗培训中心&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;衡量标准&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;老师有急救经验，经得住问&lt;/li&gt;
+&lt;li&gt;模拟假人有电子反馈系统，可以评估 CPR 的质量&lt;/li&gt;
+&lt;li&gt;后续有群，群里有急救医生可以咨询&lt;/li&gt;
+&lt;li&gt;后续能否免费复训&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/55538603&#34;&gt;国际急救相关组织&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/23009949/answer/1515767614&#34;&gt;如何拿到急救资格证？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-3-法律问题&#34;&gt;&lt;a href=&#34;#2-3-法律问题&#34; class=&#34;headerlink&#34; title=&#34;2.3 法律问题&#34;&gt;&lt;/a&gt;2.3 法律问题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;因自愿实施紧急救助行为造成受助人损害的，救助人不承担民事责任&lt;br&gt;—— 2017年10月1日 《中华人民共和国民法总则》第184条&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;2-4-施救流程&#34;&gt;&lt;a href=&#34;#2-4-施救流程&#34; class=&#34;headerlink&#34; title=&#34;2.4 施救流程&#34;&gt;&lt;/a&gt;2.4 施救流程&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+    c1{&#34;现场环境是否安全?&#34;} -- 是 --&gt; c5{&#34;大出血/气道梗阻？&#34;} -- 否 --&gt; c2{&#34;是否有反应？&#34;} -- 否 --&gt; c3{&#34;是否有呼吸？&lt;br /&gt;（濒死呼吸除外）&#34;} -- 否 --&gt; c4{&#34;叫人帮忙，有人？&#34;} -- 是 --&gt; o3[&#34;指定一人打 120，另一人取 AED&#34;] --&gt; o5[&#34;确认做好个人防护&#34;]
+        c1 -- 否 --&gt; o1[&#34;移动患者到安全处&#34;] --&gt;c5
+        c2 -- 是 --&gt; 征得同意后再帮忙
+        c3 -- 是 --&gt; o2[&#34;无反应有呼吸&#34;]
+        c4 -- 否 --&gt; o4[&#34;自己打 120，取 AED&#34;] --&gt; o5
+        c5 -- 是 --&gt; o6[&#34;做个人防护&lt;br /&gt;止血&lt;br /&gt;气道梗阻急救&#34;] --&gt; c2
+
+    o5 --&gt; 开始急救&lt;/pre&gt;
+
+&lt;h2 id=&#34;2-5-环境安全和个人防护&#34;&gt;&lt;a href=&#34;#2-5-环境安全和个人防护&#34; class=&#34;headerlink&#34; title=&#34;2.5 环境安全和个人防护&#34;&gt;&lt;/a&gt;2.5 环境安全和个人防护&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;伤者可能是因为当前危险的环境而受伤，所以首先要&lt;strong&gt;保证自己的安全&lt;/strong&gt;，然后判断是否需要将伤者转移到安全环境，以及移动是否会加重伤害&lt;/li&gt;
+&lt;li&gt;抓住肩部衣服移动患者。对怀疑脊椎、骨盆受伤的患者，除非环境威胁到生命，否则不要移动&lt;ul&gt;
+&lt;li&gt;固定在坚硬板上，移动时保证头颈胸腰腹骨盆在同一水平线上，避免发生弯曲、扭转&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;做个人防护，有血液、体液（唾液、尿液）带手套、护目镜、口罩&lt;/li&gt;
+&lt;li&gt;使用后正确脱除和处理手套，认真洗手，见 AHA 书上对应方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-6-无反应有呼吸（晕厥、昏迷、休克）&#34;&gt;&lt;a href=&#34;#2-6-无反应有呼吸（晕厥、昏迷、休克）&#34; class=&#34;headerlink&#34; title=&#34;2.6 无反应有呼吸（晕厥、昏迷、休克）&#34;&gt;&lt;/a&gt;2.6 无反应有呼吸（晕厥、昏迷、休克）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;原因：低血糖、喝醉酒、脑中风等等&lt;/li&gt;
+&lt;li&gt;确保现场环境安全，做好个人防护&lt;/li&gt;
+&lt;li&gt;气道&lt;ul&gt;
+&lt;li&gt;压额抬颏、开放气道，清理口鼻异物，拿掉假牙&lt;/li&gt;
+&lt;li&gt;不要喂药、喂食，防止呕吐导致窒息&lt;/li&gt;
+&lt;li&gt;侧卧，侧卧演示见 “急诊夜鹰视频 12”。怀疑中毒用左侧卧，减缓食物吸收。不要仰卧、头下垫枕头，会导致舌根后坠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;是否需要保暖，如失血休克&lt;/li&gt;
+&lt;li&gt;打 120&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-7-打120&#34;&gt;&lt;a href=&#34;#2-7-打120&#34; class=&#34;headerlink&#34; title=&#34;2.7 打120&#34;&gt;&lt;/a&gt;2.7 打120&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;患者，年龄、性别&lt;/li&gt;
+&lt;li&gt;病情，找描述疾病的牌子、信息&lt;/li&gt;
+&lt;li&gt;地址&lt;/li&gt;
+&lt;li&gt;找人接应急救车&lt;/li&gt;
+&lt;li&gt;现场情况，人数，严重程度&lt;/li&gt;
+&lt;li&gt;等调度员先挂电话，可能通过电话指导急救&lt;/li&gt;
+&lt;li&gt;准备医保卡、身份证、病历、钱&lt;/li&gt;
+&lt;li&gt;清理影响搬运的楼道杂物&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-8-取急救箱和AED&#34;&gt;&lt;a href=&#34;#2-8-取急救箱和AED&#34; class=&#34;headerlink&#34; title=&#34;2.8 取急救箱和AED&#34;&gt;&lt;/a&gt;2.8 取急救箱和AED&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;随身准备急救物品，手套、面罩&lt;/li&gt;
+&lt;li&gt;AED 在地铁、机场、体育场&lt;/li&gt;
+&lt;li&gt;微信小程序 &lt;code&gt;AED 地图&lt;/code&gt;，百度地图搜索 “AED”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-心脏骤停&#34;&gt;&lt;a href=&#34;#3-心脏骤停&#34; class=&#34;headerlink&#34; title=&#34;3 心脏骤停&#34;&gt;&lt;/a&gt;3 心脏骤停&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;背景：每过 1 分钟，存活率下降 10%，等急救车来不及，身边人的 &lt;strong&gt;CPR 和 AED&lt;/strong&gt; 是存活的关键。我国每年 54万心脏骤停，存活率仅 1-2%&lt;/li&gt;
+&lt;li&gt;现象：没有反应、没有呼吸、濒死呼吸&lt;/li&gt;
+&lt;li&gt;原因：冠心病、触电、溺水、窒息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-1-步骤&#34;&gt;&lt;a href=&#34;#3-1-步骤&#34; class=&#34;headerlink&#34; title=&#34;3.1 步骤&#34;&gt;&lt;/a&gt;3.1 步骤&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+胸外按压 -- X30 --&gt; 人工呼吸 -- X2 --&gt; change{&#34;达到 5 组？&#34;} -- 否 --&gt; AED{&#34;AED 就绪？&#34;} -- 否 --&gt; 胸外按压
+    change -- 是 --&gt; 换人 --&gt; AED
+    AED -- 是 --&gt; 除颤 --&gt; 胸外按压&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;判断反应，轻拍重唤、拍肩膀 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;判断呼吸，肘关节着地支撑，压额抬颏，感知气流，侧看数到 1007&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找人帮忙，打 120，拿 AED，急救箱。CPR 很累，所以需要换人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一直循环&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;胸外按压：让血液产生被动流动&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;躺在坚实的平面，不要在软的床上&lt;/li&gt;
+&lt;li&gt;薄衣服可以直接按，厚衣服要打开，女士则去掉钢圈胸罩，再盖回衣服&lt;/li&gt;
+&lt;li&gt;乳头连线的中点，剑突上两横指&lt;/li&gt;
+&lt;li&gt;用上身的力量，掌根、肘、肩一条直线，垂直按压&lt;/li&gt;
+&lt;li&gt;每分钟 100-120 次，数数 01、02&lt;/li&gt;
+&lt;li&gt;成人 5-6 cm，实际根据人的体型，咔咔响、有突破感说明按深了&lt;/li&gt;
+&lt;li&gt;充分回弹&lt;/li&gt;
+&lt;li&gt;减少按压中断时间，不超过 10 秒、5 秒&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;人工呼吸：给患者氧气&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;按压、呼吸 30:2&lt;/li&gt;
+&lt;li&gt;个人防护，&lt;del&gt;面膜（仅用来教学）&lt;/del&gt;、便携面罩、球囊面罩&lt;/li&gt;
+&lt;li&gt;压额抬颏（骨性部位）、捏鼻子、包嘴，看到胸部隆起，持续 1 秒钟，正常呼吸吹气（不需要深呼吸吹气）&lt;/li&gt;
+&lt;li&gt;清理口腔异物，避免将呕吐物吹到气管&lt;/li&gt;
+&lt;li&gt;胸部隆起来判断是否开放气道成功，失败可多次开放，两个施救人且怀疑颈椎伤时使用 &lt;a href=&#34;https://www.procpr.org/training/video/spinal-injury---jaw-thrust&#34;&gt;Jaw Thrust&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一般 5 个循环换人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;AED 除颤。80% 的心脏骤停为室颤（心电图为直线时不需要电击）。突然打击导致心肌无法协调的收缩泵血，电击重新恢复节律&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;到来后立刻使用，尽早除颤&lt;/li&gt;
+&lt;li&gt;贴贴片时不中断按压&lt;/li&gt;
+&lt;li&gt;开始分析到除颤完成期间，提醒周围人不要接触病人&lt;/li&gt;
+&lt;li&gt;使用注意&lt;ul&gt;
+&lt;li&gt;水里不能用&lt;/li&gt;
+&lt;li&gt;有汗擦干&lt;/li&gt;
+&lt;li&gt;有药贴揭下&lt;/li&gt;
+&lt;li&gt;挂掉影响贴片的胸毛&lt;/li&gt;
+&lt;li&gt;对女性不能贴在衣服上，一定贴在皮肤上，但可以贴完盖好&lt;/li&gt;
+&lt;li&gt;起搏器（手表大小硬块），贴片要避开起搏器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;除颤后恢复按压&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-2-何时停止&#34;&gt;&lt;a href=&#34;#3-2-何时停止&#34; class=&#34;headerlink&#34; title=&#34;3.2 何时停止&#34;&gt;&lt;/a&gt;3.2 何时停止&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;有呼吸、有反应&lt;/li&gt;
+&lt;li&gt;急救人员达到&lt;/li&gt;
+&lt;li&gt;累了，无法继续&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-3-何时不需要做&#34;&gt;&lt;a href=&#34;#3-3-何时不需要做&#34; class=&#34;headerlink&#34; title=&#34;3.3 何时不需要做&#34;&gt;&lt;/a&gt;3.3 何时不需要做&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;对非创伤性的心脏骤停效果好，因此这些情况不要做&lt;ul&gt;
+&lt;li&gt;胸口塌陷&lt;/li&gt;
+&lt;li&gt;大出血&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-4-儿童（1岁-青春期体征前）&#34;&gt;&lt;a href=&#34;#3-4-儿童（1岁-青春期体征前）&#34; class=&#34;headerlink&#34; title=&#34;3.4 儿童（1岁-青春期体征前）&#34;&gt;&lt;/a&gt;3.4 儿童（1岁-青春期体征前）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;按压：单掌，实际根据体型，深度胸部厚度 1&amp;#x2F;3、5cm&lt;/li&gt;
+&lt;li&gt;两人可以 15:2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-5-婴儿-（28-天-1岁）&#34;&gt;&lt;a href=&#34;#3-5-婴儿-（28-天-1岁）&#34; class=&#34;headerlink&#34; title=&#34;3.5 婴儿 （28 天-1岁）&#34;&gt;&lt;/a&gt;3.5 婴儿 （28 天-1岁）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;判断反应：拍脚底&lt;/li&gt;
+&lt;li&gt;观察呼吸前：微微后仰开放气道，避免过度&lt;/li&gt;
+&lt;li&gt;按压：2-3 根手指，深度胸部厚度 1&amp;#x2F;3、4 cm &lt;/li&gt;
+&lt;li&gt;人工呼吸：包住嘴和鼻子&lt;/li&gt;
+&lt;li&gt;两人可以 15:2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-6-相关问题&#34;&gt;&lt;a href=&#34;#3-6-相关问题&#34; class=&#34;headerlink&#34; title=&#34;3.6 相关问题&#34;&gt;&lt;/a&gt;3.6 相关问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;先按压还是先人工呼吸？&lt;ul&gt;
+&lt;li&gt;心源性，先按压，5 分钟内体内还有氧气&lt;/li&gt;
+&lt;li&gt;窒息性，溺水、一氧化碳中毒先人工呼吸，人工呼吸前先压额抬颏、清理口腔异物&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;评估呼吸前是否需要开放气道？&lt;br&gt;  可以不开放气道，讨论见 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/55538603&#34;&gt;在评估呼吸之前，我难道不应该先开放气道吗？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;人工呼吸呼出的气体有足够的氧气吗？&lt;br&gt;  有，氧浓度 16%&lt;/li&gt;
+&lt;li&gt;有心脏支架、起搏器，能否做心肺复苏？&lt;br&gt;  能&lt;/li&gt;
+&lt;li&gt;可否不做人工呼吸？&lt;br&gt;  对心源性的骤停，5 min内体内还有氧气，可不做人工呼吸，但 15min 以上抢救必须做&lt;br&gt;  对窒息性的骤停，常见于儿童和婴儿，必须做&lt;/li&gt;
+&lt;li&gt;AED 是否会对心跳正常的人电击？&lt;br&gt;  不会，同时对直线的心电图 AED 也不会电击&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-气道梗阻&#34;&gt;&lt;a href=&#34;#4-气道梗阻&#34; class=&#34;headerlink&#34; title=&#34;4 气道梗阻&#34;&gt;&lt;/a&gt;4 气道梗阻&lt;/h1&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+1{&#34;能否咳嗽/说话?&#34;} -- 否 --&gt; 告知对方自己来帮忙 --&gt; 海姆立克/上腹部冲击法 --&gt; 2{&#34;孕妇/胖子？&#34;} -- 否 --&gt; 3[&#34;一腿伸到两腿间&lt;br /&gt;让对方俯下身&lt;br /&gt;一手拳眼对准肚脐上方两指&lt;br /&gt;另一手握住，快速冲击后上方&#34;]
+    1 -- 是 --&gt; 咳嗽/去医院
+    2 -- 是 --&gt; 冲击胸部/CPR按压位置
+
+自己卡住 --&gt; 4{&#34;周围有人？&#34;} -- 是 --&gt; 使用手势表达需要帮助
+    4 -- 否 --&gt; 桌角/椅背/扶手上腹部冲击&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;背景：不能呼吸数分钟内心跳停止，等急救车来不及&lt;/li&gt;
+&lt;li&gt;口诀：剪刀、石头、布&lt;/li&gt;
+&lt;li&gt;注意要用冲击力，短暂快速，冲击可能导致脏器损伤&lt;/li&gt;
+&lt;li&gt;不要用手抠异物，可能把异物推到更深&lt;/li&gt;
+&lt;li&gt;重在预防：老人、儿童进食要小心，醉酒注意呕吐物引起窒息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-1-婴儿-（28-天-1岁）&#34;&gt;&lt;a href=&#34;#4-1-婴儿-（28-天-1岁）&#34; class=&#34;headerlink&#34; title=&#34;4.1 婴儿 （28 天-1岁）&#34;&gt;&lt;/a&gt;4.1 婴儿 （28 天-1岁）&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+1{&#34;突然安静，无法哭闹&lt;br /&gt;脸色发红、紫？&#34;} -- 是 --&gt; 2{&#34;能咳嗽？&#34;} -- 否 --&gt; 背部拍击 -- X5 --&gt; 胸部冲击 -- X5 --&gt; 3{&#34;异物出来？&#34;} -- 否 --&gt; 背部拍击
+    2 -- 是 --&gt; 翻身放腿上拍背&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;背部拍击：抓住下巴（不要捂脸、掐脖子），躯干放在前臂上，胳膊用大腿做支撑。背部肩胛骨之间，掌根，快速拍击，5次，每次 1 秒&lt;/li&gt;
+&lt;li&gt;胸部冲击：换胳膊换腿，婴儿翻身抓头，胸部按压，5次&lt;/li&gt;
+&lt;li&gt;要点：背部是拍不是按压，胸部是按压不是戳&lt;/li&gt;
+&lt;li&gt;婴儿太重，胳膊可以用床或沙发的边缘支撑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-2-鱼刺&#34;&gt;&lt;a href=&#34;#4-2-鱼刺&#34; class=&#34;headerlink&#34; title=&#34;4.2 鱼刺&#34;&gt;&lt;/a&gt;4.2 鱼刺&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;鱼刺不要吞饭团，弄下去时可能砸到动脉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;仰头用水漱口&lt;/li&gt;
+&lt;li&gt;他人用镊子夹出&lt;/li&gt;
+&lt;li&gt;去医院&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;5-出血&#34;&gt;&lt;a href=&#34;#5-出血&#34; class=&#34;headerlink&#34; title=&#34;5 出血&#34;&gt;&lt;/a&gt;5 出血&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;背景：人体的血量 4-5L，动脉和大面积静脉出血可致命&lt;/li&gt;
+&lt;li&gt;大出血的现象：肢体离断、难以止血、休克&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;接触血液要做个人防护，感染风险&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
+出血 --&gt; 非致命出血 &amp; 大出血
+    大出血 --&gt; 内出血 &amp; 外出血
+        内出血 --&gt; 12[&#34;面色苍白，四肢冰凉&lt;br /&gt;脉搏微弱，按压疼痛&#34;] --&gt; 5[[&#34;躺下&lt;br /&gt;下肢抬高&lt;br /&gt;保暖&lt;br /&gt;打120&#34;]]
+        外出血 --&gt; 先尝试 &amp; 再尝试 &amp; 伤口深/如大腿 &amp; 四肢/肢体离断 &amp; 异物刺入 &amp; 内脏溢出 &amp; 脑脊液耳鼻漏
+            先尝试 --&gt; 1[[&#34;压迫止血&#34;]]
+            再尝试 --&gt; 指压动脉搏动点 &amp; 止血粉
+            伤口深/如大腿 --&gt; 2[[&#34;填塞止血&#34;]]
+            四肢/肢体离断 --&gt; 3[[&#34;止血带&#34;]] &amp; 断肢
+                断肢 --&gt; 8[[&#34;清洗断肢&lt;br /&gt;敷料包裹&lt;br /&gt;放入密封塑料袋&lt;br /&gt;放入有冰/冰水容器&lt;br /&gt;标记时间&lt;br /&gt;不要直接放在冰上&#34;]]
+            异物刺入 --&gt; 6[[&#34;不要拔&lt;br /&gt;周围压迫止血&#34;]]
+            异物刺入 --&gt; 11[[&#34;开放性胸部伤口&lt;br /&gt;不要封闭避免气胸&#34;]]
+            内脏溢出 --&gt; 9[[&#34;干净敷料覆盖溢出物&lt;br /&gt;不要将溢出物塞回&#34;]]
+            脑脊液耳鼻漏 --&gt; 10[[&#34;让它流出&lt;br /&gt;不要堵塞耳鼻&#34;]]
+    非致命出血 --&gt; 鼻出血 &amp; 皮外伤
+        鼻出血 --&gt; 7[[&#34;身体前倾&lt;br /&gt;手指压迫 5-10 分钟&lt;br /&gt;可塞棉球_等自动滑落&#34;]]
+        皮外伤 --&gt; 饮用水冲洗/碘伏 --&gt; 4[[&#34;压迫止血&#34;]]&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;止血方式&lt;/th&gt;
+&lt;th&gt;应对步骤&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;压迫止血&lt;/td&gt;
+&lt;td&gt;用干净敷料或衣物压住伤口，并包扎&lt;br /&gt;第二块敷料压在第一块上，不要揭开看情况&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;填塞止血&lt;/td&gt;
+&lt;td&gt;将敷料塞进，然后在外面加压&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;止血带&lt;/td&gt;
+&lt;td&gt;伤口近心端 5-7cm 上止血带，避开关节，记录止血带时间&lt;br /&gt;疼痛是正常的，两个小时之内安全&lt;br /&gt;替代品：宽布条、木棍（筷子、笔）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;止血粉&lt;/td&gt;
+&lt;td&gt;Celox，&lt;a href=&#34;http://html.rhhz.net/dejydxxb/html/2017/5/20160596.htm&#34;&gt;止血粉对比&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;指压动脉搏动点&lt;/td&gt;
+&lt;td&gt;适用于没有止血带，或动脉出血在头颈时，搏动点见陈志视频 12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内出血&lt;/td&gt;
+&lt;td&gt;伤及头部、心脏时即使暂时没任何现象，也要立刻送医院检查&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;6-内科&#34;&gt;&lt;a href=&#34;#6-内科&#34; class=&#34;headerlink&#34; title=&#34;6 内科&#34;&gt;&lt;/a&gt;6 内科&lt;/h1&gt;&lt;h2 id=&#34;6-1-心脏病发作&#34;&gt;&lt;a href=&#34;#6-1-心脏病发作&#34; class=&#34;headerlink&#34; title=&#34;6.1 心脏病发作&#34;&gt;&lt;/a&gt;6.1 心脏病发作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;背景：与心脏骤停不同，心脏骤停是心率问题，心脏病是血栓阻止血流，可能引发心脏骤停&lt;/li&gt;
+&lt;li&gt;现象：石头压榨样胸痛，15 分钟不能缓解，头晕、呼吸困难、出冷汗&lt;/li&gt;
+&lt;li&gt;容易被忽视的&lt;strong&gt;特殊现象&lt;/strong&gt;：咽喉部、颈部、上腹部疼痛，女性糖尿病可能没有疼痛，只有头晕、呼吸困难&lt;/li&gt;
+&lt;li&gt;坐下、躺下，减少活动，急救车抬去医院。千万不要自己下楼、开车去医院。还有一部人老人不愿意打 120，拖延了治疗&lt;/li&gt;
+&lt;li&gt;硝酸甘油（青光眼、低血压、心率过快过慢、48小时伟哥，&lt;strong&gt;不能吃&lt;/strong&gt;）舌下含服，阿司匹林（脑中风、胃肠出血、近期做过手术、过敏史，&lt;strong&gt;不能吃&lt;/strong&gt;）嚼服&lt;/li&gt;
+&lt;li&gt;去医院挂急诊科，不要挂内科&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-2-脑中风&#34;&gt;&lt;a href=&#34;#6-2-脑中风&#34; class=&#34;headerlink&#34; title=&#34;6.2 脑中风&#34;&gt;&lt;/a&gt;6.2 脑中风&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+1{&#34;微笑，是否嘴角倾斜&lt;br /&gt;僵尸，是否一侧下垂&lt;br /&gt;说话，是否清晰&#34;} --&gt; 去有溶栓/神经外科资质的医院 --&gt; 2{&#34;头颅 CT，脑出血？&#34;} -- 是 --&gt; 手术
+    2 -- 否/血栓 --&gt; 药物溶栓治疗&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;背景：脑细胞没有再生能力，不及时治疗会有后遗症。关键抢救时间，3.5-4.5 小时&lt;/li&gt;
+&lt;li&gt;中风时血压升高，不要服用降压药&lt;/li&gt;
+&lt;li&gt;昏迷时，进行侧卧，不能塞药、喂水&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-3-过敏&#34;&gt;&lt;a href=&#34;#6-3-过敏&#34; class=&#34;headerlink&#34; title=&#34;6.3 过敏&#34;&gt;&lt;/a&gt;6.3 过敏&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;严重过敏反应危害：喉头水肿导致的呼吸困难，血量不足导致低血压休克&lt;/li&gt;
+&lt;li&gt;现象：接触了过敏原，皮疹，舌头肿胀，呼吸困难，面色苍白，心跳加快&lt;/li&gt;
+&lt;li&gt;肾上腺素自动注射笔，让对方自己打，或征得对方同意帮他打，在大腿中部外侧（可隔衣物）注射，保持 10 秒后拔出，按揉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-4-癫痫&#34;&gt;&lt;a href=&#34;#6-4-癫痫&#34; class=&#34;headerlink&#34; title=&#34;6.4 癫痫&#34;&gt;&lt;/a&gt;6.4 癫痫&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;现象：意识丧失，双眼上翻，牙关紧闭，口吐白沫，全身抽搐&lt;/li&gt;
+&lt;li&gt;不要塞东西，不用 CPR，让他抽，保证身体周围安全，头下垫垫子，一般 5 分钟左右自动停止&lt;/li&gt;
+&lt;li&gt;小儿发烧时的热性惊厥，现象和处理方法相同，常见于 3个月-6岁&lt;/li&gt;
+&lt;li&gt;抽搐停止后，按正常急救流程，检查呼吸和反应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-5-中暑&#34;&gt;&lt;a href=&#34;#6-5-中暑&#34; class=&#34;headerlink&#34; title=&#34;6.5 中暑&#34;&gt;&lt;/a&gt;6.5 中暑&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;背景：通风不好的车内、室内也会引发中暑&lt;/li&gt;
+&lt;li&gt;热痉挛、热衰竭：头晕、恶心、肌肉痉挛、体温增高、血压下降&lt;ul&gt;
+&lt;li&gt;转移到阴凉处，喷冷水、扇风&lt;/li&gt;
+&lt;li&gt;痉挛处按摩、冷敷&lt;/li&gt;
+&lt;li&gt;少量多次补充盐水&amp;#x2F;电解质饮料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;热射病：神志不清，体温高于 40 度，有生命危险&lt;ul&gt;
+&lt;li&gt;打 120&lt;/li&gt;
+&lt;li&gt;立即浸入水中&lt;/li&gt;
+&lt;li&gt;清醒停止浸泡，避免低体温&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-外科&#34;&gt;&lt;a href=&#34;#7-外科&#34; class=&#34;headerlink&#34; title=&#34;7 外科&#34;&gt;&lt;/a&gt;7 外科&lt;/h1&gt;&lt;h2 id=&#34;7-1-扭伤、骨折&#34;&gt;&lt;a href=&#34;#7-1-扭伤、骨折&#34; class=&#34;headerlink&#34; title=&#34;7.1 扭伤、骨折&#34;&gt;&lt;/a&gt;7.1 扭伤、骨折&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;扭伤：RICE，冰敷 20分钟，加压包扎，抬高，必要时去医院检查是否骨折。3 天后再考虑是否用热敷促进血液循环&lt;/li&gt;
+&lt;li&gt;骨折：有出血先止血，禁止复位&lt;ul&gt;
+&lt;li&gt;这部分可交给医务人员做：夹板固定（上肢超过两个关节，下肢超过三个关节），可用卷起的杂志、另一侧的肢体充当夹板，固定后判断血液循环情况。最后上肢悬吊（大手挂、小手挂）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;脊椎骨折：颈部疼痛，肢体麻木，除非现场不安全，否则不要移动伤者，推颌法开放气道&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-2-烧烫伤&#34;&gt;&lt;a href=&#34;#7-2-烧烫伤&#34; class=&#34;headerlink&#34; title=&#34;7.2 烧烫伤&#34;&gt;&lt;/a&gt;7.2 烧烫伤&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;冲：流水冲洗降温至少十分钟或疼痛减轻&lt;/li&gt;
+&lt;li&gt;脱：衣服可能与皮肤粘连，剪刀剪开或去医院处理&lt;/li&gt;
+&lt;li&gt;泡：冷水浸泡，不能用冰&lt;/li&gt;
+&lt;li&gt;盖：使用不粘的烧伤敷料覆盖，或保鲜膜替代&lt;/li&gt;
+&lt;li&gt;送：严重去医院&lt;/li&gt;
+&lt;li&gt;注意&lt;ul&gt;
+&lt;li&gt;取下首饰，避免肿胀后无法取下&lt;/li&gt;
+&lt;li&gt;不要挑破水泡&lt;/li&gt;
+&lt;li&gt;不要冰块&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-3-动物伤&#34;&gt;&lt;a href=&#34;#7-3-动物伤&#34; class=&#34;headerlink&#34; title=&#34;7.3 动物伤&#34;&gt;&lt;/a&gt;7.3 动物伤&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;猫、狗、蝙蝠、浣熊、臭鼬等哺乳动物&lt;ul&gt;
+&lt;li&gt;冲洗伤口、压迫止血&lt;/li&gt;
+&lt;li&gt;越早打越好，二级暴露：有爪痕，接种狂犬疫苗；三级暴露：还要加上狂犬病免疫球蛋白&lt;/li&gt;
+&lt;li&gt;啮齿类动物不用打疫苗，松鼠、兔子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;蛇、蜘蛛、蜜蜂、蝎子、昆虫叮咬&lt;ul&gt;
+&lt;li&gt;肥皂水冲洗伤口、压迫止血&lt;/li&gt;
+&lt;li&gt;对蜜蜂，用银行卡刮出蜜蜂的刺&lt;/li&gt;
+&lt;li&gt;可能有中毒反应，呼吸困难、视物模糊&lt;/li&gt;
+&lt;li&gt;拍动物照片&lt;/li&gt;
+&lt;li&gt;静卧，避免跑动，受伤部位低于心脏，减缓毒素传播&lt;/li&gt;
+&lt;li&gt;取下首饰，避免肿胀后无法取下&lt;/li&gt;
+&lt;li&gt;弹性绷带缠绕局限蛇毒，不要用止血带、绳子扎住&lt;/li&gt;
+&lt;li&gt;去医院处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;蜱虫，壁虱&lt;ul&gt;
+&lt;li&gt;镊子夹住蜱虫的嘴或头向上提起&lt;/li&gt;
+&lt;li&gt;肥皂水冲洗伤口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;海蜇或其它海洋生物蛰伤&lt;ul&gt;
+&lt;li&gt;卡片、镊子、戴手套刮除触须&lt;/li&gt;
+&lt;li&gt;用海水或醋冲洗至少 30 秒&lt;/li&gt;
+&lt;li&gt;蛰伤部位浸入 45度热水至少 20 分钟或疼痛消失&lt;/li&gt;
+&lt;li&gt;不要揉搓伤口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;8-其它&#34;&gt;&lt;a href=&#34;#8-其它&#34; class=&#34;headerlink&#34; title=&#34;8 其它&#34;&gt;&lt;/a&gt;8 其它&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;问题&lt;/th&gt;
+&lt;th&gt;处理&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;哮喘&lt;/td&gt;
+&lt;td&gt;端坐位，不要躺下，给予吸入器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;糖尿病和低血糖&lt;/td&gt;
+&lt;td&gt;能吞咽时吃含糖食物&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;口腔出血&lt;/td&gt;
+&lt;td&gt;咬住棉球，压迫止血&lt;br /&gt;牙齿脱落时&lt;br /&gt;- 拿牙冠不要碰牙根&lt;br /&gt;- 清洗牙齿后放入牛奶&amp;#x2F;蛋清&amp;#x2F;唾液中，不要放在口中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;眼外伤&lt;/td&gt;
+&lt;td&gt;清水冲洗，受伤那只眼处于冲洗的低位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电击伤&lt;/td&gt;
+&lt;td&gt;关闭电源后，保证自身安全，走正常急救流程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;冻伤&lt;/td&gt;
+&lt;td&gt;- 移到温暖处&lt;br /&gt;- 脱掉潮湿衣服，换上干衣服，保暖&lt;br /&gt;注意&lt;br /&gt;- 不要揉搓冻伤部位&lt;br /&gt;- 可能再次冻伤时，不要解冻&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;（食物）中毒&lt;/td&gt;
+&lt;td&gt;避免接触毒物，优先保证自身安全&lt;br /&gt;拍照等方式收集毒物信息&lt;br /&gt;冲洗自己和患者身上毒物&lt;br /&gt;昏倒时走正常急救流程，考虑左侧卧减缓食物吸收&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;煤气中毒（一氧化碳中毒）&lt;/td&gt;
+&lt;td&gt;口唇樱桃红色，走正常急救流程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;溺水&lt;/td&gt;
+&lt;td&gt;救人方法见 陈志视频 06&lt;br /&gt;抛掷漂浮物（放满空矿泉水瓶的书包，加负重来抛得更远）、绳索，救上岸后正常急救&lt;br /&gt;心脏骤停时，先压额抬颏、清理口腔异物、人工呼吸，再按压&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;阿片类药物过量&lt;/td&gt;
+&lt;td&gt;给予纳洛酮，走正常急救流程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;艾滋病&lt;/td&gt;
+&lt;td&gt;接触到艾滋病人的血液，精液，乳汁时，越早服用阻断药物越好&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;腹痛&lt;/td&gt;
+&lt;td&gt;考虑阑尾炎等，去医院&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;发热&lt;/td&gt;
+&lt;td&gt;高于 39 度先物理降温，不要用酒精，1-2 小时不行，使用药物降温，两种降温不能同时使用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;挤压伤&lt;a id=&#34;xFVn&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;如 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/../%E9%98%B2%E7%81%BE/#xn06&#34;&gt;地震&lt;/a&gt;，重物挤压很久，除非现场环境危险，否则不要盲目移开重物，高钾血症&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;气胸&lt;/td&gt;
+&lt;td&gt;气胸针急救，&lt;a href=&#34;https://www.anne.education/technology.html&#34;&gt;网址&lt;/a&gt;中针刺减压的部分&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;气道梗阻（海姆立克法无效时）&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.zhihu.com/question/55255249/answer/1534217972&#34;&gt;环甲膜切开&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;9-平时准备&#34;&gt;&lt;a href=&#34;#9-平时准备&#34; class=&#34;headerlink&#34; title=&#34;9 平时准备&#34;&gt;&lt;/a&gt;9 平时准备&lt;/h1&gt;&lt;h2 id=&#34;9-1-急救物品&#34;&gt;&lt;a href=&#34;#9-1-急救物品&#34; class=&#34;headerlink&#34; title=&#34;9.1 急救物品&#34;&gt;&lt;/a&gt;9.1 急救物品&lt;/h2&gt;&lt;p&gt;见 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/#%E6%80%A5%E6%95%91&#34;&gt;应急物品清单-急救&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9-2-理论测试&#34;&gt;&lt;a href=&#34;#9-2-理论测试&#34; class=&#34;headerlink&#34; title=&#34;9.2 理论测试&#34;&gt;&lt;/a&gt;9.2 理论测试&lt;/h2&gt;&lt;h3 id=&#34;9-2-1-基础&#34;&gt;&lt;a href=&#34;#9-2-1-基础&#34; class=&#34;headerlink&#34; title=&#34;9.2.1 基础&#34;&gt;&lt;/a&gt;9.2.1 基础&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;实施救人的第一步是什么？&lt;/li&gt;
+&lt;li&gt;如何照顾喝醉酒没有反应的人？&lt;/li&gt;
+&lt;li&gt;何时应当移动伤者到安全处，移动时应当注意什么？&lt;/li&gt;
+&lt;li&gt;哪几种情况是短时致命的，无法等到救护车的到来？&lt;/li&gt;
+&lt;li&gt;给家人急救是否需要佩带个人防护用品？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-2-2-心脏骤停&#34;&gt;&lt;a href=&#34;#9-2-2-心脏骤停&#34; class=&#34;headerlink&#34; title=&#34;9.2.2 心脏骤停&#34;&gt;&lt;/a&gt;9.2.2 心脏骤停&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;进行 CPR 的条件是什么？&lt;/li&gt;
+&lt;li&gt;心脏骤停的按压速度是多少？成人和婴儿的速度一样吗？&lt;/li&gt;
+&lt;li&gt;能否不做人工呼吸，只进行按压？&lt;/li&gt;
+&lt;li&gt;先进行人工呼吸还是先进行按压？&lt;/li&gt;
+&lt;li&gt;对于女性进行 CPR 需要解开上衣吗？&lt;/li&gt;
+&lt;li&gt;胸外按压的间隔不应该超过多久？&lt;/li&gt;
+&lt;li&gt;如何给婴儿做人工呼吸？&lt;/li&gt;
+&lt;li&gt;如何找到附近的 AED？&lt;/li&gt;
+&lt;li&gt;患者胸部有汗时，能否使用 AED？&lt;/li&gt;
+&lt;li&gt;溺水如何急救？&lt;/li&gt;
+&lt;li&gt;一氧化碳中毒如何急救？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-2-3-气道梗阻&#34;&gt;&lt;a href=&#34;#9-2-3-气道梗阻&#34; class=&#34;headerlink&#34; title=&#34;9.2.3 气道梗阻&#34;&gt;&lt;/a&gt;9.2.3 气道梗阻&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;鱼刺卡住能否使用海姆立克法？&lt;/li&gt;
+&lt;li&gt;对于双臂抱不住的胖子，应该如何用海姆立克法？&lt;/li&gt;
+&lt;li&gt;自己卡住，无法呼吸时，如何自救？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-2-4-出血&#34;&gt;&lt;a href=&#34;#9-2-4-出血&#34; class=&#34;headerlink&#34; title=&#34;9.2.4 出血&#34;&gt;&lt;/a&gt;9.2.4 出血&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;止血带多久之内是安全的？&lt;/li&gt;
+&lt;li&gt;鼻出血应如何处理？&lt;/li&gt;
+&lt;li&gt;身边没有止血带可用什么替代？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-2-5-内科&#34;&gt;&lt;a href=&#34;#9-2-5-内科&#34; class=&#34;headerlink&#34; title=&#34;9.2.5 内科&#34;&gt;&lt;/a&gt;9.2.5 内科&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;心脏病发作有哪些特殊现象？&lt;/li&gt;
+&lt;li&gt;如何判断脑中风？&lt;/li&gt;
+&lt;li&gt;癫痫发作时如何施救？&lt;/li&gt;
+&lt;li&gt;应对严重过敏的有效药物是什么？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-2-6-外科&#34;&gt;&lt;a href=&#34;#9-2-6-外科&#34; class=&#34;headerlink&#34; title=&#34;9.2.6 外科&#34;&gt;&lt;/a&gt;9.2.6 外科&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;对怀疑颈椎骨折的患者如何处理？&lt;/li&gt;
+&lt;li&gt;骨折时没有固定用的夹板，可以用什么替代？&lt;/li&gt;
+&lt;li&gt;烧烫伤应该如何处理？&lt;/li&gt;
+&lt;li&gt;被蛇咬伤如何处理？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-3-经常练习&#34;&gt;&lt;a href=&#34;#9-3-经常练习&#34; class=&#34;headerlink&#34; title=&#34;9.3 经常练习&#34;&gt;&lt;/a&gt;9.3 经常练习&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;练习时间&lt;/th&gt;
+&lt;th&gt;谁练习&lt;/th&gt;
+&lt;th&gt;练习内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;9-4-预防&#34;&gt;&lt;a href=&#34;#9-4-预防&#34; class=&#34;headerlink&#34; title=&#34;9.4 预防&#34;&gt;&lt;/a&gt;9.4 预防&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;老年人跌倒，目前 Apple Watch、三星、华为有跌倒检测，期待更低价的产品，如小米&lt;/li&gt;
+&lt;li&gt;儿童和老人的气道梗阻&lt;/li&gt;
+&lt;li&gt;儿童溺水、烧烫伤&lt;/li&gt;
+&lt;li&gt;独居老人准备病历信息、子女联系方式在家里显著位置，供急救人员使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/</guid>
+            <title>朋友</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/../%E6%9C%8B%E5%8F%8B/%E6%88%91%E5%92%8C%E6%9C%8B%E5%8F%8B.png&#34; alt=&#34;我和朋友&#34;&gt;&lt;/p&gt;
+&lt;p&gt;对应的思维导图在 asset 中&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/</guid>
+            <title>应急物品清单</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-急救&#34;&gt;&lt;a href=&#34;#1-急救&#34; class=&#34;headerlink&#34; title=&#34;1 急救&#34;&gt;&lt;/a&gt;1 急救&lt;/h1&gt;&lt;p&gt;注意购买接触伤口的物品时是否为&lt;strong&gt;无菌&lt;/strong&gt;，选择京东正规店铺，清单按照 1 人使用准备&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;清单&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 个人防护 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10X 丁腈手套（乳胶手套可能引起部分人过敏）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10X 医用外科口罩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 护目镜&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 人工呼吸面罩&amp;#x2F;面膜&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 清洁与消毒 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3X 酒精消毒片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3X 碘伏消毒片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;40X 碘伏棉签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 止血 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10X 医用纱布（10 * 10cm）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3X 医用纱布（20 * 30cm）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;CELOX 止血粉 15g&lt;/del&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 急救止血绷带&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 压缩曲线纱布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 旋压式止血带&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 包扎与固定 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 三角巾&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 可塑夹板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 医用胶布&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;—– 急救用具 —–&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 镊子&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2X 冰袋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1X 保温毯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;剪刀&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;体温计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;药品&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;保鲜膜 （包裹烧烫伤部位）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;肾上腺素注射笔 EpiPen&lt;/del&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;2-防火&#34;&gt;&lt;a href=&#34;#2-防火&#34; class=&#34;headerlink&#34; title=&#34;2 防火&#34;&gt;&lt;/a&gt;2 防火&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;清单&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;灭火毯&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;灭火器。避免底部受潮，检查压力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;过滤式呼吸器。不要挪动，避免失效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;烟雾报警器。定期测试&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;缓降器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;3-防灾&#34;&gt;&lt;a href=&#34;#3-防灾&#34; class=&#34;headerlink&#34; title=&#34;3 防灾&#34;&gt;&lt;/a&gt;3 防灾&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;清单&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;强光手电&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;逃生哨&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;破窗器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;手摇收音机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;打火石&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;净水片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;4-其它&#34;&gt;&lt;a href=&#34;#4-其它&#34; class=&#34;headerlink&#34; title=&#34;4 其它&#34;&gt;&lt;/a&gt;4 其它&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;事先约定好几个汇合的避难地点，参考 &lt;a href=&#34;http://yjj.shenyang.gov.cn/html/YJGLJ/156012750115842/155981218836498/158883594889849/5011584241706584.html&#34;&gt;沈阳市应急管理局-应急避难场所&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;每次多购买些食物用作备用食物，并随着日常消耗和补充&lt;/li&gt;
+&lt;li&gt;应急卡片，疾病、过敏信息、紧急联系人、特殊血型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-参考清单&#34;&gt;&lt;a href=&#34;#5-参考清单&#34; class=&#34;headerlink&#34; title=&#34;5 参考清单&#34;&gt;&lt;/a&gt;5 参考清单&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/%E5%AE%B6%E5%BA%AD%E5%8C%BB%E7%96%97%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%8C%87%E5%AF%BC%E7%9B%AE%E5%BD%95-%E5%8C%97%E4%BA%AC%E6%80%A5%E6%95%91%E4%B8%AD%E5%BF%83.png&#34;&gt;&lt;br&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/%E5%AE%B6%E5%BA%AD%E5%BA%94%E6%80%A5%E7%89%A9%E8%B4%A8%E5%82%A8%E5%A4%87%E5%BB%BA%E8%AE%AE%E6%B8%85%E5%8D%95-%E5%9B%BD%E5%AE%B6%E5%BA%94%E6%80%A5%E5%B9%BF%E6%92%AD.jpg&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%86%A5%E6%83%B3/</guid>
+            <title>冥想</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E5%86%A5%E6%83%B3/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/a05080lthpa.html&#34;&gt;卡巴金的正念解释&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.iqiyi.com/w_19rs7ysyh1.html&#34;&gt;正念让我们更幸福&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/a0500cz18en.html&#34;&gt;不如意的事就是会发生&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/l0153f4arug.html&#34;&gt;关注身体多于精神，精神也会受伤，也需要保持健康，否则认知被扭曲，伤害被加重，因此须对情绪和思维高度关注，尤其是失败、孤独、拒绝&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/w07122qe4wh.html&#34;&gt;冥想技巧&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/av23697659/?p=3&#34;&gt;自悯&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.bilibili.com/video/av23894341&#34;&gt;关注得到和好的方面，人更容易陷入坏的部分中&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/av5177656/?share_source=weixin&amp;ts=1529504755&amp;share_medium=iphone&amp;bbid=04499b38ee48da3d9e33267c6980b4a8&#34;&gt;我在生物上该怎样解释？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/1ap4ECbSE7pb7ardIDuDDzg&#34;&gt;台湾人介绍正念 密码:ish7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v.qq.com/x/page/g0712wry60h.html&#34;&gt;专注现在，不迷失在小事中&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://weibo.com/1236762247/Gm4stcezI?refer_flag=1001030103_&amp;type=comment&#34;&gt;相信自己做得到&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;书籍《正念的奇迹》&lt;/p&gt;
+&lt;p&gt;书籍《第七感》&lt;/p&gt;
+&lt;p&gt;1. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;正念是有意图的、对当下的、不评判的觉察&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;   正念带给个人的转化力量，用于处理每个人都会遇到的心理压力和情绪问题&lt;/p&gt;
+&lt;p&gt;   1 - 5 基础，6 - 11 进阶， 12 - 16 应用， 17 - 21 拓展&lt;/p&gt;
+&lt;p&gt;   练习：吃&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;p&gt;要练习。&lt;code&gt;身体&lt;/code&gt; 活动会将情绪有关的激素释放掉，首先要培养对身体的感知，身心连接，身体好就有了锚点，情绪不容易失控。奖励尝试，保持好奇与开放才能学到新知识。&lt;/p&gt;
+&lt;p&gt;练习：躯体扫描。不论任何感觉，不要尝试变化它&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;情绪、思维、行动的自驾模式，自动触发，容易失控，因此要观察自驾模式，遇到问题也要不评判&lt;/p&gt;
+&lt;p&gt;练习：正念呼吸&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;情绪管理的核心，事实 -&amp;gt; 思维 -&amp;gt; 情绪，意识到负面情绪，重新审视事实，寻找自己情绪或对方情绪出现的原因，采取新的思维&lt;/p&gt;
+&lt;p&gt;练习：3分钟呼吸空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;两个困难，&lt;code&gt;昏沉&lt;/code&gt;昏昏欲睡的状态，&lt;code&gt;掉举&lt;/code&gt;思绪纷飞，控制不住自己的情绪、思维。如果一直从事没什么营养的活动，其实是转移注意力。发现自己走神的速度越快越好，意识到评判、假设、推理升起，情绪不会脱缰。完美主义自驾模式，纠缠于概念、方法，无法投入到眼前的任务中去。将默认模式设定为关注于当下。&lt;/p&gt;
+&lt;p&gt;练习：正念行走&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入实操阶段，成为情绪的主人，不被控制。训马不能硬来，耐心共处，打乱固有模式，甚至反过来做（原来跑现在停，原来停现在跑），提前预防。识别，反向微微施力，利用好惯性原理，坏习惯就打乱，好习惯就固定。体验困难情绪，与不适共处的能力。&lt;/p&gt;
+&lt;p&gt;练习：进阶版3分钟呼吸空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;与情绪的关系也如同驯马，耐心了解马的习性，形成合作、驾驭的关系，不逃避也不沉溺于情绪。观声音练习可以不让我们那么沉溺于自己的想法。如果太沉溺就练习正念去打断它。&lt;/p&gt;
+&lt;p&gt;练习：正念观声音&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;直接观察负面情绪，是更有难度的练习，8-10 3节是重点，自驾模式 3 类：贪（渴求）、嗔 主观上感觉对方弱，就会愤怒，强就会恐惧、最后忽视模式，无意识。通过观察与实践，次数足够多，像刷剧一样观念头，心才能相信，才能产生自驾模式的改变。&lt;/p&gt;
+&lt;p&gt;练习：正念观念头&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;培养出更多的觉察与容纳能力，不用上面 3 种模式，而采用接纳。疼痛 X 抵抗 &amp;#x3D; 痛苦，完全的接纳就没有痛苦，这样不用多花精力在管理情绪上了。注意不是对行为接纳，对行为仍要采取行动，是对自己的情绪接纳。面对困难时的自我慈悲心，自悯&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自我友善，理解而不评判&lt;/li&gt;
+&lt;li&gt;普遍人性，每个人都会经历&lt;/li&gt;
+&lt;li&gt;正念，不远离不沉溺，不夸大不忽视&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;练习：NO&amp;amp;YES 练习&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不跟自己作对，情绪不要当成是自己的，而是看作一种现象，就像是一点就着的火，外界稍微激发，就进入自驾模式。要使自己不易燃。观察负面情绪，并练习接纳，而不被情绪控制。还可以通过情绪去寻找产生的原因。&lt;/p&gt;
+&lt;p&gt;练习：正念观情绪&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;对于不懂的不要想太深，不封闭的头脑才能习得新的模式，时不时 check 一下，就会不断创造出新的空间。两个困难，一是正念的能力不足，除了多练外可以尝试先稳定下来。如果觉察不到情绪，那说明你压抑了，需要先觉察压抑。二是理念不对，接纳就是改变，就解决了情绪问题。山的冥想不是正念练习，但可以稳定情绪。&lt;/p&gt;
+&lt;p&gt;练习：山的冥想&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;思维、身体、决策行动三方面中情绪的影响和正念的应对办法。行动状态，设定目标，对比与目标的差距，然后去做。但对于最优解不明确的问题，或者情绪问题，则不停的对比和简单的目标是行不通的。存在状态，让我们不去对比，达到宠辱不惊，体验没有好坏，只是一个可以去探索、了解的目标。存在状态的感受非常直接，不需要推理，无具体任务时都可以处在这种状态。&lt;/p&gt;
+&lt;p&gt;体验存在状态，随时随地可以练，无具体觉察目标，完全接纳&lt;/p&gt;
+&lt;p&gt;练习：开放觉察练习&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;先谈三方面中的思维，事实 -&amp;gt; 自驾模式思维 -&amp;gt; 情绪，但情绪也会反过来影响思维，差的情绪导致都是负面的想法，想不起来好事，恶性循环，造成持续的心理打击。洗脑，通过占用认知资源，使自己无法接触&lt;strong&gt;真实&lt;/strong&gt;，使思维固化（注：这说明想法要反应客观事实才有意义）。想法不一定是事实，只是客观现象，观察想法，不可能观察不到想法，因为大脑时刻在运作。&lt;/p&gt;
+&lt;p&gt;视觉训练比身体和听觉稍困难，因为更吸引人，但与观念头接近。&lt;/p&gt;
+&lt;p&gt;练习：正念视觉&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;身体觉察能力分 3 个等级，严重的情况适合做正念的动态练习，并且找心理咨询师。&lt;/p&gt;
+&lt;p&gt;正念伸展提高身体的觉察和接纳能力&lt;/p&gt;
+&lt;p&gt;练习：正念伸展&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;正念帮我们看清楚事实，看清事实才能做明智的决定，搞清楚外部环境与自己内在。思维依赖于语言与概念，对无法描述的事情就只会有感觉。&lt;/p&gt;
+&lt;p&gt;聚焦探索练习，需要对躯体扫描和观情绪有一定的经验&lt;/p&gt;
+&lt;p&gt;练习：聚焦探索&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;正念退失，震荡上扬，暂时的退步，允许一时看不到成果。通过日常正念来保持兴趣，可以选择经常失念的事来练习。除以下情况都可正念，复杂思考、人身安全、高度集中。&lt;/p&gt;
+&lt;p&gt;练习：3首诗&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入拓展阶段&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自悯：匮乏、失败、任何痛苦时，对自身保有爱意&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;自我友善，理解而不评判，成为自己一生相伴的忠实伙伴，减少不满与焦虑&lt;/li&gt;
+&lt;li&gt;普遍人性，每个人都会经历，练习接纳&lt;/li&gt;
+&lt;li&gt;正念，不远离不沉溺，不夸大不忽视，尊重事实&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;祝愿自己的句子进行练习&lt;/p&gt;
+&lt;p&gt;练习：自悯练习&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自悯是善意、宁静的，无我的状态，没有贪求与嫌恶的升起。孤单感越强痛苦的情绪越强，应对情绪就越有挑战，成几何增长，相反，体验到与他人的连接感，心里就会觉得踏实。自悯解决孤独感，理解普遍人性，每个生命都会体验到的痛苦感受，来找到连接感和共鸣。从这个层面看，我们永不孤独。&lt;/p&gt;
+&lt;p&gt;练习：共感慈心禅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自悯也可以解决童年创伤。情绪管理要靠自己，但别人的情绪也会影响我们。群体中会有情绪管理者，负责消化负面情绪，不论是管理者还是情绪外包给别人的人，都不是健康的。分辨情绪是别人的还是自己的，通过平时对自己情绪产生的身体感觉来辨别，如果是别人的就不用去处理。寻找友善、觉察的朋友作为支持，撑过最难的几个小时。&lt;/p&gt;
+&lt;p&gt;关系觉察来发现具有支持性的关系，与躯体扫描近似&lt;/p&gt;
+&lt;p&gt;练习：关系觉察&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;宗教上学正念之前会有戒律，正念中著名的生活方式理念是由越南的一行禅师提出的五项正念修习&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;尊重生命，增加可连接的对象&lt;/li&gt;
+&lt;li&gt;通过觉察帮助找到真正的幸福&lt;/li&gt;
+&lt;li&gt;慈心禅练习，给予自己和他人关爱&lt;/li&gt;
+&lt;li&gt;减少不实言论，言语攻击&lt;/li&gt;
+&lt;li&gt;戒除容易失念的事物&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不要盲从，需要以自己清明的心做出独立判断&lt;/p&gt;
+&lt;p&gt;练习：湖的冥想&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;改变需要个人付出，正念的变化是潜移默化的。只要有练习，就没有失败，就是在培养觉察能力，积累对自己和周围的智慧。最后一节课，而你的余生才刚刚开始。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;坐得住的选择基础正念练习 40-60分，躯体扫描、正念呼吸&lt;/li&gt;
+&lt;li&gt;坐不住的练习行走或伸展&lt;/li&gt;
+&lt;li&gt;思绪乱的练习开放觉察、观念头、观声音、正念视觉&lt;/li&gt;
+&lt;li&gt;都不适用的可以练正念呼吸、三分钟呼吸空间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不论哪个练习都保持有意图、不评判、对当下的觉察&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;将正念观情绪融入生活，随时都可以做。每天记录练习情况。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将觉察的各个方面整合起来，当成心理体检。以初心练习，每一次正念都是崭新的。&lt;/p&gt;
+&lt;p&gt;练习：觉知之轮&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E5%93%81%E9%80%89%E8%B4%AD/</guid>
+            <title>物品选购</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E5%93%81%E9%80%89%E8%B4%AD/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;更多选购要查以前的为知笔记了&lt;/p&gt;
+&lt;h1 id=&#34;1-手机&#34;&gt;&lt;a href=&#34;#1-手机&#34; class=&#34;headerlink&#34; title=&#34;1 手机&#34;&gt;&lt;/a&gt;1 手机&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;爱电子产品推荐，安兔兔性价比排行，什么值得买测评&lt;/li&gt;
+&lt;li&gt;手机选择较大运存，去实体店体验，目前选 2k 价位。后期去维修点换官方电池&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-电脑&#34;&gt;&lt;a href=&#34;#2-电脑&#34; class=&#34;headerlink&#34; title=&#34;2 电脑&#34;&gt;&lt;/a&gt;2 电脑&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;笔记本电脑&lt;ul&gt;
+&lt;li&gt;不玩游戏选集显版本，续航长，同时省下 PCIE 可以给固态硬盘用&lt;/li&gt;
+&lt;li&gt;电脑看拆机图考虑后期硬件扩展（硬盘和内存）和清灰是否方便&lt;/li&gt;
+&lt;li&gt;看这个型号的测评都有哪些要注意的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;组装台式&lt;ul&gt;
+&lt;li&gt;不考虑便携移动，台式性价比更高&lt;/li&gt;
+&lt;li&gt;办公电脑，不玩游戏不要独显，中高配置在 3k-4k 这样&lt;/li&gt;
+&lt;li&gt;为了好看，换成白色小机箱、玻璃侧板、ARGB 风扇&lt;/li&gt;
+&lt;li&gt;固态硬盘用之前买的&lt;/li&gt;
+&lt;li&gt;显示器用旧的&lt;/li&gt;
+&lt;li&gt;参考知乎 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/83636026&#34;&gt;哪些配置可以压缩&lt;/a&gt;、&lt;a href=&#34;https://zhuanlan.zhihu.com/p/427588364&#34;&gt;3000元电脑配置清单&lt;/a&gt;、&lt;a href=&#34;https://zhuanlan.zhihu.com/p/217881116&#34;&gt;2022年2月装机电脑配置推荐&lt;/a&gt; 和 B 站视频 &lt;a href=&#34;https://www.bilibili.com/video/BV1Q3411a7cg&#34;&gt;2022年最新各价位CPU主板性价比&lt;/a&gt;、&lt;a href=&#34;https://www.bilibili.com/video/BV1PT4y1C75N&#34;&gt;2022年二月电脑配置推荐&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;板U 散片多核性价比对应生产力，单核性价比对应游戏。生产力买 AMD，游戏买 Intel&lt;/li&gt;
+&lt;li&gt;部分配件谨慎的选择淘宝来降低价格，同时淘宝的选择更多，如白色版本。但注意运输时效&lt;/li&gt;
+&lt;li&gt;从 &lt;a href=&#34;https://www.bilibili.com/video/BV1DP4y1s76A&#34;&gt;CPU保姆级超频教程（AMD篇）&lt;/a&gt; 看，加上 CinebenchR23 开启 PBO 测试，提升不明显。对多数来说开启 XMP 和 PBO，分配显存就够了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;配件&lt;/th&gt;
+&lt;th&gt;型号&lt;/th&gt;
+&lt;th&gt;价格&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;主板 + CPU&lt;/td&gt;
+&lt;td&gt;微星 B550M MORTAR WIFI&lt;br /&gt;R5 5600G 散片&lt;br /&gt;利民 AMD 防脱支架&lt;/td&gt;
+&lt;td&gt;1908&lt;/td&gt;
+&lt;td&gt;为了性价比选散片&lt;br /&gt;为了 ARGB 没选更便宜的 B450&lt;br /&gt;为了白色选择 WIFI 版&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td&gt;镁光英睿达 8G * 2 3200&lt;/td&gt;
+&lt;td&gt;459&lt;/td&gt;
+&lt;td&gt;白色高频内存，搭配 MSI 主板方便超频&lt;br /&gt;从淘宝买保证颗粒型号可超频&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td&gt;镁光英睿达 16G 3200&lt;/td&gt;
+&lt;td&gt;430&lt;/td&gt;
+&lt;td&gt;16G 除去 2G 用于集显，剩下内存明显不够用&lt;br /&gt;以后要参考主力电脑的内存容量 X2 来买&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电源&lt;/td&gt;
+&lt;td&gt;振华铜皇450W&lt;/td&gt;
+&lt;td&gt;271&lt;/td&gt;
+&lt;td&gt;京东，电源选品牌好的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;机箱&lt;/td&gt;
+&lt;td&gt;先马趣造&lt;/td&gt;
+&lt;td&gt;279&lt;/td&gt;
+&lt;td&gt;白色送玻璃侧板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;散热器&lt;/td&gt;
+&lt;td&gt;利民 AX120 R SE&lt;/td&gt;
+&lt;td&gt;90&lt;/td&gt;
+&lt;td&gt;多数装机配置都不推荐用盒装散热，白色 ARGB 版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;机箱风扇&lt;/td&gt;
+&lt;td&gt;利民 TL-C12015W-S&lt;/td&gt;
+&lt;td&gt;83&lt;/td&gt;
+&lt;td&gt;白色 ARGB，超薄，PWM，主要是装饰&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;装机服务&lt;/td&gt;
+&lt;td&gt;京东&lt;/td&gt;
+&lt;td&gt;118&lt;/td&gt;
+&lt;td&gt;考虑机箱小不好装且之前没装过机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;合计&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;3638&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;3-牙膏&#34;&gt;&lt;a href=&#34;#3-牙膏&#34; class=&#34;headerlink&#34; title=&#34;3 牙膏&#34;&gt;&lt;/a&gt;3 牙膏&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/46903667&#34;&gt;摩擦剂&lt;/a&gt;，不要碳酸钙，选二氧化硅去污能力强，其次磷酸氢钙&lt;ul&gt;
+&lt;li&gt;高露洁系列按价格排序，碳酸钙（普通） &amp;lt; 磷酸氢钙（防蛀） &amp;lt; 二氧化硅&amp;#x2F;水合硅石（360度）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://user.guancha.cn/main/content?id=48268&#34;&gt;含氟量表格&lt;/a&gt;，选 0.14 的，不要囤，时间越久氟量下降。能有&lt;a href=&#34;https://zhuanlan.zhihu.com/p/55351833&#34;&gt;实际测评值&lt;/a&gt;更好&lt;/li&gt;
+&lt;li&gt;SLS 没有致癌性，有刺激性，SLES 刺激性比 SLS 低。国内牙膏一般都有&lt;/li&gt;
+&lt;li&gt;高露洁的研发似乎不错（对 Paraben 防腐剂的态度），价格也可以，其次考虑中华魔丽迅白，最后 &lt;a href=&#34;https://www.jianshu.com/p/88546d59b282&#34;&gt;低性价比但安全的国外牙膏&lt;/a&gt; 考虑德国Elmex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-储热热水器&#34;&gt;&lt;a href=&#34;#4-储热热水器&#34; class=&#34;headerlink&#34; title=&#34;4 储热热水器&#34;&gt;&lt;/a&gt;4 储热热水器&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;品牌排名，海尔、美的&lt;/li&gt;
+&lt;li&gt;功率和容量&lt;/li&gt;
+&lt;li&gt;单管，双管，3D 速热管&lt;/li&gt;
+&lt;li&gt;一级能效，热水输出率 80%&lt;/li&gt;
+&lt;li&gt;预约，遥控，WIFI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-配眼镜&#34;&gt;&lt;a href=&#34;#5-配眼镜&#34; class=&#34;headerlink&#34; title=&#34;5 配眼镜&#34;&gt;&lt;/a&gt;5 配眼镜&lt;/h1&gt;&lt;h2 id=&#34;5-1-验光及镜架尺寸&#34;&gt;&lt;a href=&#34;#5-1-验光及镜架尺寸&#34; class=&#34;headerlink&#34; title=&#34;5.1 验光及镜架尺寸&#34;&gt;&lt;/a&gt;5.1 验光及镜架尺寸&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;验光渠道&lt;ul&gt;
+&lt;li&gt;一般眼镜店，眼镜批发市场。普遍水准不高，个别良心店能保证较好水平。&lt;/li&gt;
+&lt;li&gt;同仁验光。验光粗糙，态度对付，虽然医师专业，但最后的数据只能算勉强看得过去。&lt;/li&gt;
+&lt;li&gt;宝岛验光。态度最好，人少，专业程度一般。&lt;/li&gt;
+&lt;li&gt;爱尔眼科。比较专业，检查全面，要过年时人少。最终基本上使用了爱尔的数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;镜架尺寸&lt;ul&gt;
+&lt;li&gt;去眼镜店试戴，记下尺寸，比如 jins 门店&lt;/li&gt;
+&lt;li&gt;使用胶水和硬纸按照尺寸制作进行试戴&lt;/li&gt;
+&lt;li&gt;参考之前的镜架&lt;/li&gt;
+&lt;li&gt;淘宝购买后邮寄试戴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-2-镜片的品牌&#34;&gt;&lt;a href=&#34;#5-2-镜片的品牌&#34; class=&#34;headerlink&#34; title=&#34;5.2 镜片的品牌&#34;&gt;&lt;/a&gt;5.2 镜片的品牌&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;国产国外&lt;ul&gt;
+&lt;li&gt;依视路，蔡司，尼康，豪雅&lt;/li&gt;
+&lt;li&gt;凯米，明月&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;折射率。经过尝试发现1.6的就可以，1.67的国内镜片在厚度、感受的重量上没有明显差异&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-3-镜架的材质及品牌&#34;&gt;&lt;a href=&#34;#5-3-镜架的材质及品牌&#34; class=&#34;headerlink&#34; title=&#34;5.3 镜架的材质及品牌&#34;&gt;&lt;/a&gt;5.3 镜架的材质及品牌&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;钛，金属，tr90，板材&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-4-眼镜店的专业程度&#34;&gt;&lt;a href=&#34;#5-4-眼镜店的专业程度&#34; class=&#34;headerlink&#34; title=&#34;5.4 眼镜店的专业程度&#34;&gt;&lt;/a&gt;5.4 眼镜店的专业程度&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;镜片真伪的保证，镜片的加工技术，另外后续眼镜的维护，所以要考虑眼镜店的专业程度&lt;/li&gt;
+&lt;li&gt;jins，宝岛，爱尔，同仁，网上店铺&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-5-价格&#34;&gt;&lt;a href=&#34;#5-5-价格&#34; class=&#34;headerlink&#34; title=&#34;5.5 价格&#34;&gt;&lt;/a&gt;5.5 价格&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;jins 的价格便宜，质量中等。&lt;/li&gt;
+&lt;li&gt;依视路A4 1.6 定制片，网店至少1000，宝岛门店1400，可以自带镜架。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-洗护用品&#34;&gt;&lt;a href=&#34;#6-洗护用品&#34; class=&#34;headerlink&#34; title=&#34;6 洗护用品&#34;&gt;&lt;/a&gt;6 洗护用品&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;参考书，《化妆品好坏知多少》&lt;/li&gt;
+&lt;li&gt;表面活性剂&lt;ul&gt;
+&lt;li&gt;氨基酸界面成分标前边有“N-XXX酰-L-xxx酸钠&amp;#x2F;钾&amp;#x2F;TEA”。&lt;/li&gt;
+&lt;li&gt;皂基是“脂肪酸+碱剂”，成分表里同时出现肉豆蔻酸、月桂酸、棕榈酸、硬脂酸和 碱剂比如氢氧化钠、氢氧化钾，就是皂基，或者出现他们的产物如肉豆蔻酸氢氧化钾，也是皂基。&lt;/li&gt;
+&lt;li&gt;两性表面活性剂有甜菜碱、氧化胺和咪唑啉。其中我们在清洁产品中最常见的是甜菜碱类，就是“xx甜菜碱”，譬如烷基二甲基甜菜碱、烷基二甲基磺乙基甜菜碱等等，旁氏米粹就是氨基酸复配两性的洁面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;%5Bhttp://www.cosdna.com/chs/%5D(http://www.cosdna.com/chs/)&#34;&gt;成分查询&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/</guid>
+            <title>防火</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-背景&#34;&gt;&lt;a href=&#34;#1-背景&#34; class=&#34;headerlink&#34; title=&#34;1 背景&#34;&gt;&lt;/a&gt;1 背景&lt;/h1&gt;&lt;h2 id=&#34;1-1-火灾数据统计&#34;&gt;&lt;a href=&#34;#1-1-火灾数据统计&#34; class=&#34;headerlink&#34; title=&#34;1.1 火灾数据统计&#34;&gt;&lt;/a&gt;1.1 火灾数据统计&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;中国&lt;/th&gt;
+&lt;th&gt;美国&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;2019 年接报火灾 23.3 万，亡 1335 人，伤 837 人&lt;/td&gt;
+&lt;td&gt;2019 年接报火灾 130 万，亡 3700 人，伤 16600 人&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;居民住宅火灾 10.4万 44.8%，1045 人死亡，占总死亡数 78.3%&lt;/td&gt;
+&lt;td&gt;居民住宅火灾 33.8 万 26%，构成了 75% 的伤亡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;52% 电气引起（家用电器、老化线路、电动车）&lt;/td&gt;
+&lt;td&gt;2018 年，51% 做饭引起，电器故障 6.8%，供暖设备 9.4%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;夜间火灾&lt;/strong&gt; 4.9万，占总数的20.8%，亡人占总数的 48.1%&lt;/td&gt;
+&lt;td&gt;超过半数的居民住宅死亡发生在夜间，62 % 由于没有烟感&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;老龄人口占总人口 16.2%，占火灾死亡人数 36.2%&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;5 岁以下儿童和 65 岁以上老人&lt;/strong&gt;面临的风险较大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;http://news.cntv.cn/2014/08/18/ARTI1408329854149714.shtml&#34;&gt;家庭灭火器比例 0.1% 2012年&lt;/a&gt;&lt;br /&gt;商家：没见什么人买来放家里用（中山市 2019年12月）&lt;/td&gt;
+&lt;td&gt;至少 75% 家庭有灭火器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;烟感比例查不到&lt;/td&gt;
+&lt;td&gt;2012-2016 消防局，74% 有烟感，53% 火灾时报警了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;1-2-火灾案例&#34;&gt;&lt;a href=&#34;#1-2-火灾案例&#34; class=&#34;headerlink&#34; title=&#34;1.2 火灾案例&#34;&gt;&lt;/a&gt;1.2 火灾案例&lt;/h2&gt;&lt;h3 id=&#34;1-2-1-2009-央视大火案&#34;&gt;&lt;a href=&#34;#1-2-1-2009-央视大火案&#34; class=&#34;headerlink&#34; title=&#34;1.2.1 2009 央视大火案&#34;&gt;&lt;/a&gt;1.2.1 2009 央视大火案&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;6寸礼花弹在160米高空绽放，而央视配楼高度是159米。高温星体落入北配楼主体建筑顶部擦窗机检修孔内，引燃检修通道内壁裸露的易燃材料从而引发火灾&lt;/li&gt;
+&lt;li&gt;到达14层后，消防员带的水已经用光，按照消防惯例，应寻找楼内水源。消防员当时通过呼叫器与楼下联络，得知25楼有水，消防员跑上去放水，水却放不出来。跑了好几个楼层，都是同样的结果&lt;/li&gt;
+&lt;li&gt;央视的这座大楼尚在施工过程中，内部的灭火体系未能投入使用&lt;/li&gt;
+&lt;li&gt;张建勇在自己没有任何保障的情况下，毅然将自己的空气呼吸器给被困人员戴上，自己则因吸入大量有毒气体于2月10日1时30分抢救无效殉职&lt;/li&gt;
+&lt;li&gt;使用大量不合格保温板&lt;/li&gt;
+&lt;li&gt;新中国成立以来建筑物燃烧最快的一例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-2-2-2017-西伦敦格伦费尔塔大火&#34;&gt;&lt;a href=&#34;#1-2-2-2017-西伦敦格伦费尔塔大火&#34; class=&#34;headerlink&#34; title=&#34;1.2.2 2017 西伦敦格伦费尔塔大火&#34;&gt;&lt;/a&gt;1.2.2 2017 西伦敦格伦费尔塔大火&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.bbc.com/zhongwen/trad/uk-40277325&#34;&gt;伦敦高层公寓楼大火 我们知道什么？&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;政府福利房，24 层 67米，火势蔓延快&lt;/li&gt;
+&lt;li&gt;曾因警告过安全隐患，只有一个出口，楼道垃圾，灭火器过期，4 年没检查消防设备&lt;/li&gt;
+&lt;li&gt;00:50 冰箱起火，烟雾报警器叫醒，00:54 报警，01:00 到达现场&lt;/li&gt;
+&lt;li&gt;在 2 楼连接水管，设立指挥花费 7 分钟，01:07&lt;/li&gt;
+&lt;li&gt;01:08 火焰越过窗框，点燃保温板，01:30 火焰达到楼顶&lt;/li&gt;
+&lt;li&gt;01:30 - 01:40 25 辆消防车。烟进入楼梯间，尽管有烟，但至少仍有 30 分钟逃生时间&lt;/li&gt;
+&lt;li&gt;通信不好导致，营救人员的信息要写纸上交给室内指挥官。一名 12 岁女孩从 20 层逃到 23 层，结果没被消防员发现而死亡&lt;/li&gt;
+&lt;li&gt;02:20 楼梯间的烟达到致命级别&lt;/li&gt;
+&lt;li&gt;02:47 宣布放弃原地留守措施（火没烧到的居民原地留守）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;逃生人数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By 01:18, 34 of 293 residents had escaped&lt;/li&gt;
+&lt;li&gt;01:18 and 01:38, 110 escaped&lt;/li&gt;
+&lt;li&gt;Evacuation rates slowed, with 20 escaping between 01:38 and 01:58&lt;/li&gt;
+&lt;li&gt;More than half of those still trapped at 01:58 were killed, while 48 were rescued between 01:58 and 03:58&lt;/li&gt;
+&lt;li&gt;最高层只有两人获救&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-2-3-2020-沈阳浑南区SR国际新城&#34;&gt;&lt;a href=&#34;#1-2-3-2020-沈阳浑南区SR国际新城&#34; class=&#34;headerlink&#34; title=&#34;1.2.3 2020 沈阳浑南区SR国际新城&#34;&gt;&lt;/a&gt;1.2.3 2020 沈阳浑南区SR国际新城&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;SR国际新城102号楼A座509号房间东侧屋内，起火原因系住户刘某某使用的插排电源线发生故障引燃周围可燃物引发火灾&lt;/li&gt;
+&lt;li&gt;犯罪嫌疑人刘某某因涉嫌失火罪已被公安机关依法予以刑事拘留&lt;/li&gt;
+&lt;li&gt;短短数分钟，火苗就从5层顺着外墙保温材料蔓延至25层&lt;/li&gt;
+&lt;li&gt;2018年修订的《建筑设计防火规范》规定，建筑的内、外保温系统，宜采用燃烧性能为A级(不燃)的保温材料，不宜采用B2级(普通可燃)保温材料，严禁采用B3级(易燃)保温材料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-3-为何要防火&#34;&gt;&lt;a href=&#34;#1-3-为何要防火&#34; class=&#34;headerlink&#34; title=&#34;1.3 为何要防火&#34;&gt;&lt;/a&gt;1.3 为何要防火&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;估计成年人一年内遭遇火灾概率 0.1% - 2%&lt;/li&gt;
+&lt;li&gt;参考 &lt;a href=&#34;https://www.quora.com/What-are-the-chances-that-my-house-burns-down&#34;&gt;What are the chances that my house burns down?&lt;/a&gt;&lt;br&gt;  成年人一年内遭遇火灾 1.2 % （澳大利亚 Mean Annual Probability Of Having A Residential Fire）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-4-相关法律&#34;&gt;&lt;a href=&#34;#1-4-相关法律&#34; class=&#34;headerlink&#34; title=&#34;1.4 相关法律&#34;&gt;&lt;/a&gt;1.4 相关法律&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;失火罪是指由于行为人的过失引起火灾，造成严重后果，危害公共安全的行为，处三年以上七年以下有期徒刑；情节较轻的，处三年以下有期徒刑或者拘役&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;2014年1月11号凌晨，一场大火将云南香格里拉县独克宗古城建筑烧毁了一大半，火灾烧损房屋直接财产损失达人民币8980多万元。后来经过调查取证，起火的部位是一家客栈经营者唐某的卧室，是唐某在卧室内使用取暖器不当引发了火灾。最终，唐某犯失火罪被判处有期徒刑5年&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-起火应对&#34;&gt;&lt;a href=&#34;#2-起火应对&#34; class=&#34;headerlink&#34; title=&#34;2 起火应对&#34;&gt;&lt;/a&gt;2 起火应对&lt;/h1&gt;&lt;h2 id=&#34;2-1-火灾种类&#34;&gt;&lt;a href=&#34;#2-1-火灾种类&#34; class=&#34;headerlink&#34; title=&#34;2.1 火灾种类&#34;&gt;&lt;/a&gt;2.1 火灾种类&lt;/h2&gt;&lt;p&gt;中国、欧洲、澳大利亚分类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A型：燃烧固体燃料的火，包括木头、布料、橡胶、纸张和某些塑料。&lt;/li&gt;
+&lt;li&gt;B型：燃烧液体或可液化燃料的火，包括石油、汽油、油、油漆、一些蜡和塑料，但不包括烹调用的脂肪和油。&lt;/li&gt;
+&lt;li&gt;C型：燃烧气体燃料的火，包括天然气、氢气、丙烷、丁烷。&lt;/li&gt;
+&lt;li&gt;D型：燃烧可燃烧金属的火，包括钠、镁、钾。&lt;/li&gt;
+&lt;li&gt;E型：任何A型或B型的火若发生在电器、电线或任何带电体旁边皆属此类。控制火势时不能使用任何导电物体，否则有可能被电击。&lt;/li&gt;
+&lt;li&gt;F型：燃烧烹调用脂肪和油的火。由于其温度常常远高于其他B型火，因此一般灭火器都无效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-2-工具使用&#34;&gt;&lt;a href=&#34;#2-2-工具使用&#34; class=&#34;headerlink&#34; title=&#34;2.2 工具使用&#34;&gt;&lt;/a&gt;2.2 工具使用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;注意：灭火工具只能用于&lt;strong&gt;初期灭火&lt;/strong&gt;（火焰高度小于 25cm），无法灭火时立刻选择逃生&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-2-1-灭火器&#34;&gt;&lt;a href=&#34;#2-2-1-灭火器&#34; class=&#34;headerlink&#34; title=&#34;2.2.1 灭火器&#34;&gt;&lt;/a&gt;2.2.1 灭火器&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;适用&lt;ul&gt;
+&lt;li&gt;干粉可灭 ABCE，5 年有效期&lt;/li&gt;
+&lt;li&gt;水基，一般 3 年，个别 6 年有效期&lt;ul&gt;
+&lt;li&gt;泡沫水基 AB，不可灭电器火&lt;/li&gt;
+&lt;li&gt;水雾水基 ABE 或 ABEF，即可灭电器火，不一定灭油锅火&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不适用&lt;ul&gt;
+&lt;li&gt;干粉灭火器不能用在油锅起火&lt;/li&gt;
+&lt;li&gt;水基灭火器不能用在天然气起火，一部分水基灭火器不能用在电器火、油锅火、零下温度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;上千度高温（火场中心温度）会爆炸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;看期限，压力，稍微进入黄色可用，完全进入黄色有爆炸危险&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;上下颠倒几次，否则无效&lt;/del&gt;。目前的干粉灭火器已经&lt;a href=&#34;https://www.sohu.com/a/421295774_120209831&#34;&gt;不需要用前摇晃&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;去掉钥匙，拉保险&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;握住金属环部分，避免喷到自己。&lt;/del&gt;4KG以下没有管子&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;处在上风处。&lt;/del&gt;室内无风&lt;/li&gt;
+&lt;li&gt;压握把，对准火焰根部，左右摆动，让干粉覆盖着火区域&lt;/li&gt;
+&lt;li&gt;2KG 干粉 8 秒喷完，用完仍无法灭火选择逃离&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-2-2-灭火毯&#34;&gt;&lt;a href=&#34;#2-2-2-灭火毯&#34; class=&#34;headerlink&#34; title=&#34;2.2.2 灭火毯&#34;&gt;&lt;/a&gt;2.2.2 灭火毯&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;适用&lt;ul&gt;
+&lt;li&gt;人起火&lt;/li&gt;
+&lt;li&gt;油类起火。有争议，&lt;a href=&#34;https://www.js119.com/202108/fcad183dfc5444a7b16647be70f37090_c_77fb5c440dd54a6198f0.html&#34;&gt;中国油锅两边的手把导致灭火毯盖不严&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;角落起火不方便用灭火器时&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不适用&lt;ul&gt;
+&lt;li&gt;不能用来穿越火场，&lt;a href=&#34;https://www.zhihu.com/question/323513281/answer/719748584&#34;&gt;不隔热&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-2-3-过滤式呼吸器&#34;&gt;&lt;a href=&#34;#2-2-3-过滤式呼吸器&#34; class=&#34;headerlink&#34; title=&#34;2.2.3 过滤式呼吸器&#34;&gt;&lt;/a&gt;2.2.3 过滤式呼吸器&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;适用：只有烟无明火时&lt;/li&gt;
+&lt;li&gt;不适用：不能用来穿越火场，有高温气体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;打开包装&lt;/li&gt;
+&lt;li&gt;去掉前后两个塞子&lt;/li&gt;
+&lt;li&gt;带上&lt;/li&gt;
+&lt;li&gt;拉紧带子，避免进烟&lt;/li&gt;
+&lt;li&gt;只能用 30 分钟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-2-4-油锅起火&#34;&gt;&lt;a href=&#34;#2-2-4-油锅起火&#34; class=&#34;headerlink&#34; title=&#34;2.2.4 油锅起火&#34;&gt;&lt;/a&gt;2.2.4 油锅起火&lt;/h3&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+关油烟机 --&gt; 1{燃气管道还是钢瓶} -- 管道 --&gt; 2[&#34;慢慢把阀门关到最小&lt;br /&gt;火焰变小后关闭阀门&#34;]
+    1 -- 钢瓶 --&gt; 3[&#34;直接关闭阀门&#34;]
+2 &amp; 3 --&gt; 盖锅盖等油温冷却 -- 不行 --&gt; 灭火棒/水基灭火器 -- 不行 --&gt;灭火毯 --&gt; 逃&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;不能用水、干粉灭火器&lt;/li&gt;
+&lt;li&gt;参考 &lt;a href=&#34;https://news.cctv.com/2019/10/15/ARTIyhsmeiPkuHmK6r8KySJx191015.shtml&#34;&gt;先灭火还是先关阀门&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-2-5-插排起火&#34;&gt;&lt;a href=&#34;#2-2-5-插排起火&#34; class=&#34;headerlink&#34; title=&#34;2.2.5 插排起火&#34;&gt;&lt;/a&gt;2.2.5 插排起火&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;可不关电，使用防火毯&lt;/li&gt;
+&lt;li&gt;可不关电，使用干粉灭火器（一部分水基灭火器可灭电火）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-2-6-身上起火&#34;&gt;&lt;a href=&#34;#2-2-6-身上起火&#34; class=&#34;headerlink&#34; title=&#34;2.2.6 身上起火&#34;&gt;&lt;/a&gt;2.2.6 身上起火&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;停下，双手捂脸，滚动&lt;/li&gt;
+&lt;li&gt;灭火毯&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-3-逃生路线&#34;&gt;&lt;a href=&#34;#2-3-逃生路线&#34; class=&#34;headerlink&#34; title=&#34;2.3 逃生路线&#34;&gt;&lt;/a&gt;2.3 逃生路线&lt;/h2&gt;&lt;p&gt;参考台湾 &lt;a href=&#34;https://www.tfdp.com.tw/cht/index.php?code=list&amp;ids=157&#34;&gt;防灾宣导教学手册-火灾预防及应变&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+    大叫通知他人/打119 --&gt;
+    1{&#34;火在门外还是身旁？&#34;} -- 门外 --&gt; 2{&#34;门把手是否烫？&#34;} -- 是 --&gt; 10[&#34;塞门缝/向门泼水&#34;] --&gt; 找出灭火相关设备 --&gt; 开窗前一定关门 --&gt; 躲到有窗户的房间求救 &amp; 从窗逃生
+        躲到有窗户的房间求救 --&gt; 手电 &amp; 哨子
+        从窗逃生 --&gt; 缓降器/绳子 &amp; 手套
+        1 -- 身旁 --&gt; 9{&#34;着火初期&lt;br /&gt;火焰在 25cm 以下？&#34;} -- 否 --&gt; 楼梯逃生
+            9 -- 是 --&gt; 11{&#34;尝试灭火？&#34;} -- 无法灭火 --&gt; 楼梯逃生
+                11 -- 火熄灭 --&gt; 安全
+
+    2 -- 否 --&gt; 3{&#34;门外是否有烟？&#34;} -- 否 --&gt; 6[&#34;带呼吸器、灭火毯、手电&#34;] --&gt; 楼梯逃生
+        3 -- 是 --&gt; 5{&#34;窗外外墙是否有火？&lt;br /&gt;建筑、室内装潢是否易燃？&lt;br /&gt;门不防火？&#34;} -- 任意问题为是时 --&gt; 不适合躲在室内 --&gt; 6
+            5 -- 全否 --&gt; 10
+        
+    楼梯逃生 --&gt; 随手关门 --&gt; 平常楼梯 &amp; 消防通道 --&gt; 7{&#34;有黑色浓烟/有火无法逃生？&#34;} -- 是 --&gt; 8{&#34;楼顶未锁&lt;br /&gt;且带了呼吸器？&#34;} -- 否 --&gt; 返回室内
+        7 -- 否 --&gt; 顺利逃到室外
+        8 -- 是 --&gt; 楼顶逃生&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;原则：小火快逃，浓烟关门&lt;/li&gt;
+&lt;li&gt;不要做&lt;ul&gt;
+&lt;li&gt;躲到浴室&lt;/li&gt;
+&lt;li&gt;找湿毛巾，湿棉被&lt;/li&gt;
+&lt;li&gt;烟上升速度大于人跑的速度，不要轻易选择楼顶逃生。顶楼如锁门，浓烟因为烟囱效应会聚集在这里&lt;/li&gt;
+&lt;li&gt;遇到高温黑烟和火时要返回，&lt;strong&gt;不要强行穿越火场&lt;/strong&gt;，有呼吸器也无法防护高温气体&lt;/li&gt;
+&lt;li&gt;用电梯&lt;/li&gt;
+&lt;li&gt;爬行逃生，容易被踩&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;楼梯逃生时&lt;ul&gt;
+&lt;li&gt;小心光亮，可能是火&lt;/li&gt;
+&lt;li&gt;放低身体&lt;/li&gt;
+&lt;li&gt;注意 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/../%E9%98%B2%E7%81%BE/#%E8%B8%A9%E8%B8%8F%E4%BA%8B%E6%95%85&#34;&gt;踩踏事故&lt;/a&gt; ，了解如何逃生&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/../%E9%98%B2%E7%81%AB/%E7%81%AB%E7%81%BD%E9%80%83%E7%94%9F%E9%81%BF%E9%9B%A3%E6%B5%81%E7%A8%8B.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-防火&#34;&gt;&lt;a href=&#34;#3-防火&#34; class=&#34;headerlink&#34; title=&#34;3 防火&#34;&gt;&lt;/a&gt;3 防火&lt;/h1&gt;&lt;h2 id=&#34;3-1-守则&#34;&gt;&lt;a href=&#34;#3-1-守则&#34; class=&#34;headerlink&#34; title=&#34;3.1 守则&#34;&gt;&lt;/a&gt;3.1 守则&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;10A 插座最大承受 2200瓦功率，插排串插排时要算总功率&lt;/li&gt;
+&lt;li&gt;10 年以上老家电有隐患&lt;/li&gt;
+&lt;li&gt;取暖器，远离可燃易燃物品&lt;/li&gt;
+&lt;li&gt;易燃杂物堆积&lt;/li&gt;
+&lt;li&gt;燃气忘关，或被浇灭&lt;/li&gt;
+&lt;li&gt;吸烟&lt;/li&gt;
+&lt;li&gt;烧香&lt;/li&gt;
+&lt;li&gt;电动车充电放室外专用充电桩，避免过充，最快 6 秒爆炸&lt;/li&gt;
+&lt;li&gt;灶台前用报纸包上的墙壁&lt;/li&gt;
+&lt;li&gt;保证逃生通道畅通，否则投诉物业&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-2-防火设备和定期检查&#34;&gt;&lt;a href=&#34;#3-2-防火设备和定期检查&#34; class=&#34;headerlink&#34; title=&#34;3.2 防火设备和定期检查&#34;&gt;&lt;/a&gt;3.2 防火设备和定期检查&lt;/h2&gt;&lt;p&gt;见 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/&#34;&gt;应急物品清单&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-3-设计逃生路线&#34;&gt;&lt;a href=&#34;#3-3-设计逃生路线&#34; class=&#34;headerlink&#34; title=&#34;3.3 设计逃生路线&#34;&gt;&lt;/a&gt;3.3 设计逃生路线&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;火势蔓延迅速，因此要装烟雾报警器，提前设计和演练逃生路线&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/35170293&#34;&gt;家庭烟雾警报器是如何救命的？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;起火仅 5 分钟左右，浓烟即达到最大，家庭火灾 &lt;a href=&#34;http://news.sina.com.cn/c/2016-09-10/doc-ifxvukuq4105336.shtml&#34;&gt;黄金逃生时间仅 3-5 分钟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;报警声响起只有 2 分左右的时间可以安全地逃生，71%的美国人制定了在发生火灾时的逃生计划，但是，仅有47%的人演练了该计划。（波特兰市消防局）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-4-理论测试&#34;&gt;&lt;a href=&#34;#3-4-理论测试&#34; class=&#34;headerlink&#34; title=&#34;3.4 理论测试&#34;&gt;&lt;/a&gt;3.4 理论测试&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;哪两类人群在火灾中面临的风险大？&lt;/li&gt;
+&lt;li&gt;烟雾报警器是否有必要安装？为什么？&lt;/li&gt;
+&lt;li&gt;烟雾报警器响起后有多久的逃生时间？&lt;/li&gt;
+&lt;li&gt;干粉灭火器不能灭什么火？&lt;/li&gt;
+&lt;li&gt;水基灭火器不能灭什么火？&lt;/li&gt;
+&lt;li&gt;油锅起火第一步是？&lt;/li&gt;
+&lt;li&gt;油锅起火如何关阀门？&lt;/li&gt;
+&lt;li&gt;液化气着火时应该使用哪种灭火器灭火？&lt;/li&gt;
+&lt;li&gt;使用灭火器的第一步是？&lt;/li&gt;
+&lt;li&gt;发现着火后要做的第一步是？&lt;/li&gt;
+&lt;li&gt;火场逃生的原则是？&lt;/li&gt;
+&lt;li&gt;开门后发现有烟但没有火，是否要穿越过去逃生？&lt;/li&gt;
+&lt;li&gt;哪些情况下适合关门室内避难？哪些情况不适合？&lt;/li&gt;
+&lt;li&gt;身上着火如何灭火？&lt;/li&gt;
+&lt;li&gt;火灾逃生时发生了踩踏，如何应对？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/</guid>
+            <title>锻炼</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/</guid>
+            <title>物理环境框架</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
+物理环境 --&gt; 人 &amp; 周围环境
+    人 --&gt; 身体健康 &amp; 心理健康
+        身体健康 --&gt; 意外 &amp; 疾病
+            意外 --&gt; 防火 &amp; 急救 &amp; 防灾 &amp; 保险 &amp; 应急物品清单
+                防火 &amp; 急救 &amp; 防灾 --&gt; 疾病
+            疾病 --&gt; 锻炼 &amp; 食物 &amp; 体检 &amp; 保险
+        心理健康 --&gt; 冥想 &amp; 朋友
+    周围环境 --&gt; 理财 &amp; 朋友
+        理财 --&gt; 物品选购&lt;/pre&gt;
+
+
+&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/</guid>
+            <title>食物</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nh.ckcest.cn/default/page/loadPageIndex?pageId=40a8e21962e945a9b8b94e9729b32aee&#34;&gt;各国居民膳食营养素参考摄入量查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;asset 中 “美国居民膳食指南（2020-2025）”的中英文 pdf&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/</guid>
+            <title>防灾</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-地震&#34;&gt;&lt;a href=&#34;#1-地震&#34; class=&#34;headerlink&#34; title=&#34;1 地震&#34;&gt;&lt;/a&gt;1 地震&lt;/h1&gt;&lt;p&gt;&lt;a id=&#34;xn06&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发生前&lt;ul&gt;
+&lt;li&gt;与家人约定集合地点，避难点，公园、学校&lt;/li&gt;
+&lt;li&gt;准备 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/#%E9%A3%9F%E7%89%A9&#34;&gt;食物&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生时，&lt;a href=&#34;https://www.usgs.gov/faqs/what-should-i-do-during-earthquake&#34;&gt;What should I do DURING an earthquake?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;室内&amp;#x2F;室外，跪下、掩护、抓牢，&lt;a href=&#34;https://www.shakeout.org/dropcoverholdon/&#34;&gt;DROP, COVER, AND HOLD ON!&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;跪下，不要往室外跑&lt;/li&gt;
+&lt;li&gt;掩护头颈，桌子、枕头、书包、双手。爬，远离窗户、非承重墙、阳台、重家具、会掉落物品的地方&lt;/li&gt;
+&lt;li&gt;抓牢遮挡物，抓桌腿&lt;br&gt; &lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E9%98%B2%E7%81%BE/giphy.gif&#34; alt=&#34;跪下、掩护、抓牢&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;开车，待在车里，同样远离坠落物避险&lt;/li&gt;
+&lt;li&gt;地震可能造成海啸和泥石流，要尽快远离海边、山脚，前往高处&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生后&lt;ul&gt;
+&lt;li&gt;被困时&lt;ul&gt;
+&lt;li&gt;用东西支撑住身边可能掉落的重物&lt;/li&gt;
+&lt;li&gt;节省体力，寻找水和食物&lt;/li&gt;
+&lt;li&gt;以规律性敲击或光亮求救，确定有人再大声呼救&lt;/li&gt;
+&lt;li&gt;防范挤压综合征，&lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E6%80%A5%E6%95%91/#xFVn&#34;&gt;急救-挤压伤&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;没被困，需要避难时&lt;ol&gt;
+&lt;li&gt;关闭家中水电煤&lt;/li&gt;
+&lt;li&gt;电话通知（打不通时发短信）或给家人留下字条&lt;/li&gt;
+&lt;li&gt;不要乘电梯&lt;/li&gt;
+&lt;li&gt;去约定的避难点&lt;/li&gt;
+&lt;li&gt;小心余震，避开悬挂物、电线、玻璃&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-洪水-泥石流-台风&#34;&gt;&lt;a href=&#34;#2-洪水-泥石流-台风&#34; class=&#34;headerlink&#34; title=&#34;2 洪水/泥石流/台风&#34;&gt;&lt;/a&gt;2 洪水/泥石流/台风&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;准备&lt;ul&gt;
+&lt;li&gt;注意极端天气，橙、红色预警&lt;/li&gt;
+&lt;li&gt;泥石流前兆，传来火车般的响声&lt;/li&gt;
+&lt;li&gt;沙袋挡水&lt;/li&gt;
+&lt;li&gt;台风，窗户贴成米字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生时&lt;ul&gt;
+&lt;li&gt;电话求救&lt;/li&gt;
+&lt;li&gt;高处转移，与泥石流垂直的两边高处爬&lt;/li&gt;
+&lt;li&gt;把身体绑在固定物上&lt;/li&gt;
+&lt;li&gt;做简易救生筏&lt;/li&gt;
+&lt;li&gt;远离电线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-踩踏事故&#34;&gt;&lt;a href=&#34;#3-踩踏事故&#34; class=&#34;headerlink&#34; title=&#34;3 踩踏事故&#34;&gt;&lt;/a&gt;3 踩踏事故&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;发生条件，&lt;a href=&#34;https://www.youtube.com/watch?v=k-q8okcgq3Q&#34;&gt;原理介绍视频&lt;/a&gt;、&lt;a href=&#34;https://www.youtube.com/watch?v=cjUSrkC4wcA&#34;&gt;回形针视频&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;人群密度大&lt;/li&gt;
+&lt;li&gt;成拱现象：存在一个狭窄的口，人群想尽快从这个口逃离&lt;/li&gt;
+&lt;li&gt;异向集群：两种人群从这个口反向通过&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生前&lt;ul&gt;
+&lt;li&gt;去人多的地方时留意有几个出口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;死因：摔倒、胸部压迫&lt;/li&gt;
+&lt;li&gt;发生时，&lt;a href=&#34;http://m.xinhuanet.com/sd/2019-02/19/c_1124131264.htm&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://www.artofmanliness.com/skills/outdoor-survival/survive-human-stampede/&#34;&gt;参考2&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;双臂交叉撑开胸前（向打拳击一样），留出呼吸空间&lt;/li&gt;
+&lt;li&gt;顺着人群&lt;/li&gt;
+&lt;li&gt;避开人多出口、狭窄通道&lt;/li&gt;
+&lt;li&gt;慢慢对角移到侧边&lt;/li&gt;
+&lt;li&gt;从不显眼的出口离开&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;如果摔倒且无法起来&lt;ul&gt;
+&lt;li&gt;两手十指交叉相扣，护住后脑和颈部&lt;/li&gt;
+&lt;li&gt;两肘向前，护住头部&lt;/li&gt;
+&lt;li&gt;双膝尽量前屈，护住胸腔和腹腔重要脏器&lt;/li&gt;
+&lt;li&gt;侧躺在地&lt;/li&gt;
+&lt;li&gt;尝试站起&lt;br&gt;  &lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E9%98%B2%E7%81%BE/Pasted%20image%2020211023000247.png&#34; alt=&#34;踩踏摔倒&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-理论测试&#34;&gt;&lt;a href=&#34;#4-理论测试&#34; class=&#34;headerlink&#34; title=&#34;4 理论测试&#34;&gt;&lt;/a&gt;4 理论测试&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;与家人约定的地震避难场所是哪里？&lt;/li&gt;
+&lt;li&gt;地震发生时，低楼层（如一楼）是否应该跑到室外？&lt;/li&gt;
+&lt;li&gt;地震发生时的避难原则是什么？&lt;/li&gt;
+&lt;li&gt;地震发生后，被困时如何求救？&lt;/li&gt;
+&lt;li&gt;压迫肢体很久的重物被移走时会有什么风险？&lt;/li&gt;
+&lt;li&gt;发生踩踏时，如何应对脱险？&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%90%86%E8%B4%A2/</guid>
+            <title>理财</title>
+            <link>https://2-3-5-7.github.io/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%90%86%E8%B4%A2/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-入场准备&#34;&gt;&lt;a href=&#34;#1-入场准备&#34; class=&#34;headerlink&#34; title=&#34;1 入场准备&#34;&gt;&lt;/a&gt;1 入场准备&lt;/h1&gt;&lt;p&gt;回答下面 3 个问题，并给出 &lt;u&gt;&lt;strong&gt;数据证明&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;搞懂底层逻辑，投进去的钱用来干嘛了？为啥能赚钱？&lt;/li&gt;
+&lt;li&gt;最多损失多少？&lt;/li&gt;
+&lt;li&gt;我能否承受这些损失？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;只要&lt;strong&gt;收益超过 10&lt;/strong&gt;，至少要读几本书回答前 3 个问题后，再开始少量配置&lt;/li&gt;
+&lt;li&gt;跑路征兆&lt;ul&gt;
+&lt;li&gt;鼓励购买 1. 提高收益 2. 产品要下架威胁&lt;/li&gt;
+&lt;li&gt;管理层变动&lt;/li&gt;
+&lt;li&gt;负面新闻增多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;跑路后期&lt;ul&gt;
+&lt;li&gt;客服响应慢&lt;/li&gt;
+&lt;li&gt;提现困难&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-如何财务自由&#34;&gt;&lt;a href=&#34;#2-如何财务自由&#34; class=&#34;headerlink&#34; title=&#34;2 如何财务自由&#34;&gt;&lt;/a&gt;2 如何财务自由&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;不乱花钱，记账，理性消费，拿来购买资产，比如：裁剪或降级可选消费，必需品囤积一个季度&lt;/li&gt;
+&lt;li&gt;不浪费时间，投入到有前途的事业中，比如：住的离公司近些&lt;/li&gt;
+&lt;li&gt;心理转变，勤奋、耐心，贫富差距是思维、心理上的不耐、懒惰&lt;/li&gt;
+&lt;li&gt;最终有大量钱生钱的资产，就可以有时间和钱做想做的事，即财务自由&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;3-指数基金&#34;&gt;&lt;a href=&#34;#3-指数基金&#34; class=&#34;headerlink&#34; title=&#34;3 指数基金&#34;&gt;&lt;/a&gt;3 指数基金&lt;/h1&gt;&lt;p&gt;巴菲特遗产 90% 购买指数基金，主动基金是辅助，以指数基金为主，&lt;strong&gt;最大 30% 的亏损&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-1-宽基指数&#34;&gt;&lt;a href=&#34;#3-1-宽基指数&#34; class=&#34;headerlink&#34; title=&#34;3.1 宽基指数&#34;&gt;&lt;/a&gt;3.1 宽基指数&lt;/h2&gt;&lt;p&gt;市值加权&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;上证50、沪深300，大盘&lt;/li&gt;
+&lt;li&gt;中证500，中盘&lt;/li&gt;
+&lt;li&gt;创业板&lt;/li&gt;
+&lt;li&gt;恒生，香港大盘&lt;/li&gt;
+&lt;li&gt;H股，香港上市的内地公司&lt;/li&gt;
+&lt;li&gt;香港中小指数&lt;/li&gt;
+&lt;li&gt;纳斯达克 100&lt;/li&gt;
+&lt;li&gt;标普 500&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-2-策略加权&#34;&gt;&lt;a href=&#34;#3-2-策略加权&#34; class=&#34;headerlink&#34; title=&#34;3.2 策略加权&#34;&gt;&lt;/a&gt;3.2 策略加权&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;红利，股息率，4 种红利指数&lt;/li&gt;
+&lt;li&gt;基本面，营业收入、现金流、净资产、分红&lt;/li&gt;
+&lt;li&gt;价值，市盈率、市净率、市现率、股息率&lt;/li&gt;
+&lt;li&gt;低波动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-3-行业指数&#34;&gt;&lt;a href=&#34;#3-3-行业指数&#34; class=&#34;headerlink&#34; title=&#34;3.3 行业指数&#34;&gt;&lt;/a&gt;3.3 行业指数&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;风险高，辅助投资&lt;/li&gt;
+&lt;li&gt;10 个一级行业 (GICS)，投资两类，天生容易赚钱，强周期性行业&lt;/li&gt;
+&lt;li&gt;容易赚钱：必须消费、医药行业、可选消费等，市场需求高、利润高（有护城河）、再投入需求小&lt;/li&gt;
+&lt;li&gt;周期行业：金融、地产、能源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-估值&#34;&gt;&lt;a href=&#34;#4-估值&#34; class=&#34;headerlink&#34; title=&#34;4 估值&#34;&gt;&lt;/a&gt;4 估值&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;估值指标&lt;/th&gt;
+&lt;th&gt;计算&lt;/th&gt;
+&lt;th&gt;适用&lt;/th&gt;
+&lt;th&gt;应用公式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;净利润&lt;/td&gt;
+&lt;td&gt;静态&amp;#x2F;滚动&amp;#x2F;中位数市盈率 PE &amp;#x3D; P &amp;#x2F; E&lt;br /&gt;盈利收益率为 E &amp;#x2F; P&lt;/td&gt;
+&lt;td&gt;盈利稳定增长大于 10%&lt;/td&gt;
+&lt;td&gt;PEG 1-2，同时 PE 历史低位为低估&lt;br /&gt;PEG &amp;gt; 2 且 PE 历史高位为高估&lt;br /&gt;美联储 FED: 盈利收益率&amp;#x2F;十年期国债利率&lt;br /&gt;年复合收益率 &amp;#x3D; 初始股息率 + PE 变化率 + 盈利增长率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;净资产（资产-负债）&lt;/td&gt;
+&lt;td&gt;市净率 PB &amp;#x3D; P &amp;#x2F; B&lt;/td&gt;
+&lt;td&gt;无形资产不适用&lt;br /&gt;用于盈利周期性行业，经济危机&lt;/td&gt;
+&lt;td&gt;年复合收益率 &amp;#x3D; PB 变化率 + 净资产变化率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;净资产收益率，ROE (Return on Equity) &amp;#x3D; E &amp;#x2F; B &amp;#x3D; PB &amp;#x2F; PE&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;分红&lt;/td&gt;
+&lt;td&gt;股息率 &amp;#x3D; D &amp;#x2F; P，分红率 &amp;#x3D; D &amp;#x2F; E&lt;br /&gt;DP &amp;#x3D; DE * EP，分红率往往不变，因此 DP 和 EP 正相关&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;盈利保持不变，与债券相同评估方法，现金流收益率&lt;br /&gt;盈利大起大落、盈利衰退的不评估&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;5-交易&#34;&gt;&lt;a href=&#34;#5-交易&#34; class=&#34;headerlink&#34; title=&#34;5 交易&#34;&gt;&lt;/a&gt;5 交易&lt;/h1&gt;&lt;h2 id=&#34;5-1-资金分配&#34;&gt;&lt;a href=&#34;#5-1-资金分配&#34; class=&#34;headerlink&#34; title=&#34;5.1 资金分配&#34;&gt;&lt;/a&gt;5.1 资金分配&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;股票基金（指数为主、极少量主动） &amp;#x3D; 工资 - 保险预留 - 备用金预留（债券基金、银行理财） - 生活消费（短期理财 &amp;#x3D; 信用卡账单 + 余量）&lt;/li&gt;
+&lt;li&gt;3 年内不用的钱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-2-选择基金&#34;&gt;&lt;a href=&#34;#5-2-选择基金&#34; class=&#34;headerlink&#34; title=&#34;5.2 选择基金&#34;&gt;&lt;/a&gt;5.2 选择基金&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;宽基、策略指数为主，优秀行业为辅，排除衰退行业&lt;/li&gt;
+&lt;li&gt;国内为主，海外为辅，海外通过经济增速判断&lt;/li&gt;
+&lt;li&gt;优先选择场内，注意套利差价，没有再选择场外&lt;/li&gt;
+&lt;li&gt;选择，规模大、追踪误差小、费用低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-3-买入&#34;&gt;&lt;a href=&#34;#5-3-买入&#34; class=&#34;headerlink&#34; title=&#34;5.3 买入&#34;&gt;&lt;/a&gt;5.3 买入&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参考估值表，低估买入&lt;/li&gt;
+&lt;li&gt;已持有的低估指数，越下跌买的越多&lt;/li&gt;
+&lt;li&gt;避免指数过于相关，即避免投资重合&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;待完善&lt;/strong&gt;，首先，长期收益率越高买入比例越多（国家 GDP），其次越低估买入比例越多(PE 在历史的比例)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-4-卖出&#34;&gt;&lt;a href=&#34;#5-4-卖出&#34; class=&#34;headerlink&#34; title=&#34;5.4 卖出&#34;&gt;&lt;/a&gt;5.4 卖出&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;基本面恶化，国家经济不好&lt;/li&gt;
+&lt;li&gt;梯度止盈，越高估卖出越多，10% ×（24&amp;#x2F;20）^2&amp;#x3D;14.4%&lt;/li&gt;
+&lt;li&gt;类似的基金更便宜（低估）&lt;/li&gt;
+&lt;li&gt;股息率大于 4% 可以长期持有不卖出，享受分红&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-执行与心理&#34;&gt;&lt;a href=&#34;#6-执行与心理&#34; class=&#34;headerlink&#34; title=&#34;6 执行与心理&#34;&gt;&lt;/a&gt;6 执行与心理&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;少量投资指数基金，可以作为保本理财&lt;/li&gt;
+&lt;li&gt;计划落实到文档，并不断优化&lt;/li&gt;
+&lt;li&gt;掌握的三个等级，学习、实践、传授&lt;/li&gt;
+&lt;li&gt;不遵守计划，人性的贪婪和恐惧将让自己吃亏&lt;/li&gt;
+&lt;li&gt;涨跌对心理的考验，即使低估值也会短期下跌，因为受到供求关系影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-短期理财&#34;&gt;&lt;a href=&#34;#7-短期理财&#34; class=&#34;headerlink&#34; title=&#34;7 短期理财&#34;&gt;&lt;/a&gt;7 短期理财&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;货币基金与互联网银行理财对比，选择收益高的&lt;/li&gt;
+&lt;li&gt;注意服务费，B 类货币基金没有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;8-中期固收理财&#34;&gt;&lt;a href=&#34;#8-中期固收理财&#34; class=&#34;headerlink&#34; title=&#34;8 中期固收理财&#34;&gt;&lt;/a&gt;8 中期固收理财&lt;/h1&gt;&lt;h2 id=&#34;8-1-债券基金&#34;&gt;&lt;a href=&#34;#8-1-债券基金&#34; class=&#34;headerlink&#34; title=&#34;8.1 债券基金&#34;&gt;&lt;/a&gt;8.1 债券基金&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;利率上升，债券价格下降，收益变差&lt;/li&gt;
+&lt;li&gt;中短期（1~3年）资金，买银行理财、债券基金&lt;/li&gt;
+&lt;li&gt;牛市中后期，没有低估指数基金可投，投资债券&lt;/li&gt;
+&lt;li&gt;长期看，国内所有的货币基金平均收益率在 2%&lt;del&gt;3%，债券基金在 6%&lt;/del&gt;7%，股票基金在 14% 左右&lt;/li&gt;
+&lt;li&gt;十年期国债利率的中位数 3%~3.5%，小于 3 利率低位选短期债券，大于 3.5 利率高位选长期债券&lt;/li&gt;
+&lt;li&gt;随时可以投资，出现浮亏可以加仓拉低成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-2-银行理财&#34;&gt;&lt;a href=&#34;#8-2-银行理财&#34; class=&#34;headerlink&#34; title=&#34;8.2 银行理财&#34;&gt;&lt;/a&gt;8.2 银行理财&lt;/h2&gt;&lt;h1 id=&#34;9-人物&#34;&gt;&lt;a href=&#34;#9-人物&#34; class=&#34;headerlink&#34; title=&#34;9 人物&#34;&gt;&lt;/a&gt;9 人物&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;巴菲特&lt;/li&gt;
+&lt;li&gt;彼得·林奇&lt;/li&gt;
+&lt;li&gt;约翰·博格的博格公式法&lt;/li&gt;
+&lt;li&gt;格雷厄姆的价值投资理念，盈利收益率法&lt;/li&gt;
+&lt;li&gt;西格尔教授的著作《股市长线法宝》、《投资者的未来》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;10-参考书&#34;&gt;&lt;a href=&#34;#10-参考书&#34; class=&#34;headerlink&#34; title=&#34;10 参考书&#34;&gt;&lt;/a&gt;10 参考书&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;指数基金投资指南&lt;/li&gt;
+&lt;li&gt;定投十年财务自由&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;11-工具&#34;&gt;&lt;a href=&#34;#11-工具&#34; class=&#34;headerlink&#34; title=&#34;11 工具&#34;&gt;&lt;/a&gt;11 工具&lt;/h1&gt;&lt;h2 id=&#34;11-1-估值表&#34;&gt;&lt;a href=&#34;#11-1-估值表&#34; class=&#34;headerlink&#34; title=&#34;11.1 估值表&#34;&gt;&lt;/a&gt;11.1 估值表&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;螺丝钉&lt;/li&gt;
+&lt;li&gt;且慢&lt;/li&gt;
+&lt;li&gt;蛋卷基金&lt;/li&gt;
+&lt;li&gt;天天基金&lt;/li&gt;
+&lt;li&gt;支付宝&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-2-定投计算器&#34;&gt;&lt;a href=&#34;#11-2-定投计算器&#34; class=&#34;headerlink&#34; title=&#34;11.2 定投计算器&#34;&gt;&lt;/a&gt;11.2 定投计算器&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://danjuanapp.com/calculator/zero?channel=2500000025&#34;&gt;蛋卷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://data.eastmoney.com/money/calc/FundCalcDTSY.html&#34;&gt;东方财富网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-3-种计算收益的方式&#34;&gt;&lt;a href=&#34;#11-3-种计算收益的方式&#34; class=&#34;headerlink&#34; title=&#34;11.3 种计算收益的方式&#34;&gt;&lt;/a&gt;11.3 种计算收益的方式&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/28494603/answer/1031012920&#34;&gt;如何计算年化收益率？&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;11-4-评估风险&#34;&gt;&lt;a href=&#34;#11-4-评估风险&#34; class=&#34;headerlink&#34; title=&#34;11.4 评估风险&#34;&gt;&lt;/a&gt;11.4 评估风险&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;负相关，且慢计算相关系数&lt;/li&gt;
+&lt;li&gt;波动即风险，夏普比率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-5-基金投资数据回测&#34;&gt;&lt;a href=&#34;#11-5-基金投资数据回测&#34; class=&#34;headerlink&#34; title=&#34;11.5 基金投资数据回测&#34;&gt;&lt;/a&gt;11.5 基金投资数据回测&lt;/h2&gt;&lt;h2 id=&#34;11-6-应避免的回测误区&#34;&gt;&lt;a href=&#34;#11-6-应避免的回测误区&#34; class=&#34;headerlink&#34; title=&#34;11.6 应避免的回测误区&#34;&gt;&lt;/a&gt;11.6 应避免的回测误区&lt;/h2&gt; ]]></description>
+        </item>
+    </channel>
+</rss>

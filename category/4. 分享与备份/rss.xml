@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>自强不息 厚德载物 • Posts by &#34;4. 分享与备份&#34; category</title>
+        <link>https://2-3-5-7.github.io</link>
+        <description>分享各种内容，方便自己与他人查阅，欢迎评论</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 01 Jan 1970 08:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/</guid>
+            <title>Kopia</title>
+            <link>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-Kopia&#34;&gt;&lt;a href=&#34;#1-Kopia&#34; class=&#34;headerlink&#34; title=&#34;1 Kopia&#34;&gt;&lt;/a&gt;1 Kopia&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;KopiaUI 程序所在目录新建 &lt;code&gt;repositories&lt;/code&gt;，实现 &lt;a href=&#34;https://github.com/kopia/kopia/pull/398&#34;&gt;portable&lt;/a&gt;、&lt;a href=&#34;https://github.com/kopia/kopia/issues/2282&#34;&gt;更详细的描述&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;VSS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;先在 &lt;code&gt;repository.config&lt;/code&gt; 中 &lt;code&gt;enableActions&lt;/code&gt; 改为 true，然后用命令配置全局 profile（因为 gui 目前有 bug）&lt;/p&gt;
+  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 命令的前部分从 GUI 里面复制&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--before-snapshot-root-action&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\before.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\after.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要清空配置传空字符串 &amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;管理员 powershell，&lt;code&gt;Set-ExecutionPolicy Unrestricted&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改 ps1 关联，用 powershell 运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;before 脚本里有调试信息，放开后可用来确认脚本执行和备份路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.ubackup.com/windows-10/shadow-copy-windows-10-4348.html&#34;&gt;查看和删除 vss&lt;/a&gt;，防止 after 脚本没执行，&lt;code&gt;vssadmin list shadows&lt;/code&gt;，&lt;code&gt;vssadmin delete shadows&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kopia.io/docs/reference/command-line/&#34;&gt;常用命令&lt;/a&gt;（软件的路径&lt;u&gt;&lt;em&gt;区分大小写&lt;/em&gt;&lt;/u&gt;，尽管 Windows 不区分）&lt;/p&gt;
+  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;repository status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy &lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show D:\&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;GUI 设置全局 policy，备份 10 个，其它为 0，忽略相同备份，zstd 压缩&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;.kopiaignore&lt;/code&gt; 文件，路径用 &lt;code&gt;/&lt;/code&gt; 分隔，且相对路径以 &lt;code&gt;/&lt;/code&gt; 起始，如 &lt;code&gt;/pagefile.sys&lt;/code&gt;、&lt;code&gt;/Windows/Temp/&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统盘排除内容可参考 dism++ 配置&lt;/li&gt;
+&lt;li&gt;ignore 内容少，直接保存到 global 中配置 Ignore Files 列表，不用 &lt;code&gt;.kopiaignore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;snapshot estimate D:\&lt;/code&gt; 确认 ignore 生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建 &lt;code&gt;snapshot create D:\&lt;/code&gt;，由于只备份一个路径（D:\），所以用 global profile 即可&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;确认备份过程是否存在错误，&lt;code&gt;snapshot ls&lt;/code&gt; 和 &lt;code&gt;show 前一个命令的 ID&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/tracking-down-backup-errors/126/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;以后，定期确认备份文件是否正确，&lt;code&gt;snap verify --verify-files-percent 1&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/best-method-to-ensure-valid-snapshots-snapshot-verify-vs-snapshot-fix-invalid-files/1217/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除的 snapshot 对应的文件会 &lt;a href=&#34;https://kopia.discourse.group/t/clearing-the-repository-after-deleting-a-snapshot/575&#34;&gt;延迟 24h 左右删除&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;diff OLDID NEWID&lt;/code&gt; 显示 snap 区别&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可手动 snap 然后 pin，pin 的 snap 不计入 &lt;code&gt;Latest Snapshots&lt;/code&gt; 的设置中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sync-to 可以暂停后恢复，而直接推送到云端，即 snap create 则不能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;推送到云端，&lt;code&gt; repository sync-to rclone --remote-path=alist_local:/阿里云盘/d_backup --rclone-exe=D:\soft\KopiaUI\rclone-alist\rclone.exe --delete --dry-run&lt;/code&gt;，实际用去掉 &lt;code&gt;--dry-run&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/configure-multiple-repositories/1194&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;对阿里云盘，初始版本用官方客户端上传更快，sync-to 速度要慢一倍&lt;/li&gt;
+&lt;li&gt;对 Onedrive，rclone + alist 的上传速度要好于只用 rclone。同样初始版本选择官方客户端，同步盘手动上传技巧&lt;ul&gt;
+&lt;li&gt;设置 onedrive 同步路径为 NOBACK 文件夹里&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;F:\FNOBACK\OneDrive - MSFT\g_backup&amp;quot; &amp;quot;F:\g_backup&amp;quot;&lt;/code&gt; 开启上传&lt;/li&gt;
+&lt;li&gt;上传后，客户端退出 Onedrive 账户，删除 OneDrive 文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;开机同步、关机备份脚本，同步可以并行，备份不能，会出错。此外备份如果添加到组策略中，会要求输入密码&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为了将关机的快捷方式固定到任务栏，需要加 &lt;code&gt;cmd /c&lt;/code&gt;，如 &lt;code&gt;C:\Windows\System32\cmd.exe /C D:\shutdown_backup.bat&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其它&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kopia 类似工具不适合备份系统，因为即使用了 VSS，甚至用 SYSTEM 用户权限执行，也会出现某些文件没权限读取，比如某些文件只能当前用户可读&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.winhelponline.com/blog/run-program-as-system-localsystem-account-windows/&#34;&gt;SYSTEM 用户执行 &lt;/a&gt;使用 PSTools，管理员 powershell，执行 &lt;code&gt;.\PsExec.exe -sid powershell&lt;/code&gt;，获得 SYSTEM 的 shell&lt;ul&gt;
+&lt;li&gt;可在任务管理器，详细信息中确认进程的用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如要用 Kopia 备份 linux，我认为可尝试 restic 相关&lt;a href=&#34;https://forum.restic.net/t/lack-of-documentation-on-how-to-do-a-full-system-back-up/659/5&#34;&gt;问答&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-1-Alist-Rclone&#34;&gt;&lt;a href=&#34;#1-1-Alist-Rclone&#34; class=&#34;headerlink&#34; title=&#34;1.1 Alist  Rclone&#34;&gt;&lt;/a&gt;1.1 Alist  Rclone&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;kopia 支持 webdav 但效果不好，所以再套一层 rclone 来上传备份&lt;/li&gt;
+&lt;li&gt;alist&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;alist start&lt;/code&gt; 启动，注意关闭命令窗口会自动退出&lt;/li&gt;
+&lt;li&gt;配置文件 &lt;code&gt;data\config.json&lt;/code&gt; 要改成高位端口，否则起不来，闪退&lt;/li&gt;
+&lt;li&gt;防火墙要放行，应该自动弹出确认&lt;/li&gt;
+&lt;li&gt;alist 也可装到 OpenWrt 上，需要添加新的源，ipk 安装，&lt;a href=&#34;https://www.bilibili.com/video/BV1qM411U7o7&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;alist 添加 onedrive &lt;a href=&#34;https://alist.nn.ci/zh/guide/drivers/onedrive_app.html&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rclone&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;rclone.conf&lt;/code&gt; 放在同一文件夹，rclone 会 &lt;a href=&#34;https://rclone.org/docs/#config-config-file&#34;&gt;自动使用&lt;/a&gt;，也可手动指定 &lt;code&gt;·--config=CONFIG_FILE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rclone config&lt;/code&gt; 进行配置向导&lt;/li&gt;
+&lt;li&gt;使用 remote path 来指定操作对象，remote 是 config 中配置的，path 是里面的路径&lt;ul&gt;
+&lt;li&gt;如对于 alist 的阿里云盘备份路径为 &lt;code&gt;alist_local:/阿里云盘/d_backup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;列出目录&lt;code&gt;rclone ls remote:path # lists a remote&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;挂载 &lt;code&gt;rclone.exe --cache-dir=rc_cache --temp-dir=rc_temp mount alist_local: Y: --vfs-cache-mode full&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;这里把 cache 和 temp 指向当前目录，用 &lt;code&gt;rclone.exe config paths&lt;/code&gt; 确认当前设置的路径&lt;/li&gt;
+&lt;li&gt;其它命令见 &lt;a href=&#34;https://rclone.org/docs/&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OneDrive E5&lt;ul&gt;
+&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=4NmPlEf4FTk&#34;&gt;科技lion&lt;/a&gt; 申请&lt;/li&gt;
+&lt;li&gt;用 &lt;a href=&#34;https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X&#34;&gt;docker&lt;/a&gt; 刷新&lt;/li&gt;
+&lt;li&gt;docker 开放的是不安全的 http，因此只监听在本地，用 ssh 做中转，类似 ssh -L 功能，&lt;a href=&#34;https://superuser.com/questions/125043/web-browsing-over-ssh&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/</guid>
+            <title>blog</title>
+            <link>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-部署&#34;&gt;&lt;a href=&#34;#1-部署&#34; class=&#34;headerlink&#34; title=&#34;1 部署&#34;&gt;&lt;/a&gt;1 部署&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;安装 git、node.js，参考 &lt;a href=&#34;https://hexo.io/zh-cn/docs/&#34;&gt;hexo 官网&lt;/a&gt;，windows、linux 有区别。git 设置 sock5 代理，见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/../git/&#34;&gt;git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥&lt;/li&gt;
+&lt;li&gt;安装 hexo 、主题、插件，主题可根据&lt;a href=&#34;https://github.com/mark0smith/Hexo_theme_stats&#34;&gt;star 排名&lt;/a&gt;来选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo init blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要在 config 中添加配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# source 目录下，关联笔记&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mklink /J _posts D:\Documents\Dropbox\notes\blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还有一个 footnote 插件从 hexo-theme-fluid 移植过来&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还有 add_assets_url.js 添加下载图标&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 所有插件可通过 hexo --debug 选项看到&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-1-Google-收录&#34;&gt;&lt;a href=&#34;#1-1-Google-收录&#34; class=&#34;headerlink&#34; title=&#34;1.1 Google 收录&#34;&gt;&lt;/a&gt;1.1 Google 收录&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;先创建 Google Analytics，添加 tracking_id 到主题配置文件，注意广告拦截和浏览器拦截&lt;/li&gt;
+&lt;li&gt;再创建 Google Search Console，用 Google Analytics 验证所有权&lt;/li&gt;
+&lt;li&gt;在 Google Analytics 选择媒体资源，Search Console 关联，进行两个产品的关联&lt;/li&gt;
+&lt;li&gt;在 Search Console 中提交站点地图 sitemap.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-使用&#34;&gt;&lt;a href=&#34;#2-使用&#34; class=&#34;headerlink&#34; title=&#34;2 使用&#34;&gt;&lt;/a&gt;2 使用&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;原则是避免手动配置 front-matter，尽量自动生成，保持界面简洁易用&lt;/li&gt;
+&lt;li&gt;常用命令&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动 server 预览&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo clean &amp;amp;&amp;amp; npx hexo s --p 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 生成（只在确认生成文件时会用到）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 不加 --generate 会导致修改不推送&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 下划线 _ 开头的文件永远不会被推送&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 此外对于 exclude 的文件，clean 后首次不推送，再执行一次就可以推送了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 所以保险起见每次执行两次这个命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo deploy --generate&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可清除博客的更新历史记录，会导致全量部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -rf .deploy_git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;后期，如果流量大，图片和 asset 放到 github 其它 repo 上，避免超过 github pages 流量 100G&amp;#x2F;月 的限制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-1-编写插件&#34;&gt;&lt;a href=&#34;#2-1-编写插件&#34; class=&#34;headerlink&#34; title=&#34;2.1 编写插件&#34;&gt;&lt;/a&gt;2.1 编写插件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;插件的 &lt;a href=&#34;https://hexo.io/zh-cn/api/filter.html&#34;&gt;优先级&lt;/a&gt; 值越低越先处理原始 md 文件，因此低优先级可避免被其它插件的处理结果影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-维护&#34;&gt;&lt;a href=&#34;#3-维护&#34; class=&#34;headerlink&#34; title=&#34;3 维护&#34;&gt;&lt;/a&gt;3 维护&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;备份：hexo 目录下所有内容（文章除外） git 记录修改，push 到 github 上&lt;/li&gt;
+&lt;li&gt;还原：&lt;ul&gt;
+&lt;li&gt;装 git、node&lt;ul&gt;
+&lt;li&gt;node 用 ppa &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04&#34;&gt;装最新版本 18.x&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从 github clone，linux 环境要卸载原 hexo，重新安装（不清楚为何不跨平台），其它插件看起来没问题&lt;ul&gt;
+&lt;li&gt;db.json 报错：&lt;code&gt;手动创建 &lt;/code&gt;blog\node_modules\mime-db\db.json&lt;code&gt;，文件内容空 object&lt;/code&gt;{}&amp;#96;&lt;/li&gt;
+&lt;li&gt;这个 linux 环境作为 linux branch push 到 github 来备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;更新博客&lt;ul&gt;
+&lt;li&gt;通过 rclone 挂载 GoogleDrive，再 &lt;code&gt;ln -s&lt;/code&gt; 创建软链接到 &lt;code&gt;source/_posts&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;rclone 从官网下载 arm 版本&lt;/li&gt;
+&lt;li&gt;sudo apt install fuse3，rclone mount 需要&lt;ul&gt;
+&lt;li&gt;rclone 退出而没自动 umount 的情况（文件被占用），手动 &lt;code&gt;sudo umount&lt;/code&gt; 一下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;按 rclone config 提示，获得 GoogleDrive API 相关参数&lt;/li&gt;
+&lt;li&gt;创建 gd 文件夹，只读挂载 &lt;code&gt;./rclone --cache-dir=rc_cache --temp-dir=rc_temp mount gd: gd --vfs-cache-mode full --read-only&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rclone 放到 screen 里面运行，.zshrc 添加 &lt;code&gt;screen -x&lt;/code&gt;，登录后就恢复上次的环境&lt;/li&gt;
+&lt;li&gt;配置 cron 每两小时自动 &lt;code&gt;npx hexo deploy --generate&lt;/code&gt; 更新博客&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/</guid>
+            <title>git</title>
+            <link>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-基础&#34;&gt;&lt;a href=&#34;#1-基础&#34; class=&#34;headerlink&#34; title=&#34;1 基础&#34;&gt;&lt;/a&gt;1 基础&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&#34;&gt;初级教程&lt;/a&gt;、 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/../atlassian-git-cheatsheet.pdf&#34;&gt;命令总结文档&lt;/a&gt;、&lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/../progit.pdf&#34;&gt;Pro Git 2nd&lt;/a&gt;、&lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Pro Git 2nd&lt;/a&gt;（网页版）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;git 特点分布式，不必联网。建议文本 &lt;code&gt;UTF-8&lt;/code&gt; 编码&lt;/li&gt;
+&lt;li&gt;安装 linux上 apt-get 或者 源码， &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;windows版本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;设置全局的用户名和邮箱，设置代理，初始化 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;   git config --global user.name &lt;span class=&#34;string&#34;&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;# 不设置 email&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   git config --global user.email &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;&amp;gt;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;# 支持中文路径和文件名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   git config --global core.quotepath &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;# 编辑器设为 vi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   git config --global core.editor &lt;span class=&#34;string&#34;&gt;&amp;quot;vi&amp;quot;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;comment&#34;&gt;# 查看设置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   git config --list&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   git config --global core.autocrlf &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提交简写&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.ac &lt;span class=&#34;string&#34;&gt;&amp;#x27;!git add -A &amp;amp;&amp;amp; git commit -m&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;git pull 默认取所有分支，–all 取所有 remote。git push 默认当前分支，–all 所有分支&lt;/li&gt;
+&lt;li&gt;代理，只用 ssh 协议，不用 http。&lt;a href=&#34;https://www.v2ex.com/t/843383&#34;&gt;参考&lt;/a&gt; &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Host github.com&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Hostname ssh.github.com&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    IdentityFile C:\Users\XXX\.ssh\id_ed25519&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    User git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Port 443&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ProxyCommand &amp;quot;D:\soft\Git\mingw64\bin\connect.exe&amp;quot; -S 127.0.0.1:17890 %h %p&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Host *&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    IdentityFile C:\Users\XXX\.ssh\id_rsa&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-1-图形工具&#34;&gt;&lt;a href=&#34;#1-1-图形工具&#34; class=&#34;headerlink&#34; title=&#34;1.1 图形工具&#34;&gt;&lt;/a&gt;1.1 图形工具&lt;/h2&gt;&lt;p&gt;参考 &lt;a href=&#34;https://stackoverflow.com/questions/572237/whats-the-best-three-way-merge-tool&#34;&gt;best-three-way-merge-tool&lt;/a&gt;，使用 p4merge 和 meld&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install meld&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global diff.tool meld&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 官网注册下载&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用手册 https://www.perforce.com/manuals/p4merge/Content/P4Merge/Home-p4merge.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo &lt;span class=&#34;built_in&#34;&gt;ln&lt;/span&gt; -s /home/zack/bin/p4v-2019.1.1830398/bin/p4merge /usr/local/bin/p4merge&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global merge.tool p4merge&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; ~/.gitconfig&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可以选择关闭&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global difftool.prompt &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# windows 下的配置，User/用户名/.gitconfig，注意路径斜杠用 /&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 设置 meld 的字体时选择 Yahei Consolas Hybrid，指定英文字体时会因为没有中文字符显示乱码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[http]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	proxy = socks5://127.0.0.1:17890&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[user]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	email = &amp;lt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	name = Jian-Feng Du&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[core]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	quotepath = &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[diff]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	tool = meld&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[difftool]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	prompt = &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[difftool &lt;span class=&#34;string&#34;&gt;&amp;quot;meld&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	cmd = &lt;span class=&#34;string&#34;&gt;&amp;quot;\&amp;quot;D:/soft/Meld/Meld.exe\&amp;quot; \&amp;quot;&lt;span class=&#34;variable&#34;&gt;$LOCAL&lt;/span&gt;\&amp;quot; \&amp;quot;&lt;span class=&#34;variable&#34;&gt;$REMOTE&lt;/span&gt;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;受限于网速时可用 vimdiff&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/mattratleph/4026987&#34;&gt;一些按键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/a/45309395&#34;&gt;关于 merge 的按键&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-2-查看修改和历史&#34;&gt;&lt;a href=&#34;#1-2-查看修改和历史&#34; class=&#34;headerlink&#34; title=&#34;1.2 查看修改和历史&#34;&gt;&lt;/a&gt;1.2 查看修改和历史&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git diff&lt;/code&gt; 比较的是工作区与暂存区的差异，&lt;code&gt;git diff HEAD -- readme.txt&lt;/code&gt; 用来比较工作区与分支的差异，&lt;code&gt;git diff --cached&lt;/code&gt; 比较暂存区与分支差异&lt;/li&gt;
+&lt;li&gt;commit 的几种表示法详见 &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection&#34;&gt;Revision-Selection&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看历史提交&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; --pretty=&lt;span class=&#34;string&#34;&gt;&amp;#x27;%C(yellow)%h%Creset %C(green)%cd%Creset %C(blue)%d%Creset %s&amp;#x27;&lt;/span&gt; --&lt;span class=&#34;built_in&#34;&gt;date&lt;/span&gt;=format:%m-%d --graph 1.1.1^..HEAD &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global alias.lg &lt;span class=&#34;string&#34;&gt;&amp;quot;log --pretty=&amp;#x27;%C(yellow)%h%Creset %C(green)%cd%Creset %C(blue)%d%Creset %s&amp;#x27; --date=format:%m-%d --graph&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 找到第一个 commit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rev-list --max-parents=0 --pretty HEAD&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看历史修改的文件列表&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff-tree --no-commit-id --name-only -r bd61ad98&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 某个文件的历史修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; -p -- filename&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 也可以使用脚本 diff_hist.sh 见资源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-3-改写历史&#34;&gt;&lt;a href=&#34;#1-3-改写历史&#34; class=&#34;headerlink&#34; title=&#34;1.3 改写历史&#34;&gt;&lt;/a&gt;1.3 改写历史&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History&#34;&gt;Rewriting-History&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;git merge 和 git rebase 都是先切换到目标分支，然后指定源分支的方式&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 把一个提交应用到多个分支上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git cherry-pick &amp;lt;commit &lt;span class=&#34;built_in&#34;&gt;id&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-4-回到过去&#34;&gt;&lt;a href=&#34;#1-4-回到过去&#34; class=&#34;headerlink&#34; title=&#34;1.4 回到过去&#34;&gt;&lt;/a&gt;1.4 回到过去&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified&#34;&gt;Reset and checkout&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HEAD&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Index&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Workdir&lt;/th&gt;
+&lt;th&gt;WD Safe?&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Commit Level&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;reset --soft [commit]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;REF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;reset [commit]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;REF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;reset --hard [commit]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;REF&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;NO&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;checkout &amp;lt;commit&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;HEAD&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;File Level&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;reset [commit] &amp;lt;paths&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;checkout [commit]/index &amp;lt;paths&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&amp;#x2F;NO&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;YES&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;NO&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用远端还原本地&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git fetch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout origin/dev -- src_comm/tiny_config.c&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-5-加快下载&#34;&gt;&lt;a href=&#34;#1-5-加快下载&#34; class=&#34;headerlink&#34; title=&#34;1.5 加快下载&#34;&gt;&lt;/a&gt;1.5 加快下载&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# shallow clone，可以不把全部的 commit 和 branch 都下载下来，节省下载时间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; --depth=1 url&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; --depth=1 --single-branch --branch branch url&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git fetch --unshallow&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git fetch --depth=200&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# https://stackoverflow.com/questions/6802145/how-to-convert-a-git-shallow-clone-to-a-full-clone&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config remote.origin.fetch &lt;span class=&#34;string&#34;&gt;&amp;quot;+refs/heads/*:refs/remotes/origin/*&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git fetch origin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 下载失败可以尝试修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global http.postBuffer 524288000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h1 id=&#34;2-用-subtree-管理库&#34;&gt;&lt;a href=&#34;#2-用-subtree-管理库&#34; class=&#34;headerlink&#34; title=&#34;2 用 subtree 管理库&#34;&gt;&lt;/a&gt;2 用 subtree 管理库&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;不像 submodule 显示的写到 git 配置文件中，但一次 clone 就包含所有文件，管理更简单&lt;/li&gt;
+&lt;li&gt;介绍见 &lt;a href=&#34;https://gist.github.com/2-3-5-7/0c00a7651b99a82356de2c4b516725af&#34;&gt;Git Subtree Basics&lt;/a&gt;、&lt;a href=&#34;https://www.atlassian.com/git/tutorials/git-subtree&#34;&gt;Git subtree: the alternative to Git submodule&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-问题&#34;&gt;&lt;a href=&#34;#3-问题&#34; class=&#34;headerlink&#34; title=&#34;3 问题&#34;&gt;&lt;/a&gt;3 问题&lt;/h1&gt;&lt;h2 id=&#34;3-1-多个远端仓库&#34;&gt;&lt;a href=&#34;#3-1-多个远端仓库&#34; class=&#34;headerlink&#34; title=&#34;3.1 多个远端仓库&#34;&gt;&lt;/a&gt;3.1 多个远端仓库&lt;/h2&gt;&lt;p&gt;只要远端不同，同一公钥可以用在多处仓库，只有在&lt;strong&gt;同一网站&lt;/strong&gt;（比如 github）上有多个账号时需要配置多个 key&lt;/p&gt;
+&lt;h3 id=&#34;3-1-1-生成新-key&#34;&gt;&lt;a href=&#34;#3-1-1-生成新-key&#34; class=&#34;headerlink&#34; title=&#34;3.1.1 生成新 key&#34;&gt;&lt;/a&gt;3.1.1 生成新 key&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;按照 &lt;a href=&#34;https://www.awaimai.com/2200.html&#34;&gt;git配置多个SSH Key&lt;/a&gt;  ，其中命令可以指定文件名 &lt;code&gt;ssh-keygen -t rsa -b 4096 -C &amp;quot;another_mail@qq.com&amp;quot; -f id_rsa_github&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;页面上添加对应公钥&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-1-2-添加-remote&#34;&gt;&lt;a href=&#34;#3-1-2-添加-remote&#34; class=&#34;headerlink&#34; title=&#34;3.1.2 添加 remote&#34;&gt;&lt;/a&gt;3.1.2 添加 remote&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin https://github.com/user/repo.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;3-1-3-设置-track-分支&#34;&gt;&lt;a href=&#34;#3-1-3-设置-track-分支&#34; class=&#34;headerlink&#34; title=&#34;3.1.3 设置 track 分支&#34;&gt;&lt;/a&gt;3.1.3 设置 track 分支&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch&#34;&gt;track-remote-upstream-branch&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Set upstream when pushing to remote&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin topic&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Set upstream without pushing it&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# with option -u / --set-upstream-to&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -u origin/topic&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch --set-upstream-to=origin/topic&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 验证&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; .git/config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;3-2-个人代码同步&#34;&gt;&lt;a href=&#34;#3-2-个人代码同步&#34; class=&#34;headerlink&#34; title=&#34;3.2 个人代码同步&#34;&gt;&lt;/a&gt;3.2 个人代码同步&lt;/h2&gt;&lt;p&gt;对未改完的代码提交一个临时的 commit，两端都基于这个 commit 来改代码（使用 commit –amend）和同步，已经修改完成则将 commit message 修改或 rebase 整理历史。&lt;/p&gt;
+&lt;p&gt;参考 &lt;a href=&#34;https://stackoverflow.com/questions/9813816/git-pull-after-forced-update&#34;&gt;git-pull-after-forced-update&lt;/a&gt;，两端都按下面步骤进行&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;取回使用 &lt;code&gt;git pull --rebase&lt;/code&gt; 来更新另一端的提交&lt;/li&gt;
+&lt;li&gt;修改代码&lt;/li&gt;
+&lt;li&gt;改写历史 &lt;code&gt;git rebase -i HEAD~~&lt;/code&gt; 或合并到最近的历史  &lt;code&gt;git commit --amend&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;更新提交历史 &lt;code&gt;git push -f&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;3-3-删除分支&#34;&gt;&lt;a href=&#34;#3-3-删除分支&#34; class=&#34;headerlink&#34; title=&#34;3.3 删除分支&#34;&gt;&lt;/a&gt;3.3 删除分支&lt;/h2&gt;&lt;p&gt;3 种情况，远端、本地、本地的 track 分支 &lt;a href=&#34;https://cmatskas.com/delete-git-branch-locally-and-remotely/&#34;&gt;Delete Git branch locally and remotely&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-4-查找谁引入的问题&#34;&gt;&lt;a href=&#34;#3-4-查找谁引入的问题&#34; class=&#34;headerlink&#34; title=&#34;3.4 查找谁引入的问题&#34;&gt;&lt;/a&gt;3.4 查找谁引入的问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;git bisect 指定两个 commit 来二分查找，good&amp;#x2F;old –&amp;gt; bad&amp;#x2F;new，详情见 &lt;a href=&#34;https://git-scm.com/docs/git-bisect&#34;&gt;git bisect&lt;/a&gt; 和 &lt;a href=&#34;https://git-scm.com/docs/git-bisect-lk2009&#34;&gt;Fighting regressions with git bisect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;辅助用 &lt;a href=&#34;https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame&#34;&gt;git blame 或 git log -S&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

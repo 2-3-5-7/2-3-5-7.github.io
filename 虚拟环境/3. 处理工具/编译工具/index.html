@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta keywords="编程, 环境搭建, 读书笔记, Galgame, 生活技巧"><title>编译工具 - 自强不息 厚德载物</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="自强不息 厚德载物"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="自强不息 厚德载物"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1cmake -B build -G &amp;quot;MinGW Makefiles&amp;quot; -D CMAKE_MAKE_PROGRAM&amp;#x3D;&amp;quot;D:&amp;#x2F;soft&amp;#x2F;mingw64&amp;#x2F;bin&amp;#x2F;mingw32-make.exe&amp;quot;- 跟我一起写Makefile - 《嵌入式 Linux C 语言程序设计》，make   1 CMake  - 推荐 out of source builds，输出不混在一起，git 工具好管理，可以创建"><meta property="og:type" content="blog"><meta property="og:title" content="编译工具"><meta property="og:url" content="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/"><meta property="og:site_name" content="自强不息 厚德载物"><meta property="og:description" content="1cmake -B build -G &amp;quot;MinGW Makefiles&amp;quot; -D CMAKE_MAKE_PROGRAM&amp;#x3D;&amp;quot;D:&amp;#x2F;soft&amp;#x2F;mingw64&amp;#x2F;bin&amp;#x2F;mingw32-make.exe&amp;quot;- 跟我一起写Makefile - 《嵌入式 Linux C 语言程序设计》，make   1 CMake  - 推荐 out of source builds，输出不混在一起，git 工具好管理，可以创建"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="1970-01-01T00:00:00.000Z"><meta property="article:modified_time" content="2023-05-21T03:54:34.478Z"><meta property="article:author" content="2-3-5-7"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://2-3-5-7.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/"},"headline":"编译工具","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"1970-01-01T00:00:00.000Z","dateModified":"2023-05-21T03:54:34.478Z","author":{"@type":"Person","name":"2-3-5-7"},"publisher":{"@type":"Organization","name":"自强不息 厚德载物","logo":{"@type":"ImageObject","url":"https://2-3-5-7.github.io/img/logo.svg"}},"description":"1cmake -B build -G &quot;MinGW Makefiles&quot; -D CMAKE_MAKE_PROGRAM&#x3D;&quot;D:&#x2F;soft&#x2F;mingw64&#x2F;bin&#x2F;mingw32-make.exe&quot;- 跟我一起写Makefile - 《嵌入式 Linux C 语言程序设计》，make   1 CMake  - 推荐 out of source builds，输出不混在一起，git 工具好管理，可以创建"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-RMG9YTVY9M" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-RMG9YTVY9M');</script><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><h1 class="title is-3 is-size-4-mobile">编译工具</h1><div class="content"><ul>
+<li><a href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/../Makefile.pdf">跟我一起写Makefile</a></li>
+<li>《嵌入式 Linux C 语言程序设计》，make</li>
+</ul>
+<h1 id="1-CMake"><a href="#1-CMake" class="headerlink" title="1 CMake"></a>1 CMake</h1><ul>
+<li><p>推荐 out of source builds，输出不混在一起，git 工具好管理，可以创建多个 build，如 debug&#x2F;release。build 与 source 同一等级，不在 source 内部</p>
+</li>
+<li><p>在多个平台测试以避免写出平台相关的 cmake</p>
+</li>
+<li><p>选择编译器和 Generator，两者不同搭配可有不同的 build 目录，只需指定一次</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake -B build -G <span class="string">&quot;MinGW Makefiles&quot;</span> -D CMAKE_MAKE_PROGRAM=<span class="string">&quot;D:/soft/mingw64/bin/mingw32-make.exe&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>生成和编译始终在源码根目录</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成 build system</span></span><br><span class="line">cmake -B build</span><br><span class="line"><span class="comment"># 编译</span></span><br><span class="line">cmake --build build</span><br><span class="line"><span class="comment"># verbose and N parallel build</span></span><br><span class="line">cmake --build build -v -j N</span><br><span class="line"><span class="comment"># 列出 target</span></span><br><span class="line">cmake --build build -t <span class="built_in">help</span></span><br><span class="line"><span class="comment"># 编译 target</span></span><br><span class="line">cmake --build build -t Tutorial</span><br><span class="line">cmake --build /pathTo/build --config Debug --target MyApp</span><br><span class="line"><span class="comment"># 列出可设置的选项</span></span><br><span class="line">cmake -LH build</span><br><span class="line"><span class="comment"># 设置选项</span></span><br><span class="line">- </span><br></pre></td></tr></table></figure></li>
+<li><p>调试 CMake</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用 --trace 打印太多了，所以一般 --trace-source 指定源码根目录的 CMakeLists.txt</span></span><br><span class="line">cmake -B build --trace-source=<span class="string">&quot;CMakeLists.txt&quot;</span> -DUSE_MYMATH:BOOL=OFF</span><br></pre></td></tr></table></figure></li>
+<li><p>target 可以是虚拟的</p>
+</li>
+<li><p>变量都是字符串类型，值有空格要加引号，多个值用分号连起来。未定义的变量是空字符串。${} 可以嵌套引用，可作为变量名</p>
+</li>
+<li><p>unset(myVar) &#x2F; set(myVar) 用来 unset 变量</p>
+</li>
+<li><p>ENV{varName} 修改环境变量，环境变量只影响这次 cmake 执行</p>
+</li>
+<li><p>cache 和普通变量同名，普通变量会掩盖 cache 变量，但在一些情况 P26 会相反，cache 变量会被使用。正因为有同名情况，所以要给一个变量明确置空 set(foo “”) 而非使用 unset(foo)</p>
+</li>
+<li><p>cache 变量的修改需要 force 关键字</p>
+</li>
+<li><p>命令行定义 cache 变量，建议指定类型；-U 取消定义</p>
+</li>
+<li><p>cmake-gui 一直 （配置 + 点 Configure） 直到没有红色然后点 Generate</p>
+</li>
+<li><p>给 cache 变量一个下划线结尾的前缀方便 cmake-gui 分组，项目相关的也用前缀方便以后给其它项目使用</p>
+</li>
+<li><p>文件的 IS_NEWER_THAN 要用 NOT 方式使用，因为 P44</p>
+</li>
+<li><p>不使用加引号的字符串，避免 3.1 以下版本解释为变量，进行变量替换</p>
+</li>
+<li><p>函数传参，引号分割的字符串会被当作不同的参数，要注意何时用引号括起来</p>
+</li>
+<li><p>尽量用函数而非宏来更好隔离</p>
+<p>  <a target="_blank" rel="noopener" href="https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line">ubuntu 安装最新 cmake</a></p>
+</li>
+</ul>
+<h1 id="2-介绍"><a href="#2-介绍" class="headerlink" title="2 介绍"></a>2 介绍</h1><ul>
+<li>编译、链接、库 等原理</li>
+<li>三要素，目标、依赖、命令，依赖比目标或目标不存在新就执行命令。找到关系树的末端再从末端进行判断，末端比根旧则什么都不做，新则执行命令。</li>
+<li>不要用环境变量 MAKEFILES</li>
+<li>Makefile 的组成<ul>
+<li>显示规则，我们写的</li>
+<li>隐含规则，.o 自动生成 .c 依赖的关系 和 编译命令</li>
+<li>变量定义</li>
+<li>文件指示<ul>
+<li><code>include &lt;filename&gt;</code></li>
+<li><code>#if</code></li>
+<li>多行命令</li>
+</ul>
+</li>
+<li>注释，# 转义</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-规则"><a href="#3-规则" class="headerlink" title="3 规则"></a>3 规则</h1><ul>
+<li><p>规则中可以用通配符</p>
+</li>
+<li><p>变量中的通配符不会展开，除非</p>
+  <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件夹下所有的 .c</span></span><br><span class="line">objects := <span class="variable">$(<span class="built_in">wildcard</span> *.c)</span></span><br><span class="line"><span class="comment"># 文件夹下所有的 .o</span></span><br><span class="line">objects := <span class="variable">$(<span class="built_in">patsubst</span> %.c,%.o,$(<span class="built_in">wildcard</span> *.c)</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>用 vpath 指定多个搜索目录</p>
+</li>
+<li><p>伪目标两个作用 1. clean 2. 一次生成多个目标</p>
+</li>
+<li><p>静态模式与多目标 %，具体看参考</p>
+</li>
+<li><p>依赖的头文件自动生成的方法，具体看参考</p>
+</li>
+</ul>
+<h1 id="4-命令"><a href="#4-命令" class="headerlink" title="4 命令"></a>4 命令</h1><ul>
+<li>@ 可以不显示这条命令</li>
+<li>语句前加 - 可以忽略错误继续执行</li>
+<li>嵌套执行 makefile<ul>
+<li>$(MAKE) -C subdir</li>
+<li>export variable &#x3D; value  或者 unexport 或者 export 导出所有变量到下级</li>
+<li>MAKEFLAGS 和 SHELL 永远被传递给下级，除非见参考文档</li>
+</ul>
+</li>
+<li>常用命令可以定义成命令包</li>
+</ul>
+<h1 id="5-变量"><a href="#5-变量" class="headerlink" title="5 变量"></a>5 变量</h1><p>建议小写作为变量名，大写作为控制隐含规则和用户重载命令选项时使用</p>
+<ul>
+<li><p>递归展开，无法追加 VAR&#x3D;var</p>
+</li>
+<li><p>简单展开 VAR:&#x3D;var</p>
+</li>
+<li><p>?&#x3D; 被定义过什么都不做，没定义则赋值</p>
+<p>  变量使用 $(VAR)</p>
+</li>
+<li><p>预定义变量，比如 CC、RM、CFLAGS</p>
+</li>
+<li><p>自动变量，比如 $@、$&lt;、$^</p>
+</li>
+<li><p>make 启动时自动创建与系统相同数值的环境变量</p>
+</li>
+</ul>
+<h1 id="6-make"><a href="#6-make" class="headerlink" title="6 make"></a>6 make</h1><p>有一些 GNU 约定好的目标表示名称，可以作为写 makefile 的参考，比如 <code>install</code></p>
+<p>用来调试 makefile</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n</td>
+<td>dry run</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>只更新(touch)目标的时间，假装编译</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>看看某个目标在 makefile 中存在吗</td>
+</tr>
+<tr>
+<td>–debug</td>
+<td>打印调试</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>打印目录，用来调试嵌套 make 调用</td>
+</tr>
+</tbody></table>
+<p>其它参数见 man 或者 上面的参考文档</p>
+<h1 id="7-隐含规则"><a href="#7-隐含规则" class="headerlink" title="7 隐含规则"></a>7 隐含规则</h1><ul>
+<li>C程序隐含规则，$(CC) –c $(CPPFLAGS) $(CFLAGS)，其它程序规则见参考文档</li>
+<li>隐含规则使用的变量，如 CC、CFLAGS 具体见文档</li>
+<li>模式规则 %，与自动化变量。if 判断中不能使用自动化变量</li>
+</ul>
+</div><!--!--></article></div><!--!--><div class="card"><div class="card-content"><script src="https://giscus.app/client.js" data-repo="2-3-5-7/2-3-5-7.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDMwMjg1MTc=" data-category="General" data-category-id="DIC_kwDOFHIzJc4CWmss" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="bottom" data-theme="https://2-3-5-7.github.io/css/light4giscus.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-CMake"><span class="level-left"><span class="level-item">1 CMake</span></span></a></li><li><a class="level is-mobile" href="#2-介绍"><span class="level-left"><span class="level-item">2 介绍</span></span></a></li><li><a class="level is-mobile" href="#3-规则"><span class="level-left"><span class="level-item">3 规则</span></span></a></li><li><a class="level is-mobile" href="#4-命令"><span class="level-left"><span class="level-item">4 命令</span></span></a></li><li><a class="level is-mobile" href="#5-变量"><span class="level-left"><span class="level-item">5 变量</span></span></a></li><li><a class="level is-mobile" href="#6-make"><span class="level-left"><span class="level-item">6 make</span></span></a></li><li><a class="level is-mobile" href="#7-隐含规则"><span class="level-left"><span class="level-item">7 隐含规则</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E4%B8%93%E4%B8%9A/"><span class="level-start"><span class="level-item">专业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/"><span class="level-start"><span class="level-item">爱好</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/"><span class="level-start"><span class="level-item">Galgame</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/"><span class="level-start"><span class="level-item">Ever17</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/"><span class="level-start"><span class="level-item">人物</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/"><span class="level-start"><span class="level-item">地点</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/"><span class="level-start"><span class="level-item">场景</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">读书笔记</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">物理环境</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">虚拟环境</span></span><span class="level-end"><span class="level-item tag">19</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/"><span class="level-start"><span class="level-item">1. 来源与收集</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/"><span class="level-start"><span class="level-item">2. 处理平台</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">3. 处理工具</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/"><span class="level-start"><span class="level-item">4. 分享与备份</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><div><button id="toc-btn" onclick="toc.style.display = &#039;block&#039;;toc.onclick = () =&gt; toc.style.display = &#039;none&#039; " style="display: none;"><i class="fa-solid fa-list-ul"></i></button><button id="search-btn" onclick="document.querySelector(&#039;a.navbar-item.search&#039;).click();" style="display: none;"><i class="fa-solid fa-search fa-sm"></i></button></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

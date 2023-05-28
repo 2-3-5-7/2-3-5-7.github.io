@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta keywords="编程, 环境搭建, 读书笔记, Galgame, 生活技巧"><title>自强不息 厚德载物</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="自强不息 厚德载物"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="自强不息 厚德载物"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="分享各种内容，方便自己与他人查阅，欢迎评论"><meta property="og:type" content="blog"><meta property="og:title" content="自强不息 厚德载物"><meta property="og:url" content="https://2-3-5-7.github.io/"><meta property="og:site_name" content="自强不息 厚德载物"><meta property="og:description" content="分享各种内容，方便自己与他人查阅，欢迎评论"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:author" content="2-3-5-7"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://2-3-5-7.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io"},"headline":"自强不息 厚德载物","image":["https://2-3-5-7.github.io/img/og_image.png"],"author":{"@type":"Person","name":"2-3-5-7"},"publisher":{"@type":"Organization","name":"自强不息 厚德载物","logo":{"@type":"ImageObject","url":"https://2-3-5-7.github.io/img/logo.svg"}},"description":"分享各种内容，方便自己与他人查阅，欢迎评论"}</script><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-RMG9YTVY9M" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-RMG9YTVY9M');</script><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/">物理环境</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/">物理环境框架</a></p><div class="content"><pre class="mermaid">flowchart TD
+物理环境 --> 人 & 周围环境
+    人 --> 身体健康 & 心理健康
+        身体健康 --> 意外 & 疾病
+            意外 --> 防火 & 急救 & 防灾 & 保险 & 应急物品清单
+                防火 & 急救 & 防灾 --> 疾病
+            疾病 --> 锻炼 & 食物 & 体检 & 保险
+        心理健康 --> 冥想 & 朋友
+    周围环境 --> 理财 & 朋友
+        理财 --> 物品选购</pre>
+
+
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
+
+删除没有权限的文件夹
+
+ 1. 文件夹属性 -> 安全 -> 高级 -> 更改所有者 -> 输入自己的用户名 -> 选择下面应用到子文件夹的勾 -> 确定所有对话框
+ 2. 文件夹属性 -> 安全 -> 高级 -> 权限添加 -> 主体为自己的用户名 -> 勾选下面的继承权限
+
+
+2 搭建
+
+ 1. 安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容
+    - 用 Edgeless PE，写入 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间
+ 2. PE 环境下加载 ISO 镜像（镜像选择专业版），运行 source 下的 setup
+    - 对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0
+ 3. 更新系统、自动装驱动
+ 4. 关闭更新
+ 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/">git</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   git config --global user.name <span class="string">"Your Name"</span></span><br><span class="line">   <span class="comment"># 不设置 email</span></span><br><span class="line">   git config --global user.email <span class="string">'&lt;&gt;'</span></span><br><span class="line">   <span class="comment"># 支持中文路径和文件名</span></span><br><span class="line">   git config --global core.quotepath <span class="literal">false</span></span><br><span class="line">   <span class="comment"># 编辑器设为 vi</span></span><br><span class="line">   git config --global core.editor <span class="string">"vi"</span> </span><br><span class="line">   <span class="comment"># 查看设置</span></span><br><span class="line">   git config --list</span><br><span class="line">   git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line"><span class="comment"># 提交简写</span></span><br><span class="line">git config --global alias.ac <span class="string">'!git add -A &amp;&amp; git commit -m'</span></span><br></pre></td></tr></tbody></table></figure><p>1 基础
+
+初级教程、 命令总结文档、Pro Git 2nd、Pro Git 2nd（网页版）
+
+ 1. git 特点分布式，不必联网。建议文本 UTF-8 编码
+ 2. 安装 linux上 apt-get 或者 源码， windows版本
+ 3. 设置全局的用户名和邮箱，设置代理，初始化
+ 4. git pull 默认取所有分支，–all 取所有 remote。git push 默认当前分支，–all 所有分支
+ 5. 代理，只用 ssh 协议，不用 http。参考
+
+
+1.1 图形工具
+
+参考 best-three-way-merge-tool，使用 p4merge 和 meld
+
+受限于网速时可用 vimdiff
+
+- 一些按键
+- 关于 merge 的按键
+
+
+1.2 查看修改和历史
+
+- git diff 比较的是工作区与暂存区的差异，git diff HEAD -- readm ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/">物理环境</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/">急救</a></p><div class="content"><pre class="mermaid" style="display: block;margin: auto;">graph TD
+ 急救 --&gt; 基础 &amp; 短时致命 &amp; 内科 &amp; 外科 &amp; 其它 &amp; 平时准备
+    基础 --&gt; 为什么学 &amp; 学习渠道 &amp; 法律问题 &amp; 施救流程 &amp; 环境安全和个人防护 &amp; 无反应有呼吸 &amp; 打120 &amp; 取急救箱和AED
+    短时致命 --&gt; 心脏骤停 &amp; 气道梗阻 &amp; 大出血
+    内科 --&gt; 心脏病发作 &amp; 脑中风 &amp; 过敏 &amp; 癫痫 &amp; 中暑
+    外科 --&gt; 扭伤/骨折 &amp; 烧烫伤 &amp; 动物伤
+    其它 --&gt; 1["哮喘<br> 糖尿病和低血糖<br> 口腔出血<br> 眼外伤<br> 电击伤<br> 冻伤<br> （食物）中毒<br>煤气中毒<br>溺水<br>……"]
+    平时准备 --&gt; 急救物品 &amp; 理论测试 &amp; 经常练习 &amp; 预防</pre><p>1 内容结构
+
+
+2 基础
+
+
+2.1 为什么学
+
+- 心脏骤停、大出血、过敏、气道梗阻、溺水等，只有几分钟的抢救时间，无法等急救车，学会后给自己和身边的人用
+
+
+2.2 学习渠道
+
+
+2.2.1 线下
+
+中国红十字总会训练中心 北京市红十字会应急救护培训基地 北京急救中心 AHA 培训机构
+急救中心、第一反应、急诊夜鹰 课程 急救员 和总会内容一样 初级急救 导师学员比1：6，器材学员比1：3 开课周期 暂不对个人开课，1 - 3 个月 每个月都有
+每个季度，公众号 / 费用 / 425 16学时 heartsaver
+1200 8学时，设备按照 1:3 配备，24人
+560 16学时，设备按照 1:6 配备，90 人 600-1200 报名方式 网站 公众号 电话：66098042，66098044
+微博：北京急救医疗培训中心 /
+
+- 衡量标准
+  
+  - 老师有急救经验，经得住问 ...</p><script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div><a class="article-more button is-small is-size-7" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/">物理环境</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/">防灾</a></p><div class="content"><img src="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E9%98%B2%E7%81%BE/giphy.gif" alt="跪下、掩护、抓牢" style="display: block;margin: auto;"><p>1 地震
+
+
+
+- 发生前
+  - 与家人约定集合地点，避难点，公园、学校
+  - 准备 食物
+- 发生时，What should I do DURING an earthquake?
+  - 室内/室外，跪下、掩护、抓牢，DROP, COVER, AND HOLD ON!
+    1. 跪下，不要往室外跑
+    2. 掩护头颈，桌子、枕头、书包、双手。爬，远离窗户、非承重墙、阳台、重家具、会掉落物品的地方
+    3. 抓牢遮挡物，抓桌腿
+       
+  - 开车，待在车里，同样远离坠落物避险
+  - 地震可能造成海啸和泥石流，要尽快远离海边、山脚，前往高处
+- 发生后
+  - 被困时
+    - 用东西支撑住身边可能掉落的重物
+    - 节省体力，寻找水和食物
+    - 以规律性敲击或光亮求救，确定有人再大声呼救
+    - 防范挤压综合征，急救-挤压伤
+  - 没被困，需要 ...</p></div><a class="article-more button is-small is-size-7" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/">linux</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 通过 aptitude 尝试解决</span></span><br><span class="line">sudo apt install aptitude</span><br><span class="line">sudo aptitude install PACKAGENAME</span><br></pre></td></tr></tbody></table></figure><p>1 配置
+
+- 必装 ssh proxychains4 git meld p4merge vim gtags ctags，github 导入公钥
+- 关闭该死的系统更新，非要更新前一定创建快照
+
+
+1.1 SSH
+
+apt-get install openssh-server openssh-client
+
+- 如配置 VPS 修改 SSH 端口，则要在系统 iptables 和 vps 页面两处同时放行新端口，并用 nc -l 测试没问题后，再重启 sshd
+  服务。此时先别断开旧连接，防止出现新端口连不上的情况
+
+
+1.1.1 解决 20.04 broken package 问题
+
+参考 Problems with installing of the openssh-server
+
+根据 aptitude 安装前的提示，发现是预安装的 openssh-client 版本高，apt p ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/">blog</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line">npx hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title</span><br><span class="line"><span class="comment"># 要在 config 中添加配置</span></span><br><span class="line">npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git</span><br><span class="line"><span class="comment"># source 目录下，关联笔记</span></span><br><span class="line">mklink /J _posts D:\Documents\Dropbox\notes\blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 还有一个 footnote 插件从 hexo-theme-fluid 移植过来</span></span><br><span class="line"><span class="comment"># 还有 add_assets_url.js 添加下载图标</span></span><br><span class="line"><span class="comment"># 所有插件可通过 hexo --debug 选项看到</span></span><br></pre></td></tr></tbody></table></figure><p>1 部署
+
+ 1. 安装 git、node.js，参考 hexo 官网，windows、linux 有区别。git 设置 sock5 代理，见 git
+ 2. github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥
+ 3. 安装 hexo 、主题、插件，主题可根据star 排名来选择
+
+
+1.1 Google 收录
+
+- 先创建 Google Analytics，添加 tracking_id 到主题配置文件，注意广告拦截和浏览器拦截
+- 再创建 Google Search Console，用 Google Analytics 验证所有权
+- 在 Google Analytics 选择媒体资源，Search Console 关联，进行两个产品的关联
+- 在 Search Console 中提交站点地图 sitemap.xml ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/">Kopia</a></p><div class="content"><figure class="highlight powershell" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令的前部分从 GUI 里面复制</span></span><br><span class="line">XXX\kopia.exe <span class="literal">--config-file</span>=XXX\repositories\repository.config policy <span class="built_in">set</span> <span class="literal">--global</span>  <span class="literal">--before-snapshot-root-action</span> <span class="string">"powershell D:\soft\KopiaUI\before.ps1"</span></span><br><span class="line">XXX\kopia.exe <span class="literal">--config-file</span>=XXX\repositories\repository.config  policy <span class="built_in">set</span> <span class="literal">--global</span>  <span class="literal">--after-snapshot-root-action</span>  <span class="string">"powershell D:\soft\KopiaUI\after.ps1"</span></span><br><span class="line"><span class="comment"># 要清空配置传空字符串 ""</span></span><br><span class="line">XXX\kopia.exe <span class="literal">--config-file</span>=XXX\repositories\repository.config  policy <span class="built_in">set</span> <span class="literal">--global</span>  <span class="literal">--after-snapshot-root-action</span>  <span class="string">""</span></span><br></pre></td></tr></tbody></table></figure><p>1 Kopia
+
+- KopiaUI 程序所在目录新建 repositories，实现 portable、更详细的描述
+
+- VSS
+  
+  - 先在 repository.config 中 enableActions 改为 true，然后用命令配置全局 profile（因为 gui 目前有
+    bug）
+  
+  - 管理员 powershell，Set-ExecutionPolicy Unrestricted
+  
+  - 修改 ps1 关联，用 powershell 运行
+  
+  - before 脚本里有调试信息，放开后可用来确认脚本执行和备份路径
+  
+  - 查看和删除 vss，防止 after 脚本没执行，vssadmin list shadows，vssadmin delete shadows
+
+- 常用命令（软件的路径区分大小写，尽管 Windows 不区分）
+
+ ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/">kindle</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ubuntu 下</span></span><br><span class="line"><span class="comment"># 解开 regular 看一下 name 表中的值</span></span><br><span class="line">ttx -o r.ttx Play-Regular.ttf</span><br><span class="line"><span class="comment"># 解开 Italic 将 name 表中的值改为和 regular 中的一样，可能有多个</span></span><br><span class="line">ttx -o i.ttx Play-Italic.ttf</span><br><span class="line"><span class="comment"># 重新打包回 ttf</span></span><br><span class="line">ttx -o i.ttf i.ttx</span><br></pre></td></tr></tbody></table></figure><p>1 设置
+
+字体和词典在 kindle 环境文件夹
+
+- 把电子书过滤设置选为“全部内容”，然后把电子书排序设置选为“收藏夹” 。用收藏夹分类电子书
+- 字体放在 fonts 文件夹，自带英文字体可以用 Baskerville ，中文字体思源黑体还好，思源宋体（Source Han
+  Serif）太浅不要用，思源宋体，如何评价，以及如何正确使用
+- 词典放在 documents\dictionaries 文件夹
+- 一本英汉：与 PC 词典相同的简明英汉（160万），一本英英：Merriam-Webster’s Advanced Learner’s
+  Dictionary，选择依据。其它为 kindle 自带，现代英汉、汉英、汉语，Oxford
+- kindle 不适合阅读长篇英英解释，如需彻底理解单词，用 kindlemate 导出生词本到欧路词典背，见 词典软件。或者在平板上用 k ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/kindle/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/">路由器</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">替换 &lt;STOK&gt;</span><br><span class="line"></span><br><span class="line">http://192.168.31.1/cgi-bin/luci/;stok=&lt;STOK&gt;/api/misystem/set_config_iotdev?bssid=Xiaomi&amp;user_id=longdike&amp;ssid=-h%3B%20nvram%20set%20ssh_en%3D1%3B%20nvram%20commit%3B%20sed%20-i%20's%2Fchannel%3D.*%2Fchannel%3D%5C%22debug%5C%22%2Fg'%20%2Fetc%2Finit.d%2Fdropbear%3B%20%2Fetc%2Finit.d%2Fdropbear%20start%3B</span><br><span class="line"></span><br><span class="line">http://192.168.31.1/cgi-bin/luci/;stok=&lt;STOK&gt;/api/misystem/set_config_iotdev?bssid=Xiaomi&amp;user_id=longdike&amp;ssid=-h%3B%20echo%20-e%20'admin%5Cnadmin'%20%7C%20passwd%20root%3B</span><br><span class="line"></span><br><span class="line">root 密码 admin</span><br></pre></td></tr></tbody></table></figure><p>1 刷机
+
+
+1.1 斐讯K2
+
+ 1. 确定硬件版本，斐讯K2 PSG1218 硬件A2
+ 2. 更新到官方某个版本，来实现开 telnet、ssh
+ 3. 刷 breed，相当于 bootloader
+ 4. EEPROM、编程器固件备份
+ 5. 刷别人的固件，华硕、padavan(hiboy)，见 刷机与固件列表，还可以考虑 自己编译
+
+
+1.2 小米路由器3G
+
+ 1. 下载 开发板 miwifi_r3g_firmware_12f97_2.25.124.bin，登陆路由器页面，系统状态 -> 升级检测 刷入
+ 2. 开 SSH miwifi_ssh.bin。按照页面提示操作
+ 3. 刷 breed breed-mt7621-xiaomi-r3g.bin。放入 U 盘后，mtd -r write
+    /extdisks/sda1/breed-mt7621-xiaomi-r3g.b ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/#more">阅读更多</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/page/0/">上一页</a></div><div class="pagination-next"><a href="/page/2/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/6/">6</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E4%B8%93%E4%B8%9A/"><span class="level-start"><span class="level-item">专业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/"><span class="level-start"><span class="level-item">爱好</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/"><span class="level-start"><span class="level-item">Galgame</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/"><span class="level-start"><span class="level-item">Ever17</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/"><span class="level-start"><span class="level-item">人物</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/"><span class="level-start"><span class="level-item">地点</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/"><span class="level-start"><span class="level-item">场景</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">读书笔记</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">物理环境</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">虚拟环境</span></span><span class="level-end"><span class="level-item tag">19</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/"><span class="level-start"><span class="level-item">1. 来源与收集</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/"><span class="level-start"><span class="level-item">2. 处理平台</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">3. 处理工具</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/"><span class="level-start"><span class="level-item">4. 分享与备份</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><div><button id="toc-btn" onclick="toc.style.display = &#039;block&#039;;toc.onclick = () =&gt; toc.style.display = &#039;none&#039; " style="display: none;"><i class="fa-solid fa-list-ul"></i></button><button id="search-btn" onclick="document.querySelector(&#039;a.navbar-item.search&#039;).click();" style="display: none;"><i class="fa-solid fa-search fa-sm"></i></button></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

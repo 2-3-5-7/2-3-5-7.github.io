@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta keywords="编程, 环境搭建, 读书笔记, Galgame, 生活技巧"><title>Design for How People Learn - 自强不息 厚德载物</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="自强不息 厚德载物"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="自强不息 厚德载物"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1 Where Do We Start?  - 学习包含很多方面，不同情景有所不同   - 最简单的是只提供信息   - 技能，提供练习的机会   - 动力，无法直接提供，但可以通过设计流程让学习者更有动力   - 改变旧习惯   - 环境和沟通问题 - 因此关键是正确识别出问题，即学习需要提供上面哪些内容   2 Who are your Leaners?  - 明确学习者   - 当前技能水平"><meta property="og:type" content="blog"><meta property="og:title" content="Design for How People Learn"><meta property="og:url" content="https://2-3-5-7.github.io/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/"><meta property="og:site_name" content="自强不息 厚德载物"><meta property="og:description" content="1 Where Do We Start?  - 学习包含很多方面，不同情景有所不同   - 最简单的是只提供信息   - 技能，提供练习的机会   - 动力，无法直接提供，但可以通过设计流程让学习者更有动力   - 改变旧习惯   - 环境和沟通问题 - 因此关键是正确识别出问题，即学习需要提供上面哪些内容   2 Who are your Leaners?  - 明确学习者   - 当前技能水平"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="1970-01-01T00:00:00.000Z"><meta property="article:modified_time" content="2023-05-21T02:06:01.402Z"><meta property="article:author" content="2-3-5-7"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://2-3-5-7.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/"},"headline":"Design for How People Learn","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"1970-01-01T00:00:00.000Z","dateModified":"2023-05-21T02:06:01.402Z","author":{"@type":"Person","name":"2-3-5-7"},"publisher":{"@type":"Organization","name":"自强不息 厚德载物","logo":{"@type":"ImageObject","url":"https://2-3-5-7.github.io/img/logo.svg"}},"description":"1 Where Do We Start?  - 学习包含很多方面，不同情景有所不同   - 最简单的是只提供信息   - 技能，提供练习的机会   - 动力，无法直接提供，但可以通过设计流程让学习者更有动力   - 改变旧习惯   - 环境和沟通问题 - 因此关键是正确识别出问题，即学习需要提供上面哪些内容   2 Who are your Leaners?  - 明确学习者   - 当前技能水平"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-RMG9YTVY9M" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-RMG9YTVY9M');</script><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E7%88%B1%E5%A5%BD/">爱好</a><span> / </span><a class="link-muted" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></span></div></div><h1 class="title is-3 is-size-4-mobile">Design for How People Learn</h1><div class="content"><h1 id="1-Where-Do-We-Start"><a href="#1-Where-Do-We-Start" class="headerlink" title="1 Where Do We Start?"></a>1 Where Do We Start?</h1><ul>
+<li>学习包含很多方面，不同情景有所不同<ul>
+<li>最简单的是只提供信息</li>
+<li>技能，提供练习的机会</li>
+<li>动力，无法直接提供，但可以通过设计流程让学习者更有动力</li>
+<li>改变旧习惯</li>
+<li>环境和沟通问题</li>
+</ul>
+</li>
+<li>因此关键是正确识别出问题，即学习需要提供上面哪些内容</li>
+</ul>
+<h1 id="2-Who-are-your-Leaners"><a href="#2-Who-are-your-Leaners" class="headerlink" title="2 Who are your Leaners?"></a>2 Who are your Leaners?</h1><ul>
+<li>明确学习者<ul>
+<li>当前技能水平</li>
+<li>动机是什么，动机来着外部的要尽量转化为内部，激发其兴趣（个：让其主动），如通过<ul>
+<li>与其感兴趣的内容联系</li>
+<li>联系实际问题</li>
+<li>适当难度的挑战</li>
+<li>让学得好的帮助其</li>
+</ul>
+</li>
+<li>如条件允许，为不同水平的人提供不同的指导（个：因材施教）</li>
+</ul>
+</li>
+<li>帮助学习者建立知识架构、路线图、核心内容最重要，这样他们好知道把新知识放在哪里<ul>
+<li>以问题导向讲解知识</li>
+<li>让学习者讲给别人，从而练习组织自己的知识架构</li>
+</ul>
+</li>
+<li>最好用互动教学方式，及时从学习者收到反馈，而非单向传输<ul>
+<li>用各种手段了解学习者，交流、体验其环境</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-What’s-the-Goal"><a href="#3-What’s-the-Goal" class="headerlink" title="3 What’s the Goal"></a>3 What’s the Goal</h1><ul>
+<li>比设定目标更重要的是识别出当前的问题，从而找到最优的方式解决问题，而非只关注达成目标</li>
+<li>对于目标<ul>
+<li>分解量化，避免模糊</li>
+<li>确定实际中用的上</li>
+<li>确定能判断出目标是否达成</li>
+<li>确定要掌握的程度，有的能力短期可掌握，有的需要长时间</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-How-Do-We-Remember"><a href="#4-How-Do-We-Remember" class="headerlink" title="4 How Do We Remember?"></a>4 How Do We Remember?</h1><ul>
+<li>将知识增加更多的联系，编成故事记得牢，因为<ul>
+<li>故事更吸引人</li>
+<li>已包含了组织结构、逻辑关系</li>
+</ul>
+</li>
+<li>放到实际环境中学习效果更好（如飞行模拟器），因为记忆和环境相关<ul>
+<li>学习与人处理时，附带情景中的情绪也模拟出来</li>
+</ul>
+</li>
+<li>区分要记忆的程度，如果只是能够识别，那么选择题测验是可以的，但如果要能回忆起完整步骤，需要空白的简答题</li>
+<li>通过不断重复，记忆得到加深，但简单重复会有枯燥的问题，同时与情景的联系单一</li>
+</ul>
+<h1 id="5-How-do-you-Get-their-Attention"><a href="#5-How-do-you-Get-their-Attention" class="headerlink" title="5 How do you Get their Attention"></a>5 How do you Get their Attention</h1><ul>
+<li>象与骑手的比喻，人们往往高估自己的控制能力.</li>
+<li>为了吸引注意力，需要<ul>
+<li>用故事阐明，并留有悬念</li>
+<li>视频、图片解释概念、比喻、统计数字、应用场景</li>
+<li>为何学、怎么学</li>
+<li>挑战<ul>
+<li>难度适中的问题</li>
+<li>时间限制</li>
+<li>应用学到的知识</li>
+<li>好的快速的反馈</li>
+</ul>
+</li>
+<li>一起学，竞争与合作</li>
+<li>谨慎使用外部奖赏，因为会将内部激励转为外部，从而背离真正的目标</li>
+</ul>
+</li>
+</ul>
+<h1 id="6-Design-for-Knowledge"><a href="#6-Design-for-Knowledge" class="headerlink" title="6 Design for Knowledge"></a>6 Design for Knowledge</h1><ul>
+<li>利用学习者已有的知识框架</li>
+<li>问题驱动教学，让学生感到困惑，从而主动学习自己未知的内容，记得更牢</li>
+<li>阐明观点时，给出反例比正确的例子更能说明问题<ul>
+<li>然后可以让学生自己从反例中总结经验，而非直接给结论</li>
+<li>做到既给出具体应用，又讲述理论</li>
+</ul>
+</li>
+</ul>
+<h1 id="7-Design-for-Skills"><a href="#7-Design-for-Skills" class="headerlink" title="7 Design for Skills"></a>7 Design for Skills</h1><ul>
+<li>掌握技能的两个条件：练习和反馈</li>
+<li>练习：分散到长的时间范围内记得更好，小的目标组成大的目标，对应短期、长期目标<ul>
+<li>难易穿插，给学习者消化的时间，</li>
+</ul>
+</li>
+<li>反馈：快速、频繁、多样</li>
+</ul>
+<h1 id="8-Design-for-Motivation"><a href="#8-Design-for-Motivation" class="headerlink" title="8 Design for Motivation"></a>8 Design for Motivation</h1><ul>
+<li>让学习者认可的人宣传这个学习有用、好学</li>
+</ul>
+<h1 id="9-Design-for-Habits"><a href="#9-Design-for-Habits" class="headerlink" title="9 Design for Habits"></a>9 Design for Habits</h1><ul>
+<li>无反馈或反馈延迟会阻碍习惯的养成</li>
+<li>具体化目标，设计不同场景如何应对</li>
+<li>让目标容易达成</li>
+<li>改进环境，让其适合习惯养成</li>
+</ul>
+<h1 id="10-Design-Evaluation"><a href="#10-Design-Evaluation" class="headerlink" title="10 Design Evaluation"></a>10 Design Evaluation</h1><ul>
+<li>要测试课程水平，要请人试学，而非自己，因为对于已经会的人是看不出问题的</li>
+<li>问答题比选择题对知识掌握的要求更高，作者建议这种评估方式<ul>
+<li>但这样提供反馈与选择题相比更复杂，当无法找到专家时，可使用<ul>
+<li>同伴或相对学得好的</li>
+<li>自评<ul>
+<li>先自己写问答题</li>
+<li>再依据一套评价标准（好几项的达标情况）自评</li>
+<li>给出几套专家的解答</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有经验的课程设计者会先设计评价标准，然后设计课程（个：类似测试驱动开发）</li>
+</ul>
+</div><!--!--></article></div><!--!--><div class="card"><div class="card-content"><script src="https://giscus.app/client.js" data-repo="2-3-5-7/2-3-5-7.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDMwMjg1MTc=" data-category="General" data-category-id="DIC_kwDOFHIzJc4CWmss" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="bottom" data-theme="https://2-3-5-7.github.io/css/light4giscus.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-Where-Do-We-Start"><span class="level-left"><span class="level-item">1 Where Do We Start?</span></span></a></li><li><a class="level is-mobile" href="#2-Who-are-your-Leaners"><span class="level-left"><span class="level-item">2 Who are your Leaners?</span></span></a></li><li><a class="level is-mobile" href="#3-What’s-the-Goal"><span class="level-left"><span class="level-item">3 What’s the Goal</span></span></a></li><li><a class="level is-mobile" href="#4-How-Do-We-Remember"><span class="level-left"><span class="level-item">4 How Do We Remember?</span></span></a></li><li><a class="level is-mobile" href="#5-How-do-you-Get-their-Attention"><span class="level-left"><span class="level-item">5 How do you Get their Attention</span></span></a></li><li><a class="level is-mobile" href="#6-Design-for-Knowledge"><span class="level-left"><span class="level-item">6 Design for Knowledge</span></span></a></li><li><a class="level is-mobile" href="#7-Design-for-Skills"><span class="level-left"><span class="level-item">7 Design for Skills</span></span></a></li><li><a class="level is-mobile" href="#8-Design-for-Motivation"><span class="level-left"><span class="level-item">8 Design for Motivation</span></span></a></li><li><a class="level is-mobile" href="#9-Design-for-Habits"><span class="level-left"><span class="level-item">9 Design for Habits</span></span></a></li><li><a class="level is-mobile" href="#10-Design-Evaluation"><span class="level-left"><span class="level-item">10 Design Evaluation</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E4%B8%93%E4%B8%9A/"><span class="level-start"><span class="level-item">专业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/"><span class="level-start"><span class="level-item">爱好</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/"><span class="level-start"><span class="level-item">Galgame</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/"><span class="level-start"><span class="level-item">Ever17</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/"><span class="level-start"><span class="level-item">人物</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/"><span class="level-start"><span class="level-item">地点</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/"><span class="level-start"><span class="level-item">场景</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">读书笔记</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">物理环境</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">虚拟环境</span></span><span class="level-end"><span class="level-item tag">19</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/"><span class="level-start"><span class="level-item">1. 来源与收集</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/"><span class="level-start"><span class="level-item">2. 处理平台</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">3. 处理工具</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/"><span class="level-start"><span class="level-item">4. 分享与备份</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><div><button id="toc-btn" onclick="toc.style.display = &#039;block&#039;;toc.onclick = () =&gt; toc.style.display = &#039;none&#039; " style="display: none;"><i class="fa-solid fa-list-ul"></i></button><button id="search-btn" onclick="document.querySelector(&#039;a.navbar-item.search&#039;).click();" style="display: none;"><i class="fa-solid fa-search fa-sm"></i></button></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

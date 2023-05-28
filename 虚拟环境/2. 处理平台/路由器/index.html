@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta keywords="编程, 环境搭建, 读书笔记, Galgame, 生活技巧"><title>路由器 - 自强不息 厚德载物</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="自强不息 厚德载物"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="自强不息 厚德载物"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1234567替换 &amp;lt;STOK&amp;gt;http:&amp;#x2F;&amp;#x2F;192.168.31.1&amp;#x2F;cgi-bin&amp;#x2F;luci&amp;#x2F;;stok&amp;#x3D;&amp;lt;STOK&amp;gt;&amp;#x2F;api&amp;#x2F;misystem&amp;#x2F;set_config_iotdev?bssid&amp;#x3D;Xiaomi&amp;amp;user_id&amp;#x3D;longdike&amp;amp;ssid&amp;#x3D;-h%3B%20nvram%20set%20ssh_en%3D1%3B%20nvram%20commit"><meta property="og:type" content="blog"><meta property="og:title" content="路由器"><meta property="og:url" content="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/"><meta property="og:site_name" content="自强不息 厚德载物"><meta property="og:description" content="1234567替换 &amp;lt;STOK&amp;gt;http:&amp;#x2F;&amp;#x2F;192.168.31.1&amp;#x2F;cgi-bin&amp;#x2F;luci&amp;#x2F;;stok&amp;#x3D;&amp;lt;STOK&amp;gt;&amp;#x2F;api&amp;#x2F;misystem&amp;#x2F;set_config_iotdev?bssid&amp;#x3D;Xiaomi&amp;amp;user_id&amp;#x3D;longdike&amp;amp;ssid&amp;#x3D;-h%3B%20nvram%20set%20ssh_en%3D1%3B%20nvram%20commit"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="1970-01-01T00:00:00.000Z"><meta property="article:modified_time" content="2023-05-24T06:36:12.255Z"><meta property="article:author" content="2-3-5-7"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://2-3-5-7.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/"},"headline":"路由器","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"1970-01-01T00:00:00.000Z","dateModified":"2023-05-24T06:36:12.255Z","author":{"@type":"Person","name":"2-3-5-7"},"publisher":{"@type":"Organization","name":"自强不息 厚德载物","logo":{"@type":"ImageObject","url":"https://2-3-5-7.github.io/img/logo.svg"}},"description":"1234567替换 &lt;STOK&gt;http:&#x2F;&#x2F;192.168.31.1&#x2F;cgi-bin&#x2F;luci&#x2F;;stok&#x3D;&lt;STOK&gt;&#x2F;api&#x2F;misystem&#x2F;set_config_iotdev?bssid&#x3D;Xiaomi&amp;user_id&#x3D;longdike&amp;ssid&#x3D;-h%3B%20nvram%20set%20ssh_en%3D1%3B%20nvram%20commit"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-RMG9YTVY9M" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-RMG9YTVY9M');</script><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><h1 class="title is-3 is-size-4-mobile">路由器</h1><div class="content"><h1 id="1-刷机"><a href="#1-刷机" class="headerlink" title="1 刷机"></a>1 刷机</h1><h2 id="1-1-斐讯K2"><a href="#1-1-斐讯K2" class="headerlink" title="1.1 斐讯K2"></a>1.1 斐讯K2</h2><ol>
+<li>确定硬件版本，斐讯K2 PSG1218 硬件A2</li>
+<li>更新到官方某个版本，来实现开 telnet、ssh</li>
+<li>刷 breed，相当于 bootloader</li>
+<li>EEPROM、编程器固件备份</li>
+<li>刷别人的固件，华硕、padavan(hiboy)，见 <a target="_blank" rel="noopener" href="https://tbvv.net/posts/0101-breed.html">刷机与固件列表</a>，还可以考虑 <a target="_blank" rel="noopener" href="https://eryige.com/wordpress/?p=214">自己编译</a></li>
+</ol>
+<h2 id="1-2-小米路由器3G"><a href="#1-2-小米路由器3G" class="headerlink" title="1.2 小米路由器3G"></a>1.2 小米路由器3G</h2><ol>
+<li>下载 <a target="_blank" rel="noopener" href="http://www.miwifi.com/miwifi_download.html">开发板</a> miwifi_r3g_firmware_12f97_2.25.124.bin，登陆路由器页面，系统状态 -&gt; 升级检测 刷入</li>
+<li><a target="_blank" rel="noopener" href="https://d.miwifi.com/rom/ssh">开 SSH</a> miwifi_ssh.bin。按照页面提示操作</li>
+<li><a target="_blank" rel="noopener" href="https://breed.hackpascal.net/breed-mt7621-xiaomi-r3g.bin">刷 breed</a> breed-mt7621-xiaomi-r3g.bin。放入 U 盘后，<code>mtd -r write /extdisks/sda1/breed-mt7621-xiaomi-r3g.bin Bootloader</code></li>
+<li>EEPROM、编程器固件备份。有线网卡 IP 192.168.1.x，断电、按住 reset、接电，路由灯狂闪的时候松开，电脑上在浏览器中输入192.168.1.1，进入 breed 控制台</li>
+<li>刷 <a target="_blank" rel="noopener" href="http://opt.cn2qq.com/padavan/">padavan(hiboy)</a> 中的 <code>MI-R3G_3.4.3.9-099.trx</code></li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://blog.skk.moe/post/miwifi-r3g-mwan/">参考1</a>、<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-257423-1-1.html">参考2</a></p>
+<h2 id="1-3-红米-ac2100"><a href="#1-3-红米-ac2100" class="headerlink" title="1.3 红米 ac2100"></a>1.3 红米 ac2100</h2><ul>
+<li>原版固件网速快（500M 宽带，两级路由下面 5G WIFI 达到 610M 网速，与直连光猫拨号比少几十M网速），但功能少，无法解决二级路由下设备 IPv6 地址在 PPPoE 重拨后旧地址不消失的问题；而 OpenWrt（开 PPPoE 拨号，有线最高 430M 网速）网速慢，但插件多，支持 IPv6 PD 下发。目前 OpenWrt 固件是大分区单系统，无法双系统切换</li>
+<li>刷 OpenWrt <a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv18237601">参考</a><ol>
+<li>开 SSH。用官方修复工具降级到有漏洞版本 2.0.7 开 SSH  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">替换 &lt;STOK&gt;</span><br><span class="line"></span><br><span class="line">http://192.168.31.1/cgi-bin/luci/;stok=&lt;STOK&gt;/api/misystem/set_config_iotdev?bssid=Xiaomi&amp;user_id=longdike&amp;ssid=-h%3B%20nvram%20set%20ssh_en%3D1%3B%20nvram%20commit%3B%20sed%20-i%20&#x27;s%2Fchannel%3D.*%2Fchannel%3D%5C%22debug%5C%22%2Fg&#x27;%20%2Fetc%2Finit.d%2Fdropbear%3B%20%2Fetc%2Finit.d%2Fdropbear%20start%3B</span><br><span class="line"></span><br><span class="line">http://192.168.31.1/cgi-bin/luci/;stok=&lt;STOK&gt;/api/misystem/set_config_iotdev?bssid=Xiaomi&amp;user_id=longdike&amp;ssid=-h%3B%20echo%20-e%20&#x27;admin%5Cnadmin&#x27;%20%7C%20passwd%20root%3B</span><br><span class="line"></span><br><span class="line">root 密码 admin</span><br></pre></td></tr></table></figure></li>
+<li>刷固件<ul>
+<li>下 <a target="_blank" rel="noopener" href="https://openwrt.org/toh/xiaomi/xiaomi_redmi_router_ac2100">OpenWrt 官方固件</a>，openwrt-22.03.0-ramips-mt7621-xiaomi_redmi-router-ac2100-squashfs-kernel1.bin、openwrt-22.03.0-ramips-mt7621-xiaomi_redmi-router-ac2100-squashfs-rootfs0.bin</li>
+<li>两个文件用 WinSCP 传到 &#x2F;tmp 下  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 看当前分区</span></span><br><span class="line"><span class="built_in">cat</span> /proc/mtd</span><br><span class="line">nvram <span class="built_in">set</span> flag_try_sys1_failed=1</span><br><span class="line">nvram commit</span><br><span class="line"><span class="built_in">cd</span> /tmp</span><br><span class="line">mtd write openwrt-22.03.0-ramips-mt7621-xiaomi_redmi-router-ac2100-squashfs-kernel1.bin kernel1</span><br><span class="line">mtd write openwrt-22.03.0-ramips-mt7621-xiaomi_redmi-router-ac2100-squashfs-rootfs0.bin rootfs0</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure></li>
+<li>另一种 breed 法，不推荐，还原原版要先还原 bootloader<ul>
+<li>刷 <a target="_blank" rel="noopener" href="https://breed.hackpascal.net/">Breed</a>，scp 传到 &#x2F;tmp 下，<code>mtd -r write /tmp/breed-mt7621-xiaomi-r3g.bin Bootloader</code></li>
+<li>进 Breed，固件更新，闪存布局选 OpenWrt，也可以刷老毛子 padavan，<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-4047892-1-1.html">有些 padavan</a> 能到 600M 以上，没测试</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>刷回原版或原版降级：如果刷过 breed，要先通过 breed 恢复原版 bootloader（原版才能用修复工具），然后修复工具刷 2.0.7（<strong>台式网卡不行，USB 网卡可以</strong>）<ul>
+<li>想一直用原版固件，借鉴 autossh 的 <a target="_blank" rel="noopener" href="https://github.com/NakanoSanku/StudyShare/blob/master/ax3000/ax3000-cr880x-SSH.md">方法</a> 固化 SSH，在 firewall 配置添加一个自启脚本 autossh.sh，之后就可以升级官方固件了  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 改密码</span></span><br><span class="line">passwd</span><br><span class="line"><span class="built_in">mkdir</span> /data/auto_ssh</span><br><span class="line"><span class="built_in">cd</span> /data/auto_ssh</span><br><span class="line"><span class="comment"># WinSCP 传进来 auto_ssh.sh</span></span><br><span class="line"><span class="built_in">chmod</span> +x auto_ssh.sh</span><br><span class="line">./auto_ssh.sh</span><br><span class="line"><span class="comment"># 应该存在 dropbear_rsa_host_key</span></span><br><span class="line"><span class="built_in">ls</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.auto_ssh=include</span><br><span class="line">uci <span class="built_in">set</span> firewall.auto_ssh.type=<span class="string">&#x27;script&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.auto_ssh.path=<span class="string">&#x27;/data/auto_ssh/auto_ssh.sh&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.auto_ssh.enabled=<span class="string">&#x27;1&#x27;</span></span><br><span class="line"><span class="comment"># 确认修改</span></span><br><span class="line">uci changes firewall</span><br><span class="line">uci commit firewall</span><br><span class="line"><span class="comment"># 之后就可以更新官方固件到最新了</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-4-移动CR8808（红米AX3000"><a href="#1-4-移动CR8808（红米AX3000" class="headerlink" title="1.4 移动CR8808（红米AX3000)"></a>1.4 移动CR8808（红米AX3000)</h2><ul>
+<li>开 ssh<ul>
+<li><p>进 uboot</p>
+<ul>
+<li>拆两颗螺丝，撬棒打开顶盖，接上 TTL<ul>
+<li>网口朝上，从左开始依次是 电源、RXD、GND、TXD，因此从第 2 个开始依次接 TTL 模块 TXD, GND, RXD</li>
+</ul>
+</li>
+<li>修复工具刷 8806 固件。用笔记本的网卡（<strong>台式网卡不行，USB 网卡可以</strong>），关 defender 防火墙，禁用其它网卡，网线插 1 号 LAN 口，reset 按钮是凹进去的，别和 mesh 组网按钮搞混了</li>
+<li>刷好后蓝灯闪烁，插电 5s 内按任意键</li>
+</ul>
+</li>
+<li><p>开启插电 5s 内任意键进串口，方便以后调试</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setenv boot_wait on</span><br><span class="line">setenv uart_en 1</span><br><span class="line">saveenv</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>改 bdata.bin</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">setenv ipaddr 192.168.1.2</span><br><span class="line">setenv serverip 192.168.1.1</span><br><span class="line"><span class="comment"># 查看分区信息</span></span><br><span class="line">smeminfo</span><br><span class="line"><span class="comment"># 打开 tftpd64.exe 后选择对应IP地址，回到命令窗口输入以下命令提取 bdata 分区</span></span><br><span class="line">nand <span class="built_in">read</span> 0x44000000 0x900000 0x80000</span><br><span class="line">tftpput 0x44000000 0x80000 bdata.bin</span><br><span class="line"><span class="comment"># 备份后，用 WinHEX 修改 bdata.bin</span></span><br><span class="line"><span class="comment"># 修改方法见下方 详细步骤2</span></span><br><span class="line"><span class="comment"># 上传回去并写入</span></span><br><span class="line">tftpboot bdata.bin &amp;&amp; nand erase 0x900000 0x80000 &amp;&amp; nand write 0x44000000 0x900000 0x80000</span><br><span class="line"><span class="comment"># 写入 ok 后重启</span></span><br><span class="line">reset</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>telnet 登录，密码通过 sn（包含斜杠&#x2F;） <a target="_blank" rel="noopener" href="https://miwifi.dev/ssh">算出</a></p>
+</li>
+<li><p>可选：开 ssh，原理是给 firewall 配置加一个新的开机启动脚本，脚本放在不会被还原的 &#x2F;data 下，脚本里面每次还原 ssh 密钥（也备份到 &#x2F;data 下）并启动 ssh 服务</p>
+</li>
+<li><p>防火墙配置部分，参考 <a target="_blank" rel="noopener" href="https://openwrt.org/docs/guide-user/firewall/firewall_configuration">OpenWrt firewall</a> 用 <a target="_blank" rel="noopener" href="https://openwrt.org/docs/guide-user/base-system/uci">uci 命令</a> 配，就像 <a target="_blank" rel="noopener" href="https://github.com/NakanoSanku/StudyShare/blob/master/ax3000/ax3000-cr880x-SSH.md">这里</a> 的 ssh 自启动一样</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看当前防火墙配置</span></span><br><span class="line">uci show firewall</span><br><span class="line"><span class="comment"># 允许 ping 内网</span></span><br><span class="line">uci add firewall rule</span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].name=<span class="string">&#x27;Allow-ICMPv6-Forward&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].src=<span class="string">&#x27;wan&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].dest=<span class="string">&#x27;*&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].proto=<span class="string">&#x27;icmp&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;echo-request&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;echo-reply&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;destination-unreachable&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;packet-too-big&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;time-exceeded&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;bad-header&#x27;</span></span><br><span class="line">uci add_list firewall.@rule[-1].icmp_type=<span class="string">&#x27;unknown-header-type&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].<span class="built_in">limit</span>=<span class="string">&#x27;1000/sec&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].family=<span class="string">&#x27;ipv6&#x27;</span></span><br><span class="line">uci <span class="built_in">set</span> firewall.@rule[-1].target=<span class="string">&#x27;ACCEPT&#x27;</span></span><br><span class="line"><span class="comment"># 确认修改</span></span><br><span class="line">uci changes</span><br><span class="line"><span class="comment"># 让修改生效，用 ip6tables 也能配，但重启后会丢配置</span></span><br><span class="line">uci commit firewall</span><br><span class="line">/etc/init.d/firewall restart</span><br><span class="line"><span class="comment"># 查看配置</span></span><br><span class="line">uci show firewall.@rule[-1]</span><br><span class="line"><span class="built_in">cat</span> /etc/config/firewall</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-8268392-1-1.html">总体概况，2 楼内容</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/NakanoSanku/StudyShare/blob/master/ax3000/ax3000-cr880x-SSH.md">详细步骤1</a>、<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=8281028">详细步骤2</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.wutaijie.top/?p=254">启发来源 AX3600</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/am8don7p/">装插件</a></li>
+<li>刷固件：在 uboot 或 ssh 里面刷，目前固件 2.4G wifi 信号不稳，<a target="_blank" rel="noopener" href="https://github.com/hzyitc/openwrt-redmi-ax3000">刷 openwrt1</a>、<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-8274491-1-1.html">刷 openwrt2</a><ul>
+<li><p>参考 <a target="_blank" rel="noopener" href="https://github.com/hzyitc/openwrt-redmi-ax3000">烧写代码</a>，<code>ubiformat /dev/mtd19 -f openwrt-ipq50xx-arm-redmi_ax3000-squashfs-nand-factory.ubi</code>，将 OpenWrt 烧到 system2，原版在 system1，为双系统，切换系统命令如下</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示 ubi.mtd=rootfs 说明当前为 system1，ubi.mtd=rootfs_1 为 system2</span></span><br><span class="line"><span class="built_in">cat</span> /proc/cmdline</span><br><span class="line"></span><br><span class="line"><span class="comment"># system1 切 system2，原版切到 OpenWrt</span></span><br><span class="line">nvram <span class="built_in">set</span> flag_last_success=1</span><br><span class="line">nvram <span class="built_in">set</span> flag_boot_rootfs=1</span><br><span class="line">nvram commit</span><br><span class="line">reboot</span><br><span class="line"></span><br><span class="line"><span class="comment"># system2 切 system1，OpenWrt 切到原版</span></span><br><span class="line">fw_setenv flag_last_success 0</span><br><span class="line">fw_setenv flag_boot_rootfs 0</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>由于 ac2100 刷 openwrt 做一级路由拨号时，最大速度只有 450M，故将 CR8808 刷 openwrt 做一级路由（关 wifi，网线接二级路由，所以固件信号问题不影响），ac2100 刷回做二级路由，虽然原版 WIFI 速度快，但无法解决二级路由下设备 IPv6 地址在 PPPoE 重拨后旧地址不消失的问题（netsh interface ipv6 show siteprefixes，怀疑没有发送 RA 中 Router lifetime 为 0, Prefix information 中 Valid Lifetime 为 0 的报文，能确认 OpenWrt 发了，让旧的 prefix 失效），故也刷 OpenWrt</p>
+</li>
+<li><p>可改分区表 mtd1 MIBIB 实现增加 OpenWrt Flash 空间，未尝试，这样可能就是 OpenWrt 单系统，没有原版系统了</p>
+</li>
+</ul>
+</li>
+<li>路由器无线加密方式“WPA3&#x2F;WPA2”，Windows  查看是否支持 WIFI6(802.11ax) 和 WPA3 命令 <code>netsh wlan show drivers</code></li>
+<li>刷回原版或原版降级：见上面系统切换命令，原版系统已开 telnet。注意：如要用修复工具还原原版，则需要重新拆机开启 telnet</li>
+</ul>
+<h1 id="2-远程管理"><a href="#2-远程管理" class="headerlink" title="2 远程管理"></a>2 远程管理</h1><h2 id="2-1-WOL"><a href="#2-1-WOL" class="headerlink" title="2.1 WOL"></a>2.1 WOL</h2><ol>
+<li>ip 和 mac 绑定，系统和 bios 要开启对应配置 <a target="_blank" rel="noopener" href="https://www.iplaysoft.com/wol.html">wol 网络唤醒</a>。如关机后网口灯不亮，说明网卡断电，更新网卡驱动解决。驱动配置中，关闭环保节能和节能乙太网路</li>
+<li>配置 <a target="_blank" rel="noopener" href="https://service.oray.com/question/7996.html">花生壳内网穿透</a>（无公网 ip，无法 ddns 和端口映射）<ul>
+<li>一个账号只能一台设备，因此已有账号则需要使用子账号的方式，方便实名认证</li>
+<li>padavan(hiboy) 固件可能出现 &#x2F;opt 目录未挂载，导致花生壳无法启动，尝试拔掉 U 盘或重启路由器，正常 &#x2F;opt 挂载为 tmpfs 文件系统</li>
+<li>也可以考虑购买开机棒，但不如买个树莓派了</li>
+</ul>
+</li>
+<li>手机测试使用 google play 中的 wake on lan，pc 测试使用 Wake On Lan 又名 aquilaWOL</li>
+</ol>
+<h2 id="2-2-U盘访问"><a href="#2-2-U盘访问" class="headerlink" title="2.2 U盘访问"></a>2.2 U盘访问</h2><ul>
+<li>页面 USB 应用程序开启 samba 后，win10 仍无法访问。运行 gpedit.msc，计算机配置 -&gt; 管理模版 -&gt; 网络 -&gt; Laman 工作站，启动不安全的来宾登录</li>
+<li>挂载 USB 可能出现 readonly，格式化 U 盘解决</li>
+</ul>
+<h2 id="2-3-内网穿透"><a href="#2-3-内网穿透" class="headerlink" title="2.3 内网穿透"></a>2.3 内网穿透</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/410763468">正向代理、反向代理、内网穿透介绍</a><ul>
+<li>代理作为客户端，因此可用来隐藏客户端 IP</li>
+<li>代理作为服务器，因此可用来隐藏服务器 IP</li>
+</ul>
+</li>
+<li>客户端部分用 proxychains</li>
+<li>路由器<ul>
+<li>代理服务器端开内网穿透，注意是否提供源码（目前只有花生壳）或有路由器架构的程序</li>
+<li>转发到本地的 HTTP 代理服务器，使用 <a target="_blank" rel="noopener" href="http://tinyproxy.github.io/">tinyproxy</a></li>
+<li>下载 openwrt 交叉编译工具<ul>
+<li>对 gcc 找不到 32 位 <code>libz.so.1</code>，安装 <code>sudo apt-get install zlib1g:i386</code> 又会提示有风险的情况<ul>
+<li>手动下载包 <code>sudo apt-get download zlib1g:i386</code></li>
+<li>解压到某个目录 <code>dpkg-deb -R *.deb tmp</code></li>
+<li>通过 <code>export LD_LIBRARY_PATH=/tmp</code> 指定库路径运行 gcc</li>
+</ul>
+</li>
+<li>对于提示程序 not found 的情况，gcc -static 静态链接 libc</li>
+</ul>
+</li>
+<li>考虑 <a target="_blank" rel="noopener" href="https://freefrp.net/docs.html">免费 frp 服务</a>，为了保证内网服务的安全，应开启 TLS、STCP，为效率可开启 KCP。参考 <a target="_blank" rel="noopener" href="https://www.anquanke.com/post/id/231424">内网渗透代理之frp的应用与改造</a></li>
+<li>如从简单考虑，或内网要求严格，可识别出 frp 流量特征，可用 ssh，见 <a href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E8%B7%AF%E7%94%B1%E5%99%A8/../linux/#1-1-3-%E9%9A%A7%E9%81%93-%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91">1.1.3 隧道&#x2F;端口转发</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="3-网络"><a href="#3-网络" class="headerlink" title="3 网络"></a>3 网络</h1><h2 id="3-1-IPv6"><a href="#3-1-IPv6" class="headerlink" title="3.1 IPv6"></a>3.1 IPv6</h2><ul>
+<li>问题：一级路由 IP 前缀改变（PPPoE 重播）后，怀疑光猫配置为 DHCPv6 stateful 导致，二级路由的 IP 无法及时更新<ul>
+<li>所以联系客服光猫改桥接，用自己的路由器来控制下级，改前关闭光猫的 WIFI，确认光猫 LAN 口速率，有的光猫只有 LAN1 为千兆</li>
+<li>和安装师傅确认，旧光猫桥接最大支持 500M，千兆网才考虑更换光猫</li>
+<li>测速时，笔记本从本地硬盘启动系统（不从 USB 启动）接到光猫 LAN1 口，设置 PPPoE 拨号，<a target="_blank" rel="noopener" href="https://www.speedtest.cn/">测速1</a>、<a target="_blank" rel="noopener" href="https://www.librespeed.cn/">测速2</a>、<a target="_blank" rel="noopener" href="http://test.ustc.edu.cn/">测速3</a>、<a target="_blank" rel="noopener" href="https://ipw.cn/ipv6/">IPv6 支持检测</a></li>
+<li>联通 500M 测速，ac2100 原版固件 5G WIFI，下行 &gt; 620M，上行 &gt; 40M</li>
+</ul>
+</li>
+<li>一级路由用 OpenWrt 以支持 PD 下发和对 DHCPv6 的精确控制<ul>
+<li>WAN6 设置 Alias @wan</li>
+<li>LAN 开 Delegate IPv6 prefixes</li>
+<li>LAN 启用 SLAAC，DHCPv6 stateless（<a target="_blank" rel="noopener" href="https://community.arubanetworks.com/community-home/librarydocuments/viewdocument?DocumentKey=3b490d47-3c25-40cb-bbae-8b89b3b90424&CommunityKey=39a6bdf4-2376-46f9-853a-49420d2d0caa&tab=librarydocuments">RA-Flags</a> M &#x3D; 0, O &#x3D; 1。实测发现设置 M 也没事），因为与 DHCPv6 stateful 相比，SLAAC 在上级重新拨号地址变化时，下级路由地址能及时更新，<a target="_blank" rel="noopener" href="https://rongrongbq.moe/2021/08/firewall-and-DDNS-settings-for-IPv6/">参考</a><ul>
+<li>参考 <a target="_blank" rel="noopener" href="https://bbs.scumaker.org/t/topic/383">Openwrt IPv6 一级路由时的配置1</a>（以这个为主）、<a target="_blank" rel="noopener" href="https://post.smzdm.com/p/awzodmpp/">Openwrt IPv6 一级路由时的配置2</a>、<a target="_blank" rel="noopener" href="https://www.v2ex.com/t/799717">IPv6 二级路由器正确配置</a>、<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-8193852-1-1.html">IPv6 相关介绍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>对上级不下发 PD 时（一般为校园网），二级路由器的配置<ul>
+<li>IPv6 中继是 3 层，桥接是 2 层，报文进 3 层配置的防火墙和路由才能生效，因此想简单就用中继，更细的可以只让配置包（SLAAC 与 NDP 包）走 2 层桥接</li>
+<li>参考：<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-8253827-1-1.html">中继</a>、<a target="_blank" rel="noopener" href="https://www.sio.moe/zh-hans/2022/07/14/computer/Network/A-method-for-OpenWRT-secondary-routers-to-obtain-and-assign-IPv6-addresses/">中继或桥接</a>、<a target="_blank" rel="noopener" href="https://blog.men.ci/ipv6-slaac-relay-and-bridge">数据包中继+配置包桥接</a></li>
+</ul>
+</li>
+<li>防火墙，<a target="_blank" rel="noopener" href="https://rongrongbq.moe/2021/08/firewall-and-DDNS-settings-for-IPv6/">配置防火墙暴露 windows 设备</a>、<a target="_blank" rel="noopener" href="https://bbs.scumaker.org/t/topic/383">配置防火墙暴露 linux 设备 token address</a>、<a target="_blank" rel="noopener" href="https://superuser.com/questions/1181445/allow-traffic-through-a-firewall-to-a-dynamic-ipv6-address">使用不连续掩码</a><ul>
+<li>像小米原生固件，没有配置界面的，可用 uci 命令来配，见 CR8808 防火墙部分</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://www.v2ex.com/t/842947">IPv6 DDNS</a>，考虑用一个猜不到的长域名来隐藏 IP</li>
+<li>查看上级是否下发 IPv6-PD 方法，<code>ip -6 r</code>，default 两条，其中一条 ::&#x2F;60</li>
+</ul>
+<h2 id="3-2-ShellClash"><a href="#3-2-ShellClash" class="headerlink" title="3.2 ShellClash"></a>3.2 ShellClash</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/juewuy/ShellClash">ShellClash</a> 装在外置存储（OpenWrt 是 &#x2F;mnt），订阅必须经过在线转换才能用，Nft基础&#x2F;Nft混合 都可以（新版 OpenWrt 没有 iptables）</li>
+<li>clash 资源占用高，偶尔需要全局透明代理时再开启</li>
+</ul>
+<h1 id="4-无线桥接"><a href="#4-无线桥接" class="headerlink" title="4 无线桥接"></a>4 无线桥接</h1><h2 id="4-1-padavan（老毛子）"><a href="#4-1-padavan（老毛子）" class="headerlink" title="4.1 padavan（老毛子）"></a>4.1 padavan（老毛子）</h2><ul>
+<li>无线2.4GHz，无线桥接，AP 工作模式 “AP-Client + AP”，无线 AP-Client 角色 “WAN（Wireless ISP）”，选择 SSID，输入密钥</li>
+<li>外部网络（WAN），外网连接类型 “IPoE动态 IP”</li>
+</ul>
+<h2 id="4-2-openwrt"><a href="#4-2-openwrt" class="headerlink" title="4.2 openwrt"></a>4.2 openwrt</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.ravenxrz.ink/archives/2c9084de.html">openwrt 无线桥接</a>，master 向外发射信号，client 接收信号。<a target="_blank" rel="noopener" href="https://einverne.github.io/post/2017/03/openwrt-settings-and-tips.html">openwrt 接口名</a>、<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-4080096-1-1.html">红米 ac2100 无线中继 client 模式</a></li>
+<li>红米 ac2100 的固件中，无线中继后会生成接口 apcli0 (对于 5G 是 apclii0)。在接口设置中，把这个接口设置成 wan 口的物理接口，替换调原来的 eth0.1</li>
+<li>apcli0 (wan 口) 的网关和 dns 设置成上级的 ip（如 192.168.0.1），接口 ip 设置成与上级同一网段（如 192.168.0.2）</li>
+<li>lan 口是 eth0.2、ra0、rai0 的桥接，ip 设置为内网要分配的网段，网关、dns 设为 wan 口的 ip（如 192.168.0.2）</li>
+<li>接口设置完后可能要在无线中“重启无线”，接下来 lan 口的桥接可能又把 apcli0、apclii0 加回来了，再去掉</li>
+</ul>
+<h1 id="5-HTTP-3-TLS-1-3"><a href="#5-HTTP-3-TLS-1-3" class="headerlink" title="5 HTTP/3  TLS 1.3"></a>5 HTTP/3  TLS 1.3</h1><ul>
+<li>TLS<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/">握手流程</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.cloudflare.com/rfc-8446-aka-tls-1-3/">TLS 1.3 介绍</a>、<a target="_blank" rel="noopener" href="https://www.davidwong.fr/tls13/">TLS 1.3 详细介绍</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.cloudflare.com/encrypted-sni/">ESNI（目前只有 cloudflare 支持）</a>、<a target="_blank" rel="noopener" href="https://blog.cloudflare.com/encrypted-client-hello/">ECH</a></li>
+</ul>
+</li>
+<li>HTTP<ul>
+<li><a target="_blank" rel="noopener" href="https://http3-explained.haxx.se/zh/why-quic">QUIC</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cloudflare.com/learning/performance/http2-vs-http1.1/">HTTP2</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cloudflare.com/learning/performance/what-is-http3/">HTTP3</a></li>
+</ul>
+</li>
+</ul>
+</div><!--!--></article></div><!--!--><div class="card"><div class="card-content"><script src="https://giscus.app/client.js" data-repo="2-3-5-7/2-3-5-7.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDMwMjg1MTc=" data-category="General" data-category-id="DIC_kwDOFHIzJc4CWmss" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="bottom" data-theme="https://2-3-5-7.github.io/css/light4giscus.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-刷机"><span class="level-left"><span class="level-item">1 刷机</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-1-斐讯K2"><span class="level-left"><span class="level-item">1.1 斐讯K2</span></span></a></li><li><a class="level is-mobile" href="#1-2-小米路由器3G"><span class="level-left"><span class="level-item">1.2 小米路由器3G</span></span></a></li><li><a class="level is-mobile" href="#1-3-红米-ac2100"><span class="level-left"><span class="level-item">1.3 红米 ac2100</span></span></a></li><li><a class="level is-mobile" href="#1-4-移动CR8808（红米AX3000"><span class="level-left"><span class="level-item">1.4 移动CR8808（红米AX3000)</span></span></a></li></ul></li><li><a class="level is-mobile" href="#2-远程管理"><span class="level-left"><span class="level-item">2 远程管理</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#2-1-WOL"><span class="level-left"><span class="level-item">2.1 WOL</span></span></a></li><li><a class="level is-mobile" href="#2-2-U盘访问"><span class="level-left"><span class="level-item">2.2 U盘访问</span></span></a></li><li><a class="level is-mobile" href="#2-3-内网穿透"><span class="level-left"><span class="level-item">2.3 内网穿透</span></span></a></li></ul></li><li><a class="level is-mobile" href="#3-网络"><span class="level-left"><span class="level-item">3 网络</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#3-1-IPv6"><span class="level-left"><span class="level-item">3.1 IPv6</span></span></a></li><li><a class="level is-mobile" href="#3-2-ShellClash"><span class="level-left"><span class="level-item">3.2 ShellClash</span></span></a></li></ul></li><li><a class="level is-mobile" href="#4-无线桥接"><span class="level-left"><span class="level-item">4 无线桥接</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#4-1-padavan（老毛子）"><span class="level-left"><span class="level-item">4.1 padavan（老毛子）</span></span></a></li><li><a class="level is-mobile" href="#4-2-openwrt"><span class="level-left"><span class="level-item">4.2 openwrt</span></span></a></li></ul></li><li><a class="level is-mobile" href="#5-HTTP-3-TLS-1-3"><span class="level-left"><span class="level-item">5 HTTP/3  TLS 1.3</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E4%B8%93%E4%B8%9A/"><span class="level-start"><span class="level-item">专业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/"><span class="level-start"><span class="level-item">爱好</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/"><span class="level-start"><span class="level-item">Galgame</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/"><span class="level-start"><span class="level-item">Ever17</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/"><span class="level-start"><span class="level-item">人物</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/"><span class="level-start"><span class="level-item">地点</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/"><span class="level-start"><span class="level-item">场景</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">读书笔记</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">物理环境</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">虚拟环境</span></span><span class="level-end"><span class="level-item tag">19</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/"><span class="level-start"><span class="level-item">1. 来源与收集</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/"><span class="level-start"><span class="level-item">2. 处理平台</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">3. 处理工具</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/"><span class="level-start"><span class="level-item">4. 分享与备份</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><div><button id="toc-btn" onclick="toc.style.display = &#039;block&#039;;toc.onclick = () =&gt; toc.style.display = &#039;none&#039; " style="display: none;"><i class="fa-solid fa-list-ul"></i></button><button id="search-btn" onclick="document.querySelector(&#039;a.navbar-item.search&#039;).click();" style="display: none;"><i class="fa-solid fa-search fa-sm"></i></button></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

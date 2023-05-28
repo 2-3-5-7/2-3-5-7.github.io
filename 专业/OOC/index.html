@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta keywords="编程, 环境搭建, 读书笔记, Galgame, 生活技巧"><title>OOC - 自强不息 厚德载物</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="自强不息 厚德载物"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="自强不息 厚德载物"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="12345678910111213141516171819202122232425262728struct Object {	const struct Class * class;	&amp;#x2F;&amp;#x2F; 没变化};struct Class {	&amp;#x2F;&amp;#x2F; 这里去掉 Object 继承，const struct Object _;	const char * name;	const struct Class * super"><meta property="og:type" content="blog"><meta property="og:title" content="OOC"><meta property="og:url" content="https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/"><meta property="og:site_name" content="自强不息 厚德载物"><meta property="og:description" content="12345678910111213141516171819202122232425262728struct Object {	const struct Class * class;	&amp;#x2F;&amp;#x2F; 没变化};struct Class {	&amp;#x2F;&amp;#x2F; 这里去掉 Object 继承，const struct Object _;	const char * name;	const struct Class * super"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="1970-01-01T00:00:00.000Z"><meta property="article:modified_time" content="2023-05-21T01:48:28.663Z"><meta property="article:author" content="2-3-5-7"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://2-3-5-7.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/"},"headline":"OOC","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"1970-01-01T00:00:00.000Z","dateModified":"2023-05-21T01:48:28.663Z","author":{"@type":"Person","name":"2-3-5-7"},"publisher":{"@type":"Organization","name":"自强不息 厚德载物","logo":{"@type":"ImageObject","url":"https://2-3-5-7.github.io/img/logo.svg"}},"description":"12345678910111213141516171819202122232425262728struct Object {\tconst struct Class * class;\t&#x2F;&#x2F; 没变化};struct Class {\t&#x2F;&#x2F; 这里去掉 Object 继承，const struct Object _;\tconst char * name;\tconst struct Class * super"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-RMG9YTVY9M" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-RMG9YTVY9M');</script><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E4%B8%93%E4%B8%9A/">专业</a></span></div></div><h1 class="title is-3 is-size-4-mobile">OOC</h1><div class="content"><p><a target="_blank" rel="noopener" href="https://lwn.net/Articles/444910/">Object-oriented design patterns in the kernel 1，多态部分</a><br><a target="_blank" rel="noopener" href="https://lwn.net/Articles/446317/">Object-oriented design patterns in the kernel 2，继承部分</a></p>
+<p><strong>下载保存</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.cs.princeton.edu/courses/archive/spring21/cos217/">https://www.cs.princeton.edu/courses/archive/spring21/cos217/</a><br><a target="_blank" rel="noopener" href="https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/">https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/</a></p>
+<h1 id="1-封装"><a href="#1-封装" class="headerlink" title="1 封装"></a>1 封装</h1><ul>
+<li>参考文件操作 FILE*</li>
+<li>使用不完全类型</li>
+<li>头文件分成 2 个，一个对外接口，一个用来给子类嵌套继承</li>
+</ul>
+<h1 id="2-多态"><a href="#2-多态" class="headerlink" title="2 多态"></a>2 多态</h1><p>两种实现方式，常用第 2 种，文章对内核种第 2 种使用的特殊情况做了讨论</p>
+<ol>
+<li>最简单的方法是结构体包含函数指针，函数第一个参数为结构体指针。bar-&gt;foo(bar, …args)。但在对象很多时由于内存占用比下面的 vtable 多，这种 linux 内核不常用</li>
+<li>再复杂是将函数指针组成表，virtual function table (vtable) ，一般命名为 XXX_operations、XXX_ops，对象中包含这个表的指针<ul>
+<li>vtable 为 NULL 的 2 个原因<ol>
+<li>新添加了一个方法，但还没实现</li>
+<li>该方法对这种情况无意义，临时的或长期的</li>
+</ol>
+<ul>
+<li>但作者认为总可避免使用 NULL（个人观点：会掩盖 Bug）<ul>
+<li>NULL 是少数时，实现默认方法，利用 C99 多次初始化，将默认值写在前面</li>
+<li>NULL 是多数时，且性能很重要，在调用前判断 flag 的 bit，出现特殊情况才调 vtable 中的函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vtable 还可包含模块名称和链表 struct list_head，便于上层查找注册的设备</li>
+<li>vtable 第一个参数不是结构体指针的情况<ul>
+<li>结构体指针放在了最后一个参数</li>
+<li>只有一个对象，所以不需要指针，这个对象就是全局的</li>
+<li>多重继承，<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017502939956896">Mixin</a>，提供某个功能，但不以这个对象为主，需要多个对象</li>
+<li>子类的操作放入父类的 vtable 中，避免数量多的结构体过大，节省内存，以 struct page 举例</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="3-继承-is"><a href="#3-继承-is" class="headerlink" title="3 继承 is"></a>3 继承 is</h1><table>
+<thead>
+<tr>
+<th></th>
+<th>派生类包含基类</th>
+<th>基类使用 <code>void *private</code> 指针</th>
+<th>基类包含派生类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>定义</td>
+<td>基类是第一个派生类成员</td>
+<td>基类和派生类互相指</td>
+<td>基类和派生类定义到一个文件<br />派生成员 union 实现<br />把每个使用 union 的地方看作继承</td>
+</tr>
+<tr>
+<td>创建</td>
+<td>调派生类 ctor，派生类 ctor 再调基类 ctor</td>
+<td>先调基类 ctor，基类 ctor 再调派生类 ctor</td>
+<td>先调基类 ctor，再调派生类 ctor</td>
+</tr>
+<tr>
+<td>使用</td>
+<td>对外提供基类指针，用多态方式调派生类接口<br />派生类接口中用 container_of() 将基类指针转成派生类</td>
+<td>&#x2F;</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>优点</td>
+<td>多数情况</td>
+<td>适用于需要切换子类的类型时</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>&#x2F;</td>
+<td>两次内存分配<br />性能不好，内存占用和解引用花费时间<br />void * 可读性差，看不出含义</td>
+<td>浪费内存</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>mixin 类型继承，例如链表，提供某种服务</p>
+</li>
+<li><p>一个对象只有一个引用计数（在最内层基类中）管理生命周期，内核不使用垃圾回收，因此可用是否有引用计数将单继承与 mixin 继承区分开</p>
+</li>
+<li><p>TODO，下一步看 linux 内核加密部分、openssl 部分代码，复习 ooc 代码，仿写出 modbus 代码</p>
+</li>
+<li><p>重点在第 6 章，后续章要么太难，要么与主题无关，所以基本没看。此外那个计算器是个有趣、有难度的例子。这本书使用 void* 而没用不完全类型（即前向声明）是个小瑕疵，否则代码会更清晰</p>
+</li>
+<li><p>添加新函数时，基于 vtable 基类 Class 扩展新的函数，定义好后，new 一个新的 vtable 对象（这其实分两步，见第 6 章 initPoint() 代码），所谓类描述符。<br>添加新成员时，基于 Object 扩展，然后用刚刚的 vtable 对象（即类描述符）创建对象（因为刚刚创建的 vtable 包含了构造函数和对象大小）。因此创建对象要先创建类描述符。<br>因此对于成员和函数要有两个基类，vtable 因为只有一个且储存了对象大小信息所以叫 Class（为避免歧义称 Class 类为 vtable 类，或者叫类描述符类），而包括 vtable 类在内的所有类都继承自 Object 类，Object 类里面只有一个 Class 指针成员，表明所有对象都属于某个类。</p>
+</li>
+<li><p>还要静态创建 Class 和 Object 类的类描述符，用于子类的 ctor 和 dtor 中调用，初始化基类成员部分。对于 Object 的 ctor 什么都不用做， Class 的 ctor 初始化函数指针。</p>
+</li>
+<li><p>改进和个人思考：这里静态创建的 Class 和 Object 类的类描述符，用来作为 ctor 调父类 ctor 的终点，完成继承关系即 新类的 vtable -&gt; Class -&gt; Object 。新的类描述符要 new 出来，不如静态定义清晰，因为类不会像对象创建很多（虽然逻辑上确实是用 Class 这个 vtable 基类，创建新的类，相当于 new 新的类描述符对象，但这种对象不会很多）。如静态定义就不必再调 Class 的 ctor，也不必静态创建 Class 的类描述符。而且 Class 不必继承 Object，否则每个对象，成员部分继承 Object 有 Class 指针，函数部分也继承 Object，即 Class 部分还要有 Object，Object 里面又有 Class。Class 不继承 Object（即不包含 Object），自己本身就作为 vtable 形式的基类，与 Object 是平等的关系。新类的 ctor 没必要再调父类 Object 的 ctor，可以仅为了继承逻辑，struct Class Object &#x3D; {初始化}，新类指向 &amp;Object</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Object</span> &#123;</span></span><br><span class="line">	<span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">Class</span> * <span class="keyword">class</span>;</span>	<span class="comment">// 没变化</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Class</span> &#123;</span></span><br><span class="line">	<span class="comment">// 这里去掉 Object 继承，const struct Object _;</span></span><br><span class="line">	<span class="type">const</span> <span class="type">char</span> * name;</span><br><span class="line">	<span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">Class</span> * <span class="title">super</span>;</span></span><br><span class="line">	<span class="type">size_t</span> size;</span><br><span class="line">	<span class="type">void</span> * (* ctor) (<span class="type">void</span> * self, va_list * app);</span><br><span class="line">	<span class="type">void</span> * (* dtor) (<span class="type">void</span> * self);</span><br><span class="line">	<span class="type">int</span> (* differ) (<span class="type">const</span> <span class="type">void</span> * self, <span class="type">const</span> <span class="type">void</span> * b);</span><br><span class="line">	<span class="type">int</span> (* puto) (<span class="type">const</span> <span class="type">void</span> * self, FILE * fp);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Class</span> <span class="title">Object</span> =</span> &#123;.name = <span class="string">&quot;Object&quot;</span>&#125;; <span class="comment">// 只定义 Object 的类描述符，不再定义 Class 的类描述符</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Point</span> &#123;</span></span><br><span class="line">    <span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">Object</span> _;</span></span><br><span class="line">	<span class="type">int</span> x, y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">PointClass</span> &#123;</span>		<span class="comment">// 静态初始化类描述符</span></span><br><span class="line">	<span class="type">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">Class</span> _;</span></span><br><span class="line">	<span class="type">void</span> (* draw) (<span class="type">const</span> <span class="type">void</span> * self);</span><br><span class="line">&#125; Point = &#123;_.name = <span class="string">&quot;Point&quot;</span>, _.super = &amp;Object, _.size = <span class="keyword">sizeof</span>(<span class="keyword">struct</span> Point), _.ctor = Point_ctor, .draw = Point_draw&#125;;</span><br><span class="line"></span><br><span class="line">p = new(Point, <span class="number">1</span>, <span class="number">2</span>);  <span class="comment">// new 里面按照 Point 的大小申请内存和调构造函数</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进一步举例如何应用</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">DeviceClass</span> &#123;</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">Class</span> <span class="title">parent</span>;</span></span><br><span class="line">    <span class="type">void</span> (* fun1) (<span class="type">const</span> <span class="type">void</span> * self);</span><br><span class="line">&#125; DeviceDesc = &#123;这个就是类描述符，创建对象时需要&#125; ;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Device</span> &#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Object</span> <span class="title">parent</span>;</span></span><br><span class="line">	<span class="type">int</span> x, y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">SubDeviceClass</span> &#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">DeviceClass</span> <span class="title">parent</span>;</span></span><br><span class="line">    <span class="type">void</span> (* draw) (<span class="type">const</span> <span class="type">void</span> * self);</span><br><span class="line">&#125; SubDeviceDesc = &#123;这里可以先继承父类的函数指针(.parent = DeviceDesc)，然后在后面来覆盖(.parent.parent.ctor = SubDeviceClass_ctor)，因为根据 C99 多次初始化最后那个有效&#125;;</span><br><span class="line">    </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">SubDevice</span> &#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Device</span> <span class="title">parent</span>;</span></span><br><span class="line">    <span class="type">int</span> z;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="4-异常处理"><a href="#4-异常处理" class="headerlink" title="4 异常处理"></a>4 异常处理</h1><p>用对应的库，用 setjmp 和 longjmp 实现。</p>
+<p>还能实现线程切换，已经放入 Dropbox 书 <a target="_blank" rel="noopener" href="https://www.cs.princeton.edu/courses/archive/spring04/cos217/lectures/Exceptions.pdf">https://www.cs.princeton.edu/courses/archive/spring04/cos217/lectures/Exceptions.pdf</a></p>
+<h1 id="5-单元测试"><a href="#5-单元测试" class="headerlink" title="5 单元测试"></a>5 单元测试</h1><p>试试 Google Test ？ <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/65820/unit-testing-c-code">https://stackoverflow.com/questions/65820/unit-testing-c-code</a></p>
+<h1 id="6-内存管理"><a href="#6-内存管理" class="headerlink" title="6 内存管理"></a>6 内存管理</h1><h1 id="7-安全"><a href="#7-安全" class="headerlink" title="7 安全"></a>7 安全</h1><p>cppcheck</p>
+</div><!--!--></article></div><!--!--><div class="card"><div class="card-content"><script src="https://giscus.app/client.js" data-repo="2-3-5-7/2-3-5-7.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDMwMjg1MTc=" data-category="General" data-category-id="DIC_kwDOFHIzJc4CWmss" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="bottom" data-theme="https://2-3-5-7.github.io/css/light4giscus.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-封装"><span class="level-left"><span class="level-item">1 封装</span></span></a></li><li><a class="level is-mobile" href="#2-多态"><span class="level-left"><span class="level-item">2 多态</span></span></a></li><li><a class="level is-mobile" href="#3-继承-is"><span class="level-left"><span class="level-item">3 继承 is</span></span></a></li><li><a class="level is-mobile" href="#4-异常处理"><span class="level-left"><span class="level-item">4 异常处理</span></span></a></li><li><a class="level is-mobile" href="#5-单元测试"><span class="level-left"><span class="level-item">5 单元测试</span></span></a></li><li><a class="level is-mobile" href="#6-内存管理"><span class="level-left"><span class="level-item">6 内存管理</span></span></a></li><li><a class="level is-mobile" href="#7-安全"><span class="level-left"><span class="level-item">7 安全</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E4%B8%93%E4%B8%9A/"><span class="level-start"><span class="level-item">专业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/"><span class="level-start"><span class="level-item">爱好</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/"><span class="level-start"><span class="level-item">Galgame</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/"><span class="level-start"><span class="level-item">Ever17</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/"><span class="level-start"><span class="level-item">人物</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/"><span class="level-start"><span class="level-item">地点</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/"><span class="level-start"><span class="level-item">场景</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">读书笔记</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">物理环境</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">虚拟环境</span></span><span class="level-end"><span class="level-item tag">19</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/"><span class="level-start"><span class="level-item">1. 来源与收集</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/"><span class="level-start"><span class="level-item">2. 处理平台</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">3. 处理工具</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/"><span class="level-start"><span class="level-item">4. 分享与备份</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><div><button id="toc-btn" onclick="toc.style.display = &#039;block&#039;;toc.onclick = () =&gt; toc.style.display = &#039;none&#039; " style="display: none;"><i class="fa-solid fa-list-ul"></i></button><button id="search-btn" onclick="document.querySelector(&#039;a.navbar-item.search&#039;).click();" style="display: none;"><i class="fa-solid fa-search fa-sm"></i></button></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

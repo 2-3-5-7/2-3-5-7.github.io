@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta keywords="编程, 环境搭建, 读书笔记, Galgame, 生活技巧"><title>windows - 自强不息 厚德载物</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="自强不息 厚德载物"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="自强不息 厚德载物"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="1234# 导入 ie 代理netsh winhttp import proxy source&amp;#x3D;ie# 取消代理netsh winhttp reset proxy1 清理旧文件  删除没有权限的文件夹   1. 文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 更改所有者 -&amp;gt; 输入自己的用户名 -&amp;gt; 选择下面应用到子文件夹的勾 -&amp;gt; 确定所有对话框  2. 文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 权限"><meta property="og:type" content="blog"><meta property="og:title" content="windows"><meta property="og:url" content="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/"><meta property="og:site_name" content="自强不息 厚德载物"><meta property="og:description" content="1234# 导入 ie 代理netsh winhttp import proxy source&amp;#x3D;ie# 取消代理netsh winhttp reset proxy1 清理旧文件  删除没有权限的文件夹   1. 文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 更改所有者 -&amp;gt; 输入自己的用户名 -&amp;gt; 选择下面应用到子文件夹的勾 -&amp;gt; 确定所有对话框  2. 文件夹属性 -&amp;gt; 安全 -&amp;gt; 高级 -&amp;gt; 权限"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://2-3-5-7.github.io/img/og_image.png"><meta property="article:published_time" content="1970-01-01T00:00:00.000Z"><meta property="article:modified_time" content="2023-05-28T04:18:41.187Z"><meta property="article:author" content="2-3-5-7"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://2-3-5-7.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/"},"headline":"windows","image":["https://2-3-5-7.github.io/img/og_image.png"],"datePublished":"1970-01-01T00:00:00.000Z","dateModified":"2023-05-28T04:18:41.187Z","author":{"@type":"Person","name":"2-3-5-7"},"publisher":{"@type":"Organization","name":"自强不息 厚德载物","logo":{"@type":"ImageObject","url":"https://2-3-5-7.github.io/img/logo.svg"}},"description":"1234# 导入 ie 代理netsh winhttp import proxy source&#x3D;ie# 取消代理netsh winhttp reset proxy1 清理旧文件  删除没有权限的文件夹   1. 文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 更改所有者 -&gt; 输入自己的用户名 -&gt; 选择下面应用到子文件夹的勾 -&gt; 确定所有对话框  2. 文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 权限"}</script><link rel="canonical" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-RMG9YTVY9M" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-RMG9YTVY9M');</script><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><h1 class="title is-3 is-size-4-mobile">windows</h1><div class="content"><h1 id="1-清理旧文件"><a href="#1-清理旧文件" class="headerlink" title="1 清理旧文件"></a>1 清理旧文件</h1><p>删除没有权限的文件夹</p>
+<ol>
+<li>文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 更改所有者 -&gt; 输入自己的用户名 -&gt; 选择下面应用到子文件夹的勾 -&gt; 确定所有对话框</li>
+<li>文件夹属性 -&gt; 安全 -&gt; 高级 -&gt; 权限添加 -&gt; 主体为自己的用户名 -&gt; 勾选下面的继承权限</li>
+</ol>
+<h1 id="2-搭建"><a href="#2-搭建" class="headerlink" title="2 搭建"></a>2 搭建</h1><ol>
+<li>安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容<ul>
+<li>用 Edgeless PE，<a target="_blank" rel="noopener" href="https://wiki.edgeless.top/v2/guide/burn.html">写入</a> 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间</li>
+</ul>
+</li>
+<li>PE 环境下加载 ISO 镜像（镜像选择专业版），运行 source 下的 setup<ul>
+<li>对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0</li>
+</ul>
+</li>
+<li>更新系统、自动装驱动</li>
+<li>关闭更新</li>
+<li>修改桌面、文档等路径</li>
+<li>激活系统，HEU_KMS_Activator 激活 Office 和 Windows</li>
+<li>安装字体，设置 npp、typora、obsidian、系统字体</li>
+<li>Win11<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=p72srXZgOmk">让系统时钟显示秒数</a></li>
+<li>蓝牙丢失的情况，关机、断电源后，等一分钟，启动可恢复</li>
+<li>蓝牙音量无法调节，regedit 的 <code>计算机\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Bluetooth\Audio\AVRCP\CT</code> 中 DisableAbsoluteVolume 改为 1，<a target="_blank" rel="noopener" href="https://answers.microsoft.com/zh-hans/windows/forum/all/windows10%E6%9B%B4%E6%96%B01803/7fc4f1ca-46be-4b13-8133-0eb56ad9e44d">参考</a></li>
+<li>修复引导后，在 msconfig 引导中删除旧引导</li>
+<li>导入 reg 目录下其它配置，如用图片查看器打开图片</li>
+<li><a target="_blank" rel="noopener" href="https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/">使用传统右键菜单命令</a> <code>reg add &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&quot; /f /ve</code>，恢复 <code>reg delete &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}&quot; /f</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="2-1-虚拟机安装精简版-Win10"><a href="#2-1-虚拟机安装精简版-Win10" class="headerlink" title="2.1 虚拟机安装精简版 Win10"></a>2.1 虚拟机安装精简版 Win10</h2><ul>
+<li>VMware 创建一个虚拟机，分配空白的硬盘</li>
+<li>插入 PE U 盘，启动，将 U 盘连接到虚拟机，重启后会从 U 盘启动<ul>
+<li>更改 vmvare BIOS 启动顺序，重启后直接按 ESC 选择 USB（连接到虚拟机），如不行再试下面的</li>
+<li>编辑虚拟机名称的 vmx 文件，添加 <code>bios.bootdelay=&quot;5000&quot;</code>，然后重启按 ESC</li>
+<li>ESC: 调整启动顺序，F2: 进入BIOS Setup</li>
+<li>要还原回去添加 <code>bios.forceSetupOnce = &quot;FALSE&quot;</code> 再重启一次，<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_15338523/3592954">参考</a></li>
+</ul>
+</li>
+<li>从 uupdump.net 选择最新的 x64 Feature Update，<a target="_blank" rel="noopener" href="https://github.com/uup-dump-dev/website-public/blob/master/FAQ.md">参考</a>、<a target="_blank" rel="noopener" href="https://docs.atlasos.net/getting-started/installation/">参考2</a></li>
+<li>下载 <a target="_blank" rel="noopener" href="https://ameliorated.io/">AME Wizard</a> 和 ReviOS Playbook，运行</li>
+<li>也可用 VMwareHorizonOSOptimizationTool，<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=T-SuNdocch0">相关介绍</a></li>
+</ul>
+<h1 id="3-软件安装"><a href="#3-软件安装" class="headerlink" title="3 软件安装"></a>3 软件安装</h1><ul>
+<li>没必要储存的大安装文件，一律以 0 字节的 <code>name.2big</code> 占位</li>
+</ul>
+<!-- DB start -->
+
+<h2 id="3-1-试用中"><a href="#3-1-试用中" class="headerlink" title="3.1 试用中"></a>3.1 试用中</h2><table>
+<thead>
+<tr>
+<th>试用中</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BurpSuite</td>
+<td></td>
+</tr>
+<tr>
+<td>Fiddler</td>
+<td></td>
+</tr>
+<tr>
+<td>nodesCatch</td>
+<td>节点测延迟和测速，双内核，用来选机场节点和过滤免费节点。必要时改测速下载文件，因为机场可能封锁某些常用下载文件</td>
+</tr>
+<tr>
+<td>incontrol</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="3-2-必装"><a href="#3-2-必装" class="headerlink" title="3.2 必装"></a>3.2 必装</h2><table>
+<thead>
+<tr>
+<th>必装</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>驱动</td>
+<td>使用联想驱动工具安装。驱动文件、主机编号、保修时间，见目录显卡驱动-IntelVideo、电源 ACPI-n2hku54w_x64、主板 intelchip-r0pch04w，两个蓝牙驱动<br />显示设置中缩放与布局设置为 125%，但偶尔会出现任务栏显示位置不正常的问题，通过设置分辨率为 1366X768 来放大显示</td>
+</tr>
+<tr>
+<td>字体与主题</td>
+<td></td>
+</tr>
+<tr>
+<td>Clash.for.Windows</td>
+<td>- 设置开机启动，节点切换自动断开<br/>- 手动调用 command.bat 里面的命令安装 service，及手动删除 service 解决“红色地球”问题，<a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/3412">参见</a><br />- 可能对 clash 订阅的规则不满意，因此见下面 clash 自定义部分<br /><a target="_blank" rel="noopener" href="https://merlinblog.xyz/wikipageguide.html">所有平台客户端汇总</a></td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>- 参考 <a target="_blank" rel="noopener" href="https://helgeklein.com/blog/2009/08/moving-the-firefox-cache-directory-and-profile-separately/">这个方法</a> 改变 default-release 那个 profile 位置，cache 位置就不用改了。还原 profile，还原 profile 时扩展需要关闭一下重开，账户可能要重新绑定<br />- 临时使用 AHK 脚本支持欧路双击取词<br />- 如果需要隐藏顶部标签栏、标题栏、侧栏标题，<a target="_blank" rel="noopener" href="https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b">参照这个</a>，但不要添加 windows 按钮那个 CSS<br />- about:config 设置 browser.urlbar.openintab 为 true，搜索结果新 tab 打开<br />- favicons 不更新，手动删除 <a target="_blank" rel="noopener" href="https://superuser.com/questions/1259660/wrong-favicons-in-firefox">favicons.sqlite</a></td>
+</tr>
+<tr>
+<td>BANDIZIP</td>
+<td>- 设置文件类型关联<br />- 设置解压和压缩右键菜单<br />- 设置解压后自动关闭窗口，打开解压文件夹<br />- 不要更新，新版有广告<br />不支持添加文件到 7z，可以用 7zip</td>
+</tr>
+<tr>
+<td>PotPlayer</td>
+<td>- 设置文件类型关联<br />- 设置打开新文件时在当前进程，不新建进程<br />- 字幕缓冲量设为 0 避免弹幕抖动（仅新版需要）<br />- 最新版会有广告，关闭更新<br />- 下载的 ass 弹幕避免占满整个屏幕，可修改 PlayResY，如 1080 分辨率高度占 0.8 高度为 1080&#x2F;0.8&#x3D;1350</td>
+</tr>
+<tr>
+<td>GoogleDrive</td>
+<td>土区年付 100G，替换 Dropbox<br />两种用法<br/>- 与 Dropbox 相同的用法。一般用云端硬盘，切换到“镜像文件”方式同步（非在线方式），点击“文件夹”，选择要同步的文件夹<br/>- 与百度云相同的用法。即只想备份到云，不想与其它设备同步使用“我的计算机”同步</td>
+</tr>
+<tr>
+<td>Cryptomator</td>
+<td></td>
+</tr>
+<tr>
+<td>Obsidian</td>
+<td>笔记管理软件，typora 作为它的外部编辑器</td>
+</tr>
+<tr>
+<td>typora</td>
+<td>- 打开主题文件夹放置 <code>base.user.css</code>  字体和界面宽度设置文件 ，见 <code>typora</code> 文件夹<br />- 其它偏好设置<br />- 目前两个 Bug，会在列表间加空行变成 lose list；被该用 tab 缩进，变成两个空格<br />  第一个用 lint 插件解决，第二个用搜索替换 “(^\t*)  “ 替换为 “$1	“</td>
+</tr>
+<tr>
+<td>HEU_KMS_Activator</td>
+<td>office 和 windows 激活工具<br />激活时关闭实时扫描，排除 System32\kms-renewal.exe 和 SECOPatcher.dll</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>第二浏览器</td>
+</tr>
+<tr>
+<td>火绒</td>
+<td>替换系统杀毒</td>
+</tr>
+<tr>
+<td>傲梅轻松备份</td>
+<td>一份安装版、一份 PE 版，尽量不升级<br />关机时备份需关闭 “快速启动”</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>—下面开始是免安装软件—</strong></td>
+</tr>
+<tr>
+<td>wiztree</td>
+<td>显示磁盘空间占用</td>
+</tr>
+<tr>
+<td>SumatraPDF</td>
+<td>关联 PDF 格式</td>
+</tr>
+<tr>
+<td>KeePass</td>
+<td>为了安全设定自动锁定时间</td>
+</tr>
+<tr>
+<td>npp</td>
+<td>修改字体和字体大小<br />点 ？以管理员启动设置更新代理服务器，在插件中安装 compare<br />修改设置中的备份，简单备份改为冗余备份，设置自定义文件夹。每次保存都会在这里记录一份旧的</td>
+</tr>
+<tr>
+<td>OneCommander</td>
+<td>clover 的替代品，防火墙禁止联网防止总提示更新</td>
+</tr>
+<tr>
+<td>ContextMenuManager</td>
+<td>右键菜单，<a target="_blank" rel="noopener" href="https://github.com/BluePointLilac/ContextMenuManager/releases">官方下载</a>。清理显卡，添加 MSYS2 到 目录和目录背景，其中命令为 <code>D:\soft\msys64\msys2_shell.cmd -msys -where %v</code></td>
+</tr>
+<tr>
+<td>Everything</td>
+<td>空格表示与，| 表示或，”” 中是真的空格。限定搜索范围，支持简单正则<br />简单的 FTP、HTTP 服务器</td>
+</tr>
+<tr>
+<td>calibre</td>
+<td>epub 等格式的电子阅读器<br />kindle 数据格式转换与管理。新版运行有问题，可能是多显示器的原因，总之维持旧版</td>
+</tr>
+<tr>
+<td>KopiaUI</td>
+<td>增量备份。额外添加 VSS 脚本和 kopiaignore 模板</td>
+</tr>
+<tr>
+<td>alist</td>
+<td>国内网盘转 webdav</td>
+</tr>
+<tr>
+<td>rclone</td>
+<td>webdav&#x2F;国外网盘 挂载、同步，给 KopiaUI 提供支持</td>
+</tr>
+</tbody></table>
+<h2 id="3-3-虚拟机安装"><a href="#3-3-虚拟机安装" class="headerlink" title="3.3 虚拟机安装"></a>3.3 虚拟机安装</h2><table>
+<thead>
+<tr>
+<th>虚拟机安装</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TIM</td>
+<td>查考<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/265963430/answer/2492603110">这个</a>删除 QQProtect</td>
+</tr>
+<tr>
+<td>WeChat</td>
+<td></td>
+</tr>
+<tr>
+<td>百度网盘</td>
+<td></td>
+</tr>
+<tr>
+<td>阿里云盘</td>
+<td></td>
+</tr>
+<tr>
+<td>PikPak_By_Shimily</td>
+<td></td>
+</tr>
+<tr>
+<td>BitComet_v1.87_Stable_Mod</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="3-4-建议安装"><a href="#3-4-建议安装" class="headerlink" title="3.4 建议安装"></a>3.4 建议安装</h2><table>
+<thead>
+<tr>
+<th>建议安装</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>欧路词典与配置</td>
+<td>GoldenDict 和 欧路词典共用的词典</td>
+</tr>
+<tr>
+<td>欧路词典</td>
+<td>- 参考 环境-&gt; 词典软件 设置。词典在“Dictionary在用”<br />- 用 AutoHotkey 脚本，设置划词快捷键 Ctrl + F10</td>
+</tr>
+<tr>
+<td>SecureCRT</td>
+<td>见 linux 文档 SecureCRT 配置问题。配置备份在 VanDyke_Config.zip ，可直接覆盖</td>
+</tr>
+<tr>
+<td>vcxsrv</td>
+<td>替代 xming（有 bug、新版本收费），新建快捷方式 “D:\soft\VcXsrv\vcxsrv.exe :0 -clipboard -multiwindow -dpi 108”<br />添加到 windows 启动中，C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp<br /> <a target="_blank" rel="noopener" href="https://aufather.wordpress.com/2010/11/21/increasing-font-size-in-xming-server/">指定 dpi</a> <code>-dpi 108</code> 来增加文字大小</td>
+</tr>
+<tr>
+<td>VMware-workstation</td>
+<td>ZF3R0-FHED2-M80TY-8QYGC-NPKYF <a target="_blank" rel="noopener" href="https://www.ghxi.com/vmware15.html">参考</a><br />- 安装时勾选自动安装 WHP（基于 Hyper-V）。解释见 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c02f776a65cd">Hyper-V 和 VMWare 终于可以无缝共存</a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/381969738">Windows 下各种虚拟化名词解释</a><br />- 创建虚拟机，不要勾选虚拟化引擎 Intel VT-x 这些，因为 Hyper-V 底层已经用到这些技术了</td>
+</tr>
+<tr>
+<td>office 2021（专业增强零售版）</td>
+<td>1. 先卸载旧的 office，再用 OTP 工具的激活选项卡清除旧的激活信息，重启<br/>2. 用 OTP <a target="_blank" rel="noopener" href="https://help.coolhub.top/zh-cn/deploy/#%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85">离线安装</a> 专业增强零售版，安装选 word、excel、powerpoint 三个<br />3. 使用 HEU_KMS_Activator 转为 VL 版同时激活，使用 HEU_KMS_Activator 时要安全中心关闭实时扫描<br />要是win11 一直激活失败 0x80080005，改用在线 KMS 激活</td>
+</tr>
+<tr>
+<td>Office Tool Plus</td>
+<td>用来选择安装哪些组件和激活管理</td>
+</tr>
+<tr>
+<td>pandoc</td>
+<td>配合 typora 导入、导出各种格式文档</td>
+</tr>
+<tr>
+<td>telegram</td>
+<td></td>
+</tr>
+<tr>
+<td>xmind</td>
+<td>比起 mindmaster 没有节点数限制，xmind 8 绿色版，免费导出 svg，适合画调用关系图<br />xmind 2020 适合画大纲，导出 markdown，图不大时截图配在文章中</td>
+</tr>
+<tr>
+<td>msys2</td>
+<td>建议这个代替 git</td>
+</tr>
+<tr>
+<td>Meld</td>
+<td>windows 版<a target="_blank" rel="noopener" href="http://meldmerge.org/">下载</a>，用于 git 或其它比较</td>
+</tr>
+<tr>
+<td>python</td>
+<td></td>
+</tr>
+<tr>
+<td>node</td>
+<td>博客搭建使用</td>
+</tr>
+<tr>
+<td>CLion</td>
+<td></td>
+</tr>
+<tr>
+<td>pycharm</td>
+<td></td>
+</tr>
+<tr>
+<td>ja-netfilter-all</td>
+<td>参考 <a target="_blank" rel="noopener" href="https://www.jiweichengzhu.com/article/4bcb140d5035426f9da3dea46f564e4d">这篇文章</a> 运行脚本激活，从这里 <a target="_blank" rel="noopener" href="https://jetbra.in/s">zhile 下载和激活码</a></td>
+</tr>
+<tr>
+<td>7z</td>
+<td>备用的解压缩软件，负责备份 firefox 时的命令行工具，提供 hash 右键菜单</td>
+</tr>
+<tr>
+<td>Wireshark</td>
+<td>抓包。更新到 3.2.3 安装 usbpcap 后可以识别 USB 网卡</td>
+</tr>
+<tr>
+<td>spacedesk</td>
+<td>平板做显示器，支持多台，无线连接<br />不要改安装路径，否则触摸屏不好用，<br />防火墙要放开 C:\Windows\System32\spacedeskService.exe</td>
+</tr>
+<tr>
+<td>DeskPins</td>
+<td>窗口置顶软件</td>
+</tr>
+<tr>
+<td>逍遥模拟器</td>
+<td>下载国际版，广告少一些<br />支持微信平板登陆，分辨率修改为 1600X900，dpi 修改为 240<br />雷电模拟器出现开启 AMD VT 后无法启动<br /><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jsubaron/p/16230491.html">虚拟机里跑模拟器</a>，可以试试</td>
+</tr>
+<tr>
+<td>喵喵机</td>
+<td>喵喵机 PC 打印程序</td>
+</tr>
+<tr>
+<td>IDM</td>
+<td>破解版，用于下载 Youtube 视频</td>
+</tr>
+<tr>
+<td>CP2102六合一</td>
+<td>win 10 可用</td>
+</tr>
+<tr>
+<td>MouseWithoutBorders</td>
+<td>取消一些快捷键，避免冲突<br />如果改了 dns，可能需要设置 ip mapping</td>
+</tr>
+<tr>
+<td>Microsoft.WindowsTerminal</td>
+<td>可启用透明效果的 github 版本</td>
+</tr>
+<tr>
+<td>wireguard</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>—下面开始是免安装软件—</strong></td>
+</tr>
+<tr>
+<td>WinSCP</td>
+<td>FTP、SFTP 等，在 session 的 高级设置中 UTF-8 encoding for filename 用来支持中文名</td>
+</tr>
+<tr>
+<td>调试助手</td>
+<td>串口调试助手&#x2F;网络调试助手</td>
+</tr>
+<tr>
+<td>ADB</td>
+<td>adb 工具和 usb 驱动</td>
+</tr>
+<tr>
+<td>IntelliJ IDEA</td>
+<td></td>
+</tr>
+<tr>
+<td>jdk</td>
+<td>JDK、JDK Docs</td>
+</tr>
+<tr>
+<td>VSCode</td>
+<td>创建 data 文件夹，开启 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/portable">portable mode</a><br />其它参照 IDE 文档配置</td>
+</tr>
+<tr>
+<td>gtags</td>
+<td></td>
+</tr>
+<tr>
+<td>PDF处理工具</td>
+<td>操作见“电子书处理”文档</td>
+</tr>
+<tr>
+<td>DeDRM_tools</td>
+<td>DRM 移除插件，租借书籍 <a target="_blank" rel="noopener" href="https://www.reddit.com/r/Piracy/comments/ezenaa/how_to_remove_drm_from_an_amazon_kindle_rented/">注释掉 rented 两行代码</a> 后可以用，已经加入改后版本</td>
+</tr>
+<tr>
+<td>cmake</td>
+<td>只使用 gui 程序，命令行用 msys2 的</td>
+</tr>
+<tr>
+<td>AutoHotkey</td>
+<td>用于，推 gal 翻页笔映射脚本，欧路词典取词脚本</td>
+</tr>
+<tr>
+<td>Bulk Rename Utility</td>
+<td></td>
+</tr>
+<tr>
+<td>哔哩下载姬</td>
+<td>B 站视频、弹幕下载<br />ass 弹幕的 PlayResY 乘以 2 实现半屏弹幕播放<br />同时搭配 MPC-HC，避免 potplayer 引起的闪屏</td>
+</tr>
+<tr>
+<td>Dism++</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/Chuyu-Team/Dism-Multi-language">下载</a>，清理系统空间、引导修复</td>
+</tr>
+<tr>
+<td>Hourglass</td>
+<td>倒计时软件，<a target="_blank" rel="noopener" href="https://chris.dziemborowicz.com/apps/hourglass/">官网帮助文档</a></td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>坏道检查、分区、<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ev4y1v7wY">硬盘信息查看</a>，CrystalDiskInfo 原始值十进制显示<br />DiskGenius <a target="_blank" rel="noopener" href="https://www.diskgenius.cn/bbs/forum.php?mod=forumdisplay&fid=5">官方论坛</a> 有 PE 版，即单文件版</td>
+</tr>
+<tr>
+<td>galgame</td>
+<td>翻译器、全屏 Magpie、提取文字 MisakaHookFinder</td>
+</tr>
+<tr>
+<td>Image-Anti-OCR-main</td>
+<td>图片加干扰对抗百度贴吧 OCR</td>
+</tr>
+<tr>
+<td>bilinovel2epub</td>
+<td>哔哩轻小说转 epub</td>
+</tr>
+</tbody></table>
+<h2 id="3-5-不常安装"><a href="#3-5-不常安装" class="headerlink" title="3.5 不常安装"></a>3.5 不常安装</h2><table>
+<thead>
+<tr>
+<th>不常安装</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arm Keil MDK</td>
+<td>包含 STM32F1 pack</td>
+</tr>
+<tr>
+<td>Git</td>
+<td>可用 msys2 里的 git 替代</td>
+</tr>
+<tr>
+<td>kindle-for-pc</td>
+<td>DeDRM 推荐的版本</td>
+</tr>
+<tr>
+<td>sshfs</td>
+<td>先装 winfsp (Cryptomator 也装了 winfsp)，然后装 <a target="_blank" rel="noopener" href="https://github.com/billziss-gh/sshfs-win">sshfs</a> 64位</td>
+</tr>
+<tr>
+<td>Beyond Compare</td>
+<td>windows 防火墙高级设置，添加出站规则，禁止 BC 主程序联网防止过期</td>
+</tr>
+<tr>
+<td>KindleMate</td>
+<td>kindle 单词与笔记管理</td>
+</tr>
+<tr>
+<td>Proxifier</td>
+<td>代替 netch，给 GoogleDrive 用<br />不要用 Portable 即 PE 版，功能不全，会导致 chrome 挂掉<br />5EZ8G-C3WL5-B56YG-SCXM9-6QZAP<br />先创建 Proxy Servers，然后创建 rule 匹配规则<br />为了保险，name resolution 中通过代理解析</td>
+</tr>
+<tr>
+<td>VirtualBox</td>
+<td></td>
+</tr>
+<tr>
+<td>WIFI-FC-5</td>
+<td>Blink USB 无线网卡驱动</td>
+</tr>
+<tr>
+<td>BTSync</td>
+<td>分布式同步软件，下载书籍</td>
+</tr>
+<tr>
+<td>串口工具</td>
+<td>SerialPortMonitor 串口通信数据监控 <br />Virtual Serial Port Driver，串口转发工具<br />破解有14天时间限制，尝试 windows 虚拟机快照<br />串口桥接、虚拟串口、多虚一、一虚多<br />使用 Complex 模式，IN 和 OUT 各创建一个虚口用来监控和发送流量<br />最后 IN 和 OUT 各两个口。也可用 redirect 模式，然后用串口监听软件</td>
+</tr>
+<tr>
+<td>device-monitoring-studio</td>
+<td>串口通信数据监控</td>
+</tr>
+<tr>
+<td>PL23XX_Prolific_DriverInstaller</td>
+<td>PL2303 串口驱动</td>
+</tr>
+<tr>
+<td>CH341SER</td>
+<td>ch340 串口驱动</td>
+</tr>
+<tr>
+<td>DualMonitorTools</td>
+<td>多显示器设置不同壁纸</td>
+</tr>
+<tr>
+<td>函数调用生成</td>
+<td>doxygen graphviz htmlhelp，生成项目文档，生成函数调用图 call graph</td>
+</tr>
+<tr>
+<td>vs_Community</td>
+<td><a target="_blank" rel="noopener" href="https://blog.lindexi.com/post/VisualStudio-2019-%E5%A6%82%E4%BD%95%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD.html">VisualStudio 2019 如何离线下载</a><br />下载<br/>vs_Community.exe –layout d:\vslayout  ^<br/>–add Microsoft.VisualStudio.Workload.ManagedDesktop  ^<br/>–add Microsoft.VisualStudio.Workload.NativeCrossPlat  ^<br/>–add Microsoft.VisualStudio.Workload.NativeDesktop  ^<br/>–add Microsoft.VisualStudio.Workload.VisualStudioExtension –includeOptional ^<br/>–add Component.GitHub.VisualStudio ^<br/>–lang zh-CN –addProductLang en-US<br />下载命令添加 –fix 用于断点续传，有个 arm 包速度很慢挂代理<br/>安装，进入前面指定的 layout 文件夹，输入前面的下载命令去掉 –layout 和 –lang 的部分。取消再选择可以节省空间，可以不全部选择。但要保留下载缓存文件夹，否则以后无法修改功能</td>
+</tr>
+<tr>
+<td>get_iplayer</td>
+<td>BBC 下载，无 DRM，自动转 mp4、srt 字幕<br /><code>C:\Users\user_name\.get_iplayer\options</code> 中添加，只下载有字幕的视频，设置默认保存路径<br />output D:\Videos\BBC<br/>subtitles 1<br/>subsrequired 1</td>
+</tr>
+<tr>
+<td>All Netflix Categories</td>
+<td>netflix 隐藏类别 chrome 插件，解压缩后安装</td>
+</tr>
+<tr>
+<td>Thunderbird</td>
+<td>用来替代 foxmail 的邮件客户端<br />备份与恢复与 firefox 一样，配置文件是 <code>%userprofile%\appdata\roaming\thunderbird\profiles.ini</code><br />配置储存在 <code>%userprofile%\appdata\roaming\thunderbird\profiles\XXXXXX.default-release</code><br />删除旧的用新的覆盖即可</td>
+</tr>
+<tr>
+<td>TortoiseSVN</td>
+<td></td>
+</tr>
+<tr>
+<td>EaseUS BitWiper</td>
+<td>擦除磁盘数据，500G 需 1h</td>
+</tr>
+<tr>
+<td>K-Lite_Codec_Pack</td>
+<td>MPC-HC 播放 B 站视频弹幕不闪屏（不像 potplayer）<br />不要装 mediainfo 会有右键菜单，也可装后再次运行安装文件卸载掉<br />用来显示视频文件缩略图，可只勾选 Explorer Shell Extensions 里面的两个</td>
+</tr>
+<tr>
+<td>字幕查找-生成-处理工具</td>
+<td>查找在线字幕，繁简转换<br />autosub（包括讯飞的配置文件）、aegisub、剪映</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>—下面开始是免安装软件—</strong></td>
+</tr>
+<tr>
+<td>cover 字幕遮挡软件</td>
+<td></td>
+</tr>
+<tr>
+<td>tftpd</td>
+<td></td>
+</tr>
+<tr>
+<td>rufus</td>
+<td>将系统镜像烧录到U盘</td>
+</tr>
+<tr>
+<td>TextEditor</td>
+<td></td>
+</tr>
+<tr>
+<td>星号查看</td>
+<td></td>
+</tr>
+<tr>
+<td>硬件检测</td>
+<td>cpu-z<br />thphn 内存颗粒检测<br />AIDA64，软硬件检测，可以定时生成日志<br />内存超频后的测试</td>
+</tr>
+<tr>
+<td>ComHub</td>
+<td>通过启用 telnet 共享本地 com 口</td>
+</tr>
+<tr>
+<td>PacketSender</td>
+<td>发包软件，偏上层，不关心构造包</td>
+</tr>
+<tr>
+<td>xcap</td>
+<td>发包软件，手动构造包</td>
+</tr>
+<tr>
+<td>ostinato</td>
+<td>发包软件，开源，支持协议多，linux 和 windows 都可用</td>
+</tr>
+<tr>
+<td>GoldenDict</td>
+<td>参考 环境-&gt; 词典软件设置</td>
+</tr>
+<tr>
+<td>Ditto</td>
+<td>剪贴板管理和共享，使用介绍 <a target="_blank" rel="noopener" href="https://www.playpcesor.com/2011/02/ditto.html">https://www.playpcesor.com/2011/02/ditto.html</a><br />如果要局域网共享，去掉禁止接收选项，双方填入对方的计算机名和相同的网络密码，接收密码没有填，远程文件选择主机名方式，下面的发送列表添加对方主机名并选择发送全部</td>
+</tr>
+<tr>
+<td>bLend</td>
+<td>窗口透明化</td>
+</tr>
+<tr>
+<td>Glass2k</td>
+<td>窗口置顶与透明</td>
+</tr>
+<tr>
+<td>WinHex</td>
+<td>十六进制编辑器，正常已注册，user.txt 为注册信息</td>
+</tr>
+<tr>
+<td>鼠大侠鼠标连点器</td>
+<td></td>
+</tr>
+<tr>
+<td>EV录屏</td>
+<td>可以录制系统声音</td>
+</tr>
+<tr>
+<td>Bandicam</td>
+<td>另一个录屏软件</td>
+</tr>
+<tr>
+<td>FastStone Capture</td>
+<td>屏幕截图与录像</td>
+</tr>
+<tr>
+<td>音频提取</td>
+<td><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/266085808/answer/768016788">怎样将视频中的音频提取出来？</a><br />mkvtoolnix &#x2F; gMKVExtractGUI<br />Pazera_Free_Audio_Extractor 比 mkvtoolnix 支持的多一些</td>
+</tr>
+<tr>
+<td>SQLiteSpy</td>
+<td>sqlite 查看工具</td>
+</tr>
+<tr>
+<td>Folder2Iso</td>
+<td>将文件夹制作成 ISO</td>
+</tr>
+<tr>
+<td>PSTools</td>
+<td>PsExec，用来以 SYSTEM 用户执行命令</td>
+</tr>
+<tr>
+<td>WinCryptHashers</td>
+<td>给 7z 添加 hash 算法。解压到 7zip 目录，新建 Codecs 文件夹<br />用法，右键 CRC SHA 选择 * 或添加到压缩文件，选 hash 算法，<a target="_blank" rel="noopener" href="https://www.tc4shell.com/en/7zip/wincrypthashers/">参考</a></td>
+</tr>
+<tr>
+<td>VeraCrypt</td>
+<td>用在 U 盘上</td>
+</tr>
+<tr>
+<td>foobar2000</td>
+<td>音乐转换，如 wav + cue 转 flac 分轨</td>
+</tr>
+<tr>
+<td>sdr-Cleaner_win</td>
+<td></td>
+</tr>
+<tr>
+<td>Quick_Any2Ico</td>
+<td>提取程序图标 ICO、png</td>
+</tr>
+<tr>
+<td>QtScrcpy</td>
+<td>手机控制</td>
+</tr>
+</tbody></table>
+<h2 id="3-6-淘汰备份"><a href="#3-6-淘汰备份" class="headerlink" title="3.6 淘汰备份"></a>3.6 淘汰备份</h2><table>
+<thead>
+<tr>
+<th>淘汰备份</th>
+<th>淘汰原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>迅雷 X</td>
+<td>来源 <a target="_blank" rel="noopener" href="https://axutongxue.com/">阿虚储物间</a>，用 IDM</td>
+</tr>
+<tr>
+<td>迅雷 5.8</td>
+<td></td>
+</tr>
+<tr>
+<td>HEVC 视频扩展(windows store)</td>
+<td>目前这样设置后会卡，先不用<br /><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/516579045">看 Netflix 4k</a><br />显示设置，3840×2160，60HZ<br />edge:&#x2F;&#x2F;gpu 搜索 HEVC，以下为 true<br />HEVC installed&#x2F;HEVC activable&#x2F;HDCP 2.2 support&#x2F;HEVC - 4K support</td>
+</tr>
+<tr>
+<td>SyncFolders</td>
+<td>U 盘与电脑同步软件。同步方式选择 PC 到 U 盘的 备份方式</td>
+</tr>
+<tr>
+<td>AllDRMRemoval</td>
+<td>移除 DRM，不支持租借书籍</td>
+</tr>
+<tr>
+<td>NetLimiter</td>
+<td>破解<br />设置最小化和关闭到托盘，关闭更新</td>
+</tr>
+<tr>
+<td>手心输入法</td>
+<td></td>
+</tr>
+<tr>
+<td>Shadowsocks</td>
+<td></td>
+</tr>
+<tr>
+<td>ShadowsocksR</td>
+<td></td>
+</tr>
+<tr>
+<td>sourceinsight</td>
+<td>需要破解</td>
+</tr>
+<tr>
+<td>Sublime Text</td>
+<td>需要使用 patch 破解</td>
+</tr>
+<tr>
+<td>Wub</td>
+<td>Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网<br />如果要使用系统更新，可以开启 SSR 全局代理，加快下载</td>
+</tr>
+</tbody></table>
+<!-- DB end -->
+
+<h1 id="4-网络"><a href="#4-网络" class="headerlink" title="4 网络"></a>4 网络</h1><h2 id="4-1-windows-store"><a href="#4-1-windows-store" class="headerlink" title="4.1 windows store"></a>4.1 windows store</h2><p>对于 windows store 设置代理，先设置 ie 代理，然后</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></table></figure>
+
+<p>对于 windows store 无法联网，错误代码 0x80072F7D。打开IE浏览器工具（注意不是Edge）—— 点击”Internet选项“ —— 选择“高级”选项卡 —— 在“使用TLS1.2”前面打上勾</p>
+<h2 id="4-2-命令行"><a href="#4-2-命令行" class="headerlink" title="4.2 命令行"></a>4.2 命令行</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># http 代理。只对当前 cmd 生效</span><br><span class="line">set http_proxy=http://127.0.0.1:8118</span><br><span class="line">set https_proxy=http://127.0.0.1:8118</span><br><span class="line"># socks 代理。使用 setx 可以添加到 高级系统设置 - 环境变量当中，删除变量只能通过图形界面删除</span><br><span class="line">setx http_proxy socks5://127.0.0.1:10800</span><br><span class="line">setx https_proxy socks5://127.0.0.1:10800</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-3-添加环回网卡"><a href="#4-3-添加环回网卡" class="headerlink" title="4.3 添加环回网卡"></a>4.3 添加环回网卡</h2><ul>
+<li>运行 <code>hdwwiz.exe</code> 手动选择硬件 网络适配器 – Microsoft – Microsoft KM-TEST环回适配器</li>
+</ul>
+<h2 id="4-4-Clash-自定义"><a href="#4-4-Clash-自定义" class="headerlink" title="4.4 Clash 自定义"></a>4.4 Clash 自定义</h2><ul>
+<li><p>Clash 修改 profile 路径为其它盘</p>
+</li>
+<li><p>Clash 的 <a target="_blank" rel="noopener" href="https://www.codein.icu/clashtutorial/">基本介绍</a>、<a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/wiki/configuration#proxy-providers">官方配置参考</a>、<a target="_blank" rel="noopener" href="https://docs.cfw.lbyczf.com/">参考一</a>、<a target="_blank" rel="noopener" href="https://lancellc.gitbook.io/clash/">参考二</a></p>
+</li>
+<li><p>关于 Clash for Windows 的 DNS，关于 DNS 见 <a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg/wiki/DNS%E6%B1%A1%E6%9F%93%E5%AF%B9Clash%EF%BC%88for-Windows%EF%BC%89%E7%9A%84%E5%BD%B1%E5%93%8D">一</a>、<a target="_blank" rel="noopener" href="https://blog.rssins.net/archives/1379">二</a></p>
+</li>
+<li><p>为防止 DNS 泄露</p>
+<ul>
+<li>组策略，禁用 智能多宿主名称解析</li>
+<li>firefox 设置 socks5 代理，并开启 socks5 DNS 解析</li>
+<li>clash 不添加匹配 IP 的规则，牺牲一些性能</li>
+</ul>
+</li>
+<li><p>Break When Proxy Change 改成 <a target="_blank" rel="noopener" href="https://docs.cfw.lbyczf.com/contents/breakconn.html">chain</a>，来切代理时自动断连接</p>
+</li>
+<li><p>用 proxy-provider + rule-provider 的方法，参考 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=IVlnvBQXEgE">视频</a>、<a target="_blank" rel="noopener" href="https://www.920.im/clash-rule-providers-configuration/">这个</a></p>
+<ul>
+<li>最终采用白名单模式，将直连域名、IP 排除，其它一律走代理，配置文件备份到 asset 文件夹</li>
+<li>参考 <a target="_blank" rel="noopener" href="https://yattazen.com/tutorial/clash-custom-config.html">分流原则</a>，重要直连分流规则 &gt; 去广告规则 &gt; 小分流 &gt; 国内外大分流 &gt; 补充规则</li>
+<li>用到的在线 <a target="_blank" rel="noopener" href="https://github.com/Loyalsoldier/clash-rules">规则一</a>（用于决定国内 IP）、<a target="_blank" rel="noopener" href="https://github.com/ACL4SSR/ACL4SSR/tree/master">规则二</a>（用于细化应用流量）</li>
+<li>以后有新要求可以添加在线或自定义规则</li>
+</ul>
+</li>
+<li><p>另一种方法是，在 profiles 的 parsers 中可加入自定义内容修改原订阅</p>
+<ul>
+<li>可参考 <a target="_blank" rel="noopener" href="https://chenjuefei.com:444/117.html">这个</a> 和 <a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/wiki/configuration">官方配置文件写法</a>，更全的 <a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/2193">这个</a> 和 <a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/2729">这个</a></li>
+</ul>
+</li>
+<li><p>题外话，clash 正则 <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/38933898/error-parsing-regexp-invalid-or-unsupported-perl-syntax">不支持 lookarounds</a>，但如果支持，正常用正则排除掉一组词，应该这样写 <code>^(?!.*(dollar|euro|pound)).*</code>，匹配不包含 (dollar|euro|pound) 的词，<a target="_blank" rel="noopener" href="https://regexland.com/regex-match-all-except/">参考</a></p>
+</li>
+<li><p>开启 TUN，用 script 模式，默认程序走 DIRECT 直连</p>
+<ul>
+<li>选中的程序进行流量规则匹配，但对于手动跳过某条匹配规则的情况，如 chrome 浏览器需要临时转给流量分析程序，暂时用接入 clash 的方式区分</li>
+<li>HTTP&#x2F;Socks5 进行流量匹配，TUN 则手动选择代理，见 asset 中 clash_rule.yml</li>
+<li>此时配合 SwitchyOmega 开启快速切换，在 HTTP 和 直连（即 TUN 接入）间切换</li>
+</ul>
+</li>
+<li><p>如果需要开启多个监听端口可用 clash core</p>
+<ul>
+<li><p>在终端中启动 <code>clash-win64.exe -f 配置文件路径 </code></p>
+</li>
+<li><p>配置文件设置控制端口，如 9090，然后 <code>https://clash.razord.top/#/proxies?host=127.0.0.1&amp;port=9090&amp;secret=</code> 来控制和切换</p>
+  <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mixed-port:</span> <span class="number">17891</span></span><br><span class="line"><span class="attr">mode:</span> <span class="string">global</span></span><br><span class="line"><span class="attr">log-level:</span> <span class="string">debug</span></span><br><span class="line"><span class="attr">external-controller:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:9090</span></span><br><span class="line"><span class="attr">proxies:</span></span><br><span class="line"><span class="comment"># 代理服务器节点</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>clash 的 api 也可实现一些自定义功能，如 <a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/2605">这个</a></p>
+</li>
+<li><p>选机场</p>
+<ul>
+<li>测速，自己用 stairspeed 注册临时账号买便宜套餐晚高峰测</li>
+<li>经历，经营时间、过去评价、目前跑路风险</li>
+<li>审计，哪些端口被封，或只允许哪些端口，哪些网站被封</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-5-VPN-转-代理"><a href="#4-5-VPN-转-代理" class="headerlink" title="4.5 VPN 转 代理"></a>4.5 VPN 转 代理</h2><ul>
+<li>VPN 为全局，在某些场景下不够灵活，因此需要转成代理 Socks5&#x2F;HTTP</li>
+<li>例子：Google one vpn，连接前先进行地区校验，然后才开始连接，每隔一段时间还要再次校验，<a target="_blank" rel="noopener" href="https://bbs.yummy.best/t/topic/467">详情参考</a><ul>
+<li>所以要<ul>
+<li>将校验流量走代理</li>
+<li>由于 VPN 是全局的，不方便使用，要将其转换为 socks&#x2F;http 代理，集成到 clash 分流管理中</li>
+<li>只有安卓使用了没有被封 UDP 2153 端口，而其它平台用了被封的 443，因此只有安卓可以不套代理直连，其它平台还要再套一层转发 UDP 比较快的代理（这样做仅是为了获得纯净的落地 IP，要消耗机场流量）</li>
+</ul>
+</li>
+<li>方法<ul>
+<li><a target="_blank" rel="noopener" href="https://www.techkoala.top/google_one_vpn/">方法1</a>：将 android 手机设置代理走 Windows clash，代理校验流量，再将手机 VPN 共享出来。以后试试 光速 虚拟机</li>
+<li>方法2：不借助手机、软路由，只用 Windows 作为主设备的使用方式<ul>
+<li>参考 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=GjhetHGIKLg">局域网共享网络视频</a>，能代理 VPN 底层流量，只能是网关共享或路由共享（配置系统 socks&#x2F;http 代理取决于 VPN 软件是否遵守，有可能可以），由于 Windows Clash <a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg/issues/1865">不支持网关共享</a>，因此只能路由共享</li>
+<li>由于只用一台设备，那么运行 VPN 客户端的要是虚拟的 android&#x2F;windows 设备，虚拟 android（像下面一样桥接到环回网卡）类似方法 1，下面考虑虚拟 windows</li>
+<li>新建环回网卡，将 windows 虚拟机桥接到该网卡，宿主机共享 clash 网卡流量给环回网卡，网卡右键 – 属性 – Internet 连接共享（好像每次系统重启要重新配置一下共享），而且可能要设置虚拟机中网卡的 DNS 1.1.1.1、8.8.8.8</li>
+<li>宿主机 clash 配置分流策略，代理校验流量，还要代理 UDP 2153 流量</li>
+<li>虚拟机连接 VPN，同时装 clash 开启局域网共享，不开 TUN，策略 DIRECT，仅将 clash 作为 socks&#x2F;http 服务器把网络共享出去，给宿主机 clash 或局域网设备使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>题外话：多个网卡都配置网关，根据跃点数，选择路由，可以这样改<ul>
+<li>网卡 IPv4 属性 – 高级 – 取消自动跃点，要是固定 IP 有两处配置，一处网关，一处接口，最终跃点看起来是两者相加，跃点越低优先级越高，通过 route print 查看</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-6-多重代理"><a href="#4-6-多重代理" class="headerlink" title="4.6 多重代理"></a>4.6 多重代理</h2><ul>
+<li>链式代理：通过不断添加前置代理，如报文按 A –&gt; B –&gt; C 转发，C 配前置代理为 B，B 配前置代理为 A，报文封装与转发顺序相反，为 CBA。以下几种前置代理方法，按灵活性递减列出<ul>
+<li>软件内设置，或设置系统代理&#x2F;环境变量（并被软件使用），如 Tor、浏览器</li>
+<li>代理软件内，设置命中转发规则后使用链式代理，如 clash relay、v2ray proxySettings、Proxifier&#x2F;ProxyChains 中的链式代理</li>
+<li>TUN 模式&#x2F;VPN，成为上层软件的前置代理。用于不支持设置代理或不使用系统代理的软件</li>
+<li>宿主机，作为虚拟机的前置代理，网关共享&#x2F;路由共享&#x2F;设置系统代理三种模式。好处是网关共享&#x2F;路由共享时，不会漏掉没代理的流量</li>
+<li>路由器作网关，成为局域网设备的前置代理。万能但笨重，可以一直叠加上级路由器作为前置代理</li>
+<li>限制：clash 不支持 UDP relay（可用 meta core 的 UoT），代理节点不允许国外 IP 入站，不允许不常用端口出站</li>
+</ul>
+</li>
+</ul>
+<h1 id="5-命令行"><a href="#5-命令行" class="headerlink" title="5 命令行"></a>5 命令行</h1><h2 id="5-1-msys2"><a href="#5-1-msys2" class="headerlink" title="5.1 msys2"></a>5.1 msys2</h2><ul>
+<li><p>为了使用最新的 gcc，安装一套编译工具。<strong>安装时卡在 66% “Updating trust database” ，一定用任务管理器杀掉进程，重新再运行一遍安装</strong></p>
+</li>
+<li><p>打开 MSYS 命令行</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 更新软件数据库和已安装软件</span></span><br><span class="line">pacman -Syu</span><br><span class="line"><span class="comment"># 安装 mingw-w64 GCC</span></span><br><span class="line">pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake</span><br><span class="line"><span class="comment"># 前一条命令会装 python，这里装 pip，似乎只装 mingw 的 pip 就行</span></span><br><span class="line">pacman -S python3-pip</span><br><span class="line">pacman -S mingw-w64-x86_64-python-pip</span><br><span class="line">pacman -S vim git</span><br><span class="line"><span class="comment"># 用 windows 下的 meld 安装包，不用下面的，太大了</span></span><br><span class="line"><span class="comment"># windows 下的 meld 只能在 MSYS2 下启动，不能在 mingw64，不清楚原因</span></span><br><span class="line"><span class="comment"># pacman -S mingw-w64-x86_64-meld3</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑 bash.bashrc</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 参考 ANSI Escape Sequences https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797</span></span><br><span class="line">PS1=<span class="string">&#x27;\[\033]0;\W\007\]&#x27;</span> <span class="comment"># set window title</span></span><br><span class="line">PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[32m\]&#x27;</span>       <span class="comment"># change to green</span></span><br><span class="line">PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;[\! \A \w] &#x27;</span>        </span><br><span class="line">PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[0m\]&#x27;</span>        <span class="comment"># change color</span></span><br><span class="line"><span class="built_in">export</span> PS1</span><br><span class="line"><span class="comment"># 为了使用 Python 包</span></span><br><span class="line"><span class="built_in">export</span> PYTHONPATH=<span class="string">&quot;D:\soft\msys64\usr\lib\python3.9\site-packages&quot;</span></span><br><span class="line"><span class="comment"># 右键启动时使用默认配色，SecureCRT 使用 dircolors.256dark</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$TERM_PROGRAM</span>&quot;</span> != <span class="string">&quot;mintty&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">	<span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(dircolors -b /etc/dircolors.256dark)</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="built_in">alias</span> <span class="built_in">ls</span>=<span class="string">&#x27;ls --color=auto&#x27;</span></span><br><span class="line"><span class="built_in">alias</span> ll=<span class="string">&#x27;ls --color=auto -alF&#x27;</span></span><br><span class="line"><span class="built_in">alias</span> vi=vim</span><br><span class="line"><span class="built_in">alias</span> grep=<span class="string">&quot;/bin/grep --color&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置<a target="_blank" rel="noopener" href="https://github.com/njzhangyifei/msys2-mingw-shortcut-menus">右键菜单</a>，reg 已放到资源目录 <code>右键菜单Bash.reg</code></p>
+</li>
+<li><p>cmake-gui 要装 Qt5，太大了，直接用官网的包中的 cmake-gui 替换掉 D:\soft\msys64\mingw64\bin 中的</p>
+</li>
+<li><p>以下几条针对 SecureCRT，添加到 login 执行中</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export MSYS2_PATH_TYPE=inherit</span><br><span class="line">export MSYSTEM=MINGW64</span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置为 True Color</p>
+</li>
+<li><p>允许输入中文，<code>\msys64\home\username\.inputrc</code> 中 <code>Allow 8-bit input/output</code> 下面 4 行去掉注释，即 set meta-flag on 到 set output-meta on</p>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">pacman -S package_name  #安装软件包</span><br><span class="line">pacman -R package_name  #删除软件包</span><br><span class="line">pacman -Rs package_name #顺便删除软件包相关依赖</span><br><span class="line">pacman -Syu             #升级系统中的所有包</span><br><span class="line">pacman -Ss package      #查询软件包</span><br><span class="line">pacman -Qs package      #查询已安装的包</span><br><span class="line">pacman -Qi package      #显示查找的包的信息</span><br><span class="line">pacman -Ql package      #显示你要找的包的文件都安装的位置</span><br><span class="line">pacman -Sw package      #下载但不安装包</span><br><span class="line">pacman -U  /path/package.pkg.tar.gz #安装本地包</span><br><span class="line">pacman -Scc             #清理包缓存，下载的包会在/var/cache 这个目录</span><br><span class="line">pacman -Sf pacman       #重新安装包</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/../IDE/#Clion">Clion</a> 中指定环境目录为  <code>D:\soft\msys64\mingw64\</code></li>
+<li>参考 1 <a target="_blank" rel="noopener" href="https://www.chenshaowen.com/blog/correct-way-to-use-vim-on-windows.html">Windows 下正确使用 Vim 的方式</a></li>
+<li>参考 2 <a target="_blank" rel="noopener" href="https://creaink.github.io/post/Computer/Windows/win-msys2.html">MSYS2 和 mintty 打造 Windows 下 Linux 工具体验</a></li>
+</ul>
+<h2 id="5-2-git-bash"><a href="#5-2-git-bash" class="headerlink" title="5.2 git bash"></a>5.2 git bash</h2><p>openssh 方式不论用 cmd 还是 powershell 都没法正确显示长命令，两个办法，git bash (mintty) 或 SecureCRT 的 local shell。不考虑 windows 商店中的 terminal</p>
+<ul>
+<li><p>字体、透明度、主题 dracula</p>
+</li>
+<li><p>修改 PS1，<code>D:\MySoftware\Git\etc\profile.d\git-prompt.sh</code>，与 msys2 的配置相同</p>
+</li>
+<li><p>查找之前输出 Alt + F3，Shift + Enter &#x2F; Enter 上一个和下一个匹配</p>
+</li>
+<li><p>Python 代码中设置标准输出编码，否则为 GBK</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">sys.stdout.reconfigure(encoding=<span class="string">&#x27;utf-8&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>python -u 运行脚本，以便立刻输出到命令行。进入 python -i ，退出 exit()</p>
+</li>
+<li><p>对于 SecureCRT 集成 git bash，选择 <code>D:\soft\Git\bin\bash.exe</code> 而非 <code>\user\bin\bash.exe</code>。进入后 <code>source /etc/profile</code> 来设置 locale 的中文和 TERM 变量</p>
+</li>
+<li><p>如有 SecureCRT，修改 PS1 同上，字体可指定 Jetbrains 的，颜色为 24 位</p>
+</li>
+<li><p>如有 SecureCRT，配置文件夹颜色，来自 <a target="_blank" rel="noopener" href="https://github.com/seebi/dircolors-solarized">dircolors-solarized</a> 中的 dircolors.256dark，改  <code>/etc/bash.bashrc</code> 靠近文档最后的地方为 <code>eval &quot;$(dircolors -b /etc/dircolors.256dark)&quot;</code></p>
+</li>
+</ul>
+<h2 id="5-3-shell"><a href="#5-3-shell" class="headerlink" title="5.3 shell"></a>5.3 shell</h2><ul>
+<li>使用 powershell，输入 <code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code> 允许执行脚本</li>
+<li>在 <code>F:\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</code> 中添加，自定义颜色</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://superuser.com/questions/1259900/how-to-colorize-the-powershell-prompt</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">prompt</span><span class="params">()</span></span> &#123;</span><br><span class="line">		<span class="variable">$ESC</span> = [<span class="built_in">char</span>]<span class="number">27</span></span><br><span class="line">		<span class="string">&quot;<span class="variable">$ESC</span>[35m<span class="variable">$</span>(Get-Date -Format &quot;</span>HH:mm<span class="string">&quot;) <span class="variable">$</span>(<span class="variable">$executionContext</span>.SessionState.Path.CurrentLocation)<span class="variable">$</span>(&#x27;&gt;&#x27; * (<span class="variable">$nestedPromptLevel</span> + 1))<span class="variable">$ESC</span>[0m &quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>对于 cmd，添加系统变量 PROMPT 值为 <code>$T$H$H$H$H$H$H$S$P$G$S</code></li>
+</ul>
+<h2 id="5-4-openssh"><a href="#5-4-openssh" class="headerlink" title="5.4 openssh"></a>5.4 openssh</h2><p>参照 <a target="_blank" rel="noopener" href="https://winscp.net/eng/docs/guide_windows_openssh_server">Installing SFTP&#x2F;SSH Server on Windows using OpenSSH</a>，1803 之后用系统直接安装，之前版本步骤如下</p>
+<ol>
+<li>下载 <a target="_blank" rel="noopener" href="https://github.com/PowerShell/Win32-OpenSSH/releases">OpenSSH for Windows binaries</a> OpenSSH-Win64.zip 解压到 C:\Program Files\OpenSSH</li>
+<li>管理员权限 powershell <code>powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1</code></li>
+<li>开启防火墙，管理员权限 powershell <code>New-NetFirewallRule -Name sshd -DisplayName &#39;OpenSSH SSH Server&#39; -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22 -Program &quot;C:\Program Files\OpenSSH\sshd.exe</code></li>
+<li>services.msc 开启 OpenSSH SSH Server 服务</li>
+<li>对于 <code>Administrators</code> 用户组用户，将生成的公钥存到 <code>C:\ProgramData\ssh\administrators_authorized_keys</code> 中（原理是 SSH 客户端保存私钥，服务器端放公钥）<br> - 文章中用的 PuTTYgen 来生成公私密钥对，这里用的 <a target="_blank" rel="noopener" href="https://www.vandyke.com/support/tips/publickeyauth.html">SecureCRT 方式</a> 生成，生成格式选的 OpenSSH Key format (new)，将 Identity.pub 的内容放入 administrators_authorized_keys<br>  - 这种方式的 Key 用到 WinSCP 上也可以，但会提示转换，新生成 Identity.ppk 进行 SFTP 连接</li>
+</ol>
+<ul>
+<li>对于 ssh 客户端，把 key 放到 <code>C:\Users\用户名\.ssh</code> 下，即可连接</li>
+</ul>
+<h1 id="6-其它"><a href="#6-其它" class="headerlink" title="6 其它"></a>6 其它</h1><h2 id="6-1-mbr-转-gpt"><a href="#6-1-mbr-转-gpt" class="headerlink" title="6.1 mbr 转 gpt"></a>6.1 mbr 转 gpt</h2><ol>
+<li>用 diskgenius 转换分区表</li>
+<li>在系统盘前面分出 500MB 空余空间，用 diskgenius 建立 ESP 和 MBR 分区</li>
+<li>使用 PE 工具修复引导</li>
+</ol>
+<h2 id="6-2-Google"><a href="#6-2-Google" class="headerlink" title="6.2 Google"></a>6.2 Google</h2><ul>
+<li>Google 搜索可在设置中指定地区，避免结果随 IP 而变化；也可通过 <a target="_blank" rel="noopener" href="https://10wontips.blogspot.com/2018/07/always-search-google-in-english-by.html">在 URL 指定的方式</a><ul>
+<li>如 US，<code>https://www.google.com/search?q=%s&amp;pws=0&amp;gl=us&amp;gws_rd=cr</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="7-备份与还原"><a href="#7-备份与还原" class="headerlink" title="7 备份与还原"></a>7 备份与还原</h1><ul>
+<li>见备份策略文档</li>
+</ul>
+<h1 id="8-U-盘系统"><a href="#8-U-盘系统" class="headerlink" title="8 U 盘系统"></a>8 U 盘系统</h1><ul>
+<li>使用移动硬盘盒 + 固态硬盘的方案，而非固态 U 盘，因为<ul>
+<li>固态硬盘以后可以给 PC 用</li>
+<li>移动硬盘盒 USB type A 和 type C 只要换线就可支持不同接口，作为 U 盘或随身系统</li>
+</ul>
+</li>
+<li>装系统软件使用 WTG(win to go) 辅助工具，默认选项增加分区配置即可，方法参考 <a target="_blank" rel="noopener" href="https://post.smzdm.com/p/a5dx4507/">教大家制作 “随身携带” 的 Windows 11 系统</a> 和 <a target="_blank" rel="noopener" href="https://bbs.luobotou.org/forum-88-1.html">萝卜头IT论坛</a>。傲梅也有 WinToGo 工具，可以试试 <a target="_blank" rel="noopener" href="https://www.disktool.cn/wintogo.html">口袋系统WinToGo</a>。另外按照这个<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv15813796/">教程</a>，Rufus 也可以</li>
+</ul>
+</div><!--!--></article></div><!--!--><div class="card"><div class="card-content"><script src="https://giscus.app/client.js" data-repo="2-3-5-7/2-3-5-7.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDMwMjg1MTc=" data-category="General" data-category-id="DIC_kwDOFHIzJc4CWmss" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="bottom" data-theme="https://2-3-5-7.github.io/css/light4giscus.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-清理旧文件"><span class="level-left"><span class="level-item">1 清理旧文件</span></span></a></li><li><a class="level is-mobile" href="#2-搭建"><span class="level-left"><span class="level-item">2 搭建</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#2-1-虚拟机安装精简版-Win10"><span class="level-left"><span class="level-item">2.1 虚拟机安装精简版 Win10</span></span></a></li></ul></li><li><a class="level is-mobile" href="#3-软件安装"><span class="level-left"><span class="level-item">3 软件安装</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#3-1-试用中"><span class="level-left"><span class="level-item">3.1 试用中</span></span></a></li><li><a class="level is-mobile" href="#3-2-必装"><span class="level-left"><span class="level-item">3.2 必装</span></span></a></li><li><a class="level is-mobile" href="#3-3-虚拟机安装"><span class="level-left"><span class="level-item">3.3 虚拟机安装</span></span></a></li><li><a class="level is-mobile" href="#3-4-建议安装"><span class="level-left"><span class="level-item">3.4 建议安装</span></span></a></li><li><a class="level is-mobile" href="#3-5-不常安装"><span class="level-left"><span class="level-item">3.5 不常安装</span></span></a></li><li><a class="level is-mobile" href="#3-6-淘汰备份"><span class="level-left"><span class="level-item">3.6 淘汰备份</span></span></a></li></ul></li><li><a class="level is-mobile" href="#4-网络"><span class="level-left"><span class="level-item">4 网络</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#4-1-windows-store"><span class="level-left"><span class="level-item">4.1 windows store</span></span></a></li><li><a class="level is-mobile" href="#4-2-命令行"><span class="level-left"><span class="level-item">4.2 命令行</span></span></a></li><li><a class="level is-mobile" href="#4-3-添加环回网卡"><span class="level-left"><span class="level-item">4.3 添加环回网卡</span></span></a></li><li><a class="level is-mobile" href="#4-4-Clash-自定义"><span class="level-left"><span class="level-item">4.4 Clash 自定义</span></span></a></li><li><a class="level is-mobile" href="#4-5-VPN-转-代理"><span class="level-left"><span class="level-item">4.5 VPN 转 代理</span></span></a></li><li><a class="level is-mobile" href="#4-6-多重代理"><span class="level-left"><span class="level-item">4.6 多重代理</span></span></a></li></ul></li><li><a class="level is-mobile" href="#5-命令行"><span class="level-left"><span class="level-item">5 命令行</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#5-1-msys2"><span class="level-left"><span class="level-item">5.1 msys2</span></span></a></li><li><a class="level is-mobile" href="#5-2-git-bash"><span class="level-left"><span class="level-item">5.2 git bash</span></span></a></li><li><a class="level is-mobile" href="#5-3-shell"><span class="level-left"><span class="level-item">5.3 shell</span></span></a></li><li><a class="level is-mobile" href="#5-4-openssh"><span class="level-left"><span class="level-item">5.4 openssh</span></span></a></li></ul></li><li><a class="level is-mobile" href="#6-其它"><span class="level-left"><span class="level-item">6 其它</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#6-1-mbr-转-gpt"><span class="level-left"><span class="level-item">6.1 mbr 转 gpt</span></span></a></li><li><a class="level is-mobile" href="#6-2-Google"><span class="level-left"><span class="level-item">6.2 Google</span></span></a></li></ul></li><li><a class="level is-mobile" href="#7-备份与还原"><span class="level-left"><span class="level-item">7 备份与还原</span></span></a></li><li><a class="level is-mobile" href="#8-U-盘系统"><span class="level-left"><span class="level-item">8 U 盘系统</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E4%B8%93%E4%B8%9A/"><span class="level-start"><span class="level-item">专业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/"><span class="level-start"><span class="level-item">爱好</span></span><span class="level-end"><span class="level-item tag">26</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/"><span class="level-start"><span class="level-item">Galgame</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/"><span class="level-start"><span class="level-item">Ever17</span></span><span class="level-end"><span class="level-item tag">13</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/"><span class="level-start"><span class="level-item">人物</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/"><span class="level-start"><span class="level-item">地点</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/"><span class="level-start"><span class="level-item">场景</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">读书笔记</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">物理环境</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"><span class="level-start"><span class="level-item">虚拟环境</span></span><span class="level-end"><span class="level-item tag">19</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/"><span class="level-start"><span class="level-item">1. 来源与收集</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/"><span class="level-start"><span class="level-item">2. 处理平台</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">3. 处理工具</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/"><span class="level-start"><span class="level-item">4. 分享与备份</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div></div><!--!--></div></div></section><div><button id="toc-btn" onclick="toc.style.display = &#039;block&#039;;toc.onclick = () =&gt; toc.style.display = &#039;none&#039; " style="display: none;"><i class="fa-solid fa-list-ul"></i></button><button id="search-btn" onclick="document.querySelector(&#039;a.navbar-item.search&#039;).click();" style="display: none;"><i class="fa-solid fa-search fa-sm"></i></button></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

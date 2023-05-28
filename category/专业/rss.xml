@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>自强不息 厚德载物 • Posts by &#34;专业&#34; category</title>
+        <link>https://2-3-5-7.github.io</link>
+        <description>分享各种内容，方便自己与他人查阅，欢迎评论</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 01 Jan 1970 08:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/</guid>
+            <title>OOC</title>
+            <link>https://2-3-5-7.github.io/%E4%B8%93%E4%B8%9A/OOC/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://lwn.net/Articles/444910/&#34;&gt;Object-oriented design patterns in the kernel 1，多态部分&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://lwn.net/Articles/446317/&#34;&gt;Object-oriented design patterns in the kernel 2，继承部分&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下载保存&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring21/cos217/&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring21/cos217/&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring21/cos217/lectures/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1-封装&#34;&gt;&lt;a href=&#34;#1-封装&#34; class=&#34;headerlink&#34; title=&#34;1 封装&#34;&gt;&lt;/a&gt;1 封装&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;参考文件操作 FILE*&lt;/li&gt;
+&lt;li&gt;使用不完全类型&lt;/li&gt;
+&lt;li&gt;头文件分成 2 个，一个对外接口，一个用来给子类嵌套继承&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-多态&#34;&gt;&lt;a href=&#34;#2-多态&#34; class=&#34;headerlink&#34; title=&#34;2 多态&#34;&gt;&lt;/a&gt;2 多态&lt;/h1&gt;&lt;p&gt;两种实现方式，常用第 2 种，文章对内核种第 2 种使用的特殊情况做了讨论&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最简单的方法是结构体包含函数指针，函数第一个参数为结构体指针。bar-&amp;gt;foo(bar, …args)。但在对象很多时由于内存占用比下面的 vtable 多，这种 linux 内核不常用&lt;/li&gt;
+&lt;li&gt;再复杂是将函数指针组成表，virtual function table (vtable) ，一般命名为 XXX_operations、XXX_ops，对象中包含这个表的指针&lt;ul&gt;
+&lt;li&gt;vtable 为 NULL 的 2 个原因&lt;ol&gt;
+&lt;li&gt;新添加了一个方法，但还没实现&lt;/li&gt;
+&lt;li&gt;该方法对这种情况无意义，临时的或长期的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;但作者认为总可避免使用 NULL（个人观点：会掩盖 Bug）&lt;ul&gt;
+&lt;li&gt;NULL 是少数时，实现默认方法，利用 C99 多次初始化，将默认值写在前面&lt;/li&gt;
+&lt;li&gt;NULL 是多数时，且性能很重要，在调用前判断 flag 的 bit，出现特殊情况才调 vtable 中的函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vtable 还可包含模块名称和链表 struct list_head，便于上层查找注册的设备&lt;/li&gt;
+&lt;li&gt;vtable 第一个参数不是结构体指针的情况&lt;ul&gt;
+&lt;li&gt;结构体指针放在了最后一个参数&lt;/li&gt;
+&lt;li&gt;只有一个对象，所以不需要指针，这个对象就是全局的&lt;/li&gt;
+&lt;li&gt;多重继承，&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1016959663602400/1017502939956896&#34;&gt;Mixin&lt;/a&gt;，提供某个功能，但不以这个对象为主，需要多个对象&lt;/li&gt;
+&lt;li&gt;子类的操作放入父类的 vtable 中，避免数量多的结构体过大，节省内存，以 struct page 举例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;3-继承-is&#34;&gt;&lt;a href=&#34;#3-继承-is&#34; class=&#34;headerlink&#34; title=&#34;3 继承 is&#34;&gt;&lt;/a&gt;3 继承 is&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;派生类包含基类&lt;/th&gt;
+&lt;th&gt;基类使用 &lt;code&gt;void *private&lt;/code&gt; 指针&lt;/th&gt;
+&lt;th&gt;基类包含派生类&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;定义&lt;/td&gt;
+&lt;td&gt;基类是第一个派生类成员&lt;/td&gt;
+&lt;td&gt;基类和派生类互相指&lt;/td&gt;
+&lt;td&gt;基类和派生类定义到一个文件&lt;br /&gt;派生成员 union 实现&lt;br /&gt;把每个使用 union 的地方看作继承&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;创建&lt;/td&gt;
+&lt;td&gt;调派生类 ctor，派生类 ctor 再调基类 ctor&lt;/td&gt;
+&lt;td&gt;先调基类 ctor，基类 ctor 再调派生类 ctor&lt;/td&gt;
+&lt;td&gt;先调基类 ctor，再调派生类 ctor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;使用&lt;/td&gt;
+&lt;td&gt;对外提供基类指针，用多态方式调派生类接口&lt;br /&gt;派生类接口中用 container_of() 将基类指针转成派生类&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;优点&lt;/td&gt;
+&lt;td&gt;多数情况&lt;/td&gt;
+&lt;td&gt;适用于需要切换子类的类型时&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;缺点&lt;/td&gt;
+&lt;td&gt;&amp;#x2F;&lt;/td&gt;
+&lt;td&gt;两次内存分配&lt;br /&gt;性能不好，内存占用和解引用花费时间&lt;br /&gt;void * 可读性差，看不出含义&lt;/td&gt;
+&lt;td&gt;浪费内存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;mixin 类型继承，例如链表，提供某种服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一个对象只有一个引用计数（在最内层基类中）管理生命周期，内核不使用垃圾回收，因此可用是否有引用计数将单继承与 mixin 继承区分开&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;TODO，下一步看 linux 内核加密部分、openssl 部分代码，复习 ooc 代码，仿写出 modbus 代码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重点在第 6 章，后续章要么太难，要么与主题无关，所以基本没看。此外那个计算器是个有趣、有难度的例子。这本书使用 void* 而没用不完全类型（即前向声明）是个小瑕疵，否则代码会更清晰&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加新函数时，基于 vtable 基类 Class 扩展新的函数，定义好后，new 一个新的 vtable 对象（这其实分两步，见第 6 章 initPoint() 代码），所谓类描述符。&lt;br&gt;添加新成员时，基于 Object 扩展，然后用刚刚的 vtable 对象（即类描述符）创建对象（因为刚刚创建的 vtable 包含了构造函数和对象大小）。因此创建对象要先创建类描述符。&lt;br&gt;因此对于成员和函数要有两个基类，vtable 因为只有一个且储存了对象大小信息所以叫 Class（为避免歧义称 Class 类为 vtable 类，或者叫类描述符类），而包括 vtable 类在内的所有类都继承自 Object 类，Object 类里面只有一个 Class 指针成员，表明所有对象都属于某个类。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;还要静态创建 Class 和 Object 类的类描述符，用于子类的 ctor 和 dtor 中调用，初始化基类成员部分。对于 Object 的 ctor 什么都不用做， Class 的 ctor 初始化函数指针。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;改进和个人思考：这里静态创建的 Class 和 Object 类的类描述符，用来作为 ctor 调父类 ctor 的终点，完成继承关系即 新类的 vtable -&amp;gt; Class -&amp;gt; Object 。新的类描述符要 new 出来，不如静态定义清晰，因为类不会像对象创建很多（虽然逻辑上确实是用 Class 这个 vtable 基类，创建新的类，相当于 new 新的类描述符对象，但这种对象不会很多）。如静态定义就不必再调 Class 的 ctor，也不必静态创建 Class 的类描述符。而且 Class 不必继承 Object，否则每个对象，成员部分继承 Object 有 Class 指针，函数部分也继承 Object，即 Class 部分还要有 Object，Object 里面又有 Class。Class 不继承 Object（即不包含 Object），自己本身就作为 vtable 形式的基类，与 Object 是平等的关系。新类的 ctor 没必要再调父类 Object 的 ctor，可以仅为了继承逻辑，struct Class Object &amp;#x3D; {初始化}，新类指向 &amp;amp;Object&lt;/p&gt;
+  &lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Object&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Class&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt;;&lt;/span&gt;	&lt;span class=&#34;comment&#34;&gt;// 没变化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Class&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;comment&#34;&gt;// 这里去掉 Object 继承，const struct Object _;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;char&lt;/span&gt; * name;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Class&lt;/span&gt; * &lt;span class=&#34;title&#34;&gt;super&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;size_t&lt;/span&gt; size;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * (* ctor) (&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self, va_list * app);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * (* dtor) (&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; (* differ) (&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self, &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * b);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; (* puto) (&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self, FILE * fp);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Object&lt;/span&gt; =&lt;/span&gt; &amp;#123;.name = &lt;span class=&#34;string&#34;&gt;&amp;quot;Object&amp;quot;&lt;/span&gt;&amp;#125;; &lt;span class=&#34;comment&#34;&gt;// 只定义 Object 的类描述符，不再定义 Class 的类描述符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Point&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Object&lt;/span&gt; _;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x, y;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;PointClass&lt;/span&gt; &amp;#123;&lt;/span&gt;		&lt;span class=&#34;comment&#34;&gt;// 静态初始化类描述符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Class&lt;/span&gt; _;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; (* draw) (&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; Point = &amp;#123;_.name = &lt;span class=&#34;string&#34;&gt;&amp;quot;Point&amp;quot;&lt;/span&gt;, _.super = &amp;amp;Object, _.size = &lt;span class=&#34;keyword&#34;&gt;sizeof&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; Point), _.ctor = Point_ctor, .draw = Point_draw&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;p = new(Point, &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;);  &lt;span class=&#34;comment&#34;&gt;// new 里面按照 Point 的大小申请内存和调构造函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进一步举例如何应用&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;DeviceClass&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;parent&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; (* fun1) (&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; DeviceDesc = &amp;#123;这个就是类描述符，创建对象时需要&amp;#125; ;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Device&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Object&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;parent&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x, y;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;SubDeviceClass&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;DeviceClass&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;parent&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; (* draw) (&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * self);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; SubDeviceDesc = &amp;#123;这里可以先继承父类的函数指针(.parent = DeviceDesc)，然后在后面来覆盖(.parent.parent.ctor = SubDeviceClass_ctor)，因为根据 C99 多次初始化最后那个有效&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;SubDevice&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Device&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;parent&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; z;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-异常处理&#34;&gt;&lt;a href=&#34;#4-异常处理&#34; class=&#34;headerlink&#34; title=&#34;4 异常处理&#34;&gt;&lt;/a&gt;4 异常处理&lt;/h1&gt;&lt;p&gt;用对应的库，用 setjmp 和 longjmp 实现。&lt;/p&gt;
+&lt;p&gt;还能实现线程切换，已经放入 Dropbox 书 &lt;a href=&#34;https://www.cs.princeton.edu/courses/archive/spring04/cos217/lectures/Exceptions.pdf&#34;&gt;https://www.cs.princeton.edu/courses/archive/spring04/cos217/lectures/Exceptions.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;5-单元测试&#34;&gt;&lt;a href=&#34;#5-单元测试&#34; class=&#34;headerlink&#34; title=&#34;5 单元测试&#34;&gt;&lt;/a&gt;5 单元测试&lt;/h1&gt;&lt;p&gt;试试 Google Test ？ &lt;a href=&#34;https://stackoverflow.com/questions/65820/unit-testing-c-code&#34;&gt;https://stackoverflow.com/questions/65820/unit-testing-c-code&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;6-内存管理&#34;&gt;&lt;a href=&#34;#6-内存管理&#34; class=&#34;headerlink&#34; title=&#34;6 内存管理&#34;&gt;&lt;/a&gt;6 内存管理&lt;/h1&gt;&lt;h1 id=&#34;7-安全&#34;&gt;&lt;a href=&#34;#7-安全&#34; class=&#34;headerlink&#34; title=&#34;7 安全&#34;&gt;&lt;/a&gt;7 安全&lt;/h1&gt;&lt;p&gt;cppcheck&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

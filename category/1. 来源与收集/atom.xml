@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://2-3-5-7.github.io</id>
+    <title>自强不息 厚德载物 • Posts by &#34;1. 来源与收集&#34; category</title>
+    <link href="https://2-3-5-7.github.io" />
+    <updated>1970-01-01T00:00:00.000Z</updated>
+    <entry>
+        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</id>
+        <title>新闻来源</title>
+        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/"/>
+        <content type="html">&lt;h1 id=&#34;1-新闻&#34;&gt;&lt;a href=&#34;#1-新闻&#34; class=&#34;headerlink&#34; title=&#34;1 新闻&#34;&gt;&lt;/a&gt;1 新闻&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;为了平衡东西方的价值观冲突和中美利益冲突，选择两派中最中立的媒体作为新闻来源&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mediabiasfactcheck.com/center/&#34;&gt;Least Biased&lt;/a&gt; 且 Factual Reporting 为 High 以上作为初筛，以新疆、香港额外考察对中国的报道&lt;/li&gt;
+&lt;li&gt;考察内容&lt;ul&gt;
+&lt;li&gt;是否涵盖了关心的内容&lt;/li&gt;
+&lt;li&gt;报道内容是否真实&lt;/li&gt;
+&lt;li&gt;提出观点时是否引用证据（事实），是否充分给出反方观点、证据，语气、用词是否中性&lt;/li&gt;
+&lt;li&gt;媒体资金来源&lt;/li&gt;
+&lt;li&gt;新闻自由程度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;西方&lt;/th&gt;
+&lt;th&gt;东方&lt;/th&gt;
+&lt;th&gt;中国&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;事实&lt;/td&gt;
+&lt;td&gt;apnews&amp;#x2F;reuters&lt;/td&gt;
+&lt;td&gt;asiatimes&amp;#x2F;channelnewsasia&lt;/td&gt;
+&lt;td&gt;新华社&amp;#x2F;人民网&amp;#x2F;外交部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;观点&lt;/td&gt;
+&lt;td&gt;Carnegie Endowment&amp;#x2F;Harvard Gazette&amp;#x2F;Belfer Center&lt;/td&gt;
+&lt;td&gt;asiatimes&lt;/td&gt;
+&lt;td&gt;中国现代国际关系研究院 (CICIR)&amp;#x2F;北京大学国际战略研究院 (IISS)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;观点数量少，是阅读材料，事实数量多，用来求证观点时再主动查询&lt;/li&gt;
+&lt;li&gt;中国观点部分参考 &lt;code&gt;2020 Global Go To Think Tank Index Report&lt;/code&gt; 排名，添加第一的中国与中国大学智库&lt;/li&gt;
+&lt;li&gt;中文博客&amp;#x2F;播客额外补充个人视角，比如新闻实验室。Youtube 的 &lt;a href=&#34;https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA&#34;&gt;台湾公视新闻&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;关键是了解背后 &lt;strong&gt;代表的利益&lt;/strong&gt;，如此即便阅读“环球时报”和“观察者”也不会产生误解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-1-工具选择&#34;&gt;&lt;a href=&#34;#1-1-工具选择&#34; class=&#34;headerlink&#34; title=&#34;1.1 工具选择&#34;&gt;&lt;/a&gt;1.1 工具选择&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;为解决新闻真实和中立性问题，使用 RSS 选择可靠的信息来源，不使用任何新闻客户端&lt;/li&gt;
+&lt;li&gt;自建 RSS 服务，有费用、维护问题，使用复杂违背 RSS 初衷&lt;/li&gt;
+&lt;li&gt;付费 RSS 服务，收费高，不认可某些功能应订阅付费，免费版广告违背 RSS 初衷&lt;/li&gt;
+&lt;li&gt;自建和付费的 TTS、翻译优势与 rss 转 kindle 方式不明显，且 rss 转 kindle 提供输出全文功能&lt;/li&gt;
+&lt;li&gt;所以最终仍使用 rss 转 kindle 发送的方式，使用 amazon 免费同步&lt;/li&gt;
+&lt;li&gt;android 平板使用静读天下 Moon+ Reader Pro&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-系统学习&#34;&gt;&lt;a href=&#34;#2-系统学习&#34; class=&#34;headerlink&#34; title=&#34;2 系统学习&#34;&gt;&lt;/a&gt;2 系统学习&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;目的找到该学科排名靠前的大学的 syllabus ，工具 harvard 课程 &lt;a href=&#34;https://courses.extension.harvard.edu/course-catalog/courses&#34;&gt;搜索1&lt;/a&gt;、&lt;a href=&#34;https://courses.summer.harvard.edu/course-catalog/courses&#34;&gt;搜索2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;也可以考虑以 google scholar 的排名作为切入点&lt;/li&gt;
+&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/78099/assignments/syllabus&#34;&gt;DPI-415 Comparative Politics &amp;amp; Policy&lt;/a&gt; 的 syllabus 选择 Daniele Caramani. Comparative Politics. 5th 作为阅读书籍&lt;/li&gt;
+&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/81856/assignments/syllabus&#34;&gt;GOVT E-40 International Conflict and Cooperation&lt;/a&gt; 的 syllabus 选择 World Politics: Interests, Interactions, and Institutions. 4th 作为阅读书籍&lt;/li&gt;
+&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/4411/assignments/syllabus&#34;&gt;GOVT E-­20 Introduction to Comparative Politics&lt;/a&gt; 2015 年教材，选择 Comparative Politics Today 11th 作为辅助&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-新闻观察&#34;&gt;&lt;a href=&#34;#3-新闻观察&#34; class=&#34;headerlink&#34; title=&#34;3 新闻观察&#34;&gt;&lt;/a&gt;3 新闻观察&lt;/h1&gt;&lt;h2 id=&#34;3-1-模版&#34;&gt;&lt;a href=&#34;#3-1-模版&#34; class=&#34;headerlink&#34; title=&#34;3.1 模版&#34;&gt;&lt;/a&gt;3.1 模版&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;用时：&lt;/th&gt;
+&lt;th&gt;正&lt;/th&gt;
+&lt;th&gt;反&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;事实&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;得出推理&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;个人总结&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</id>
+        <title>下载</title>
+        <link rel="alternate" href="https://2-3-5-7.github.io/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/"/>
+        <content type="html">&lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
+&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
+&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
+&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+</feed>
