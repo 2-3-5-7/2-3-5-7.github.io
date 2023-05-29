@@ -8,6 +8,24 @@
         <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
         <lastBuildDate>Thu, 01 Jan 1970 08:00:00 +0800</lastBuildDate>
         <item>
+            <guid isPermalink="true">https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</guid>
+            <title>下载</title>
+            <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
+&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
+&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
+&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</guid>
             <title>新闻来源</title>
             <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</link>
@@ -91,24 +109,6 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</guid>
-            <title>下载</title>
-            <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</link>
-            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
-&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
-&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
-&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
-&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>
