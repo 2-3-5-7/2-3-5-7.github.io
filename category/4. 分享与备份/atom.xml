@@ -298,6 +298,7 @@
 &lt;li&gt;git bisect 指定两个 commit 来二分查找，good&amp;#x2F;old –&amp;gt; bad&amp;#x2F;new，详情见 &lt;a href=&#34;https://git-scm.com/docs/git-bisect&#34;&gt;git bisect&lt;/a&gt; 和 &lt;a href=&#34;https://git-scm.com/docs/git-bisect-lk2009&#34;&gt;Fighting regressions with git bisect&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;辅助用 &lt;a href=&#34;https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame&#34;&gt;git blame 或 git log -S&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/虚拟环境/4. 分享与备份/git&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>

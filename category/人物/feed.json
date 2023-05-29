@@ -21,14 +21,6 @@
             "tags": []
         },
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%A6%99%E5%A6%99/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%A6%99%E5%A6%99/",
-            "title": "妙妙",
-            "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>狐猴 Lemur</li>\n<li>LeMU 吉祥物</li>\n<li>里面是个女人？</li>\n</ul>\n",
-            "tags": []
-        },
-        {
             "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%A0%A1%E6%9C%8D%E5%B0%91%E5%A5%B3/",
             "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%A0%A1%E6%9C%8D%E5%B0%91%E5%A5%B3/",
             "title": "校服少女",
@@ -37,11 +29,11 @@
             "tags": []
         },
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
-            "title": "职员-空",
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%A6%99%E5%A6%99/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%A6%99%E5%A6%99/",
+            "title": "妙妙",
             "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>茜崎空，棕色长发，旗袍</li>\n<li>LeMU 系统工程师，代理主任，AI 程序</li>\n<li>投影在人的眼球上，声音通过耳机实现</li>\n<li>沉稳</li>\n</ul>\n",
+            "content_html": "<ul>\n<li>狐猴 Lemur</li>\n<li>LeMU 吉祥物</li>\n<li>里面是个女人？</li>\n</ul>\n",
             "tags": []
         },
         {
@@ -53,11 +45,11 @@
             "tags": []
         },
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
-            "title": "武",
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
+            "title": "职员-空",
             "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>仓成武，大三，20 岁</li>\n<li>找 3 人<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">【武】「一个是高５．１尺，体重大约６３公斤，戴着不太合适的太阳眼镜，手不太灵活但脚程还颇快的丑男……」</span><br><span class=\"line\">【武】「另一个是穿着西装但没打领带，理平头，穿了三个耳洞、一个鼻洞，喜欢编织的男生……」</span><br><span class=\"line\">【武】「最后是唯一的女生，穿着一大堆华丽荷叶边装饰的碎花洋装……」</span><br></pre></td></tr></table></figure></li>\n</ul>\n",
+            "content_html": "<ul>\n<li>茜崎空，棕色长发，旗袍</li>\n<li>LeMU 系统工程师，代理主任，AI 程序</li>\n<li>投影在人的眼球上，声音通过耳机实现</li>\n<li>沉稳</li>\n</ul>\n",
             "tags": []
         },
         {
@@ -66,6 +58,14 @@
             "title": "鸠",
             "date_published": "1970-01-01T00:00:00.000Z",
             "content_html": "<ul>\n<li>紫发少女</li>\n<li>冷酷</li>\n<li>23 岁，1993.7 出生</li>\n<li>体力好，力量大</li>\n<li>了解 LeMU</li>\n<li>12 年前，2005 年，12 岁感染病毒，5 年后细胞全部更新一遍，病毒提高了身体的代谢、免疫能力，同时不会变老，永远 17</li>\n<li>她的宠物老鼠也感染了</li>\n<li>好友，茱莉亚</li>\n<li>医院，少年，看见未来</li>\n<li>出车祸，8 年在医院中度过，被做实验</li>\n</ul>\n",
+            "tags": []
+        },
+        {
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
+            "title": "武",
+            "date_published": "1970-01-01T00:00:00.000Z",
+            "content_html": "<ul>\n<li>仓成武，大三，20 岁</li>\n<li>找 3 人<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">【武】「一个是高５．１尺，体重大约６３公斤，戴着不太合适的太阳眼镜，手不太灵活但脚程还颇快的丑男……」</span><br><span class=\"line\">【武】「另一个是穿着西装但没打领带，理平头，穿了三个耳洞、一个鼻洞，喜欢编织的男生……」</span><br><span class=\"line\">【武】「最后是唯一的女生，穿着一大堆华丽荷叶边装饰的碎花洋装……」</span><br></pre></td></tr></table></figure></li>\n</ul>\n",
             "tags": []
         }
     ]
