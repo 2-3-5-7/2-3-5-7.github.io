@@ -33,99 +33,42 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">分类</a></li><li class="is-active"><a href="#" aria-current="page">虚拟环境</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/">代码分析</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/../%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/1.PNG" style="display: block;margin: auto;"><p>1 Call graph
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">分类</a></li><li class="is-active"><a href="#" aria-current="page">虚拟环境</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/">linux软件编译、安装、运行</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gcc 包含文件查询路径</span></span><br><span class="line"><span class="built_in">echo</span> | gcc -E -Wp,-v -</span><br><span class="line"><span class="comment"># 加 -Wl,--verbose 来看使用库的路径信息</span></span><br><span class="line">gcc -o <span class="built_in">test</span> main.o -ltest -L. -Wl,--verbose</span><br><span class="line"><span class="comment"># 查看 so 名字</span></span><br><span class="line">readelf -a -W elffile | grep SONAME</span><br><span class="line"><span class="comment"># 查看可执行文件需要的 so</span></span><br><span class="line">readelf -a -W elffile | grep NEEDED</span><br><span class="line"><span class="comment"># 查看符号 https://stackoverflow.com/questions/34732/how-do-i-list-the-symbols-in-a-so-file</span></span><br><span class="line">objdump -t Lib1.o</span><br><span class="line">nm -g yourLib.so</span><br><span class="line"><span class="comment"># 查看 man 文档</span></span><br><span class="line">man -l tcpdump.1</span><br></pre></td></tr></tbody></table></figure><p>1 编译
 
-分析函数调用关系图 (call graph) 的几种方法
-
-
-1.1 静态
+参考 https://askubuntu.com/questions/466651/how-do-i-use-the-latest-gcc-on-ubuntu
 
 
-1.1.1 Doxygen + Graphviz + Htmlhelp (windows)
+1.1 静态链接 libc
 
-- 使用 Doxygen + Graphviz + Htmlhelp，Doxygen 配置，再加上下面两图，不要选生成 Chinese，否则 chm 文件乱码
-  
-  
-  
-  
-
-- 生成前将不用的第三方库代码移走
-
-- Doxygen error: failed to run html help compiler on index.hhp 报错似乎不影响
+- 不推荐链接 glibc （如 getaddrinfo）。用 alpine 的 musl，pull 官方 docker 后安装 这些
+- 启动 docker 映射本地的源码，在 docker 中编译
+  - 用 -pthread 而非 -lpthread，区别
+  - gcc 链接时使用 -static。一个复杂的 例子
+- 编译后 strip 程序
 
 
-1.1.2 SciTools Understand (windows)
+1.2 交叉编译
 
-C/C++ 项目参考， Buildspy - For gcc/g++ Users
+对于 rpath 和 sysroot 可参考
 
-- 对于 openssl，一处非常奇怪的宏定义字符串导致编译不过问题， ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/office/">office</a></p><div class="content"><p>表格快速添加多个新行，鼠标放在表格外的换行位置，回车添加新行，按 F4 多次重复添加 </p>
-<p>将表格选中行下移，Alt + Shift + 下</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/">编译工具</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake -B build -G <span class="string">"MinGW Makefiles"</span> -D CMAKE_MAKE_PROGRAM=<span class="string">"D:/soft/mingw64/bin/mingw32-make.exe"</span></span><br></pre></td></tr></tbody></table></figure><p>- 跟我一起写Makefile
-- 《嵌入式 Linux C 语言程序设计》，make
+Building and cross-compile tutorial
 
+Ubuntu实现树莓派交叉编译（也解释了 build host target）
 
-1 CMake
+交叉编译器 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/linux%E8%BD%AF%E4%BB%B6%E7%BC%96%E8%AF%91%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/">1. 来源与收集</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/">下载</a></p><div class="content"><p>1 批量下载
 
-- 推荐 out of source builds，输出不混在一起，git 工具好管理，可以创建多个 build，如 debug/release。build 与
-  source 同一等级，不在 source 内部
-
-- 在多个平台测试以避免写出平台相关的 cmake
-
-- 选择编译器和 Generator，两者不同搭配可有不同的 build 目录，只需指定一次
-
-- 生成和编译始终在源码根目录
-
-- 调试 CMake
-
-- target 可以是虚拟的
-
-- 变量都是字符串类型，值有空格要加引号，多个值用分号连起来。未定义的变量是空字符串。${} 可以嵌套引用，可作为变量名
-
-- unset(myVar) / set(myVar) 用来 unset 变量
-
-- ENV{varNam ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/">词典软件</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/../%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/1.png" alt="词典设置" style="display: block;margin: auto;"><p>1 GoldenDict
-
-- 需要 linux 版翻译时使用 GoldenDict
-- 参考 github GoldenDict 手册 下载64bit QT5 压缩版本
-- 新建 portable 变成便携版，生成的 index 子文件中为词典索引
-- 将指向 Dictionary 文件夹的快捷方式放入 content，除了欧路专用格式，其它与欧路共用。调整词典顺序
-- 虽然可以添加欧路和有道在线词典，但查词会变慢，因此不添加且将维基百科也禁用
-- 新建配置文件调整字体和大小，调整搜索框大小，选择显示哪些面板，关闭不可用的屏幕取词相关功能
-- 修改设置如下，关闭“双击翻译”，查询结果中继续取词通过弹窗的方式，不使用跳转。基本不使用多标签功能。风格调整为白色背景。
-  
-- 设置 AHK 脚本自启动实现双击查词
-- 阅读帮助文档中的快捷键实现高效查词
+- Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓
+- Chrome 扩展 Link Grabber、Simple mass downloader
+- 必要时使用编程解决，下载 mingw-w64 的 x86_64-win32-seh，安装参考
 
 
-2 欧路词典
+2 视频下载
 
-- 有生词多终端同 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
-
-- 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
-  - HDMI 欺骗器
-  - spacedesk
-  - 视频采集卡
-  - 用 QQ 远程协助、远程桌面、虚拟机也是这个思路，即绕过软件层面的检测
-- 也可找没被检测到的录屏软件
-- 保险起见，每天录屏时间不要超过一个合理时间，如 8h
-- Potplayer 录屏没声音时，打开 - 设备设置 - 摄像头 - 音频录制设备 - 数字音频接口。视频 –> 录制视频(ALT +
-  C)，保持默认MPEG-4编码，勾选开启高质量视频压缩，然后把播放器静音，最小化
-
-
-2 手机控制 PC
-
-- spacedesk 作为扩展显示器
-
-
-3 PC 控制手机
-
-- 用 QtScrcpy 的“熄屏”控制，可以用于 App 开发
-
-
-4 内录声音
-
-- 静音内录某个软件的声音
-  - 装虚拟声卡 Virtual Aud ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/">电子书处理</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/%E7%89%88%E6%9C%AC%E6%8F%90%E7%A4%BA.png" style="display: block;margin: auto;"><p>1 扫描书
+- 流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 Stream Video Downloader
+- youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg
+  合并音视频（不合并也可以播放）。也可以用在线解析网站 Youtube Download Online
+- pornhub 可以用插件，也可以在线解析
+- Video D ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/">电子书处理</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/%E7%89%88%E6%9C%AC%E6%8F%90%E7%A4%BA.png" style="display: block;margin: auto;"><p>1 扫描书
 
 参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》
 
@@ -153,49 +96,99 @@ C/C++ 项目参考， Buildspy - For gcc/g++ Users
 - 开启网格线，保证书的文字不倾斜
 - 增加手机锁屏时间
 - 两个书架的宽度比书脊稍宽，避免位置移动，同时也方便翻页
-- 调整到没有大的反光，另一页的反光可以用白纸 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/">Kopia</a></p><div class="content"><figure class="highlight powershell" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令的前部分从 GUI 里面复制</span></span><br><span class="line">XXX\kopia.exe <span class="literal">--config-file</span>=XXX\repositories\repository.config policy <span class="built_in">set</span> <span class="literal">--global</span>  <span class="literal">--before-snapshot-root-action</span> <span class="string">"powershell D:\soft\KopiaUI\before.ps1"</span></span><br><span class="line">XXX\kopia.exe <span class="literal">--config-file</span>=XXX\repositories\repository.config  policy <span class="built_in">set</span> <span class="literal">--global</span>  <span class="literal">--after-snapshot-root-action</span>  <span class="string">"powershell D:\soft\KopiaUI\after.ps1"</span></span><br><span class="line"><span class="comment"># 要清空配置传空字符串 ""</span></span><br><span class="line">XXX\kopia.exe <span class="literal">--config-file</span>=XXX\repositories\repository.config  policy <span class="built_in">set</span> <span class="literal">--global</span>  <span class="literal">--after-snapshot-root-action</span>  <span class="string">""</span></span><br></pre></td></tr></tbody></table></figure><p>1 Kopia
+- 调整到没有大的反光，另一页的反光可以用白纸 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/">代码分析</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/../%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/1.PNG" style="display: block;margin: auto;"><p>1 Call graph
 
-- KopiaUI 程序所在目录新建 repositories，实现 portable、更详细的描述
+分析函数调用关系图 (call graph) 的几种方法
 
-- VSS
+
+1.1 静态
+
+
+1.1.1 Doxygen + Graphviz + Htmlhelp (windows)
+
+- 使用 Doxygen + Graphviz + Htmlhelp，Doxygen 配置，再加上下面两图，不要选生成 Chinese，否则 chm 文件乱码
   
-  - 先在 repository.config 中 enableActions 改为 true，然后用命令配置全局 profile（因为 gui 目前有
-    bug）
   
-  - 管理员 powershell，Set-ExecutionPolicy Unrestricted
   
-  - 修改 ps1 关联，用 powershell 运行
   
-  - before 脚本里有调试信息，放开后可用来确认脚本执行和备份路径
+
+- 生成前将不用的第三方库代码移走
+
+- Doxygen error: failed to run html help compiler on index.hhp 报错似乎不影响
+
+
+1.1.2 SciTools Understand (windows)
+
+C/C++ 项目参考， Buildspy - For gcc/g++ Users
+
+- 对于 openssl，一处非常奇怪的宏定义字符串导致编译不过问题， ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/office/">office</a></p><div class="content"><p>表格快速添加多个新行，鼠标放在表格外的换行位置，回车添加新行，按 F4 多次重复添加 </p>
+<p>将表格选中行下移，Alt + Shift + 下</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/">词典软件</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/../%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/1.png" alt="词典设置" style="display: block;margin: auto;"><p>1 GoldenDict
+
+- 需要 linux 版翻译时使用 GoldenDict
+- 参考 github GoldenDict 手册 下载64bit QT5 压缩版本
+- 新建 portable 变成便携版，生成的 index 子文件中为词典索引
+- 将指向 Dictionary 文件夹的快捷方式放入 content，除了欧路专用格式，其它与欧路共用。调整词典顺序
+- 虽然可以添加欧路和有道在线词典，但查词会变慢，因此不添加且将维基百科也禁用
+- 新建配置文件调整字体和大小，调整搜索框大小，选择显示哪些面板，关闭不可用的屏幕取词相关功能
+- 修改设置如下，关闭“双击翻译”，查询结果中继续取词通过弹窗的方式，不使用跳转。基本不使用多标签功能。风格调整为白色背景。
   
-  - 查看和删除 vss，防止 after 脚本没执行，vssadmin list shadows，vssadmin delete shadows
-
-- 常用命令（软件的路径区分大小写，尽管 Windows 不区分）
-
- ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/">git</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   git config --global user.name <span class="string">"Your Name"</span></span><br><span class="line">   <span class="comment"># 不设置 email</span></span><br><span class="line">   git config --global user.email <span class="string">'&lt;&gt;'</span></span><br><span class="line">   <span class="comment"># 支持中文路径和文件名</span></span><br><span class="line">   git config --global core.quotepath <span class="literal">false</span></span><br><span class="line">   <span class="comment"># 编辑器设为 vi</span></span><br><span class="line">   git config --global core.editor <span class="string">"vi"</span> </span><br><span class="line">   <span class="comment"># 查看设置</span></span><br><span class="line">   git config --list</span><br><span class="line">   git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line"><span class="comment"># 提交简写</span></span><br><span class="line">git config --global alias.ac <span class="string">'!git add -A &amp;&amp; git commit -m'</span></span><br></pre></td></tr></tbody></table></figure><p>1 基础
-
-初级教程、 命令总结文档、Pro Git 2nd、Pro Git 2nd（网页版）
-
- 1. git 特点分布式，不必联网。建议文本 UTF-8 编码
- 2. 安装 linux上 apt-get 或者 源码， windows版本
- 3. 设置全局的用户名和邮箱，设置代理，初始化
- 4. git pull 默认取所有分支，–all 取所有 remote。git push 默认当前分支，–all 所有分支
- 5. 代理，只用 ssh 协议，不用 http。参考
+- 设置 AHK 脚本自启动实现双击查词
+- 阅读帮助文档中的快捷键实现高效查词
 
 
-1.1 图形工具
+2 欧路词典
 
-参考 best-three-way-merge-tool，使用 p4merge 和 meld
-
-受限于网速时可用 vimdiff
-
-- 一些按键
-- 关于 merge 的按键
+- 有生词多终端同 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/">编译工具</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake -B build -G <span class="string">"MinGW Makefiles"</span> -D CMAKE_MAKE_PROGRAM=<span class="string">"D:/soft/mingw64/bin/mingw32-make.exe"</span></span><br></pre></td></tr></tbody></table></figure><p>- 跟我一起写Makefile
+- 《嵌入式 Linux C 语言程序设计》，make
 
 
-1.2 查看修改和历史
+1 CMake
 
-- git diff 比较的是工作区与暂存区的差异，git diff HEAD -- readm ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/">blog</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line">npx hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title</span><br><span class="line"><span class="comment"># 要在 config 中添加配置</span></span><br><span class="line">npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git</span><br><span class="line"><span class="comment"># source 目录下，关联笔记</span></span><br><span class="line">mklink /J _posts D:\Documents\Dropbox\notes\blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 还有一个 footnote 插件从 hexo-theme-fluid 移植过来</span></span><br><span class="line"><span class="comment"># 还有 add_assets_url.js 添加下载图标</span></span><br><span class="line"><span class="comment"># 所有插件可通过 hexo --debug 选项看到</span></span><br></pre></td></tr></tbody></table></figure><p>1 部署
+- 推荐 out of source builds，输出不混在一起，git 工具好管理，可以创建多个 build，如 debug/release。build 与
+  source 同一等级，不在 source 内部
+
+- 在多个平台测试以避免写出平台相关的 cmake
+
+- 选择编译器和 Generator，两者不同搭配可有不同的 build 目录，只需指定一次
+
+- 生成和编译始终在源码根目录
+
+- 调试 CMake
+
+- target 可以是虚拟的
+
+- 变量都是字符串类型，值有空格要加引号，多个值用分号连起来。未定义的变量是空字符串。${} 可以嵌套引用，可作为变量名
+
+- unset(myVar) / set(myVar) 用来 unset 变量
+
+- ENV{varNam ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
+
+- 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
+  - HDMI 欺骗器
+  - spacedesk
+  - 视频采集卡
+  - 用 QQ 远程协助、远程桌面、虚拟机也是这个思路，即绕过软件层面的检测
+- 也可找没被检测到的录屏软件
+- 保险起见，每天录屏时间不要超过一个合理时间，如 8h
+- Potplayer 录屏没声音时，打开 - 设备设置 - 摄像头 - 音频录制设备 - 数字音频接口。视频 –> 录制视频(ALT +
+  C)，保持默认MPEG-4编码，勾选开启高质量视频压缩，然后把播放器静音，最小化
+
+
+2 手机控制 PC
+
+- spacedesk 作为扩展显示器
+
+
+3 PC 控制手机
+
+- 用 QtScrcpy 的“熄屏”控制，可以用于 App 开发
+
+
+4 内录声音
+
+- 静音内录某个软件的声音
+  - 装虚拟声卡 Virtual Aud ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/">blog</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line">npx hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title</span><br><span class="line"><span class="comment"># 要在 config 中添加配置</span></span><br><span class="line">npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git</span><br><span class="line"><span class="comment"># source 目录下，关联笔记</span></span><br><span class="line">mklink /J _posts D:\Documents\Dropbox\notes\blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 还有一个 footnote 插件从 hexo-theme-fluid 移植过来</span></span><br><span class="line"><span class="comment"># 还有 add_assets_url.js 添加下载图标</span></span><br><span class="line"><span class="comment"># 所有插件可通过 hexo --debug 选项看到</span></span><br></pre></td></tr></tbody></table></figure><p>1 部署
 
  1. 安装 git、node.js，参考 hexo 官网，windows、linux 有区别。git 设置 sock5 代理，见 git
  2. github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥

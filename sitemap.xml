@@ -389,25 +389,7 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/%E4%BA%BA%E5%B7%A5%E5%B2%9B/</loc>
-    
-    <lastmod>2023-05-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%A6%99%E5%A6%99/</loc>
-    
-    <lastmod>2023-05-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/</loc>
     
     <lastmod>2023-05-18</lastmod>
     
@@ -425,7 +407,7 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/</loc>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%A0%A1%E6%9C%8D%E5%B0%91%E5%A5%B3/</loc>
     
     <lastmod>2023-05-18</lastmod>
     
@@ -434,7 +416,16 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%A0%A1%E6%9C%8D%E5%B0%91%E5%A5%B3/</loc>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E4%BC%98/</loc>
+    
+    <lastmod>2023-05-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/</loc>
     
     <lastmod>2023-05-18</lastmod>
     
@@ -452,6 +443,15 @@
   </url>
   
   <url>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/%E4%BA%BA%E5%B7%A5%E5%B2%9B/</loc>
+    
+    <lastmod>2023-05-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.1/</loc>
     
     <lastmod>2023-05-18</lastmod>
@@ -461,7 +461,7 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E4%BC%98/</loc>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/</loc>
     
     <lastmod>2023-05-18</lastmod>
     
@@ -497,7 +497,7 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%B0%91%E5%B9%B4/</loc>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/Ever17/</loc>
     
     <lastmod>2023-05-18</lastmod>
     
@@ -506,7 +506,7 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/Ever17/</loc>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%B0%91%E5%B9%B4/</loc>
     
     <lastmod>2023-05-18</lastmod>
     
@@ -544,14 +544,14 @@
 
   
   <url>
-    <loc>https://synrst.de/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://synrst.de/categories/%E4%B8%93%E4%B8%9A/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://synrst.de/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -565,14 +565,14 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/</loc>
+    <loc>https://synrst.de/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://synrst.de/categories/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -586,6 +586,13 @@
   </url>
   
   <url>
+    <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/</loc>
+    <lastmod>2023-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -593,14 +600,7 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/categories/%E4%B8%93%E4%B8%9A/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/</loc>
+    <loc>https://synrst.de/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -621,14 +621,14 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/</loc>
+    <loc>https://synrst.de/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://synrst.de/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/</loc>
+    <loc>https://synrst.de/categories/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -5,113 +5,6 @@
     <link href="https://synrst.de" />
     <updated>1970-01-01T00:00:00.000Z</updated>
     <entry>
-        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/</id>
-        <title>Kopia</title>
-        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/"/>
-        <content type="html">&lt;h1 id=&#34;1-Kopia&#34;&gt;&lt;a href=&#34;#1-Kopia&#34; class=&#34;headerlink&#34; title=&#34;1 Kopia&#34;&gt;&lt;/a&gt;1 Kopia&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;KopiaUI 程序所在目录新建 &lt;code&gt;repositories&lt;/code&gt;，实现 &lt;a href=&#34;https://github.com/kopia/kopia/pull/398&#34;&gt;portable&lt;/a&gt;、&lt;a href=&#34;https://github.com/kopia/kopia/issues/2282&#34;&gt;更详细的描述&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;VSS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;先在 &lt;code&gt;repository.config&lt;/code&gt; 中 &lt;code&gt;enableActions&lt;/code&gt; 改为 true，然后用命令配置全局 profile（因为 gui 目前有 bug）&lt;/p&gt;
-  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 命令的前部分从 GUI 里面复制&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--before-snapshot-root-action&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\before.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\after.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要清空配置传空字符串 &amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;管理员 powershell，&lt;code&gt;Set-ExecutionPolicy Unrestricted&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;修改 ps1 关联，用 powershell 运行&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;before 脚本里有调试信息，放开后可用来确认脚本执行和备份路径&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.ubackup.com/windows-10/shadow-copy-windows-10-4348.html&#34;&gt;查看和删除 vss&lt;/a&gt;，防止 after 脚本没执行，&lt;code&gt;vssadmin list shadows&lt;/code&gt;，&lt;code&gt;vssadmin delete shadows&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kopia.io/docs/reference/command-line/&#34;&gt;常用命令&lt;/a&gt;（软件的路径&lt;u&gt;&lt;em&gt;区分大小写&lt;/em&gt;&lt;/u&gt;，尽管 Windows 不区分）&lt;/p&gt;
-  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;repository status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy &lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show D:\&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;GUI 设置全局 policy，备份 10 个，其它为 0，忽略相同备份，zstd 压缩&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;.kopiaignore&lt;/code&gt; 文件，路径用 &lt;code&gt;/&lt;/code&gt; 分隔，且相对路径以 &lt;code&gt;/&lt;/code&gt; 起始，如 &lt;code&gt;/pagefile.sys&lt;/code&gt;、&lt;code&gt;/Windows/Temp/&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;系统盘排除内容可参考 dism++ 配置&lt;/li&gt;
-&lt;li&gt;ignore 内容少，直接保存到 global 中配置 Ignore Files 列表，不用 &lt;code&gt;.kopiaignore&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;snapshot estimate D:\&lt;/code&gt; 确认 ignore 生效&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;创建 &lt;code&gt;snapshot create D:\&lt;/code&gt;，由于只备份一个路径（D:\），所以用 global profile 即可&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;确认备份过程是否存在错误，&lt;code&gt;snapshot ls&lt;/code&gt; 和 &lt;code&gt;show 前一个命令的 ID&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/tracking-down-backup-errors/126/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;以后，定期确认备份文件是否正确，&lt;code&gt;snap verify --verify-files-percent 1&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/best-method-to-ensure-valid-snapshots-snapshot-verify-vs-snapshot-fix-invalid-files/1217/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;删除的 snapshot 对应的文件会 &lt;a href=&#34;https://kopia.discourse.group/t/clearing-the-repository-after-deleting-a-snapshot/575&#34;&gt;延迟 24h 左右删除&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;diff OLDID NEWID&lt;/code&gt; 显示 snap 区别&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可手动 snap 然后 pin，pin 的 snap 不计入 &lt;code&gt;Latest Snapshots&lt;/code&gt; 的设置中&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sync-to 可以暂停后恢复，而直接推送到云端，即 snap create 则不能&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;推送到云端，&lt;code&gt; repository sync-to rclone --remote-path=alist_local:/阿里云盘/d_backup --rclone-exe=D:\soft\KopiaUI\rclone-alist\rclone.exe --delete --dry-run&lt;/code&gt;，实际用去掉 &lt;code&gt;--dry-run&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/configure-multiple-repositories/1194&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;对阿里云盘，初始版本用官方客户端上传更快，sync-to 速度要慢一倍&lt;/li&gt;
-&lt;li&gt;对 Onedrive，rclone + alist 的上传速度要好于只用 rclone。同样初始版本选择官方客户端，同步盘手动上传技巧&lt;ul&gt;
-&lt;li&gt;设置 onedrive 同步路径为 NOBACK 文件夹里&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;F:\FNOBACK\OneDrive - MSFT\g_backup&amp;quot; &amp;quot;F:\g_backup&amp;quot;&lt;/code&gt; 开启上传&lt;/li&gt;
-&lt;li&gt;上传后，客户端退出 Onedrive 账户，删除 OneDrive 文件夹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;开机同步、关机备份脚本，同步可以并行，备份不能，会出错。此外备份如果添加到组策略中，会要求输入密码&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为了将关机的快捷方式固定到任务栏，需要加 &lt;code&gt;cmd /c&lt;/code&gt;，如 &lt;code&gt;C:\Windows\System32\cmd.exe /C D:\shutdown_backup.bat&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;其它&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Kopia 类似工具不适合备份系统，因为即使用了 VSS，甚至用 SYSTEM 用户权限执行，也会出现某些文件没权限读取，比如某些文件只能当前用户可读&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.winhelponline.com/blog/run-program-as-system-localsystem-account-windows/&#34;&gt;SYSTEM 用户执行 &lt;/a&gt;使用 PSTools，管理员 powershell，执行 &lt;code&gt;.\PsExec.exe -sid powershell&lt;/code&gt;，获得 SYSTEM 的 shell&lt;ul&gt;
-&lt;li&gt;可在任务管理器，详细信息中确认进程的用户&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;如要用 Kopia 备份 linux，我认为可尝试 restic 相关&lt;a href=&#34;https://forum.restic.net/t/lack-of-documentation-on-how-to-do-a-full-system-back-up/659/5&#34;&gt;问答&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;1-1-Alist-Rclone&#34;&gt;&lt;a href=&#34;#1-1-Alist-Rclone&#34; class=&#34;headerlink&#34; title=&#34;1.1 Alist  Rclone&#34;&gt;&lt;/a&gt;1.1 Alist  Rclone&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;kopia 支持 webdav 但效果不好，所以再套一层 rclone 来上传备份&lt;/li&gt;
-&lt;li&gt;alist&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;alist start&lt;/code&gt; 启动，注意关闭命令窗口会自动退出&lt;/li&gt;
-&lt;li&gt;配置文件 &lt;code&gt;data\config.json&lt;/code&gt; 要改成高位端口，否则起不来，闪退&lt;/li&gt;
-&lt;li&gt;防火墙要放行，应该自动弹出确认&lt;/li&gt;
-&lt;li&gt;alist 也可装到 OpenWrt 上，需要添加新的源，ipk 安装，&lt;a href=&#34;https://www.bilibili.com/video/BV1qM411U7o7&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;alist 添加 onedrive &lt;a href=&#34;https://alist.nn.ci/zh/guide/drivers/onedrive_app.html&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;rclone&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;rclone.conf&lt;/code&gt; 放在同一文件夹，rclone 会 &lt;a href=&#34;https://rclone.org/docs/#config-config-file&#34;&gt;自动使用&lt;/a&gt;，也可手动指定 &lt;code&gt;·--config=CONFIG_FILE&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rclone config&lt;/code&gt; 进行配置向导&lt;/li&gt;
-&lt;li&gt;使用 remote path 来指定操作对象，remote 是 config 中配置的，path 是里面的路径&lt;ul&gt;
-&lt;li&gt;如对于 alist 的阿里云盘备份路径为 &lt;code&gt;alist_local:/阿里云盘/d_backup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;列出目录&lt;code&gt;rclone ls remote:path # lists a remote&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;挂载 &lt;code&gt;rclone.exe --cache-dir=rc_cache --temp-dir=rc_temp mount alist_local: Y: --vfs-cache-mode full&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;这里把 cache 和 temp 指向当前目录，用 &lt;code&gt;rclone.exe config paths&lt;/code&gt; 确认当前设置的路径&lt;/li&gt;
-&lt;li&gt;其它命令见 &lt;a href=&#34;https://rclone.org/docs/&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;OneDrive E5&lt;ul&gt;
-&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=4NmPlEf4FTk&#34;&gt;科技lion&lt;/a&gt; 申请&lt;/li&gt;
-&lt;li&gt;用 &lt;a href=&#34;https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X&#34;&gt;docker&lt;/a&gt; 刷新&lt;/li&gt;
-&lt;li&gt;docker 开放的是不安全的 http，因此只监听在本地，用 ssh 做中转，类似 ssh -L 功能，&lt;a href=&#34;https://superuser.com/questions/125043/web-browsing-over-ssh&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/</id>
         <title>git</title>
         <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/"/>
@@ -241,6 +134,113 @@
 &lt;li&gt;辅助用 &lt;a href=&#34;https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame&#34;&gt;git blame 或 git log -S&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/虚拟环境/4. 分享与备份/git&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/</id>
+        <title>Kopia</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/Kopia/"/>
+        <content type="html">&lt;h1 id=&#34;1-Kopia&#34;&gt;&lt;a href=&#34;#1-Kopia&#34; class=&#34;headerlink&#34; title=&#34;1 Kopia&#34;&gt;&lt;/a&gt;1 Kopia&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;KopiaUI 程序所在目录新建 &lt;code&gt;repositories&lt;/code&gt;，实现 &lt;a href=&#34;https://github.com/kopia/kopia/pull/398&#34;&gt;portable&lt;/a&gt;、&lt;a href=&#34;https://github.com/kopia/kopia/issues/2282&#34;&gt;更详细的描述&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;VSS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;先在 &lt;code&gt;repository.config&lt;/code&gt; 中 &lt;code&gt;enableActions&lt;/code&gt; 改为 true，然后用命令配置全局 profile（因为 gui 目前有 bug）&lt;/p&gt;
+  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 命令的前部分从 GUI 里面复制&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--before-snapshot-root-action&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\before.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;powershell D:\soft\KopiaUI\after.ps1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要清空配置传空字符串 &amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;XXX\kopia.exe &lt;span class=&#34;literal&#34;&gt;--config-file&lt;/span&gt;=XXX\repositories\repository.config  policy &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;  &lt;span class=&#34;literal&#34;&gt;--after-snapshot-root-action&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;管理员 powershell，&lt;code&gt;Set-ExecutionPolicy Unrestricted&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改 ps1 关联，用 powershell 运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;before 脚本里有调试信息，放开后可用来确认脚本执行和备份路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.ubackup.com/windows-10/shadow-copy-windows-10-4348.html&#34;&gt;查看和删除 vss&lt;/a&gt;，防止 after 脚本没执行，&lt;code&gt;vssadmin list shadows&lt;/code&gt;，&lt;code&gt;vssadmin delete shadows&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kopia.io/docs/reference/command-line/&#34;&gt;常用命令&lt;/a&gt;（软件的路径&lt;u&gt;&lt;em&gt;区分大小写&lt;/em&gt;&lt;/u&gt;，尽管 Windows 不区分）&lt;/p&gt;
+  &lt;figure class=&#34;highlight powershell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;repository status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy &lt;span class=&#34;built_in&#34;&gt;ls&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show D:\&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;policy show &lt;span class=&#34;literal&#34;&gt;--global&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;GUI 设置全局 policy，备份 10 个，其它为 0，忽略相同备份，zstd 压缩&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;.kopiaignore&lt;/code&gt; 文件，路径用 &lt;code&gt;/&lt;/code&gt; 分隔，且相对路径以 &lt;code&gt;/&lt;/code&gt; 起始，如 &lt;code&gt;/pagefile.sys&lt;/code&gt;、&lt;code&gt;/Windows/Temp/&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统盘排除内容可参考 dism++ 配置&lt;/li&gt;
+&lt;li&gt;ignore 内容少，直接保存到 global 中配置 Ignore Files 列表，不用 &lt;code&gt;.kopiaignore&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;snapshot estimate D:\&lt;/code&gt; 确认 ignore 生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建 &lt;code&gt;snapshot create D:\&lt;/code&gt;，由于只备份一个路径（D:\），所以用 global profile 即可&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;确认备份过程是否存在错误，&lt;code&gt;snapshot ls&lt;/code&gt; 和 &lt;code&gt;show 前一个命令的 ID&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/tracking-down-backup-errors/126/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;以后，定期确认备份文件是否正确，&lt;code&gt;snap verify --verify-files-percent 1&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/best-method-to-ensure-valid-snapshots-snapshot-verify-vs-snapshot-fix-invalid-files/1217/2&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除的 snapshot 对应的文件会 &lt;a href=&#34;https://kopia.discourse.group/t/clearing-the-repository-after-deleting-a-snapshot/575&#34;&gt;延迟 24h 左右删除&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;diff OLDID NEWID&lt;/code&gt; 显示 snap 区别&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可手动 snap 然后 pin，pin 的 snap 不计入 &lt;code&gt;Latest Snapshots&lt;/code&gt; 的设置中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sync-to 可以暂停后恢复，而直接推送到云端，即 snap create 则不能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;推送到云端，&lt;code&gt; repository sync-to rclone --remote-path=alist_local:/阿里云盘/d_backup --rclone-exe=D:\soft\KopiaUI\rclone-alist\rclone.exe --delete --dry-run&lt;/code&gt;，实际用去掉 &lt;code&gt;--dry-run&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/configure-multiple-repositories/1194&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;对阿里云盘，初始版本用官方客户端上传更快，sync-to 速度要慢一倍&lt;/li&gt;
+&lt;li&gt;对 Onedrive，rclone + alist 的上传速度要好于只用 rclone。同样初始版本选择官方客户端，同步盘手动上传技巧&lt;ul&gt;
+&lt;li&gt;设置 onedrive 同步路径为 NOBACK 文件夹里&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mklink /J &amp;quot;F:\FNOBACK\OneDrive - MSFT\g_backup&amp;quot; &amp;quot;F:\g_backup&amp;quot;&lt;/code&gt; 开启上传&lt;/li&gt;
+&lt;li&gt;上传后，客户端退出 Onedrive 账户，删除 OneDrive 文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;开机同步、关机备份脚本，同步可以并行，备份不能，会出错。此外备份如果添加到组策略中，会要求输入密码&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为了将关机的快捷方式固定到任务栏，需要加 &lt;code&gt;cmd /c&lt;/code&gt;，如 &lt;code&gt;C:\Windows\System32\cmd.exe /C D:\shutdown_backup.bat&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其它&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kopia 类似工具不适合备份系统，因为即使用了 VSS，甚至用 SYSTEM 用户权限执行，也会出现某些文件没权限读取，比如某些文件只能当前用户可读&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.winhelponline.com/blog/run-program-as-system-localsystem-account-windows/&#34;&gt;SYSTEM 用户执行 &lt;/a&gt;使用 PSTools，管理员 powershell，执行 &lt;code&gt;.\PsExec.exe -sid powershell&lt;/code&gt;，获得 SYSTEM 的 shell&lt;ul&gt;
+&lt;li&gt;可在任务管理器，详细信息中确认进程的用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如要用 Kopia 备份 linux，我认为可尝试 restic 相关&lt;a href=&#34;https://forum.restic.net/t/lack-of-documentation-on-how-to-do-a-full-system-back-up/659/5&#34;&gt;问答&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-1-Alist-Rclone&#34;&gt;&lt;a href=&#34;#1-1-Alist-Rclone&#34; class=&#34;headerlink&#34; title=&#34;1.1 Alist  Rclone&#34;&gt;&lt;/a&gt;1.1 Alist  Rclone&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;kopia 支持 webdav 但效果不好，所以再套一层 rclone 来上传备份&lt;/li&gt;
+&lt;li&gt;alist&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;alist start&lt;/code&gt; 启动，注意关闭命令窗口会自动退出&lt;/li&gt;
+&lt;li&gt;配置文件 &lt;code&gt;data\config.json&lt;/code&gt; 要改成高位端口，否则起不来，闪退&lt;/li&gt;
+&lt;li&gt;防火墙要放行，应该自动弹出确认&lt;/li&gt;
+&lt;li&gt;alist 也可装到 OpenWrt 上，需要添加新的源，ipk 安装，&lt;a href=&#34;https://www.bilibili.com/video/BV1qM411U7o7&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;alist 添加 onedrive &lt;a href=&#34;https://alist.nn.ci/zh/guide/drivers/onedrive_app.html&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rclone&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;rclone.conf&lt;/code&gt; 放在同一文件夹，rclone 会 &lt;a href=&#34;https://rclone.org/docs/#config-config-file&#34;&gt;自动使用&lt;/a&gt;，也可手动指定 &lt;code&gt;·--config=CONFIG_FILE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rclone config&lt;/code&gt; 进行配置向导&lt;/li&gt;
+&lt;li&gt;使用 remote path 来指定操作对象，remote 是 config 中配置的，path 是里面的路径&lt;ul&gt;
+&lt;li&gt;如对于 alist 的阿里云盘备份路径为 &lt;code&gt;alist_local:/阿里云盘/d_backup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;列出目录&lt;code&gt;rclone ls remote:path # lists a remote&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;挂载 &lt;code&gt;rclone.exe --cache-dir=rc_cache --temp-dir=rc_temp mount alist_local: Y: --vfs-cache-mode full&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;这里把 cache 和 temp 指向当前目录，用 &lt;code&gt;rclone.exe config paths&lt;/code&gt; 确认当前设置的路径&lt;/li&gt;
+&lt;li&gt;其它命令见 &lt;a href=&#34;https://rclone.org/docs/&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OneDrive E5&lt;ul&gt;
+&lt;li&gt;参考 &lt;a href=&#34;https://www.youtube.com/watch?v=4NmPlEf4FTk&#34;&gt;科技lion&lt;/a&gt; 申请&lt;/li&gt;
+&lt;li&gt;用 &lt;a href=&#34;https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X&#34;&gt;docker&lt;/a&gt; 刷新&lt;/li&gt;
+&lt;li&gt;docker 开放的是不安全的 http，因此只监听在本地，用 ssh 做中转，类似 ssh -L 功能，&lt;a href=&#34;https://superuser.com/questions/125043/web-browsing-over-ssh&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>

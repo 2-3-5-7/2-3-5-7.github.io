@@ -5,19 +5,11 @@
     "home_page_url": "https://synrst.de",
     "items": [
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/%E4%BA%BA%E5%B7%A5%E5%B2%9B/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/%E4%BA%BA%E5%B7%A5%E5%B2%9B/",
-            "title": "人工岛",
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/Ever17/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/Ever17/",
+            "title": "Ever17",
             "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>LeMU 巨蛋，海洋主题公园</li>\n<li>经营公司 Leiblich 制药</li>\n<li>LeMU 来源于 LEMURIA</li>\n<li>基于饱和潜水原理，内部 6 个大气压，比外部稍大，保证安全</li>\n<li>气压原因，需要声音转换器</li>\n<li>海底火山热能供电</li>\n<li>4 层结构，由上至下，地上 1 层，地下 3 层<ul>\n<li>Insel null，地上人工岛</li>\n<li>Erste boden</li>\n<li>Zweite stock，医疗室，仓库，警备室</li>\n<li>Dritte stock，控制室，休息区</li>\n</ul>\n</li>\n<li>楼层间隔 17m，最深 17 * 3 &#x3D; 51m</li>\n<li>下方 119m IBF，研究深海之蓝 Tief Blau 病毒</li>\n</ul>\n",
-            "tags": []
-        },
-        {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%B0%91%E5%B9%B4/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%B0%91%E5%B9%B4/",
-            "title": "少年",
-            "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>棕色短发</li>\n<li>失忆少年，不知道为何来这里</li>\n<li>寻找校服少女</li>\n<li>金鱼记忆，很快就忘</li>\n</ul>\n",
+            "content_html": "<ul>\n<li>人工岛</li>\n</ul>\n",
             "tags": []
         },
         {
@@ -29,14 +21,6 @@
             "tags": []
         },
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
-            "title": "武",
-            "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>仓成武，大三，20 岁</li>\n<li>找 3 人<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">【武】「一个是高５．１尺，体重大约６３公斤，戴着不太合适的太阳眼镜，手不太灵活但脚程还颇快的丑男……」</span><br><span class=\"line\">【武】「另一个是穿着西装但没打领带，理平头，穿了三个耳洞、一个鼻洞，喜欢编织的男生……」</span><br><span class=\"line\">【武】「最后是唯一的女生，穿着一大堆华丽荷叶边装饰的碎花洋装……」</span><br></pre></td></tr></table></figure></li>\n</ul>\n",
-            "tags": []
-        },
-        {
             "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%8F%AF%E5%8F%AF/",
             "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%8F%AF%E5%8F%AF/",
             "title": "可可",
@@ -45,11 +29,11 @@
             "tags": []
         },
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
-            "title": "职员-空",
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%B0%91%E5%B9%B4/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E5%B0%91%E5%B9%B4/",
+            "title": "少年",
             "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>茜崎空，棕色长发，旗袍</li>\n<li>LeMU 系统工程师，代理主任，AI 程序</li>\n<li>投影在人的眼球上，声音通过耳机实现</li>\n<li>沉稳</li>\n</ul>\n",
+            "content_html": "<ul>\n<li>棕色短发</li>\n<li>失忆少年，不知道为何来这里</li>\n<li>寻找校服少女</li>\n<li>金鱼记忆，很快就忘</li>\n</ul>\n",
             "tags": []
         },
         {
@@ -61,11 +45,35 @@
             "tags": []
         },
         {
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E4%BC%98/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E4%BC%98/",
+            "title": "职员-优",
+            "date_published": "1970-01-01T00:00:00.000Z",
+            "content_html": "<ul>\n<li>田中优（美青春香菜），黄发职员</li>\n<li>大一，18 岁</li>\n<li>开朗</li>\n<li>父亲曾在 LeMU 开发部门，为了找父亲才来这里，1 岁时，父亲失踪</li>\n</ul>\n",
+            "tags": []
+        },
+        {
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E7%A9%BA/",
+            "title": "职员-空",
+            "date_published": "1970-01-01T00:00:00.000Z",
+            "content_html": "<ul>\n<li>茜崎空，棕色长发，旗袍</li>\n<li>LeMU 系统工程师，代理主任，AI 程序</li>\n<li>投影在人的眼球上，声音通过耳机实现</li>\n<li>沉稳</li>\n</ul>\n",
+            "tags": []
+        },
+        {
             "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E9%B8%A0/",
             "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E9%B8%A0/",
             "title": "鸠",
             "date_published": "1970-01-01T00:00:00.000Z",
             "content_html": "<ul>\n<li>紫发少女</li>\n<li>冷酷</li>\n<li>23 岁，1993.7 出生</li>\n<li>体力好，力量大</li>\n<li>了解 LeMU</li>\n<li>12 年前，2005 年，12 岁感染病毒，5 年后细胞全部更新一遍，病毒提高了身体的代谢、免疫能力，同时不会变老，永远 17</li>\n<li>她的宠物老鼠也感染了</li>\n<li>好友，茱莉亚</li>\n<li>医院，少年，看见未来</li>\n<li>出车祸，8 年在医院中度过，被做实验</li>\n</ul>\n",
+            "tags": []
+        },
+        {
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/%E4%BA%BA%E5%B7%A5%E5%B2%9B/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%B0%E7%82%B9/%E4%BA%BA%E5%B7%A5%E5%B2%9B/",
+            "title": "人工岛",
+            "date_published": "1970-01-01T00:00:00.000Z",
+            "content_html": "<ul>\n<li>LeMU 巨蛋，海洋主题公园</li>\n<li>经营公司 Leiblich 制药</li>\n<li>LeMU 来源于 LEMURIA</li>\n<li>基于饱和潜水原理，内部 6 个大气压，比外部稍大，保证安全</li>\n<li>气压原因，需要声音转换器</li>\n<li>海底火山热能供电</li>\n<li>4 层结构，由上至下，地上 1 层，地下 3 层<ul>\n<li>Insel null，地上人工岛</li>\n<li>Erste boden</li>\n<li>Zweite stock，医疗室，仓库，警备室</li>\n<li>Dritte stock，控制室，休息区</li>\n</ul>\n</li>\n<li>楼层间隔 17m，最深 17 * 3 &#x3D; 51m</li>\n<li>下方 119m IBF，研究深海之蓝 Tief Blau 病毒</li>\n</ul>\n",
             "tags": []
         },
         {
@@ -77,11 +85,11 @@
             "tags": []
         },
         {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E4%BC%98/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E8%81%8C%E5%91%98-%E4%BC%98/",
-            "title": "职员-优",
+            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
+            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E4%BA%BA%E7%89%A9/%E6%AD%A6/",
+            "title": "武",
             "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>田中优（美青春香菜），黄发职员</li>\n<li>大一，18 岁</li>\n<li>开朗</li>\n<li>父亲曾在 LeMU 开发部门，为了找父亲才来这里，1 岁时，父亲失踪</li>\n</ul>\n",
+            "content_html": "<ul>\n<li>仓成武，大三，20 岁</li>\n<li>找 3 人<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">【武】「一个是高５．１尺，体重大约６３公斤，戴着不太合适的太阳眼镜，手不太灵活但脚程还颇快的丑男……」</span><br><span class=\"line\">【武】「另一个是穿着西装但没打领带，理平头，穿了三个耳洞、一个鼻洞，喜欢编织的男生……」</span><br><span class=\"line\">【武】「最后是唯一的女生，穿着一大堆华丽荷叶边装饰的碎花洋装……」</span><br></pre></td></tr></table></figure></li>\n</ul>\n",
             "tags": []
         },
         {
@@ -98,14 +106,6 @@
             "title": "5.3-5.6",
             "date_published": "1970-01-01T00:00:00.000Z",
             "content_html": "<ul>\n<li>5.3</li>\n<li>修理仓库破损管道</li>\n<li>武救出受伤的鸠</li>\n<li>空给武讲了一个，在更高维度上观察多个自己，Y 分叉的自己的道理</li>\n<li>休息区 4 个雕像<ul>\n<li>面向东方</li>\n<li>向南方伸手</li>\n<li>向天花板伸手</li>\n<li>两手在胸前，闭眼</li>\n</ul>\n</li>\n<li>5.4</li>\n<li>鸠醒来与武讨论生命，鸠认为生命是污秽的，武不这样认为，鸠认为武是伪善者</li>\n<li>鸠失踪，电脑被砸坏</li>\n<li>找到鸠，鸠伤势恢复了，仍然不配合武的问话</li>\n<li>帮鸠抓逃跑的老鼠</li>\n<li>5.5</li>\n<li>武与鸠玩水母游览船 Qualle，把肉体比作硬件，“我”比作硬件上的资料，两人关系变好</li>\n<li>优知道了，父亲资料的存放位置，试图破解</li>\n<li>少年奔溃，鸠再次与武谈话，告知过去身世</li>\n<li>5.6</li>\n<li>鸠感染的 Leiblich 制药的 cure 病毒</li>\n<li>鸠认为 3 层下面还有空间，与空争吵，要逃过去</li>\n<li>可可吐血，感染 Tief Blau 2017 深海之蓝病毒，暂时用药缓解</li>\n<li>通过 HIMEL 去往 IBF 来治疗可可，门从里面被人打开，遇到研究员</li>\n<li>IBF 很多关闭的门，惨死的研究员</li>\n<li>可可拜访过 IBF 中的父亲 TY</li>\n</ul>\n",
-            "tags": []
-        },
-        {
-            "id": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/Ever17/",
-            "url": "https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/Ever17/",
-            "title": "Ever17",
-            "date_published": "1970-01-01T00:00:00.000Z",
-            "content_html": "<ul>\n<li>人工岛</li>\n</ul>\n",
             "tags": []
         }
     ]
