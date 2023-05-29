@@ -3247,4 +3247,18 @@
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/LFS/</id>
+        <title>LFS</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/LFS/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;书的由来：按自己的喜好搭建，写自己的软件，有一个自己的系统。这本书还可用来理解系统&lt;ul&gt;
+&lt;li&gt;定制化，尤其是小型嵌入式系统&lt;/li&gt;
+&lt;li&gt;安全&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
 </feed>
