@@ -5,6 +5,124 @@
     <link href="https://synrst.de" />
     <updated>1970-01-01T00:00:00.000Z</updated>
     <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</id>
+        <title>新闻来源</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/"/>
+        <content type="html">&lt;h1 id=&#34;1-新闻&#34;&gt;&lt;a href=&#34;#1-新闻&#34; class=&#34;headerlink&#34; title=&#34;1 新闻&#34;&gt;&lt;/a&gt;1 新闻&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;为了平衡东西方的价值观冲突和中美利益冲突，选择两派中最中立的媒体作为新闻来源&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mediabiasfactcheck.com/center/&#34;&gt;Least Biased&lt;/a&gt; 且 Factual Reporting 为 High 以上作为初筛，以新疆、香港额外考察对中国的报道&lt;/li&gt;
+&lt;li&gt;考察内容&lt;ul&gt;
+&lt;li&gt;是否涵盖了关心的内容&lt;/li&gt;
+&lt;li&gt;报道内容是否真实&lt;/li&gt;
+&lt;li&gt;提出观点时是否引用证据（事实），是否充分给出反方观点、证据，语气、用词是否中性&lt;/li&gt;
+&lt;li&gt;媒体资金来源&lt;/li&gt;
+&lt;li&gt;新闻自由程度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;西方&lt;/th&gt;
+&lt;th&gt;东方&lt;/th&gt;
+&lt;th&gt;中国&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;事实&lt;/td&gt;
+&lt;td&gt;apnews&amp;#x2F;reuters&lt;/td&gt;
+&lt;td&gt;asiatimes&amp;#x2F;channelnewsasia&lt;/td&gt;
+&lt;td&gt;新华社&amp;#x2F;人民网&amp;#x2F;外交部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;观点&lt;/td&gt;
+&lt;td&gt;Carnegie Endowment&amp;#x2F;Harvard Gazette&amp;#x2F;Belfer Center&lt;/td&gt;
+&lt;td&gt;asiatimes&lt;/td&gt;
+&lt;td&gt;中国现代国际关系研究院 (CICIR)&amp;#x2F;北京大学国际战略研究院 (IISS)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;观点数量少，是阅读材料，事实数量多，用来求证观点时再主动查询&lt;/li&gt;
+&lt;li&gt;中国观点部分参考 &lt;code&gt;2020 Global Go To Think Tank Index Report&lt;/code&gt; 排名，添加第一的中国与中国大学智库&lt;/li&gt;
+&lt;li&gt;中文博客&amp;#x2F;播客额外补充个人视角，比如新闻实验室。Youtube 的 &lt;a href=&#34;https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA&#34;&gt;台湾公视新闻&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;关键是了解背后 &lt;strong&gt;代表的利益&lt;/strong&gt;，如此即便阅读“环球时报”和“观察者”也不会产生误解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-1-工具选择&#34;&gt;&lt;a href=&#34;#1-1-工具选择&#34; class=&#34;headerlink&#34; title=&#34;1.1 工具选择&#34;&gt;&lt;/a&gt;1.1 工具选择&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;为解决新闻真实和中立性问题，使用 RSS 选择可靠的信息来源，不使用任何新闻客户端&lt;/li&gt;
+&lt;li&gt;自建 RSS 服务，有费用、维护问题，使用复杂违背 RSS 初衷&lt;/li&gt;
+&lt;li&gt;付费 RSS 服务，收费高，不认可某些功能应订阅付费，免费版广告违背 RSS 初衷&lt;/li&gt;
+&lt;li&gt;自建和付费的 TTS、翻译优势与 rss 转 kindle 方式不明显，且 rss 转 kindle 提供输出全文功能&lt;/li&gt;
+&lt;li&gt;所以最终仍使用 rss 转 kindle 发送的方式，使用 amazon 免费同步&lt;/li&gt;
+&lt;li&gt;android 平板使用静读天下 Moon+ Reader Pro&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-系统学习&#34;&gt;&lt;a href=&#34;#2-系统学习&#34; class=&#34;headerlink&#34; title=&#34;2 系统学习&#34;&gt;&lt;/a&gt;2 系统学习&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;目的找到该学科排名靠前的大学的 syllabus ，工具 harvard 课程 &lt;a href=&#34;https://courses.extension.harvard.edu/course-catalog/courses&#34;&gt;搜索1&lt;/a&gt;、&lt;a href=&#34;https://courses.summer.harvard.edu/course-catalog/courses&#34;&gt;搜索2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;也可以考虑以 google scholar 的排名作为切入点&lt;/li&gt;
+&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/78099/assignments/syllabus&#34;&gt;DPI-415 Comparative Politics &amp;amp; Policy&lt;/a&gt; 的 syllabus 选择 Daniele Caramani. Comparative Politics. 5th 作为阅读书籍&lt;/li&gt;
+&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/81856/assignments/syllabus&#34;&gt;GOVT E-40 International Conflict and Cooperation&lt;/a&gt; 的 syllabus 选择 World Politics: Interests, Interactions, and Institutions. 4th 作为阅读书籍&lt;/li&gt;
+&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/4411/assignments/syllabus&#34;&gt;GOVT E-­20 Introduction to Comparative Politics&lt;/a&gt; 2015 年教材，选择 Comparative Politics Today 11th 作为辅助&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-新闻观察&#34;&gt;&lt;a href=&#34;#3-新闻观察&#34; class=&#34;headerlink&#34; title=&#34;3 新闻观察&#34;&gt;&lt;/a&gt;3 新闻观察&lt;/h1&gt;&lt;h2 id=&#34;3-1-模版&#34;&gt;&lt;a href=&#34;#3-1-模版&#34; class=&#34;headerlink&#34; title=&#34;3.1 模版&#34;&gt;&lt;/a&gt;3.1 模版&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;用时：&lt;/th&gt;
+&lt;th&gt;正&lt;/th&gt;
+&lt;th&gt;反&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;事实&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;得出推理&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;个人总结&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/</id>
+        <title>保险</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/"/>
+        <content type="html"></content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</id>
+        <title>下载</title>
+        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/"/>
+        <content type="html">&lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
+&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
+&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
+&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/</id>
+        <title>体检</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/"/>
+        <content type="html"></content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://synrst.de/%E4%B8%93%E4%B8%9A/OOC/</id>
         <title>OOC</title>
         <link rel="alternate" href="https://synrst.de/%E4%B8%93%E4%B8%9A/OOC/"/>
@@ -107,13 +225,6 @@
 &lt;h1 id=&#34;5-单元测试&#34;&gt;&lt;a href=&#34;#5-单元测试&#34; class=&#34;headerlink&#34; title=&#34;5 单元测试&#34;&gt;&lt;/a&gt;5 单元测试&lt;/h1&gt;&lt;p&gt;试试 Google Test ？ &lt;a href=&#34;https://stackoverflow.com/questions/65820/unit-testing-c-code&#34;&gt;https://stackoverflow.com/questions/65820/unit-testing-c-code&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;6-内存管理&#34;&gt;&lt;a href=&#34;#6-内存管理&#34; class=&#34;headerlink&#34; title=&#34;6 内存管理&#34;&gt;&lt;/a&gt;6 内存管理&lt;/h1&gt;&lt;h1 id=&#34;7-安全&#34;&gt;&lt;a href=&#34;#7-安全&#34; class=&#34;headerlink&#34; title=&#34;7 安全&#34;&gt;&lt;/a&gt;7 安全&lt;/h1&gt;&lt;p&gt;cppcheck&lt;/p&gt;
 </content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/</id>
-        <title>保险</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BF%9D%E9%99%A9/"/>
-        <content type="html"></content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -398,567 +509,22 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/</id>
-        <title>体检</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E4%BD%93%E6%A3%80/"/>
-        <content type="html"></content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/</id>
-        <title>朋友</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/"/>
-        <content type="html">&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/../%E6%9C%8B%E5%8F%8B/%E6%88%91%E5%92%8C%E6%9C%8B%E5%8F%8B.png&#34; alt=&#34;我和朋友&#34;&gt;&lt;/p&gt;
-&lt;p&gt;对应的思维导图在 asset 中&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/物理环境/朋友&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/</id>
-        <title>急救</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/"/>
-        <content type="html">&lt;h1 id=&#34;1-内容结构&#34;&gt;&lt;a href=&#34;#1-内容结构&#34; class=&#34;headerlink&#34; title=&#34;1 内容结构&#34;&gt;&lt;/a&gt;1 内容结构&lt;/h1&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph TD
- 急救 --&gt; 基础 &amp; 短时致命 &amp; 内科 &amp; 外科 &amp; 其它 &amp; 平时准备
-    基础 --&gt; 为什么学 &amp; 学习渠道 &amp; 法律问题 &amp; 施救流程 &amp; 环境安全和个人防护 &amp; 无反应有呼吸 &amp; 打120 &amp; 取急救箱和AED
-    短时致命 --&gt; 心脏骤停 &amp; 气道梗阻 &amp; 大出血
-    内科 --&gt; 心脏病发作 &amp; 脑中风 &amp; 过敏 &amp; 癫痫 &amp; 中暑
-    外科 --&gt; 扭伤/骨折 &amp; 烧烫伤 &amp; 动物伤
-    其它 --&gt; 1[&#34;哮喘&lt;br /&gt; 糖尿病和低血糖&lt;br /&gt; 口腔出血&lt;br /&gt; 眼外伤&lt;br /&gt; 电击伤&lt;br /&gt; 冻伤&lt;br /&gt; （食物）中毒&lt;br /&gt;煤气中毒&lt;br /&gt;溺水&lt;br /&gt;……&#34;]
-    平时准备 --&gt; 急救物品 &amp; 理论测试 &amp; 经常练习 &amp; 预防&lt;/pre&gt;
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/</id>
+        <title>物理环境框架</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/"/>
+        <content type="html">&lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
+物理环境 --&gt; 人 &amp; 周围环境
+    人 --&gt; 身体健康 &amp; 心理健康
+        身体健康 --&gt; 意外 &amp; 疾病
+            意外 --&gt; 防火 &amp; 急救 &amp; 防灾 &amp; 保险 &amp; 应急物品清单
+                防火 &amp; 急救 &amp; 防灾 --&gt; 疾病
+            疾病 --&gt; 锻炼 &amp; 食物 &amp; 体检 &amp; 保险
+        心理健康 --&gt; 冥想 &amp; 朋友
+    周围环境 --&gt; 理财 &amp; 朋友
+        理财 --&gt; 物品选购&lt;/pre&gt;
 
-&lt;h1 id=&#34;2-基础&#34;&gt;&lt;a href=&#34;#2-基础&#34; class=&#34;headerlink&#34; title=&#34;2 基础&#34;&gt;&lt;/a&gt;2 基础&lt;/h1&gt;&lt;h2 id=&#34;2-1-为什么学&#34;&gt;&lt;a href=&#34;#2-1-为什么学&#34; class=&#34;headerlink&#34; title=&#34;2.1 为什么学&#34;&gt;&lt;/a&gt;2.1 为什么学&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;心脏骤停、大出血、过敏、气道梗阻、溺水等，只有几分钟的抢救时间，无法等急救车，学会后给自己和身边的人用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-2-学习渠道&#34;&gt;&lt;a href=&#34;#2-2-学习渠道&#34; class=&#34;headerlink&#34; title=&#34;2.2 学习渠道&#34;&gt;&lt;/a&gt;2.2 学习渠道&lt;/h2&gt;&lt;h3 id=&#34;2-2-1-线下&#34;&gt;&lt;a href=&#34;#2-2-1-线下&#34; class=&#34;headerlink&#34; title=&#34;2.2.1 线下&#34;&gt;&lt;/a&gt;2.2.1 线下&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a href=&#34;http://www.crcntc.org.cn/&#34;&gt;中国红十字总会训练中心&lt;/a&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a href=&#34;http://www.redcrossbase.org.cn/&#34;&gt;北京市红十字会应急救护培训基地&lt;/a&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a href=&#34;https://www.beijing120.com/&#34;&gt;北京急救中心&lt;/a&gt;&lt;/th&gt;
-&lt;th&gt;AHA 培训机构&lt;br /&gt;急救中心、第一反应、急诊夜鹰&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;课程&lt;/td&gt;
-&lt;td&gt;急救员&lt;/td&gt;
-&lt;td&gt;和总会内容一样&lt;/td&gt;
-&lt;td&gt;初级急救&lt;/td&gt;
-&lt;td&gt;导师学员比1：6，器材学员比1：3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;开课周期&lt;/td&gt;
-&lt;td&gt;暂不对个人开课，1 - 3 个月&lt;/td&gt;
-&lt;td&gt;每个月都有&lt;/td&gt;
-&lt;td&gt;每个季度，公众号&lt;/td&gt;
-&lt;td&gt;&amp;#x2F;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;费用&lt;/td&gt;
-&lt;td&gt;&amp;#x2F;&lt;/td&gt;
-&lt;td&gt;425 16学时&lt;/td&gt;
-&lt;td&gt;heartsaver &lt;br /&gt;1200 8学时，设备按照 1:3 配备，24人&lt;br /&gt;560 16学时，设备按照 1:6 配备，90 人&lt;/td&gt;
-&lt;td&gt;600-1200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;报名方式&lt;/td&gt;
-&lt;td&gt;网站&lt;/td&gt;
-&lt;td&gt;公众号&lt;/td&gt;
-&lt;td&gt;电话：66098042，66098044&lt;br /&gt;微博：&lt;a href=&#34;https://weibo.com/u/2324620757&#34;&gt;北京急救医疗培训中心&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&amp;#x2F;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;衡量标准&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;老师有急救经验，经得住问&lt;/li&gt;
-&lt;li&gt;模拟假人有电子反馈系统，可以评估 CPR 的质量&lt;/li&gt;
-&lt;li&gt;后续有群，群里有急救医生可以咨询&lt;/li&gt;
-&lt;li&gt;后续能否免费复训&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;参考&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/55538603&#34;&gt;国际急救相关组织&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/23009949/answer/1515767614&#34;&gt;如何拿到急救资格证？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-3-法律问题&#34;&gt;&lt;a href=&#34;#2-3-法律问题&#34; class=&#34;headerlink&#34; title=&#34;2.3 法律问题&#34;&gt;&lt;/a&gt;2.3 法律问题&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;因自愿实施紧急救助行为造成受助人损害的，救助人不承担民事责任&lt;br&gt;—— 2017年10月1日 《中华人民共和国民法总则》第184条&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;2-4-施救流程&#34;&gt;&lt;a href=&#34;#2-4-施救流程&#34; class=&#34;headerlink&#34; title=&#34;2.4 施救流程&#34;&gt;&lt;/a&gt;2.4 施救流程&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-    c1{&#34;现场环境是否安全?&#34;} -- 是 --&gt; c5{&#34;大出血/气道梗阻？&#34;} -- 否 --&gt; c2{&#34;是否有反应？&#34;} -- 否 --&gt; c3{&#34;是否有呼吸？&lt;br /&gt;（濒死呼吸除外）&#34;} -- 否 --&gt; c4{&#34;叫人帮忙，有人？&#34;} -- 是 --&gt; o3[&#34;指定一人打 120，另一人取 AED&#34;] --&gt; o5[&#34;确认做好个人防护&#34;]
-        c1 -- 否 --&gt; o1[&#34;移动患者到安全处&#34;] --&gt;c5
-        c2 -- 是 --&gt; 征得同意后再帮忙
-        c3 -- 是 --&gt; o2[&#34;无反应有呼吸&#34;]
-        c4 -- 否 --&gt; o4[&#34;自己打 120，取 AED&#34;] --&gt; o5
-        c5 -- 是 --&gt; o6[&#34;做个人防护&lt;br /&gt;止血&lt;br /&gt;气道梗阻急救&#34;] --&gt; c2
 
-    o5 --&gt; 开始急救&lt;/pre&gt;
-
-&lt;h2 id=&#34;2-5-环境安全和个人防护&#34;&gt;&lt;a href=&#34;#2-5-环境安全和个人防护&#34; class=&#34;headerlink&#34; title=&#34;2.5 环境安全和个人防护&#34;&gt;&lt;/a&gt;2.5 环境安全和个人防护&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;伤者可能是因为当前危险的环境而受伤，所以首先要&lt;strong&gt;保证自己的安全&lt;/strong&gt;，然后判断是否需要将伤者转移到安全环境，以及移动是否会加重伤害&lt;/li&gt;
-&lt;li&gt;抓住肩部衣服移动患者。对怀疑脊椎、骨盆受伤的患者，除非环境威胁到生命，否则不要移动&lt;ul&gt;
-&lt;li&gt;固定在坚硬板上，移动时保证头颈胸腰腹骨盆在同一水平线上，避免发生弯曲、扭转&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;做个人防护，有血液、体液（唾液、尿液）带手套、护目镜、口罩&lt;/li&gt;
-&lt;li&gt;使用后正确脱除和处理手套，认真洗手，见 AHA 书上对应方法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-6-无反应有呼吸（晕厥、昏迷、休克）&#34;&gt;&lt;a href=&#34;#2-6-无反应有呼吸（晕厥、昏迷、休克）&#34; class=&#34;headerlink&#34; title=&#34;2.6 无反应有呼吸（晕厥、昏迷、休克）&#34;&gt;&lt;/a&gt;2.6 无反应有呼吸（晕厥、昏迷、休克）&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;原因：低血糖、喝醉酒、脑中风等等&lt;/li&gt;
-&lt;li&gt;确保现场环境安全，做好个人防护&lt;/li&gt;
-&lt;li&gt;气道&lt;ul&gt;
-&lt;li&gt;压额抬颏、开放气道，清理口鼻异物，拿掉假牙&lt;/li&gt;
-&lt;li&gt;不要喂药、喂食，防止呕吐导致窒息&lt;/li&gt;
-&lt;li&gt;侧卧，侧卧演示见 “急诊夜鹰视频 12”。怀疑中毒用左侧卧，减缓食物吸收。不要仰卧、头下垫枕头，会导致舌根后坠&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;是否需要保暖，如失血休克&lt;/li&gt;
-&lt;li&gt;打 120&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-7-打120&#34;&gt;&lt;a href=&#34;#2-7-打120&#34; class=&#34;headerlink&#34; title=&#34;2.7 打120&#34;&gt;&lt;/a&gt;2.7 打120&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;患者，年龄、性别&lt;/li&gt;
-&lt;li&gt;病情，找描述疾病的牌子、信息&lt;/li&gt;
-&lt;li&gt;地址&lt;/li&gt;
-&lt;li&gt;找人接应急救车&lt;/li&gt;
-&lt;li&gt;现场情况，人数，严重程度&lt;/li&gt;
-&lt;li&gt;等调度员先挂电话，可能通过电话指导急救&lt;/li&gt;
-&lt;li&gt;准备医保卡、身份证、病历、钱&lt;/li&gt;
-&lt;li&gt;清理影响搬运的楼道杂物&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-8-取急救箱和AED&#34;&gt;&lt;a href=&#34;#2-8-取急救箱和AED&#34; class=&#34;headerlink&#34; title=&#34;2.8 取急救箱和AED&#34;&gt;&lt;/a&gt;2.8 取急救箱和AED&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;随身准备急救物品，手套、面罩&lt;/li&gt;
-&lt;li&gt;AED 在地铁、机场、体育场&lt;/li&gt;
-&lt;li&gt;微信小程序 &lt;code&gt;AED 地图&lt;/code&gt;，百度地图搜索 “AED”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-心脏骤停&#34;&gt;&lt;a href=&#34;#3-心脏骤停&#34; class=&#34;headerlink&#34; title=&#34;3 心脏骤停&#34;&gt;&lt;/a&gt;3 心脏骤停&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;背景：每过 1 分钟，存活率下降 10%，等急救车来不及，身边人的 &lt;strong&gt;CPR 和 AED&lt;/strong&gt; 是存活的关键。我国每年 54万心脏骤停，存活率仅 1-2%&lt;/li&gt;
-&lt;li&gt;现象：没有反应、没有呼吸、濒死呼吸&lt;/li&gt;
-&lt;li&gt;原因：冠心病、触电、溺水、窒息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-1-步骤&#34;&gt;&lt;a href=&#34;#3-1-步骤&#34; class=&#34;headerlink&#34; title=&#34;3.1 步骤&#34;&gt;&lt;/a&gt;3.1 步骤&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-胸外按压 -- X30 --&gt; 人工呼吸 -- X2 --&gt; change{&#34;达到 5 组？&#34;} -- 否 --&gt; AED{&#34;AED 就绪？&#34;} -- 否 --&gt; 胸外按压
-    change -- 是 --&gt; 换人 --&gt; AED
-    AED -- 是 --&gt; 除颤 --&gt; 胸外按压&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;判断反应，轻拍重唤、拍肩膀 &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;判断呼吸，肘关节着地支撑，压额抬颏，感知气流，侧看数到 1007&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;找人帮忙，打 120，拿 AED，急救箱。CPR 很累，所以需要换人&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;一直循环&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;胸外按压：让血液产生被动流动&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;躺在坚实的平面，不要在软的床上&lt;/li&gt;
-&lt;li&gt;薄衣服可以直接按，厚衣服要打开，女士则去掉钢圈胸罩，再盖回衣服&lt;/li&gt;
-&lt;li&gt;乳头连线的中点，剑突上两横指&lt;/li&gt;
-&lt;li&gt;用上身的力量，掌根、肘、肩一条直线，垂直按压&lt;/li&gt;
-&lt;li&gt;每分钟 100-120 次，数数 01、02&lt;/li&gt;
-&lt;li&gt;成人 5-6 cm，实际根据人的体型，咔咔响、有突破感说明按深了&lt;/li&gt;
-&lt;li&gt;充分回弹&lt;/li&gt;
-&lt;li&gt;减少按压中断时间，不超过 10 秒、5 秒&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;人工呼吸：给患者氧气&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;按压、呼吸 30:2&lt;/li&gt;
-&lt;li&gt;个人防护，&lt;del&gt;面膜（仅用来教学）&lt;/del&gt;、便携面罩、球囊面罩&lt;/li&gt;
-&lt;li&gt;压额抬颏（骨性部位）、捏鼻子、包嘴，看到胸部隆起，持续 1 秒钟，正常呼吸吹气（不需要深呼吸吹气）&lt;/li&gt;
-&lt;li&gt;清理口腔异物，避免将呕吐物吹到气管&lt;/li&gt;
-&lt;li&gt;胸部隆起来判断是否开放气道成功，失败可多次开放，两个施救人且怀疑颈椎伤时使用 &lt;a href=&#34;https://www.procpr.org/training/video/spinal-injury---jaw-thrust&#34;&gt;Jaw Thrust&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;一般 5 个循环换人&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;AED 除颤。80% 的心脏骤停为室颤（心电图为直线时不需要电击）。突然打击导致心肌无法协调的收缩泵血，电击重新恢复节律&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;到来后立刻使用，尽早除颤&lt;/li&gt;
-&lt;li&gt;贴贴片时不中断按压&lt;/li&gt;
-&lt;li&gt;开始分析到除颤完成期间，提醒周围人不要接触病人&lt;/li&gt;
-&lt;li&gt;使用注意&lt;ul&gt;
-&lt;li&gt;水里不能用&lt;/li&gt;
-&lt;li&gt;有汗擦干&lt;/li&gt;
-&lt;li&gt;有药贴揭下&lt;/li&gt;
-&lt;li&gt;挂掉影响贴片的胸毛&lt;/li&gt;
-&lt;li&gt;对女性不能贴在衣服上，一定贴在皮肤上，但可以贴完盖好&lt;/li&gt;
-&lt;li&gt;起搏器（手表大小硬块），贴片要避开起搏器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;除颤后恢复按压&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-2-何时停止&#34;&gt;&lt;a href=&#34;#3-2-何时停止&#34; class=&#34;headerlink&#34; title=&#34;3.2 何时停止&#34;&gt;&lt;/a&gt;3.2 何时停止&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;有呼吸、有反应&lt;/li&gt;
-&lt;li&gt;急救人员达到&lt;/li&gt;
-&lt;li&gt;累了，无法继续&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-3-何时不需要做&#34;&gt;&lt;a href=&#34;#3-3-何时不需要做&#34; class=&#34;headerlink&#34; title=&#34;3.3 何时不需要做&#34;&gt;&lt;/a&gt;3.3 何时不需要做&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;对非创伤性的心脏骤停效果好，因此这些情况不要做&lt;ul&gt;
-&lt;li&gt;胸口塌陷&lt;/li&gt;
-&lt;li&gt;大出血&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-4-儿童（1岁-青春期体征前）&#34;&gt;&lt;a href=&#34;#3-4-儿童（1岁-青春期体征前）&#34; class=&#34;headerlink&#34; title=&#34;3.4 儿童（1岁-青春期体征前）&#34;&gt;&lt;/a&gt;3.4 儿童（1岁-青春期体征前）&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;按压：单掌，实际根据体型，深度胸部厚度 1&amp;#x2F;3、5cm&lt;/li&gt;
-&lt;li&gt;两人可以 15:2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-5-婴儿-（28-天-1岁）&#34;&gt;&lt;a href=&#34;#3-5-婴儿-（28-天-1岁）&#34; class=&#34;headerlink&#34; title=&#34;3.5 婴儿 （28 天-1岁）&#34;&gt;&lt;/a&gt;3.5 婴儿 （28 天-1岁）&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;判断反应：拍脚底&lt;/li&gt;
-&lt;li&gt;观察呼吸前：微微后仰开放气道，避免过度&lt;/li&gt;
-&lt;li&gt;按压：2-3 根手指，深度胸部厚度 1&amp;#x2F;3、4 cm &lt;/li&gt;
-&lt;li&gt;人工呼吸：包住嘴和鼻子&lt;/li&gt;
-&lt;li&gt;两人可以 15:2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-6-相关问题&#34;&gt;&lt;a href=&#34;#3-6-相关问题&#34; class=&#34;headerlink&#34; title=&#34;3.6 相关问题&#34;&gt;&lt;/a&gt;3.6 相关问题&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;先按压还是先人工呼吸？&lt;ul&gt;
-&lt;li&gt;心源性，先按压，5 分钟内体内还有氧气&lt;/li&gt;
-&lt;li&gt;窒息性，溺水、一氧化碳中毒先人工呼吸，人工呼吸前先压额抬颏、清理口腔异物&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;评估呼吸前是否需要开放气道？&lt;br&gt;  可以不开放气道，讨论见 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/55538603&#34;&gt;在评估呼吸之前，我难道不应该先开放气道吗？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;人工呼吸呼出的气体有足够的氧气吗？&lt;br&gt;  有，氧浓度 16%&lt;/li&gt;
-&lt;li&gt;有心脏支架、起搏器，能否做心肺复苏？&lt;br&gt;  能&lt;/li&gt;
-&lt;li&gt;可否不做人工呼吸？&lt;br&gt;  对心源性的骤停，5 min内体内还有氧气，可不做人工呼吸，但 15min 以上抢救必须做&lt;br&gt;  对窒息性的骤停，常见于儿童和婴儿，必须做&lt;/li&gt;
-&lt;li&gt;AED 是否会对心跳正常的人电击？&lt;br&gt;  不会，同时对直线的心电图 AED 也不会电击&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4-气道梗阻&#34;&gt;&lt;a href=&#34;#4-气道梗阻&#34; class=&#34;headerlink&#34; title=&#34;4 气道梗阻&#34;&gt;&lt;/a&gt;4 气道梗阻&lt;/h1&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-1{&#34;能否咳嗽/说话?&#34;} -- 否 --&gt; 告知对方自己来帮忙 --&gt; 海姆立克/上腹部冲击法 --&gt; 2{&#34;孕妇/胖子？&#34;} -- 否 --&gt; 3[&#34;一腿伸到两腿间&lt;br /&gt;让对方俯下身&lt;br /&gt;一手拳眼对准肚脐上方两指&lt;br /&gt;另一手握住，快速冲击后上方&#34;]
-    1 -- 是 --&gt; 咳嗽/去医院
-    2 -- 是 --&gt; 冲击胸部/CPR按压位置
-
-自己卡住 --&gt; 4{&#34;周围有人？&#34;} -- 是 --&gt; 使用手势表达需要帮助
-    4 -- 否 --&gt; 桌角/椅背/扶手上腹部冲击&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;背景：不能呼吸数分钟内心跳停止，等急救车来不及&lt;/li&gt;
-&lt;li&gt;口诀：剪刀、石头、布&lt;/li&gt;
-&lt;li&gt;注意要用冲击力，短暂快速，冲击可能导致脏器损伤&lt;/li&gt;
-&lt;li&gt;不要用手抠异物，可能把异物推到更深&lt;/li&gt;
-&lt;li&gt;重在预防：老人、儿童进食要小心，醉酒注意呕吐物引起窒息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-1-婴儿-（28-天-1岁）&#34;&gt;&lt;a href=&#34;#4-1-婴儿-（28-天-1岁）&#34; class=&#34;headerlink&#34; title=&#34;4.1 婴儿 （28 天-1岁）&#34;&gt;&lt;/a&gt;4.1 婴儿 （28 天-1岁）&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-1{&#34;突然安静，无法哭闹&lt;br /&gt;脸色发红、紫？&#34;} -- 是 --&gt; 2{&#34;能咳嗽？&#34;} -- 否 --&gt; 背部拍击 -- X5 --&gt; 胸部冲击 -- X5 --&gt; 3{&#34;异物出来？&#34;} -- 否 --&gt; 背部拍击
-    2 -- 是 --&gt; 翻身放腿上拍背&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;背部拍击：抓住下巴（不要捂脸、掐脖子），躯干放在前臂上，胳膊用大腿做支撑。背部肩胛骨之间，掌根，快速拍击，5次，每次 1 秒&lt;/li&gt;
-&lt;li&gt;胸部冲击：换胳膊换腿，婴儿翻身抓头，胸部按压，5次&lt;/li&gt;
-&lt;li&gt;要点：背部是拍不是按压，胸部是按压不是戳&lt;/li&gt;
-&lt;li&gt;婴儿太重，胳膊可以用床或沙发的边缘支撑&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-2-鱼刺&#34;&gt;&lt;a href=&#34;#4-2-鱼刺&#34; class=&#34;headerlink&#34; title=&#34;4.2 鱼刺&#34;&gt;&lt;/a&gt;4.2 鱼刺&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;鱼刺不要吞饭团，弄下去时可能砸到动脉&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;仰头用水漱口&lt;/li&gt;
-&lt;li&gt;他人用镊子夹出&lt;/li&gt;
-&lt;li&gt;去医院&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;5-出血&#34;&gt;&lt;a href=&#34;#5-出血&#34; class=&#34;headerlink&#34; title=&#34;5 出血&#34;&gt;&lt;/a&gt;5 出血&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;背景：人体的血量 4-5L，动脉和大面积静脉出血可致命&lt;/li&gt;
-&lt;li&gt;大出血的现象：肢体离断、难以止血、休克&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;接触血液要做个人防护，感染风险&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
-出血 --&gt; 非致命出血 &amp; 大出血
-    大出血 --&gt; 内出血 &amp; 外出血
-        内出血 --&gt; 12[&#34;面色苍白，四肢冰凉&lt;br /&gt;脉搏微弱，按压疼痛&#34;] --&gt; 5[[&#34;躺下&lt;br /&gt;下肢抬高&lt;br /&gt;保暖&lt;br /&gt;打120&#34;]]
-        外出血 --&gt; 先尝试 &amp; 再尝试 &amp; 伤口深/如大腿 &amp; 四肢/肢体离断 &amp; 异物刺入 &amp; 内脏溢出 &amp; 脑脊液耳鼻漏
-            先尝试 --&gt; 1[[&#34;压迫止血&#34;]]
-            再尝试 --&gt; 指压动脉搏动点 &amp; 止血粉
-            伤口深/如大腿 --&gt; 2[[&#34;填塞止血&#34;]]
-            四肢/肢体离断 --&gt; 3[[&#34;止血带&#34;]] &amp; 断肢
-                断肢 --&gt; 8[[&#34;清洗断肢&lt;br /&gt;敷料包裹&lt;br /&gt;放入密封塑料袋&lt;br /&gt;放入有冰/冰水容器&lt;br /&gt;标记时间&lt;br /&gt;不要直接放在冰上&#34;]]
-            异物刺入 --&gt; 6[[&#34;不要拔&lt;br /&gt;周围压迫止血&#34;]]
-            异物刺入 --&gt; 11[[&#34;开放性胸部伤口&lt;br /&gt;不要封闭避免气胸&#34;]]
-            内脏溢出 --&gt; 9[[&#34;干净敷料覆盖溢出物&lt;br /&gt;不要将溢出物塞回&#34;]]
-            脑脊液耳鼻漏 --&gt; 10[[&#34;让它流出&lt;br /&gt;不要堵塞耳鼻&#34;]]
-    非致命出血 --&gt; 鼻出血 &amp; 皮外伤
-        鼻出血 --&gt; 7[[&#34;身体前倾&lt;br /&gt;手指压迫 5-10 分钟&lt;br /&gt;可塞棉球_等自动滑落&#34;]]
-        皮外伤 --&gt; 饮用水冲洗/碘伏 --&gt; 4[[&#34;压迫止血&#34;]]&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;止血方式&lt;/th&gt;
-&lt;th&gt;应对步骤&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;压迫止血&lt;/td&gt;
-&lt;td&gt;用干净敷料或衣物压住伤口，并包扎&lt;br /&gt;第二块敷料压在第一块上，不要揭开看情况&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;填塞止血&lt;/td&gt;
-&lt;td&gt;将敷料塞进，然后在外面加压&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;止血带&lt;/td&gt;
-&lt;td&gt;伤口近心端 5-7cm 上止血带，避开关节，记录止血带时间&lt;br /&gt;疼痛是正常的，两个小时之内安全&lt;br /&gt;替代品：宽布条、木棍（筷子、笔）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;止血粉&lt;/td&gt;
-&lt;td&gt;Celox，&lt;a href=&#34;http://html.rhhz.net/dejydxxb/html/2017/5/20160596.htm&#34;&gt;止血粉对比&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;指压动脉搏动点&lt;/td&gt;
-&lt;td&gt;适用于没有止血带，或动脉出血在头颈时，搏动点见陈志视频 12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;内出血&lt;/td&gt;
-&lt;td&gt;伤及头部、心脏时即使暂时没任何现象，也要立刻送医院检查&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;6-内科&#34;&gt;&lt;a href=&#34;#6-内科&#34; class=&#34;headerlink&#34; title=&#34;6 内科&#34;&gt;&lt;/a&gt;6 内科&lt;/h1&gt;&lt;h2 id=&#34;6-1-心脏病发作&#34;&gt;&lt;a href=&#34;#6-1-心脏病发作&#34; class=&#34;headerlink&#34; title=&#34;6.1 心脏病发作&#34;&gt;&lt;/a&gt;6.1 心脏病发作&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;背景：与心脏骤停不同，心脏骤停是心率问题，心脏病是血栓阻止血流，可能引发心脏骤停&lt;/li&gt;
-&lt;li&gt;现象：石头压榨样胸痛，15 分钟不能缓解，头晕、呼吸困难、出冷汗&lt;/li&gt;
-&lt;li&gt;容易被忽视的&lt;strong&gt;特殊现象&lt;/strong&gt;：咽喉部、颈部、上腹部疼痛，女性糖尿病可能没有疼痛，只有头晕、呼吸困难&lt;/li&gt;
-&lt;li&gt;坐下、躺下，减少活动，急救车抬去医院。千万不要自己下楼、开车去医院。还有一部人老人不愿意打 120，拖延了治疗&lt;/li&gt;
-&lt;li&gt;硝酸甘油（青光眼、低血压、心率过快过慢、48小时伟哥，&lt;strong&gt;不能吃&lt;/strong&gt;）舌下含服，阿司匹林（脑中风、胃肠出血、近期做过手术、过敏史，&lt;strong&gt;不能吃&lt;/strong&gt;）嚼服&lt;/li&gt;
-&lt;li&gt;去医院挂急诊科，不要挂内科&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-2-脑中风&#34;&gt;&lt;a href=&#34;#6-2-脑中风&#34; class=&#34;headerlink&#34; title=&#34;6.2 脑中风&#34;&gt;&lt;/a&gt;6.2 脑中风&lt;/h2&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
-1{&#34;微笑，是否嘴角倾斜&lt;br /&gt;僵尸，是否一侧下垂&lt;br /&gt;说话，是否清晰&#34;} --&gt; 去有溶栓/神经外科资质的医院 --&gt; 2{&#34;头颅 CT，脑出血？&#34;} -- 是 --&gt; 手术
-    2 -- 否/血栓 --&gt; 药物溶栓治疗&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;背景：脑细胞没有再生能力，不及时治疗会有后遗症。关键抢救时间，3.5-4.5 小时&lt;/li&gt;
-&lt;li&gt;中风时血压升高，不要服用降压药&lt;/li&gt;
-&lt;li&gt;昏迷时，进行侧卧，不能塞药、喂水&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-3-过敏&#34;&gt;&lt;a href=&#34;#6-3-过敏&#34; class=&#34;headerlink&#34; title=&#34;6.3 过敏&#34;&gt;&lt;/a&gt;6.3 过敏&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;严重过敏反应危害：喉头水肿导致的呼吸困难，血量不足导致低血压休克&lt;/li&gt;
-&lt;li&gt;现象：接触了过敏原，皮疹，舌头肿胀，呼吸困难，面色苍白，心跳加快&lt;/li&gt;
-&lt;li&gt;肾上腺素自动注射笔，让对方自己打，或征得对方同意帮他打，在大腿中部外侧（可隔衣物）注射，保持 10 秒后拔出，按揉&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-4-癫痫&#34;&gt;&lt;a href=&#34;#6-4-癫痫&#34; class=&#34;headerlink&#34; title=&#34;6.4 癫痫&#34;&gt;&lt;/a&gt;6.4 癫痫&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;现象：意识丧失，双眼上翻，牙关紧闭，口吐白沫，全身抽搐&lt;/li&gt;
-&lt;li&gt;不要塞东西，不用 CPR，让他抽，保证身体周围安全，头下垫垫子，一般 5 分钟左右自动停止&lt;/li&gt;
-&lt;li&gt;小儿发烧时的热性惊厥，现象和处理方法相同，常见于 3个月-6岁&lt;/li&gt;
-&lt;li&gt;抽搐停止后，按正常急救流程，检查呼吸和反应&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-5-中暑&#34;&gt;&lt;a href=&#34;#6-5-中暑&#34; class=&#34;headerlink&#34; title=&#34;6.5 中暑&#34;&gt;&lt;/a&gt;6.5 中暑&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;背景：通风不好的车内、室内也会引发中暑&lt;/li&gt;
-&lt;li&gt;热痉挛、热衰竭：头晕、恶心、肌肉痉挛、体温增高、血压下降&lt;ul&gt;
-&lt;li&gt;转移到阴凉处，喷冷水、扇风&lt;/li&gt;
-&lt;li&gt;痉挛处按摩、冷敷&lt;/li&gt;
-&lt;li&gt;少量多次补充盐水&amp;#x2F;电解质饮料&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;热射病：神志不清，体温高于 40 度，有生命危险&lt;ul&gt;
-&lt;li&gt;打 120&lt;/li&gt;
-&lt;li&gt;立即浸入水中&lt;/li&gt;
-&lt;li&gt;清醒停止浸泡，避免低体温&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;7-外科&#34;&gt;&lt;a href=&#34;#7-外科&#34; class=&#34;headerlink&#34; title=&#34;7 外科&#34;&gt;&lt;/a&gt;7 外科&lt;/h1&gt;&lt;h2 id=&#34;7-1-扭伤、骨折&#34;&gt;&lt;a href=&#34;#7-1-扭伤、骨折&#34; class=&#34;headerlink&#34; title=&#34;7.1 扭伤、骨折&#34;&gt;&lt;/a&gt;7.1 扭伤、骨折&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;扭伤：RICE，冰敷 20分钟，加压包扎，抬高，必要时去医院检查是否骨折。3 天后再考虑是否用热敷促进血液循环&lt;/li&gt;
-&lt;li&gt;骨折：有出血先止血，禁止复位&lt;ul&gt;
-&lt;li&gt;这部分可交给医务人员做：夹板固定（上肢超过两个关节，下肢超过三个关节），可用卷起的杂志、另一侧的肢体充当夹板，固定后判断血液循环情况。最后上肢悬吊（大手挂、小手挂）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;脊椎骨折：颈部疼痛，肢体麻木，除非现场不安全，否则不要移动伤者，推颌法开放气道&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-2-烧烫伤&#34;&gt;&lt;a href=&#34;#7-2-烧烫伤&#34; class=&#34;headerlink&#34; title=&#34;7.2 烧烫伤&#34;&gt;&lt;/a&gt;7.2 烧烫伤&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;冲：流水冲洗降温至少十分钟或疼痛减轻&lt;/li&gt;
-&lt;li&gt;脱：衣服可能与皮肤粘连，剪刀剪开或去医院处理&lt;/li&gt;
-&lt;li&gt;泡：冷水浸泡，不能用冰&lt;/li&gt;
-&lt;li&gt;盖：使用不粘的烧伤敷料覆盖，或保鲜膜替代&lt;/li&gt;
-&lt;li&gt;送：严重去医院&lt;/li&gt;
-&lt;li&gt;注意&lt;ul&gt;
-&lt;li&gt;取下首饰，避免肿胀后无法取下&lt;/li&gt;
-&lt;li&gt;不要挑破水泡&lt;/li&gt;
-&lt;li&gt;不要冰块&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-3-动物伤&#34;&gt;&lt;a href=&#34;#7-3-动物伤&#34; class=&#34;headerlink&#34; title=&#34;7.3 动物伤&#34;&gt;&lt;/a&gt;7.3 动物伤&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;猫、狗、蝙蝠、浣熊、臭鼬等哺乳动物&lt;ul&gt;
-&lt;li&gt;冲洗伤口、压迫止血&lt;/li&gt;
-&lt;li&gt;越早打越好，二级暴露：有爪痕，接种狂犬疫苗；三级暴露：还要加上狂犬病免疫球蛋白&lt;/li&gt;
-&lt;li&gt;啮齿类动物不用打疫苗，松鼠、兔子&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;蛇、蜘蛛、蜜蜂、蝎子、昆虫叮咬&lt;ul&gt;
-&lt;li&gt;肥皂水冲洗伤口、压迫止血&lt;/li&gt;
-&lt;li&gt;对蜜蜂，用银行卡刮出蜜蜂的刺&lt;/li&gt;
-&lt;li&gt;可能有中毒反应，呼吸困难、视物模糊&lt;/li&gt;
-&lt;li&gt;拍动物照片&lt;/li&gt;
-&lt;li&gt;静卧，避免跑动，受伤部位低于心脏，减缓毒素传播&lt;/li&gt;
-&lt;li&gt;取下首饰，避免肿胀后无法取下&lt;/li&gt;
-&lt;li&gt;弹性绷带缠绕局限蛇毒，不要用止血带、绳子扎住&lt;/li&gt;
-&lt;li&gt;去医院处理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;蜱虫，壁虱&lt;ul&gt;
-&lt;li&gt;镊子夹住蜱虫的嘴或头向上提起&lt;/li&gt;
-&lt;li&gt;肥皂水冲洗伤口&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;海蜇或其它海洋生物蛰伤&lt;ul&gt;
-&lt;li&gt;卡片、镊子、戴手套刮除触须&lt;/li&gt;
-&lt;li&gt;用海水或醋冲洗至少 30 秒&lt;/li&gt;
-&lt;li&gt;蛰伤部位浸入 45度热水至少 20 分钟或疼痛消失&lt;/li&gt;
-&lt;li&gt;不要揉搓伤口&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;8-其它&#34;&gt;&lt;a href=&#34;#8-其它&#34; class=&#34;headerlink&#34; title=&#34;8 其它&#34;&gt;&lt;/a&gt;8 其它&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;问题&lt;/th&gt;
-&lt;th&gt;处理&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;哮喘&lt;/td&gt;
-&lt;td&gt;端坐位，不要躺下，给予吸入器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;糖尿病和低血糖&lt;/td&gt;
-&lt;td&gt;能吞咽时吃含糖食物&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;口腔出血&lt;/td&gt;
-&lt;td&gt;咬住棉球，压迫止血&lt;br /&gt;牙齿脱落时&lt;br /&gt;- 拿牙冠不要碰牙根&lt;br /&gt;- 清洗牙齿后放入牛奶&amp;#x2F;蛋清&amp;#x2F;唾液中，不要放在口中&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;眼外伤&lt;/td&gt;
-&lt;td&gt;清水冲洗，受伤那只眼处于冲洗的低位&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;电击伤&lt;/td&gt;
-&lt;td&gt;关闭电源后，保证自身安全，走正常急救流程&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;冻伤&lt;/td&gt;
-&lt;td&gt;- 移到温暖处&lt;br /&gt;- 脱掉潮湿衣服，换上干衣服，保暖&lt;br /&gt;注意&lt;br /&gt;- 不要揉搓冻伤部位&lt;br /&gt;- 可能再次冻伤时，不要解冻&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;（食物）中毒&lt;/td&gt;
-&lt;td&gt;避免接触毒物，优先保证自身安全&lt;br /&gt;拍照等方式收集毒物信息&lt;br /&gt;冲洗自己和患者身上毒物&lt;br /&gt;昏倒时走正常急救流程，考虑左侧卧减缓食物吸收&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;煤气中毒（一氧化碳中毒）&lt;/td&gt;
-&lt;td&gt;口唇樱桃红色，走正常急救流程&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;溺水&lt;/td&gt;
-&lt;td&gt;救人方法见 陈志视频 06&lt;br /&gt;抛掷漂浮物（放满空矿泉水瓶的书包，加负重来抛得更远）、绳索，救上岸后正常急救&lt;br /&gt;心脏骤停时，先压额抬颏、清理口腔异物、人工呼吸，再按压&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;阿片类药物过量&lt;/td&gt;
-&lt;td&gt;给予纳洛酮，走正常急救流程&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;艾滋病&lt;/td&gt;
-&lt;td&gt;接触到艾滋病人的血液，精液，乳汁时，越早服用阻断药物越好&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;腹痛&lt;/td&gt;
-&lt;td&gt;考虑阑尾炎等，去医院&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;发热&lt;/td&gt;
-&lt;td&gt;高于 39 度先物理降温，不要用酒精，1-2 小时不行，使用药物降温，两种降温不能同时使用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;挤压伤&lt;a id=&#34;xFVn&#34;&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;如 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/../%E9%98%B2%E7%81%BE/#xn06&#34;&gt;地震&lt;/a&gt;，重物挤压很久，除非现场环境危险，否则不要盲目移开重物，高钾血症&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;气胸&lt;/td&gt;
-&lt;td&gt;气胸针急救，&lt;a href=&#34;https://www.anne.education/technology.html&#34;&gt;网址&lt;/a&gt;中针刺减压的部分&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;气道梗阻（海姆立克法无效时）&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.zhihu.com/question/55255249/answer/1534217972&#34;&gt;环甲膜切开&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;9-平时准备&#34;&gt;&lt;a href=&#34;#9-平时准备&#34; class=&#34;headerlink&#34; title=&#34;9 平时准备&#34;&gt;&lt;/a&gt;9 平时准备&lt;/h1&gt;&lt;h2 id=&#34;9-1-急救物品&#34;&gt;&lt;a href=&#34;#9-1-急救物品&#34; class=&#34;headerlink&#34; title=&#34;9.1 急救物品&#34;&gt;&lt;/a&gt;9.1 急救物品&lt;/h2&gt;&lt;p&gt;见 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/#%E6%80%A5%E6%95%91&#34;&gt;应急物品清单-急救&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;9-2-理论测试&#34;&gt;&lt;a href=&#34;#9-2-理论测试&#34; class=&#34;headerlink&#34; title=&#34;9.2 理论测试&#34;&gt;&lt;/a&gt;9.2 理论测试&lt;/h2&gt;&lt;h3 id=&#34;9-2-1-基础&#34;&gt;&lt;a href=&#34;#9-2-1-基础&#34; class=&#34;headerlink&#34; title=&#34;9.2.1 基础&#34;&gt;&lt;/a&gt;9.2.1 基础&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;实施救人的第一步是什么？&lt;/li&gt;
-&lt;li&gt;如何照顾喝醉酒没有反应的人？&lt;/li&gt;
-&lt;li&gt;何时应当移动伤者到安全处，移动时应当注意什么？&lt;/li&gt;
-&lt;li&gt;哪几种情况是短时致命的，无法等到救护车的到来？&lt;/li&gt;
-&lt;li&gt;给家人急救是否需要佩带个人防护用品？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;9-2-2-心脏骤停&#34;&gt;&lt;a href=&#34;#9-2-2-心脏骤停&#34; class=&#34;headerlink&#34; title=&#34;9.2.2 心脏骤停&#34;&gt;&lt;/a&gt;9.2.2 心脏骤停&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;进行 CPR 的条件是什么？&lt;/li&gt;
-&lt;li&gt;心脏骤停的按压速度是多少？成人和婴儿的速度一样吗？&lt;/li&gt;
-&lt;li&gt;能否不做人工呼吸，只进行按压？&lt;/li&gt;
-&lt;li&gt;先进行人工呼吸还是先进行按压？&lt;/li&gt;
-&lt;li&gt;对于女性进行 CPR 需要解开上衣吗？&lt;/li&gt;
-&lt;li&gt;胸外按压的间隔不应该超过多久？&lt;/li&gt;
-&lt;li&gt;如何给婴儿做人工呼吸？&lt;/li&gt;
-&lt;li&gt;如何找到附近的 AED？&lt;/li&gt;
-&lt;li&gt;患者胸部有汗时，能否使用 AED？&lt;/li&gt;
-&lt;li&gt;溺水如何急救？&lt;/li&gt;
-&lt;li&gt;一氧化碳中毒如何急救？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;9-2-3-气道梗阻&#34;&gt;&lt;a href=&#34;#9-2-3-气道梗阻&#34; class=&#34;headerlink&#34; title=&#34;9.2.3 气道梗阻&#34;&gt;&lt;/a&gt;9.2.3 气道梗阻&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;鱼刺卡住能否使用海姆立克法？&lt;/li&gt;
-&lt;li&gt;对于双臂抱不住的胖子，应该如何用海姆立克法？&lt;/li&gt;
-&lt;li&gt;自己卡住，无法呼吸时，如何自救？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;9-2-4-出血&#34;&gt;&lt;a href=&#34;#9-2-4-出血&#34; class=&#34;headerlink&#34; title=&#34;9.2.4 出血&#34;&gt;&lt;/a&gt;9.2.4 出血&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;止血带多久之内是安全的？&lt;/li&gt;
-&lt;li&gt;鼻出血应如何处理？&lt;/li&gt;
-&lt;li&gt;身边没有止血带可用什么替代？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;9-2-5-内科&#34;&gt;&lt;a href=&#34;#9-2-5-内科&#34; class=&#34;headerlink&#34; title=&#34;9.2.5 内科&#34;&gt;&lt;/a&gt;9.2.5 内科&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;心脏病发作有哪些特殊现象？&lt;/li&gt;
-&lt;li&gt;如何判断脑中风？&lt;/li&gt;
-&lt;li&gt;癫痫发作时如何施救？&lt;/li&gt;
-&lt;li&gt;应对严重过敏的有效药物是什么？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;9-2-6-外科&#34;&gt;&lt;a href=&#34;#9-2-6-外科&#34; class=&#34;headerlink&#34; title=&#34;9.2.6 外科&#34;&gt;&lt;/a&gt;9.2.6 外科&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;对怀疑颈椎骨折的患者如何处理？&lt;/li&gt;
-&lt;li&gt;骨折时没有固定用的夹板，可以用什么替代？&lt;/li&gt;
-&lt;li&gt;烧烫伤应该如何处理？&lt;/li&gt;
-&lt;li&gt;被蛇咬伤如何处理？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-3-经常练习&#34;&gt;&lt;a href=&#34;#9-3-经常练习&#34; class=&#34;headerlink&#34; title=&#34;9.3 经常练习&#34;&gt;&lt;/a&gt;9.3 经常练习&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;练习时间&lt;/th&gt;
-&lt;th&gt;谁练习&lt;/th&gt;
-&lt;th&gt;练习内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;9-4-预防&#34;&gt;&lt;a href=&#34;#9-4-预防&#34; class=&#34;headerlink&#34; title=&#34;9.4 预防&#34;&gt;&lt;/a&gt;9.4 预防&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;老年人跌倒，目前 Apple Watch、三星、华为有跌倒检测，期待更低价的产品，如小米&lt;/li&gt;
-&lt;li&gt;儿童和老人的气道梗阻&lt;/li&gt;
-&lt;li&gt;儿童溺水、烧烫伤&lt;/li&gt;
-&lt;li&gt;独居老人准备病历信息、子女联系方式在家里显著位置，供急救人员使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/物理环境/急救&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/</id>
-        <title>锻炼</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/"/>
-        <content type="html"></content>
+&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -1121,138 +687,185 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/</id>
-        <title>食物</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/"/>
-        <content type="html">&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://nh.ckcest.cn/default/page/loadPageIndex?pageId=40a8e21962e945a9b8b94e9729b32aee&#34;&gt;各国居民膳食营养素参考摄入量查询&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;asset 中 “美国居民膳食指南（2020-2025）”的中英文 pdf&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/物理环境/食物&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/</id>
+        <title>朋友</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%9C%8B%E5%8F%8B/../%E6%9C%8B%E5%8F%8B/%E6%88%91%E5%92%8C%E6%9C%8B%E5%8F%8B.png&#34; alt=&#34;我和朋友&#34;&gt;&lt;/p&gt;
+&lt;p&gt;对应的思维导图在 asset 中&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/物理环境/朋友&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/</id>
-        <title>物理环境框架</title>
-        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83%E6%A1%86%E6%9E%B6/"/>
-        <content type="html">&lt;pre class=&#34;mermaid&#34;&gt;flowchart TD
-物理环境 --&gt; 人 &amp; 周围环境
-    人 --&gt; 身体健康 &amp; 心理健康
-        身体健康 --&gt; 意外 &amp; 疾病
-            意外 --&gt; 防火 &amp; 急救 &amp; 防灾 &amp; 保险 &amp; 应急物品清单
-                防火 &amp; 急救 &amp; 防灾 --&gt; 疾病
-            疾病 --&gt; 锻炼 &amp; 食物 &amp; 体检 &amp; 保险
-        心理健康 --&gt; 冥想 &amp; 朋友
-    周围环境 --&gt; 理财 &amp; 朋友
-        理财 --&gt; 物品选购&lt;/pre&gt;
-
-
-&lt;script type=&#34;module&#34;&gt; import mermaid from &#39;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs&#39;;	mermaid.initialize({startOnLoad: true, flowchart: {curve: &#39;linear&#39;}}); &lt;/script&gt;</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/</id>
-        <title>下载</title>
-        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/"/>
-        <content type="html">&lt;h1 id=&#34;1-批量下载&#34;&gt;&lt;a href=&#34;#1-批量下载&#34; class=&#34;headerlink&#34; title=&#34;1 批量下载&#34;&gt;&lt;/a&gt;1 批量下载&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓&lt;/li&gt;
-&lt;li&gt;Chrome 扩展 Link Grabber、Simple mass downloader&lt;/li&gt;
-&lt;li&gt;必要时使用编程解决，下载 &lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/files/&#34;&gt;mingw-w64&lt;/a&gt; 的 x86_64-win32-seh，&lt;a href=&#34;https://www.eclipse.org/4diac/documentation/html/installation/minGW.html&#34;&gt;安装参考&lt;/a&gt;&lt;/li&gt;
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%90%86%E8%B4%A2/</id>
+        <title>理财</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E7%90%86%E8%B4%A2/"/>
+        <content type="html">&lt;h1 id=&#34;1-入场准备&#34;&gt;&lt;a href=&#34;#1-入场准备&#34; class=&#34;headerlink&#34; title=&#34;1 入场准备&#34;&gt;&lt;/a&gt;1 入场准备&lt;/h1&gt;&lt;p&gt;回答下面 3 个问题，并给出 &lt;u&gt;&lt;strong&gt;数据证明&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;搞懂底层逻辑，投进去的钱用来干嘛了？为啥能赚钱？&lt;/li&gt;
+&lt;li&gt;最多损失多少？&lt;/li&gt;
+&lt;li&gt;我能否承受这些损失？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;只要&lt;strong&gt;收益超过 10&lt;/strong&gt;，至少要读几本书回答前 3 个问题后，再开始少量配置&lt;/li&gt;
+&lt;li&gt;跑路征兆&lt;ul&gt;
+&lt;li&gt;鼓励购买 1. 提高收益 2. 产品要下架威胁&lt;/li&gt;
+&lt;li&gt;管理层变动&lt;/li&gt;
+&lt;li&gt;负面新闻增多&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
-&lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/</id>
-        <title>新闻来源</title>
-        <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E6%96%B0%E9%97%BB%E6%9D%A5%E6%BA%90/"/>
-        <content type="html">&lt;h1 id=&#34;1-新闻&#34;&gt;&lt;a href=&#34;#1-新闻&#34; class=&#34;headerlink&#34; title=&#34;1 新闻&#34;&gt;&lt;/a&gt;1 新闻&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;为了平衡东西方的价值观冲突和中美利益冲突，选择两派中最中立的媒体作为新闻来源&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mediabiasfactcheck.com/center/&#34;&gt;Least Biased&lt;/a&gt; 且 Factual Reporting 为 High 以上作为初筛，以新疆、香港额外考察对中国的报道&lt;/li&gt;
-&lt;li&gt;考察内容&lt;ul&gt;
-&lt;li&gt;是否涵盖了关心的内容&lt;/li&gt;
-&lt;li&gt;报道内容是否真实&lt;/li&gt;
-&lt;li&gt;提出观点时是否引用证据（事实），是否充分给出反方观点、证据，语气、用词是否中性&lt;/li&gt;
-&lt;li&gt;媒体资金来源&lt;/li&gt;
-&lt;li&gt;新闻自由程度&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;跑路后期&lt;ul&gt;
+&lt;li&gt;客服响应慢&lt;/li&gt;
+&lt;li&gt;提现困难&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;西方&lt;/th&gt;
-&lt;th&gt;东方&lt;/th&gt;
-&lt;th&gt;中国&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;事实&lt;/td&gt;
-&lt;td&gt;apnews&amp;#x2F;reuters&lt;/td&gt;
-&lt;td&gt;asiatimes&amp;#x2F;channelnewsasia&lt;/td&gt;
-&lt;td&gt;新华社&amp;#x2F;人民网&amp;#x2F;外交部&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;观点&lt;/td&gt;
-&lt;td&gt;Carnegie Endowment&amp;#x2F;Harvard Gazette&amp;#x2F;Belfer Center&lt;/td&gt;
-&lt;td&gt;asiatimes&lt;/td&gt;
-&lt;td&gt;中国现代国际关系研究院 (CICIR)&amp;#x2F;北京大学国际战略研究院 (IISS)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;h1 id=&#34;2-如何财务自由&#34;&gt;&lt;a href=&#34;#2-如何财务自由&#34; class=&#34;headerlink&#34; title=&#34;2 如何财务自由&#34;&gt;&lt;/a&gt;2 如何财务自由&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;不乱花钱，记账，理性消费，拿来购买资产，比如：裁剪或降级可选消费，必需品囤积一个季度&lt;/li&gt;
+&lt;li&gt;不浪费时间，投入到有前途的事业中，比如：住的离公司近些&lt;/li&gt;
+&lt;li&gt;心理转变，勤奋、耐心，贫富差距是思维、心理上的不耐、懒惰&lt;/li&gt;
+&lt;li&gt;最终有大量钱生钱的资产，就可以有时间和钱做想做的事，即财务自由&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;3-指数基金&#34;&gt;&lt;a href=&#34;#3-指数基金&#34; class=&#34;headerlink&#34; title=&#34;3 指数基金&#34;&gt;&lt;/a&gt;3 指数基金&lt;/h1&gt;&lt;p&gt;巴菲特遗产 90% 购买指数基金，主动基金是辅助，以指数基金为主，&lt;strong&gt;最大 30% 的亏损&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-1-宽基指数&#34;&gt;&lt;a href=&#34;#3-1-宽基指数&#34; class=&#34;headerlink&#34; title=&#34;3.1 宽基指数&#34;&gt;&lt;/a&gt;3.1 宽基指数&lt;/h2&gt;&lt;p&gt;市值加权&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;观点数量少，是阅读材料，事实数量多，用来求证观点时再主动查询&lt;/li&gt;
-&lt;li&gt;中国观点部分参考 &lt;code&gt;2020 Global Go To Think Tank Index Report&lt;/code&gt; 排名，添加第一的中国与中国大学智库&lt;/li&gt;
-&lt;li&gt;中文博客&amp;#x2F;播客额外补充个人视角，比如新闻实验室。Youtube 的 &lt;a href=&#34;https://www.youtube.com/channel/UCexpzYDEnfmAvPSfG4xbcjA&#34;&gt;台湾公视新闻&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;关键是了解背后 &lt;strong&gt;代表的利益&lt;/strong&gt;，如此即便阅读“环球时报”和“观察者”也不会产生误解&lt;/li&gt;
+&lt;li&gt;上证50、沪深300，大盘&lt;/li&gt;
+&lt;li&gt;中证500，中盘&lt;/li&gt;
+&lt;li&gt;创业板&lt;/li&gt;
+&lt;li&gt;恒生，香港大盘&lt;/li&gt;
+&lt;li&gt;H股，香港上市的内地公司&lt;/li&gt;
+&lt;li&gt;香港中小指数&lt;/li&gt;
+&lt;li&gt;纳斯达克 100&lt;/li&gt;
+&lt;li&gt;标普 500&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;1-1-工具选择&#34;&gt;&lt;a href=&#34;#1-1-工具选择&#34; class=&#34;headerlink&#34; title=&#34;1.1 工具选择&#34;&gt;&lt;/a&gt;1.1 工具选择&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;为解决新闻真实和中立性问题，使用 RSS 选择可靠的信息来源，不使用任何新闻客户端&lt;/li&gt;
-&lt;li&gt;自建 RSS 服务，有费用、维护问题，使用复杂违背 RSS 初衷&lt;/li&gt;
-&lt;li&gt;付费 RSS 服务，收费高，不认可某些功能应订阅付费，免费版广告违背 RSS 初衷&lt;/li&gt;
-&lt;li&gt;自建和付费的 TTS、翻译优势与 rss 转 kindle 方式不明显，且 rss 转 kindle 提供输出全文功能&lt;/li&gt;
-&lt;li&gt;所以最终仍使用 rss 转 kindle 发送的方式，使用 amazon 免费同步&lt;/li&gt;
-&lt;li&gt;android 平板使用静读天下 Moon+ Reader Pro&lt;/li&gt;
+&lt;h2 id=&#34;3-2-策略加权&#34;&gt;&lt;a href=&#34;#3-2-策略加权&#34; class=&#34;headerlink&#34; title=&#34;3.2 策略加权&#34;&gt;&lt;/a&gt;3.2 策略加权&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;红利，股息率，4 种红利指数&lt;/li&gt;
+&lt;li&gt;基本面，营业收入、现金流、净资产、分红&lt;/li&gt;
+&lt;li&gt;价值，市盈率、市净率、市现率、股息率&lt;/li&gt;
+&lt;li&gt;低波动&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2-系统学习&#34;&gt;&lt;a href=&#34;#2-系统学习&#34; class=&#34;headerlink&#34; title=&#34;2 系统学习&#34;&gt;&lt;/a&gt;2 系统学习&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;目的找到该学科排名靠前的大学的 syllabus ，工具 harvard 课程 &lt;a href=&#34;https://courses.extension.harvard.edu/course-catalog/courses&#34;&gt;搜索1&lt;/a&gt;、&lt;a href=&#34;https://courses.summer.harvard.edu/course-catalog/courses&#34;&gt;搜索2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;也可以考虑以 google scholar 的排名作为切入点&lt;/li&gt;
-&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/78099/assignments/syllabus&#34;&gt;DPI-415 Comparative Politics &amp;amp; Policy&lt;/a&gt; 的 syllabus 选择 Daniele Caramani. Comparative Politics. 5th 作为阅读书籍&lt;/li&gt;
-&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/81856/assignments/syllabus&#34;&gt;GOVT E-40 International Conflict and Cooperation&lt;/a&gt; 的 syllabus 选择 World Politics: Interests, Interactions, and Institutions. 4th 作为阅读书籍&lt;/li&gt;
-&lt;li&gt;harvard &lt;a href=&#34;https://canvas.harvard.edu/courses/4411/assignments/syllabus&#34;&gt;GOVT E-­20 Introduction to Comparative Politics&lt;/a&gt; 2015 年教材，选择 Comparative Politics Today 11th 作为辅助&lt;/li&gt;
+&lt;h2 id=&#34;3-3-行业指数&#34;&gt;&lt;a href=&#34;#3-3-行业指数&#34; class=&#34;headerlink&#34; title=&#34;3.3 行业指数&#34;&gt;&lt;/a&gt;3.3 行业指数&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;风险高，辅助投资&lt;/li&gt;
+&lt;li&gt;10 个一级行业 (GICS)，投资两类，天生容易赚钱，强周期性行业&lt;/li&gt;
+&lt;li&gt;容易赚钱：必须消费、医药行业、可选消费等，市场需求高、利润高（有护城河）、再投入需求小&lt;/li&gt;
+&lt;li&gt;周期行业：金融、地产、能源&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;3-新闻观察&#34;&gt;&lt;a href=&#34;#3-新闻观察&#34; class=&#34;headerlink&#34; title=&#34;3 新闻观察&#34;&gt;&lt;/a&gt;3 新闻观察&lt;/h1&gt;&lt;h2 id=&#34;3-1-模版&#34;&gt;&lt;a href=&#34;#3-1-模版&#34; class=&#34;headerlink&#34; title=&#34;3.1 模版&#34;&gt;&lt;/a&gt;3.1 模版&lt;/h2&gt;&lt;table&gt;
+&lt;h1 id=&#34;4-估值&#34;&gt;&lt;a href=&#34;#4-估值&#34; class=&#34;headerlink&#34; title=&#34;4 估值&#34;&gt;&lt;/a&gt;4 估值&lt;/h1&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;用时：&lt;/th&gt;
-&lt;th&gt;正&lt;/th&gt;
-&lt;th&gt;反&lt;/th&gt;
+&lt;th&gt;估值指标&lt;/th&gt;
+&lt;th&gt;计算&lt;/th&gt;
+&lt;th&gt;适用&lt;/th&gt;
+&lt;th&gt;应用公式&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;事实&lt;/td&gt;
+&lt;td&gt;净利润&lt;/td&gt;
+&lt;td&gt;静态&amp;#x2F;滚动&amp;#x2F;中位数市盈率 PE &amp;#x3D; P &amp;#x2F; E&lt;br /&gt;盈利收益率为 E &amp;#x2F; P&lt;/td&gt;
+&lt;td&gt;盈利稳定增长大于 10%&lt;/td&gt;
+&lt;td&gt;PEG 1-2，同时 PE 历史低位为低估&lt;br /&gt;PEG &amp;gt; 2 且 PE 历史高位为高估&lt;br /&gt;美联储 FED: 盈利收益率&amp;#x2F;十年期国债利率&lt;br /&gt;年复合收益率 &amp;#x3D; 初始股息率 + PE 变化率 + 盈利增长率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;净资产（资产-负债）&lt;/td&gt;
+&lt;td&gt;市净率 PB &amp;#x3D; P &amp;#x2F; B&lt;/td&gt;
+&lt;td&gt;无形资产不适用&lt;br /&gt;用于盈利周期性行业，经济危机&lt;/td&gt;
+&lt;td&gt;年复合收益率 &amp;#x3D; PB 变化率 + 净资产变化率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;净资产收益率，ROE (Return on Equity) &amp;#x3D; E &amp;#x2F; B &amp;#x3D; PB &amp;#x2F; PE&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;得出推理&lt;/td&gt;
+&lt;td&gt;分红&lt;/td&gt;
+&lt;td&gt;股息率 &amp;#x3D; D &amp;#x2F; P，分红率 &amp;#x3D; D &amp;#x2F; E&lt;br /&gt;DP &amp;#x3D; DE * EP，分红率往往不变，因此 DP 和 EP 正相关&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;个人总结&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;盈利保持不变，与债券相同评估方法，现金流收益率&lt;br /&gt;盈利大起大落、盈利衰退的不评估&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-</content>
+&lt;h1 id=&#34;5-交易&#34;&gt;&lt;a href=&#34;#5-交易&#34; class=&#34;headerlink&#34; title=&#34;5 交易&#34;&gt;&lt;/a&gt;5 交易&lt;/h1&gt;&lt;h2 id=&#34;5-1-资金分配&#34;&gt;&lt;a href=&#34;#5-1-资金分配&#34; class=&#34;headerlink&#34; title=&#34;5.1 资金分配&#34;&gt;&lt;/a&gt;5.1 资金分配&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;股票基金（指数为主、极少量主动） &amp;#x3D; 工资 - 保险预留 - 备用金预留（债券基金、银行理财） - 生活消费（短期理财 &amp;#x3D; 信用卡账单 + 余量）&lt;/li&gt;
+&lt;li&gt;3 年内不用的钱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-2-选择基金&#34;&gt;&lt;a href=&#34;#5-2-选择基金&#34; class=&#34;headerlink&#34; title=&#34;5.2 选择基金&#34;&gt;&lt;/a&gt;5.2 选择基金&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;宽基、策略指数为主，优秀行业为辅，排除衰退行业&lt;/li&gt;
+&lt;li&gt;国内为主，海外为辅，海外通过经济增速判断&lt;/li&gt;
+&lt;li&gt;优先选择场内，注意套利差价，没有再选择场外&lt;/li&gt;
+&lt;li&gt;选择，规模大、追踪误差小、费用低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-3-买入&#34;&gt;&lt;a href=&#34;#5-3-买入&#34; class=&#34;headerlink&#34; title=&#34;5.3 买入&#34;&gt;&lt;/a&gt;5.3 买入&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参考估值表，低估买入&lt;/li&gt;
+&lt;li&gt;已持有的低估指数，越下跌买的越多&lt;/li&gt;
+&lt;li&gt;避免指数过于相关，即避免投资重合&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;待完善&lt;/strong&gt;，首先，长期收益率越高买入比例越多（国家 GDP），其次越低估买入比例越多(PE 在历史的比例)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-4-卖出&#34;&gt;&lt;a href=&#34;#5-4-卖出&#34; class=&#34;headerlink&#34; title=&#34;5.4 卖出&#34;&gt;&lt;/a&gt;5.4 卖出&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;基本面恶化，国家经济不好&lt;/li&gt;
+&lt;li&gt;梯度止盈，越高估卖出越多，10% ×（24&amp;#x2F;20）^2&amp;#x3D;14.4%&lt;/li&gt;
+&lt;li&gt;类似的基金更便宜（低估）&lt;/li&gt;
+&lt;li&gt;股息率大于 4% 可以长期持有不卖出，享受分红&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-执行与心理&#34;&gt;&lt;a href=&#34;#6-执行与心理&#34; class=&#34;headerlink&#34; title=&#34;6 执行与心理&#34;&gt;&lt;/a&gt;6 执行与心理&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;少量投资指数基金，可以作为保本理财&lt;/li&gt;
+&lt;li&gt;计划落实到文档，并不断优化&lt;/li&gt;
+&lt;li&gt;掌握的三个等级，学习、实践、传授&lt;/li&gt;
+&lt;li&gt;不遵守计划，人性的贪婪和恐惧将让自己吃亏&lt;/li&gt;
+&lt;li&gt;涨跌对心理的考验，即使低估值也会短期下跌，因为受到供求关系影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-短期理财&#34;&gt;&lt;a href=&#34;#7-短期理财&#34; class=&#34;headerlink&#34; title=&#34;7 短期理财&#34;&gt;&lt;/a&gt;7 短期理财&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;货币基金与互联网银行理财对比，选择收益高的&lt;/li&gt;
+&lt;li&gt;注意服务费，B 类货币基金没有&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;8-中期固收理财&#34;&gt;&lt;a href=&#34;#8-中期固收理财&#34; class=&#34;headerlink&#34; title=&#34;8 中期固收理财&#34;&gt;&lt;/a&gt;8 中期固收理财&lt;/h1&gt;&lt;h2 id=&#34;8-1-债券基金&#34;&gt;&lt;a href=&#34;#8-1-债券基金&#34; class=&#34;headerlink&#34; title=&#34;8.1 债券基金&#34;&gt;&lt;/a&gt;8.1 债券基金&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;利率上升，债券价格下降，收益变差&lt;/li&gt;
+&lt;li&gt;中短期（1~3年）资金，买银行理财、债券基金&lt;/li&gt;
+&lt;li&gt;牛市中后期，没有低估指数基金可投，投资债券&lt;/li&gt;
+&lt;li&gt;长期看，国内所有的货币基金平均收益率在 2%&lt;del&gt;3%，债券基金在 6%&lt;/del&gt;7%，股票基金在 14% 左右&lt;/li&gt;
+&lt;li&gt;十年期国债利率的中位数 3%~3.5%，小于 3 利率低位选短期债券，大于 3.5 利率高位选长期债券&lt;/li&gt;
+&lt;li&gt;随时可以投资，出现浮亏可以加仓拉低成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-2-银行理财&#34;&gt;&lt;a href=&#34;#8-2-银行理财&#34; class=&#34;headerlink&#34; title=&#34;8.2 银行理财&#34;&gt;&lt;/a&gt;8.2 银行理财&lt;/h2&gt;&lt;h1 id=&#34;9-人物&#34;&gt;&lt;a href=&#34;#9-人物&#34; class=&#34;headerlink&#34; title=&#34;9 人物&#34;&gt;&lt;/a&gt;9 人物&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;巴菲特&lt;/li&gt;
+&lt;li&gt;彼得·林奇&lt;/li&gt;
+&lt;li&gt;约翰·博格的博格公式法&lt;/li&gt;
+&lt;li&gt;格雷厄姆的价值投资理念，盈利收益率法&lt;/li&gt;
+&lt;li&gt;西格尔教授的著作《股市长线法宝》、《投资者的未来》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;10-参考书&#34;&gt;&lt;a href=&#34;#10-参考书&#34; class=&#34;headerlink&#34; title=&#34;10 参考书&#34;&gt;&lt;/a&gt;10 参考书&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;指数基金投资指南&lt;/li&gt;
+&lt;li&gt;定投十年财务自由&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;11-工具&#34;&gt;&lt;a href=&#34;#11-工具&#34; class=&#34;headerlink&#34; title=&#34;11 工具&#34;&gt;&lt;/a&gt;11 工具&lt;/h1&gt;&lt;h2 id=&#34;11-1-估值表&#34;&gt;&lt;a href=&#34;#11-1-估值表&#34; class=&#34;headerlink&#34; title=&#34;11.1 估值表&#34;&gt;&lt;/a&gt;11.1 估值表&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;螺丝钉&lt;/li&gt;
+&lt;li&gt;且慢&lt;/li&gt;
+&lt;li&gt;蛋卷基金&lt;/li&gt;
+&lt;li&gt;天天基金&lt;/li&gt;
+&lt;li&gt;支付宝&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-2-定投计算器&#34;&gt;&lt;a href=&#34;#11-2-定投计算器&#34; class=&#34;headerlink&#34; title=&#34;11.2 定投计算器&#34;&gt;&lt;/a&gt;11.2 定投计算器&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://danjuanapp.com/calculator/zero?channel=2500000025&#34;&gt;蛋卷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://data.eastmoney.com/money/calc/FundCalcDTSY.html&#34;&gt;东方财富网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-3-种计算收益的方式&#34;&gt;&lt;a href=&#34;#11-3-种计算收益的方式&#34; class=&#34;headerlink&#34; title=&#34;11.3 种计算收益的方式&#34;&gt;&lt;/a&gt;11.3 种计算收益的方式&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/28494603/answer/1031012920&#34;&gt;如何计算年化收益率？&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;11-4-评估风险&#34;&gt;&lt;a href=&#34;#11-4-评估风险&#34; class=&#34;headerlink&#34; title=&#34;11.4 评估风险&#34;&gt;&lt;/a&gt;11.4 评估风险&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;负相关，且慢计算相关系数&lt;/li&gt;
+&lt;li&gt;波动即风险，夏普比率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11-5-基金投资数据回测&#34;&gt;&lt;a href=&#34;#11-5-基金投资数据回测&#34; class=&#34;headerlink&#34; title=&#34;11.5 基金投资数据回测&#34;&gt;&lt;/a&gt;11.5 基金投资数据回测&lt;/h2&gt;&lt;h2 id=&#34;11-6-应避免的回测误区&#34;&gt;&lt;a href=&#34;#11-6-应避免的回测误区&#34; class=&#34;headerlink&#34; title=&#34;11.6 应避免的回测误区&#34;&gt;&lt;/a&gt;11.6 应避免的回测误区&lt;/h2&gt;</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/</id>
+        <title>锻炼</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%94%BB%E7%82%BC/"/>
+        <content type="html"></content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -1499,190 +1112,6 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Flourish/</id>
-        <title>Flourish</title>
-        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Flourish/"/>
-        <content type="html">&lt;h1 id=&#34;1-A-NEW-POSITIVE-PSYCHOLOGY&#34;&gt;&lt;a href=&#34;#1-A-NEW-POSITIVE-PSYCHOLOGY&#34; class=&#34;headerlink&#34; title=&#34;1 A NEW POSITIVE PSYCHOLOGY&#34;&gt;&lt;/a&gt;1 A NEW POSITIVE PSYCHOLOGY&lt;/h1&gt;&lt;p&gt;幸福 (well-being 不是 happiness) 包含 5 部分&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;积极情绪&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;投入&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;与情绪的区别，心流状态当时没感觉，回忆觉得好&lt;/li&gt;
-&lt;li&gt;情绪是当时就觉得好，比如自慰&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;意义&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;成就&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;有的人是捐赠类型，前半生挣钱，后半生做慈善&lt;/li&gt;
-&lt;li&gt;有的人是一直激励，认为钱越多越好，服务社会仅仅是追求道路上的副作用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;积极的关系&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;虽然关系总是和其它部分一起出现，但关系导致的合作有进化意义&lt;/li&gt;
-&lt;li&gt;有一个可以随时倾诉的对象，可以活得更久&lt;br&gt;每部分都需要&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对幸福有用&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;追求其本身就是原因，而非追求其是为了其它内容&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;定义和测量都独立于其它部分，即排他&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;这些部分并非表示要求或建议这样做而是描述事实&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;当帮助或感激他人时，自己会感觉更好&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;原谅敌人（在课程清单中）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;写下今天的 3 件好事&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;因为进化导致人们会关注不好的事&lt;/li&gt;
-&lt;li&gt;每件事问 3 个问题&lt;ul&gt;
-&lt;li&gt;为何这件好事发生了？&lt;/li&gt;
-&lt;li&gt;这件事对我意味着什么？&lt;/li&gt;
-&lt;li&gt;如何让更多这种事发生？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;找到自己擅长 (signature strength) 的事，并去做，网站 &lt;a href=&#34;http://www.authentichappiness.org/&#34;&gt;www.authentichappiness.org&lt;/a&gt; ，测试结果在 asset 中&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;只为赚钱的是 job，为了升职的是 career，不给钱、不升职也做的是 calling 召唤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对于伴侣分享的喜悦给予真诚的回应（不是敷衍的）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;提到婚姻咨询中的建议都是教如何更好处理矛盾的，但没有告诉如何应对分享的喜悦&lt;/li&gt;
-&lt;li&gt;使用积极的词汇，positive &amp;#x2F; negative 词汇的比例用来衡量关系&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ABC model，不是灾难，而是持有的信念、对其的解读导致相应的感受&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过理性思考问题，最好、最坏、最可能的情况，消除不好的念头&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;作者指出自己的方法是可以自我维持的，而药物和谈话在停止后，效果就逐渐没有了&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;药物除了对最严重抑郁的病人有用，中度和轻度抑郁效果几乎没有&lt;/li&gt;
-&lt;li&gt;药物分为治疗和掩饰两种，精神类药物都是掩饰类型的&lt;/li&gt;
-&lt;li&gt;作者建议心理治疗不应只是药物或谈话缓解，而是让患者学会如何与负面情绪相处，更进一步是找到幸福与意义，即前面提到的 5 部分&lt;/li&gt;
-&lt;li&gt;作者谈到自己的经历，早期误入了脱离实际只研究理论的歧途，后期作为 APA 主席时，里面的人又不重视科学证明&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-THE-WAYS-TO-FLOURISH&#34;&gt;&lt;a href=&#34;#2-THE-WAYS-TO-FLOURISH&#34; class=&#34;headerlink&#34; title=&#34;2 THE WAYS TO FLOURISH&#34;&gt;&lt;/a&gt;2 THE WAYS TO FLOURISH&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;目前社会将学习的过错归因于&lt;strong&gt;过去&lt;/strong&gt;的成长&lt;strong&gt;环境&lt;/strong&gt;，而积极心理学则着眼于未来，计划、目标、改变个人&lt;strong&gt;性格&lt;/strong&gt;而改变&lt;strong&gt;未来&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;智力是 achievement &amp;#x3D; skill X effort&lt;ul&gt;
-&lt;li&gt;skill&lt;ul&gt;
-&lt;li&gt;执行速度：更快完成任务，别人需要思考的事，用自动化的直觉就能完成，从而省下时间&lt;/li&gt;
-&lt;li&gt;慢：（个人认为是快思慢想中的慢思考），确定方向、集中精力、自我管理，创造、做计划、检查错误、抑制冲动&lt;/li&gt;
-&lt;li&gt;学习速度&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;effort：自律、坚韧不拔 GRIT 比 IQ 更能预测成绩，建议学校培养自律的性格（这也解释了女生 IQ 比男生低，但成绩好的原因），同时也会积累更多的技能&lt;/li&gt;
-&lt;li&gt;领域内做到杰出的只有少数几个人，他们与普通人的成就并不是正态分布的平缓曲线，而是陡峭的对数曲线，符合二八定律&lt;ul&gt;
-&lt;li&gt;财富也一样，少数人掌握比普通人多很多的财富&lt;/li&gt;
-&lt;li&gt;这是因为成就是多个因素的乘积关系（而非累加），杰出的人各个因素比普通人多一点，结果就差好几倍&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;因此建议&lt;ul&gt;
-&lt;li&gt;多刻意练习&lt;/li&gt;
-&lt;li&gt;培养慢思考的功能&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;人类的合作，利他是物种的优势&lt;/li&gt;
-&lt;li&gt;多数人听过 PTSD，但却不知道创伤后很多人是可以恢复的，存在负面情绪就自认为得了 PTSD 反而没病变得患病 (self-fulfilling)&lt;ul&gt;
-&lt;li&gt;经受过磨难的人心理更强大&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;用白鼠做实验，植入 50% 致死率的肿瘤，分 3 组&lt;ul&gt;
-&lt;li&gt;分别是可以控制电击停止组、无法控制电击停止组、对照组&lt;/li&gt;
-&lt;li&gt;可控组存活率比对照组高，不可控组比对照组低，说明无助会削弱身体、可控会增强身体&lt;/li&gt;
-&lt;li&gt;但作者也说白鼠的结论不能直接放到人上，因为有 external validity 的问题&lt;/li&gt;
-&lt;li&gt;不可控组中会产生习得性无助，但有 1&amp;#x2F;3 的人或动物永远不会产生习得性无助&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;乐观、积极情绪更少患病、更容易痊愈，因为&lt;ul&gt;
-&lt;li&gt;健康的生活方式，自律、饮食、锻炼身体&lt;/li&gt;
-&lt;li&gt;有朋友&lt;/li&gt;
-&lt;li&gt;好的心态，免疫系统强&lt;/li&gt;
-&lt;li&gt;关于锻炼，建议每天一万步，保证五千步&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;财富和幸福 well-being 不能划等号&lt;ul&gt;
-&lt;li&gt;只有在事后评价时财富才是幸福的一个要素，财富无法影响某一瞬间的心情&lt;/li&gt;
-&lt;li&gt;社会越富有财富越难影响幸福&lt;/li&gt;
-&lt;li&gt;作者建议从以 GDP 评价改为以 well-being 来评价国家&lt;/li&gt;
-&lt;li&gt;作者认为金融危机的原因不是某些人缺少道德感，而是他们 value 的事情太狭窄了。金融行业只关心赚钱、军人只关心服务国家，而没考虑更广泛的 well-being&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;作者认为存在两种现实，一种是乐观也无法改变的客观现实，另一种是可被情绪改变的现实&lt;ul&gt;
-&lt;li&gt;作者提倡的对后者的乐观，对前者认清现实&lt;/li&gt;
-&lt;li&gt;可被情绪改变的现实包括，婚姻状况、健康状况，这里婚姻状况作者举例的是，促进婚姻的良性幻觉（更善良、好看、有趣）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/How%20To%20Become%20A%20Hacker/</id>
-        <title>How To Become A Hacker</title>
-        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/How%20To%20Become%20A%20Hacker/"/>
-        <content type="html">&lt;ul&gt;
-&lt;li&gt;来源 &lt;a href=&#34;http://www.catb.org/~esr/faqs/hacker-howto.html&#34;&gt;How To Become A Hacker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;For true hackers, the boundaries between “play”, “work”, “science” and “art” all tend to disappear, or to merge into a high-level creative playfulness&lt;/li&gt;
-&lt;li&gt;hackers build things, crackers break them&lt;ul&gt;
-&lt;li&gt;这里只谈软件上的黑客，其中 hackers 和 crackers 的区别&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Hackers solve problems and build things, and they believe in freedom and voluntary mutual help&lt;/li&gt;
-&lt;li&gt;to be a hacker you have to get a basic thrill from solving problems, sharpening your skills, and exercising your intelligence&lt;ul&gt;
-&lt;li&gt;Otherwise you’ll find your hacking energy is sapped by distractions like sex, money, and social approval&lt;/li&gt;
-&lt;li&gt;if you tackle just a piece of it and learn from that, you’ll learn enough to solve the next piece — and so on, until you’re done&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;If you’re attracted to hacking because you don’t have a life, that’s OK too — at least you won’t have trouble concentrating. Maybe you’ll get a life later on.&lt;/li&gt;
-&lt;li&gt;If you lack the intelligence, there is little hope for you as a hacker; if you lack the discipline, you’d better grow it.&lt;/li&gt;
-&lt;li&gt;You can learn language features — bits of knowledge — from books, but the mind-set that makes that knowledge into living skill can be learned only by practice and apprenticeship. &lt;ul&gt;
-&lt;li&gt;What will do it is (a) reading code and (b) writing code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;How long will it take me to learn to hack?&lt;ul&gt;
-&lt;li&gt;That depends on how talented you are and how hard you work at it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;从解决问题中获得快感，从而不被其它事情分心&lt;/li&gt;
-&lt;li&gt;喜欢提高自己的能力并乐在其中，self-motivated&lt;/li&gt;
-&lt;li&gt;远离社交确实可以让自己更专注，但这不是必须&lt;/li&gt;
-&lt;li&gt;崇尚效率&lt;ul&gt;
-&lt;li&gt;不浪费他人时间&lt;/li&gt;
-&lt;li&gt;不解决重复的问题，如闭源软件阻止了重复利用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;推荐 Python、Go、C&amp;#x2F;C++、LISP&lt;ul&gt;
-&lt;li&gt;如果一个编程语言做得太多，那么它适合生产，但不适合学习&lt;/li&gt;
-&lt;li&gt;LISP 是个独特的体验&lt;/li&gt;
-&lt;li&gt;因为现在机器性能已经足够优秀，在性能不关键时减少直接用 C 编程，节省自己的时间&lt;/li&gt;
-&lt;li&gt;只有练习才能提高，读代码、写代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;弄个网站&lt;/li&gt;
-&lt;li&gt;学好英语&lt;/li&gt;
-&lt;li&gt;gift culture，通过给与获得声望，得到别人承认&lt;/li&gt;
-&lt;li&gt;求助时，体现出自己的思考，谨慎提问&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/</id>
         <title>Design for How People Learn</title>
         <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Design%20for%20How%20People%20Learn/"/>
@@ -1803,6 +1232,783 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;有经验的课程设计者会先设计评价标准，然后设计课程（个：类似测试驱动开发）&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Politics/</id>
+        <title>Politics</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Politics/"/>
+        <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;左右新旧含义搭配&lt;/th&gt;
+&lt;th&gt;激进&lt;/th&gt;
+&lt;th&gt;保守&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;社会主义，公平&lt;/td&gt;
+&lt;td&gt;左倾，大跃进&lt;/td&gt;
+&lt;td&gt;右倾，投降，陈独秀机会主义&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;资本主义，自由&lt;/td&gt;
+&lt;td&gt;左翼，主张社会公平&lt;/td&gt;
+&lt;td&gt;右翼&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;中国与西方激进和保守含义不同，默认即保守，西方默认在右，主张平等即左为激进，中国默认在左，主张自由即右为激进&lt;br&gt;个人理解：资本主义和社会主义决定大方向，激进与保守决定小方向&lt;/p&gt;
+&lt;p&gt;民主党-左：个人自由，经济控制，实现公平&lt;br&gt;共和党-右：个人保守，经济放开，资本主义&lt;/p&gt;
+&lt;h1 id=&#34;1-结构&#34;&gt;&lt;a href=&#34;#1-结构&#34; class=&#34;headerlink&#34; title=&#34;1 结构&#34;&gt;&lt;/a&gt;1 结构&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;政治的背景知识&lt;/li&gt;
+&lt;li&gt;政治与经济、文化、社会的互动&lt;/li&gt;
+&lt;li&gt;国际政治&lt;/li&gt;
+&lt;li&gt;总结&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-What-is-Politics&#34;&gt;&lt;a href=&#34;#2-What-is-Politics&#34; class=&#34;headerlink&#34; title=&#34;2 What is Politics&#34;&gt;&lt;/a&gt;2 What is Politics&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;政治的核心是冲突解决，但并不是所有冲突都能解决。不同的观点所以有冲突，同时又需要合作完成目标&lt;/li&gt;
+&lt;li&gt;人们认为政治是一个 dirty word，政客被当作伪君子&lt;/li&gt;
+&lt;li&gt;政治两种定义，一种狭义的，指在政府内部发生的事件、政客，将大众排除在外&lt;/li&gt;
+&lt;li&gt;然而普遍共识是仍然需要政府管理，只是要保证权力不被滥用&lt;/li&gt;
+&lt;li&gt;政治另一种广义定义，指的是公共事务&lt;/li&gt;
+&lt;li&gt;公民社会指那些 private 的机构&lt;/li&gt;
+&lt;li&gt;女性传统上被认为与政治无关，属于 private 领域，因此性别平等不属于政治&lt;/li&gt;
+&lt;li&gt;政治指不通过武力而是协商，即通过共识和妥协解决问题&lt;/li&gt;
+&lt;li&gt;power 通过 3种方式施加影响&lt;ul&gt;
+&lt;li&gt;影响决策，棒子、交易、忠诚 3 种&lt;/li&gt;
+&lt;li&gt;影响议题，阻止某个议题&lt;/li&gt;
+&lt;li&gt;思想控制，意识形态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;研究政治的方法&lt;ul&gt;
+&lt;li&gt;哲学传统，不符合科学，normative approach&lt;/li&gt;
+&lt;li&gt;实证传统，用自然科学的方法，descriptive approach&lt;/li&gt;
+&lt;li&gt;行为主义，研究可观察的行为、可量化的数据&lt;/li&gt;
+&lt;li&gt;理性选择理论，借鉴经济理论，一套追求自我利益的个体的规则。弗吉尼亚学派，game theory 博弈论。批评者认为忽略历史和社会背景&lt;/li&gt;
+&lt;li&gt;新制度主义，新在政策制定由不成文的传统而非正式协议来决定&lt;/li&gt;
+&lt;li&gt;批判方法，批判体现在两点，一是质疑现有制度，关注受压迫群体，二是不同意主流观点，同时怀疑现有方法存在偏见。后结构与后现代主义不同意普遍真理，但认为可通过解构来理解概念呢、理论&lt;/li&gt;
+&lt;li&gt;模型、概念可以帮助理解世界，但应用时要注意被忽略的部分&lt;/li&gt;
+&lt;li&gt;某个 term 可能表示不同的含义，不存在唯一的真理。战争中的两方都说为自由而战，而自由在他们眼中显然有不同的含义，虽然都用了自由这个词&lt;/li&gt;
+&lt;li&gt;仅仅获得事实还不够，被解释、被组织后才有了意义，模型完成了这一功能&lt;/li&gt;
+&lt;li&gt;有一个政治课程是否应该中性（即是否与从政不同）的讨论&lt;/li&gt;
+&lt;li&gt;全球化导致国家边界模糊，政治学与国际关系两个学科融合，国家的边界从 hard shell 变为 soft shell，政治学将国家视为大的 actor，IR 看作小的 actor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-Political-Ideas-and-Ideologies&#34;&gt;&lt;a href=&#34;#3-Political-Ideas-and-Ideologies&#34; class=&#34;headerlink&#34; title=&#34;3 Political Ideas and Ideologies&#34;&gt;&lt;/a&gt;3 Political Ideas and Ideologies&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;“意识形态”这个词被污名化，但在现代政治学中是中性的&lt;/li&gt;
+&lt;li&gt;马克思认为自己使用科学的方法揭露剥削和压迫&lt;/li&gt;
+&lt;li&gt;自由主义，提倡个人主义和个人自由，比平等和权威更重要，前提是不侵犯他人自由&lt;/li&gt;
+&lt;li&gt;平等，指的法律和投票平等，不是收入平等，但有机会平等，支持精英社会（天分 + 努力）&lt;/li&gt;
+&lt;li&gt;传统自由主义，认为国家确保安全和秩序，保证合同的履行，不应该过多干涉，应充当守夜人的角色&lt;/li&gt;
+&lt;li&gt;现代自由主义，应当保障一些基本权益，这样个体才能做出适合自己的选择。去除 five evils 贫穷、无知、懒惰、肮脏、疾病&lt;/li&gt;
+&lt;li&gt;家长式保守主义，尊重传统价值观，重实用主义，轻意识形态。认为人的理性有限，因此需要法律约束。认为社会由各种团体构成（而非个体集合），重视共同的文化和价值观&lt;/li&gt;
+&lt;li&gt;社会主义者分成两种，一种传统保守，列宁，一种改革，社会民主&lt;/li&gt;
+&lt;li&gt;历史唯物主义，革命先进入无产阶级专政的临时状态，最后形成没有阶级和国界的共产社会&lt;/li&gt;
+&lt;li&gt;社会民主主义，既接受资本主义又以道德来分配财富&lt;/li&gt;
+&lt;li&gt;新社会民主主义，帮助人们自救，提供教育，提高国际竞争力&lt;/li&gt;
+&lt;li&gt;无政府主义者，分资本主义无政府和社会主义无政府（资本主义和社会主义的两个极端），资本主义无政府指没有政府监管的市场，社会主义无政府指全部共同所有&lt;/li&gt;
+&lt;li&gt;法西斯，没有个人，个人绝对服从上级&lt;/li&gt;
+&lt;li&gt;女权主义，自由女权主义，法律和政治上平等，社会女权主义，取得经济实力前平等是无意义的，激进女权主义，在家庭和个人上的平等&lt;/li&gt;
+&lt;li&gt;sex 和 gender，sex 只生理性别，gender 指社会角色中的男性和女性。区分这个是用来反对用生理性别决定社会角色（个人观点：反对刻板印象形成歧视）&lt;/li&gt;
+&lt;li&gt;女权内部分歧，一部分人认为男性与女性存在生理和心理的本质不同，女性应在承认不同的基础上寻求解放，而非去掉性别的个体&lt;/li&gt;
+&lt;li&gt;绿色意识形态，以生态为中心的世界观，而非人类中心，人类只是自然的一部分&lt;/li&gt;
+&lt;li&gt;浅生态主义（也叫 environmentalism）服务于人类，为了可持续发展，不影响人类后代的繁荣。深生态主义（也叫 ecologism）维护自然，主张生物平等&lt;/li&gt;
+&lt;li&gt;绿色意识形态，通常批评物质和消费，主张存在 being 来自体验和分享的满足而非拥有 having&lt;/li&gt;
+&lt;li&gt;宗教原教旨主义源于世俗化，导致身份危机和道德结构的缺失&lt;/li&gt;
+&lt;li&gt;民粹主义，分成纯粹的人和腐败的精英。左翼民粹关注不平等、失业、贫穷，右翼民粹分成关注国家利益的 national populism，强调社会与道德秩序，不满个人权利 authoritarian populism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-Politics-and-the-State&#34;&gt;&lt;a href=&#34;#4-Politics-and-the-State&#34; class=&#34;headerlink&#34; title=&#34;4 Politics and the State&#34;&gt;&lt;/a&gt;4 Politics and the State&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;国家存在的意义，可以参与战争，可以整合意识形态、经济、军事、政治&lt;/li&gt;
+&lt;li&gt;4 种方式理解国家&lt;ul&gt;
+&lt;li&gt;意识形态，提倡利他主义&lt;/li&gt;
+&lt;li&gt;功能主义，维持社会秩序&lt;/li&gt;
+&lt;li&gt;组织上，政府的公共机构，与公民社会（个人机构）相对&lt;/li&gt;
+&lt;li&gt;国际上，国际政治的单元&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;国家的理论&lt;ul&gt;
+&lt;li&gt;多元国家，通过法律、国家保障秩序，通过宪政和代议政府避免侵犯个人权利。两个假设，state 服从 government，党派竞争和利益活动保证 government 对公众意见的响应&lt;/li&gt;
+&lt;li&gt;社会契约论 3 要素，无约束的自由是贫穷、野蛮的（state of nature），通过社会契约确立一个维持秩序的政权，公民服从并感谢其带来的稳定和安全&lt;/li&gt;
+&lt;li&gt;资本主义国家，两种理解国家，共同点是都有不平等的阶级权利 1. 用来管理资本阶级的公共事务，一种压迫工具 2. 一个缓和阶级冲突的机制&lt;/li&gt;
+&lt;li&gt;新马克思主义将国家视为一个不同利益集团斗争的地带&lt;/li&gt;
+&lt;li&gt;利维坦国家，通过不断扩张追求自身利益，与马克思认为的服务于阶级利益不同&lt;/li&gt;
+&lt;li&gt;父权制国家，自由女权主义认为可以通过改革实现性别平等，激进女权认为是国家体现了父权的压迫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;国家的角色&lt;ul&gt;
+&lt;li&gt;最小政府，最小干涉。3 个功能，维护国内秩序：警察，确保合同效力：法院，抵御外敌：军队。经济上 2 个功能，维持低通胀，控制垄断以鼓励竞争&lt;/li&gt;
+&lt;li&gt;增长政府，用于推动工业和经济发展的政府&lt;/li&gt;
+&lt;li&gt;社会民主国家，促进社会公平，消除贫穷，提供社会福利&lt;/li&gt;
+&lt;li&gt;集体化国家，苏联、东欧&lt;/li&gt;
+&lt;li&gt;集权国家，斯大林时期的苏联，个人观点：毛时期的中国&lt;/li&gt;
+&lt;li&gt;宗教国家，现代国家都世俗化，宗教被视为私人领域&lt;/li&gt;
+&lt;li&gt;全球化让国家在框架和国际组织中行事，以英国脱欧举例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-Democracy-and-Legitimacy&#34;&gt;&lt;a href=&#34;#5-Democracy-and-Legitimacy&#34; class=&#34;headerlink&#34; title=&#34;5 Democracy and Legitimacy&#34;&gt;&lt;/a&gt;5 Democracy and Legitimacy&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;3 种权威，传统、个人魅力、基于法律。第 3 种，通过选举体现人民的同意，通过法律体现人民希望怎样被管理&lt;/li&gt;
+&lt;li&gt;公平、福利与个人利益、责任、竞争，新马克思认为两者的矛盾会导致资本主义民主无法维持，而 new right 使用小政府的方式，支持后者，即 pro-individual，pro-market&lt;/li&gt;
+&lt;li&gt;民主的合法性体现在，允许投票和加入党派，通过协商解决分歧，而非暴力，通过人民的反馈调整政府的输出，维持了政治稳定（个人观点：负反馈的意思）&lt;/li&gt;
+&lt;li&gt;然而也有质疑，认为并非民主维持了政治稳定，而是资本主义带来的繁荣经济和给予个人平等的机会和自由表达导致的&lt;/li&gt;
+&lt;li&gt;民粹主义反对多元，像法西斯。民主可以逆转资本主义的不平等倾向，然而 1980 以后的新自由主义不重视平等，因此导致民粹&lt;/li&gt;
+&lt;li&gt;非民主如何确立合法性，除压迫外，通过 3 种方式，仪式性选举、经济繁荣、意识形态&lt;/li&gt;
+&lt;li&gt;民主中，人民指的是整体的、个人的、多数的？投票选出代他们做决定的政府，还是为了人们利益的独裁领袖。管理的范围，只是政治领域，还是生活其它方面，包括家庭&lt;/li&gt;
+&lt;li&gt;直接民主与代议民主，直接民主：每个人都能参与政治的、雅典的，现代中的公投，代议民主：选出代为管理的人&lt;/li&gt;
+&lt;li&gt;民主利弊，利：多元，解决分歧，参与政治是基本权利，抵御暴政，弊：混乱，加深分歧，强迫的西方民主是文化霸权，多数未必正确，受教育的少数意见被多数意见淹没&lt;/li&gt;
+&lt;li&gt;4 种民主&lt;ul&gt;
+&lt;li&gt;经典的雅典民主，弊端，女人与奴隶不参与政治，让男人有时间参与政治&lt;/li&gt;
+&lt;li&gt;有限民主，New Right 推崇的，放任的资本主义，个人为自己的经济和社会状态负责&lt;/li&gt;
+&lt;li&gt;发展民主，每个人无私的遵从公共意志，然而可以以公共意志的名义进行独裁。还有另一种不同阶层不同票数的方案，多数不一定正确&lt;/li&gt;
+&lt;li&gt;社会主义民主，问题是党派替代工人，领袖替代党派&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自由民主的不同解释&lt;ul&gt;
+&lt;li&gt;多元：麦迪逊民主，分散的政治力量，领袖向成员负责，缺点是导致政府过载&lt;/li&gt;
+&lt;li&gt;精英：多个精英团体在政治市场参与竞争，投票者如同消费者&lt;/li&gt;
+&lt;li&gt;社团：商界领袖与政府官员协商&lt;/li&gt;
+&lt;li&gt;新右派：减少政府干预经济，政客竞选许诺提高福利，从而高纳税，不利于经济&lt;/li&gt;
+&lt;li&gt;马克思：精英认为权利来自于教育、财富、社会地位等，马克思认为来自于生产手段，两者都认为权利在少数人手中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-REGIMES-OF-THE-MODERN-WORLD&#34;&gt;&lt;a href=&#34;#6-REGIMES-OF-THE-MODERN-WORLD&#34; class=&#34;headerlink&#34; title=&#34;6 REGIMES OF THE MODERN WORLD&#34;&gt;&lt;/a&gt;6 REGIMES OF THE MODERN WORLD&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;政治系统：政府的输出响应人民的输入的这种关系&lt;/li&gt;
+&lt;li&gt;政权：政府可以变，但政权只能通过内部或外部的军事干涉改变&lt;/li&gt;
+&lt;li&gt;Aristotle 对政府分 6 种，Who rule，一人、几个人、多数，Who benefits， 统治者，所有人，3 X 2 &amp;#x3D; 6，Montesquieu 提出三分权&lt;/li&gt;
+&lt;li&gt;冷战时分 3 种，资本主义、共产主义、发展中国家，本书按照政治、经济、文化来分 5 种&lt;ul&gt;
+&lt;li&gt;西方自由民主，允许反对，可参与政治，崇尚个人主义（可能高于责任），认为政府是自由的威胁&lt;/li&gt;
+&lt;li&gt;不自由民主，民主与集权的中间，反对声音弱，媒体管控，少数服从多数。集权国家的中产富裕后会支持集权而不像以前会支持民主&lt;/li&gt;
+&lt;li&gt;东亚，东方国家的民主受到孔子思想的影响，与个人主义不同。3 个特征，比起个人自由更重经济，支持父亲类型的强政府，强调社会和谐。中国和北韩属威权政府，与其它有选举的亚洲国家也有区别&lt;/li&gt;
+&lt;li&gt;伊斯兰，包含个人生活的规范&lt;/li&gt;
+&lt;li&gt;军事，分成集体领导和个人独裁。军事政变发生在经济不发达的国家&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;7-NATIONS-AND-NATIONALISM&#34;&gt;&lt;a href=&#34;#7-NATIONS-AND-NATIONALISM&#34; class=&#34;headerlink&#34; title=&#34;7 NATIONS AND NATIONALISM&#34;&gt;&lt;/a&gt;7 NATIONS AND NATIONALISM&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;国家分成政治上和文化上两种，传统的文化上，共同种族、语言，是神秘浪漫的；政治上强调公民忠诚，共同的价值观，更容易接纳外来人。文化不同的国家通常是政治国家，如 4 文化联合的英国、移民国家的美国&lt;/li&gt;
+&lt;li&gt;发展中国家是政治国家，仅仅因为共同反殖民，争取独立，而文化和种族上是不同的。因此经常有冲突，这是殖民时期的产物&lt;/li&gt;
+&lt;li&gt;4 种国家主义&lt;ul&gt;
+&lt;li&gt;自由国家主义。人类自然按照国家分类，每个国家是平等、自决的&lt;/li&gt;
+&lt;li&gt;保守国家主义。排外&lt;/li&gt;
+&lt;li&gt;扩张国家主义，服从某个领导人，团结内部、把外部当替罪羊&lt;/li&gt;
+&lt;li&gt;反殖民国家主义，通常采用马克思列宁的社会主义。国家主义可能只是弱化的社会主义，都基于合作和社区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;全球化的环保、经济、文化威胁到了国家主义&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;8-POLITICAL-ECONOMY-AND-GLOBALIZATION&#34;&gt;&lt;a href=&#34;#8-POLITICAL-ECONOMY-AND-GLOBALIZATION&#34; class=&#34;headerlink&#34; title=&#34;8 POLITICAL ECONOMY AND GLOBALIZATION&#34;&gt;&lt;/a&gt;8 POLITICAL ECONOMY AND GLOBALIZATION&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;政治与经济相互作用，政治经济学使用经济学方法分析政治&lt;/p&gt;
+&lt;p&gt;  政治经济学包含 3 种&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;国家中心的政治经济，保护主义，限制进口，扩大出口&lt;/li&gt;
+&lt;li&gt;经典政治经济，正和游戏，对交易双方有利，看不见的手达到平衡。完全竞争假设 1. 市场无限制 2. 没有生产者一家独大 3. 消费者充分知情&lt;/li&gt;
+&lt;li&gt;马克思政治经济，资产阶级通过剩余价值剥削无产阶级，这种阶级矛盾导致资本主义不稳定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  实际上没有纯粹的社会主义和资本主义形态，3 种资本主义（资本主义这里指经济形式，非意识形态）形态&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;企业资本主义，美国为代表，国家只提供基本的 safety net，最小化公有制和工会，利益驱动。弊端是不平等的物质和社会分裂&lt;/li&gt;
+&lt;li&gt;社会资本主义。欧洲，以社会团结、长期发展为目的。弊端高赋税&lt;/li&gt;
+&lt;li&gt;国家资本主义，国家调节市场，中国和亚洲国家&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;凯恩斯和新自由主义，代表管理和不管理的资本主义。新自由主义，从鼓励消费转为鼓励生产。现代经济介于两者之间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;全球化伴随着本土化、也可能激起当地的反感。经济、文化全球化外，政治全球化落后于前两者&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;讨论了金融危机反应了的内在问题还是自然波动，发生的原因缘于通过借贷来实现经济增长，如果减少政府开支或加税反而会让经济停滞&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;30 年代大萧条导致凯恩斯主义，70 年代滞涨导致新自由主义，金融危机并没导致新自由主义被抛弃&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;金融危机对中国影响很小，作者认为标志着经济从西方向东方的转移&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;出现反全球化的原因，USA 中产 30 年没有增长，穷人的福利下降，制造业导致失业&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;9-POLITICS，SOCIETY-AND-IDENTITY&#34;&gt;&lt;a href=&#34;#9-POLITICS，SOCIETY-AND-IDENTITY&#34; class=&#34;headerlink&#34; title=&#34;9 POLITICS，SOCIETY AND IDENTITY&#34;&gt;&lt;/a&gt;9 POLITICS，SOCIETY AND IDENTITY&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;工业社会，按照经济划分社会阶级，而非传统社会中的地位&lt;/li&gt;
+&lt;li&gt;后工业化社会，个人主义、工具主义，弱化社会连接。劳动密集型重工业减弱，服务业兴起&lt;/li&gt;
+&lt;li&gt;信息和知识是竞争力和生产力，政府的责任是改善教育，扩大个人机会&lt;/li&gt;
+&lt;li&gt;弊端，散播极端主义，损害个人思考&lt;/li&gt;
+&lt;li&gt;公平是否正义，让本来不同的人得到同样的结果就是不公平。经济还是社会稳定&lt;/li&gt;
+&lt;li&gt;个人主义赋予个人人权和独特个体，弊端是忽视公共利益，以及消费主义提倡的立刻满足&lt;/li&gt;
+&lt;li&gt;身份政治：反对被边缘化的政治，种族、性别、文化，批评者认为多样性导致了国家分裂&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;10-POLITICAL-CULTURE-AND-THE-MEDIA&#34;&gt;&lt;a href=&#34;#10-POLITICAL-CULTURE-AND-THE-MEDIA&#34; class=&#34;headerlink&#34; title=&#34;10 POLITICAL CULTURE AND THE MEDIA&#34;&gt;&lt;/a&gt;10 POLITICAL CULTURE AND THE MEDIA&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;马克思的方式认为文化、价值是用来骗被统治阶级的&lt;/li&gt;
+&lt;li&gt;个人主义、流动性增强导致公民参与减少，与人连接减少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;媒体对政治的影响有多个不同观点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以表达意见，体现民主。监督政府&lt;/li&gt;
+&lt;li&gt;也有认为是被政府控制、被大媒体机构控制、少数精英控制，只体现了他们的价值观&lt;/li&gt;
+&lt;li&gt;也有认为媒体市场化，为了吸引关注，变得娱乐化，而非教育公民&lt;/li&gt;
+&lt;li&gt;社交平台促进民主，发起线下活动&lt;/li&gt;
+&lt;li&gt;弊端是网络上极端言论带来关注，关注带来收益&lt;/li&gt;
+&lt;li&gt;民粹中的反智，认为大众比少数专家更聪明&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;11-REPRESENTATION-ELECTIONS-AND-VOTING&#34;&gt;&lt;a href=&#34;#11-REPRESENTATION-ELECTIONS-AND-VOTING&#34; class=&#34;headerlink&#34; title=&#34;11 REPRESENTATION, ELECTIONS AND VOTING&#34;&gt;&lt;/a&gt;11 REPRESENTATION, ELECTIONS AND VOTING&lt;/h1&gt;&lt;p&gt;政府应该如何代表人们，政府是指导、被指导、还是与人们相似&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trustee 模式，根据知识程度一人代表不同的票数，政府有更大自主权&lt;/li&gt;
+&lt;li&gt;Delegate 模式，不偏离选民的要求&lt;/li&gt;
+&lt;li&gt;Mandate 模式，代表政党，忠于自己的政党&lt;/li&gt;
+&lt;li&gt;Resemblance 模式，政府人员按照不同群体的比例安排以体现公平&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;选举作用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;非竞争的选举也可提供执政合法性，象征意义&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;选举系统大致分两类，一种比例代表，强调公平，一种是多数当选，强调效率&lt;/p&gt;
+&lt;p&gt;选举结果的意义是不明确的，受到理性和非理性，私利和无私，无意识等复杂因素影响，可能无法弄懂人们为何这样投票&lt;/p&gt;
+&lt;p&gt;一种解读是把投票当作出于自身利益购买商品，但也观点认为人们买这个商品是因为广告，即政治宣传，多数人并不真的了解政治问题&lt;/p&gt;
+&lt;p&gt;投票理论&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;政党认同，一种心理学偏好，但这种趋势下降了，人们的偏好较以前容易变化&lt;/li&gt;
+&lt;li&gt;社会学模型，中产右翼，工人左翼，同政党认同，偏好也不固定了&lt;/li&gt;
+&lt;li&gt;理性选择，基于自身利益的选择，弊端是忽视整体&lt;/li&gt;
+&lt;li&gt;意识形态，被教育和媒体影响，弊端是忽视个人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;12-PARTIES-AND-PARTY-SYSTEMS&#34;&gt;&lt;a href=&#34;#12-PARTIES-AND-PARTY-SYSTEMS&#34; class=&#34;headerlink&#34; title=&#34;12 PARTIES AND PARTY SYSTEMS&#34;&gt;&lt;/a&gt;12 PARTIES AND PARTY SYSTEMS&lt;/h1&gt;&lt;p&gt;政党划分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;干部型和大众型，干部型由精英组成，大众型去意识形态，以吸引更多选票&lt;/li&gt;
+&lt;li&gt;被动承受意见，还是主动教育大众。还分主流和民粹&lt;/li&gt;
+&lt;li&gt;左右划分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;政党作用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代表人民，达成目标&lt;/li&gt;
+&lt;li&gt;培养精英&lt;/li&gt;
+&lt;li&gt;一党类型分两种，共产主义政党，反殖民类型国家&lt;/li&gt;
+&lt;li&gt;另外三种：两党派，主导党派，多党派&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;13-GROUPS-INTERESTS-AND-MOVEMENTS&#34;&gt;&lt;a href=&#34;#13-GROUPS-INTERESTS-AND-MOVEMENTS&#34; class=&#34;headerlink&#34; title=&#34;13 GROUPS, INTERESTS AND MOVEMENTS&#34;&gt;&lt;/a&gt;13 GROUPS, INTERESTS AND MOVEMENTS&lt;/h1&gt;&lt;p&gt;群体分 3 种&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;取决于出生所属种族、地位的团体，政府内部团体，一般社会团体&lt;/li&gt;
+&lt;li&gt;团体可以按照，服务于团体内成员还是公共利益划分，按照政府内部还是外部划分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;14-Preface&#34;&gt;&lt;a href=&#34;#14-Preface&#34; class=&#34;headerlink&#34; title=&#34;14 Preface&#34;&gt;&lt;/a&gt;14 Preface&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本书提供一个思考框架和工具，即 interests, interactions, institutions&lt;/li&gt;
+&lt;li&gt;由 5 部分组成&lt;ol&gt;
+&lt;li&gt;1-2 历史背景和分析框架&lt;/li&gt;
+&lt;li&gt;3-6 战争&lt;/li&gt;
+&lt;li&gt;7-10 经济&lt;/li&gt;
+&lt;li&gt;11-13 全球治理&lt;/li&gt;
+&lt;li&gt;14 总结和未来挑战&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;以问题为导向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;15-Introduction&#34;&gt;&lt;a href=&#34;#15-Introduction&#34; class=&#34;headerlink&#34; title=&#34;15 Introduction&#34;&gt;&lt;/a&gt;15 Introduction&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;通过了解和努力让世界变得更好&lt;/li&gt;
+&lt;li&gt;每章提出问题，如何建立理论来解释它&lt;/li&gt;
+&lt;li&gt;但严格来说，理论、概括性的解释永远无法准确描述现实，会过度简化。因此用概率的方式，指出哪些因素会增加或降低可能性&lt;/li&gt;
+&lt;li&gt;一些假设无法判断是否正确，只能判断是否解释了现象。如：政客为了维持执政，商人追求利益，这些假设都是过度简化用来分析问题&lt;/li&gt;
+&lt;li&gt;interaction 两种，bargain 一方获利，另一方就少获利（个观：零和博弈），cooperation 至少让一方获利，而不损失任何一方&lt;/li&gt;
+&lt;li&gt;interaction 3 个分析层面，国际、国内、跨国（国际 + 国内） 。应用分析时有从国际到国内分析，也有反过来的&lt;/li&gt;
+&lt;li&gt;realism, liberalism, constructivism&lt;/li&gt;
+&lt;li&gt;现实主义认为合作很难，各自为自己国家利益，是无政府状态，悲观&lt;/li&gt;
+&lt;li&gt;自由主义，通过 democratic institutions 可以避免战争，促成合作，乐观&lt;/li&gt;
+&lt;li&gt;构成主义，强调非物质的，即文化和规范的影响。冲突不仅是军事和经济导致，还是文化的冲突&lt;/li&gt;
+&lt;li&gt;现代世界很难这样划分，3 种思想都有，本书以问题导向，不用这种分法，而是传授批评、分析思考问题方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;16-Understanding-Interests-Interactions-and-Institutions&#34;&gt;&lt;a href=&#34;#16-Understanding-Interests-Interactions-and-Institutions&#34; class=&#34;headerlink&#34; title=&#34;16 Understanding Interests, Interactions, and Institutions&#34;&gt;&lt;/a&gt;16 Understanding Interests, Interactions, and Institutions&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;inerests 分 3 种，权利与安全，经济财富，意识形态目标，这 3 种并不互斥，如追求财富和权利可服务与意识形态&lt;/li&gt;
+&lt;li&gt;国家可只两种内容，一种作为追求权利的国家整体，另一种指代国家领导人&lt;/li&gt;
+&lt;li&gt;分析时选取多少历史背景是个人主观决定的，总体上，倾向于选择简单的解释&lt;/li&gt;
+&lt;li&gt;合作是正和游戏，bargain 是零和游戏。合作和 bargain 可能同时进行，比如商量 bargain 谁在合作中付出多少&lt;/li&gt;
+&lt;li&gt;协调，类似右侧驾驶，没有背叛的动机，而合作有背叛动机，囚徒困境中的美苏核弹竞赛&lt;/li&gt;
+&lt;li&gt;public goods，会出现白嫖的 free ride，即不贡献力量来享受公共资源，比如国防、水资源，因此通常通过政府征税来解决&lt;/li&gt;
+&lt;li&gt;哪些因素影响合作&lt;ul&gt;
+&lt;li&gt;actor 的人数越多越难合作&lt;/li&gt;
+&lt;li&gt;重复交流产生合作（战争时双方战壕互不攻击），合作的方向越多，为了防止新方向不合作会影响已有合作，所以更容易导致合作&lt;/li&gt;
+&lt;li&gt;信息越容易检验对方是否合作没有背叛，越容易合作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;谁赢得 bargin 取决于 power，谁更能承受不合作的后果&lt;ul&gt;
+&lt;li&gt;强迫，军事和经济制裁&lt;/li&gt;
+&lt;li&gt;有其它选择时&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;制度影响合作，如囚徒困境中，囚犯属于某犯罪团伙，团伙会惩罚背叛的人&lt;/li&gt;
+&lt;li&gt;由权威机构（可施加惩罚）来解决困境，公共利益中谁都不愿意贡献，就由政府来收税&lt;/li&gt;
+&lt;li&gt;国际上无政府，靠自助，由参与者惩罚不遵守的人，但机构对促进合作也是有作用的&lt;ul&gt;
+&lt;li&gt;设立标准&lt;/li&gt;
+&lt;li&gt;核查是否遵守，自我报告，国际原子能机构核查&lt;/li&gt;
+&lt;li&gt;制定决策，解决分歧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;规则从来不是中立的，体现了制度制定时 actor 的 bargin 能力&lt;/li&gt;
+&lt;li&gt;为何 actor 会遵守对自己不利的规则，1. 为了以后长期利益，比如 WTO 2. 创立新的规则需要投入商量的成本 。然而当利益很大时，actor 也会不遵守规则，如同在国内违法一样&lt;/li&gt;
+&lt;li&gt;战争是 bargain 失败的结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;17-Why-Are-There-Wars&#34;&gt;&lt;a href=&#34;#17-Why-Are-There-Wars&#34; class=&#34;headerlink&#34; title=&#34;17 Why Are There Wars&#34;&gt;&lt;/a&gt;17 Why Are There Wars&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;不只要清楚为何而战，同时因为战争的高成本，还有知道为何选择用战争解决&lt;/li&gt;
+&lt;li&gt;原因：无政府状态，阻止强大邻国的威胁，因为缺少信息而乐观估计形势（胜率、代价），国内政策也会导致战争&lt;/li&gt;
+&lt;li&gt;为何而战，有战略价值、资源、文化意义的领土&lt;/li&gt;
+&lt;li&gt;因为战争导致双方都损失，所以理论上存在协商空间&lt;/li&gt;
+&lt;li&gt;然而获取不到足够的信息，对自己和对手水平的错误估计导致战争&lt;/li&gt;
+&lt;li&gt;有时是故意隐藏自己最好、最差的牌，为了将虚张声势和真实意愿区分开来，即提高可信度，可通过边缘政策（将危险政策推到极限）、去掉退路（如公开声明）、调用军队等付出代价的事&lt;/li&gt;
+&lt;li&gt;矛盾的是为了表决心，让对手相信，反而要去掉退路、冒着引发战争的风险&lt;/li&gt;
+&lt;li&gt;同时如协议达成，如何确保双方履行，如美国攻击之前协商放弃发展武器的利比亚&lt;/li&gt;
+&lt;li&gt;preventive war: 阻碍对手壮大，preemptive war: 先发制人，如先发与后发的结果相差很大，即两种情况 bargain range 不重叠，双发就会抢先开战，谈判只是拖住对手&lt;/li&gt;
+&lt;li&gt;由于信息不足导致的战争，在开打后信息获取到就结束了，然而如果是 preventive war 则持续很久&lt;/li&gt;
+&lt;li&gt;战争更容易发生的情况&lt;ul&gt;
+&lt;li&gt;有战略价值的领土&lt;/li&gt;
+&lt;li&gt;对手军事实力增强&lt;/li&gt;
+&lt;li&gt;先发对结果影响很大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;无法分割导致无法妥协，如圣地耶路撒冷，并非物理无法分割，而是分割后价值消失。但同时注意不可分割有可能是国家的借口&lt;/li&gt;
+&lt;li&gt;无法分割可通过共享使用、金钱补偿来解决&lt;/li&gt;
+&lt;li&gt;战争呈现减少趋势&lt;ul&gt;
+&lt;li&gt;核弹导致成本增加&lt;/li&gt;
+&lt;li&gt;科技的提高导致对领土的争夺不那么重要&lt;/li&gt;
+&lt;li&gt;经济互相依赖也使成本增加（反对者认为也可能因果相反，和平导致经济互相依赖）&lt;/li&gt;
+&lt;li&gt;民主制度也可能导致战争减少&lt;/li&gt;
+&lt;li&gt;国际组织提高信息透明度，促进国家遵守约定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;18-Domestic-Politics-and-War&#34;&gt;&lt;a href=&#34;#18-Domestic-Politics-and-War&#34; class=&#34;headerlink&#34; title=&#34;18 Domestic Politics and War&#34;&gt;&lt;/a&gt;18 Domestic Politics and War&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;不把国家当一个整体时，战争是否仅服务于少数利益集团。团体的影响力取决于成员合作能力，因此一个小的利益集团可以以公众利益为代价来推行自己的政策，这部分代价平摊到每个人的损失很少，因此松散的公众会 free ride，不会花精力维权。但民主制度提供了低成本维权的一种方式&lt;/li&gt;
+&lt;li&gt;双方政客都能从战争中获得很大的收益时（超过战争成本），会利用“聚旗”效应，转移国内的不满，但同时也包含了失败的风险&lt;/li&gt;
+&lt;li&gt;女性为了对抗柔弱的刻板印象，反而要表现的更强硬，不论在国内还是与对手谈判时&lt;/li&gt;
+&lt;li&gt;军事利益集团可能推动战争（如日本）也可能因为知道战争的局限，而反对战争&lt;/li&gt;
+&lt;li&gt;不同利益团体会改变（增加或减少）战争几率，政府和利益集团间会形成互利关系&lt;/li&gt;
+&lt;li&gt;军队对决策有很大影响，如直接的军事独裁，间接的给出决策建议&lt;/li&gt;
+&lt;li&gt;然而并非利益集团就完全控制了政府，利益集团只是影响了战争成本的计算，从而改变战争几率，而且存在多个集团观点相反的情况&lt;/li&gt;
+&lt;li&gt;作者给出民主国家没有战争的原因，1. 双方只有成功几率很高时才会发动战争，因为民主制度让领导者对人们负责 2. 做出的承诺对对手来说更可信，同样因为要对国内人们负责&lt;/li&gt;
+&lt;li&gt;对民主导致和平的质疑？1. 第 3 个因素导致的和平和民主，如经济发展、共同利益（反德国、苏联） 2. 只是巧合 3. 因果相反，和平导致民主&lt;/li&gt;
+&lt;li&gt;民主中需要小心的地方。1. 民主制度可以摧毁民主，希特勒掌权为例 2.  公众被国家主义煽动反而导致战争&lt;/li&gt;
+&lt;li&gt;对于反美的民主政权，美国为自身利益，反而支持亲美的独裁政权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;19-International-Institutions-and-War&#34;&gt;&lt;a href=&#34;#19-International-Institutions-and-War&#34; class=&#34;headerlink&#34; title=&#34;19 International Institutions and War&#34;&gt;&lt;/a&gt;19 International Institutions and War&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;结盟是因为共同利益、互补需求、联合抵挡共同敌人，少数是瓜分战利品&lt;/li&gt;
+&lt;li&gt;结盟是为了告诉其他国家，提高结盟的可信度，可通过减少战争成本、增加收益、提高抛弃盟友的成本，在盟国驻扎军队、联合军演、公开结盟仪式、过去的联姻&lt;/li&gt;
+&lt;li&gt;但当自己的战争成本比盟友高时，维持现状比起战争更有利时，要防止被盟友利用而拖入战争。以美国对中国与台湾的模糊政策为例，要在结盟可信度和限制盟友上做出平衡&lt;/li&gt;
+&lt;li&gt;英国是否参战的不确定性、结盟的松散、害怕盟友背叛导致两次世界大战，但冷战中只有两个强国，结盟更紧密，因此稳定没爆发战争&lt;/li&gt;
+&lt;li&gt;UN 不同于同盟，用来维护和平，也会干预种族灭绝等人权问题。当双方承诺停火，但害怕对方先发制人时，维和部队在双方领土中间监督，如戈兰高地&lt;/li&gt;
+&lt;li&gt;UN 也会有搭便车问题&lt;/li&gt;
+&lt;li&gt;UN 设立五常，好处：人数少决策好形成，可以得到大国的资源援助，坏处：与大国利益冲突时会被否决&lt;/li&gt;
+&lt;li&gt;有两种军事行动，阻止战争和停战后维护和平，前者一般涉及自身利益才会有国家愿意出兵，后者则更容易实现，因为代价小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;20-Violence-by-Nonstate-Actors-Civil-War-and-Terrorism&#34;&gt;&lt;a href=&#34;#20-Violence-by-Nonstate-Actors-Civil-War-and-Terrorism&#34; class=&#34;headerlink&#34; title=&#34;20 Violence by Nonstate Actors: Civil War and Terrorism&#34;&gt;&lt;/a&gt;20 Violence by Nonstate Actors: Civil War and Terrorism&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;如何招人，获得资源&lt;/li&gt;
+&lt;li&gt;非对称战争（两方军事实力不对等），游击战的方式&lt;/li&gt;
+&lt;li&gt;原因不满当前政策，或寻求特权，通过领土独立、改变政策、推翻政权，可能会有其它国家资助&lt;/li&gt;
+&lt;li&gt;独立未必更好，因为独立后，不想独立的人也会导致冲突&lt;/li&gt;
+&lt;li&gt;如何招人&lt;ul&gt;
+&lt;li&gt;种族&lt;/li&gt;
+&lt;li&gt;意识形态&lt;/li&gt;
+&lt;li&gt;钱、物质&lt;/li&gt;
+&lt;li&gt;强迫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;什么样的容易爆发内战&lt;ul&gt;
+&lt;li&gt;非极权、非民主国家，民主有和平方式、极权可以镇压&lt;/li&gt;
+&lt;li&gt;贫穷的国家，人民不满，政府缺少资金消灭叛乱&lt;/li&gt;
+&lt;li&gt;地形复杂，不容易平定叛乱&lt;/li&gt;
+&lt;li&gt;外国资助&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;内战比国家间战争时间长，因为&lt;ul&gt;
+&lt;li&gt;协议中政府会要求叛乱解除武装， 而叛乱不信任政府。而国家间战争，停火后可以各自保留军队&lt;/li&gt;
+&lt;li&gt;叛乱内部极端派系，阻碍协商&lt;/li&gt;
+&lt;li&gt;叛乱派系众多，导致政府不敢向其中任何一派妥协，怕引发连锁反应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;叛乱人员会隐藏在群众中，不正面对抗，只是增加政府开销。政府可以在人民中树立信心，同时停止误伤平民&lt;/li&gt;
+&lt;li&gt;如何减少内战&lt;ul&gt;
+&lt;li&gt;维和部队可以帮助解决政府遵守承诺的问题&lt;/li&gt;
+&lt;li&gt;经济上不与反叛组织交易，如毒品、矿石&lt;/li&gt;
+&lt;li&gt;转型为民主国家，但转型过程中可能因政府太弱而无法对抗反叛力量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;恐怖组织的信仰极端（即利益只属于小众群体），但行为是理性的（即服务于自身利益）&lt;/li&gt;
+&lt;li&gt;恐怖组织无法通过政府机制实现诉求，因此要袭击平民。松散的组织结构使政府难以消灭&lt;/li&gt;
+&lt;li&gt;恐怖组织与杀人犯不同在于，目的是政治诉求，与反叛组织不同在于袭击平民&lt;/li&gt;
+&lt;li&gt;恐怖组织与国家战争一样属于 bargain failure，从 3 个原因考虑&lt;ul&gt;
+&lt;li&gt;信息问题，恐怖组织不会公开袭击计划、实力&lt;/li&gt;
+&lt;li&gt;commit problem，恐怖组织松散，无法保证所有成员履行承诺。同时政府妥协，可能导致出现更多恐怖组织提出诉求&lt;/li&gt;
+&lt;li&gt;恐怖分子通过强迫、引导对手打击以使温和派加入自己、破坏和平协议、行动上比同类组织积极&lt;/li&gt;
+&lt;li&gt;防范手段：先发制人、防御、定罪、协商&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;21-International-Trade&#34;&gt;&lt;a href=&#34;#21-International-Trade&#34; class=&#34;headerlink&#34; title=&#34;21 International Trade&#34;&gt;&lt;/a&gt;21 International Trade&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;通过比较优势，每个国家做自己最擅长的让所有国家获益。这种优势来源于土地、资产（钱和设备）、劳动力的不同&lt;/li&gt;
+&lt;li&gt;然而除了比较优势，交易还来源于品牌、国家间外交关系&lt;/li&gt;
+&lt;li&gt;贸易保护的手段关税、限定进口量。经济学家多数赞成自由贸易，然而 60% 的美国人支持贸易保护&lt;/li&gt;
+&lt;li&gt;支持与赞成贸易保护由利益决定，三种维度的范围不断缩小&lt;ul&gt;
+&lt;li&gt;一种观点从阶级的角度考虑，那种资源稀少，与之利益相关的人就会赞同保护主义，如工人少，则工人赞同贸易保护，资本家赞同自由贸易。穷国工人多，富国工人少&lt;/li&gt;
+&lt;li&gt;另一种观点从产业的角度考虑，这个产业的人不论资本家还是工人都持有同一观点（反对或赞成贸易保护）&lt;/li&gt;
+&lt;li&gt;第 3 种是从产业中的大公司考虑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;促成合作的要素仍然和之前类似，人数少、信息公开、重复互动、与其它利益关联，人数少的极端形式是存在一个强大的霸权（英国、美国）来维持稳定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;22-International-Financial-Relations&#34;&gt;&lt;a href=&#34;#22-International-Financial-Relations&#34; class=&#34;headerlink&#34; title=&#34;22 International Financial Relations&#34;&gt;&lt;/a&gt;22 International Financial Relations&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;IMF 支持者认为其维持了金融秩序，反对者认为它是服务于债主的收债人&lt;/li&gt;
+&lt;li&gt;对待移民的态度也是同样，当国家低技能劳动力少时，本国的劳动力就会使用保护政策，反对移民&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;23-International-Monetary-Relations&#34;&gt;&lt;a href=&#34;#23-International-Monetary-Relations&#34; class=&#34;headerlink&#34; title=&#34;23 International Monetary Relations&#34;&gt;&lt;/a&gt;23 International Monetary Relations&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;固定汇率的问题是，国家当经济不好时，没有调整的工具，如想降低利率刺激经济时。货币贬值时政府提高利率，吸引投资者&lt;/li&gt;
+&lt;li&gt;浮动汇率问题是，变化太大会阻碍国际贸易&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;强汇率时有利于国内消费者和国外生产者，弱汇率反之&lt;/p&gt;
+&lt;p&gt;货币危机会从一个国家传染给其他国家&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;金标准&lt;/li&gt;
+&lt;li&gt;布雷顿森林体系&lt;/li&gt;
+&lt;li&gt;浮动汇率，但小国通常与大国汇率绑定；贸易频繁的欧洲，也形成了欧元区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;24-Development-Cause-of-the-Wealth-and-Poverty-of-Nations&#34;&gt;&lt;a href=&#34;#24-Development-Cause-of-the-Wealth-and-Poverty-of-Nations&#34; class=&#34;headerlink&#34; title=&#34;24 Development: Cause of the Wealth and Poverty of Nations&#34;&gt;&lt;/a&gt;24 Development: Cause of the Wealth and Poverty of Nations&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;国家的发展速度并不相同，世界上多数人是贫穷的&lt;/li&gt;
+&lt;li&gt;国家要发展经济既要解决国内的利益和制度阻碍，又要解决国际的利益冲突&lt;/li&gt;
+&lt;li&gt;对国内来说，小部分人为了自身利益会损害整体利益。这种特点在自然资源丰富的国家更突出，国家只需服务于掌握了资源的小部分人就可以&lt;ul&gt;
+&lt;li&gt;这一点作者以美国南部和南美国家的经济为例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;殖民对被殖民地的好坏取决于地区是否适宜居住&lt;br&gt;  - 热带疾病肆虐的地区，政策为掠夺资源&lt;br&gt;  - 适宜居住的地区，殖民者定居并指定促进经济的政策&lt;br&gt;  - 虽然殖民者与被殖民者有共同利益，但当利益冲突时殖民者优先&lt;/li&gt;
+&lt;li&gt;发展中国家&lt;ul&gt;
+&lt;li&gt;发展中国家出口的都是粗加工产品，因此竞争激烈，价格低，不如发达国家的产品利润高&lt;/li&gt;
+&lt;li&gt;国际贸易规则偏向于发达国家，发达国家也会补贴本国农民&lt;/li&gt;
+&lt;li&gt;发展中国家影响国际规则的例子是 OPEC&lt;/li&gt;
+&lt;li&gt;发展中国家由二战后的自给自足转向出口和开放，然而对外开放会受到金融危机的影响，因此近年来出现发对者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;是否应该给予发展中国家援助&lt;ul&gt;
+&lt;li&gt;支持者认为，尤其在医疗方面已经有了改善&lt;/li&gt;
+&lt;li&gt;反对者认为，只有改变国家政策才行，否则都让当权者挥霍了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;25-International-Law-and-Norms&#34;&gt;&lt;a href=&#34;#25-International-Law-and-Norms&#34; class=&#34;headerlink&#34; title=&#34;25 International Law and Norms&#34;&gt;&lt;/a&gt;25 International Law and Norms&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;国家主权原则，国际法需国家自愿同意&lt;/li&gt;
+&lt;li&gt;国际法分为首要规则和次要规则，次要规则类似于宪法，首要规则需要与次要规则一致&lt;/li&gt;
+&lt;li&gt;国际法来源于&lt;ul&gt;
+&lt;li&gt;习俗、已采纳的实践&lt;/li&gt;
+&lt;li&gt;国际条约&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;国际法分成硬性规定和软性建议两种&lt;/li&gt;
+&lt;li&gt;对国际法作用怀疑的人认为国家只不过选择了符合自己利益的法律，法律并不会改变国家的行为&lt;/li&gt;
+&lt;li&gt;国际法是自助的形式，但确实让国家间协商更容易了&lt;/li&gt;
+&lt;li&gt;国际道德准则同样制约国家，如不使用核武器，尽管对手无能力反击，国家也不会首先考虑用核武器解决争端&lt;/li&gt;
+&lt;li&gt;作者讨论了发达国家抵制童工商品，但同时并没有给予这些家庭金钱援助，从而使这些人过得更不好，比如转入底下工厂或卖淫&lt;/li&gt;
+&lt;li&gt;TAN（跨国宣传网络）通过让新的标准与普世的道德联系起来从而获得更多人支持。少量道德标准最后会成为人们习以为常的事，比如不吃人肉&lt;/li&gt;
+&lt;li&gt;本国政府禁止 NGO 参与政治时，NGO 可以联系其它民主国家 NGO，通过民主国家的政府或国际组织像本国政府施压&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;26-Human-Rights&#34;&gt;&lt;a href=&#34;#26-Human-Rights&#34; class=&#34;headerlink&#34; title=&#34;26 Human Rights&#34;&gt;&lt;/a&gt;26 Human Rights&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;西方主导的 ICCPR ，提倡言论自由、法律面前平等、宗教自由&lt;/li&gt;
+&lt;li&gt;共产国家主导的 ICESCR，提倡同工同酬、免费教育、版权保护、机会平等&lt;/li&gt;
+&lt;li&gt;国家会提倡自己施行的制度或者对于对手难以施行的制度，人权与道德不同还没有被普遍认同&lt;/li&gt;
+&lt;li&gt;亚洲价值观从新加坡、马来西亚提出到最近的中国，都与西方人权内容中的优先级不同&lt;/li&gt;
+&lt;li&gt;国家为何违反人权&lt;ul&gt;
+&lt;li&gt;政府无能力阻止侵犯人权&lt;/li&gt;
+&lt;li&gt;为了国家安全&lt;/li&gt;
+&lt;li&gt;为了维持统治&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;为何有的国家签署人权协议&lt;ul&gt;
+&lt;li&gt;新建立的民主政权巩固国内的政治改革&lt;/li&gt;
+&lt;li&gt;获得其它民主国家的援助&lt;/li&gt;
+&lt;li&gt;既有同情、价值观的利他原因，又有稳定其他国家避免影响到自身的利己原因&lt;/li&gt;
+&lt;li&gt;有要求贸易伙伴符合人权为了保护国内市场，因为协议更难达成了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;统计上看人权从 1980 年后有了改善&lt;/li&gt;
+&lt;li&gt;人权协议短期影响有限，国际难以惩罚政府，但能带来长期影响&lt;/li&gt;
+&lt;li&gt;能让其它国家惩罚人权违反者的因素包括&lt;ul&gt;
+&lt;li&gt;国内民众压力&lt;/li&gt;
+&lt;li&gt;与其它国家利益相关联，比如是敌对国家&lt;/li&gt;
+&lt;li&gt;不会被人指责干涉他国主权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;27-The-Global-Environment&#34;&gt;&lt;a href=&#34;#27-The-Global-Environment&#34; class=&#34;headerlink&#34; title=&#34;27 The Global Environment&#34;&gt;&lt;/a&gt;27 The Global Environment&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;按照商品能否排他（让别人无法获得）、获得后是否竞争（我获得了你就没有了）分成 4 种商品&lt;/li&gt;
+&lt;li&gt;为了避免囚徒困境，有两种方式，转为私有财产，或使用法律监管&lt;/li&gt;
+&lt;li&gt;促成公共商品的合作有 5 种因素&lt;ul&gt;
+&lt;li&gt;角色少&lt;/li&gt;
+&lt;li&gt;问题不复杂，清晰定义&lt;/li&gt;
+&lt;li&gt;角色间有互惠利益关联&lt;/li&gt;
+&lt;li&gt;公共商品与私有商品绑定&lt;/li&gt;
+&lt;li&gt;解决公共商品问题对一少部分角色有很大好处&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通过拍卖碳排放点数的方式，让最难减排的购买，让容易减排的选择替代方案&lt;/li&gt;
+&lt;li&gt;外部性 externality 导致一方的受益会让另一方损失，即损失和受益不是同一方承担&lt;/li&gt;
+&lt;li&gt;发达国家想让发展中国家承担同样的减排量，发展中国家认为应以国家发展情况制定目标&lt;/li&gt;
+&lt;li&gt;为了是代表未来的自己和现在的自己协商，因此经常是现在的自己赢也就不奇怪了&lt;/li&gt;
+&lt;li&gt;国际环保组织的作用：设立要达成的目标、提供最新科研结果。TAN 帮助监督其它国家的合规情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;28-Challenges-to-the-Global-Order&#34;&gt;&lt;a href=&#34;#28-Challenges-to-the-Global-Order&#34; class=&#34;headerlink&#34; title=&#34;28 Challenges to the Global Order&#34;&gt;&lt;/a&gt;28 Challenges to the Global Order&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;二战后美国的主导地位接受中国的挑战，一些国家如朝鲜和伊朗对美国抱有敌意&lt;/li&gt;
+&lt;li&gt;全球化的进口和移民导致一些人的利益受损，或一些人讨厌外来文化&lt;/li&gt;
+&lt;li&gt;达到互相的核威慑需要&lt;ul&gt;
+&lt;li&gt;二次核打击，即在对方先用核武器后仍然有反击能力&lt;/li&gt;
+&lt;li&gt;领导人是理性的，顾及自己国民的性命&lt;/li&gt;
+&lt;li&gt;遭受打击后能确定核武器的使用者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;既然有核威慑，为何还要阻止核武器扩散呢&lt;ul&gt;
+&lt;li&gt;新拥有核武的国家会改变利益格局&lt;/li&gt;
+&lt;li&gt;国内政局动荡，无法保护核武不被偷或意外发射&lt;/li&gt;
+&lt;li&gt;可能卖给恐怖分子，或者被恐怖分子偷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如何阻止核扩散&lt;ul&gt;
+&lt;li&gt;阻止恐怖分子接触核武&lt;/li&gt;
+&lt;li&gt;有核国家（如美国）承诺保护无核国家&lt;/li&gt;
+&lt;li&gt;核不扩散条约（在没有五常国家反对制裁的情况下有效）&lt;/li&gt;
+&lt;li&gt;最后手段是武力胁迫，但要让对方相信解除核武后不会被更快消灭&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;新兴国家中国挑战旧的领导国美国时，旧国会想将对手消灭在萌芽中，新国会不断要求改变现有利益分配。然而从历史看这种情况未必一定导致战争&lt;/li&gt;
+&lt;li&gt;新旧两国是否有战争取决于战争好处相对于战争成本的大小&lt;ul&gt;
+&lt;li&gt;当战争成本高时，在新兴国家的发展前与发展后两者的 bargain range 有重叠，即旧国家不会挑起预防性（防止新兴国家崛起）战争，具体见书 P612&lt;/li&gt;
+&lt;li&gt;发展起来的德国和日本没有与美国产生冲突，因为冷战中共同的威胁、经济往来、民主价值观&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;认为中美会开战的原因&lt;ul&gt;
+&lt;li&gt;美国阻止中国获得领土，如台湾和领海&lt;/li&gt;
+&lt;li&gt;中国的经济和政治与美国主导的国际体系不兼容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;认为中美不会开战的原因&lt;ul&gt;
+&lt;li&gt;中美之间的经济往来&lt;/li&gt;
+&lt;li&gt;新兴的中产会推动政治民主&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;美国&lt;ul&gt;
+&lt;li&gt;遏制方式，经济制裁，军事与中国邻国结盟&lt;/li&gt;
+&lt;li&gt;鼓励方式，增加中国在现有国际框架中的好处，让其不愿放弃现有制度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;全球化&lt;ul&gt;
+&lt;li&gt;跨国公司、资本家推动全球化&lt;/li&gt;
+&lt;li&gt;全球化让国家中丰富的生产要素（资本、劳动力、徒弟）获益，让稀有的生产要素损失&lt;ul&gt;
+&lt;li&gt;因此发达国家尤其是低技能工人受损，要与发展中国家的工人竞争，而这些国家的工资低、劳动保障不全面&lt;/li&gt;
+&lt;li&gt;但如果重新分布收益，补偿受损的群体，总体来看自由贸易是获益的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/How%20To%20Become%20A%20Hacker/</id>
+        <title>How To Become A Hacker</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/How%20To%20Become%20A%20Hacker/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;来源 &lt;a href=&#34;http://www.catb.org/~esr/faqs/hacker-howto.html&#34;&gt;How To Become A Hacker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For true hackers, the boundaries between “play”, “work”, “science” and “art” all tend to disappear, or to merge into a high-level creative playfulness&lt;/li&gt;
+&lt;li&gt;hackers build things, crackers break them&lt;ul&gt;
+&lt;li&gt;这里只谈软件上的黑客，其中 hackers 和 crackers 的区别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hackers solve problems and build things, and they believe in freedom and voluntary mutual help&lt;/li&gt;
+&lt;li&gt;to be a hacker you have to get a basic thrill from solving problems, sharpening your skills, and exercising your intelligence&lt;ul&gt;
+&lt;li&gt;Otherwise you’ll find your hacking energy is sapped by distractions like sex, money, and social approval&lt;/li&gt;
+&lt;li&gt;if you tackle just a piece of it and learn from that, you’ll learn enough to solve the next piece — and so on, until you’re done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you’re attracted to hacking because you don’t have a life, that’s OK too — at least you won’t have trouble concentrating. Maybe you’ll get a life later on.&lt;/li&gt;
+&lt;li&gt;If you lack the intelligence, there is little hope for you as a hacker; if you lack the discipline, you’d better grow it.&lt;/li&gt;
+&lt;li&gt;You can learn language features — bits of knowledge — from books, but the mind-set that makes that knowledge into living skill can be learned only by practice and apprenticeship. &lt;ul&gt;
+&lt;li&gt;What will do it is (a) reading code and (b) writing code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How long will it take me to learn to hack?&lt;ul&gt;
+&lt;li&gt;That depends on how talented you are and how hard you work at it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从解决问题中获得快感，从而不被其它事情分心&lt;/li&gt;
+&lt;li&gt;喜欢提高自己的能力并乐在其中，self-motivated&lt;/li&gt;
+&lt;li&gt;远离社交确实可以让自己更专注，但这不是必须&lt;/li&gt;
+&lt;li&gt;崇尚效率&lt;ul&gt;
+&lt;li&gt;不浪费他人时间&lt;/li&gt;
+&lt;li&gt;不解决重复的问题，如闭源软件阻止了重复利用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;推荐 Python、Go、C&amp;#x2F;C++、LISP&lt;ul&gt;
+&lt;li&gt;如果一个编程语言做得太多，那么它适合生产，但不适合学习&lt;/li&gt;
+&lt;li&gt;LISP 是个独特的体验&lt;/li&gt;
+&lt;li&gt;因为现在机器性能已经足够优秀，在性能不关键时减少直接用 C 编程，节省自己的时间&lt;/li&gt;
+&lt;li&gt;只有练习才能提高，读代码、写代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;弄个网站&lt;/li&gt;
+&lt;li&gt;学好英语&lt;/li&gt;
+&lt;li&gt;gift culture，通过给与获得声望，得到别人承认&lt;/li&gt;
+&lt;li&gt;求助时，体现出自己的思考，谨慎提问&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/</id>
+        <title>食物</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%A3%9F%E7%89%A9/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nh.ckcest.cn/default/page/loadPageIndex?pageId=40a8e21962e945a9b8b94e9729b32aee&#34;&gt;各国居民膳食营养素参考摄入量查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;asset 中 “美国居民膳食指南（2020-2025）”的中英文 pdf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/物理环境/食物&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/</id>
+        <title>防灾</title>
+        <link rel="alternate" href="https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/"/>
+        <content type="html">&lt;h1 id=&#34;1-地震&#34;&gt;&lt;a href=&#34;#1-地震&#34; class=&#34;headerlink&#34; title=&#34;1 地震&#34;&gt;&lt;/a&gt;1 地震&lt;/h1&gt;&lt;p&gt;&lt;a id=&#34;xn06&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发生前&lt;ul&gt;
+&lt;li&gt;与家人约定集合地点，避难点，公园、学校&lt;/li&gt;
+&lt;li&gt;准备 &lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E5%BA%94%E6%80%A5%E7%89%A9%E5%93%81%E6%B8%85%E5%8D%95/#%E9%A3%9F%E7%89%A9&#34;&gt;食物&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生时，&lt;a href=&#34;https://www.usgs.gov/faqs/what-should-i-do-during-earthquake&#34;&gt;What should I do DURING an earthquake?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;室内&amp;#x2F;室外，跪下、掩护、抓牢，&lt;a href=&#34;https://www.shakeout.org/dropcoverholdon/&#34;&gt;DROP, COVER, AND HOLD ON!&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;跪下，不要往室外跑&lt;/li&gt;
+&lt;li&gt;掩护头颈，桌子、枕头、书包、双手。爬，远离窗户、非承重墙、阳台、重家具、会掉落物品的地方&lt;/li&gt;
+&lt;li&gt;抓牢遮挡物，抓桌腿&lt;br&gt; &lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E9%98%B2%E7%81%BE/giphy.gif&#34; alt=&#34;跪下、掩护、抓牢&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;开车，待在车里，同样远离坠落物避险&lt;/li&gt;
+&lt;li&gt;地震可能造成海啸和泥石流，要尽快远离海边、山脚，前往高处&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生后&lt;ul&gt;
+&lt;li&gt;被困时&lt;ul&gt;
+&lt;li&gt;用东西支撑住身边可能掉落的重物&lt;/li&gt;
+&lt;li&gt;节省体力，寻找水和食物&lt;/li&gt;
+&lt;li&gt;以规律性敲击或光亮求救，确定有人再大声呼救&lt;/li&gt;
+&lt;li&gt;防范挤压综合征，&lt;a href=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E6%80%A5%E6%95%91/#xFVn&#34;&gt;急救-挤压伤&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;没被困，需要避难时&lt;ol&gt;
+&lt;li&gt;关闭家中水电煤&lt;/li&gt;
+&lt;li&gt;电话通知（打不通时发短信）或给家人留下字条&lt;/li&gt;
+&lt;li&gt;不要乘电梯&lt;/li&gt;
+&lt;li&gt;去约定的避难点&lt;/li&gt;
+&lt;li&gt;小心余震，避开悬挂物、电线、玻璃&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-洪水-泥石流-台风&#34;&gt;&lt;a href=&#34;#2-洪水-泥石流-台风&#34; class=&#34;headerlink&#34; title=&#34;2 洪水/泥石流/台风&#34;&gt;&lt;/a&gt;2 洪水/泥石流/台风&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;准备&lt;ul&gt;
+&lt;li&gt;注意极端天气，橙、红色预警&lt;/li&gt;
+&lt;li&gt;泥石流前兆，传来火车般的响声&lt;/li&gt;
+&lt;li&gt;沙袋挡水&lt;/li&gt;
+&lt;li&gt;台风，窗户贴成米字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生时&lt;ul&gt;
+&lt;li&gt;电话求救&lt;/li&gt;
+&lt;li&gt;高处转移，与泥石流垂直的两边高处爬&lt;/li&gt;
+&lt;li&gt;把身体绑在固定物上&lt;/li&gt;
+&lt;li&gt;做简易救生筏&lt;/li&gt;
+&lt;li&gt;远离电线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-踩踏事故&#34;&gt;&lt;a href=&#34;#3-踩踏事故&#34; class=&#34;headerlink&#34; title=&#34;3 踩踏事故&#34;&gt;&lt;/a&gt;3 踩踏事故&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;发生条件，&lt;a href=&#34;https://www.youtube.com/watch?v=k-q8okcgq3Q&#34;&gt;原理介绍视频&lt;/a&gt;、&lt;a href=&#34;https://www.youtube.com/watch?v=cjUSrkC4wcA&#34;&gt;回形针视频&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;人群密度大&lt;/li&gt;
+&lt;li&gt;成拱现象：存在一个狭窄的口，人群想尽快从这个口逃离&lt;/li&gt;
+&lt;li&gt;异向集群：两种人群从这个口反向通过&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生前&lt;ul&gt;
+&lt;li&gt;去人多的地方时留意有几个出口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;死因：摔倒、胸部压迫&lt;/li&gt;
+&lt;li&gt;发生时，&lt;a href=&#34;http://m.xinhuanet.com/sd/2019-02/19/c_1124131264.htm&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://www.artofmanliness.com/skills/outdoor-survival/survive-human-stampede/&#34;&gt;参考2&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;双臂交叉撑开胸前（向打拳击一样），留出呼吸空间&lt;/li&gt;
+&lt;li&gt;顺着人群&lt;/li&gt;
+&lt;li&gt;避开人多出口、狭窄通道&lt;/li&gt;
+&lt;li&gt;慢慢对角移到侧边&lt;/li&gt;
+&lt;li&gt;从不显眼的出口离开&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;如果摔倒且无法起来&lt;ul&gt;
+&lt;li&gt;两手十指交叉相扣，护住后脑和颈部&lt;/li&gt;
+&lt;li&gt;两肘向前，护住头部&lt;/li&gt;
+&lt;li&gt;双膝尽量前屈，护住胸腔和腹腔重要脏器&lt;/li&gt;
+&lt;li&gt;侧躺在地&lt;/li&gt;
+&lt;li&gt;尝试站起&lt;br&gt;  &lt;img src=&#34;/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%BE/../%E9%98%B2%E7%81%BE/Pasted%20image%2020211023000247.png&#34; alt=&#34;踩踏摔倒&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-理论测试&#34;&gt;&lt;a href=&#34;#4-理论测试&#34; class=&#34;headerlink&#34; title=&#34;4 理论测试&#34;&gt;&lt;/a&gt;4 理论测试&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;与家人约定的地震避难场所是哪里？&lt;/li&gt;
+&lt;li&gt;地震发生时，低楼层（如一楼）是否应该跑到室外？&lt;/li&gt;
+&lt;li&gt;地震发生时的避难原则是什么？&lt;/li&gt;
+&lt;li&gt;地震发生后，被困时如何求救？&lt;/li&gt;
+&lt;li&gt;压迫肢体很久的重物被移走时会有什么风险？&lt;/li&gt;
+&lt;li&gt;发生踩踏时，如何应对脱险？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/物理环境/防灾&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The%20Headspace%20Guide/</id>
+        <title>The Headspace Guide</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The%20Headspace%20Guide/"/>
+        <content type="html">&lt;h1 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;作者的冥想练习源于想控制自己混乱的思绪、情绪&lt;/li&gt;
+&lt;li&gt;冥想分 3 步，如何接近、练习冥想、并整合到生活中&lt;ul&gt;
+&lt;li&gt;approach, practice, integrate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;作者强调读书是不够的，只有停止阅读，开始练习、亲自体验&lt;/li&gt;
+&lt;li&gt;正念，不评判的关注当下&lt;ul&gt;
+&lt;li&gt;冥想是达成正念的手段之一，在其他情景中也可以做到正念&lt;/li&gt;
+&lt;li&gt;但即使已经熟练应用正念了，仍会愿意每天冥想，作者将此比喻成即使熟练的司机也会慢下来欣赏路边风景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从少量时间（10min）开始练习冥想，注重质量，而非数量&lt;/li&gt;
+&lt;li&gt;人生中一些情况无能为力，但思维决定了内心感受，通过改变思维来改变看世界的方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;The-Approach&#34;&gt;&lt;a href=&#34;#The-Approach&#34; class=&#34;headerlink&#34; title=&#34;The Approach&#34;&gt;&lt;/a&gt;The Approach&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;在路旁看着车流，追逐好看的车，而逃避不好的车。但逐渐会不再追车，不陷入思绪当中&lt;/li&gt;
+&lt;li&gt;如同蓝天，有时会被乌云遮住，但只要等就能看到晴天&lt;/li&gt;
+&lt;li&gt;也比喻成驯服野马，逐渐收紧缰绳，给予耐心&lt;/li&gt;
+&lt;li&gt;对于好的感觉，想象与他人分享。对于不好的感觉，想象是他人的痛苦，给予陪伴&lt;/li&gt;
+&lt;li&gt;冥想不能去除不好的感觉，但更多的觉察会让这种感觉减弱，以及更好的处理这种感觉（个：即通过冥想意识到问题的本质和自己的处理方式）&lt;ul&gt;
+&lt;li&gt;保持好奇的去觉察，每次的感觉都是独特的。欣赏过程的风景，而非只顾终点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;The-Practice&#34;&gt;&lt;a href=&#34;#The-Practice&#34; class=&#34;headerlink&#34; title=&#34;The Practice&#34;&gt;&lt;/a&gt;The Practice&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;冥想通常分两部分，集中冷静部分、清楚洞察部分 (concentration calm, clarity insight)&lt;/li&gt;
+&lt;li&gt;冥想需要专注在某一个内容上，可以是外部的声音、内部的身体感觉，这样就不会有其它想法&lt;/li&gt;
+&lt;li&gt;过程&lt;ul&gt;
+&lt;li&gt;先花 5 分钟检查后面冥想可能会陷入的事件&lt;/li&gt;
+&lt;li&gt;30 秒感受呼吸和身体&lt;/li&gt;
+&lt;li&gt;数呼吸到 10，呼和吸都计数&lt;/li&gt;
+&lt;li&gt;最后 10-20 秒放飞思想&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;正念应用到站立、走路、躺着的状态，形成日常生活中的习惯&lt;/li&gt;
+&lt;li&gt;思想既不松也不紧，就是最好的状态&lt;/li&gt;
+&lt;li&gt;正念练习让我们关注身边人，避免冲动应对&lt;/li&gt;
+&lt;li&gt;吃的练习，包括不喜欢的食物&lt;/li&gt;
+&lt;li&gt;用于帮助入睡时，不要关注在睡眠上，而是其它感觉上&lt;/li&gt;
+&lt;li&gt;不论心情好坏，每天的习惯都尽量完成&lt;/li&gt;
+&lt;li&gt;记录下每次冥想后的感受，帮助自己看到成效&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
@@ -2097,401 +2303,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The%20Headspace%20Guide/</id>
-        <title>The Headspace Guide</title>
-        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The%20Headspace%20Guide/"/>
-        <content type="html">&lt;h1 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;作者的冥想练习源于想控制自己混乱的思绪、情绪&lt;/li&gt;
-&lt;li&gt;冥想分 3 步，如何接近、练习冥想、并整合到生活中&lt;ul&gt;
-&lt;li&gt;approach, practice, integrate&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;作者强调读书是不够的，只有停止阅读，开始练习、亲自体验&lt;/li&gt;
-&lt;li&gt;正念，不评判的关注当下&lt;ul&gt;
-&lt;li&gt;冥想是达成正念的手段之一，在其他情景中也可以做到正念&lt;/li&gt;
-&lt;li&gt;但即使已经熟练应用正念了，仍会愿意每天冥想，作者将此比喻成即使熟练的司机也会慢下来欣赏路边风景&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;从少量时间（10min）开始练习冥想，注重质量，而非数量&lt;/li&gt;
-&lt;li&gt;人生中一些情况无能为力，但思维决定了内心感受，通过改变思维来改变看世界的方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;The-Approach&#34;&gt;&lt;a href=&#34;#The-Approach&#34; class=&#34;headerlink&#34; title=&#34;The Approach&#34;&gt;&lt;/a&gt;The Approach&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;在路旁看着车流，追逐好看的车，而逃避不好的车。但逐渐会不再追车，不陷入思绪当中&lt;/li&gt;
-&lt;li&gt;如同蓝天，有时会被乌云遮住，但只要等就能看到晴天&lt;/li&gt;
-&lt;li&gt;也比喻成驯服野马，逐渐收紧缰绳，给予耐心&lt;/li&gt;
-&lt;li&gt;对于好的感觉，想象与他人分享。对于不好的感觉，想象是他人的痛苦，给予陪伴&lt;/li&gt;
-&lt;li&gt;冥想不能去除不好的感觉，但更多的觉察会让这种感觉减弱，以及更好的处理这种感觉（个：即通过冥想意识到问题的本质和自己的处理方式）&lt;ul&gt;
-&lt;li&gt;保持好奇的去觉察，每次的感觉都是独特的。欣赏过程的风景，而非只顾终点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;The-Practice&#34;&gt;&lt;a href=&#34;#The-Practice&#34; class=&#34;headerlink&#34; title=&#34;The Practice&#34;&gt;&lt;/a&gt;The Practice&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;冥想通常分两部分，集中冷静部分、清楚洞察部分 (concentration calm, clarity insight)&lt;/li&gt;
-&lt;li&gt;冥想需要专注在某一个内容上，可以是外部的声音、内部的身体感觉，这样就不会有其它想法&lt;/li&gt;
-&lt;li&gt;过程&lt;ul&gt;
-&lt;li&gt;先花 5 分钟检查后面冥想可能会陷入的事件&lt;/li&gt;
-&lt;li&gt;30 秒感受呼吸和身体&lt;/li&gt;
-&lt;li&gt;数呼吸到 10，呼和吸都计数&lt;/li&gt;
-&lt;li&gt;最后 10-20 秒放飞思想&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;正念应用到站立、走路、躺着的状态，形成日常生活中的习惯&lt;/li&gt;
-&lt;li&gt;思想既不松也不紧，就是最好的状态&lt;/li&gt;
-&lt;li&gt;正念练习让我们关注身边人，避免冲动应对&lt;/li&gt;
-&lt;li&gt;吃的练习，包括不喜欢的食物&lt;/li&gt;
-&lt;li&gt;用于帮助入睡时，不要关注在睡眠上，而是其它感觉上&lt;/li&gt;
-&lt;li&gt;不论心情好坏，每天的习惯都尽量完成&lt;/li&gt;
-&lt;li&gt;记录下每次冥想后的感受，帮助自己看到成效&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6/</id>
-        <title>如何阅读一本书</title>
-        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6/"/>
-        <content type="html">&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;学习阶段&lt;/th&gt;
-&lt;th&gt;阅读阶段&lt;/th&gt;
-&lt;th&gt;阅读具体怎么做&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;是什么？&lt;/td&gt;
-&lt;td&gt;检视阅读&lt;/td&gt;
-&lt;td&gt;获得书的主题、结构、关键词、关键段落&lt;br /&gt;封面、序言、目录、索引，关键词、关键段落&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;为何这样？&lt;/td&gt;
-&lt;td&gt;分析阅读&lt;/td&gt;
-&lt;td&gt;1. 总结作者观点（事实、逻辑、举例），为何这样写&lt;br /&gt;2. 检验是否理解有两种方法，用自己的话叙述、用例子阐明&lt;br /&gt;3. 检验后&lt;br /&gt;   - 对不理解的进行记录，尝试理解后再找参考资料&lt;br /&gt;   - 对理解的进行评论，评判时要具体指出问题&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;与其它方式对比&lt;/td&gt;
-&lt;td&gt;主题阅读&lt;/td&gt;
-&lt;td&gt;通过 检视阅读 建立起主题、找到相关书籍、确定书籍的框架&lt;br /&gt;以自己为中心，确立一套术语、框架、形成问题与答案集&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;我怎样做，创造&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;这部分我认为是写作而非阅读了&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id=&#34;1-序言&#34;&gt;&lt;a href=&#34;#1-序言&#34; class=&#34;headerlink&#34; title=&#34;1 序言&#34;&gt;&lt;/a&gt;1 序言&lt;/h1&gt;&lt;p&gt;为什么需要新版？&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;老问题仍然存在，小学后缺少阅读教育&lt;/li&gt;
-&lt;li&gt;增加新观点，提出不同层次的阅读方法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-The-Dimensions-of-Reading&#34;&gt;&lt;a href=&#34;#2-The-Dimensions-of-Reading&#34; class=&#34;headerlink&#34; title=&#34;2 The Dimensions of Reading&#34;&gt;&lt;/a&gt;2 The Dimensions of Reading&lt;/h1&gt;&lt;h2 id=&#34;2-1-THE-ACTIVITY-AND-ART-OF-READING&#34;&gt;&lt;a href=&#34;#2-1-THE-ACTIVITY-AND-ART-OF-READING&#34; class=&#34;headerlink&#34; title=&#34;2.1 THE ACTIVITY AND ART OF READING&#34;&gt;&lt;/a&gt;2.1 THE ACTIVITY AND ART OF READING&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;越多的事实反而会阻碍理解&lt;/li&gt;
-&lt;li&gt;媒体打包好的观点没有帮助读者思考&lt;/li&gt;
-&lt;li&gt;理解程度取决于 1. 读者投入精力 2. 读者的阅读技巧&lt;/li&gt;
-&lt;li&gt;只有最开始不理解的书，才能增加自己的理解，否则只是获取了信息&lt;/li&gt;
-&lt;li&gt;读书类似于无老师的指导式学习（与探索式学习区分），要自己找到解决疑问的方向&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-2-THE-LEVELS-OF-READING&#34;&gt;&lt;a href=&#34;#2-2-THE-LEVELS-OF-READING&#34; class=&#34;headerlink&#34; title=&#34;2.2 THE LEVELS OF READING&#34;&gt;&lt;/a&gt;2.2 THE LEVELS OF READING&lt;/h2&gt;&lt;p&gt;高级别包含低级&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;基础阅读（elementary reading），这个句子在说什么？&lt;/li&gt;
-&lt;li&gt;检视阅读（inspectional reading），1 小时内，读表面，解决简单问题，书的结构、关于什么的&lt;/li&gt;
-&lt;li&gt;分析阅读（analytical reading）,掌握书的全部内容，用于增加理解&lt;/li&gt;
-&lt;li&gt;主题阅读（syntopical reading），读同一主题的多本书，形成对主题的分析&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;2-3-THE-FIRST-LEVEL-OF-READING-ELEMENTARY-READING&#34;&gt;&lt;a href=&#34;#2-3-THE-FIRST-LEVEL-OF-READING-ELEMENTARY-READING&#34; class=&#34;headerlink&#34; title=&#34;2.3 THE FIRST LEVEL OF READING: ELEMENTARY READING&#34;&gt;&lt;/a&gt;2.3 THE FIRST LEVEL OF READING: ELEMENTARY READING&lt;/h2&gt;&lt;p&gt;阅读的四个阶段，有老师存在&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;身体、智力的准备&lt;/li&gt;
-&lt;li&gt;读简单读物，掌握 300 单词&lt;/li&gt;
-&lt;li&gt;增加单词量，学会不同领域的阅读&lt;/li&gt;
-&lt;li&gt;对概念的迁移运用，比较同一主题不同作者的观点，一生持续下去&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;高层的阅读经常被忽视&lt;/p&gt;
-&lt;h2 id=&#34;2-4-THE-SECOND-LEVEL-OF-READING-INSPECTIONAL-READING&#34;&gt;&lt;a href=&#34;#2-4-THE-SECOND-LEVEL-OF-READING-INSPECTIONAL-READING&#34; class=&#34;headerlink&#34; title=&#34;2.4 THE SECOND LEVEL OF READING: INSPECTIONAL READING&#34;&gt;&lt;/a&gt;2.4 THE SECOND LEVEL OF READING: INSPECTIONAL READING&lt;/h2&gt;&lt;p&gt;当作寻找线索的侦探游戏&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;有系统的跳读&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;决定是否深入阅读&lt;/li&gt;
-&lt;li&gt;获得书的表层内容，结构&lt;/li&gt;
-&lt;li&gt;封面、序言、目录、索引、宣传封套&lt;/li&gt;
-&lt;li&gt;引用索引中的关键词（你认为重要的词）的段落，关键章节中的总结段（开头、结尾）、其它章节的总结段落&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;粗浅阅读&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;跳过不懂的地方，尤其是读困难的书时&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;阅读速度&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;几分钟到一小时&lt;/li&gt;
-&lt;li&gt;不同的内容用不同的速度读，很多书跳读都不值得，一些书中的关键部分需要慢读（在分析阅读时），以独立宣言前部分为例&lt;/li&gt;
-&lt;li&gt;集中注意力是前提，接下来便是理解阻碍了阅读的速度，也是本书的写作主旨，而非速读课上仅提高基础阅读的速度&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;2-5-HOW-TO-BE-A-DEMANDING-READER&#34;&gt;&lt;a href=&#34;#2-5-HOW-TO-BE-A-DEMANDING-READER&#34; class=&#34;headerlink&#34; title=&#34;2.5 HOW TO BE A DEMANDING READER&#34;&gt;&lt;/a&gt;2.5 HOW TO BE A DEMANDING READER&lt;/h2&gt;&lt;p&gt;书中标记，保持清醒，方便日后回看&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;序号标明作者观点，总结作者观点&lt;/li&gt;
-&lt;li&gt;引用书中其它观点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;带着问题阅读&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;这本书的主题是什么？使用怎样的架构论述的？&lt;/li&gt;
-&lt;li&gt;这本书的细节讲了什么？&lt;/li&gt;
-&lt;li&gt;哪些说的是有道理的？&lt;/li&gt;
-&lt;li&gt;为什么作者要讲这些？这本书对你来说有意义吗？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;形成三种笔记&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;问题 1、2 用于检视阅读，形成结构笔记&lt;/li&gt;
-&lt;li&gt;问题 3、4 用于分析阅读，形成概念笔记&lt;/li&gt;
-&lt;li&gt;主题阅读，引用多本书，形成辩证笔记&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;为何要这么麻烦？&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;已经会阅读了，为什么还要用这么多复杂的规则？作者用已经会走路的人学习滑雪的过程类比&lt;/li&gt;
-&lt;li&gt;每个规则分别练习，熟练后，就会 &lt;code&gt;From Many Rules to One Habit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-The-Third-Level-of-Reading-Analytical-Reading&#34;&gt;&lt;a href=&#34;#3-The-Third-Level-of-Reading-Analytical-Reading&#34; class=&#34;headerlink&#34; title=&#34;3 The Third Level of Reading: Analytical Reading&#34;&gt;&lt;/a&gt;3 The Third Level of Reading: Analytical Reading&lt;/h1&gt;&lt;h2 id=&#34;3-1-PIGEONHOLING-A-BOOK&#34;&gt;&lt;a href=&#34;#3-1-PIGEONHOLING-A-BOOK&#34; class=&#34;headerlink&#34; title=&#34;3.1 PIGEONHOLING A BOOK&#34;&gt;&lt;/a&gt;3.1 PIGEONHOLING A BOOK&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;仔细阅读标题和序言，传达了信息&lt;/li&gt;
-&lt;li&gt;给书分类前，要清楚每个分类是什么&lt;/li&gt;
-&lt;li&gt;理论书籍告诉是什么，实践书籍告诉如何做，应该怎样做（道德、政治相关）&lt;/li&gt;
-&lt;li&gt;也会有书不好分类，继续阅读主干内容&lt;/li&gt;
-&lt;li&gt;分不清是哲学还是科学时，如果是日常经验是哲学，实验室经验是科学&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-2-X-RAYING-A-BOOK&#34;&gt;&lt;a href=&#34;#3-2-X-RAYING-A-BOOK&#34; class=&#34;headerlink&#34; title=&#34;3.2 X-RAYING A BOOK&#34;&gt;&lt;/a&gt;3.2 X-RAYING A BOOK&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;阶段一，回答问题 1&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;对书分类&lt;/li&gt;
-&lt;li&gt;使用一段话概括这本书的主题，有些书中会总结好&lt;/li&gt;
-&lt;li&gt;列出书中重要部分，这些部分如何组成整体的，逐级细分。因为书的质量不同，每本书投入的精力是不同的。书中的目录划分作为参考，但也可以不按照作者的方式。第 2 点和第 3 点是相互的&lt;/li&gt;
-&lt;li&gt;找出作者的意图&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;阶段二，回答问题 2&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;找出关键词（让自己困惑、作者特别强调的词），上下文确定含义&lt;/li&gt;
-&lt;li&gt;找出作者的结论、观点，支持该观点的证据&lt;/li&gt;
-&lt;li&gt;将观点组合成论点，可能在多个段落中。清楚作者的前提假设是什么&lt;/li&gt;
-&lt;li&gt;作者要解决的问题是什么？哪些问题没有被解决？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;规则只适用于非虚构类书&lt;/li&gt;
-&lt;li&gt;不论是找词还是找句子、段落，首先标明位置，这是语法层面，接下来阐释含义，这是逻辑层面&lt;/li&gt;
-&lt;li&gt;同一个语法元素（单词、句子、段落）可能表达不同含义，不同的元素可能表达同一含义，语法和逻辑层面是多对多的关系&lt;/li&gt;
-&lt;li&gt;检验是否理解有两种方法，用自己的话叙述、用例子阐明，否则只是停留在语法层面的文字游戏&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-3-CRITICIZING-A-BOOK-FAIRLY&#34;&gt;&lt;a href=&#34;#3-3-CRITICIZING-A-BOOK-FAIRLY&#34; class=&#34;headerlink&#34; title=&#34;3.3 CRITICIZING A BOOK FAIRLY&#34;&gt;&lt;/a&gt;3.3 CRITICIZING A BOOK FAIRLY&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;阶段三，回答问题 3、4&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;充分了解是进行认同、不认同、无法评价的前提&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;读懂前，不给出是否认同、无法判断的结论。同样，没理解就进行的评论可忽略&lt;/li&gt;
-&lt;li&gt;理性评论，不发泄情绪&lt;/li&gt;
-&lt;li&gt;区分知识和个人观点，评价有依据&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-4-AGREEING-OR-DISAGREEING-WITH-AN-AUTHOR&#34;&gt;&lt;a href=&#34;#3-4-AGREEING-OR-DISAGREEING-WITH-AN-AUTHOR&#34; class=&#34;headerlink&#34; title=&#34;3.4 AGREEING OR DISAGREEING WITH AN AUTHOR&#34;&gt;&lt;/a&gt;3.4 AGREEING OR DISAGREEING WITH AN AUTHOR&lt;/h2&gt;&lt;p&gt;不认同的四种情况，不互斥&lt;/p&gt;
-&lt;p&gt;这些错误只有与书中结论有关时才有意义&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;知识不充足。达尔文缺少基因遗传学知识&lt;/li&gt;
-&lt;li&gt;知识错误&lt;/li&gt;
-&lt;li&gt;推论不合逻辑&lt;/li&gt;
-&lt;li&gt;分析不完整。具体指出&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;阶段三完成，不同的书的投入是不同的&lt;/p&gt;
-&lt;h2 id=&#34;3-5-AIDS-TO-READING&#34;&gt;&lt;a href=&#34;#3-5-AIDS-TO-READING&#34; class=&#34;headerlink&#34; title=&#34;3.5 AIDS TO READING&#34;&gt;&lt;/a&gt;3.5 AIDS TO READING&lt;/h2&gt;&lt;p&gt;读完并尝试理解前，不去参考，防止影响自己的观点&lt;/p&gt;
-&lt;p&gt;参考的前提是，知道自己的问题是什么，如何找答案&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;相关经验&lt;/li&gt;
-&lt;li&gt;其它的书。历史书、哲学书是相关联的&lt;/li&gt;
-&lt;li&gt;导论与摘要&lt;/li&gt;
-&lt;li&gt;工具书，字典和百科&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4-Approaches-to-Different-Kinds-of-Reading-Matter&#34;&gt;&lt;a href=&#34;#4-Approaches-to-Different-Kinds-of-Reading-Matter&#34; class=&#34;headerlink&#34; title=&#34;4 Approaches to Different Kinds of Reading Matter&#34;&gt;&lt;/a&gt;4 Approaches to Different Kinds of Reading Matter&lt;/h1&gt;&lt;h2 id=&#34;4-1-HOW-TO-READ-PRACTICAL-BOOKS&#34;&gt;&lt;a href=&#34;#4-1-HOW-TO-READ-PRACTICAL-BOOKS&#34; class=&#34;headerlink&#34; title=&#34;4.1 HOW TO READ PRACTICAL BOOKS&#34;&gt;&lt;/a&gt;4.1 HOW TO READ PRACTICAL BOOKS&lt;/h2&gt;&lt;p&gt;阅读时带着问题读，判断是否书能帮助自己达成想要的目标，主动型&lt;/p&gt;
-&lt;p&gt;非虚构类型(expository)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;理论类。与作者无关&lt;/li&gt;
-&lt;li&gt;实践类，多数实践类阐述原则，具体规则由读者推断。与作者的背景有关&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;规则的变化&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;两个阶段的第 4 个问题都是与你有关，试图说服你&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-2-HOW-TO-READ-IMAGINATIVE-LITERATURE&#34;&gt;&lt;a href=&#34;#4-2-HOW-TO-READ-IMAGINATIVE-LITERATURE&#34; class=&#34;headerlink&#34; title=&#34;4.2 HOW TO READ IMAGINATIVE LITERATURE&#34;&gt;&lt;/a&gt;4.2 HOW TO READ IMAGINATIVE LITERATURE&lt;/h2&gt;&lt;p&gt;想象文学比 expository 书难，只读表面简单，但这里需要批判式阅读。被取悦与被教育相比更容易，当知道为什么被取悦就更困难。感觉到美容易，分析为什么美更困难。&lt;/p&gt;
-&lt;p&gt;不要做的&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;想象文学传达的是一种体验，不要抵抗这种影响，允许被感动&lt;/li&gt;
-&lt;li&gt;不要再找共识、论述&lt;/li&gt;
-&lt;li&gt;故事设定的合理来作为评判标准，不使用真实性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;expository 评论现有的体验，而想象文学提供新的体验。expository 教导我们，想象类的书需要我们自己从体验中学习&lt;/p&gt;
-&lt;p&gt;structural  interpretive  critical&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;structural 分类 诗、小说、戏剧。用一句话总结情节。了解每部分的情节，expository 的章节更独立，而想象类关联性更强&lt;/li&gt;
-&lt;li&gt;interpretive ，term 对应 事件和人物，需要熟悉。propositon 对应背景、虚构的世界。argument 对应情节&lt;/li&gt;
-&lt;li&gt;critical 不要对背景设定做出批评，可以批评这样设定后的内容。不喜欢和喜欢要说出为什么，指出书中对应的内容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-3-SUGGESTIONS-FOR-READING-STORIES-PLAYS-AND-POEMS&#34;&gt;&lt;a href=&#34;#4-3-SUGGESTIONS-FOR-READING-STORIES-PLAYS-AND-POEMS&#34; class=&#34;headerlink&#34; title=&#34;4.3 SUGGESTIONS FOR READING STORIES, PLAYS, AND POEMS&#34;&gt;&lt;/a&gt;4.3 SUGGESTIONS FOR READING STORIES, PLAYS, AND POEMS&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;故事书一次读完，在理解之前不要否定。书像生活一样，经历之后，向后看才能明白&lt;/li&gt;
-&lt;li&gt;故事书，要区分这种喜爱是只满足了个人的需求，还是通用的所有人的需求，作者认为后者算伟大的作品&lt;/li&gt;
-&lt;li&gt;史诗。作者鼓励尝试&lt;/li&gt;
-&lt;li&gt;戏剧，在阅读最后要尝试想象出演员的表演。大声带感情读出能够帮助理解&lt;/li&gt;
-&lt;li&gt;悲剧剧本很多不完整，不值得读，少数可以&lt;/li&gt;
-&lt;li&gt;诗歌，1. 读一遍不论是否理解 2. 再读一遍，大声读，帮助找到节奏。至少能够提出问题了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-4-HOW-TO-READ-HISTORY&#34;&gt;&lt;a href=&#34;#4-4-HOW-TO-READ-HISTORY&#34; class=&#34;headerlink&#34; title=&#34;4.4 HOW TO READ HISTORY&#34;&gt;&lt;/a&gt;4.4 HOW TO READ HISTORY&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;历史更接近小说而非科学&lt;/li&gt;
-&lt;li&gt;历史学家总是会有自己的立场，提出自己认为的事件原因，然而事实往往复杂。所以同一段历史要从多个角度来看&lt;/li&gt;
-&lt;li&gt;了解事实并非读历史的唯一原因，人们尤其是政客会以史为鉴&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;提问&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;讲的是哪部分历史？哪部分不会讲？&lt;/li&gt;
-&lt;li&gt;是用哪种方式讲述的？章节是如何划分的&lt;/li&gt;
-&lt;li&gt;批判有两种方式，但都以理解了内容为前提&lt;ul&gt;
-&lt;li&gt;叙述不真实，即便提供了来源，比如没有缺点的英雄&lt;/li&gt;
-&lt;li&gt;没有充分收集资料&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;与自己的关系？以史为鉴，避免犯错&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;传记相当于历史&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;definitive 传记更全面，更值得信赖&lt;/li&gt;
-&lt;li&gt;authorized  传记，由朋友或自己来写的，要注意偏见。但也可以了解那个时代哪些事情是被接受的&lt;/li&gt;
-&lt;li&gt;一些传记是用来教导人的，获得启示&lt;/li&gt;
-&lt;li&gt;自传也并非新的类别。广泛来说，我们可以通过任何人的作品来了解作者，即便这里面有掩饰的成分&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;How to Read About Current Events&lt;/p&gt;
-&lt;p&gt;阅读当代作品要注意作者或者其消息来源包含了利益关系&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;作者想要证明什么&lt;/li&gt;
-&lt;li&gt;想要说服谁&lt;/li&gt;
-&lt;li&gt;假设读者具备怎样的知识&lt;/li&gt;
-&lt;li&gt;使用了哪些知识&lt;/li&gt;
-&lt;li&gt;作者真正了解他谈论的话题吗&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;A Note on Digests&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;信息类内容是可以精简的&lt;/li&gt;
-&lt;li&gt;对精简人的特质要了解，避免被误导&lt;/li&gt;
-&lt;li&gt;即使精简了也要做好自己这部分&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-5-HOW-TO-READ-SCIENCE-AND-MATHEMATICS&#34;&gt;&lt;a href=&#34;#4-5-HOW-TO-READ-SCIENCE-AND-MATHEMATICS&#34; class=&#34;headerlink&#34; title=&#34;4.5 HOW TO READ SCIENCE AND MATHEMATICS&#34;&gt;&lt;/a&gt;4.5 HOW TO READ SCIENCE AND MATHEMATICS&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;读科学经典不是为了掌握现代领域知识，而是理解科学的历史和哲学&lt;/li&gt;
-&lt;li&gt;科学作品不是没有偏见，而是将前提假设明确说出&lt;/li&gt;
-&lt;li&gt;科学与科学术语的发展是相辅相成的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;科学作品两个难点&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;从现象进行归纳，需要亲自实践才能理解，做实验&lt;/li&gt;
-&lt;li&gt;数学&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;科学书籍中的数学&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;读第一遍避免陷入细节&lt;/li&gt;
-&lt;li&gt;数学因为精确、清晰、限制范围而经常被科学书籍使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;科普书&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;避免了数学和实验，但与阅读报纸一样，需要了解筛选人&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-6-HOW-TO-READ-PHILOSOPHY&#34;&gt;&lt;a href=&#34;#4-6-HOW-TO-READ-PHILOSOPHY&#34; class=&#34;headerlink&#34; title=&#34;4.6 HOW TO READ PHILOSOPHY&#34;&gt;&lt;/a&gt;4.6 HOW TO READ PHILOSOPHY&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;读哲学时，像孩子般提出简单的问题，同时又可以深刻、成熟的思考&lt;/li&gt;
-&lt;li&gt;要注意，一些科学问题不属于哲学问题，因为作者写作时科学还没有发展到那个程度&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;第一类&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;理论性问题&lt;ul&gt;
-&lt;li&gt;形而上学，存在问题&lt;/li&gt;
-&lt;li&gt;自然哲学，变化问题&lt;/li&gt;
-&lt;li&gt;认知论，关于知识的问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;实践性问题，规范&lt;ul&gt;
-&lt;li&gt;伦理学，善、恶，幸福和人生目标&lt;/li&gt;
-&lt;li&gt;政治哲学，良好的社会，个体与群体间关系的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;第二类&lt;br&gt;认为第一类问题无法解决，从而研究解决第一类问题时涉及的&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;需要用到的知识&lt;/li&gt;
-&lt;li&gt;回答时思考的内容&lt;/li&gt;
-&lt;li&gt;表达时使用的语言&lt;br&gt;这类问题狭窄，只限于专家研究&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;哲学风格&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;对话。柏拉图、苏克拉底。难写&lt;/li&gt;
-&lt;li&gt;论文。亚里士多德、康德。常见&lt;/li&gt;
-&lt;li&gt;反对意见讨论。阿奎那。较少&lt;/li&gt;
-&lt;li&gt;数学形式。笛卡尔、斯宾诺莎。难读、难写&lt;/li&gt;
-&lt;li&gt;警句形式。尼采。缺少解释&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;阅读哲学的提示&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;问题可能是隐含的&lt;/li&gt;
-&lt;li&gt;回答问题的原则也可能是隐含的&lt;/li&gt;
-&lt;li&gt;要注意，哲学术语来自于平时对话，但含义是不同的&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;隐含原则举例&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;柏拉图，conversation about philosophical subjects is perhaps the most important of all human activities&lt;/li&gt;
-&lt;li&gt;亚里士多德，happiness is the whole of the good, not the highest good&lt;/li&gt;
-&lt;li&gt;康德，Kant, is a critical survey and assessment of the mind’s resources and powers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;与科学问题不同，在阅读了不同的哲学书籍后，哲学问题是可以形成你自己的想法的&lt;/p&gt;
-&lt;p&gt;神学&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;自然神学&lt;/li&gt;
-&lt;li&gt;教义神学。困难在于对于没有信仰的人要暂时接受某个前提才能理解书的内容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-7-HOW-TO-READ-SOCIAL-SCIENCE&#34;&gt;&lt;a href=&#34;#4-7-HOW-TO-READ-SOCIAL-SCIENCE&#34; class=&#34;headerlink&#34; title=&#34;4.7 HOW TO READ SOCIAL SCIENCE&#34;&gt;&lt;/a&gt;4.7 HOW TO READ SOCIAL SCIENCE&lt;/h2&gt;&lt;p&gt;社会科学包括&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;人类学、经济学、政治学、社会学&lt;/li&gt;
-&lt;li&gt;大部分法律、教育、公共行政&lt;/li&gt;
-&lt;li&gt;一部分商业、社会服务&lt;/li&gt;
-&lt;li&gt;大量的心理学&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;困难的地方&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;社会科学的书籍经常是多种类型混合，因此回答这是一本什么样的书是一个难点&lt;/li&gt;
-&lt;li&gt;术语没有统一，coming to term&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;没有权威、更新的快，导致社会科学领域更需要主题阅读&lt;/p&gt;
-&lt;h1 id=&#34;5-The-Ultimate-Goals-of-Reading&#34;&gt;&lt;a href=&#34;#5-The-Ultimate-Goals-of-Reading&#34; class=&#34;headerlink&#34; title=&#34;5 The Ultimate Goals of Reading&#34;&gt;&lt;/a&gt;5 The Ultimate Goals of Reading&lt;/h1&gt;&lt;h2 id=&#34;5-1-SYNTOPICAL-READING&#34;&gt;&lt;a href=&#34;#5-1-SYNTOPICAL-READING&#34; class=&#34;headerlink&#34; title=&#34;5.1 SYNTOPICAL READING&#34;&gt;&lt;/a&gt;5.1 SYNTOPICAL READING&lt;/h2&gt;&lt;p&gt;问题：对主题的了解是随着阅读的增多形成的，即开始时存在悖论（没有阅读就不知道主题，没有主题就不知道怎样找相关的书）&lt;/p&gt;
-&lt;p&gt;解决方法：主题阅读开始前，通过检视阅读&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;去掉无关书籍 &lt;/li&gt;
-&lt;li&gt;了解相关书籍的概要 &lt;/li&gt;
-&lt;li&gt;了解主题是什么&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;主题阅读的 5 步，与分析阅读的区别是以你为中心&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;找出书中相关的内容&lt;/li&gt;
-&lt;li&gt;创造一套通用术语，将其它书的术语进行翻译&lt;/li&gt;
-&lt;li&gt;形成问题和答案&lt;/li&gt;
-&lt;li&gt;对问题和答案归类整理&lt;/li&gt;
-&lt;li&gt;对应分析阅读的问题 3、4，指出这样分类的原因&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;做到客观，理想状况是 look at all sides and to take no sides&lt;/p&gt;
-&lt;p&gt;Syntopicon 书可以提供与主题相关的书单，对阅读起到发起、建议和指导的作用&lt;/p&gt;
-&lt;h3 id=&#34;5-1-1-以“进步”举例&#34;&gt;&lt;a href=&#34;#5-1-1-以“进步”举例&#34; class=&#34;headerlink&#34; title=&#34;5.1.1 以“进步”举例&#34;&gt;&lt;/a&gt;5.1.1 以“进步”举例&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;不使用非虚构书籍，因为小说、戏剧、诗歌观点模糊&lt;/li&gt;
-&lt;li&gt;形成自己的术语，我们研究对人类有益的这种进步，当其它书中将”进步“这个词来指代其它内容的时候，我们对其总结时不再使用”进步“来避免歧义&lt;/li&gt;
-&lt;li&gt;明确问题。历史中存在进步吗？三种回答 是、否、无从知晓&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;对于回答是的还有 3 个争论&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;进步是必要的还是伴随其它事件发生的？&lt;/li&gt;
-&lt;li&gt;进步是否有尽头？&lt;/li&gt;
-&lt;li&gt;进步是由人类的动物本能还是外部环境产生的？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;对于回答是的还有 6 个子问题&lt;br&gt;知识进步、科技进步、经济进步、政治进步、道德进步、艺术进步&lt;/p&gt;
-&lt;h2 id=&#34;5-2-READING-AND-THE-GROWTH-OF-THE-MIND&#34;&gt;&lt;a href=&#34;#5-2-READING-AND-THE-GROWTH-OF-THE-MIND&#34; class=&#34;headerlink&#34; title=&#34;5.2 READING AND THE GROWTH OF THE MIND&#34;&gt;&lt;/a&gt;5.2 READING AND THE GROWTH OF THE MIND&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;只阅读能力范围内的书是没有进步的&lt;/li&gt;
-&lt;li&gt;主动的方式帮助成长，被动的外部激励（娱乐和信息），作者将其比作越来越依赖的毒品&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>

@@ -50,20 +50,6 @@
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.2/</id>
-        <title>5.2</title>
-        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.2/"/>
-        <content type="html">&lt;ul&gt;
-&lt;li&gt;墙壁承受压力的极限时间到 5.7 4:30 误差 12h&lt;/li&gt;
-&lt;li&gt;停电，空失踪，寻找空，得知空为 AI&lt;/li&gt;
-&lt;li&gt;去发电室查看电力问题&lt;/li&gt;
-&lt;li&gt;鸠通过漏水让电梯下降&lt;/li&gt;
-&lt;li&gt;捉迷藏，不知道谁踢了罐子，是还没被发现的那个人吗？&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <updated>1970-01-01T00:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.3-5.6/</id>
         <title>5.3-5.6</title>
         <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.3-5.6/"/>
@@ -95,6 +81,20 @@
 &lt;li&gt;通过 HIMEL 去往 IBF 来治疗可可，门从里面被人打开，遇到研究员&lt;/li&gt;
 &lt;li&gt;IBF 很多关闭的门，惨死的研究员&lt;/li&gt;
 &lt;li&gt;可可拜访过 IBF 中的父亲 TY&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.2/</id>
+        <title>5.2</title>
+        <link rel="alternate" href="https://synrst.de/%E7%88%B1%E5%A5%BD/Galgame/Ever17/%E5%9C%BA%E6%99%AF/5.2/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;墙壁承受压力的极限时间到 5.7 4:30 误差 12h&lt;/li&gt;
+&lt;li&gt;停电，空失踪，寻找空，得知空为 AI&lt;/li&gt;
+&lt;li&gt;去发电室查看电力问题&lt;/li&gt;
+&lt;li&gt;鸠通过漏水让电梯下降&lt;/li&gt;
+&lt;li&gt;捉迷藏，不知道谁踢了罐子，是还没被发现的那个人吗？&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>

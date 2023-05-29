@@ -115,64 +115,6 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/</guid>
-            <title>blog</title>
-            <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/</link>
-            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;1-部署&#34;&gt;&lt;a href=&#34;#1-部署&#34; class=&#34;headerlink&#34; title=&#34;1 部署&#34;&gt;&lt;/a&gt;1 部署&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;安装 git、node.js，参考 &lt;a href=&#34;https://hexo.io/zh-cn/docs/&#34;&gt;hexo 官网&lt;/a&gt;，windows、linux 有区别。git 设置 sock5 代理，见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/../git/&#34;&gt;git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥&lt;/li&gt;
-&lt;li&gt;安装 hexo 、主题、插件，主题可根据&lt;a href=&#34;https://github.com/mark0smith/Hexo_theme_stats&#34;&gt;star 排名&lt;/a&gt;来选择&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo init blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要在 config 中添加配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# source 目录下，关联笔记&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mklink /J _posts D:\Documents\Dropbox\notes\blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还有一个 footnote 插件从 hexo-theme-fluid 移植过来&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还有 add_assets_url.js 添加下载图标&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 所有插件可通过 hexo --debug 选项看到&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;1-1-Google-收录&#34;&gt;&lt;a href=&#34;#1-1-Google-收录&#34; class=&#34;headerlink&#34; title=&#34;1.1 Google 收录&#34;&gt;&lt;/a&gt;1.1 Google 收录&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;先创建 Google Analytics，添加 tracking_id 到主题配置文件，注意广告拦截和浏览器拦截&lt;/li&gt;
-&lt;li&gt;再创建 Google Search Console，用 Google Analytics 验证所有权&lt;/li&gt;
-&lt;li&gt;在 Google Analytics 选择媒体资源，Search Console 关联，进行两个产品的关联&lt;/li&gt;
-&lt;li&gt;在 Search Console 中提交站点地图 sitemap.xml&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;2-使用&#34;&gt;&lt;a href=&#34;#2-使用&#34; class=&#34;headerlink&#34; title=&#34;2 使用&#34;&gt;&lt;/a&gt;2 使用&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;原则是避免手动配置 front-matter，尽量自动生成，保持界面简洁易用&lt;/li&gt;
-&lt;li&gt;常用命令&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动 server 预览&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo clean &amp;amp;&amp;amp; npx hexo s --p 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 生成（只在确认生成文件时会用到）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 不加 --generate 会导致修改不推送&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 下划线 _ 开头的文件永远不会被推送&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 此外对于 exclude 的文件，clean 后首次不推送，再执行一次就可以推送了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 所以保险起见每次执行两次这个命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo deploy --generate&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可清除博客的更新历史记录，会导致全量部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -rf .deploy_git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;后期，如果流量大，图片和 asset 放到 github 其它 repo 上，避免超过 github pages 流量 100G&amp;#x2F;月 的限制&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-1-编写插件&#34;&gt;&lt;a href=&#34;#2-1-编写插件&#34; class=&#34;headerlink&#34; title=&#34;2.1 编写插件&#34;&gt;&lt;/a&gt;2.1 编写插件&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;插件的 &lt;a href=&#34;https://hexo.io/zh-cn/api/filter.html&#34;&gt;优先级&lt;/a&gt; 值越低越先处理原始 md 文件，因此低优先级可避免被其它插件的处理结果影响&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3-维护&#34;&gt;&lt;a href=&#34;#3-维护&#34; class=&#34;headerlink&#34; title=&#34;3 维护&#34;&gt;&lt;/a&gt;3 维护&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;备份：hexo 目录下所有内容（文章除外） git 记录修改，push 到 github 上&lt;/li&gt;
-&lt;li&gt;还原：&lt;ul&gt;
-&lt;li&gt;装 git、node&lt;ul&gt;
-&lt;li&gt;node 用 ppa &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04&#34;&gt;装最新版本 18.x&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;从 github clone，linux 环境要卸载原 hexo，重新安装（不清楚为何不跨平台），其它插件看起来没问题&lt;ul&gt;
-&lt;li&gt;db.json 报错：&lt;code&gt;手动创建 &lt;/code&gt;blog\node_modules\mime-db\db.json&lt;code&gt;，文件内容空 object&lt;/code&gt;{}&amp;#96;&lt;/li&gt;
-&lt;li&gt;这个 linux 环境作为 linux branch push 到 github 来备份&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;更新博客&lt;ul&gt;
-&lt;li&gt;通过 rclone 挂载 GoogleDrive，再 &lt;code&gt;ln -s&lt;/code&gt; 创建软链接到 &lt;code&gt;source/_posts&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;rclone 从官网下载 arm 版本&lt;/li&gt;
-&lt;li&gt;sudo apt install fuse3，rclone mount 需要&lt;ul&gt;
-&lt;li&gt;rclone 退出而没自动 umount 的情况（文件被占用），手动 &lt;code&gt;sudo umount&lt;/code&gt; 一下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;按 rclone config 提示，获得 GoogleDrive API 相关参数&lt;/li&gt;
-&lt;li&gt;创建 gd 文件夹，只读挂载 &lt;code&gt;./rclone --cache-dir=rc_cache --temp-dir=rc_temp mount gd: gd --vfs-cache-mode full --read-only&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;rclone 放到 screen 里面运行，.zshrc 添加 &lt;code&gt;screen -x&lt;/code&gt;，登录后就恢复上次的环境&lt;/li&gt;
-&lt;li&gt;配置 cron 每两小时自动 &lt;code&gt;npx hexo deploy --generate&lt;/code&gt; 更新博客&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/</guid>
             <title>git</title>
             <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/</link>
@@ -303,6 +245,64 @@
 &lt;li&gt;辅助用 &lt;a href=&#34;https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame&#34;&gt;git blame 或 git log -S&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/虚拟环境/4. 分享与备份/git&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/</guid>
+            <title>blog</title>
+            <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/</link>
+            <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-部署&#34;&gt;&lt;a href=&#34;#1-部署&#34; class=&#34;headerlink&#34; title=&#34;1 部署&#34;&gt;&lt;/a&gt;1 部署&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;安装 git、node.js，参考 &lt;a href=&#34;https://hexo.io/zh-cn/docs/&#34;&gt;hexo 官网&lt;/a&gt;，windows、linux 有区别。git 设置 sock5 代理，见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/../git/&#34;&gt;git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥&lt;/li&gt;
+&lt;li&gt;安装 hexo 、主题、插件，主题可根据&lt;a href=&#34;https://github.com/mark0smith/Hexo_theme_stats&#34;&gt;star 排名&lt;/a&gt;来选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo init blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 要在 config 中添加配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# source 目录下，关联笔记&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mklink /J _posts D:\Documents\Dropbox\notes\blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还有一个 footnote 插件从 hexo-theme-fluid 移植过来&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 还有 add_assets_url.js 添加下载图标&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 所有插件可通过 hexo --debug 选项看到&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;1-1-Google-收录&#34;&gt;&lt;a href=&#34;#1-1-Google-收录&#34; class=&#34;headerlink&#34; title=&#34;1.1 Google 收录&#34;&gt;&lt;/a&gt;1.1 Google 收录&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;先创建 Google Analytics，添加 tracking_id 到主题配置文件，注意广告拦截和浏览器拦截&lt;/li&gt;
+&lt;li&gt;再创建 Google Search Console，用 Google Analytics 验证所有权&lt;/li&gt;
+&lt;li&gt;在 Google Analytics 选择媒体资源，Search Console 关联，进行两个产品的关联&lt;/li&gt;
+&lt;li&gt;在 Search Console 中提交站点地图 sitemap.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-使用&#34;&gt;&lt;a href=&#34;#2-使用&#34; class=&#34;headerlink&#34; title=&#34;2 使用&#34;&gt;&lt;/a&gt;2 使用&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;原则是避免手动配置 front-matter，尽量自动生成，保持界面简洁易用&lt;/li&gt;
+&lt;li&gt;常用命令&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动 server 预览&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo clean &amp;amp;&amp;amp; npx hexo s --p 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 生成（只在确认生成文件时会用到）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 不加 --generate 会导致修改不推送&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 下划线 _ 开头的文件永远不会被推送&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 此外对于 exclude 的文件，clean 后首次不推送，再执行一次就可以推送了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 所以保险起见每次执行两次这个命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npx hexo deploy --generate&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可清除博客的更新历史记录，会导致全量部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; -rf .deploy_git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;后期，如果流量大，图片和 asset 放到 github 其它 repo 上，避免超过 github pages 流量 100G&amp;#x2F;月 的限制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-1-编写插件&#34;&gt;&lt;a href=&#34;#2-1-编写插件&#34; class=&#34;headerlink&#34; title=&#34;2.1 编写插件&#34;&gt;&lt;/a&gt;2.1 编写插件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;插件的 &lt;a href=&#34;https://hexo.io/zh-cn/api/filter.html&#34;&gt;优先级&lt;/a&gt; 值越低越先处理原始 md 文件，因此低优先级可避免被其它插件的处理结果影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-维护&#34;&gt;&lt;a href=&#34;#3-维护&#34; class=&#34;headerlink&#34; title=&#34;3 维护&#34;&gt;&lt;/a&gt;3 维护&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;备份：hexo 目录下所有内容（文章除外） git 记录修改，push 到 github 上&lt;/li&gt;
+&lt;li&gt;还原：&lt;ul&gt;
+&lt;li&gt;装 git、node&lt;ul&gt;
+&lt;li&gt;node 用 ppa &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04&#34;&gt;装最新版本 18.x&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;从 github clone，linux 环境要卸载原 hexo，重新安装（不清楚为何不跨平台），其它插件看起来没问题&lt;ul&gt;
+&lt;li&gt;db.json 报错：&lt;code&gt;手动创建 &lt;/code&gt;blog\node_modules\mime-db\db.json&lt;code&gt;，文件内容空 object&lt;/code&gt;{}&amp;#96;&lt;/li&gt;
+&lt;li&gt;这个 linux 环境作为 linux branch push 到 github 来备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;更新博客&lt;ul&gt;
+&lt;li&gt;通过 rclone 挂载 GoogleDrive，再 &lt;code&gt;ln -s&lt;/code&gt; 创建软链接到 &lt;code&gt;source/_posts&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;rclone 从官网下载 arm 版本&lt;/li&gt;
+&lt;li&gt;sudo apt install fuse3，rclone mount 需要&lt;ul&gt;
+&lt;li&gt;rclone 退出而没自动 umount 的情况（文件被占用），手动 &lt;code&gt;sudo umount&lt;/code&gt; 一下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;按 rclone config 提示，获得 GoogleDrive API 相关参数&lt;/li&gt;
+&lt;li&gt;创建 gd 文件夹，只读挂载 &lt;code&gt;./rclone --cache-dir=rc_cache --temp-dir=rc_temp mount gd: gd --vfs-cache-mode full --read-only&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rclone 放到 screen 里面运行，.zshrc 添加 &lt;code&gt;screen -x&lt;/code&gt;，登录后就恢复上次的环境&lt;/li&gt;
+&lt;li&gt;配置 cron 每两小时自动 &lt;code&gt;npx hexo deploy --generate&lt;/code&gt; 更新博客&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>
