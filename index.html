@@ -45,7 +45,30 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/LFS/">LFS</a></p><div class="content"><ul>
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/">git</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">   git config --global user.name <span class="string">"Your Name"</span></span><br><span class="line">   <span class="comment"># 不设置 email</span></span><br><span class="line">   git config --global user.email <span class="string">'&lt;&gt;'</span></span><br><span class="line">   <span class="comment"># 支持中文路径和文件名</span></span><br><span class="line">   git config --global core.quotepath <span class="literal">false</span></span><br><span class="line">   <span class="comment"># 编辑器设为 vi</span></span><br><span class="line">   git config --global core.editor <span class="string">"vi"</span> </span><br><span class="line">   <span class="comment"># 查看设置</span></span><br><span class="line">   git config --list</span><br><span class="line">   git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line"><span class="comment"># 提交简写</span></span><br><span class="line">git config --global alias.ac <span class="string">'!git add -A &amp;&amp; git commit -m'</span></span><br><span class="line">git config --global http.proxy http://127.0.0.1:17890</span><br></pre></td></tr></tbody></table></figure><p>1 基础
+
+初级教程、 命令总结文档、Pro Git 2nd、Pro Git 2nd（网页版）
+
+ 1. git 特点分布式，不必联网。建议文本 UTF-8 编码
+ 2. 安装 linux上 apt-get 或者 源码， windows版本
+ 3. 设置全局的用户名和邮箱，设置代理，初始化
+ 4. git pull 默认取所有分支，–all 取所有 remote。git push 默认当前分支，–all 所有分支
+ 5. 代理，只用 ssh 协议，不用 http。参考
+
+
+1.1 图形工具
+
+参考 best-three-way-merge-tool，使用 p4merge 和 meld
+
+受限于网速时可用 vimdiff
+
+- 一些按键
+- 关于 merge 的按键
+
+
+1.2 查看修改和历史
+
+- git diff 比较的是工作区与暂存区的差异，git diff HEAD -- readm ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/LFS/">LFS</a></p><div class="content"><ul>
 <li>书的由来：按自己的喜好搭建，写自己的软件，有一个自己的系统。这本书还可用来理解系统<ul>
 <li>定制化，尤其是小型嵌入式系统</li>
 <li>安全</li>
@@ -86,30 +109,7 @@ apt-get install openssh-server openssh-client
     - 对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0
  3. 更新系统、自动装驱动
  4. 关闭更新
- 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/">git</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   git config --global user.name <span class="string">"Your Name"</span></span><br><span class="line">   <span class="comment"># 不设置 email</span></span><br><span class="line">   git config --global user.email <span class="string">'&lt;&gt;'</span></span><br><span class="line">   <span class="comment"># 支持中文路径和文件名</span></span><br><span class="line">   git config --global core.quotepath <span class="literal">false</span></span><br><span class="line">   <span class="comment"># 编辑器设为 vi</span></span><br><span class="line">   git config --global core.editor <span class="string">"vi"</span> </span><br><span class="line">   <span class="comment"># 查看设置</span></span><br><span class="line">   git config --list</span><br><span class="line">   git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line"><span class="comment"># 提交简写</span></span><br><span class="line">git config --global alias.ac <span class="string">'!git add -A &amp;&amp; git commit -m'</span></span><br></pre></td></tr></tbody></table></figure><p>1 基础
-
-初级教程、 命令总结文档、Pro Git 2nd、Pro Git 2nd（网页版）
-
- 1. git 特点分布式，不必联网。建议文本 UTF-8 编码
- 2. 安装 linux上 apt-get 或者 源码， windows版本
- 3. 设置全局的用户名和邮箱，设置代理，初始化
- 4. git pull 默认取所有分支，–all 取所有 remote。git push 默认当前分支，–all 所有分支
- 5. 代理，只用 ssh 协议，不用 http。参考
-
-
-1.1 图形工具
-
-参考 best-three-way-merge-tool，使用 p4merge 和 meld
-
-受限于网速时可用 vimdiff
-
-- 一些按键
-- 关于 merge 的按键
-
-
-1.2 查看修改和历史
-
-- git diff 比较的是工作区与暂存区的差异，git diff HEAD -- readm ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/">物理环境</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/">急救</a></p><div class="content"><pre class="mermaid" style="display: block;margin: auto;">graph TD
+ 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/">物理环境</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E6%80%A5%E6%95%91/">急救</a></p><div class="content"><pre class="mermaid" style="display: block;margin: auto;">graph TD
  急救 --&gt; 基础 &amp; 短时致命 &amp; 内科 &amp; 外科 &amp; 其它 &amp; 平时准备
     基础 --&gt; 为什么学 &amp; 学习渠道 &amp; 法律问题 &amp; 施救流程 &amp; 环境安全和个人防护 &amp; 无反应有呼吸 &amp; 打120 &amp; 取急救箱和AED
     短时致命 --&gt; 心脏骤停 &amp; 气道梗阻 &amp; 大出血
