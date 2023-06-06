@@ -1739,11 +1739,13 @@
             <description><![CDATA[ &lt;h1 id=&#34;1-安装&#34;&gt;&lt;a href=&#34;#1-安装&#34; class=&#34;headerlink&#34; title=&#34;1 安装&#34;&gt;&lt;/a&gt;1 安装&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04&#34;&gt;ubuntu 20.04 安装&lt;/a&gt;、&lt;a href=&#34;https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;避免每次输入 sudo  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo groupadd docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo usermod -aG docker &lt;span class=&#34;variable&#34;&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 激活新修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;newgrp docker&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 提示没权限的话重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;compose &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04&#34;&gt;安装&lt;/a&gt;，这里下载的 github 地址要去 GitHub 看一下来改&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1-1-windows&#34;&gt;&lt;a href=&#34;#1-1-windows&#34; class=&#34;headerlink&#34; title=&#34;1.1 windows&#34;&gt;&lt;/a&gt;1.1 windows&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;wsl –update 用 wsl2&lt;/li&gt;
 &lt;li&gt;在 resource - proxies 设置代理&lt;/li&gt;
 &lt;li&gt;按 &lt;a href=&#34;https://devops.tutorials24x7.com/blog/how-to-change-docker-data-path-on-windows-10&#34;&gt;Configure WSL 2 Data Location&lt;/a&gt; 修改文件路径到其它盘&lt;/li&gt;
+&lt;li&gt;wsl 其它 distro 也可以这样改路径&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
