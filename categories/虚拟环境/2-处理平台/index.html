@@ -116,6 +116,11 @@ apt-get install openssh-server openssh-client
 <li><a target="_blank" rel="noopener" href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04">ubuntu 20.04 安装</a>、<a target="_blank" rel="noopener" href="https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04">参考二</a></li>
 <li>避免每次输入 sudo  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo groupadd docker</span><br><span class="line">sudo usermod -aG docker <span class="variable">$USER</span></span><br><span class="line"><span class="comment"># 激活新修改</span></span><br><span class="line">newgrp docker</span><br><span class="line"><span class="comment"># 提示没权限的话重启</span></span><br><span class="line">docker version</span><br></pre></td></tr></table></figure></li>
 </ul>
+<h2 id="1-1-windows"><a href="#1-1-windows" class="headerlink" title="1.1 windows"></a>1.1 windows</h2><ul>
+<li>wsl –update 用 wsl2</li>
+<li>在 resource - proxies 设置代理</li>
+<li>按 <a target="_blank" rel="noopener" href="https://devops.tutorials24x7.com/blog/how-to-change-docker-data-path-on-windows-10">Configure WSL 2 Data Location</a> 修改文件路径到其它盘</li>
+</ul>
 <h1 id="2-镜像"><a href="#2-镜像" class="headerlink" title="2 镜像"></a>2 镜像</h1><ul>
 <li><p>拉取镜像，替换源速度没有提升，建议 <a target="_blank" rel="noopener" href="https://note.qidong.name/2020/05/docker-proxy/">设置代理</a>，只设置前 http 和 https 两处就可以了</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker pull cdrx/pyinstaller-linux</span><br><span class="line"><span class="comment"># 使用  </span></span><br><span class="line">docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf</span><br><span class="line">docker pull --platform linux/arm64 alpine:latest</span><br></pre></td></tr></table></figure>
