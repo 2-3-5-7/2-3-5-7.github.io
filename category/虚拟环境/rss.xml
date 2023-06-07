@@ -529,7 +529,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;联网后用小米账户解锁，设置 WIFI 局域网代理从而可以登录 Google 账号，&lt;a href=&#34;https://blog.minamigo.moe/archives/287&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在 recovery 刷入 &lt;a href=&#34;https://magiskapp.com/zip/&#34;&gt;magisk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 recovery 刷入 &lt;a href=&#34;https://magiskapp.com/zip/&#34;&gt;magisk&lt;/a&gt;，官网下载 apk 文件（不是 zip，zip 是源码），然后重命名为 zip 文件后刷入&lt;/li&gt;
 &lt;li&gt;App&lt;ul&gt;
 &lt;li&gt;安装 &lt;code&gt;除Win外软件\手机\mi9se&lt;/code&gt; 里面的小米应用商店、MX 播放器、系统应用删除&lt;/li&gt;
 &lt;li&gt;删除系统应用，视频、音乐、搜索、服务与反馈、浏览器&lt;/li&gt;
