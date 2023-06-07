@@ -1,8 +1,0 @@
-#!/bin/sh
-
-dfile="/tmp/log.inst.dot.9002";
-
-echo "}" >> $dfile;
-dot -Tps -o x.ps $dfile
-ps2pdf x.ps
-
