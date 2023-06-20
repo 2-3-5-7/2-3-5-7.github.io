@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</loc>
+    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</loc>
     
-    <lastmod>2023-06-08</lastmod>
+    <lastmod>2023-06-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</loc>
+    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/GPT%E5%B7%A5%E5%85%B7/</loc>
+    
+    <lastmod>2023-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/</loc>
     
     <lastmod>2023-06-08</lastmod>
     

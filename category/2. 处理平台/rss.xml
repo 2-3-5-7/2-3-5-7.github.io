@@ -1084,8 +1084,8 @@
 &lt;td&gt;ZF3R0-FHED2-M80TY-8QYGC-NPKYF &lt;a href=&#34;https://www.ghxi.com/vmware15.html&#34;&gt;参考&lt;/a&gt;&lt;br /&gt;- 安装时勾选自动安装 WHP（基于 Hyper-V）。解释见 &lt;a href=&#34;https://www.jianshu.com/p/c02f776a65cd&#34;&gt;Hyper-V 和 VMWare 终于可以无缝共存&lt;/a&gt;、&lt;a href=&#34;https://zhuanlan.zhihu.com/p/381969738&#34;&gt;Windows 下各种虚拟化名词解释&lt;/a&gt;&lt;br /&gt;- 创建虚拟机，不要勾选虚拟化引擎 Intel VT-x 这些，因为 Hyper-V 底层已经用到这些技术了&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;office 2021（专业增强零售版）&lt;/td&gt;
-&lt;td&gt;1. 先卸载旧的 office，再用 OTP 工具的激活选项卡清除旧的激活信息，重启&lt;br/&gt;2. 用 OTP &lt;a href=&#34;https://help.coolhub.top/zh-cn/deploy/#%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85&#34;&gt;离线安装&lt;/a&gt; 专业增强零售版，安装选 word、excel、powerpoint 三个&lt;br /&gt;3. 使用 HEU_KMS_Activator 转为 VL 版同时激活，使用 HEU_KMS_Activator 时要安全中心关闭实时扫描&lt;br /&gt;要是win11 一直激活失败 0x80080005，改用在线 KMS 激活&lt;/td&gt;
+&lt;td&gt;office 2021（Office LTSC 专业增强版 2021（SPLA））&lt;/td&gt;
+&lt;td&gt;1. 先卸载旧的 office，再用 OTP 工具的激活选项卡清除旧的激活信息，重启&lt;br/&gt;2. 用 OTP 通道： Office 2021 企业长期版，产品：Office LTSC 专业增强版 2021（SPLA）&lt;br /&gt;3. 在 OTP 中设置 KMS 服务器激活，&lt;a href=&#34;https://www.bilibili.com/read/cv19851359/&#34;&gt;参考&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Office Tool Plus&lt;/td&gt;
@@ -1254,6 +1254,10 @@
 &lt;tr&gt;
 &lt;td&gt;bilinovel2epub&lt;/td&gt;
 &lt;td&gt;哔哩轻小说转 epub&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Umi-OCR&lt;/td&gt;
+&lt;td&gt;离线 OCR 软件&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;3-5-不常安装&#34;&gt;&lt;a href=&#34;#3-5-不常安装&#34; class=&#34;headerlink&#34; title=&#34;3.5 不常安装&#34;&gt;&lt;/a&gt;3.5 不常安装&lt;/h2&gt;&lt;table&gt;
@@ -1478,6 +1482,10 @@
 &lt;tr&gt;
 &lt;td&gt;QtScrcpy&lt;/td&gt;
 &lt;td&gt;手机控制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gui-inspect-tool&lt;/td&gt;
+&lt;td&gt;pywinauto 推荐的工具，也可配合 AHK 用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;3-6-淘汰备份&#34;&gt;&lt;a href=&#34;#3-6-淘汰备份&#34; class=&#34;headerlink&#34; title=&#34;3.6 淘汰备份&#34;&gt;&lt;/a&gt;3.6 淘汰备份&lt;/h2&gt;&lt;table&gt;
