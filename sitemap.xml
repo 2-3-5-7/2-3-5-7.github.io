@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB/</loc>
+    
+    <lastmod>2023-06-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/GPT%E5%B7%A5%E5%85%B7/</loc>
     
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -300,15 +309,6 @@
   
   <url>
     <loc>https://synrst.de/%E7%89%A9%E7%90%86%E7%8E%AF%E5%A2%83/%E9%98%B2%E7%81%AB/</loc>
-    
-    <lastmod>2023-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB/</loc>
     
     <lastmod>2023-05-20</lastmod>
     
