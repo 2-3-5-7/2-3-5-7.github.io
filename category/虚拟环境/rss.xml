@@ -1874,10 +1874,16 @@
 &lt;li&gt;典型应用：住宅 IP&lt;ul&gt;
 &lt;li&gt;vmess + socks5 链式代理，测试 clash relay 无法用 http，只能用 socks5，并且配置时要 &lt;code&gt;tls: false, skip-cert-verify: true&lt;/code&gt;&lt;ul&gt;
 &lt;li&gt;有些网站用直连住宅代理可以，但像 Google 就无法直连，必须链式&lt;/li&gt;
-&lt;li&gt;如果住宅只提供 http 代理，那么可以临时用 SSH 作 socks5 服务器，socks5 + 住宅 http 链式来用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如只提供 http 代理&lt;ul&gt;
+&lt;li&gt;不能用 vmess + http 链式，clash 不通，v2ray 没找到配置的地方，怀疑与 http 代理无法处理 dns (udp) 报文有关&lt;/li&gt;
+&lt;li&gt;临时用 SSH 作 socks5 服务器，clash 配置 socks5 + 住宅 http 链式来用&lt;/li&gt;
+&lt;li&gt;使用 wireguard + 设置系统代理&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;测试：&lt;code&gt;curl -x socks5://USER:PASS@IP:PORT ipinfo.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;socks5 UDP &lt;a href=&#34;https://github.com/txthinking/brook#testsocks5&#34;&gt;支持测试&lt;/a&gt; &lt;code&gt;./brook_linux_amd64 testsocks5 -s=&amp;quot;127.0.0.1:17890&amp;quot; -u=&amp;quot;XXX&amp;quot; -p=&amp;quot;XXX&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;测试网站&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ipinfo.io/&#34;&gt;IP 信息&lt;/a&gt; type:isp 为住宅&lt;/li&gt;
 &lt;li&gt;欺诈值 &lt;a href=&#34;https://scamalytics.com/ip&#34;&gt;https://scamalytics.com/ip&lt;/a&gt; &lt;a href=&#34;https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/11.22.33.44&#34;&gt;https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/11.22.33.44&lt;/a&gt;&lt;/li&gt;
