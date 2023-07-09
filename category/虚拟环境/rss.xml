@@ -1877,9 +1877,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;如只提供 http 代理&lt;ul&gt;
+&lt;li&gt;不好用的方法&lt;ul&gt;
 &lt;li&gt;不能用 vmess + http 链式，clash 不通，v2ray 没找到配置的地方，怀疑与 http 代理无法处理 dns (udp) 报文有关&lt;/li&gt;
+&lt;li&gt;不能用 clash tun + 浏览器代理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;临时用 SSH 作 socks5 服务器，clash 配置 socks5 + 住宅 http 链式来用&lt;/li&gt;
-&lt;li&gt;使用 wireguard + 设置系统代理&lt;/li&gt;
+&lt;li&gt;用 wireguard + 设置系统代理 或 firefox 自带代理设置（HTTP 的用户密码会在访问时弹出提示）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;测试：&lt;code&gt;curl -x socks5://USER:PASS@IP:PORT ipinfo.io&lt;/code&gt;&lt;/li&gt;
