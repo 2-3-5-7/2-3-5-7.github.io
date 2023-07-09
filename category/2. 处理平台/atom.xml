@@ -1645,6 +1645,10 @@
 &lt;li&gt;限制：clash 不支持 UDP relay（可用 meta core 的 UoT），代理节点不允许国外 IP 入站，不允许不常用端口出站&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;典型应用：住宅 IP&lt;ul&gt;
+&lt;li&gt;vmess + socks5，测试 clash relay 无法用 http，只能用 socks5，并且配置时要 &lt;code&gt;tls: false, skip-cert-verify: true&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;5-命令行&#34;&gt;&lt;a href=&#34;#5-命令行&#34; class=&#34;headerlink&#34; title=&#34;5 命令行&#34;&gt;&lt;/a&gt;5 命令行&lt;/h1&gt;&lt;h2 id=&#34;5-1-msys2&#34;&gt;&lt;a href=&#34;#5-1-msys2&#34; class=&#34;headerlink&#34; title=&#34;5.1 msys2&#34;&gt;&lt;/a&gt;5.1 msys2&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;为了使用最新的 gcc，安装一套编译工具。&lt;strong&gt;安装时卡在 66% “Updating trust database” ，一定用任务管理器杀掉进程，重新再运行一遍安装&lt;/strong&gt;&lt;/p&gt;
