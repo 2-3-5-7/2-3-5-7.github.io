@@ -1879,7 +1879,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;临时用 SSH 作 socks5 服务器，clash 配置 socks5 + 住宅 http 链式来用&lt;/li&gt;
-&lt;li&gt;用 wireguard + 设置系统代理 或 firefox 自带代理设置（HTTP 的用户密码会在访问时弹出提示）&lt;/li&gt;
+&lt;li&gt;用 wireguard + 设置系统代理 或 firefox 自带代理设置（HTTP 的用户密码会在访问时弹出提示），wireguard + firefox 也适用于 linux&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;测试：&lt;code&gt;curl -x socks5://USER:PASS@IP:PORT ipinfo.io&lt;/code&gt;&lt;/li&gt;
