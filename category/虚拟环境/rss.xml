@@ -262,6 +262,8 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;关闭甲骨文日志 &lt;code&gt;systemctl stop unified-monitoring-agent&lt;/code&gt;，&lt;code&gt;systemctl disable unified-monitoring-agent&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.zhouchunyu.com/400.html&#34;&gt;甲骨文开启 IPv6&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;关闭 fwupd &lt;code&gt;sudo systemctl stop fwupd&lt;/code&gt;， &lt;code&gt;sudo systemctl disable fwupd&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://askubuntu.com/questions/1233025/how-to-remove-gnome-shell-from-ubuntu-20-04-lts-to-install-other-desktop-environ&#34;&gt;卸载 gnome&lt;/a&gt;，然后重启&lt;/p&gt;
