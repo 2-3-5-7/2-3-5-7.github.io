@@ -512,7 +512,7 @@
 &lt;li&gt;参考 &lt;a href=&#34;https://www.zhihu.com/question/50231539/answer/530627637&#34;&gt;怎么刷MIUI国际版Rom？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;按电源键 + 音量上键进入 recovery，长按电源键 + 音量下键进入 fastboot&lt;/li&gt;
 &lt;li&gt;备份微信聊天记录，进行桌面和其它内容的云同步&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.miui.com/unlock/&#34;&gt;解锁手机&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.miui.com/unlock/&#34;&gt;解锁手机&lt;/a&gt;，需要进入开发者模式 – 设备解锁状态&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;刷入 recovery&lt;ul&gt;
