@@ -1483,7 +1483,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gui-inspect-tool&lt;/td&gt;
-&lt;td&gt;pywinauto 推荐的工具，也可配合 AHK 用&lt;/td&gt;
+&lt;td&gt;pywinauto 推荐的工具，也可配合 AHK 用&lt;br /&gt;spyplusplus 可用来查看 windows message&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;3-6-淘汰备份&#34;&gt;&lt;a href=&#34;#3-6-淘汰备份&#34; class=&#34;headerlink&#34; title=&#34;3.6 淘汰备份&#34;&gt;&lt;/a&gt;3.6 淘汰备份&lt;/h2&gt;&lt;table&gt;
