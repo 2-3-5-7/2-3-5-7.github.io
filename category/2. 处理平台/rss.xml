@@ -546,8 +546,8 @@
 &lt;/li&gt;
 &lt;li&gt;缺陷：没有公交卡、短信通知类不归类、电话没有来电识别，可以通过 &lt;a href=&#34;https://blog.minamigo.moe/archives/184&#34;&gt;Magisk 模块&lt;/a&gt; 解决，但该模块目前会导致无法双开应用。目前公交卡通过小米手环实现，暂时不折腾&lt;/li&gt;
 &lt;li&gt;Xposed&lt;ul&gt;
-&lt;li&gt;Magisk 安装 Riru-core&lt;/li&gt;
-&lt;li&gt;Github &lt;a href=&#34;https://github.com/LSPosed/LSPosed/releases&#34;&gt;下载&lt;/a&gt;，Magisk 本地安装最新 LSPosed&lt;ul&gt;
+&lt;li&gt;Magisk 启用 zygisk，&lt;del&gt;Magisk 安装 Riru-core&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Github &lt;a href=&#34;https://github.com/LSPosed/LSPosed/releases&#34;&gt;下载&lt;/a&gt;，Magisk 本地安装最新 LSPosed，zygisk 版本，&lt;a href=&#34;https://magiskcn.com/lsposed-install&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;del&gt;Magisk 模块安装最新 Riru - EdXposed v0.5.2.2_4683 （配合旧版 Riru-core 25.4.4.r426），安装 &lt;a href=&#34;https://github.com/ElderDrivers/EdXposed&#34;&gt;EdXposed Manager&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
