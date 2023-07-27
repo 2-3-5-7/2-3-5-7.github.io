@@ -540,7 +540,7 @@
 &lt;li&gt;为了让 JuiceSSH 输入中文，用手心输入法，并禁止联网，apk 已备份&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;缺陷：没有公交卡、短信通知类不归类、电话没有来电识别，可以通过 &lt;a href=&#34;https://blog.minamigo.moe/archives/184&#34;&gt;Magisk 模块&lt;/a&gt; 解决，配置文件 &lt;code&gt;MiuiEuLocalization.ini&lt;/code&gt; 已备份&lt;/li&gt;
+&lt;li&gt;通过 &lt;a href=&#34;https://blog.minamigo.moe/archives/184&#34;&gt;Magisk 模块&lt;/a&gt; 解决，没有公交卡、短信通知类不归类、电话没有来电识别，配置文件 &lt;code&gt;MiuiEuLocalization.ini&lt;/code&gt; 已备份&lt;/li&gt;
 &lt;li&gt;Xposed&lt;ul&gt;
 &lt;li&gt;Magisk 启用 zygisk，&lt;del&gt;Magisk 安装 Riru-core&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;Github &lt;a href=&#34;https://github.com/LSPosed/LSPosed/releases&#34;&gt;下载&lt;/a&gt;，Magisk 本地安装最新 LSPosed，zygisk 版本，&lt;a href=&#34;https://magiskcn.com/lsposed-install&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
@@ -551,6 +551,7 @@
 &lt;li&gt;重启后生效&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;用 &lt;a href=&#34;https://github.com/Displax/safetynet-fix&#34;&gt;safetynet-fix&lt;/a&gt; 修复 safetynet，&lt;a href=&#34;https://www.v2ex.com/t/959720&#34;&gt;参考&lt;/a&gt;，修复后要清除 play 商店数据&lt;/li&gt;
 &lt;li&gt;微信&lt;ul&gt;
 &lt;li&gt;用 wechat play 版体积更小&lt;/li&gt;
 &lt;li&gt;搜索 rec 打开深度清理，然后进入通用里面清理缓存&lt;/li&gt;
