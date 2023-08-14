@@ -2094,6 +2094,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;1-2-出错&#34;&gt;&lt;a href=&#34;#1-2-出错&#34; class=&#34;headerlink&#34; title=&#34;1.2 出错&#34;&gt;&lt;/a&gt;1.2 出错&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果错误无法排除，从云端反向同步到本地&lt;ul&gt;
+&lt;li&gt;kopia 新建个临时配置连接到云端，使用 alist_local，假设为 &lt;code&gt;repository-1691977414632.config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;同步 &lt;code&gt;D:\soft\KopiaUI\resources\server\kopia.exe --config-file=D:\soft\KopiaUI\repositories\repository-1691977414632.config repository sync-to filesystem --path E:\temp --parallel=8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
@@ -2540,7 +2547,7 @@
 &lt;li&gt;俯拍架，不用带补光灯&lt;/li&gt;
 &lt;li&gt;蓝牙遥控器&lt;/li&gt;
 &lt;li&gt;ComicEnhancerPro_chn 文件处理&lt;/li&gt;
-&lt;li&gt;Foxit 高级 PDF，PDF 制作和 OCR&lt;/li&gt;
+&lt;li&gt;ABBYY FineReader + Foxit 高级 PDF，PDF 制作和 OCR&lt;/li&gt;
 &lt;li&gt;FreePic2Pdf 书签制作&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1-2-拍摄&#34;&gt;&lt;a href=&#34;#1-2-拍摄&#34; class=&#34;headerlink&#34; title=&#34;1.2 拍摄&#34;&gt;&lt;/a&gt;1.2 拍摄&lt;/h2&gt;&lt;ul&gt;
@@ -2583,9 +2590,15 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;2-PDF-处理&#34;&gt;&lt;a href=&#34;#2-PDF-处理&#34; class=&#34;headerlink&#34; title=&#34;2 PDF 处理&#34;&gt;&lt;/a&gt;2 PDF 处理&lt;/h1&gt;&lt;h2 id=&#34;2-1-制作&#34;&gt;&lt;a href=&#34;#2-1-制作&#34; class=&#34;headerlink&#34; title=&#34;2.1 制作&#34;&gt;&lt;/a&gt;2.1 制作&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Foxit 高级 PDF 的文件合并和 OCR&lt;ul&gt;
-&lt;li&gt;备选 福昕PDF编辑器，通过微信签到获得 OCR 一天功能&lt;/li&gt;
-&lt;li&gt;备选 ABBYY FineReader&lt;/li&gt;
+&lt;li&gt;ABBYY FineReader&lt;ul&gt;
+&lt;li&gt;不开启 MRC 压缩&lt;/li&gt;
+&lt;li&gt;因为 ABBYY 无法不改变图片，所以只能无损输出后用 Foxit 压缩&lt;ul&gt;
+&lt;li&gt;图像品质，自定义，不改变颜色、不允许质量损失&lt;/li&gt;
+&lt;li&gt;Foxit 高级 PDF 优化扫描 PDF，彩色&amp;#x2F;灰度为 JPEG2000 有损，黑白为 JBIG2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;备选1 福昕PDF编辑器，通过微信签到获得 OCR 一天功能&lt;/li&gt;
+&lt;li&gt;备选2 Foxit 高级 PDF 破解版&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;书签 FreePic2Pdf&lt;/li&gt;

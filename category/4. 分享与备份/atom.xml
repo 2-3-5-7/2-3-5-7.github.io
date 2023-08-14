@@ -244,6 +244,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;1-2-出错&#34;&gt;&lt;a href=&#34;#1-2-出错&#34; class=&#34;headerlink&#34; title=&#34;1.2 出错&#34;&gt;&lt;/a&gt;1.2 出错&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果错误无法排除，从云端反向同步到本地&lt;ul&gt;
+&lt;li&gt;kopia 新建个临时配置连接到云端，使用 alist_local，假设为 &lt;code&gt;repository-1691977414632.config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;同步 &lt;code&gt;D:\soft\KopiaUI\resources\server\kopia.exe --config-file=D:\soft\KopiaUI\repositories\repository-1691977414632.config repository sync-to filesystem --path E:\temp --parallel=8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
