@@ -2947,7 +2947,8 @@
 &lt;li&gt;用 MdxExport36 解开 mdd、mdx 文件&lt;/li&gt;
 &lt;li&gt;用 emeditor 编辑 mdx，如正则替换&lt;/li&gt;
 &lt;li&gt;用工具转换 mdd 中的媒体文件，如 aac 转 spf&lt;/li&gt;
-&lt;li&gt;用 MdxBuilder 3.0 Beta2 （注意不是官网 4.0 版本）重新打包，mdx 打包&lt;a href=&#34;https://www.pdawiki.com/forum/thread-35617-1-1.html&#34;&gt;参考&lt;/a&gt;、mdd 打包参考&lt;/li&gt;
+&lt;li&gt;用 MdxBuilder 3.0 Beta2 （注意不是官网 4.0 版本）重新打包，mdx 打包&lt;a href=&#34;https://www.pdawiki.com/forum/thread-35617-1-1.html&#34;&gt;参考&lt;/a&gt;、mdd 打包&lt;a href=&#34;https://forum.freemdict.com/t/topic/9708&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;相关软件在 &lt;code&gt;欧路词典与配置&lt;/code&gt; 里面&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/虚拟环境/3. 处理工具/词典软件&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
