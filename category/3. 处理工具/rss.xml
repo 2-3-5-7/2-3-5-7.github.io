@@ -778,11 +778,18 @@
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;&lt;img src=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/../%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/2.png&#34; alt=&#34;欧路词典&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;3-4-修改&#34;&gt;&lt;a href=&#34;#3-4-修改&#34; class=&#34;headerlink&#34; title=&#34;3.4 修改&#34;&gt;&lt;/a&gt;3.4 修改&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;修改词典内容&lt;ul&gt;
 &lt;li&gt;用 MdxExport36 解开 mdd、mdx 文件&lt;/li&gt;
 &lt;li&gt;用 emeditor 编辑 mdx，如正则替换&lt;/li&gt;
 &lt;li&gt;用工具转换 mdd 中的媒体文件，如 aac 转 spf&lt;/li&gt;
 &lt;li&gt;用 MdxBuilder 3.0 Beta2 （注意不是官网 4.0 版本）重新打包，mdx 打包&lt;a href=&#34;https://www.pdawiki.com/forum/thread-35617-1-1.html&#34;&gt;参考&lt;/a&gt;、mdd 打包&lt;a href=&#34;https://forum.freemdict.com/t/topic/9708&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;相关软件在 &lt;code&gt;欧路词典与配置&lt;/code&gt; 里面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;修改外部 CSS&lt;ul&gt;
+&lt;li&gt;注意，改后在欧路词典设置中，要清除缓存来生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/2-3-5-7/2-3-5-7.github.io/tree/main/虚拟环境/3. 处理工具/词典软件&#34;&gt;&lt;i class=&#34;fa-solid fa-download fa-2xl&#34; style=&#34;color: gray;&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
