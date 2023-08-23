@@ -654,6 +654,7 @@
 &lt;li&gt;词典配置从软件的 &lt;code&gt;欧路词典与配置&lt;/code&gt; 文件夹导入&lt;/li&gt;
 &lt;li&gt;手机版通过 软件设置-&amp;gt; 扩充词库路径，将词典拷贝到该文件夹，默认是 &amp;#x2F;eudb_en&lt;/li&gt;
 &lt;li&gt;同步问题通过注销账户重新登陆解决&lt;/li&gt;
+&lt;li&gt;去掉 &lt;code&gt;搜索列表优先使用在线词典&lt;/code&gt;，否则日语查词有问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3-词典&#34;&gt;&lt;a href=&#34;#3-词典&#34; class=&#34;headerlink&#34; title=&#34;3 词典&#34;&gt;&lt;/a&gt;3 词典&lt;/h1&gt;&lt;h2 id=&#34;3-1-选择&#34;&gt;&lt;a href=&#34;#3-1-选择&#34; class=&#34;headerlink&#34; title=&#34;3.1 选择&#34;&gt;&lt;/a&gt;3.1 选择&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/64925212&#34;&gt;欧路词典打磨指南&lt;/a&gt; 先柯林斯，然后朗文。一共推荐 5 本字典&lt;/li&gt;
