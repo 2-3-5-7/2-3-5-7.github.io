@@ -649,12 +649,14 @@
 &lt;h1 id=&#34;2-欧路词典&#34;&gt;&lt;a href=&#34;#2-欧路词典&#34; class=&#34;headerlink&#34; title=&#34;2 欧路词典&#34;&gt;&lt;/a&gt;2 欧路词典&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;有生词多终端同步需求时，购买欧路。同时也可用来背单词，配合 kindlemate 背生词 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/85959508&#34;&gt;欧路词典应用指南&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;设置字体最大，去掉“取词只显示第一本词典”选项，取词窗口选择固定高度，勾选“划词后直接显示翻译窗口”，去掉每日推荐&lt;/li&gt;
-&lt;li&gt;使用划词，快捷键 Alt+F2，Ctrl+Shitft+C 划词快捷键。使用双击方式取词，快捷键 Alt+F3&lt;/li&gt;
-&lt;li&gt;取词后自动发音，词典库 -&amp;gt; 发音库将美音置顶&lt;/li&gt;
+&lt;li&gt;手动划词快捷键 Ctrl + F10&lt;/li&gt;
 &lt;li&gt;词典配置从软件的 &lt;code&gt;欧路词典与配置&lt;/code&gt; 文件夹导入&lt;/li&gt;
-&lt;li&gt;手机版通过 软件设置-&amp;gt; 扩充词库路径，将词典拷贝到该文件夹，默认是 &amp;#x2F;eudb_en&lt;/li&gt;
-&lt;li&gt;同步问题通过注销账户重新登陆解决&lt;/li&gt;
+&lt;li&gt;日语&lt;ul&gt;
+&lt;li&gt;勾选允许对中文查词，因为日语里有中文单词&lt;/li&gt;
 &lt;li&gt;去掉 &lt;code&gt;搜索列表优先使用在线词典&lt;/code&gt;，否则日语查词有问题&lt;/li&gt;
+&lt;li&gt;调整 PC 和手机端的发音顺序，让日语优先于中文，这样同汉字的日语单词才正确发音&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3-词典&#34;&gt;&lt;a href=&#34;#3-词典&#34; class=&#34;headerlink&#34; title=&#34;3 词典&#34;&gt;&lt;/a&gt;3 词典&lt;/h1&gt;&lt;h2 id=&#34;3-1-选择&#34;&gt;&lt;a href=&#34;#3-1-选择&#34; class=&#34;headerlink&#34; title=&#34;3.1 选择&#34;&gt;&lt;/a&gt;3.1 选择&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/64925212&#34;&gt;欧路词典打磨指南&lt;/a&gt; 先柯林斯，然后朗文。一共推荐 5 本字典&lt;/li&gt;
