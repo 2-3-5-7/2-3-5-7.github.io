@@ -431,6 +431,7 @@
 &lt;li&gt;Foxit 高级 PDF 优化扫描 PDF，彩色&amp;#x2F;灰度为 JPEG2000 有损，黑白为 JBIG2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;对于大小不一的文档，OCR 识别后，页面大小改变很多。以后考虑先删除大小不一的页面，OCR 后再拼接回去&lt;/li&gt;
 &lt;li&gt;备选1 福昕PDF编辑器，通过微信签到获得 OCR 一天功能&lt;/li&gt;
 &lt;li&gt;备选2 Foxit 高级 PDF 破解版&lt;/li&gt;
 &lt;/ul&gt;
