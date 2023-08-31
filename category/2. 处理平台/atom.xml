@@ -475,14 +475,10 @@
 &lt;/ol&gt;
 &lt;p&gt;2、3 放入 windows 建议安装 - ADB 中&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;获取包名，打开 App，输入 &lt;code&gt;adb shell dumpsys window | findstr mCurrentFocus&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;列出包，&lt;code&gt;adb shell pm list packages&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;恢复方法 &lt;code&gt;adb shell cmd package install-existing com.huawei.appmarket&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Andrioid 11无线调试&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;获取包名，打开 App，输入 &lt;code&gt;adb shell dumpsys window | findstr mCurrentFocus&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;列出包，&lt;code&gt;adb shell pm list packages&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;恢复方法 &lt;code&gt;adb shell cmd package install-existing com.huawei.appmarket&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Andrioid 11无线调试&lt;ul&gt;
 &lt;li&gt;打开 usb 调试和无线调试&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;adb pair HOST[:PORT] [PAIRING CODE]&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;adb connect 192.168.1.xxx:xxx  &amp;#x2F;&amp;#x2F; 注意端口和上门的配对端口不一样，无线调试的IP地址及端口&lt;/li&gt;
@@ -600,6 +596,7 @@
 &lt;li&gt;任务切换视图，下滑锁定（下滑时间长一点）&lt;/li&gt;
 &lt;li&gt;应用启动管理，改为手动，允许后台活动&lt;/li&gt;
 &lt;li&gt;电池优化，不允许优化&lt;/li&gt;
+&lt;li&gt;开放相应的权限&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;清理生成的 hwbk 文件，&lt;a href=&#34;https://www.keccak.top/memo/delete-hwbk.html&#34;&gt;参考&lt;/a&gt;&lt;ul&gt;
