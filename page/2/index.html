@@ -33,7 +33,25 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/GPT%E5%B7%A5%E5%85%B7/">GPT工具</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\`\`\`</span><br><span class="line">'''</span><br><span class="line">---</span><br><span class="line">&lt;&gt;</span><br><span class="line">&lt;tag&gt;&lt;/tag&gt;</span><br></pre></td></tr></tbody></table></figure><p>1 Prompt 学习
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><i class="fa-regular fa-face-grin-squint-tears"></i></a><div class="navbar-item">Mens et Manus</div><a class="navbar-item search" title="搜索 (Ctrl + K)" href="javascript:;"><i class="fas fa-search"></i></a></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/">linux</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 通过 aptitude 尝试解决</span></span><br><span class="line">sudo apt install aptitude</span><br><span class="line">sudo aptitude install PACKAGENAME</span><br></pre></td></tr></tbody></table></figure><p>1 配置
+
+- 必装 ssh proxychains4 git meld p4merge vim gtags ctags，github 导入公钥
+- 关闭该死的系统更新，非要更新前一定创建快照
+
+
+1.1 SSH
+
+apt-get install openssh-server openssh-client
+
+- 如配置 VPS 修改 SSH 端口，则要在系统 iptables 和 vps 页面两处同时放行新端口，并用 nc -l 测试没问题后，再重启 sshd
+  服务。此时先别断开旧连接，防止出现新端口连不上的情况
+
+
+1.1.1 解决 20.04 broken package 问题
+
+参考 Problems with installing of the openssh-server
+
+根据 aptitude 安装前的提示，发现是预安装的 openssh-client 版本高，apt p ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/linux/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/GPT%E5%B7%A5%E5%85%B7/">GPT工具</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\`\`\`</span><br><span class="line">'''</span><br><span class="line">---</span><br><span class="line">&lt;&gt;</span><br><span class="line">&lt;tag&gt;&lt;/tag&gt;</span><br></pre></td></tr></tbody></table></figure><p>1 Prompt 学习
 
 - 两种模型
   - Base LLM
@@ -75,38 +93,7 @@
 
 1.2 查看修改和历史
 
-- git diff 比较的是工作区与暂存区的差异，git diff HEAD -- readme.txt 用来 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/">docker</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo groupadd docker</span><br><span class="line">sudo usermod -aG docker <span class="variable">$USER</span></span><br><span class="line"><span class="comment"># 激活新修改</span></span><br><span class="line">newgrp docker</span><br><span class="line"><span class="comment"># 提示没权限的话重启</span></span><br><span class="line">docker version</span><br></pre></td></tr></tbody></table></figure><p>1 安装
-
-- ubuntu 20.04 安装、参考二
-- 避免每次输入 sudo
-- compose 安装，这里下载的 github 地址要去 GitHub 看一下来改
-
-
-1.1 windows-wsl2
-
-- wsl –update 用 wsl2
-- 在 resource - proxies 设置代理
-- 按 Configure WSL 2 Data Location 修改文件路径到其它盘
-- wsl 其它 distro 也可以这样改路径
-- 相关命令
-- 设置 appendWindowsPath = false，需要 wsl --shutdown
-
-
-2 镜像
-
-- 拉取镜像，替换源速度没有提升，建议 设置代理，只设置前 http 和 https 两处就可以了
-
-- 保存和加载镜像
-
-
-3 容器
-
-- 生成容器
-- 列出容器
-- 运行命令
-- 进入 docker
-- 修改端口映射
- ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/LFS/">LFS</a></p><div class="content"><ul>
+- git diff 比较的是工作区与暂存区的差异，git diff HEAD -- readme.txt 用来 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/git/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/LFS/">LFS</a></p><div class="content"><ul>
 <li>书的由来：按自己的喜好搭建，写自己的软件，有一个自己的系统。这本书还可用来理解系统<ul>
 <li>定制化，尤其是小型嵌入式系统</li>
 <li>安全</li>
