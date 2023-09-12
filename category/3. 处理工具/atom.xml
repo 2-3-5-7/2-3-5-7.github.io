@@ -374,8 +374,12 @@
         <id>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/</id>
         <title>电子书处理</title>
         <link rel="alternate" href="https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/"/>
-        <content type="html">&lt;h1 id=&#34;1-扫描书&#34;&gt;&lt;a href=&#34;#1-扫描书&#34; class=&#34;headerlink&#34; title=&#34;1 扫描书&#34;&gt;&lt;/a&gt;1 扫描书&lt;/h1&gt;&lt;p&gt;参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》&lt;/p&gt;
-&lt;h2 id=&#34;1-1-用到的工具&#34;&gt;&lt;a href=&#34;#1-1-用到的工具&#34; class=&#34;headerlink&#34; title=&#34;1.1 用到的工具&#34;&gt;&lt;/a&gt;1.1 用到的工具&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;下次试试室内灯光，之前的侧光对于不那么白的纸太暗了&lt;/strong&gt;&lt;/p&gt;
+        <content type="html">&lt;h1 id=&#34;1-制作书&#34;&gt;&lt;a href=&#34;#1-制作书&#34; class=&#34;headerlink&#34; title=&#34;1 制作书&#34;&gt;&lt;/a&gt;1 制作书&lt;/h1&gt;&lt;h2 id=&#34;1-1-从网页爬取&#34;&gt;&lt;a href=&#34;#1-1-从网页爬取&#34; class=&#34;headerlink&#34; title=&#34;1.1 从网页爬取&#34;&gt;&lt;/a&gt;1.1 从网页爬取&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;request + BeautifulSoup + Chrome（或 &lt;a href=&#34;https://github.com/Sicos1977/ChromeHtmlToPdf&#34;&gt;ChromeHtmlToPdf&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;selenium 也可生成 PDF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-2-扫描纸质书&#34;&gt;&lt;a href=&#34;#1-2-扫描纸质书&#34; class=&#34;headerlink&#34; title=&#34;1.2 扫描纸质书&#34;&gt;&lt;/a&gt;1.2 扫描纸质书&lt;/h2&gt;&lt;p&gt;参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》&lt;/p&gt;
+&lt;h3 id=&#34;1-2-1-用到的工具&#34;&gt;&lt;a href=&#34;#1-2-1-用到的工具&#34; class=&#34;headerlink&#34; title=&#34;1.2.1 用到的工具&#34;&gt;&lt;/a&gt;1.2.1 用到的工具&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;下次试试室内灯光，之前的侧光对于不那么白的纸太暗了&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;玻璃板，超白玻璃 8mm 厚，300 X 250，不要印 3C 标志&lt;/li&gt;
 &lt;li&gt;俯拍架，不用带补光灯&lt;/li&gt;
@@ -384,7 +388,7 @@
 &lt;li&gt;ABBYY FineReader + Foxit 高级 PDF，PDF 制作和 OCR&lt;/li&gt;
 &lt;li&gt;FreePic2Pdf 书签制作&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;1-2-拍摄&#34;&gt;&lt;a href=&#34;#1-2-拍摄&#34; class=&#34;headerlink&#34; title=&#34;1.2 拍摄&#34;&gt;&lt;/a&gt;1.2 拍摄&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;1-2-2-拍摄&#34;&gt;&lt;a href=&#34;#1-2-2-拍摄&#34; class=&#34;headerlink&#34; title=&#34;1.2.2 拍摄&#34;&gt;&lt;/a&gt;1.2.2 拍摄&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;不一定要找专门的光源，室内灯光不反光也可&lt;/li&gt;
 &lt;li&gt;书架第二格，俯拍架足够高，支架手臂与书架平行&lt;/li&gt;
 &lt;li&gt;开启拍照声音&lt;/li&gt;
@@ -398,7 +402,7 @@
 &lt;li&gt;书籍摆放位置划线，避免位置移动&lt;/li&gt;
 &lt;li&gt;拍摄完先不移动灯光和相机位置，准备对个别不满意的页面补拍&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;1-3-文件处理&#34;&gt;&lt;a href=&#34;#1-3-文件处理&#34; class=&#34;headerlink&#34; title=&#34;1.3 文件处理&#34;&gt;&lt;/a&gt;1.3 文件处理&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id=&#34;1-2-3-文件处理&#34;&gt;&lt;a href=&#34;#1-2-3-文件处理&#34; class=&#34;headerlink&#34; title=&#34;1.2.3 文件处理&#34;&gt;&lt;/a&gt;1.2.3 文件处理&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;文件重命名，同时检查是否漏拍&lt;/li&gt;
 &lt;li&gt;图像裁剪，随着厚度增加每张会有细微的偏移，因此图片可能要分多个文件夹裁剪多次&lt;/li&gt;
 &lt;li&gt;图像处理，封面单独处理&lt;ul&gt;
@@ -451,6 +455,8 @@
 &lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV16U4y1p7Li&#34;&gt;图片水印&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1iv411h7ee&#34;&gt;文字水印&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1mh411Q74Y&#34;&gt;指定对象大小移除，包括图片和文字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1sj411w7H6&#34;&gt;pitstop subpath 移除&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select inside contour 移除轮廓内的对象&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
