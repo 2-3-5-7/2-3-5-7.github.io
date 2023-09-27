@@ -45,7 +45,25 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
+
+- 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
+  - HDMI 欺骗器
+  - spacedesk
+  - 视频采集卡
+  - 用 QQ 远程协助、远程桌面、虚拟机也是这个思路，即绕过软件层面的检测
+- 也可找没被检测到的录屏软件
+- 保险起见，每天录屏时间不要超过一个合理时间，如 8h
+- Potplayer 录屏没声音时，打开 - 设备设置 - 摄像头 - 音频录制设备 - 数字音频接口。视频 –> 录制视频(ALT +
+  C)，保持默认MPEG-4编码，勾选开启高质量视频压缩，然后把播放器静音，最小化
+
+
+2 视频笔记
+
+- 用 media extended 插件
+  - 配合 Templater 和 QuickAdd 实现自动移动光标到末尾
+  - timestamp offset 设为 5，避免添加晚了
+  - 目前版本不支持（v3 支持）l ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
 
 删除没有权限的文件夹
 
@@ -127,33 +145,7 @@
 - 不一定要找专门的光源，室内灯光不反光也可
 - 书架第二格，俯拍架足够高，支架手臂与书架平行
 - 开启拍照声音
- ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
-
-- 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
-  - HDMI 欺骗器
-  - spacedesk
-  - 视频采集卡
-  - 用 QQ 远程协助、远程桌面、虚拟机也是这个思路，即绕过软件层面的检测
-- 也可找没被检测到的录屏软件
-- 保险起见，每天录屏时间不要超过一个合理时间，如 8h
-- Potplayer 录屏没声音时，打开 - 设备设置 - 摄像头 - 音频录制设备 - 数字音频接口。视频 –> 录制视频(ALT +
-  C)，保持默认MPEG-4编码，勾选开启高质量视频压缩，然后把播放器静音，最小化
-
-
-2 手机控制 PC
-
-- spacedesk 作为扩展显示器
-
-
-3 PC 控制手机
-
-- 用 QtScrcpy 的“熄屏”控制，可以用于 App 开发
-
-
-4 内录声音
-
-- 静音内录某个软件的声音
-  - 装虚拟声卡 Virtual Aud ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
+ ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
 
 - docker 部署，参考，docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=30
   diygod/rsshub
