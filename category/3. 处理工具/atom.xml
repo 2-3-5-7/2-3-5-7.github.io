@@ -965,7 +965,7 @@
 &lt;/ul&gt;
 &lt;h1 id=&#34;2-视频笔记&#34;&gt;&lt;a href=&#34;#2-视频笔记&#34; class=&#34;headerlink&#34; title=&#34;2 视频笔记&#34;&gt;&lt;/a&gt;2 视频笔记&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;用 &lt;a href=&#34;https://github.com/aidenlx/media-extended&#34;&gt;media extended&lt;/a&gt; 插件&lt;ul&gt;
-&lt;li&gt;配合 Templater 和 QuickAdd 实现&lt;a href=&#34;https://www.bilibili.com/video/BV1H24y1N7iG/&#34;&gt;自动移动光标到末尾&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;配合 Templater 和 QuickAdd 实现 &lt;a href=&#34;https://www.bilibili.com/video/BV1H24y1N7iG/&#34;&gt;自动移动光标到末尾&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;timestamp offset 设为 5，避免添加晚了&lt;/li&gt;
 &lt;li&gt;目前版本不支持（v3 支持）live preview，所以采用 &lt;a href=&#34;https://github.com/aidenlx/media-extended/issues/151&#34;&gt;3 分窗口的方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;针对视频笔记利用 frontmatter cssclass 添加禁止点击链接跳转 &lt;a href=&#34;https://forum.obsidian.md/t/add-setting-to-enable-simple-left-click-link-editing-in-live-preview-mode/33687&#34;&gt;相关 CSS&lt;/a&gt;&lt;/li&gt;
