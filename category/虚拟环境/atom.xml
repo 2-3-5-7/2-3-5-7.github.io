@@ -3135,7 +3135,9 @@
 &lt;li&gt;配合 Templater 和 QuickAdd 实现&lt;a href=&#34;https://www.bilibili.com/video/BV1H24y1N7iG/&#34;&gt;自动移动光标到末尾&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;timestamp offset 设为 5，避免添加晚了&lt;/li&gt;
 &lt;li&gt;目前版本不支持（v3 支持）live preview，所以采用 &lt;a href=&#34;https://github.com/aidenlx/media-extended/issues/151&#34;&gt;3 分窗口的方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;针对视频笔记利用 frontmatter cssclass 添加禁止点击链接跳转 &lt;a href=&#34;https://forum.obsidian.md/t/add-setting-to-enable-simple-left-click-link-editing-in-live-preview-mode/33687&#34;&gt;相关 CSS&lt;/a&gt;，&lt;/li&gt;
+&lt;li&gt;针对视频笔记利用 frontmatter cssclass 添加禁止点击链接跳转 &lt;a href=&#34;https://forum.obsidian.md/t/add-setting-to-enable-simple-left-click-link-editing-in-live-preview-mode/33687&#34;&gt;相关 CSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;字幕功能有问题，只能把视频与字幕压在一起了&lt;/li&gt;
+&lt;li&gt;无法支持本地文件，正好用 http server，避免依赖绝对路径&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
