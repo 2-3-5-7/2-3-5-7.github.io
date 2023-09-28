@@ -3142,6 +3142,7 @@
 &lt;li&gt;针对视频笔记利用 frontmatter cssclass 添加禁止点击链接跳转 &lt;a href=&#34;https://forum.obsidian.md/t/add-setting-to-enable-simple-left-click-link-editing-in-live-preview-mode/33687&#34;&gt;相关 CSS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;字幕功能有问题，只能把视频与字幕压在一起了&lt;/li&gt;
 &lt;li&gt;无法支持本地文件，正好用 http server，避免依赖绝对路径&lt;/li&gt;
+&lt;li&gt;影片截图用 snipaste 配合 &lt;a href=&#34;https://github.com/reorx/obsidian-paste-image-rename&#34;&gt;obsidian-paste-image-rename&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/martinniee/Obsidian-fast-image-cleaner&#34;&gt;Obsidian-fast-image-cleaner&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
