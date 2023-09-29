@@ -45,7 +45,23 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
+
+删除没有权限的文件夹
+
+ 1. 文件夹属性 -> 安全 -> 高级 -> 更改所有者 -> 输入自己的用户名 -> 选择下面应用到子文件夹的勾 -> 确定所有对话框
+ 2. 文件夹属性 -> 安全 -> 高级 -> 权限添加 -> 主体为自己的用户名 -> 勾选下面的继承权限
+
+
+2 搭建
+
+ 1. 安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容
+    - 用 Edgeless PE，写入 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间
+ 2. PE 环境下加载 ISO 镜像（镜像选择专业版），运行 source 下的 setup
+    - 对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0
+ 3. 更新系统、自动装驱动
+ 4. 关闭更新
+ 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
 
 - 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
   - HDMI 欺骗器
@@ -63,23 +79,7 @@
 - 用 media extended 插件
   - 配合 Templater 和 QuickAdd 实现 自动移动光标到末尾
   - timestamp offset 设为 5，避免添加晚了
-  - 目前版本不支持（v3 支持） ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
-
-删除没有权限的文件夹
-
- 1. 文件夹属性 -> 安全 -> 高级 -> 更改所有者 -> 输入自己的用户名 -> 选择下面应用到子文件夹的勾 -> 确定所有对话框
- 2. 文件夹属性 -> 安全 -> 高级 -> 权限添加 -> 主体为自己的用户名 -> 勾选下面的继承权限
-
-
-2 搭建
-
- 1. 安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容
-    - 用 Edgeless PE，写入 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间
- 2. PE 环境下加载 ISO 镜像（镜像选择专业版），运行 source 下的 setup
-    - 对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0
- 3. 更新系统、自动装驱动
- 4. 关闭更新
- 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%88%B1%E5%A5%BD/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E5%8C%BA%E5%9D%97%E9%93%BE/">区块链</a></p><div class="content"><ul>
+  - 目前版本不支持（v3 支持） ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%88%B1%E5%A5%BD/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E5%8C%BA%E5%9D%97%E9%93%BE/">区块链</a></p><div class="content"><ul>
 <li><p>来源</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=g_fSistU3MQ">李永乐1</a>、<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=pbAVauYsqP0">李永乐2</a>、<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Sfdv_Day2Do">白皮书解读</a></li>
