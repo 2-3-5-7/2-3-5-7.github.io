@@ -45,7 +45,38 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/">电子书处理</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/%E7%89%88%E6%9C%AC%E6%8F%90%E7%A4%BA.png" style="display: block;margin: auto;"><p>1 制作书
+
+
+1.1 从网页爬取
+
+- request + BeautifulSoup + Chrome（或 ChromeHtmlToPdf）
+- selenium 也可生成 PDF
+
+
+1.2 扫描纸质书
+
+参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》
+
+
+1.2.1 用到的工具
+
+下次试试室内灯光，之前的侧光对于不那么白的纸太暗了
+
+- 玻璃板，超白玻璃 8mm 厚，300 X 250，不要印 3C 标志
+- 俯拍架，不用带补光灯
+- 蓝牙遥控器
+- ComicEnhancerPro_chn 文件处理
+- ABBYY FineReader + Foxit 高级 PDF，PDF 制作和 OCR
+- FreePic2Pdf 书签制作
+
+
+1.2.2 拍摄
+
+- 不一定要找专门的光源，室内灯光不反光也可
+- 书架第二格，俯拍架足够高，支架手臂与书架平行
+- 开启拍照声音
+ ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
 
 删除没有权限的文件夹
 
@@ -114,38 +145,7 @@
 </ul>
 </li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/">电子书处理</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/%E7%89%88%E6%9C%AC%E6%8F%90%E7%A4%BA.png" style="display: block;margin: auto;"><p>1 制作书
-
-
-1.1 从网页爬取
-
-- request + BeautifulSoup + Chrome（或 ChromeHtmlToPdf）
-- selenium 也可生成 PDF
-
-
-1.2 扫描纸质书
-
-参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》
-
-
-1.2.1 用到的工具
-
-下次试试室内灯光，之前的侧光对于不那么白的纸太暗了
-
-- 玻璃板，超白玻璃 8mm 厚，300 X 250，不要印 3C 标志
-- 俯拍架，不用带补光灯
-- 蓝牙遥控器
-- ComicEnhancerPro_chn 文件处理
-- ABBYY FineReader + Foxit 高级 PDF，PDF 制作和 OCR
-- FreePic2Pdf 书签制作
-
-
-1.2.2 拍摄
-
-- 不一定要找专门的光源，室内灯光不反光也可
-- 书架第二格，俯拍架足够高，支架手臂与书架平行
-- 开启拍照声音
- ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
 
 - docker 部署，参考，docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=30
   diygod/rsshub

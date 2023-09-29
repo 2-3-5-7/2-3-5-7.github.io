@@ -2638,6 +2638,7 @@
 &lt;h2 id=&#34;2-3-书签&#34;&gt;&lt;a href=&#34;#2-3-书签&#34; class=&#34;headerlink&#34; title=&#34;2.3 书签&#34;&gt;&lt;/a&gt;2.3 书签&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;自动添加书签&lt;ul&gt;
 &lt;li&gt;用 PDF 补丁丁 根据样式识别标题，然后手动调整，见 &lt;a href=&#34;https://www.cnblogs.com/pdfpatcher/p/8452025.html&#34;&gt;作者博客教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;对于识别后出现不规律空格的书签，可以用 claude 来智能移除空格&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;手动改书签&lt;ul&gt;
