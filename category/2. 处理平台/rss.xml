@@ -1754,7 +1754,7 @@
 &lt;h1 id=&#34;6-系统问题&#34;&gt;&lt;a href=&#34;#6-系统问题&#34; class=&#34;headerlink&#34; title=&#34;6 系统问题&#34;&gt;&lt;/a&gt;6 系统问题&lt;/h1&gt;&lt;h2 id=&#34;6-1-端口占用&#34;&gt;&lt;a href=&#34;#6-1-端口占用&#34; class=&#34;headerlink&#34; title=&#34;6.1 端口占用&#34;&gt;&lt;/a&gt;6.1 端口占用&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;cmd 管理员运行，&lt;code&gt;netstat -ano |findstr &amp;quot;PORT&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;查看排除端口范围，&lt;code&gt;netsh int ip show excludedportrange protocol=tcp&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;是否占用范围 &lt;code&gt;net stop winnat &amp;amp;&amp;amp; net start winnat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;释放占用范围 &lt;code&gt;net stop winnat &amp;amp;&amp;amp; net start winnat&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://superuser.com/questions/1784776/my-ports-are-always-occupied-and-no-software-shows-why-netstat-tcpview&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
