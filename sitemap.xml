@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</loc>
+    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/%E6%97%A5%E8%AF%AD/</loc>
     
     <lastmod>2023-10-16</lastmod>
     
@@ -11,9 +11,18 @@
   </url>
   
   <url>
-    <loc>https://synrst.de/%E7%88%B1%E5%A5%BD/%E6%97%A5%E8%AF%AD/</loc>
+    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/</loc>
     
-    <lastmod>2023-10-14</lastmod>
+    <lastmod>2023-10-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/</loc>
+    
+    <lastmod>2023-10-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -77,15 +86,6 @@
     <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/</loc>
     
     <lastmod>2023-08-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6/</loc>
-    
-    <lastmod>2023-08-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
