@@ -2556,6 +2556,7 @@
         <content type="html">&lt;h1 id=&#34;1-制作书&#34;&gt;&lt;a href=&#34;#1-制作书&#34; class=&#34;headerlink&#34; title=&#34;1 制作书&#34;&gt;&lt;/a&gt;1 制作书&lt;/h1&gt;&lt;h2 id=&#34;1-1-从网页爬取&#34;&gt;&lt;a href=&#34;#1-1-从网页爬取&#34; class=&#34;headerlink&#34; title=&#34;1.1 从网页爬取&#34;&gt;&lt;/a&gt;1.1 从网页爬取&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;request + BeautifulSoup + Chrome（或 &lt;a href=&#34;https://github.com/Sicos1977/ChromeHtmlToPdf&#34;&gt;ChromeHtmlToPdf&lt;/a&gt;）&lt;/li&gt;
 &lt;li&gt;selenium 也可生成 PDF&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/315974324/answer/1279274711&#34;&gt;批量删除 PDF 最后一页&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1-2-扫描纸质书&#34;&gt;&lt;a href=&#34;#1-2-扫描纸质书&#34; class=&#34;headerlink&#34; title=&#34;1.2 扫描纸质书&#34;&gt;&lt;/a&gt;1.2 扫描纸质书&lt;/h2&gt;&lt;p&gt;参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》&lt;/p&gt;
 &lt;h3 id=&#34;1-2-1-用到的工具&#34;&gt;&lt;a href=&#34;#1-2-1-用到的工具&#34; class=&#34;headerlink&#34; title=&#34;1.2.1 用到的工具&#34;&gt;&lt;/a&gt;1.2.1 用到的工具&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;下次试试室内灯光，之前的侧光对于不那么白的纸太暗了&lt;/strong&gt;&lt;/p&gt;
