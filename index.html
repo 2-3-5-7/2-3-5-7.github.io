@@ -45,17 +45,22 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/">如何将网络教程 (tutorial) 转成 PDF</a></p><div class="content"><h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1 介绍"></a>1 介绍</h1><h2 id="1-1-问题由来"><a href="#1-1-问题由来" class="headerlink" title="1.1 问题由来"></a>1.1 问题由来</h2><ul>
-<li>最近在用 <code>BookxNote Pro</code> （类似 margin note）做笔记，很多网络教程 (tutorial) 没有提供 PDF 版本，如果看过的内容没有立刻应用，就容易遗忘，而对网页做笔记不太容易（虽然有插件），所以在研究怎样批量存成 PDF，并且可以有目录（书签），同时去除无用元素</li>
-<li>发现 <code>puppeteer</code> 非常适合，之前不太了解 js，一直忽略了它，它配合 <code>puppeteer-cluster</code> 实现并行抓取</li>
-</ul>
-<h2 id="1-2-步骤"><a href="#1-2-步骤" class="headerlink" title="1.2 步骤"></a>1.2 步骤</h2><ul>
-<li>通用的转换方法分为 4 步<ul>
-<li>获取菜单，可手动gou’zao</li>
-</ul>
-</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/">电子书处理</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/%E7%89%88%E6%9C%AC%E6%8F%90%E7%A4%BA.png" style="display: block;margin: auto;"><p>1 制作书
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/">如何将网络教程 (tutorial) 转成 PDF</a></p><div class="content"><p>1 介绍
+
+
+1.1 问题由来
+
+- 最近在用 BookxNote Pro （类似 margin note）做笔记，很多网络教程 (tutorial) 没有提供 PDF
+  版本，如果看过的内容没有立刻应用，就容易遗忘，而对网页做笔记不太容易（虽然有插件），所以在研究怎样批量存成 PDF，并且可以有目录（书签），同时去除无用元素
+- 发现 puppeteer 非常适合，之前不太了解 js，一直忽略了它，它配合 puppeteer-cluster 可以实现并行抓取
+
+
+1.2 步骤
+
+- 通用的转换方法分为 4 步
+  - 获取菜单，可手动填写，也可以通过辅助脚本 make_menu.js 生成。最终构造一个每行包含“下载 url”、“要保存的文件名”、“等级”（行首
+    tab 缩进个数表示当前文章在教程的等级）所组成的配置文件。已经写好的一些在 configs 文件夹下，可供参考
+  ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/">电子书处理</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/%E7%89%88%E6%9C%AC%E6%8F%90%E7%A4%BA.png" style="display: block;margin: auto;"><p>1 制作书
 
 
 1.1 从网页爬取
