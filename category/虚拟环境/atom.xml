@@ -520,6 +520,11 @@
 &lt;li&gt;K60 在最后会报挂载的 3 个错误，目前看没问题&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;最新的澎湃 android 14 使用 fastboot 刷入 &lt;a href=&#34;https://xiaomi.eu/community/threads/23-11-8-13-16.70548/&#34;&gt;23.11.8&lt;/a&gt; （具体参考这个链接，用 update 脚本，不用格式化），文件名 &lt;code&gt;xiaomi.eu_multi_MONDRIAN_OS1.0.23.11.8.DEV_os1-14.zip&lt;/code&gt;，因为 &lt;code&gt;Storage encryption in TWRP does not work on Android 14 so we recommend to use fastboot method&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;magisk root 方式也不用下面的 zip 方式，而是 Magisk App 来 patch 刷机解压出的 boot.img，再用 fastboot 刷入，&lt;a href=&#34;https://iitii.github.io/2022/07/13/1/&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://topjohnwu.github.io/Magisk/install.html&#34;&gt;官方参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;safetynet &lt;a href=&#34;https://xiaomi.eu/community/threads/how-to-flash-magisk-and-play-integrity-fix-on-xiaomi-eu.70553/&#34;&gt;参考1&lt;/a&gt;，&lt;a href=&#34;https://iitii.github.io/2022/07/13/1/&#34;&gt;参考2&lt;/a&gt;。注意清除这 3 个 App （Google Wallet, Google Play Services, Google Play Store and Google Services Framework.）的数据，然后重启才能生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;联网后用小米账户解锁，设置 WIFI 局域网代理从而可以登录 Google 账号，&lt;a href=&#34;https://blog.minamigo.moe/archives/287&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;在 recovery 刷入 &lt;a href=&#34;https://magiskapp.com/zip/&#34;&gt;magisk&lt;/a&gt;，官网下载 apk 文件（不是 zip，zip 是源码），然后重命名为 zip 文件后刷入&lt;ul&gt;
 &lt;li&gt;Magisk 隐藏应用名&lt;/li&gt;
