@@ -2563,8 +2563,8 @@
             <link>https://synrst.de/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/</link>
             <pubDate>Thu, 01 Jan 1970 08:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1-制作书&#34;&gt;&lt;a href=&#34;#1-制作书&#34; class=&#34;headerlink&#34; title=&#34;1 制作书&#34;&gt;&lt;/a&gt;1 制作书&lt;/h1&gt;&lt;h2 id=&#34;1-1-从网页爬取&#34;&gt;&lt;a href=&#34;#1-1-从网页爬取&#34; class=&#34;headerlink&#34; title=&#34;1.1 从网页爬取&#34;&gt;&lt;/a&gt;1.1 从网页爬取&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;request + BeautifulSoup + Chrome（或 &lt;a href=&#34;https://github.com/Sicos1977/ChromeHtmlToPdf&#34;&gt;ChromeHtmlToPdf&lt;/a&gt;）&lt;/li&gt;
-&lt;li&gt;selenium 也可生成 PDF&lt;/li&gt;
+&lt;li&gt;request + BeautifulSoup + Chrome（或 &lt;a href=&#34;https://github.com/Sicos1977/ChromeHtmlToPdf&#34;&gt;ChromeHtmlToPdf&lt;/a&gt;），selenium 也可生成 PDF&lt;/li&gt;
+&lt;li&gt;建议用 puppeteer，见 &lt;a href=&#34;/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E7%94%B5%E5%AD%90%E4%B9%A6%E5%A4%84%E7%90%86/../%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/&#34;&gt;如何将网络教程 (tutorial) 转成 PDF&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/315974324/answer/1279274711&#34;&gt;批量删除 PDF 最后一页&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1-2-扫描纸质书&#34;&gt;&lt;a href=&#34;#1-2-扫描纸质书&#34; class=&#34;headerlink&#34; title=&#34;1.2 扫描纸质书&#34;&gt;&lt;/a&gt;1.2 扫描纸质书&lt;/h2&gt;&lt;p&gt;参考 asset 中《DIY版简易零边距扫描仪之玻璃夹子方案》&lt;/p&gt;
