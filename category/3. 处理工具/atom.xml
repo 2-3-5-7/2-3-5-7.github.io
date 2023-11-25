@@ -998,7 +998,7 @@
 &lt;li&gt;spacedesk 作为扩展显示器&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;4-PC-控制手机&#34;&gt;&lt;a href=&#34;#4-PC-控制手机&#34; class=&#34;headerlink&#34; title=&#34;4 PC 控制手机&#34;&gt;&lt;/a&gt;4 PC 控制手机&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;用 QtScrcpy 的“熄屏”控制，可以用于 App 开发&lt;/li&gt;
+&lt;li&gt;用 Scrcpy 的“熄屏”控制，可以用于 App 开发&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;5-内录声音&#34;&gt;&lt;a href=&#34;#5-内录声音&#34; class=&#34;headerlink&#34; title=&#34;5 内录声音&#34;&gt;&lt;/a&gt;5 内录声音&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;静音内录某个软件的声音&lt;ul&gt;
