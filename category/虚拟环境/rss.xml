@@ -2551,7 +2551,13 @@
 &lt;/ul&gt;
 &lt;h1 id=&#34;2-视频下载&#34;&gt;&lt;a href=&#34;#2-视频下载&#34; class=&#34;headerlink&#34; title=&#34;2 视频下载&#34;&gt;&lt;/a&gt;2 视频下载&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 &lt;code&gt;Stream Video Downloader&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg 合并音视频（不合并也可以播放）。也可以用在线解析网站 &lt;a href=&#34;https://www.findyoutube.net/&#34;&gt;Youtube Download Online&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;使用更新的 &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;yt-dlp&lt;/a&gt;，下面命令注意要指定一个 ffmpeg 路径&lt;/li&gt;
+&lt;li&gt;对于英文字幕视频、同时按 Chapter 分隔，命令 &amp;#96;yt-dlp.exe –proxy 127.0.0.1:17890 –embed-subs –write-auto-subs –sub-langs en –convert-subs srt –split-chapters –ffmpeg-location D:\soft\BBDown –merge-output-format mp4&amp;#x2F;mkv &lt;a href=&#34;https://www.youtube.com/watch?v=XXX&#34;&gt;https://www.youtube.com/watch?v=XXX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;对于双语字幕视频 &lt;code&gt;yt-dlp.exe --proxy 127.0.0.1:17890 --embed-subs --write-auto-subs --sub-langs en,zh-Hans --convert-subs srt --split-chapters --ffmpeg-location D:\soft\BBDown --merge-output-format mp4/mkv https://www.youtube.com/watch?v=XXX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;这里字幕是自动生成的，对于人工的字幕，可能要换成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
 &lt;li&gt;Video DownloadHelper 支持的较好，但免费版可能加水印和有下载次数的限制，暂时没用&lt;/li&gt;
 &lt;/ul&gt;
