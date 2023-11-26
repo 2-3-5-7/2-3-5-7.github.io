@@ -1492,8 +1492,8 @@
 &lt;td&gt;提取程序图标 ICO、png&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;QtScrcpy&lt;/td&gt;
-&lt;td&gt;手机控制&lt;/td&gt;
+&lt;td&gt;Scrcpy&lt;/td&gt;
+&lt;td&gt;手机控制，打开USB 调试、USB 调试（安全）、无线调试，重启手机，输入 IP，.\scrcpy.exe  –stay-awake –prefer-text –tcpip&amp;#x3D;192.168.x.x&lt;br /&gt;目前息屏 –turn-screen-off 和 stayawake 似乎不好用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gui-inspect-tool&lt;/td&gt;
@@ -1554,6 +1554,10 @@
 &lt;tr&gt;
 &lt;td&gt;Wub&lt;/td&gt;
 &lt;td&gt;Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网&lt;br /&gt;如果要使用系统更新，可以开启 SSR 全局代理，加快下载&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;翻墙工具备份&lt;/td&gt;
+&lt;td&gt;对常用翻墙工具的备份&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;!-- DB end --&gt;
