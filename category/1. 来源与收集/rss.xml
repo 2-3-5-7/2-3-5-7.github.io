@@ -109,7 +109,7 @@
 &lt;li&gt;使用更新的 &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;yt-dlp&lt;/a&gt;，下面命令注意要指定一个 ffmpeg 路径&lt;/li&gt;
 &lt;li&gt;对于英文字幕视频、同时按 Chapter 分隔，命令 &amp;#96;yt-dlp.exe –proxy 127.0.0.1:17890 –embed-subs –write-sub –write-auto-subs –sub-langs en –convert-subs srt –split-chapters –ffmpeg-location D:\soft\BBDown –merge-output-format mp4&amp;#x2F;mkv &lt;a href=&#34;https://www.youtube.com/watch?v=XXX&#34;&gt;https://www.youtube.com/watch?v=XXX&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;对于双语字幕视频 &lt;code&gt;yt-dlp.exe --proxy 127.0.0.1:17890 --embed-subs --write-sub --write-auto-subs --sub-langs en,zh-Hans --convert-subs srt --split-chapters --ffmpeg-location D:\soft\BBDown --merge-output-format mp4/mkv https://www.youtube.com/watch?v=XXX&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;要把弄成硬字幕 burn &lt;a href=&#34;https://www.reddit.com/r/youtubedl/comments/wrjaa6/burn_subtitle_while_downloading_video/&#34;&gt;参考&lt;/a&gt;（需要改格式 exec 的格式变了），ffmpeg 命令&lt;a href=&#34;https://unix.stackexchange.com/questions/598441/how-to-hardcode-subtitles-from-stream-with-ffmpeg&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;要把弄成硬字幕 burn &lt;a href=&#34;https://www.reddit.com/r/youtubedl/comments/wrjaa6/burn_subtitle_while_downloading_video/&#34;&gt;参考&lt;/a&gt;（需要改格式 exec 的格式变了），ffmpeg 命令 &lt;a href=&#34;https://unix.stackexchange.com/questions/598441/how-to-hardcode-subtitles-from-stream-with-ffmpeg&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;pornhub 可以用插件，也可以在线解析&lt;/li&gt;
