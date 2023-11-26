@@ -45,19 +45,7 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/">1. 来源与收集</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/">下载</a></p><div class="content"><p>1 批量下载
-
-- Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓
-- Chrome 扩展 Link Grabber、Simple mass downloader
-- 必要时使用编程解决，下载 mingw-w64 的 x86_64-win32-seh，安装参考
-
-
-2 视频下载
-
-- 流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 Stream Video Downloader
-- youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg
-  合并音视频（不合并也可以播放）。也可以用在线解析网站 Youtube Download Online
-  - 使用更新的 yt-dlp，下面命令注意要指定一个 ffmp ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/">windows</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 导入 ie 代理</span><br><span class="line">netsh winhttp import proxy source=ie</span><br><span class="line"># 取消代理</span><br><span class="line">netsh winhttp reset proxy</span><br></pre></td></tr></tbody></table></figure><p>1 清理旧文件
 
 删除没有权限的文件夹
 
@@ -73,7 +61,38 @@
     - 对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0
  3. 更新系统、自动装驱动
  4. 关闭更新
- 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
+ 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
+
+- docker 部署，参考，docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=30
+  diygod/rsshub
+  
+  - 注意 cache_expire 为 30s，则 30s 以后 RSS 客户端再去请求就会从源站拉取内容
+  
+  - CACHE_EXPIRE 和 CACHE_CONTENT_EXPIRE 的区别解释，来源 tg 群
+
+
+2 miniflux
+
+- Docker Compose 部署，参考1、参考2
+
+- 注意 POLLING_FREQUENCY 为刷新频率 1min，这里大于 RSSHub 的 cache_expire 保证每分钟都会触发 RSSHub
+  的重新查询，即不使用缓存
+
+- ADMIN_USERNAME 和 ADMIN_PASSWORD 设置用户密码
+
+- po ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1-%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/">1. 来源与收集</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/">下载</a></p><div class="content"><p>1 批量下载
+
+- Bulk Rename Utility 处理的中文 pair 文件时要保持成 unicode、utf-16、UCS-2 大小端无所谓
+- Chrome 扩展 Link Grabber、Simple mass downloader
+- 必要时使用编程解决，下载 mingw-w64 的 x86_64-win32-seh，安装参考
+
+
+2 视频下载
+
+- 流媒体是 M3U8 格式，可以使用 ffmepg 命令下载。或使用插件 Stream Video Downloader
+- youtube 1080P 是音视频分离，且可能分别有两种格式。可以用 youtube-dl 命令行方式下载，然后用 ffmpeg
+  合并音视频（不合并也可以播放）。也可以用在线解析网站 Youtube Download Online
+  - 使用更新的 yt-dlp，下面命令注意要指定一个 ffmp ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.%20%E6%9D%A5%E6%BA%90%E4%B8%8E%E6%94%B6%E9%9B%86/%E4%B8%8B%E8%BD%BD/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
 
 - 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
   - HDMI 欺骗器
@@ -133,26 +152,7 @@
 - Andrioid 11无线调试
   - 打开 usb 调试和无线调试
   - adb pair HOST[:PORT] [PAIRING CODE]
-  - adb connect 192.168.1.xxx:xxx // 注意端口和上门的配对端口不一样，无线调试的I ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
-
-- docker 部署，参考，docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=30
-  diygod/rsshub
-  
-  - 注意 cache_expire 为 30s，则 30s 以后 RSS 客户端再去请求就会从源站拉取内容
-  
-  - CACHE_EXPIRE 和 CACHE_CONTENT_EXPIRE 的区别解释，来源 tg 群
-
-
-2 miniflux
-
-- Docker Compose 部署，参考1、参考2
-
-- 注意 POLLING_FREQUENCY 为刷新频率 1min，这里大于 RSSHub 的 cache_expire 保证每分钟都会触发 RSSHub
-  的重新查询，即不使用缓存
-
-- ADMIN_USERNAME 和 ADMIN_PASSWORD 设置用户密码
-
-- po ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/">如何将网络教程 (tutorial) 转成 PDF</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/../%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/img-1.png" style="display: block;margin: auto;"><p>1 概述
+  - adb connect 192.168.1.xxx:xxx // 注意端口和上门的配对端口不一样，无线调试的I ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/">如何将网络教程 (tutorial) 转成 PDF</a></p><div class="content"><img src="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/../%E5%A6%82%E4%BD%95%E5%B0%86%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%20(tutorial)%20%E8%BD%AC%E6%88%90%20PDF/img-1.png" style="display: block;margin: auto;"><p>1 概述
 
 这篇文章是这个 repo 的 README 内容
 
