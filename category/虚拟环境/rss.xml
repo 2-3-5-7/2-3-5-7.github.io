@@ -3402,7 +3402,7 @@
 &lt;/li&gt;
 &lt;li&gt;更新博客&lt;ul&gt;
 &lt;li&gt;通过 rclone 挂载 GoogleDrive，再 &lt;code&gt;ln -s&lt;/code&gt; 创建软链接到 &lt;code&gt;source/_posts&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;rclone 从官网下载 arm 版本&lt;/li&gt;
+&lt;li&gt;rclone 从官网下载 arm 版本，配置按照官网和向导走就可以，很全面&lt;/li&gt;
 &lt;li&gt;sudo apt install fuse3，rclone mount 需要&lt;ul&gt;
 &lt;li&gt;rclone 退出而没自动 umount 的情况（文件被占用），手动 &lt;code&gt;sudo umount&lt;/code&gt; 一下&lt;/li&gt;
 &lt;/ul&gt;
