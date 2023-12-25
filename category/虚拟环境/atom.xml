@@ -528,6 +528,7 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/chiteroman/PlayIntegrityFix/releases&#34;&gt;下载&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;清除 3 个 App 的数据后重启，Google Play Services, Google Play Store and Google Services Framework&lt;/li&gt;
 &lt;li&gt;用 &lt;a href=&#34;https://github.com/herzhenr/spic-android&#34;&gt;SPIC&lt;/a&gt; 校验时要多试几次，用 Google Play 下载时也要多试几次，有时成功有时失败&lt;/li&gt;
+&lt;li&gt;关闭 play 商店的自动更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;联网后用小米账户解锁，设置 WIFI 局域网代理从而可以登录 Google 账号，&lt;a href=&#34;https://blog.minamigo.moe/archives/287&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
