@@ -586,7 +586,7 @@
 &lt;li&gt;挂美国代理，在页面中切换为美国区。删除旧的中国地址&lt;/li&gt;
 &lt;li&gt;信用卡会扣 1 美元测试，一段时间后自动退款&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;4-电视&#34;&gt;&lt;a href=&#34;#4-电视&#34; class=&#34;headerlink&#34; title=&#34;4 电视&#34;&gt;&lt;/a&gt;4 电视&lt;/h1&gt;&lt;h2 id=&#34;4-1-极米Z4X&#34;&gt;&lt;a href=&#34;#4-1-极米Z4X&#34; class=&#34;headerlink&#34; title=&#34;4.1 极米Z4X&#34;&gt;&lt;/a&gt;4.1 极米Z4X&lt;/h2&gt;&lt;p&gt;花 50 买的这个固件 &lt;code&gt;[小林固件]极米Z4X第三方官改，极致精简、去广告、ROOT，当贝桌面版&lt;/code&gt;，无法切换信号源。因为只有极米桌面才有信号源功能。联系卖家 QQ 群后，给了我新的固件，使用极米原版的 Launcher，且没 root。以后再也不买这种垃圾，还不如自己 root 后删系统应用呢。好像不 root 能用 ADB 也可以。&lt;/p&gt;
+&lt;h1 id=&#34;4-盒子类&#34;&gt;&lt;a href=&#34;#4-盒子类&#34; class=&#34;headerlink&#34; title=&#34;4 盒子类&#34;&gt;&lt;/a&gt;4 盒子类&lt;/h1&gt;&lt;h2 id=&#34;4-1-极米Z4X&#34;&gt;&lt;a href=&#34;#4-1-极米Z4X&#34; class=&#34;headerlink&#34; title=&#34;4.1 极米Z4X&#34;&gt;&lt;/a&gt;4.1 极米Z4X&lt;/h2&gt;&lt;p&gt;花 50 买的这个固件 &lt;code&gt;[小林固件]极米Z4X第三方官改，极致精简、去广告、ROOT，当贝桌面版&lt;/code&gt;，无法切换信号源。因为只有极米桌面才有信号源功能。联系卖家 QQ 群后，给了我新的固件，使用极米原版的 Launcher，且没 root。以后再也不买这种垃圾，还不如自己 root 后删系统应用呢。好像不 root 能用 ADB 也可以。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;刷入上面提到的小林固件，&lt;code&gt;jimi-z4-root-dangbei.zip&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;安装 &lt;code&gt;3C All-in-One Toolbox-Pro-v2.2.2c_build_200111-Mod-armeabi-v7a.apk&lt;/code&gt; 和极米桌面&lt;/li&gt;
@@ -601,7 +601,7 @@
 &lt;li&gt;更新到旧版本前，在现有版本中，忘记无线网络，避免联网后自动更新和下载广告&lt;/li&gt;
 &lt;li&gt;在官方版本中，将g 后缀文件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&#34;4-2-玩客云&#34;&gt;&lt;a href=&#34;#4-2-玩客云&#34; class=&#34;headerlink&#34; title=&#34;4.2 玩客云&#34;&gt;&lt;/a&gt;4.2 玩客云&lt;/h2&gt;&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
 &lt;li&gt;常用媒体 ap、nyt、wsj、Economist、wired&lt;/li&gt;
 &lt;/ul&gt;
