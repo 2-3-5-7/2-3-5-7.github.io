@@ -609,6 +609,7 @@
 &lt;/li&gt;
 &lt;li&gt;刷机完成后，换源，改时区，注意 ubuntu 22.04 的 armhf 源是 &lt;a href=&#34;https://blog.csdn.net/ckzuishuai/article/details/129188133&#34;&gt;这个&lt;/a&gt;，url 中要有 ubuntu-ports&lt;/li&gt;
 &lt;li&gt;装 &lt;a href=&#34;https://github.com/IceWhaleTech/CasaOS&#34;&gt;casaos&lt;/a&gt;， &lt;code&gt;wget -qO- https://get.casaos.io | bash&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/muzihuaner/Casaos_Onecloud/blob/main/README_skill.md&#34;&gt;使用技巧&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
