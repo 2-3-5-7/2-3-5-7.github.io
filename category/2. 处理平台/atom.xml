@@ -620,6 +620,10 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/muzihuaner/Casaos_Onecloud/blob/main/README_skill.md&#34;&gt;使用技巧&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;使用录播姬容器 &lt;a href=&#34;https://rec.danmuji.org/install/container/&#34;&gt;镜像&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cookie 从 BBDown 中获取，避免失效快&lt;/li&gt;
+&lt;li&gt;记录弹幕，不记录原始信息&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
