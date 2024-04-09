@@ -630,7 +630,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;4-3-N1-盒子&#34;&gt;&lt;a href=&#34;#4-3-N1-盒子&#34; class=&#34;headerlink&#34; title=&#34;4.3 N1 盒子&#34;&gt;&lt;/a&gt;4.3 N1 盒子&lt;/h2&gt;&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&#34;4-3-N1-盒子&#34;&gt;&lt;a href=&#34;#4-3-N1-盒子&#34; class=&#34;headerlink&#34; title=&#34;4.3 N1 盒子&#34;&gt;&lt;/a&gt;4.3 N1 盒子&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;刷机文件&lt;a href=&#34;https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/README.cn.md&#34;&gt;来源&lt;/a&gt;，根据表格选 s905d，参照玩客云选 &lt;a href=&#34;https://github.com/ophub/amlogic-s9xxx-armbian/tags&#34;&gt;jammy&lt;/a&gt;，即 ubuntu 22.04，最终选 &lt;code&gt;Armbian_24.5.0_amlogic_s905d_jammy_6.1.84_server_2024.04.08.img.gz&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;下载解压用 Rufus 烧录 img 文件到 U 盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-平板&#34;&gt;&lt;a href=&#34;#5-平板&#34; class=&#34;headerlink&#34; title=&#34;5 平板&#34;&gt;&lt;/a&gt;5 平板&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
 &lt;li&gt;常用媒体 ap、nyt、wsj、Economist、wired&lt;/li&gt;
 &lt;/ul&gt;
