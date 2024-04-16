@@ -524,6 +524,7 @@
 &lt;li&gt;magisk root 方式也不用下面的 zip 方式，而是 Magisk App 来 patch 刷机解压出的 boot.img，再用 fastboot 刷入，&lt;a href=&#34;https://iitii.github.io/2022/07/13/1/&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://topjohnwu.github.io/Magisk/install.html&#34;&gt;官方参考&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;更新目前可以 recovery 刷入了，文件在 &lt;code&gt;k60\miflash_unlock_en_7.6.727.43&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;safetynet，&lt;a href=&#34;https://xiaomi.eu/community/threads/installing-magisk-and-play-integrity-fix.70553/&#34;&gt;参考1&lt;/a&gt;、&lt;a href=&#34;https://iitii.github.io/2022/07/13/1/&#34;&gt;参考2&lt;/a&gt;、&lt;a href=&#34;https://www.v2ex.com/t/959720&#34;&gt;参考3&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/chiteroman/PlayIntegrityFix/releases&#34;&gt;下载&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;清除 3 个 App 的数据后重启，Google Play Services, Google Play Store and Google Services Framework&lt;/li&gt;
