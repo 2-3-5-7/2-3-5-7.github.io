@@ -653,8 +653,8 @@
 &lt;li&gt;联网后，可以 ssh 登录，不需要 HDMI 连接了&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;armbian-apt&lt;/code&gt; 选择清华源&lt;/li&gt;
 &lt;li&gt;刷回 android 的方法整理，未测试&lt;ul&gt;
-&lt;li&gt;方法一  清除 boot 分区， &lt;a href=&#34;https://www.right.com.cn/forum/thread-362781-1-1.html&#34;&gt;参考一&lt;/a&gt;、&lt;a href=&#34;https://product.liyiru.top/detail/20220506&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;方法二  ddbr，&lt;a href=&#34;https://post.smzdm.com/p/akmg5dv4/&#34;&gt;参考一&lt;/a&gt;、&lt;/li&gt;
+&lt;li&gt;方法一  清除 boot 分区进入线刷，为了免拆机， &lt;a href=&#34;https://www.right.com.cn/forum/thread-362781-1-1.html&#34;&gt;参考一&lt;/a&gt;、&lt;a href=&#34;https://product.liyiru.top/detail/20220506&#34;&gt;参考二&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;方法二  ddbr，&lt;a href=&#34;https://post.smzdm.com/p/akmg5dv4/&#34;&gt;参考一&lt;/a&gt;、&lt;a href=&#34;https://github.com/ophub/amlogic-s9xxx-armbian?tab=readme-ov-file#backuprestore-emmc-original-system&#34;&gt;参考二 注意 Tools 链接&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
