@@ -511,7 +511,11 @@
 &lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1JN4y127zm&#34;&gt;电池容量检测&lt;/a&gt;，软件 &lt;a href=&#34;http://www.91oss.com/xzzx-W28-Pro.html&#34;&gt;在这&lt;/a&gt; 下，可多测几次&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3-2-卡贴&#34;&gt;&lt;a href=&#34;#3-2-卡贴&#34; class=&#34;headerlink&#34; title=&#34;3.2 卡贴&#34;&gt;&lt;/a&gt;3.2 卡贴&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;解锁模式分为 TMSI 和 QPE，QPE 是 12 以上使用，耗电多，还要配合 esim 或另一张卡，因此两种模式都可以的话优先用 TMSI&lt;/li&gt;
+&lt;li&gt;解锁模式分为 TMSI 和 QPE，QPE 是 12 以上使用，耗电多，还要配合 esim 或另一张卡，因此两种模式都可以的话优先用 TMSI&lt;ul&gt;
+&lt;li&gt;另外还有 ICCID 黑解&lt;/li&gt;
+&lt;li&gt;TMSI 解锁时，变换位置会出现没信号的间隔，所以适合大部分时间位置固定的场景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;运营商分两种情况，电信方便（先插原来的卡，再插卡贴 + 卡），联通、移动需要 &lt;a href=&#34;https://www.bilibili.com/video/BV1fL411y7rr&#34;&gt;卡 IPCC&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;联通、移动要保存 IPCC，可巨魔后用 &lt;a href=&#34;https://www.bilibili.com/video/BV1gG41167k4&#34;&gt;IPCC Replacer&lt;/a&gt;，去抖音上搜索教程&lt;/li&gt;
 &lt;li&gt;卡 IPCC 最后的重启资源库还可以使用 &lt;a href=&#34;https://tieba.baidu.com/p/8221218967&#34;&gt;快捷指令&lt;/a&gt;。利用 Bug 的话不同 ios 版本有细微区别&lt;/li&gt;
