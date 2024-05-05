@@ -499,18 +499,21 @@
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.usercenter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.android.email&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.oppo.music&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespace&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.themespacelib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adb shell pm uninstall --user 0 com.nearme.gamecenter&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;h1 id=&#34;2-Android&#34;&gt;&lt;a href=&#34;#2-Android&#34; class=&#34;headerlink&#34; title=&#34;2 Android&#34;&gt;&lt;/a&gt;2 Android&lt;/h1&gt;&lt;h2 id=&#34;2-1-验机&#34;&gt;&lt;a href=&#34;#2-1-验机&#34; class=&#34;headerlink&#34; title=&#34;2.1 验机&#34;&gt;&lt;/a&gt;2.1 验机&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1eM4y1B7PC&#34;&gt;二手购机指南&lt;/a&gt;、&lt;a href=&#34;https://www.bilibili.com/video/BV1WM411p7qb&#34;&gt;升级版验货宝&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;重置设备&lt;/li&gt;
 &lt;li&gt;小米输入 &lt;code&gt;*#*#6484#*#*&lt;/code&gt; 测试功能&lt;/li&gt;
 &lt;li&gt;验机参考&lt;a href=&#34;https://www.bilibili.com/video/BV1xs4y1W7HU/&#34;&gt;视频&lt;/a&gt;，也可以参考苹果的 &lt;a href=&#34;https://www.bilibili.com/video/BV1Hc41187z7&#34;&gt;二手验机流程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;安兔兔 和 鲁大师的验机也可以参考，但这两个 App 的验机一直出现网络问题&lt;ul&gt;
 &lt;li&gt;安兔兔 里面有根据 IMEI 查询机器信息&lt;/li&gt;
 &lt;li&gt;安兔兔 里面有测试电池损耗，测电池前可以长时间录像放电，参照 iPhone 测试稳定性&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/tardis/zm/art/411867307&#34;&gt;小米自带的电池健康度&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;去测速网站测试网速&lt;/li&gt;
 &lt;li&gt;Geekbench 6  测试 CPU 性能，并与网上相应手机型号的数值对比&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;3-Iphone&#34;&gt;&lt;a href=&#34;#3-Iphone&#34; class=&#34;headerlink&#34; title=&#34;3 Iphone&#34;&gt;&lt;/a&gt;3 Iphone&lt;/h1&gt;&lt;h2 id=&#34;3-1-验机&#34;&gt;&lt;a href=&#34;#3-1-验机&#34; class=&#34;headerlink&#34; title=&#34;3.1 验机&#34;&gt;&lt;/a&gt;3.1 验机&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1eM4y1B7PC&#34;&gt;二手购机指南&lt;/a&gt;、&lt;a href=&#34;https://www.bilibili.com/video/BV1WM411p7qb&#34;&gt;升级版验货宝&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;造假方式 &lt;a href=&#34;https://www.bilibili.com/video/BV1Ky421z7Gj&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;从收到快递开始，一直用摄像头录像&lt;/li&gt;
 &lt;li&gt;设备检测，&lt;a href=&#34;https://www.bilibili.com/video/BV1Hc41187z7&#34;&gt;二手验机流程&lt;/a&gt;&lt;/li&gt;
