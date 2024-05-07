@@ -537,7 +537,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;卡贴使用&lt;ul&gt;
-&lt;li&gt;使用时，建议忘记已经连接的 WIFI 热点，即只使用移动数据&lt;/li&gt;
+&lt;li&gt;使用时，必须&lt;strong&gt;忘记&lt;/strong&gt;已经连接的 WIFI 热点，即只使用移动数据&lt;/li&gt;
 &lt;li&gt;弹出菜单时，对于 se2 是英特尔基带，因此卡贴解锁选择，英特尔 XR-11，然后 T-mobile LTE。开启数据漫游、VoLTE&lt;/li&gt;
 &lt;li&gt;对于联通、移动，接着用上面的卡 IPCC 方法获得 4G，电信则直接有 4G&lt;/li&gt;
 &lt;li&gt;卡贴不要频繁拿下，容易损坏芯片&lt;/li&gt;
