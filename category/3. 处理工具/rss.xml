@@ -525,7 +525,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;3-4-繁简转换&#34;&gt;&lt;a href=&#34;#3-4-繁简转换&#34; class=&#34;headerlink&#34; title=&#34;3.4 繁简转换&#34;&gt;&lt;/a&gt;3.4 繁简转换&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://peggy918.pixnet.net/blog/post/468475997-%E3%80%90calibre%E5%A4%96%E6%8E%9B%E3%80%91-%E7%B0%A1%E8%BD%89%E7%B9%81&#34;&gt;【Calibre外挂】 简转繁功能大揭密&lt;/a&gt;、&lt;a href=&#34;https://bookfere.com/post/162.html&#34;&gt;Calibre 使用教程之电子书繁体字转简体字&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Calibre 安装 &lt;code&gt;Chinese Text Conversion&lt;/code&gt; 插件，编辑书籍，点击&lt;code&gt;文&lt;/code&gt;，台湾繁转简，直排转横排，保存副本后&lt;/li&gt;
+&lt;li&gt;Calibre 安装 &lt;a href=&#34;https://github.com/Hopkins1/TradSimpChinese&#34;&gt;Chinese Text Conversion 插件&lt;/a&gt;，编辑书籍，点击&lt;code&gt;文&lt;/code&gt;，台湾繁转简，直排转横排，保存副本后&lt;/li&gt;
 &lt;li&gt;再用编辑单个书籍，加载 csr 替换文件（见资源目录），前面的 4 个引号替换可以删除&lt;/li&gt;
 &lt;li&gt;对于带图片的文档（漫画），输出配置选择 tablet，不改变图片质量&lt;/li&gt;
 &lt;/ol&gt;
