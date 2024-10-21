@@ -3579,6 +3579,7 @@
 &lt;/li&gt;
 &lt;li&gt;rclone 放到 screen 里面运行，.zshrc 添加 &lt;code&gt;screen -x&lt;/code&gt;，登录后就恢复上次的环境&lt;/li&gt;
 &lt;li&gt;配置 cron 每两小时自动 &lt;code&gt;npx hexo deploy --generate&lt;/code&gt; 更新博客&lt;/li&gt;
+&lt;li&gt;在某些频繁写入的场景下，需要在本地保留一份，然后利用 rsync 和 cron 来周期同步 &lt;code&gt;rsync -av --update --log-file=/home/ubuntu/sync_log.txt /home/ubuntu/blivedm/rooms/ /home/ubuntu/rclone-linux/gd-db/rooms/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
