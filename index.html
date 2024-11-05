@@ -45,7 +45,26 @@
         理财 --> 物品选购</pre>
 
 
-<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/">blog</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line">npx hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title</span><br><span class="line"><span class="comment"># 要在 config 中添加配置</span></span><br><span class="line">npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git</span><br><span class="line"><span class="comment"># source 目录下，关联笔记</span></span><br><span class="line">mklink /J _posts D:\Documents\Dropbox\notes\blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 还有一个 footnote 插件从 hexo-theme-fluid 移植过来</span></span><br><span class="line"><span class="comment"># 还有 add_assets_url.js 添加下载图标</span></span><br><span class="line"><span class="comment"># 所有插件可通过 hexo --debug 选项看到</span></span><br></pre></td></tr></tbody></table></figure><p>1 部署
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
+
+- docker 部署，参考，docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=30
+  diygod/rsshub
+  
+  - 注意 cache_expire 为 30s，则 30s 以后 RSS 客户端再去请求就会从源站拉取内容
+  
+  - CACHE_EXPIRE 和 CACHE_CONTENT_EXPIRE 的区别解释，来源 tg 群
+
+
+2 miniflux
+
+- Docker Compose 部署，参考1、参考2
+
+- 注意 POLLING_FREQUENCY 为刷新频率 1min，这里大于 RSSHub 的 cache_expire 保证每分钟都会触发 RSSHub
+  的重新查询，即不使用缓存
+
+- ADMIN_USERNAME 和 ADMIN_PASSWORD 设置用户密码
+
+- po ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4-%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/">4. 分享与备份</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.%20%E5%88%86%E4%BA%AB%E4%B8%8E%E5%A4%87%E4%BB%BD/blog/">blog</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br><span class="line">npx hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm i hexo-theme-icarus hexo-generator-sitemap hexo-relative-link hexo-mermaid-lastest hexo-filename-title</span><br><span class="line"><span class="comment"># 要在 config 中添加配置</span></span><br><span class="line">npm i hexo-auto-category hexo-feed hexo-extract-excerpt hexo-deployer-git</span><br><span class="line"><span class="comment"># source 目录下，关联笔记</span></span><br><span class="line">mklink /J _posts D:\Documents\Dropbox\notes\blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 还有一个 footnote 插件从 hexo-theme-fluid 移植过来</span></span><br><span class="line"><span class="comment"># 还有 add_assets_url.js 添加下载图标</span></span><br><span class="line"><span class="comment"># 所有插件可通过 hexo --debug 选项看到</span></span><br></pre></td></tr></tbody></table></figure><p>1 部署
 
  1. 安装 git、node.js，参考 hexo 官网，windows、linux 有区别。git 设置 sock5 代理，见 git
  2. github 创建 username.github.io 仓库，实测要用官方的流程设置一下主题才能开通。添加 ssh 密钥
@@ -145,26 +164,7 @@ apt-get install openssh-server openssh-client
 - Andrioid 11无线调试
   - 打开 usb 调试和无线调试
   - adb pair HOST[:PORT] [PAIRING CODE]
-  - adb connect 192.168.1.xxx:xxx // 注意端口和上门的配对端口不一样，无线调试的I ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/">自建 RSS</a></p><div class="content"><figure class="highlight plaintext" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">注意第一個是 (文章列表+文章) 的緩存，就算你不斷 F5 ，只要是在這個時間內都不會請求源站</span><br><span class="line">比如說第一次請求到甲站的文章列表有ABC三篇文章, 這時緩存裡記著甲站有ABC及ABC的內容, 只要沒過期你怎樣F5就不會再請求甲站, 都只是緩存返回甲站有ABC</span><br><span class="line">過期後(5分鐘)再一次請求甲站, 發現甲站的文章列表有BCD, 由於CACHE_CONTENT_EXPIRE(1小時)沒過期, 緩存裡有ABC文章自身的內容, 就不會重複請求BC文章, 只會請求D文</span><br></pre></td></tr></tbody></table></figure><p>1 RSSHub
-
-- docker 部署，参考，docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=30
-  diygod/rsshub
-  
-  - 注意 cache_expire 为 30s，则 30s 以后 RSS 客户端再去请求就会从源站拉取内容
-  
-  - CACHE_EXPIRE 和 CACHE_CONTENT_EXPIRE 的区别解释，来源 tg 群
-
-
-2 miniflux
-
-- Docker Compose 部署，参考1、参考2
-
-- 注意 POLLING_FREQUENCY 为刷新频率 1min，这里大于 RSSHub 的 cache_expire 保证每分钟都会触发 RSSHub
-  的重新查询，即不使用缓存
-
-- ADMIN_USERNAME 和 ADMIN_PASSWORD 设置用户密码
-
-- po ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%BB%BA%20RSS/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
+  - adb connect 192.168.1.xxx:xxx // 注意端口和上门的配对端口不一样，无线调试的I ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%8B%E6%9C%BA_%E7%94%B5%E8%A7%86_%E5%B9%B3%E6%9D%BF/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3-%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/">3. 处理工具</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.%20%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A8%B1%E4%B9%90/">音视频学习与娱乐</a></p><div class="content"><p>1 应对禁止录屏
 
 - 添加虚拟显示器，将视频传送给另一端后，用另一端的软件录屏
   - HDMI 欺骗器
