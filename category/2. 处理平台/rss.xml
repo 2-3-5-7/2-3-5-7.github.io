@@ -104,7 +104,7 @@
 &lt;li&gt;这种场景如内网穿透，内网必须作为客户端主动连公网服务器端&lt;ul&gt;
 &lt;li&gt;为了防止连接中断可 &lt;a href=&#34;https://cloud.tencent.com/developer/article/1722055&#34;&gt;写个脚本&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;但在公网服务器开端口暴露内网资源可能不安全（有的内网资源没有密码等），真要这样用还需配置 &lt;code&gt;GatewayPorts yes&lt;/code&gt;，否则只会在环回口监听&lt;/li&gt;
-&lt;li&gt;所以为了安全，即 1. 要有授权的客户端才能连服务端口 2. 保证用户到服务端口之间数据的安全性（socks 协议不加密）。在先用 -R 开启环回口（动态方式）后，再在用户侧用 -L 练到公网服务器，见 &lt;a href=&#34;https://o-u-u.com/?p=3234#%E9%93%BE%E5%BC%8F%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91&#34;&gt;链式端口转发&lt;/a&gt; (文中为固定转发给 3000 端口，可改为动态)&lt;/li&gt;
+&lt;li&gt;所以为了安全，即 1. 要有授权的客户端才能连服务端口 2. 保证用户到服务端口之间数据的安全性（socks 协议不加密）。在先用 -R 开启环回口（动态方式）后，再在用户侧用 -L 连到公网服务器，见 &lt;a href=&#34;https://o-u-u.com/?p=3234#%E9%93%BE%E5%BC%8F%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91&#34;&gt;链式端口转发&lt;/a&gt; (文中为固定转发给 3000 端口，可改为动态)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
