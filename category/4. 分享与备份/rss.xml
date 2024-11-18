@@ -217,6 +217,12 @@
 &lt;li&gt;如要用 Kopia 备份 linux，我认为可尝试 restic 相关&lt;a href=&#34;https://forum.restic.net/t/lack-of-documentation-on-how-to-do-a-full-system-back-up/659/5&#34;&gt;问答&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重装系统后，修改 snapshot 的 owner，&lt;code&gt;snapshot move-history 旧用户@desktop-f9pif6o 新用户@magicstone&lt;/code&gt;，&lt;a href=&#34;https://kopia.discourse.group/t/question-can-the-owner-be-changed-afterwards/2017&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改变 &lt;code&gt;maintenance set --owner&lt;/code&gt; &lt;a href=&#34;https://kopia.discourse.group/t/cannot-run-maintenance-as-kopia-cli-believes-im-not-the-repository-owner/2915&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;删除一部分 snapshot 后&lt;a href=&#34;https://github.com/kopia/kopia/issues/2608&#34;&gt;释放空间&lt;/a&gt; &lt;code&gt;kopia maintenance run --full --safety=none&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;1-1-Alist-Rclone&#34;&gt;&lt;a href=&#34;#1-1-Alist-Rclone&#34; class=&#34;headerlink&#34; title=&#34;1.1 Alist  Rclone&#34;&gt;&lt;/a&gt;1.1 Alist  Rclone&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;kopia 支持 webdav 但效果不好，所以再套一层 rclone 来上传备份&lt;/li&gt;
