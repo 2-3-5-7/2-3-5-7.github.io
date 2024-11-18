@@ -1243,7 +1243,7 @@
 &lt;/ul&gt;
 &lt;!-- DB start --&gt;
 
-&lt;h2 id=&#34;3-2-必装&#34;&gt;&lt;a href=&#34;#3-2-必装&#34; class=&#34;headerlink&#34; title=&#34;3.2 必装&#34;&gt;&lt;/a&gt;3.2 必装&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;3-1-必装&#34;&gt;&lt;a href=&#34;#3-1-必装&#34; class=&#34;headerlink&#34; title=&#34;3.1 必装&#34;&gt;&lt;/a&gt;3.1 必装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;必装&lt;/th&gt;
@@ -1259,7 +1259,7 @@
 &lt;td&gt;装字体，MacTypeInstaller 修改字体&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Clash.for.Windows&lt;/td&gt;
+&lt;td&gt;翻墙工具备份&lt;/td&gt;
 &lt;td&gt;- 设置开机启动，节点切换自动断开&lt;br/&gt;- 手动调用 command.bat 里面的命令安装 service，及手动删除 service 解决“红色地球”问题，&lt;a href=&#34;https://github.com/Fndroid/clash_for_windows_pkg/issues/3412&#34;&gt;参见&lt;/a&gt;&lt;br /&gt;- 可能对 clash 订阅的规则不满意，因此见下面 clash 自定义部分&lt;br /&gt;&lt;a href=&#34;https://merlinblog.xyz/wikipageguide.html&#34;&gt;所有平台客户端汇总&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1410,17 +1410,21 @@
 &lt;td&gt;WebStorm&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;office 2024&lt;/td&gt;
+&lt;td&gt;参考这个 &lt;a href=&#34;https://www.youtube.com/watch?v=lBT9_3mRsUY&#34;&gt;视频&lt;/a&gt;&lt;br /&gt;Office LTSC Professional Plus 2024 - Volume License&lt;br /&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=49117&#34;&gt;office 开发者工具&lt;/a&gt; 得到 setup&lt;br/&gt;&lt;a href=&#34;https://config.office.com/deploymentsettings&#34;&gt;office 自定义工具&lt;/a&gt; 得到 config.xml&lt;br/&gt;下载命令: setup &amp;#x2F;download config.xml&lt;br/&gt;安装命令: setup &amp;#x2F;configure config.xml&lt;br/&gt;激活命令:&lt;br/&gt;cd C:\Program Files\Microsoft Office\Office16&lt;br/&gt;cscript ospp.vbs &amp;#x2F;sethst:kms.03k.org&lt;br/&gt;cscript ospp.vbs &amp;#x2F;act&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-3-虚拟机安装&#34;&gt;&lt;a href=&#34;#3-3-虚拟机安装&#34; class=&#34;headerlink&#34; title=&#34;3.3 虚拟机安装&#34;&gt;&lt;/a&gt;3.3 虚拟机安装&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;3-2-虚拟机安装&#34;&gt;&lt;a href=&#34;#3-2-虚拟机安装&#34; class=&#34;headerlink&#34; title=&#34;3.2 虚拟机安装&#34;&gt;&lt;/a&gt;3.2 虚拟机安装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;TIM&lt;/th&gt;
-&lt;th&gt;查考&lt;a href=&#34;https://www.zhihu.com/question/265963430/answer/2492603110&#34;&gt;这个&lt;/a&gt;删除 QQProtect&lt;/th&gt;
+&lt;th&gt;虚拟机安装&lt;/th&gt;
+&lt;th&gt;配置&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;虚拟机安装&lt;/td&gt;
-&lt;td&gt;配置&lt;/td&gt;
+&lt;td&gt;QQ&lt;/td&gt;
+&lt;td&gt;查考&lt;a href=&#34;https://www.zhihu.com/question/265963430/answer/2492603110&#34;&gt;这个&lt;/a&gt;删除 QQProtect&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;WeChat&lt;/td&gt;
@@ -1443,7 +1447,7 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-4-建议安装&#34;&gt;&lt;a href=&#34;#3-4-建议安装&#34; class=&#34;headerlink&#34; title=&#34;3.4 建议安装&#34;&gt;&lt;/a&gt;3.4 建议安装&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;3-3-建议安装&#34;&gt;&lt;a href=&#34;#3-3-建议安装&#34; class=&#34;headerlink&#34; title=&#34;3.3 建议安装&#34;&gt;&lt;/a&gt;3.3 建议安装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;建议安装&lt;/th&gt;
@@ -1453,10 +1457,6 @@
 &lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;vcxsrv&lt;/td&gt;
 &lt;td&gt;替代 xming（有 bug、新版本收费），新建快捷方式 “D:\soft\VcXsrv\vcxsrv.exe :0 -clipboard -multiwindow -dpi 108”&lt;br /&gt;添加到 windows 启动中，C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp&lt;br /&gt; &lt;a href=&#34;https://aufather.wordpress.com/2010/11/21/increasing-font-size-in-xming-server/&#34;&gt;指定 dpi&lt;/a&gt; &lt;code&gt;-dpi 108&lt;/code&gt; 来增加文字大小&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;office 2021（Office LTSC 专业增强版 2021（SPLA））&lt;/td&gt;
-&lt;td&gt;1. 先卸载旧的 office，再用 OTP 工具的激活选项卡清除旧的激活信息，重启&lt;br/&gt;2. 用 OTP 通道： Office 2021 企业长期版，产品：Office LTSC 专业增强版 2021（SPLA）&lt;br /&gt;3. 在 OTP 中设置 KMS 服务器激活，&lt;a href=&#34;https://www.bilibili.com/read/cv19851359/&#34;&gt;参考&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;pandoc&lt;/td&gt;
@@ -1611,7 +1611,7 @@
 &lt;td&gt;替代 DAEMON Tools Lite 挂载 galgame 常见的 mds、mdf 文件&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-5-不常安装&#34;&gt;&lt;a href=&#34;#3-5-不常安装&#34; class=&#34;headerlink&#34; title=&#34;3.5 不常安装&#34;&gt;&lt;/a&gt;3.5 不常安装&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;3-4-不常安装&#34;&gt;&lt;a href=&#34;#3-4-不常安装&#34; class=&#34;headerlink&#34; title=&#34;3.4 不常安装&#34;&gt;&lt;/a&gt;3.4 不常安装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;不常安装&lt;/th&gt;
@@ -1871,7 +1871,7 @@
 &lt;td&gt;gRPC 测试&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;3-6-淘汰备份&#34;&gt;&lt;a href=&#34;#3-6-淘汰备份&#34; class=&#34;headerlink&#34; title=&#34;3.6 淘汰备份&#34;&gt;&lt;/a&gt;3.6 淘汰备份&lt;/h2&gt;&lt;table&gt;
+&lt;h2 id=&#34;3-5-淘汰备份&#34;&gt;&lt;a href=&#34;#3-5-淘汰备份&#34; class=&#34;headerlink&#34; title=&#34;3.5 淘汰备份&#34;&gt;&lt;/a&gt;3.5 淘汰备份&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;淘汰备份&lt;/th&gt;
@@ -1925,10 +1925,6 @@
 &lt;tr&gt;
 &lt;td&gt;Wub&lt;/td&gt;
 &lt;td&gt;Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网&lt;br /&gt;如果要使用系统更新，可以开启 SSR 全局代理，加快下载&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;翻墙工具备份&lt;/td&gt;
-&lt;td&gt;对常用翻墙工具的备份&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;!-- DB end --&gt;
