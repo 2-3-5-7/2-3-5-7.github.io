@@ -100,15 +100,15 @@ apt-get install openssh-server openssh-client
  2. 文件夹属性 -> 安全 -> 高级 -> 权限添加 -> 主体为自己的用户名 -> 勾选下面的继承权限
 
 
-2 搭建
+2 安装
 
- 1. 安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容
-    - 用 Edgeless PE，写入 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间
- 2. PE 环境下加载 ISO 镜像（镜像选择专业版），运行 source 下的 setup
-    - 对 Win11 用 Windows 安装器加载镜像安装，绕过 TPM 2.0
- 3. 更新系统、自动装驱动
- 4. 关闭更新
- 5. 修改桌面、 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/">docker</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo groupadd docker</span><br><span class="line">sudo usermod -aG docker <span class="variable">$USER</span></span><br><span class="line"><span class="comment"># 激活新修改</span></span><br><span class="line">newgrp docker</span><br><span class="line"><span class="comment"># 提示没权限的话重启</span></span><br><span class="line">docker version</span><br></pre></td></tr></tbody></table></figure><p>1 安装
+- 安装 PE 环境到 U 盘，PE 环境尽量不更新，否则 DG 版本更新后之前的系统备份是否还能兼容
+  - 用 Edgeless PE，写入 时选择预留分区，大小为 U 盘容量 - 1G，即给前面的 PE 留出 1G 空间
+- 官网下载 window 11 镜像
+  - 对 Win11 用 PE 里的安装器安装，绕过 TPM 2.0
+  - 用修改注册表的方法跳过必须联网登录才嫩安装
+- 激活系统，HEU_KMS_Activator 激活 Office 和 Windows
+- 安 ...</p></div><a class="article-more button is-small is-size-7" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/windows/#more">阅读更多</a></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/">虚拟环境</a><span> / </span><a class="link-muted" href="/categories/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2-%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/">2. 处理平台</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.%20%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0/docker/">docker</a></p><div class="content"><figure class="highlight bash" style="display: block;margin: auto;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo groupadd docker</span><br><span class="line">sudo usermod -aG docker <span class="variable">$USER</span></span><br><span class="line"><span class="comment"># 激活新修改</span></span><br><span class="line">newgrp docker</span><br><span class="line"><span class="comment"># 提示没权限的话重启</span></span><br><span class="line">docker version</span><br></pre></td></tr></tbody></table></figure><p>1 安装
 
 - ubuntu 20.04 安装、参考二
 - 避免每次输入 sudo
