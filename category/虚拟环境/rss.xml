@@ -1414,6 +1414,10 @@
 &lt;td&gt;office 2024&lt;/td&gt;
 &lt;td&gt;参考这个 &lt;a href=&#34;https://www.youtube.com/watch?v=lBT9_3mRsUY&#34;&gt;视频&lt;/a&gt;&lt;br /&gt;Office LTSC Professional Plus 2024 - Volume License&lt;br /&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=49117&#34;&gt;office 开发者工具&lt;/a&gt; 得到 setup&lt;br/&gt;&lt;a href=&#34;https://config.office.com/deploymentsettings&#34;&gt;office 自定义工具&lt;/a&gt; 得到 config.xml&lt;br/&gt;下载命令: setup &amp;#x2F;download config.xml&lt;br/&gt;安装命令: setup &amp;#x2F;configure config.xml&lt;br/&gt;激活命令:&lt;br/&gt;cd C:\Program Files\Microsoft Office\Office16&lt;br/&gt;cscript ospp.vbs &amp;#x2F;sethst:kms.03k.org&lt;br/&gt;cscript ospp.vbs &amp;#x2F;act&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wub&lt;/td&gt;
+&lt;td&gt;Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;3-2-虚拟机安装&#34;&gt;&lt;a href=&#34;#3-2-虚拟机安装&#34; class=&#34;headerlink&#34; title=&#34;3.2 虚拟机安装&#34;&gt;&lt;/a&gt;3.2 虚拟机安装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1475,7 +1479,7 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;ja-netfilter-all&lt;/td&gt;
+&lt;td&gt;ja-netfilter&lt;/td&gt;
 &lt;td&gt;参考 &lt;a href=&#34;https://www.jiweichengzhu.com/article/4bcb140d5035426f9da3dea46f564e4d&#34;&gt;这篇文章&lt;/a&gt; 运行脚本激活，从这里 &lt;a href=&#34;https://jetbra.in/s&#34;&gt;zhile 下载和激活码&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1551,8 +1555,8 @@
 &lt;td&gt;操作见“电子书处理”文档&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;DeDRM_tools&lt;/td&gt;
-&lt;td&gt;DRM 移除插件，租借书籍 &lt;a href=&#34;https://www.reddit.com/r/Piracy/comments/ezenaa/how_to_remove_drm_from_an_amazon_kindle_rented/&#34;&gt;注释掉 rented 两行代码&lt;/a&gt; 后可以用，已经加入改后版本&lt;/td&gt;
+&lt;td&gt;DRM&lt;/td&gt;
+&lt;td&gt;DeDRM_tools，DRM 移除插件，租借书籍 &lt;a href=&#34;https://www.reddit.com/r/Piracy/comments/ezenaa/how_to_remove_drm_from_an_amazon_kindle_rented/&#34;&gt;注释掉 rented 两行代码&lt;/a&gt; 后可以用，已经加入改后版本&lt;br /&gt;配套的 kindle 版本，转简体横排插件&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;cmake&lt;/td&gt;
@@ -1921,10 +1925,6 @@
 &lt;tr&gt;
 &lt;td&gt;Sublime Text&lt;/td&gt;
 &lt;td&gt;需要使用 patch 破解&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Wub&lt;/td&gt;
-&lt;td&gt;Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网&lt;br /&gt;如果要使用系统更新，可以开启 SSR 全局代理，加快下载&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;!-- DB end --&gt;
