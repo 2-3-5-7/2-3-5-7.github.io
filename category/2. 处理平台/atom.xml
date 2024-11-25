@@ -994,7 +994,10 @@
 &lt;li&gt;导入 reg 目录下其它配置，如用图片查看器打开图片&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/&#34;&gt;使用传统右键菜单命令&lt;/a&gt; &lt;code&gt;reg add &amp;quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&amp;quot; /f /ve&lt;/code&gt;，恢复 &lt;code&gt;reg delete &amp;quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}&amp;quot; /f&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;2. 处理平台\windows&lt;/code&gt; 下相关修改&lt;/li&gt;
-&lt;li&gt;国家和地区改成“美国”，去 store 装 &lt;a href=&#34;https://answers.microsoft.com/zh-hans/windows/forum/all/%E5%8D%87%E7%BA%A7%E4%BA%8624h2%E6%B2%A1%E6%9C%89c/fa6b2fea-1b24-462c-9588-3751ada21535&#34;&gt;copilot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;国家和地区&lt;/strong&gt;改成“美国”，去 store 装 &lt;a href=&#34;https://answers.microsoft.com/zh-hans/windows/forum/all/%E5%8D%87%E7%BA%A7%E4%BA%8624h2%E6%B2%A1%E6%9C%89c/fa6b2fea-1b24-462c-9588-3751ada21535&#34;&gt;copilot&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;store 打不开时，还需要改控制面板“区域”– “更改系统区域设置” – 英语（美国），&lt;a href=&#34;https://blog.csdn.net/weixin_53848123/article/details/122679214&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;开启沙盒&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
