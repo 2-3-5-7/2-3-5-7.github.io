@@ -1199,6 +1199,10 @@
 &lt;td&gt;Wub&lt;/td&gt;
 &lt;td&gt;Windows Update Blocker，关闭 windows 更新 服务，同时也可用于关闭其它服务，并阻止其它软件开启，设置步骤见官网&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gopeed&lt;/td&gt;
+&lt;td&gt;用来替代 IDM，装浏览器扩展后，要记得设置成软件 API 的端口，IP 写 127 本地&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;3-2-虚拟机安装&#34;&gt;&lt;a href=&#34;#3-2-虚拟机安装&#34; class=&#34;headerlink&#34; title=&#34;3.2 虚拟机安装&#34;&gt;&lt;/a&gt;3.2 虚拟机安装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -1261,7 +1265,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;ja-netfilter&lt;/td&gt;
-&lt;td&gt;参考 &lt;a href=&#34;https://www.jiweichengzhu.com/article/4bcb140d5035426f9da3dea46f564e4d&#34;&gt;这篇文章&lt;/a&gt; 运行脚本激活，从这里 &lt;a href=&#34;https://jetbra.in/s&#34;&gt;zhile 下载和激活码&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;从这里 &lt;a href=&#34;https://jetbra.in/s&#34;&gt;zhile 下载和激活码&lt;/a&gt;&lt;br /&gt;把解压的 jetbra 放到某个固定路径，运行 &lt;code&gt;jetbra\scripts\install-all-users.vbs&lt;/code&gt;，粘贴下载网站提供的 activation code&lt;br /&gt;参考 &lt;a href=&#34;https://www.jiweichengzhu.com/article/4bcb140d5035426f9da3dea46f564e4d&#34;&gt;这篇文章&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;7z&lt;/td&gt;
