@@ -1657,7 +1657,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;grpcui&lt;/td&gt;
-&lt;td&gt;gRPC 测试&lt;/td&gt;
+&lt;td&gt;gRPC 测试&lt;br /&gt;参考命令 &lt;code&gt;.\grpcui  -import-path &amp;quot;D:\Desktop\grpc_api&amp;quot; -proto &amp;quot;bilibili\app\dynamic\v2\dynamic.proto&amp;quot; -proto &amp;quot;bilibili\app\dynamic\v2\opus.proto&amp;quot; grpc.biliapi.net:443&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;3-5-淘汰备份&#34;&gt;&lt;a href=&#34;#3-5-淘汰备份&#34; class=&#34;headerlink&#34; title=&#34;3.5 淘汰备份&#34;&gt;&lt;/a&gt;3.5 淘汰备份&lt;/h2&gt;&lt;table&gt;
