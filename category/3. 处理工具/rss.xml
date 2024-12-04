@@ -1243,6 +1243,7 @@
 &lt;/li&gt;
 &lt;li&gt;参考 &lt;a href=&#34;https://bot.starlwr.com/depoly/document&#34;&gt;starbot 文档&lt;/a&gt;  装 starbot，装 python 和 redis&lt;ul&gt;
 &lt;li&gt;然后激活 venv，pm2 管理 &lt;code&gt;pm2 start main.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用小号测试&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
