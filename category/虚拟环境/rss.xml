@@ -704,6 +704,8 @@
 &lt;li&gt;记录弹幕，不记录原始信息&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不能用 blrec&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;装 biliup 由于没有 arm32 位 docker 比较麻烦，安装如下&lt;/p&gt;
   &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt install libxml2-dev libxslt-dev build-essential python3-dev libffi-dev zlib1g-dev libjpeg-dev&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;apt install python3.10-venv&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;python3 -m venv venv&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;source&lt;/span&gt; venv/bin/activate&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;TMPDIR=/root/tmp pc pip3 install biliup&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
