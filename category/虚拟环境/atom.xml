@@ -1752,6 +1752,10 @@
 &lt;td&gt;锁定 windows 版本，不更新&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;CD 工具&lt;/td&gt;
+&lt;td&gt;ImgBurn 保存成 bin&amp;#x2F;cue 文件，这个软件生成的 cue 文件有 index 0，但遇到中文要手动修改 cue 内容。多次保存计算 sha-256，确认数据正确&lt;br /&gt;Alcohol120 用于挂载 bin&amp;#x2F;cue 文件&lt;br /&gt;这里不用 DAEMON TOOL LITE 太大了，也不用 mdx 格式，因为每次生成镜像的 mdx 尾部数据不一样，导致 hash 不同&lt;br /&gt;eac-1.8 抓轨成 flac，这个软件与 Cryptomator 装的 WinFSP &lt;a href=&#34;https://www.reddit.com/r/musichoarder/comments/12e1bmc/eac_exact_audio_copy_crashes_upon_accessing/&#34;&gt;有冲突&lt;/a&gt;，会导致崩溃，所以放在 win10 虚拟机里运行&lt;br /&gt;eac 设置 &lt;a href=&#34;https://www.rainlain.com/index.php/2024/03/31/2173/&#34;&gt;参考&lt;/a&gt;，保存成 flac 选第二个按钮。抓轨相关问题&lt;a href=&#34;https://www.bilibili.com/video/BV1nC411r7Ln&#34;&gt;科普&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;—下面开始是免安装软件—&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
