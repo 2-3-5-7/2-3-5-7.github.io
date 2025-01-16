@@ -728,6 +728,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;6-4-fmx1-pro&#34;&gt;&lt;a href=&#34;#6-4-fmx1-pro&#34; class=&#34;headerlink&#34; title=&#34;6.4 fmx1_pro&#34;&gt;&lt;/a&gt;6.4 fmx1_pro&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;刷机参考&lt;a href=&#34;https://www.bilibili.com/video/BV1dY1uY3E2m&#34;&gt;视频&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://files.kos.org.cn/rockchip/fmx1_pro/&#34;&gt;工具下载&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;装驱动，用刷机工具，win10 电脑，进入 Maskrom，然后刷机 armbian&lt;/li&gt;
 &lt;li&gt;带 USB 可能无法启动，需要不带启动后，命令 reboot&lt;/li&gt;
 &lt;li&gt;而且插入 USB 后，无法立刻识别&lt;/li&gt;
