@@ -726,6 +726,14 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;6-4-fmx1-pro&#34;&gt;&lt;a href=&#34;#6-4-fmx1-pro&#34; class=&#34;headerlink&#34; title=&#34;6.4 fmx1_pro&#34;&gt;&lt;/a&gt;6.4 fmx1_pro&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;刷机参考&lt;a href=&#34;https://www.bilibili.com/video/BV1dY1uY3E2m&#34;&gt;视频&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;装驱动，用刷机工具，win10 电脑，进入 Maskrom，然后刷机 armbian&lt;/li&gt;
+&lt;li&gt;带 USB 可能无法启动，需要不带启动后，命令 reboot&lt;/li&gt;
+&lt;li&gt;而且插入 USB 后，无法立刻识别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id=&#34;7-平板&#34;&gt;&lt;a href=&#34;#7-平板&#34; class=&#34;headerlink&#34; title=&#34;7 平板&#34;&gt;&lt;/a&gt;7 平板&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;使用 kiwi browser 和 &lt;a href=&#34;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean&#34;&gt;bypass-paywalls-chrome-clean&lt;/a&gt;，在 releases 中找到专门给 kiwi 的 crx，打开开发模式后装入&lt;/li&gt;
 &lt;li&gt;常用媒体 ap、nyt、wsj、Economist、wired&lt;/li&gt;
@@ -2622,7 +2630,7 @@
 &lt;li&gt;&lt;a href=&#34;https://gist.github.com/ilbunilcho/4280bd55a10cefef75e74986b6bff936&#34;&gt;设置 &lt;/a&gt;&lt;code&gt;appendWindowsPath = false&lt;/code&gt;，需要 &lt;code&gt;wsl --shutdown&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;2-镜像&#34;&gt;&lt;a href=&#34;#2-镜像&#34; class=&#34;headerlink&#34; title=&#34;2 镜像&#34;&gt;&lt;/a&gt;2 镜像&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;拉取镜像，替换源速度没有提升，建议 &lt;a href=&#34;https://note.qidong.name/2020/05/docker-proxy/&#34;&gt;设置代理&lt;/a&gt;，只设置前 http 和 https 两处就可以了。最常见的 pull 时的 &lt;a href=&#34;https://www.lfhacks.com/tech/pull-docker-images-behind-proxy/&#34;&gt;代理&lt;/a&gt;&lt;/p&gt;
   &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull cdrx/pyinstaller-linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 使用  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull ubuntu@sha256:4b114761663a63948fcd36ef36315b31370c52e59546cf32fee60a8fb16aeddf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/arm64 alpine:latest&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;保存和加载镜像&lt;/p&gt;
