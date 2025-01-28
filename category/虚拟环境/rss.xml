@@ -1278,7 +1278,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Firefox&lt;/td&gt;
-&lt;td&gt;- 参考 &lt;a href=&#34;https://helgeklein.com/blog/2009/08/moving-the-firefox-cache-directory-and-profile-separately/&#34;&gt;这个方法&lt;/a&gt; 改变 default-release 那个 profile 位置，cache 位置就不用改了。还原 profile，还原 profile 时扩展需要关闭一下重开，账户可能要重新绑定&lt;br /&gt;- 临时使用 AHK 脚本支持欧路双击取词&lt;br /&gt;- 如果需要隐藏顶部标签栏、标题栏、侧栏标题，&lt;a href=&#34;https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b&#34;&gt;参照这个&lt;/a&gt;，但不要添加 windows 按钮那个 CSS&lt;br /&gt;- about:config 设置 browser.urlbar.openintab 为 true，搜索结果新 tab 打开&lt;br /&gt;- favicons 不更新，手动删除 &lt;a href=&#34;https://superuser.com/questions/1259660/wrong-favicons-in-firefox&#34;&gt;favicons.sqlite&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;- 参考 &lt;a href=&#34;https://helgeklein.com/blog/2009/08/moving-the-firefox-cache-directory-and-profile-separately/&#34;&gt;这个方法&lt;/a&gt; 改变 default-release 那个 profile 位置，cache 位置就不用改了。还原 profile，还原 profile 时扩展需要关闭一下重开，账户可能要重新绑定&lt;br /&gt;- 临时使用 AHK 脚本支持欧路双击取词&lt;br /&gt;- 如果需要隐藏顶部标签栏、标题栏、侧栏标题，&lt;a href=&#34;https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b&#34;&gt;参照这个&lt;/a&gt;，但不要添加 windows 按钮那个 CSS&lt;br /&gt;- about:config 设置 browser.urlbar.openintab 为 true，搜索结果新 tab 打开&lt;br /&gt;- favicons 不更新，手动删除 &lt;a href=&#34;https://superuser.com/questions/1259660/wrong-favicons-in-firefox&#34;&gt;favicons.sqlite&lt;/a&gt;&lt;br /&gt;- 对于之前创建的 profile，要想恢复，先 about:profiles 创建一个同名 profile，指定一个空文件夹，然后把原来的文件夹内容覆盖过去&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;BANDIZIP&lt;/td&gt;
