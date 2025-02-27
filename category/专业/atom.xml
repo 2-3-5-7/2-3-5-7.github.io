@@ -109,4 +109,37 @@
 </content>
         <updated>1970-01-01T00:00:00.000Z</updated>
     </entry>
+    <entry>
+        <id>https://synrst.de/%E4%B8%93%E4%B8%9A/GPT-SoVITS/</id>
+        <title>GPT-SoVITS</title>
+        <link rel="alternate" href="https://synrst.de/%E4%B8%93%E4%B8%9A/GPT-SoVITS/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;最方便的环境部署：参考视频 &lt;a href=&#34;https://www.bilibili.com/video/BV1zHBjY7E44&#34;&gt;AutoDL+GPT-SoVITS&lt;/a&gt; ，直接用 autodl 传一段音频走一遍流程&lt;/li&gt;
+&lt;li&gt;手动环境部署：&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;PyTorch 2.0.1 + Python 3.8 + cuda 11.8&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考 README linux 装&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 先设置好代理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; http_proxy=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://127.0.0.1:11081&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; https_proxy=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://127.0.0.1:11081&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; all_proxy=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://127.0.0.1:11081&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global http.proxy http://127.0.0.1:11081&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda create -n GPTSoVits python=3.9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda activate GPTSoVits&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;bash install.sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考 README 拷贝预训练模型，模型来源于整合包&lt;/p&gt;
+  &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; -r pretrained_models/* GPT-SoVITS/GPT_SoVITS/pretrained_models&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; -r G2PWModel GPT-SoVITS/GPT_SoVITS/text/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; -r uvr5_weights/* GPT-SoVITS/tools/uvr5/uvr5_weights&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; -r models/* GPT-SoVITS/tools/asr/models/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 可能用到&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;python -m nltk.downloader averaged_perceptron_tagger_eng&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;由于使用的是录播，ffmpeg 提取录播的音频片段，交给 UVR5 进行处理，这里参考文档 &lt;a href=&#34;https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/xyyqrfwiu3e2bgyk?singleDoc#FeuYa&#34;&gt;整合包教程&lt;/a&gt; 中的内容&lt;/p&gt;
+  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;先用model_bs_roformer_ep_317_sdr_12.9755模型（已经是目前最好的模型）处理一遍（提取人声），然后将输出的干声音频再用onnx_dereverb最后用DeEcho-Aggressive（去混响），输出格式选wav。输出的文件默认在GPT-SoVITS-beta\output\uvr5_opt这个文件夹下，建议不要改输出路径，到时候找不到文件谁也帮不了你。处理完的音频（vocal）的是人声，(instrument)是伴奏，(_vocal_main_vocal)的没混响的，（others）的是混响。（vocal）(_vocal_main_vocal)才是要用的文件，其他都可以删除。结束后记得到WebUI关闭UVR5节省显存。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;由于录播片段已经有 whisper 识别的 srt 字幕，在 UVR5 处理后，参考文档 &lt;a href=&#34;https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/pqn7zn003kduyye2?singleDoc#J4PLW&#34;&gt;使用字幕标注&lt;/a&gt; 中的工具进行切分，字符限制用的 15 字。然后手动修改 &lt;code&gt;dataset_mapping.list&lt;/code&gt; 校对标注，标注文件的第一列的 &lt;code&gt;vocal_path&lt;/code&gt; 要用绝对路径。校对除了改正 text 的内容外，还要删掉时长小于 5s，和大于 24s（4090 显存 24G）的音频&lt;/p&gt;
+  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vocal_path|speaker_name|language|text&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文件传到对应的环境，然后填标注文件的绝对路径，开启打标 webui 确认一下内容，就可以按 &lt;a href=&#34;https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/xyyqrfwiu3e2bgyk?singleDoc#MJZQU&#34;&gt;整合包教程&lt;/a&gt; 中的训练部分继续操作了，用默认参数弄一遍，再调到最高轮数弄一下，对比一下&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;启动&lt;ul&gt;
+&lt;li&gt;python webui.py zh_CN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>1970-01-01T00:00:00.000Z</updated>
+    </entry>
 </feed>
